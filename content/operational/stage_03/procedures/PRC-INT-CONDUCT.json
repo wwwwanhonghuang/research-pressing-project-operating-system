@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-INT-CONDUCT",
+  "version": "0.1.0",
+  "title": {
+    "ja": "取材の実施・科学的追質問と文脈確認の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "取材担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "取材担当者"
+  ],
+  "inputs": [
+    "当日進行表",
+    "質問設計表",
+    "確認済み取材条件",
+    "研究資料"
+  ],
+  "outputs": [
+    "取材メモ",
+    "確認済みの説明",
+    "未決事項",
+    "必要な追加資料"
+  ],
+  "steps": [
+    {
+      "id": "PRC-INT-CONDUCT-S1",
+      "instruction": "開始時に取材者・対象者・同席者、媒体、記録条件を相互確認する",
+      "expected_output": "取材メモ",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-INT-CONDUCT-S2",
+      "instruction": "目的と開放型質問から入り、対象者の説明と研究過程の文脈を記録する",
+      "expected_output": "確認済みの説明",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-CONDUCT-S3",
+      "instruction": "方法、研究対象、数量、比較条件、統計的・認識論的限界を具体的に追質問する",
+      "expected_output": "未決事項",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-CONDUCT-S4",
+      "instruction": "発言が論文や公開資料と異なるときは批判的対決より事実の参照先を明確に尋ねる",
+      "expected_output": "必要な追加資料",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-CONDUCT-S5",
+      "instruction": "新たな論点の出現、時間配分、発言者の負担に応じて柔軟に進行する",
+      "expected_output": "取材メモ",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-CONDUCT-S6",
+      "instruction": "引用に用いそうな重要発言について意味・帰属・時点をその場で確認する",
+      "expected_output": "確認済みの説明",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-CONDUCT-S7",
+      "instruction": "終了時に追加照会、共有予定資料、収録停止を確認する",
+      "expected_output": "未決事項",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "機密や健康等に係る予期しない情報が出た際は収録・利用範囲を再点検する",
+    "録音失敗の場合は推測で引用文を生成せずメモと確認可能範囲を分ける"
+  ]
+}

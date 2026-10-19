@@ -1,0 +1,21 @@
+% Operations OS: Japanese scholarly/administrative handbook print style.
+% Canonical print authority; editable independent of the content generator.
+% Black and white, Mincho, no heading decorations, A4, no padded section numbers.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{operationshandbook}[2026/10/19 v1.0 Japanese monochrome handbook]
+\RequirePackage{fontspec}
+\RequirePackage{xeCJK}
+\setmainfont{Noto Serif CJK JP}
+\setCJKmainfont{Noto Serif CJK JP}
+\RequirePackage[left=26mm,right=24mm,top=26mm,bottom=24mm]{geometry}
+\RequirePackage{enumitem,needspace}
+\RequirePackage[hidelinks]{hyperref}
+\RequirePackage{titlesec}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{3pt}
+\renewcommand{\contentsname}{目次}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}

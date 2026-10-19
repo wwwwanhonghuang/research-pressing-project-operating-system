@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.1.0",
+  "id": "07",
+  "workflow_id": "editorial-eight-stage",
+  "workflow_version": "0.1.0",
+  "name_ja": "公開・配信",
+  "name_en": "Publication and distribution",
+  "objective": "Release authorized versions; preserve evidence and accessibility; verify published results and hand off for correction and evaluation.",
+  "task_definitions": [
+    {
+      "id": "TSK-PUB-PACKAGE",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-PUB-CHANNEL",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-PUB-SCHEDULE",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-PUB-WEB",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-PUB-ACCESS",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-PUB-SOCIAL",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-PUB-PRESS",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-PUB-EVENT",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-PUB-DEPLOY",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-PUB-VERIFY",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-PUB-INCIDENT",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-PUB-HANDOFF",
+      "version": "0.1.0"
+    }
+  ],
+  "review_gate": {
+    "definition_status": "draft_independent_proposal",
+    "human_signoff_required_for_publication": true,
+    "reviewer_role": "公開決裁の実際の権限を確認した責任者",
+    "handoff_requires": [
+      "第6段階の決裁記録と対象媒体・版",
+      "配信素材の識別子・ハッシュ",
+      "配信担当者と中止・差戻し条件",
+      "実公開版・URL・投稿ID及び独立確認記録"
+    ],
+    "note": "構造検証やチェックリストの完成は公開許可の代替ではない。実行権限を人が確認する。",
+    "automated_publication": false
+  }
+}

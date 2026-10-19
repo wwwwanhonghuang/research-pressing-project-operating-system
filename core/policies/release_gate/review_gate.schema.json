@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/operations-os/release_gate.schema.json",
+  "title": "Review Gate Record (structural validation only)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "target",
+    "review_domains",
+    "outstanding_issues",
+    "decision"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact_id",
+        "version",
+        "sha256"
+      ],
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "review_domains": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "required": [
+          "domain",
+          "status",
+          "reviewer",
+          "record_ref"
+        ],
+        "properties": {
+          "domain": {
+            "enum": [
+              "scientific",
+              "editorial",
+              "rights",
+              "privacy",
+              "ethics"
+            ]
+          },
+          "status": {
+            "enum": [
+              "complete",
+              "not_applicable",
+              "pending",
+              "blocked"
+            ]
+          },
+          "reviewer": {
+            "type": "string"
+          },
+          "record_ref": {
+            "type": "string"
+          },
+          "not_applicable_reason": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "outstanding_issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "severity",
+          "status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "severity": {
+            "enum": [
+              "critical",
+              "major",
+              "minor"
+            ]
+          },
+          "status": {
+            "enum": [
+              "open",
+              "resolved",
+              "accepted_risk"
+            ]
+          },
+          "owner": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "decision": {
+      "type": "object",
+      "required": [
+        "status",
+        "target_sha256",
+        "decision_maker",
+        "authority_basis",
+        "decision_record_ref"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "approved",
+            "conditional",
+            "returned",
+            "rejected"
+          ]
+        },
+        "target_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "decision_maker": {
+          "type": "string"
+        },
+        "authority_basis": {
+          "type": "string"
+        },
+        "decision_record_ref": {
+          "type": "string"
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

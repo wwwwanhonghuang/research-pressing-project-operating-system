@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-REV-ISSUES",
+  "version": "0.1.0",
+  "title": {
+    "ja": "専門指摘・修正・異議の調整と再審"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集責任者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。法令、契約、内部権限規程等の適用と現行版は個別に検討する。実在の承認を意味しない。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "06"
+  ],
+  "inputs": [
+    "各審査の指摘と修正履歴"
+  ],
+  "outputs": [
+    "再審記録・残余問題一覧"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "再審記録・残余問題一覧に案件ID・対象版・確認者と記録日時が対応付けられている",
+    "重大な未解決事項を判別し、公開判断者に必要な照会と差戻し条件を渡している",
+    "当該作業の確認と公開の承認が区別して記録されている"
+  ],
+  "review_roles": [
+    "編集責任者",
+    "編集責任者",
+    "公開判断者（承認対象となるとき）"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-REV-ISSUES",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-071",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-070",
+      "version": "0.2.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-034",
+      "version": "0.2.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-REV-EVIDENCE",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-REV-DECISION",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-REV-INDEPENDENCE",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-REV-HARM",
+      "version": "0.1.0"
+    }
+  ]
+}

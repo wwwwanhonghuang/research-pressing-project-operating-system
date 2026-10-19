@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-REV-EMBARGO",
+  "version": "0.1.0",
+  "title": {
+    "ja": "公表日時・禁輸・共同発信の調整"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "専門確認・公開管理担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。法令、契約、内部権限規程等の適用と現行版は個別に検討する。実在の承認を意味しない。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-SCI-COMM-GUIDE",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果プレスリリースについての専門学会による指針。科学的主張・誇張・引用・再利用等を扱う。一般の全業務に法的拘束力を与えるものではない。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "06"
+    ],
+    "audiences": [
+      "研究者",
+      "編集者",
+      "専門確認担当者",
+      "公開承認責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-REV-EMBARGO-H01",
+      "kind": "heading",
+      "text": "時点の特定",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-EMBARGO-P01",
+      "kind": "paragraph",
+      "text": "論文公開、会見、配信、各媒体の時刻を時区分付きで記録する。日本時間への換算や日付変更に注意する。"
+    },
+    {
+      "id": "KNW-REV-EMBARGO-H02",
+      "kind": "heading",
+      "text": "根拠と制約",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-EMBARGO-P02",
+      "kind": "paragraph",
+      "text": "公開制限が契約、出版社の運用、当事者の合意など何に基づくかを区別し、期限切れ情報を更新する。"
+    },
+    {
+      "id": "KNW-REV-EMBARGO-H03",
+      "kind": "heading",
+      "text": "共同発信",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-EMBARGO-P03",
+      "kind": "paragraph",
+      "text": "複数の発表主体や制作会社がある場合は版・広報窓口・公開チャネル・更新責任を合意した内容に従い確認する。"
+    },
+    {
+      "id": "KNW-REV-EMBARGO-H04",
+      "kind": "heading",
+      "text": "変更時の扱い",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-EMBARGO-P04",
+      "kind": "paragraph",
+      "text": "差止め、時刻変更、誤配信を想定し、連絡経路・撤回手段・必要な判断者を決める。"
+    }
+  ]
+}

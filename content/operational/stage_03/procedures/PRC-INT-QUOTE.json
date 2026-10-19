@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-INT-QUOTE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "引用候補・帰属と意味の照合の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学編集担当者と取材担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "科学編集担当者と取材担当者"
+  ],
+  "inputs": [
+    "原記録",
+    "逐語書き起こし",
+    "研究資料",
+    "引用候補"
+  ],
+  "outputs": [
+    "引用台帳",
+    "要確認の発言",
+    "修正履歴"
+  ],
+  "steps": [
+    {
+      "id": "PRC-INT-QUOTE-S1",
+      "instruction": "採用候補の発言を録音の時点範囲・発言者・文脈と結び付ける",
+      "expected_output": "引用台帳",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-INT-QUOTE-S2",
+      "instruction": "逐語引用、意味を保持した要約、編集上の説明を区分する",
+      "expected_output": "要確認の発言",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-QUOTE-S3",
+      "instruction": "研究上の確度、数値、制約、比較対象を原論文と再確認する",
+      "expected_output": "修正履歴",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-QUOTE-S4",
+      "instruction": "要約や省略によって意味、態度、因果関係、適用範囲が変わらないか点検する",
+      "expected_output": "引用台帳",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-QUOTE-S5",
+      "instruction": "発言内容と専門的事実の確認先を分け、必要な発言確認範囲を特定する",
+      "expected_output": "要確認の発言",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-QUOTE-S6",
+      "instruction": "引用資料の権利・出典を記録し、第三者の著作物を再利用する場合は許諾等を確認する",
+      "expected_output": "修正履歴",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-QUOTE-S7",
+      "instruction": "確認済みと未確認の引用を明示し編集責任者へ引き渡す",
+      "expected_output": "引用台帳",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "逐語記録に該当箇所がない文言を発言として確定しない",
+    "取材条件の変更、発言者からの異議があれば確認の経緯を残す"
+  ]
+}

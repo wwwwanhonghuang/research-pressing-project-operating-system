@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-EDT-INDEPENDENCE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "編集判断の独立と利益相反"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集責任者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PRESS-CODE",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本新聞協会・新聞倫理綱領。正確、公正、独立、人権尊重、訂正に関する報道倫理。"
+    },
+    {
+      "source_id": "SRC-JPA-SCI-COMM",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果のプレスリリースを対象とする学会の科学コミュニケーション指針。正確性・限定条件・誇張回避。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "05"
+    ],
+    "audiences": [
+      "編集者",
+      "校正者",
+      "校閲者",
+      "制作担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-EDT-INDEPENDENCE-H01",
+      "kind": "heading",
+      "text": "圧力・利害",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-EDT-INDEPENDENCE-P01",
+      "kind": "paragraph",
+      "text": "依頼者、協賛者、研究者、編集責任者による介入・利益相反がある場合、その関係と編集判断への影響を記録する。独立報道と機関広報で権限・目的が異なる。"
+    },
+    {
+      "id": "KNW-ETH-EDT-INDEPENDENCE-H02",
+      "kind": "heading",
+      "text": "根拠優先",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-EDT-INDEPENDENCE-P02",
+      "kind": "paragraph",
+      "text": "話題性や期待の強さだけで見出しや研究の意義を誇張しない。異論を同数並べること自体は十分な検証を意味せず、根拠の質と内容を吟味する。"
+    },
+    {
+      "id": "KNW-ETH-EDT-INDEPENDENCE-H03",
+      "kind": "heading",
+      "text": "担当と権限",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-EDT-INDEPENDENCE-P03",
+      "kind": "paragraph",
+      "text": "当事者の事実照会、専門家による科学確認、編集者の編集判断、組織の公開承認を別記録に残す。"
+    }
+  ]
+}

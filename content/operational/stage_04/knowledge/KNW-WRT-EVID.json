@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-WRT-EVID",
+  "version": "0.1.0",
+  "title": {
+    "ja": "文章・科学的主張の根拠対応"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "汎用的な編集制作の独立設計案。媒体の役割、権利、組織規程、適用される法令は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA-SCI-COMM",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果発表に関する日本心理学会の専門指針。因果と相関、統計量、引用、制約、過度の一般化の取扱い。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "04"
+    ],
+    "audiences": [
+      "編集担当者",
+      "科学ライター",
+      "制作担当者",
+      "レビュー担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-WRT-EVID-H01",
+      "kind": "heading",
+      "text": "原資料との連結",
+      "level": 2
+    },
+    {
+      "id": "KNW-WRT-EVID-P01",
+      "kind": "paragraph",
+      "text": "主張を、出典、原資料の箇所、研究条件、主張の類型（観測、推論、仮説、予測、目標）、原稿内の使用箇所と結び付ける。重要な見出しや図の文言も根拠管理の対象とする。"
+    },
+    {
+      "id": "KNW-WRT-EVID-H02",
+      "kind": "heading",
+      "text": "表現の強度",
+      "level": 2
+    },
+    {
+      "id": "KNW-WRT-EVID-P02",
+      "kind": "paragraph",
+      "text": "関連があるという研究から因果を断定せず、予備的知見を確立した結論と扱わない。研究対象の人数、母集団、期間、測定条件、効果量・区間推定等の関連情報は重要性に応じて併記する。"
+    },
+    {
+      "id": "KNW-WRT-EVID-H03",
+      "kind": "heading",
+      "text": "情報の変換",
+      "level": 2
+    },
+    {
+      "id": "KNW-WRT-EVID-P03",
+      "kind": "paragraph",
+      "text": "論文や取材メモを編集用に短縮する際、反対結果、限界、比較対象の省略が意味を変えないか点検する。記事内の説明の単純化によって研究設計の条件を消さない。"
+    },
+    {
+      "id": "KNW-WRT-EVID-H04",
+      "kind": "heading",
+      "text": "未確認への対応",
+      "level": 2
+    },
+    {
+      "id": "KNW-WRT-EVID-P04",
+      "kind": "paragraph",
+      "text": "根拠が特定できない主張や両立しない資料については、書換えによる解決を試みる前に調査・照会へ戻し、公開に必要な解消条件を記録する。"
+    }
+  ]
+}

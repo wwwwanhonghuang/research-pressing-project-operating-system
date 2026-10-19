@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-EDT-AI",
+  "version": "0.1.0",
+  "title": {
+    "ja": "AI編集補助の適用条件"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集品質担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA-SCI-COMM",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果のプレスリリースを対象とする学会の科学コミュニケーション指針。正確性・限定条件・誇張回避。"
+    },
+    {
+      "source_id": "SRC-PPC-GENERAL",
+      "locator": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "個人情報保護委員会・通則編。対象者・データと適用の事実確認が必要。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "05"
+    ],
+    "audiences": [
+      "編集者",
+      "校正者",
+      "校閲者",
+      "制作担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-EDT-AI-H01",
+      "kind": "heading",
+      "text": "補助の範囲",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-AI-P01",
+      "kind": "paragraph",
+      "text": "AIは誤植候補、用語揺れ、論点抽出、差分比較、出典不足候補を示す補助に限定する。生成結果には未検証の注記を付し、モデルのもっともらしい補完を事実認定に使わない。"
+    },
+    {
+      "id": "KNW-EDT-AI-H02",
+      "kind": "heading",
+      "text": "入力情報",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-AI-P02",
+      "kind": "paragraph",
+      "text": "外部AIへ渡す前に取材資料・未公開原稿・個人情報の権限及びサービス条件を確認する。機微な情報は必要性と許諾が確認できない限り外部送信しない。"
+    },
+    {
+      "id": "KNW-EDT-AI-H03",
+      "kind": "heading",
+      "text": "人による照合",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-AI-P03",
+      "kind": "paragraph",
+      "text": "AIによる引用抽出や数字照合の結果は、原稿版と一次資料を人が確認する。出典の実在、URL、著者、DOI、訂正情報をAIの出力だけで確定しない。"
+    },
+    {
+      "id": "KNW-EDT-AI-H04",
+      "kind": "heading",
+      "text": "透明性",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-AI-P04",
+      "kind": "paragraph",
+      "text": "利用サービス、入力範囲、日時、用途、検証者、採用・不採用理由を記録する。AIによるレビューの合格は組織の公表承認を意味しない。"
+    }
+  ]
+}

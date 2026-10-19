@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-EDT-ISSUES",
+  "version": "0.1.0",
+  "title": {
+    "ja": "編集課題・変更管理と確認状態"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集品質担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PRESS-CODE",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本新聞協会・新聞倫理綱領。正確、公正、独立、人権尊重、訂正に関する報道倫理。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "05"
+    ],
+    "audiences": [
+      "編集者",
+      "校正者",
+      "校閲者",
+      "制作担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-EDT-ISSUES-H01",
+      "kind": "heading",
+      "text": "状態の分離",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-ISSUES-P01",
+      "kind": "paragraph",
+      "text": "指摘登録、担当割当、修正案、修正反映、再確認、差戻し、保留を異なる状態として記録する。指摘者と最終確認者、判断理由を明示する。"
+    },
+    {
+      "id": "KNW-EDT-ISSUES-H02",
+      "kind": "heading",
+      "text": "版管理",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-ISSUES-P02",
+      "kind": "paragraph",
+      "text": "原稿ごとに版識別子、原稿ハッシュ、変更日時、編集者、差分、参照根拠を記録する。旧版へのリンクを維持し、後続工程に渡す時点の版を固定する。"
+    },
+    {
+      "id": "KNW-EDT-ISSUES-H03",
+      "kind": "heading",
+      "text": "重大度",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-ISSUES-P03",
+      "kind": "paragraph",
+      "text": "誤字のような軽微事項と、個人権利、科学的虚偽、禁輸、名誉毀損につながる事項を同じ重要度に置かない。重大な未解決問題は公開工程へ送る前に人の判断を要する。"
+    },
+    {
+      "id": "KNW-EDT-ISSUES-H04",
+      "kind": "heading",
+      "text": "引継ぎ",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-ISSUES-P04",
+      "kind": "paragraph",
+      "text": "編集完了は専門確認及び公開承認と別である。未解決の科学的照会、権利状況、再校正予定、必要な専門確認を次工程に引き継ぐ。"
+    }
+  ]
+}

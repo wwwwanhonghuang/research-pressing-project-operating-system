@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-INT-QUESTION",
+  "version": "0.1.0",
+  "title": {
+    "ja": "研究論点・質問と追質問の設計の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "取材担当者と科学編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "取材担当者と科学編集担当者"
+  ],
+  "inputs": [
+    "研究論文・報告書",
+    "Stage 2の主張台帳",
+    "取材目的"
+  ],
+  "outputs": [
+    "質問設計表",
+    "質問の優先順位",
+    "出典・未解決事項の対応"
+  ],
+  "steps": [
+    {
+      "id": "PRC-INT-QUESTION-S1",
+      "instruction": "研究上の事実、方法、推論、仮説、目標を別の質問群に整理する",
+      "expected_output": "質問設計表",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-INT-QUESTION-S2",
+      "instruction": "各重要質問に一次資料ID、疑問の原因、望む回答形式を結びつける",
+      "expected_output": "質問の優先順位",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-QUESTION-S3",
+      "instruction": "確認型の問いと経験・経緯を引き出す開放型の問いを組み合わせる",
+      "expected_output": "出典・未解決事項の対応",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-QUESTION-S4",
+      "instruction": "主要論点ごとに数値、範囲、時点、反証、用語の意味を確かめる追質問を準備する",
+      "expected_output": "質問設計表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-QUESTION-S5",
+      "instruction": "聞き手の仮定、誘導、価値判断、専門性の前提を点検する",
+      "expected_output": "質問の優先順位",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-QUESTION-S6",
+      "instruction": "回答しづらい問いに対する任意回答・説明方法を準備する",
+      "expected_output": "出典・未解決事項の対応",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-QUESTION-S7",
+      "instruction": "優先順位と持ち時間を割り当て、回答次第で質問順序を変更できる余地を残す",
+      "expected_output": "質問設計表",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "調査と異なる結果が示された場合は反論を先に確定せず、資料確認へ戻す",
+    "人物評価、機微事項の質問は必要性を再検討し責任者へ照会する"
+  ]
+}

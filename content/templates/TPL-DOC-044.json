@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-044",
+  "kind": "document",
+  "slug": "interview_request",
+  "title_ja": "取材依頼書",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "03"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-044-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-044-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": true,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-044-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-044-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-044-S2",
+      "heading_ja": "取材の申込み",
+      "fields": [
+        {
+          "id": "TPL-DOC-044-F004",
+          "label_ja": "取材の趣旨",
+          "type": "long_text",
+          "required": true,
+          "description_ja": "取材の目的、取材対象に期待する協力、現時点の企画・証拠の区分を簡潔に説明する。"
+        },
+        {
+          "id": "TPL-DOC-044-F005",
+          "label_ja": "候補日時と所要時間",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-044-F006",
+          "label_ja": "取材対象者",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-044-F007",
+          "label_ja": "予定媒体と公開範囲",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記事・動画・音声・SNS・再利用の範囲を可能な限り明記する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-044-S3",
+      "heading_ja": "実施条件の確認",
+      "fields": [
+        {
+          "id": "TPL-DOC-044-F008",
+          "label_ja": "主な質問分野",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-044-F009",
+          "label_ja": "録音・撮影の予定",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "録音・写真・映像それぞれの実施意向と確認予定を分ける。"
+        },
+        {
+          "id": "TPL-DOC-044-F010",
+          "label_ja": "発言の確認方法",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-044-F011",
+          "label_ja": "連絡先と回答期限",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-044-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-044-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。",
+          "columns": [
+            "出典ID",
+            "関連する研究・資料",
+            "公開条件",
+            "確認状況"
+          ],
+          "min_rows": 3
+        },
+        {
+          "id": "TPL-DOC-044-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-044-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。",
+          "columns": [
+            "年月日",
+            "確認者",
+            "変更事項",
+            "説明先"
+          ],
+          "min_rows": 3
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": [],
+    "checklist_template_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "記入欄の構造案。法的・組織的承認の代替として利用しない。",
+  "workflow_id": "editorial-eight-stage"
+}

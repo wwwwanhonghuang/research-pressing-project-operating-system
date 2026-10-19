@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-VOICE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "発言者の尊厳・表象と文脈"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "取材担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PRESS-ETH",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本新聞協会の倫理綱領。正確性、独立性、人権と訂正に関する一般原則。取材同意の詳細要件を定める法規ではない。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "03"
+    ],
+    "audiences": [
+      "取材担当者",
+      "編集責任者",
+      "協力者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-VOICE-B01A",
+      "kind": "heading",
+      "text": "対話の条件",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-VOICE-B01B",
+      "kind": "paragraph",
+      "text": "取材対象者の時間、認知的負荷、答えにくい話題、言語、障害等に配慮して質問方法や休止を調整する。協力拒否の圧力を生む依頼を避ける。"
+    },
+    {
+      "id": "KNW-ETH-VOICE-B02A",
+      "kind": "heading",
+      "text": "文脈と偏り",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-VOICE-B02B",
+      "kind": "paragraph",
+      "text": "話の一部のみを切り出して対象者に不利または過度に好意的な印象を作らない。対立や誤解があり得る場合、説明可能な範囲で異なる解釈を検討する。"
+    },
+    {
+      "id": "KNW-ETH-VOICE-B03A",
+      "kind": "heading",
+      "text": "主体性",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-VOICE-B03B",
+      "kind": "paragraph",
+      "text": "本人の経験と研究者の科学的解釈を分け、第三者の立場を当事者の発言に紛れ込ませない。"
+    }
+  ]
+}

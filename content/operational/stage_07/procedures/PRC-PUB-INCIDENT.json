@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-PUB-INCIDENT",
+  "version": "0.1.0",
+  "title": {
+    "ja": "誤掲載・障害・公開停止と差戻しの実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "公開事故対応責任者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "公開事故対応責任者"
+  ],
+  "inputs": [
+    "異常検知",
+    "問い合わせ",
+    "停止条件",
+    "公開記録"
+  ],
+  "outputs": [
+    "事故・公開停止・是正記録"
+  ],
+  "steps": [
+    {
+      "id": "PRC-PUB-INCIDENT-S1",
+      "instruction": "異常の内容、影響対象、発見日時、暫定重大度を記録する",
+      "expected_output": "事象記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-INCIDENT-S2",
+      "instruction": "権限ある責任者と連絡を取り配信停止又は保留の必要性を判断する",
+      "expected_output": "エスカレーション記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-INCIDENT-S3",
+      "instruction": "各媒体の表示状態、再共有、キャッシュ、外部再利用の可能性を確認する",
+      "expected_output": "影響範囲票",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-INCIDENT-S4",
+      "instruction": "差替え・訂正・撤回・追加説明を別々の選択肢として記録する",
+      "expected_output": "対応判断資料",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-INCIDENT-S5",
+      "instruction": "変更した素材と実行結果を残し必要な場合にStage 6又はStage 8へ接続する",
+      "expected_output": "是正履歴",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "個人情報漏えい疑いは適用規程の緊急報告経路へ",
+    "重大な科学的誤りと公開撤回の判断は適切な権限者へ"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-EDT-QUOTES",
+  "version": "0.1.0",
+  "title": {
+    "ja": "引用・話者・文脈・権利の確認"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "引用校閲担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "05"
+  ],
+  "inputs": [
+    "逐語記録・録音の参照位置",
+    "原稿引用箇所",
+    "話者・利用条件台帳"
+  ],
+  "outputs": [
+    "引用照合記録",
+    "引用の修正・照会票"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "引用照合記録が登録され、担当者・日時・対象版が追跡できる",
+    "引用の修正・照会票が登録され、担当者・日時・対象版が追跡できる",
+    "重大な未解決問題の状態と差戻し条件が記録され、次工程の判断者へ明示された"
+  ],
+  "review_roles": [
+    "編集責任者",
+    "分野の担当確認者（必要時）"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-EDT-QUOTES",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-066",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-067",
+      "version": "0.2.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-032",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-004",
+      "version": "0.2.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-EDT-QUOTE",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-EDT-ISSUES",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-EDT-HARM",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-EDT-PRIVACY",
+      "version": "0.1.0"
+    }
+  ]
+}

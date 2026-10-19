@@ -1,0 +1,31 @@
+{
+  "schema_version": "0.1.0",
+  "id": "02",
+  "workflow_id": "editorial-eight-stage",
+  "workflow_version": "0.1.0",
+  "name_ja": "事前調査・資料収集",
+  "name_en": "Preliminary research and source collection",
+  "objective": "Collect and assess source material and evidence.",
+  "task_definitions": [
+    "TSK-RES-PLAN",
+    "TSK-RES-DISCOVER",
+    "TSK-RES-REGISTER",
+    "TSK-RES-METHOD",
+    "TSK-RES-QUANT",
+    "TSK-RES-CONTEXT",
+    "TSK-RES-CLAIM",
+    "TSK-RES-HANDOFF"
+  ],
+  "review_gate": {
+    "definition_status": "independent_draft",
+    "human_signoff_required_for_publication": false,
+    "handoff_requires": [
+      "資料・出典台帳",
+      "主張・根拠対応表",
+      "方法・数値確認",
+      "未確認事項・追加取材質問"
+    ],
+    "reviewer_role": "調査責任者又は編集責任者",
+    "note": "次工程への引継ぎゲートであり、科学的妥当性の保証や公開承認を意味しない。"
+  }
+}

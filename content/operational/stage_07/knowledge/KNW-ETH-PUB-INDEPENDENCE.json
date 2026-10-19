@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-PUB-INDEPENDENCE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "対外配信と第三者の独立性"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "公開・配信業務の設計・審査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本心理学会のプレスリリース指針。科学的発信の参考であり他分野の全組織を拘束しない。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "07"
+    ],
+    "audiences": [
+      "編集担当者",
+      "配信担当者",
+      "レビュアー",
+      "公開責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-PUB-INDEPENDENCE-H01",
+      "kind": "heading",
+      "text": "適用範囲と目的",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-PUB-INDEPENDENCE-P01",
+      "kind": "paragraph",
+      "text": "報道機関や読者が独自に解釈しうることを認識し、提供資料と第三者の編集成果を区別する。"
+    },
+    {
+      "id": "KNW-ETH-PUB-INDEPENDENCE-H02",
+      "kind": "heading",
+      "text": "実施上の確認事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-PUB-INDEPENDENCE-P02",
+      "kind": "paragraph",
+      "text": "科学的留保、研究成果の帰属、利益相反に関する情報の欠落がないか検討する。"
+    },
+    {
+      "id": "KNW-ETH-PUB-INDEPENDENCE-H03",
+      "kind": "heading",
+      "text": "境界と判断事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-PUB-INDEPENDENCE-P03",
+      "kind": "paragraph",
+      "text": "問い合わせへの回答に際しては、確認できる事実と解釈を明確にする。"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "id": "ETH-REPRESENTATION",
+  "kind": "ethics",
+  "version": "0.1.0",
+  "title_ja": "研究成果の説明と認識上の限界（試案）",
+  "authority": "independent_proposal",
+  "status": "draft",
+  "scope": [
+    "stage:02",
+    "stage:04",
+    "stage:05",
+    "stage:06"
+  ],
+  "sources": [],
+  "blocks": [
+    {
+      "id": "ETH-REPRESENTATION-P1",
+      "type": "paragraph",
+      "text": "研究成果を紹介する際には、対象者と社会的文脈、解釈上の偏り、知見の成立過程を検討する。"
+    },
+    {
+      "id": "ETH-REPRESENTATION-W1",
+      "type": "warning",
+      "text": "未検証の可能性や将来構想を実証済みの成果として提示することを避ける。研究者の確認は広報文全体の科学的・倫理的妥当性を自動的に保証しない。"
+    }
+  ]
+}

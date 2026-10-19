@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-WRT-FEATURE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "研究解説・人物記事の初稿作成"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学ライター",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "汎用的な編集制作の独立設計案。媒体の役割、権利、組織規程、適用される法令は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "04"
+  ],
+  "inputs": [
+    "構成案",
+    "一次資料",
+    "確認済み引用",
+    "読者設定"
+  ],
+  "outputs": [
+    "初稿",
+    "段落別の根拠対応",
+    "暫定見出し・脚注"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "目的、対象読者、参照できる根拠と使用可能な素材が記録された",
+    "文書の対象版、編集上の判断、未解決事項が後から追跡できる",
+    "担当者と編集責任者が後工程に渡せる範囲と差戻し条件を確認した"
+  ],
+  "review_roles": [
+    "編集責任者又は担当レビュー者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-WRT-FEATURE",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-054",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-053",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-018",
+      "version": "0.1.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-025",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-026",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-007",
+      "version": "0.2.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-WRT-ARCH",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-WRT-JP",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-WRT-QUOTE",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-SPIN",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-AGENCY",
+      "version": "0.1.0"
+    }
+  ]
+}

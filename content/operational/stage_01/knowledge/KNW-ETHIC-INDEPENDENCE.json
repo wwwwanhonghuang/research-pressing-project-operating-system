@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETHIC-INDEPENDENCE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "独立性、利益相反、権利・責任の予備評価"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "企画編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "PUBLIC-PRESS-ETHICS",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "報道倫理の一般的な参照資料。組織的な遵守認証または直接の法的拘束力を主張しない。"
+    },
+    {
+      "source_id": "PUBLIC-PSYCHOLOGY-GUIDANCE",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "科学広報の資料検証、一般化、出典、著者確認の参考。分野・媒体への適用は個別に検討する。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "01"
+    ],
+    "audiences": [
+      "企画編集担当者",
+      "科学コミュニケーション担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETHIC-INDEPENDENCE-B01",
+      "kind": "heading",
+      "text": "広報と独立報道",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETHIC-INDEPENDENCE-B02",
+      "kind": "paragraph",
+      "text": "発信主体と編集権限を明示し、組織広報、研究者の成果紹介、独立取材記事を区別する。取材協力者や協賛者による内容確認の範囲、編集判断への関与可能性を事前に整理する。"
+    },
+    {
+      "id": "KNW-ETHIC-INDEPENDENCE-B03",
+      "kind": "heading",
+      "text": "利益相反",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETHIC-INDEPENDENCE-B04",
+      "kind": "paragraph",
+      "text": "資金提供、共同研究、委託関係、組織の利害、個人的な関係などが企画の選択、表現、公開時期に与え得る影響を確認する。開示事項は企画段階の記録へ接続し、適用される開示ルールは正式担当者へ照会する。"
+    },
+    {
+      "id": "KNW-ETHIC-INDEPENDENCE-B05",
+      "kind": "heading",
+      "text": "権利と情報の分類",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETHIC-INDEPENDENCE-B06",
+      "kind": "paragraph",
+      "text": "図表、写真、音声、顔や氏名、未公開研究内容に関する使用見込みを記録する。著作権、肖像、個人情報、取材同意、公開時期を個別に確認し、実際の許諾取得は担当工程へ引き継ぐ。"
+    },
+    {
+      "id": "KNW-ETHIC-INDEPENDENCE-B07",
+      "kind": "heading",
+      "text": "AIの補助利用",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETHIC-INDEPENDENCE-B08",
+      "kind": "paragraph",
+      "text": "AIによる候補収集、質問案生成、表現比較は補助作業とし、根拠照合と編集決定は人が担う。機密資料、公開前研究、個人情報は、利用可能なサービスと正式な情報取扱条件が確定するまで外部AIへ投入しない。"
+    }
+  ]
+}

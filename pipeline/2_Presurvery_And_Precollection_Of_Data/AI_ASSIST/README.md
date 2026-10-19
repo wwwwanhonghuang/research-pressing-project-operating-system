@@ -1,0 +1,1 @@
+Stage 2 AI assistance is limited to source-bound candidate extraction, research-plan comparison and question drafting. Human verification is mandatory for substantive claims; do not input restricted data into external tools.

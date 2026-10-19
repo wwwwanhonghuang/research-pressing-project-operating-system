@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-INT-FOLLOWUP",
+  "version": "0.1.0",
+  "title": {
+    "ja": "追加確認・発言照会と変更の管理の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "取材担当者と編集責任者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "取材担当者と編集責任者"
+  ],
+  "inputs": [
+    "未決事項一覧",
+    "確認対象の逐語記録・原稿の該当部"
+  ],
+  "outputs": [
+    "照会依頼",
+    "回答原文",
+    "採否と修正理由の記録"
+  ],
+  "steps": [
+    {
+      "id": "PRC-INT-FOLLOWUP-S1",
+      "instruction": "確認が必要な対象を事実、科学的説明、発言意図、公開条件、編集判断に分類する",
+      "expected_output": "照会依頼",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-INT-FOLLOWUP-S2",
+      "instruction": "照会する具体的箇所、原資料の参照先、回答期限と連絡手段を整理する",
+      "expected_output": "回答原文",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-FOLLOWUP-S3",
+      "instruction": "取材対象へ確認の目的と確認可能な範囲を説明して照会する",
+      "expected_output": "採否と修正理由の記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-FOLLOWUP-S4",
+      "instruction": "回答原文と日時を保存し、元の質問と回答を切り離さない",
+      "expected_output": "照会依頼",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-FOLLOWUP-S5",
+      "instruction": "科学的訂正・表現上の希望・編集方針上の異議を区分する",
+      "expected_output": "回答原文",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-FOLLOWUP-S6",
+      "instruction": "確認回答に基づく変更の理由、対象版、他媒体への影響を記録する",
+      "expected_output": "採否と修正理由の記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-FOLLOWUP-S7",
+      "instruction": "未回答や見解の相違は未解決状態として編集責任者に判断を求める",
+      "expected_output": "照会依頼",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "公表停止が必要となる情報が出た場合は公開前ゲートへ報告する",
+    "編集上の裁量と事前合意済みの事実確認範囲の境界を再確認する"
+  ]
+}

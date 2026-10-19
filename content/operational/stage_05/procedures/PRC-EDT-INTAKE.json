@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-EDT-INTAKE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "編集対象の受領・版固定と確認方針の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集責任者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "編集責任者"
+  ],
+  "inputs": [
+    "第4工程の原稿と媒体別制作物",
+    "編集ブリーフ",
+    "出典・主張・引用台帳"
+  ],
+  "outputs": [
+    "編集対象一覧と版固定記録",
+    "校閲範囲・役割分担表"
+  ],
+  "steps": [
+    {
+      "id": "PRC-EDT-INTAKE-S1",
+      "instruction": "全媒体の対象ファイル、版、ハッシュ、受領日時、制作者を一覧化する",
+      "expected_output": "編集対象一覧",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-EDT-INTAKE-S2",
+      "instruction": "対象読者、配信媒体、完成条件、禁輸条件、既存の未解決事項を確認する",
+      "expected_output": "編集ブリーフ照合記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-INTAKE-S3",
+      "instruction": "本文・見出し・図・動画・字幕・SNSを含む確認範囲を決める",
+      "expected_output": "校正・校閲対象範囲",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-INTAKE-S4",
+      "instruction": "構成編集、校正、校閲、専門確認、権利確認の担当と責任を割り振る",
+      "expected_output": "責任分担表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-INTAKE-S5",
+      "instruction": "原資料へのアクセスが不足する項目を別記し、取材工程へ照会する",
+      "expected_output": "追加資料依頼",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-INTAKE-S6",
+      "instruction": "修正指示と版管理の方式、緊急停止条件を明示する",
+      "expected_output": "編集確認計画",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "原稿版が特定できないときは編集作業を一時保留する",
+    "公開禁止情報が含まれる場合は閲覧権限を先に確認する"
+  ]
+}

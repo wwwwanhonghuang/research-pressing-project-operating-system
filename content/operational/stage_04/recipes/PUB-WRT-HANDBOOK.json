@@ -1,0 +1,486 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PUB-WRT-HANDBOOK",
+  "version": "0.1.0",
+  "title": {
+    "ja": "構成・執筆 業務ハンドブック（独立試作）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集制作担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "汎用的な編集制作の独立設計案。媒体の役割、権利、組織規程、適用される法令は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA-SCI-COMM",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果発表に関する日本心理学会の専門指針。因果と相関、統計量、引用、制約、過度の一般化の取扱い。"
+    },
+    {
+      "source_id": "SRC-PRESS-CODE",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本新聞協会の新聞倫理綱領。独立報道の職業倫理を示す。研究広報の承認権限を決めるものではない。"
+    },
+    {
+      "source_id": "SRC-BUNKA-PUBLIC-DOC",
+      "locator": "https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/93651301.html",
+      "accessed_on": "2026-10-19",
+      "verification_note": "文化庁による公用文作成の考え方（2022年）。法令本文には直接適用されない。読者や用途に応じた日本語の参考。"
+    },
+    {
+      "source_id": "SRC-W3C-WCAG22",
+      "locator": "https://www.w3.org/TR/wcag/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "WCAG 2.2。非テキスト情報の代替、字幕・メディア、言語、構造等のアクセシビリティ参照基準。"
+    },
+    {
+      "source_id": "SRC-W3C-IMAGE-ALT",
+      "locator": "https://www.w3.org/WAI/tutorials/images/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "W3Cの画像代替テキストの説明。情報を運ぶ図と装飾画像、複雑な図の違いを説明。"
+    }
+  ],
+  "links": [],
+  "output_kind": "handbook",
+  "audience": [
+    "科学ライター",
+    "編集担当者",
+    "図表・動画制作担当者",
+    "編集責任者"
+  ],
+  "style_profile": "formal_guideline",
+  "visibility": "public",
+  "chapter_plan": [
+    {
+      "chapter_id": "CH-WRT-INTRO",
+      "heading_ja": "目的、適用範囲と制作工程",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "本書は調査・取材資料を読者に届ける制作工程の独立設計案である。原稿、図表、短文、音声・映像台本を対象に、正確性、説明可能性、倫理、情報へのアクセスを同時に検討する。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "先行工程で確認した事実、主張、取材発言及び利用条件を継承する。制作過程で新たな疑義が生じれば、調査又は取材へ差し戻す。制作完了は校正、専門確認又は公開承認の成立を意味しない。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-WRT-PRINCIPLES",
+      "heading_ja": "文章・図表・媒体に共通する標準",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "以下は参照資料を踏まえた独立提案である。学会ガイドライン、政府の公用文作成に関する手引、ウェブ技術規格と本OSの提案にはそれぞれ異なる適用範囲がある。"
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-WRT-ARCH",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-WRT-EVID",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-WRT-JP",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-WRT-QUOTE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-WRT-FIG",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-WRT-MODAL",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-WRT-AI",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-WRT-HANDOFF",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-WRT-ETHICS",
+      "heading_ja": "編集倫理、認識上の限界と関係者への配慮",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "文章の誇張と表象、読者の多様なアクセス、第三者素材の権利、AI補助の責任を相互に関連づけつつ、それぞれ独立した判断対象として扱う。"
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-SPIN",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-AGENCY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-ACCESS",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-OWN",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-WRT-BRIEF",
+      "heading_ja": "取材・調査成果の受領と編集ブリーフの確定",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-WRT-BRIEF",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-WRT-BRIEF",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-WRT-OUTLINE",
+      "heading_ja": "記事の論理構成・見出しと読者の理解順序",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-WRT-OUTLINE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-WRT-OUTLINE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-WRT-FEATURE",
+      "heading_ja": "研究解説・人物記事の初稿作成",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-WRT-FEATURE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-WRT-FEATURE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-WRT-NEWS",
+      "heading_ja": "研究ニュース・発表原稿・FAQの作成",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-WRT-NEWS",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-WRT-NEWS",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-WRT-JAPANESE",
+      "heading_ja": "専門表現・日本語の可読性と用語統一",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-WRT-JAPANESE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-WRT-JAPANESE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-WRT-QUOTES",
+      "heading_ja": "引用・科学的主張・叙述の対応確認",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-WRT-QUOTES",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-WRT-QUOTES",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-WRT-FIGURES",
+      "heading_ja": "図表・写真・キャプションと説明資料の設計",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-WRT-FIGURES",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-WRT-FIGURES",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-WRT-MULTIMODAL",
+      "heading_ja": "音声・映像・SNS・アクセシブルな説明の展開",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-WRT-MULTIMODAL",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-WRT-MULTIMODAL",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-WRT-HANDOFF",
+      "heading_ja": "制作原稿の整合確認・版管理と次段階への引継ぎ",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-WRT-HANDOFF",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-WRT-HANDOFF",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-WRT-CHECK",
+      "heading_ja": "工程内のチェックリスト",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "チェックリストへの記入だけで研究の妥当性、利用権限又は公開承認は成立しない。実案件では状態、根拠、担当、日時、異議、改訂をChecklistRunとして保持する。"
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-007",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-010",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-011",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-025",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-026",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-027",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-028",
+            "version": "0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-WRT-HANDOVER",
+      "heading_ja": "制作の引継ぎ、品質確認と差戻し",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "本文・図表・台本の対象版、主張・根拠ID、引用と原記録の対応、権利・解禁条件、未確認の科学的主張、校閲上の重点項目を次工程に引き渡す。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "制作上の確認は次の編集・校正・校閲、専門確認、公開承認から独立して記録する。科学的疑義は調査、取材発言の疑義は取材へ戻し、停止の判断と理由を残す。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-WRT-REFERENCES",
+      "heading_ja": "参照資料・制度上の射程と改訂",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "参照資料の正式な所在と適用上の留意事項は content/operational/stage_04/REFERENCES.md に記す。研究成果のプレスリリース指針は一般的な独立報道の全工程を規定せず、政府の公用文作成の手引も全媒体を法的に拘束するものではない。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "規格とプロセス案は版・確認日・文書IDで参照し、改訂を追跡する。電子的に閲覧する文書と印刷物では代替テキスト等の機能面が異なるため、媒体固有の品質確認を別に行う。"
+        }
+      ]
+    }
+  ]
+}

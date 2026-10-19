@@ -1,0 +1,162 @@
+{
+  "recipe": "PUB-PLN-HANDBOOK",
+  "version": "0.1.0",
+  "included": [
+    {
+      "id": "KNW-PLANNING-TRACE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "5baf1d0141f7e30e0a67f9736615c14d77af1c9095992ae64cf45d827d3a2d67",
+      "path": "content/operational/stage_01/knowledge/KNW-PLANNING-TRACE.json"
+    },
+    {
+      "id": "KNW-CLAIM-BOUNDARY",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "2d8c61059487415b426f3c99e620cc47f32e8e35317d253d97148939f2ce1a33",
+      "path": "content/operational/stage_01/knowledge/KNW-CLAIM-BOUNDARY.json"
+    },
+    {
+      "id": "KNW-AUDIENCE-ACCESS",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "9dd42a7b1e03c6c99bca658e053bd90abfd43d6f35047f50e649905cafd03f7c",
+      "path": "content/operational/stage_01/knowledge/KNW-AUDIENCE-ACCESS.json"
+    },
+    {
+      "id": "KNW-ETHIC-SELECTION",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "c2c8e76a60debd79f0f55be79ce035519397deaa7c0dcca8e00c6f98a9724d84",
+      "path": "content/operational/stage_01/knowledge/KNW-ETHIC-SELECTION.json"
+    },
+    {
+      "id": "KNW-ETHIC-INDEPENDENCE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "c9bee9b7f522d376d90057f46338674c795643400ea3fe42adc3e25868ff3647",
+      "path": "content/operational/stage_01/knowledge/KNW-ETHIC-INDEPENDENCE.json"
+    },
+    {
+      "id": "TSK-PLN-INTAKE",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "093f040be7c4bd4d8f6c22dbf6b56116318c051b031838de17fbcfd03ec899d0",
+      "path": "content/operational/stage_01/tasks/TSK-PLN-INTAKE.json"
+    },
+    {
+      "id": "PRC-PLN-INTAKE",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "2df0326e8f9599bff2c5c0259afe4ff85a59bef2e924ea595e14e8f4bb5bedb1",
+      "path": "content/operational/stage_01/procedures/PRC-PLN-INTAKE.json"
+    },
+    {
+      "id": "TSK-PLN-TOPIC",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "059dd1be02b37d0ac7cb283e7e208bbf0362880209414f0bc73933578b090777",
+      "path": "content/operational/stage_01/tasks/TSK-PLN-TOPIC.json"
+    },
+    {
+      "id": "PRC-PLN-TOPIC",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "56a1dbb1b174e835e07c25eab31267f6bf8109174782a9661cd09c39ae8743f0",
+      "path": "content/operational/stage_01/procedures/PRC-PLN-TOPIC.json"
+    },
+    {
+      "id": "TSK-PLN-AUDIENCE",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "961c138c490987000e571d5a2f36ab32268e167b8210c142d1823a5fc8408e75",
+      "path": "content/operational/stage_01/tasks/TSK-PLN-AUDIENCE.json"
+    },
+    {
+      "id": "PRC-PLN-AUDIENCE",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "7abb9f05d936165f98e3be5c33ad4ab869a36c654d8e8ad7b57549c859358b5c",
+      "path": "content/operational/stage_01/procedures/PRC-PLN-AUDIENCE.json"
+    },
+    {
+      "id": "TSK-PLN-ANGLE",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "be60aa40ec1b7aa7a701abd855fefddc5a57391f8dcd4a45013a8e85801a1d93",
+      "path": "content/operational/stage_01/tasks/TSK-PLN-ANGLE.json"
+    },
+    {
+      "id": "PRC-PLN-ANGLE",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "e4f1699508be059c4caf5421e0f488b7713420dfc311cb3e78e1f9e056702302",
+      "path": "content/operational/stage_01/procedures/PRC-PLN-ANGLE.json"
+    },
+    {
+      "id": "TSK-PLN-FORMAT",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "afa9935c79e98d5b6b50ce3e63a4c3136ad1b5ef4e524cbb70af85d9afea46c1",
+      "path": "content/operational/stage_01/tasks/TSK-PLN-FORMAT.json"
+    },
+    {
+      "id": "PRC-PLN-FORMAT",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "766241fb846a537ae962026763673e99df63efd3c1abd6eab4d5c9ede18bb78a",
+      "path": "content/operational/stage_01/procedures/PRC-PLN-FORMAT.json"
+    },
+    {
+      "id": "TSK-PLN-GATE",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "76b56e21b987efb24b7797fd6183aa6289c3dcf420635752e06ead2a19c36cc2",
+      "path": "content/operational/stage_01/tasks/TSK-PLN-GATE.json"
+    },
+    {
+      "id": "PRC-PLN-GATE",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "da5f5c53d17218c7c9871dcedadb41669269d878e79c1ef9eb1b9dcfe72572c0",
+      "path": "content/operational/stage_01/procedures/PRC-PLN-GATE.json"
+    },
+    {
+      "id": "TPL-CHK-015",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "bb4d0ce321ce40178ec662c9f87039e871db12f1fdd0345776dbcf8c5efd0b3d",
+      "path": "content/templates/TPL-CHK-015.json"
+    },
+    {
+      "id": "TPL-CHK-016",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "43f8344689983413b44a1b3d045cddf7395ee9214de4ceac55219dfa60700d26",
+      "path": "content/templates/TPL-CHK-016.json"
+    },
+    {
+      "id": "TPL-CHK-017",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "e1576829cc3f27eb5aaa0ac7c4374e2f99949e332394ab3651a5a52d2bac58df",
+      "path": "content/templates/TPL-CHK-017.json"
+    },
+    {
+      "id": "PUB-PLN-HANDBOOK",
+      "kind": "publication_recipe",
+      "version": "0.1.0",
+      "sha256": "c26b67cefbf880941fbfd7fa8a5b5d9cade5e5140dfc0703cd6102245e1f730e",
+      "path": "content/operational/stage_01/recipes/PUB-PLN-HANDBOOK.json"
+    },
+    {
+      "id": "RENDER-TEX",
+      "kind": "renderer",
+      "version": "0.1.0",
+      "sha256": "c7f65f107881aa5977623f1f717ab418c94d5f94b537c75633d9d06f187fb4db",
+      "path": "script/compose_handbook.py"
+    }
+  ],
+  "print_style_sha256": "c5560109a7441048abd09e3581b874cb264eac39b65420456dc57431665e7b2a",
+  "tex_sha256": "092e105ddddbd2dde1e8a36b9b4440442985b531c3cd14a0433beaa3e2cfc824"
+}

@@ -1,0 +1,243 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-057",
+  "kind": "document",
+  "slug": "explanatory_faq",
+  "title_ja": "研究説明FAQ原稿",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P1",
+  "applicable_pipeline_stages": [
+    "04"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-057-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-057-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": true,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「案件・文書の識別子」を記録する。"
+        },
+        {
+          "id": "TPL-DOC-057-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「作成者と連絡先」を記録する。"
+        },
+        {
+          "id": "TPL-DOC-057-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「作成日と対象版」を記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-057-S2",
+      "heading_ja": "想定される質問",
+      "fields": [
+        {
+          "id": "TPL-DOC-057-F004",
+          "label_ja": "対象読者と説明目的",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「対象読者と説明目的」を記録する。"
+        },
+        {
+          "id": "TPL-DOC-057-F005",
+          "label_ja": "重要な用語",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「重要な用語」を記録する。"
+        },
+        {
+          "id": "TPL-DOC-057-F006",
+          "label_ja": "質問と回答案",
+          "type": "table",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「質問と回答案」を記録する。",
+          "columns": [
+            "箇所・ID",
+            "記述・出典",
+            "確認者・状態",
+            "留意点"
+          ],
+          "min_rows": 3
+        },
+        {
+          "id": "TPL-DOC-057-F007",
+          "label_ja": "理解上の誤解と訂正",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「理解上の誤解と訂正」を記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-057-S3",
+      "heading_ja": "正確性と更新",
+      "fields": [
+        {
+          "id": "TPL-DOC-057-F008",
+          "label_ja": "各回答の根拠",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「各回答の根拠」を記録する。"
+        },
+        {
+          "id": "TPL-DOC-057-F009",
+          "label_ja": "答えられない事項",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「答えられない事項」を記録する。"
+        },
+        {
+          "id": "TPL-DOC-057-F010",
+          "label_ja": "専門家への照会先",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「専門家への照会先」を記録する。"
+        },
+        {
+          "id": "TPL-DOC-057-F011",
+          "label_ja": "更新条件",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「更新条件」を記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-057-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-057-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「参照資料と根拠ID」を記録する。",
+          "columns": [
+            "箇所・ID",
+            "記述・出典",
+            "確認者・状態",
+            "留意点"
+          ],
+          "min_rows": 3
+        },
+        {
+          "id": "TPL-DOC-057-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「未確認事項・例外」を記録する。"
+        },
+        {
+          "id": "TPL-DOC-057-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「点検・改訂の記録」を記録する。",
+          "columns": [
+            "箇所・ID",
+            "記述・出典",
+            "確認者・状態",
+            "留意点"
+          ],
+          "min_rows": 3
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": [],
+    "checklist_template_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "記入欄の構造案。法的・組織的承認の代替として利用しない。",
+  "composition_slots": [
+    {
+      "id": "TPL-DOC-057-B01",
+      "title_ja": "読者の問い",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-057-B02",
+      "title_ja": "根拠に基づく回答",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-057-B03",
+      "title_ja": "適用範囲・留保",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-057-B04",
+      "title_ja": "参照先",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    }
+  ],
+  "workflow_id": "editorial-eight-stage"
+}

@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-CHK-039",
+  "kind": "checklist",
+  "slug": "social_media_qa",
+  "title_ja": "SNS掲載確認チェックリスト",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P1",
+  "applicable_pipeline_stages": [
+    "07"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-CHK-039-S1",
+      "heading_ja": "確認項目",
+      "items": [
+        {
+          "id": "TPL-CHK-039-I001",
+          "criterion_ja": "投稿文と承認原稿の主張・留保・出典の関係を記録した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "主張IDの対応表に加え、記録の版と確認者を残す。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-039-I002",
+          "criterion_ja": "画像説明と字幕、短縮文の意味が原文と整合する",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "媒体別校閲結果に加え、記録の版と確認者を残す。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-039-I003",
+          "criterion_ja": "投稿URL・アカウント・公開時刻と時区を確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "予約確認と媒体情報に加え、記録の版と確認者を残す。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-039-I004",
+          "criterion_ja": "引用素材の再利用条件と掲載先での使用を確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "利用許諾記録に加え、記録の版と確認者を残す。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-039-I005",
+          "criterion_ja": "公開後のリンク・訂正・問い合わせ対応先を確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "窓口と受渡しに加え、記録の版と確認者を残す。",
+          "human_review": true
+        }
+      ]
+    },
+    {
+      "id": "TPL-CHK-039-S2",
+      "heading_ja": "点検結果の記録",
+      "fields": [
+        {
+          "id": "TPL-CHK-039-F001",
+          "label_ja": "対象案件・対象版",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "対象案件・対象版を対象版・媒体・担当者・根拠資料に結び付ける。"
+        },
+        {
+          "id": "TPL-CHK-039-F002",
+          "label_ja": "担当者と点検日",
+          "type": "date",
+          "required": false,
+          "description_ja": "担当者と点検日を対象版・媒体・担当者・根拠資料に結び付ける。"
+        },
+        {
+          "id": "TPL-CHK-039-F003",
+          "label_ja": "未解決事項と対応",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "未解決事項と対応を対象版・媒体・担当者・根拠資料に結び付ける。"
+        },
+        {
+          "id": "TPL-CHK-039-F004",
+          "label_ja": "確認に用いた資料ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "確認に用いた資料IDを対象版・媒体・担当者・根拠資料に結び付ける。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [
+      "TSK-PUB-CHANNEL",
+      "TSK-PUB-SOCIAL"
+    ],
+    "knowledge_ids": [
+      "KNW-PUB-TRACE"
+    ]
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho"
+  },
+  "notes_ja": "本チェックリストの記入・集計は実際の公開権限や法令適合を証明しない。",
+  "workflow_id": "editorial-eight-stage"
+}

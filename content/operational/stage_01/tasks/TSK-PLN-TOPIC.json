@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-PLN-TOPIC",
+  "version": "0.1.0",
+  "title": {
+    "ja": "企画候補の探索・比較と暫定選定"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "企画編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "01"
+  ],
+  "inputs": [
+    "取材候補一覧、一次資料の所在、既存記事、公開可能な情報"
+  ],
+  "outputs": [
+    "企画候補比較票、選定理由、保留候補と再検討条件"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "候補の公共的関連性と根拠資料の有無を記録した",
+    "話題性とエビデンス確実性を別の尺度で評価した",
+    "採否と代替候補について判断理由を記録した"
+  ],
+  "review_roles": [
+    "編集責任者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-PLN-TOPIC",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-032",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-030",
+      "version": "0.2.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-016",
+      "version": "0.2.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-PLANNING-TRACE",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-CLAIM-BOUNDARY",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-AUDIENCE-ACCESS",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETHIC-SELECTION",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETHIC-INDEPENDENCE",
+      "version": "0.1.0"
+    }
+  ]
+}

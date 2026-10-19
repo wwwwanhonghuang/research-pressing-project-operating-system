@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ARC-FEEDBACK",
+  "version": "0.1.0",
+  "title": {
+    "ja": "応答情報の収集と認識上の偏り"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本心理学会による科学的研究のプレスリリース指針。特定分野の参考とし、全領域を拘束するものではない。"
+    },
+    {
+      "source_id": "SRC-PPC",
+      "locator": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "個人情報保護委員会の通則ガイドライン。具体的な個人情報取扱い、保存期間及び適用法令の検証が必要。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "08"
+    ],
+    "audiences": [
+      "編集・訂正担当者",
+      "科学的確認担当者",
+      "保存担当者",
+      "評価担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ARC-FEEDBACK-H1",
+      "kind": "heading",
+      "text": "対象と目的",
+      "level": 2
+    },
+    {
+      "id": "KNW-ARC-FEEDBACK-P1",
+      "kind": "paragraph",
+      "text": "質問、否定的反応、沈黙、アクセス障壁は異なる情報であり、一つの評点へ単純に統合しない。"
+    },
+    {
+      "id": "KNW-ARC-FEEDBACK-H2",
+      "kind": "heading",
+      "text": "記録と実施",
+      "level": 2
+    },
+    {
+      "id": "KNW-ARC-FEEDBACK-P2",
+      "kind": "paragraph",
+      "text": "分類規則、収集期間、取得可能性、言語・媒体・回答意欲による選択偏りを明記する。"
+    },
+    {
+      "id": "KNW-ARC-FEEDBACK-H3",
+      "kind": "heading",
+      "text": "解釈と判断の境界",
+      "level": 2
+    },
+    {
+      "id": "KNW-ARC-FEEDBACK-P3",
+      "kind": "paragraph",
+      "text": "記録可能な発言を読者全体の代表意見とみなす前に収集設計と母集団を確認する。"
+    }
+  ]
+}

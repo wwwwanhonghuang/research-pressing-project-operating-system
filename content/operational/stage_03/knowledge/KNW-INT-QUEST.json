@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-INT-QUEST",
+  "version": "0.1.0",
+  "title": {
+    "ja": "質問設計と認識上の限界"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "取材担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA-SC",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究上の限界、発言の正確な取扱い、報道前後の確認に関する専門指針。主として研究成果のプレスリリース向け。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "03"
+    ],
+    "audiences": [
+      "取材担当者",
+      "編集責任者",
+      "協力者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-INT-QUEST-B01A",
+      "kind": "heading",
+      "text": "問いの構造",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-QUEST-B01B",
+      "kind": "paragraph",
+      "text": "研究課題、方法、観測・計算、解釈、限界、反対説、歴史的形成、社会的影響、今後の仮説を異なる問いとして準備する。誘導質問を避け、対象者が反論・補足できる余地を残す。"
+    },
+    {
+      "id": "KNW-INT-QUEST-B02A",
+      "kind": "heading",
+      "text": "根拠との接続",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-QUEST-B02B",
+      "kind": "paragraph",
+      "text": "重要質問に関連する出典ID、主張ID、確認したい不確実性を付す。質問で既に正しいと仮定している内容を特定し、必要なら前提を検証する問いに変更する。"
+    },
+    {
+      "id": "KNW-INT-QUEST-B03A",
+      "kind": "heading",
+      "text": "分かりやすさ",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-QUEST-B03B",
+      "kind": "paragraph",
+      "text": "専門家と一般読者に共通する意味を確かめるため、定義、実例、類比の限界を質問に含める。研究上の結果と将来の目標を区別する。"
+    },
+    {
+      "id": "KNW-INT-QUEST-B04A",
+      "kind": "heading",
+      "text": "追質問",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-QUEST-B04B",
+      "kind": "paragraph",
+      "text": "曖昧な時点、対象母集団、方法、数値、出典の混同があれば、その場で条件を確認し、後で照会できる未決リストにも残す。"
+    }
+  ]
+}

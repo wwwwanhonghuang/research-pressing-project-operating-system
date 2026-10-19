@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-090",
+  "kind": "document",
+  "slug": "correction_history",
+  "title_ja": "訂正・更新履歴簿",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "08"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-090-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-090-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「案件・文書の識別子」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        },
+        {
+          "id": "TPL-DOC-090-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "「作成者と連絡先」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        },
+        {
+          "id": "TPL-DOC-090-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "「作成日と対象版」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-090-S2",
+      "heading_ja": "改訂事実",
+      "fields": [
+        {
+          "id": "TPL-DOC-090-F004",
+          "label_ja": "対象媒体・資料",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "元記事と訂正記事のURL、PDF、SNS、動画など媒体別に登録する。"
+        },
+        {
+          "id": "TPL-DOC-090-F005",
+          "label_ja": "元版と改訂版",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "旧版と新しい版のID、ハッシュ、公開状態、相互リンクを示す。"
+        },
+        {
+          "id": "TPL-DOC-090-F006",
+          "label_ja": "修正日時",
+          "type": "date",
+          "required": false,
+          "description_ja": "「修正日時」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        },
+        {
+          "id": "TPL-DOC-090-F007",
+          "label_ja": "修正箇所と内容",
+          "type": "table",
+          "required": false,
+          "description_ja": "意味が変わる箇所と形式変更だけの箇所を区別して記述する。",
+          "columns": [
+            "対象と版",
+            "根拠・参照ID",
+            "判断・担当",
+            "例外と日時"
+          ],
+          "min_rows": 2
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-090-S3",
+      "heading_ja": "説明と証跡",
+      "fields": [
+        {
+          "id": "TPL-DOC-090-F008",
+          "label_ja": "変更理由と根拠",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "修正根拠の出典、専門的判断、権限者、変更理由を明記する。"
+        },
+        {
+          "id": "TPL-DOC-090-F009",
+          "label_ja": "判断者と確認者",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「判断者と確認者」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        },
+        {
+          "id": "TPL-DOC-090-F010",
+          "label_ja": "公開訂正の表示",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "読者に表示する訂正の日時・位置・リンク及び確認者を記録する。"
+        },
+        {
+          "id": "TPL-DOC-090-F011",
+          "label_ja": "後続媒体への反映",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "派生媒体の修正結果、未反映、キャッシュ、第三者複製の状態を記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-090-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-090-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "「参照資料と根拠ID」について対象版、根拠識別子、確認日時と未確認事項を示す。",
+          "columns": [
+            "対象と版",
+            "根拠・参照ID",
+            "判断・担当",
+            "例外と日時"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-090-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「未確認事項・例外」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        },
+        {
+          "id": "TPL-DOC-090-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "「点検・改訂の記録」について対象版、根拠識別子、確認日時と未確認事項を示す。",
+          "columns": [
+            "対象と版",
+            "根拠・参照ID",
+            "判断・担当",
+            "例外と日時"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [
+      "TSK-ARC-HANDOFF",
+      "TSK-ARC-VERIFY",
+      "TSK-ARC-NOTICE",
+      "TSK-ARC-PROPAGATE"
+    ],
+    "knowledge_ids": [
+      "KNW-ARC-TRACE",
+      "KNW-ARC-VERSION"
+    ],
+    "checklist_template_ids": [
+      "TPL-CHK-042",
+      "TPL-CHK-043",
+      "TPL-CHK-044",
+      "TPL-CHK-045"
+    ]
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "独立の運用試案。記録の存在は科学的妥当性、個人情報適合、修正又は撤回の決裁権限を保証しない。",
+  "workflow_id": "editorial-eight-stage"
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-RES-REGISTER",
+  "version": "0.1.0",
+  "title": {
+    "ja": "一次資料の取得・同一性・版・来歴の登録"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "調査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "02"
+  ],
+  "inputs": [
+    "候補資料一覧、論文・報告書・データへのアクセス権"
+  ],
+  "outputs": [
+    "資料・出典台帳、版情報、引用位置と取得条件の記録"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "原資料への到達経路が記録された",
+    "引用位置と版が照合できる",
+    "更新情報、権利及び取得日が明示された"
+  ],
+  "review_roles": [
+    "調査責任者又は編集責任者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-RES-REGISTER",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-016",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-039",
+      "version": "0.1.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-003",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-005",
+      "version": "0.1.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-RES-PROVENANCE",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-RIGHTS",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-INTEGRITY",
+      "version": "0.1.0"
+    }
+  ]
+}

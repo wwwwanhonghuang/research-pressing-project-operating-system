@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-WRT-HANDOFF",
+  "version": "0.1.0",
+  "title": {
+    "ja": "制作原稿の整合確認・版管理と次段階への引継ぎの実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集責任者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "汎用的な編集制作の独立設計案。媒体の役割、権利、組織規程、適用される法令は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "編集責任者"
+  ],
+  "inputs": [
+    "本文・見出し・図表・台本",
+    "根拠台帳",
+    "引用台帳",
+    "変更記録"
+  ],
+  "outputs": [
+    "制作物の版セット",
+    "未解決事項台帳",
+    "編集・校閲への引継ぎ"
+  ],
+  "steps": [
+    {
+      "id": "PRC-WRT-HANDOFF-S1",
+      "instruction": "必要な媒体と文書の有無、版番号、担当、状態を一覧化する",
+      "expected_output": "制作物の版セット",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-WRT-HANDOFF-S2",
+      "instruction": "主張・出典ID、図表と本文、引用と原記録の対応を確認する",
+      "expected_output": "未解決事項台帳",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-HANDOFF-S3",
+      "instruction": "誇張、重大な権利疑義、誤訳、欠けた限定条件と未回答事項を抽出する",
+      "expected_output": "編集・校閲への引継ぎ",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-HANDOFF-S4",
+      "instruction": "未確認事項の重要性に応じ差戻し先、担当と期限を決める",
+      "expected_output": "制作物の版セット",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-HANDOFF-S5",
+      "instruction": "後続の編集・校正・校閲が点検すべき重点箇所を示す",
+      "expected_output": "未解決事項台帳",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-HANDOFF-S6",
+      "instruction": "根拠が確認された箇所と本文上未完成の箇所を分けて引き渡す",
+      "expected_output": "編集・校閲への引継ぎ",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-HANDOFF-S7",
+      "instruction": "編集責任者が制作上の節目を確認し、公開承認の未実施を明示する",
+      "expected_output": "制作物の版セット",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "重大な根拠不足はStage 2へ差し戻す",
+    "発言の利用条件の疑義はStage 3へ戻す",
+    "本段階の完了を公開承認とみなさない"
+  ]
+}

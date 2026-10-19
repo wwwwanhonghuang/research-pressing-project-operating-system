@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-PUB-WEB",
+  "version": "0.1.0",
+  "title": {
+    "ja": "ウェブ公開品質と到達性"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "公開・配信業務の設計・審査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-RFC-9110",
+      "locator": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "accessed_on": "2026-10-19",
+      "verification_note": "RFC 9110 HTTP Semantics。HTTP応答の技術的意味に限る。公開内容の正確性や許諾の規範ではない。"
+    },
+    {
+      "source_id": "SRC-WCAG22",
+      "locator": "https://www.w3.org/TR/WCAG22/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "WCAG 2.2 W3C Recommendation。適用する達成基準は媒体と契約・規程の範囲に従い定める。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "07"
+    ],
+    "audiences": [
+      "編集担当者",
+      "配信担当者",
+      "レビュアー",
+      "公開責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-PUB-WEB-H01",
+      "kind": "heading",
+      "text": "適用範囲と目的",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-WEB-P01",
+      "kind": "paragraph",
+      "text": "HTML表示、主要リンク、ダウンロード、言語指定、ページ見出し、検索用情報、モバイル閲覧を組み合わせて確認する。"
+    },
+    {
+      "id": "KNW-PUB-WEB-H02",
+      "kind": "heading",
+      "text": "実施上の確認事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-WEB-P02",
+      "kind": "paragraph",
+      "text": "HTTP成功応答、URL到達、正しい本文の表示、アクセシビリティの確認は異なる検査である。"
+    },
+    {
+      "id": "KNW-PUB-WEB-H03",
+      "kind": "heading",
+      "text": "境界と判断事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-WEB-P03",
+      "kind": "paragraph",
+      "text": "公開前環境と公開後本番環境を分けて結果を記録する。"
+    }
+  ]
+}

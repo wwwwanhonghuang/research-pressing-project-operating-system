@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-080",
+  "kind": "document",
+  "slug": "social_media_post_plan",
+  "title_ja": "SNS投稿・展開計画書",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P1",
+  "applicable_pipeline_stages": [
+    "07"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-080-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-080-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「案件・文書の識別子」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        },
+        {
+          "id": "TPL-DOC-080-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "「作成者と連絡先」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        },
+        {
+          "id": "TPL-DOC-080-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "「作成日と対象版」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-080-S2",
+      "heading_ja": "投稿設計",
+      "fields": [
+        {
+          "id": "TPL-DOC-080-F004",
+          "label_ja": "投稿の目的と対象",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "投稿文と原文の主張ID、留保事項、リンク先、投稿先を一対一で照合する。"
+        },
+        {
+          "id": "TPL-DOC-080-F005",
+          "label_ja": "投稿本文案",
+          "type": "table",
+          "required": false,
+          "description_ja": "「投稿本文案」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。",
+          "columns": [
+            "対象／版",
+            "媒体／参照ID",
+            "担当／確認結果",
+            "例外・履歴"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-080-F006",
+          "label_ja": "画像とリンク",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「画像とリンク」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        },
+        {
+          "id": "TPL-DOC-080-F007",
+          "label_ja": "公開・予約予定",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「公開・予約予定」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-080-S3",
+      "heading_ja": "確認と対応",
+      "fields": [
+        {
+          "id": "TPL-DOC-080-F008",
+          "label_ja": "科学的根拠と表現の留保",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「科学的根拠と表現の留保」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        },
+        {
+          "id": "TPL-DOC-080-F009",
+          "label_ja": "画像権利と代替テキスト",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「画像権利と代替テキスト」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        },
+        {
+          "id": "TPL-DOC-080-F010",
+          "label_ja": "反応への対応範囲",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「反応への対応範囲」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        },
+        {
+          "id": "TPL-DOC-080-F011",
+          "label_ja": "訂正・取り下げの手順",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「訂正・取り下げの手順」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-080-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-080-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "「参照資料と根拠ID」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。",
+          "columns": [
+            "対象／版",
+            "媒体／参照ID",
+            "担当／確認結果",
+            "例外・履歴"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-080-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「未確認事項・例外」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        },
+        {
+          "id": "TPL-DOC-080-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "「点検・改訂の記録」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。",
+          "columns": [
+            "対象／版",
+            "媒体／参照ID",
+            "担当／確認結果",
+            "例外・履歴"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [
+      "TSK-PUB-SOCIAL"
+    ],
+    "knowledge_ids": [
+      "KNW-PUB-TRACE",
+      "KNW-PUB-PACKAGE"
+    ],
+    "checklist_template_ids": [
+      "TPL-CHK-037"
+    ]
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "独立の運用試案。記入結果は実際の公開決裁の証拠にはならない。媒体、版、根拠、担当者と判断記録を区別する。",
+  "workflow_id": "editorial-eight-stage"
+}

@@ -1,0 +1,4706 @@
+{
+  "schema_version": "0.1.0",
+  "document_id": "PUB-ARC-HANDBOOK",
+  "version": "0.1.0",
+  "title_ja": "訂正・評価・アーカイブ 業務ハンドブック（独立試案・統合版）",
+  "status": "independent_draft",
+  "chapters": [
+    {
+      "id": "CH-ARC-INTRO",
+      "title_ja": "適用範囲と第7段階からの継続性",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "本書は公開後に発見された問題への対応、読者からの異議、効果評価、保存及び改善を一連の記録可能な実務として構成する。元の公開版、科学的根拠、公開後の更新情報、判断者、修正通知、各媒体の掲載状況を結び付ける。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "第7段階の配信ログと第6段階の決裁対象を引き継ぐ。研究成果の学術的撤回と広報資料の修正・撤回は適用条件が異なる。担当者は判断権限と媒体ごとの利用・契約条件を確認する。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "本書の記録と自動検証は権限者による処分・訂正・公表の判断を意味しない。観測値、解釈、原因仮説、改善提案を区別する。"
+        }
+      ]
+    },
+    {
+      "id": "CH-ARC-HANDOFF",
+      "title_ja": "公開記録と継続対応事項の受領",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-ARC-HANDOFF",
+            "version": "0.1.0",
+            "title": {
+              "ja": "公開記録と継続対応事項の受領"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "記録管理担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "08"
+            ],
+            "inputs": [
+              "第7段階の配信ログ",
+              "実公開版",
+              "公開承認ID",
+              "各媒体のURLと投稿ID"
+            ],
+            "outputs": [
+              "第8段階の受領記録"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "第8段階の受領記録に対象URL、版、判断主体、日時、根拠及び未解決事項を結び付けた",
+              "元の公開記録と変更後の記録を対応づけ、例外と人的な判断・保留を識別した",
+              "次の担当への通知又は引継ぎと、必要な再審査条件を残した"
+            ],
+            "review_roles": [
+              "訂正・評価責任者",
+              "必要な専門家と権限者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-ARC-HANDOFF",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-TRACE",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-ARCHIVE",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-ARC-ACCOUNTABILITY",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-090",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-044",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-HANDOFF",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-ARC-HANDOFF",
+            "version": "0.1.0",
+            "title": {
+              "ja": "公開記録と継続対応事項の受領の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "記録管理担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "記録管理担当者"
+            ],
+            "inputs": [
+              "第7段階の配信ログ",
+              "実公開版",
+              "公開承認ID",
+              "各媒体のURLと投稿ID"
+            ],
+            "outputs": [
+              "第8段階の受領記録"
+            ],
+            "steps": [
+              {
+                "id": "PRC-ARC-HANDOFF-S1",
+                "instruction": "承認版と実公開版、媒体、URL、日時・時区、公開担当者を対応づける",
+                "expected_output": "版・媒体対応表",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-HANDOFF-S2",
+                "instruction": "第7段階の未解決事項、初期監視、緊急連絡先を引き継ぐ",
+                "expected_output": "継続対応票",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-HANDOFF-S3",
+                "instruction": "刊行物・動画・SNS・配布資料の依存関係を登録する",
+                "expected_output": "派生物・配信先グラフ",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-HANDOFF-S4",
+                "instruction": "証跡の欠損、公開条件の相違、再取得できない素材を記録する",
+                "expected_output": "不足資料票",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-HANDOFF-S5",
+                "instruction": "受領担当者と確認日時を残し、必要に応じて第7段階へ照会する",
+                "expected_output": "受領確認",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "実公開版が特定できない場合は後続の訂正判定を保留する"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-HANDOFF",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-ARC-SIGNALS",
+      "title_ja": "読者からの指摘・更新情報の受理",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-ARC-SIGNALS",
+            "version": "0.1.0",
+            "title": {
+              "ja": "読者からの指摘・更新情報の受理"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "読者対応担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "08"
+            ],
+            "inputs": [
+              "問い合わせ",
+              "科学論文の更新",
+              "外部掲載",
+              "自己点検の発見"
+            ],
+            "outputs": [
+              "指摘・更新受付台帳"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "指摘・更新受付台帳に対象URL、版、判断主体、日時、根拠及び未解決事項を結び付けた",
+              "元の公開記録と変更後の記録を対応づけ、例外と人的な判断・保留を識別した",
+              "次の担当への通知又は引継ぎと、必要な再審査条件を残した"
+            ],
+            "review_roles": [
+              "訂正・評価責任者",
+              "必要な専門家と権限者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-ARC-SIGNALS",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-INTAKE",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-TRACE",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-ARC-DIALOGUE",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-ARC-PRIVACY",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-089",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-042",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-SIGNALS",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-ARC-SIGNALS",
+            "version": "0.1.0",
+            "title": {
+              "ja": "読者からの指摘・更新情報の受理の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "読者対応担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "読者対応担当者"
+            ],
+            "inputs": [
+              "問い合わせ",
+              "科学論文の更新",
+              "外部掲載",
+              "自己点検の発見"
+            ],
+            "outputs": [
+              "指摘・更新受付台帳"
+            ],
+            "steps": [
+              {
+                "id": "PRC-ARC-SIGNALS-S1",
+                "instruction": "受付日時、対象URL、版、連絡経路と受付者を記録する",
+                "expected_output": "案件識別子",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-SIGNALS-S2",
+                "instruction": "指摘の原文と証拠を分け、発信者を必要以上に特定しない",
+                "expected_output": "原文保存とアクセス制限",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-SIGNALS-S3",
+                "instruction": "科学的信頼性、個人情報、安全、権利、誤植等の性質を暫定分類する",
+                "expected_output": "疑義の分類",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-SIGNALS-S4",
+                "instruction": "受付確認、期限、連絡方法、対応言語を決める",
+                "expected_output": "受付応答記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-SIGNALS-S5",
+                "instruction": "事実と解釈の不一致を区別して調査担当に引き渡す",
+                "expected_output": "調査依頼",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "生命・身体や個人情報への重大な影響を疑う場合は緊急経路に直結する",
+              "匿名の指摘も内容の根拠によって評価する"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-SIGNALS",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-ARC-TRIAGE",
+      "title_ja": "指摘の緊急度と影響範囲の一次評価",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-ARC-TRIAGE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "指摘の緊急度と影響範囲の一次評価"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正調整担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "08"
+            ],
+            "inputs": [
+              "受付台帳",
+              "公開媒体対応図",
+              "権利・個人情報条件"
+            ],
+            "outputs": [
+              "優先順位・暫定措置案"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "優先順位・暫定措置案に対象URL、版、判断主体、日時、根拠及び未解決事項を結び付けた",
+              "元の公開記録と変更後の記録を対応づけ、例外と人的な判断・保留を識別した",
+              "次の担当への通知又は引継ぎと、必要な再審査条件を残した"
+            ],
+            "review_roles": [
+              "訂正・評価責任者",
+              "必要な専門家と権限者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-ARC-TRIAGE",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-TRIAGE",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-TRACE",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-ARC-ACCOUNTABILITY",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-ARC-HARM",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-089",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-042",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-TRIAGE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-ARC-TRIAGE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "指摘の緊急度と影響範囲の一次評価の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正調整担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "訂正調整担当者"
+            ],
+            "inputs": [
+              "受付台帳",
+              "公開媒体対応図",
+              "権利・個人情報条件"
+            ],
+            "outputs": [
+              "優先順位・暫定措置案"
+            ],
+            "steps": [
+              {
+                "id": "PRC-ARC-TRIAGE-S1",
+                "instruction": "誤りの具体的な箇所と読み手への影響を暫定記述する",
+                "expected_output": "影響記述",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-TRIAGE-S2",
+                "instruction": "科学・倫理・法令・権利・安全の担当分野へ振り分ける",
+                "expected_output": "専門確認先",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-TRIAGE-S3",
+                "instruction": "再配信・引用・ダウンロードされた範囲を可能な限り推定する",
+                "expected_output": "派生物・露出一覧",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-TRIAGE-S4",
+                "instruction": "必要に応じて公開停止・注意表示・説明追加を権限者へ提案する",
+                "expected_output": "暫定措置依頼",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-TRIAGE-S5",
+                "instruction": "重大度、根拠の不足、次回判定日時を記録する",
+                "expected_output": "優先順位記録",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "緊急措置の提案と実際の公開停止決裁を区別する",
+              "未確定の疑義を不正と断定しない"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-TRIAGE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-ARC-VERIFY",
+      "title_ja": "指摘内容と原資料・現行知見の再照合",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-ARC-VERIFY",
+            "version": "0.1.0",
+            "title": {
+              "ja": "指摘内容と原資料・現行知見の再照合"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "科学的・編集的確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "08"
+            ],
+            "inputs": [
+              "公開版",
+              "研究資料",
+              "引用箇所",
+              "指摘原文",
+              "更新された一次情報"
+            ],
+            "outputs": [
+              "照合結果・確実性評価"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "照合結果・確実性評価に対象URL、版、判断主体、日時、根拠及び未解決事項を結び付けた",
+              "元の公開記録と変更後の記録を対応づけ、例外と人的な判断・保留を識別した",
+              "次の担当への通知又は引継ぎと、必要な再審査条件を残した"
+            ],
+            "review_roles": [
+              "訂正・評価責任者",
+              "必要な専門家と権限者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-ARC-VERIFY",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-VERIFICATION",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-TRACE",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-ARC-INTEGRITY",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-090",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-042",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-VERIFY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-ARC-VERIFY",
+            "version": "0.1.0",
+            "title": {
+              "ja": "指摘内容と原資料・現行知見の再照合の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "科学的・編集的確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "科学的・編集的確認担当者"
+            ],
+            "inputs": [
+              "公開版",
+              "研究資料",
+              "引用箇所",
+              "指摘原文",
+              "更新された一次情報"
+            ],
+            "outputs": [
+              "照合結果・確実性評価"
+            ],
+            "steps": [
+              {
+                "id": "PRC-ARC-VERIFY-S1",
+                "instruction": "問題となる文、図、統計、引用と原資料の箇所を一対一で結ぶ",
+                "expected_output": "対象箇所一覧",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-VERIFY-S2",
+                "instruction": "原資料の版、訂正・撤回状態、方法・測定条件を確認する",
+                "expected_output": "根拠状態票",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-VERIFY-S3",
+                "instruction": "確認できた事実、専門家の意見、解釈、未解決の問いを分ける",
+                "expected_output": "論点別照合記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-VERIFY-S4",
+                "instruction": "影響する結論・見出し・字幕・画像文字・SNS投稿を洗い出す",
+                "expected_output": "主張依存関係表",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-VERIFY-S5",
+                "instruction": "照合担当以外のレビュー担当者に結果と留保を渡す",
+                "expected_output": "独立再確認",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "原資料が確認できない場合は判断保留と追加調査の条件を記録する",
+              "専門家間の見解の相違を消去せず記録する"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-VERIFY",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-ARC-DECISION",
+      "title_ja": "訂正・説明追加・撤回・維持の判断",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-ARC-DECISION",
+            "version": "0.1.0",
+            "title": {
+              "ja": "訂正・説明追加・撤回・維持の判断"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "編集責任者と必要な専門審査者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "08"
+            ],
+            "inputs": [
+              "照合結果",
+              "影響範囲",
+              "元版・訂正案",
+              "関係者の権利条件"
+            ],
+            "outputs": [
+              "理由付き公開後対応決定"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "理由付き公開後対応決定に対象URL、版、判断主体、日時、根拠及び未解決事項を結び付けた",
+              "元の公開記録と変更後の記録を対応づけ、例外と人的な判断・保留を識別した",
+              "次の担当への通知又は引継ぎと、必要な再審査条件を残した"
+            ],
+            "review_roles": [
+              "訂正・評価責任者",
+              "必要な専門家と権限者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-ARC-DECISION",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-DECISION",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-VERIFICATION",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-ARC-ACCOUNTABILITY",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-ARC-INTEGRITY",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-089",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-042",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-DECISION",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-ARC-DECISION",
+            "version": "0.1.0",
+            "title": {
+              "ja": "訂正・説明追加・撤回・維持の判断の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "編集責任者と必要な専門審査者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "編集責任者と必要な専門審査者"
+            ],
+            "inputs": [
+              "照合結果",
+              "影響範囲",
+              "元版・訂正案",
+              "関係者の権利条件"
+            ],
+            "outputs": [
+              "理由付き公開後対応決定"
+            ],
+            "steps": [
+              {
+                "id": "PRC-ARC-DECISION-S1",
+                "instruction": "誤植、理解に影響する修正、説明追加、重大な信頼性問題を区別する",
+                "expected_output": "変更区分",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-DECISION-S2",
+                "instruction": "訂正・追記・懸念表明・撤回・削除・原文維持の選択肢と結果を比較する",
+                "expected_output": "意思決定表",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-DECISION-S3",
+                "instruction": "研究の撤回と広報記事の取り下げの法的位置付けを区別する",
+                "expected_output": "適用範囲記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-DECISION-S4",
+                "instruction": "必要な科学・倫理・法的専門判断と公開決裁権限を確認する",
+                "expected_output": "専門確認・権限記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-DECISION-S5",
+                "instruction": "結論、理由、反対意見、再評価の条件及び予定を保存する",
+                "expected_output": "理由付き決定",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "権限や根拠が不十分なら公開後の判断を保留し緊急対応のみ別経路で審査する",
+              "懲罰の目的と学術記録を正確にする目的を混同しない"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-DECISION",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-ARC-NOTICE",
+      "title_ja": "訂正通知・版履歴と公開説明の作成",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-ARC-NOTICE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "訂正通知・版履歴と公開説明の作成"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正通知編集担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "08"
+            ],
+            "inputs": [
+              "公開後対応決定",
+              "修正前後の原稿",
+              "媒体別記録"
+            ],
+            "outputs": [
+              "訂正通知・改訂履歴"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "訂正通知・改訂履歴に対象URL、版、判断主体、日時、根拠及び未解決事項を結び付けた",
+              "元の公開記録と変更後の記録を対応づけ、例外と人的な判断・保留を識別した",
+              "次の担当への通知又は引継ぎと、必要な再審査条件を残した"
+            ],
+            "review_roles": [
+              "訂正・評価責任者",
+              "必要な専門家と権限者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-ARC-NOTICE",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-NOTICES",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-VERSION",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-ARC-INTEGRITY",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-ARC-PRIVACY",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-090",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-042",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-NOTICE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-ARC-NOTICE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "訂正通知・版履歴と公開説明の作成の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正通知編集担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "訂正通知編集担当者"
+            ],
+            "inputs": [
+              "公開後対応決定",
+              "修正前後の原稿",
+              "媒体別記録"
+            ],
+            "outputs": [
+              "訂正通知・改訂履歴"
+            ],
+            "steps": [
+              {
+                "id": "PRC-ARC-NOTICE-S1",
+                "instruction": "対象題名、URL、元版、改訂版、変更日時と時区を明示する",
+                "expected_output": "訂正通知見出し",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-NOTICE-S2",
+                "instruction": "誤った記述と確かめられた訂正内容を特定し理由を記す",
+                "expected_output": "変更点と根拠",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-NOTICE-S3",
+                "instruction": "結論への影響と過去版の引用上の注意を説明する",
+                "expected_output": "影響説明",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-NOTICE-S4",
+                "instruction": "本文、PDF、動画説明欄などへの通知位置と相互リンクを定める",
+                "expected_output": "公開表示設計",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-NOTICE-S5",
+                "instruction": "検証者・承認者の判断記録を受け取り改訂後版を確定する",
+                "expected_output": "新しい版の承認記録",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "個人情報を含む旧版は公開保持の是非を個別に審査する",
+              "法令等による削除義務と学術記録保全の原則は個別に調整する"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-NOTICE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-ARC-PROPAGATE",
+      "title_ja": "媒体横断の訂正反映と通知結果確認",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-ARC-PROPAGATE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "媒体横断の訂正反映と通知結果確認"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "媒体運用・校閲担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "08"
+            ],
+            "inputs": [
+              "承認済み訂正通知",
+              "依存素材台帳",
+              "公開URL・投稿ID一覧"
+            ],
+            "outputs": [
+              "媒体別反映・到達確認台帳"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "媒体別反映・到達確認台帳に対象URL、版、判断主体、日時、根拠及び未解決事項を結び付けた",
+              "元の公開記録と変更後の記録を対応づけ、例外と人的な判断・保留を識別した",
+              "次の担当への通知又は引継ぎと、必要な再審査条件を残した"
+            ],
+            "review_roles": [
+              "訂正・評価責任者",
+              "必要な専門家と権限者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-ARC-PROPAGATE",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-PROPAGATION",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-TRACE",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-ARC-DIALOGUE",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-090",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-042",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-PROPAGATE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-ARC-PROPAGATE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "媒体横断の訂正反映と通知結果確認の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "媒体運用・校閲担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "媒体運用・校閲担当者"
+            ],
+            "inputs": [
+              "承認済み訂正通知",
+              "依存素材台帳",
+              "公開URL・投稿ID一覧"
+            ],
+            "outputs": [
+              "媒体別反映・到達確認台帳"
+            ],
+            "steps": [
+              {
+                "id": "PRC-ARC-PROPAGATE-S1",
+                "instruction": "記事、PDF、SNS、音声、動画、字幕、画像、イベント資料の依存先を抽出する",
+                "expected_output": "更新対象一覧",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-PROPAGATE-S2",
+                "instruction": "修正対象と実施不可の第三者再配信先を区別する",
+                "expected_output": "実施可能性分類",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-PROPAGATE-S3",
+                "instruction": "各媒体の変更後版、ハッシュ、URL、公開日時を保存する",
+                "expected_output": "反映操作記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-PROPAGATE-S4",
+                "instruction": "異なる端末・閲覧条件で読者に見える訂正表示を点検する",
+                "expected_output": "公開結果独立確認",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-PROPAGATE-S5",
+                "instruction": "関係者への通知と未達・キャッシュ遅延を記録する",
+                "expected_output": "通知・例外記録",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "削除・訂正の実施と外部複製からの消滅を同一視しない",
+              "第三者への要請は権限内の事実連絡として扱う"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-PROPAGATE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-ARC-FEEDBACK",
+      "title_ja": "読者の理解・意見・異議の収集",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-ARC-FEEDBACK",
+            "version": "0.1.0",
+            "title": {
+              "ja": "読者の理解・意見・異議の収集"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "対話・評価担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "08"
+            ],
+            "inputs": [
+              "閲覧者からの応答",
+              "任意アンケート",
+              "問い合わせ記録"
+            ],
+            "outputs": [
+              "反応データ辞書・論点表"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "反応データ辞書・論点表に対象URL、版、判断主体、日時、根拠及び未解決事項を結び付けた",
+              "元の公開記録と変更後の記録を対応づけ、例外と人的な判断・保留を識別した",
+              "次の担当への通知又は引継ぎと、必要な再審査条件を残した"
+            ],
+            "review_roles": [
+              "訂正・評価責任者",
+              "必要な専門家と権限者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-ARC-FEEDBACK",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-FEEDBACK",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-MEASUREMENT",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-ARC-PRIVACY",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-ARC-DIALOGUE",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-087",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-043",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-FEEDBACK",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-ARC-FEEDBACK",
+            "version": "0.1.0",
+            "title": {
+              "ja": "読者の理解・意見・異議の収集の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "対話・評価担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "対話・評価担当者"
+            ],
+            "inputs": [
+              "閲覧者からの応答",
+              "任意アンケート",
+              "問い合わせ記録"
+            ],
+            "outputs": [
+              "反応データ辞書・論点表"
+            ],
+            "steps": [
+              {
+                "id": "PRC-ARC-FEEDBACK-S1",
+                "instruction": "収集目的、対象期間、利用媒体と回答者への説明を明示する",
+                "expected_output": "データ取得計画",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-FEEDBACK-S2",
+                "instruction": "質問文、回答方法、任意性、アクセス手段を点検する",
+                "expected_output": "質問票と代替回答経路",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-FEEDBACK-S3",
+                "instruction": "公開コメントと個別連絡の情報を区別し再識別リスクを確認する",
+                "expected_output": "個人情報対応票",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-FEEDBACK-S4",
+                "instruction": "肯定的・否定的・不明瞭な反応と根拠を偏りなく分類する",
+                "expected_output": "論点別記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-FEEDBACK-S5",
+                "instruction": "再確認・返答・修正へつながる指摘を適切な担当者へ引き渡す",
+                "expected_output": "フォローアップ表",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "取得した個人情報の用途外利用を避ける",
+              "プラットフォーム上で発言しない読者を分析から消さない"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-FEEDBACK",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-ARC-EVALUATE",
+      "title_ja": "到達・理解・利用・影響の評価",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-ARC-EVALUATE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "到達・理解・利用・影響の評価"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "効果評価担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "08"
+            ],
+            "inputs": [
+              "配信統計",
+              "分析定義",
+              "閲覧者調査",
+              "当初の目的"
+            ],
+            "outputs": [
+              "評価方法・結果・不確実性報告"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "評価方法・結果・不確実性報告に対象URL、版、判断主体、日時、根拠及び未解決事項を結び付けた",
+              "元の公開記録と変更後の記録を対応づけ、例外と人的な判断・保留を識別した",
+              "次の担当への通知又は引継ぎと、必要な再審査条件を残した"
+            ],
+            "review_roles": [
+              "訂正・評価責任者",
+              "必要な専門家と権限者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-ARC-EVALUATE",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-MEASUREMENT",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-FEEDBACK",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-ARC-DIALOGUE",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-ARC-HARM",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-086",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-043",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-EVALUATE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-ARC-EVALUATE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "到達・理解・利用・影響の評価の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "効果評価担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "効果評価担当者"
+            ],
+            "inputs": [
+              "配信統計",
+              "分析定義",
+              "閲覧者調査",
+              "当初の目的"
+            ],
+            "outputs": [
+              "評価方法・結果・不確実性報告"
+            ],
+            "steps": [
+              {
+                "id": "PRC-ARC-EVALUATE-S1",
+                "instruction": "事前に記録した目的と評価質問に対応する指標を特定する",
+                "expected_output": "評価計画照合",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-EVALUATE-S2",
+                "instruction": "到達、閲覧、理解、利用、対話及び長期的変化を異なる測定対象とする",
+                "expected_output": "指標定義と測定表",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-EVALUATE-S3",
+                "instruction": "観測単位、期間、分母、欠測、媒体の仕様変更を記録する",
+                "expected_output": "データ品質表",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-EVALUATE-S4",
+                "instruction": "選択バイアス、サンプルの偏り、交絡、因果推論の限界を検討する",
+                "expected_output": "解釈上の限界",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-EVALUATE-S5",
+                "instruction": "質的証言と集計値を統合し、次の行動に用いる判断範囲を明記する",
+                "expected_output": "評価報告書",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "閲覧数や好意的反応を理解・科学的正確性の直接証拠にしない",
+              "母数不明の比率や異なる測定定義の比較は留保する"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-EVALUATE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-ARC-ARCHIVE",
+      "title_ja": "保存対象・権利・来歴の確定",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-ARC-ARCHIVE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "保存対象・権利・来歴の確定"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "デジタル保存担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "08"
+            ],
+            "inputs": [
+              "最終公開版",
+              "旧版",
+              "訂正通知",
+              "根拠台帳",
+              "許諾",
+              "実行ログ"
+            ],
+            "outputs": [
+              "保存パッケージと目録"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "保存パッケージと目録に対象URL、版、判断主体、日時、根拠及び未解決事項を結び付けた",
+              "元の公開記録と変更後の記録を対応づけ、例外と人的な判断・保留を識別した",
+              "次の担当への通知又は引継ぎと、必要な再審査条件を残した"
+            ],
+            "review_roles": [
+              "訂正・評価責任者",
+              "必要な専門家と権限者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-ARC-ARCHIVE",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-ARCHIVE",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-TRACE",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-ARC-PRIVACY",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-ARC-ACCESS",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-092",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-044",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-ARCHIVE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-ARC-ARCHIVE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "保存対象・権利・来歴の確定の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "デジタル保存担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "デジタル保存担当者"
+            ],
+            "inputs": [
+              "最終公開版",
+              "旧版",
+              "訂正通知",
+              "根拠台帳",
+              "許諾",
+              "実行ログ"
+            ],
+            "outputs": [
+              "保存パッケージと目録"
+            ],
+            "steps": [
+              {
+                "id": "PRC-ARC-ARCHIVE-S1",
+                "instruction": "保存目的、公開可否、アクセス制限、保存期限、廃棄義務を評価する",
+                "expected_output": "保存方針と権限記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-ARCHIVE-S2",
+                "instruction": "原資料と生成物、版間関係、訂正判断を別オブジェクトで表現する",
+                "expected_output": "保存対象一覧",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-ARCHIVE-S3",
+                "instruction": "本文・図表・字幕・台本・調査表・公開メタデータを識別子で連結する",
+                "expected_output": "保存構造マップ",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-ARCHIVE-S4",
+                "instruction": "ファイル形式、技術要件、ライセンス、時刻・時区を記録する",
+                "expected_output": "保存メタデータ票",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-ARCHIVE-S5",
+                "instruction": "保存処理と復元試験の責任者・日時・場所を確定する",
+                "expected_output": "移管受領記録",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "保存に必要な最小限の個人情報とアクセス制限を確認する",
+              "第三者の著作物は保存・再公開の許諾を別途確認する"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-ARCHIVE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-ARC-FIXITY",
+      "title_ja": "長期保存の完全性と再取得可能性の点検",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-ARC-FIXITY",
+            "version": "0.1.0",
+            "title": {
+              "ja": "長期保存の完全性と再取得可能性の点検"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "保存品質確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "08"
+            ],
+            "inputs": [
+              "保存パッケージ",
+              "ハッシュ一覧",
+              "複製配置",
+              "保持方針"
+            ],
+            "outputs": [
+              "完全性検査・復元点検記録"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "完全性検査・復元点検記録に対象URL、版、判断主体、日時、根拠及び未解決事項を結び付けた",
+              "元の公開記録と変更後の記録を対応づけ、例外と人的な判断・保留を識別した",
+              "次の担当への通知又は引継ぎと、必要な再審査条件を残した"
+            ],
+            "review_roles": [
+              "訂正・評価責任者",
+              "必要な専門家と権限者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-ARC-FIXITY",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-FIXITY",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-ARCHIVE",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-ARC-ACCESS",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-092",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-044",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-FIXITY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-ARC-FIXITY",
+            "version": "0.1.0",
+            "title": {
+              "ja": "長期保存の完全性と再取得可能性の点検の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "保存品質確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "保存品質確認担当者"
+            ],
+            "inputs": [
+              "保存パッケージ",
+              "ハッシュ一覧",
+              "複製配置",
+              "保持方針"
+            ],
+            "outputs": [
+              "完全性検査・復元点検記録"
+            ],
+            "steps": [
+              {
+                "id": "PRC-ARC-FIXITY-S1",
+                "instruction": "移管時点にファイル単位・パッケージ単位の固定性情報を生成する",
+                "expected_output": "SHA-256目録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-FIXITY-S2",
+                "instruction": "異なる保存場所の複製数とアクセス権限を記録する",
+                "expected_output": "冗長性とアクセス記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-FIXITY-S3",
+                "instruction": "定期検査、失敗の通知先、例外時の保全方法を定義する",
+                "expected_output": "固定性検査計画",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-FIXITY-S4",
+                "instruction": "抜き取り又は必要範囲の復元試験を実行し読取可能性を確認する",
+                "expected_output": "復元試験ログ",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-FIXITY-S5",
+                "instruction": "形式の老朽化、移行履歴、技術依存性を定期点検する",
+                "expected_output": "保存維持計画",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "ハッシュ一致だけで閲覧可能性、権利適合や科学的正確さを保証しない",
+              "チェックサム差異を検出した時点で破損の原因を確定しない"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-FIXITY",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-ARC-RETRO",
+      "title_ja": "振り返り・改善の制度化と再接続",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-ARC-RETRO",
+            "version": "0.1.0",
+            "title": {
+              "ja": "振り返り・改善の制度化と再接続"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "業務改善調整担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "08"
+            ],
+            "inputs": [
+              "評価報告",
+              "訂正履歴",
+              "関係者の意見",
+              "保存点検結果"
+            ],
+            "outputs": [
+              "改善提案・担当・再評価計画"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "改善提案・担当・再評価計画に対象URL、版、判断主体、日時、根拠及び未解決事項を結び付けた",
+              "元の公開記録と変更後の記録を対応づけ、例外と人的な判断・保留を識別した",
+              "次の担当への通知又は引継ぎと、必要な再審査条件を残した"
+            ],
+            "review_roles": [
+              "訂正・評価責任者",
+              "必要な専門家と権限者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-ARC-RETRO",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-LEARNING",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ARC-MEASUREMENT",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-ARC-DIALOGUE",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-ARC-ACCOUNTABILITY",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-093",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-045",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-RETRO",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-ARC-RETRO",
+            "version": "0.1.0",
+            "title": {
+              "ja": "振り返り・改善の制度化と再接続の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "業務改善調整担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "業務改善調整担当者"
+            ],
+            "inputs": [
+              "評価報告",
+              "訂正履歴",
+              "関係者の意見",
+              "保存点検結果"
+            ],
+            "outputs": [
+              "改善提案・担当・再評価計画"
+            ],
+            "steps": [
+              {
+                "id": "PRC-ARC-RETRO-S1",
+                "instruction": "当初の目標と成果を同じ評価単位で対応させる",
+                "expected_output": "目標・結果対応表",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-RETRO-S2",
+                "instruction": "問題の事実と推測した原因、構造的な制約を区別する",
+                "expected_output": "原因仮説と不確実性",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-RETRO-S3",
+                "instruction": "基準・フォーム・媒体運用・情報アクセスの改善候補を整理する",
+                "expected_output": "改善対象リスト",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-RETRO-S4",
+                "instruction": "担当者、期限、費用負担、再評価のための指標を定める",
+                "expected_output": "改善実行計画",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-ARC-RETRO-S5",
+                "instruction": "次の企画段階に再利用できる知識とケース依存の判断を区別して残す",
+                "expected_output": "Stage 1への再接続票",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "改善を指示できる権限を確認し、実施条件を明示する",
+              "当事者の意見を集約時の少数意見の消去につなげない"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-RETRO",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-ARC-STANDARDS",
+      "title_ja": "科学的正確性・訂正・評価と保存の標準",
+      "parts": [
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ARC-INTAKE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "訂正指摘の受付と案件同一性"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-CROSSREF",
+                "locator": "https://www.crossref.org/documentation/principles-practices/best-practices/versioning",
+                "accessed_on": "2026-10-19",
+                "verification_note": "Crossrefによる学術文献の版・訂正・撤回記録の指針。一般の広報物にDOI発行を義務付けるものではない。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "08"
+              ],
+              "audiences": [
+                "編集・訂正担当者",
+                "科学的確認担当者",
+                "保存担当者",
+                "評価担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ARC-INTAKE-H1",
+                "kind": "heading",
+                "text": "対象と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-INTAKE-P1",
+                "kind": "paragraph",
+                "text": "訂正、更新、撤回、公開停止、学術的異議は受付経路が同じ場合でも個別に分類する。"
+              },
+              {
+                "id": "KNW-ARC-INTAKE-H2",
+                "kind": "heading",
+                "text": "記録と実施",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-INTAKE-P2",
+                "kind": "paragraph",
+                "text": "対象URL、公開版、指摘箇所、根拠、受付日時、通報者への返答経路を識別子で記録する。"
+              },
+              {
+                "id": "KNW-ARC-INTAKE-H3",
+                "kind": "heading",
+                "text": "解釈と判断の境界",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-INTAKE-P3",
+                "kind": "paragraph",
+                "text": "受付時の主張を事実と確定せず、調査過程で追加された証拠と区別して保存する。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-INTAKE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ARC-TRACE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "公開版、根拠、変更の関係記録"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-CROSSREF",
+                "locator": "https://www.crossref.org/documentation/principles-practices/best-practices/versioning",
+                "accessed_on": "2026-10-19",
+                "verification_note": "Crossrefによる学術文献の版・訂正・撤回記録の指針。一般の広報物にDOI発行を義務付けるものではない。"
+              },
+              {
+                "source_id": "SRC-CROSSMARK",
+                "locator": "https://www.crossref.org/services/crossmark/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "Crossref Crossmarkの変更状態表示と相互リンクに関する説明。参加・利用には別途条件がある。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "08"
+              ],
+              "audiences": [
+                "編集・訂正担当者",
+                "科学的確認担当者",
+                "保存担当者",
+                "評価担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ARC-TRACE-H1",
+                "kind": "heading",
+                "text": "対象と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-TRACE-P1",
+                "kind": "paragraph",
+                "text": "配信対象、公開時刻、公開承認、訂正判断、修正通知と各媒体の掲載版を連結して記録する。"
+              },
+              {
+                "id": "KNW-ARC-TRACE-H2",
+                "kind": "heading",
+                "text": "記録と実施",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-TRACE-P2",
+                "kind": "paragraph",
+                "text": "変更前版は参照を維持しながら公開範囲を個別に判断し、訂正箇所と意味への影響を説明する。"
+              },
+              {
+                "id": "KNW-ARC-TRACE-H3",
+                "kind": "heading",
+                "text": "解釈と判断の境界",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-TRACE-P3",
+                "kind": "paragraph",
+                "text": "保存された旧版の存在と一般公開の可否、訂正済みであることの通知は別の判断事項である。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-TRACE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ARC-TRIAGE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "影響と緊急度の評価"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-COPE",
+                "locator": "https://doi.org/10.24318/cope.2019.1.4",
+                "accessed_on": "2026-10-19",
+                "verification_note": "COPE Retraction Guidelines、2025年改訂。学術雑誌の撤回指針を参照し、一般のウェブ記事への法的適用は想定しない。"
+              },
+              {
+                "source_id": "SRC-PPC",
+                "locator": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "個人情報保護委員会の通則ガイドライン。具体的な個人情報取扱い、保存期間及び適用法令の検証が必要。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "08"
+              ],
+              "audiences": [
+                "編集・訂正担当者",
+                "科学的確認担当者",
+                "保存担当者",
+                "評価担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ARC-TRIAGE-H1",
+                "kind": "heading",
+                "text": "対象と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-TRIAGE-P1",
+                "kind": "paragraph",
+                "text": "誤記の重大さだけでなく、安全、個人情報、関係者の尊厳、波及先での意思決定への影響を評価する。"
+              },
+              {
+                "id": "KNW-ARC-TRIAGE-H2",
+                "kind": "heading",
+                "text": "記録と実施",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-TRIAGE-P2",
+                "kind": "paragraph",
+                "text": "影響範囲が不明な場合は不明と記し、訂正通知、暫定注意喚起、利用停止等の選択肢を検討する。"
+              },
+              {
+                "id": "KNW-ARC-TRIAGE-H3",
+                "kind": "heading",
+                "text": "解釈と判断の境界",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-TRIAGE-P3",
+                "kind": "paragraph",
+                "text": "緊急性の判定、暫定措置の提案、権限者による実際の決裁を分ける。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-TRIAGE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ARC-VERIFICATION",
+            "version": "0.1.0",
+            "title": {
+              "ja": "根拠の更新と科学的再検証"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-COPE",
+                "locator": "https://doi.org/10.24318/cope.2019.1.4",
+                "accessed_on": "2026-10-19",
+                "verification_note": "COPE Retraction Guidelines、2025年改訂。学術雑誌の撤回指針を参照し、一般のウェブ記事への法的適用は想定しない。"
+              },
+              {
+                "source_id": "SRC-CROSSREF",
+                "locator": "https://www.crossref.org/documentation/principles-practices/best-practices/versioning",
+                "accessed_on": "2026-10-19",
+                "verification_note": "Crossrefによる学術文献の版・訂正・撤回記録の指針。一般の広報物にDOI発行を義務付けるものではない。"
+              },
+              {
+                "source_id": "SRC-JPA",
+                "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "日本心理学会による科学的研究のプレスリリース指針。特定分野の参考とし、全領域を拘束するものではない。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "08"
+              ],
+              "audiences": [
+                "編集・訂正担当者",
+                "科学的確認担当者",
+                "保存担当者",
+                "評価担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ARC-VERIFICATION-H1",
+                "kind": "heading",
+                "text": "対象と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-VERIFICATION-P1",
+                "kind": "paragraph",
+                "text": "事後に公表された研究や学術的異議は、公開時点での説明と現時点での知識状態を分けて評価する。"
+              },
+              {
+                "id": "KNW-ARC-VERIFICATION-H2",
+                "kind": "heading",
+                "text": "記録と実施",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-VERIFICATION-P2",
+                "kind": "paragraph",
+                "text": "原資料の引用、方法、統計、因果推論、解釈の幅と訂正・撤回状況を照合する。"
+              },
+              {
+                "id": "KNW-ARC-VERIFICATION-H3",
+                "kind": "heading",
+                "text": "解釈と判断の境界",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-VERIFICATION-P3",
+                "kind": "paragraph",
+                "text": "根拠不足、学術的な意見の相違、重大な信頼性問題を同じ結論に短絡しない。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-VERIFICATION",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ARC-DECISION",
+            "version": "0.1.0",
+            "title": {
+              "ja": "訂正、説明追加、撤回等の判断区分"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-COPE",
+                "locator": "https://doi.org/10.24318/cope.2019.1.4",
+                "accessed_on": "2026-10-19",
+                "verification_note": "COPE Retraction Guidelines、2025年改訂。学術雑誌の撤回指針を参照し、一般のウェブ記事への法的適用は想定しない。"
+              },
+              {
+                "source_id": "SRC-CROSSREF",
+                "locator": "https://www.crossref.org/documentation/principles-practices/best-practices/versioning",
+                "accessed_on": "2026-10-19",
+                "verification_note": "Crossrefによる学術文献の版・訂正・撤回記録の指針。一般の広報物にDOI発行を義務付けるものではない。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "08"
+              ],
+              "audiences": [
+                "編集・訂正担当者",
+                "科学的確認担当者",
+                "保存担当者",
+                "評価担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ARC-DECISION-H1",
+                "kind": "heading",
+                "text": "対象と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-DECISION-P1",
+                "kind": "paragraph",
+                "text": "軽微な誤記、意味に影響する訂正、追加情報、懸念表明、撤回、削除を区別して判断理由を記録する。"
+              },
+              {
+                "id": "KNW-ARC-DECISION-H2",
+                "kind": "heading",
+                "text": "記録と実施",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-DECISION-P2",
+                "kind": "paragraph",
+                "text": "学術雑誌における撤回の正式な制度は媒体ごとに異なる。編集上の撤回・削除と学術的な撤回を区別する。"
+              },
+              {
+                "id": "KNW-ARC-DECISION-H3",
+                "kind": "heading",
+                "text": "解釈と判断の境界",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-DECISION-P3",
+                "kind": "paragraph",
+                "text": "適用される規則、公開への影響、権限ある責任者を案件ごとに特定する。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-DECISION",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ARC-NOTICES",
+            "version": "0.1.0",
+            "title": {
+              "ja": "公開訂正通知の構造と表示"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-CROSSREF",
+                "locator": "https://www.crossref.org/documentation/principles-practices/best-practices/versioning",
+                "accessed_on": "2026-10-19",
+                "verification_note": "Crossrefによる学術文献の版・訂正・撤回記録の指針。一般の広報物にDOI発行を義務付けるものではない。"
+              },
+              {
+                "source_id": "SRC-CROSSMARK",
+                "locator": "https://www.crossref.org/services/crossmark/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "Crossref Crossmarkの変更状態表示と相互リンクに関する説明。参加・利用には別途条件がある。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "08"
+              ],
+              "audiences": [
+                "編集・訂正担当者",
+                "科学的確認担当者",
+                "保存担当者",
+                "評価担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ARC-NOTICES-H1",
+                "kind": "heading",
+                "text": "対象と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-NOTICES-P1",
+                "kind": "paragraph",
+                "text": "読者に表示する訂正には対象、元の記述、改訂点、理由、日付、対象版、関連リンクを含める。"
+              },
+              {
+                "id": "KNW-ARC-NOTICES-H2",
+                "kind": "heading",
+                "text": "記録と実施",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-NOTICES-P2",
+                "kind": "paragraph",
+                "text": "重要な変更を黙って上書きせず、改訂版の履歴と相互参照を設計する。"
+              },
+              {
+                "id": "KNW-ARC-NOTICES-H3",
+                "kind": "heading",
+                "text": "解釈と判断の境界",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-NOTICES-P3",
+                "kind": "paragraph",
+                "text": "安全・個人情報・権利上の要請による削除は保存可能な記録と公開表示を別々に検討する。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-NOTICES",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ARC-VERSION",
+            "version": "0.1.0",
+            "title": {
+              "ja": "版履歴・更新通知の機械可読な記録"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-CROSSREF",
+                "locator": "https://www.crossref.org/documentation/principles-practices/best-practices/versioning",
+                "accessed_on": "2026-10-19",
+                "verification_note": "Crossrefによる学術文献の版・訂正・撤回記録の指針。一般の広報物にDOI発行を義務付けるものではない。"
+              },
+              {
+                "source_id": "SRC-CROSSMARK",
+                "locator": "https://www.crossref.org/services/crossmark/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "Crossref Crossmarkの変更状態表示と相互リンクに関する説明。参加・利用には別途条件がある。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "08"
+              ],
+              "audiences": [
+                "編集・訂正担当者",
+                "科学的確認担当者",
+                "保存担当者",
+                "評価担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ARC-VERSION-H1",
+                "kind": "heading",
+                "text": "対象と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-VERSION-P1",
+                "kind": "paragraph",
+                "text": "公開版ごとに日時、識別子、ハッシュ、URL、変更種別、関連する訂正通知を記録する。"
+              },
+              {
+                "id": "KNW-ARC-VERSION-H2",
+                "kind": "heading",
+                "text": "記録と実施",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-VERSION-P2",
+                "kind": "paragraph",
+                "text": "小規模な表記修正と解釈に影響する変更を区別し、後者の通知を特に重視する。"
+              },
+              {
+                "id": "KNW-ARC-VERSION-H3",
+                "kind": "heading",
+                "text": "解釈と判断の境界",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-VERSION-P3",
+                "kind": "paragraph",
+                "text": "DOIやCrossmarkは利用資格に依存する一つの方法であり、同等の関係記録を内部台帳でも保持できる。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-VERSION",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ARC-PROPAGATION",
+            "version": "0.1.0",
+            "title": {
+              "ja": "訂正の配信網への反映と到達確認"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-CROSSREF",
+                "locator": "https://www.crossref.org/documentation/principles-practices/best-practices/versioning",
+                "accessed_on": "2026-10-19",
+                "verification_note": "Crossrefによる学術文献の版・訂正・撤回記録の指針。一般の広報物にDOI発行を義務付けるものではない。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "08"
+              ],
+              "audiences": [
+                "編集・訂正担当者",
+                "科学的確認担当者",
+                "保存担当者",
+                "評価担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ARC-PROPAGATION-H1",
+                "kind": "heading",
+                "text": "対象と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-PROPAGATION-P1",
+                "kind": "paragraph",
+                "text": "同じ主張が本文、音声、動画、画像、短縮要約、SNS、報道提供資料に現れる場合は更新影響範囲を追う。"
+              },
+              {
+                "id": "KNW-ARC-PROPAGATION-H2",
+                "kind": "heading",
+                "text": "記録と実施",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-PROPAGATION-P2",
+                "kind": "paragraph",
+                "text": "改訂後のURL、投稿ID、各媒体の更新時刻、訂正表示の確認結果と未反映例外を記録する。"
+              },
+              {
+                "id": "KNW-ARC-PROPAGATION-H3",
+                "kind": "heading",
+                "text": "解釈と判断の境界",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-PROPAGATION-P3",
+                "kind": "paragraph",
+                "text": "既存の複製や検索キャッシュへの伝播を自動完了と推定しない。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-PROPAGATION",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ARC-FEEDBACK",
+            "version": "0.1.0",
+            "title": {
+              "ja": "応答情報の収集と認識上の偏り"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-JPA",
+                "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "日本心理学会による科学的研究のプレスリリース指針。特定分野の参考とし、全領域を拘束するものではない。"
+              },
+              {
+                "source_id": "SRC-PPC",
+                "locator": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "個人情報保護委員会の通則ガイドライン。具体的な個人情報取扱い、保存期間及び適用法令の検証が必要。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "08"
+              ],
+              "audiences": [
+                "編集・訂正担当者",
+                "科学的確認担当者",
+                "保存担当者",
+                "評価担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ARC-FEEDBACK-H1",
+                "kind": "heading",
+                "text": "対象と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-FEEDBACK-P1",
+                "kind": "paragraph",
+                "text": "質問、否定的反応、沈黙、アクセス障壁は異なる情報であり、一つの評点へ単純に統合しない。"
+              },
+              {
+                "id": "KNW-ARC-FEEDBACK-H2",
+                "kind": "heading",
+                "text": "記録と実施",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-FEEDBACK-P2",
+                "kind": "paragraph",
+                "text": "分類規則、収集期間、取得可能性、言語・媒体・回答意欲による選択偏りを明記する。"
+              },
+              {
+                "id": "KNW-ARC-FEEDBACK-H3",
+                "kind": "heading",
+                "text": "解釈と判断の境界",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-FEEDBACK-P3",
+                "kind": "paragraph",
+                "text": "記録可能な発言を読者全体の代表意見とみなす前に収集設計と母集団を確認する。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-FEEDBACK",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ARC-MEASUREMENT",
+            "version": "0.1.0",
+            "title": {
+              "ja": "到達・理解・利用・影響の測定構造"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-JPA",
+                "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "日本心理学会による科学的研究のプレスリリース指針。特定分野の参考とし、全領域を拘束するものではない。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "08"
+              ],
+              "audiences": [
+                "編集・訂正担当者",
+                "科学的確認担当者",
+                "保存担当者",
+                "評価担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ARC-MEASUREMENT-H1",
+                "kind": "heading",
+                "text": "対象と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-MEASUREMENT-P1",
+                "kind": "paragraph",
+                "text": "閲覧・到達、読者の理解、知識の利用、信頼、対話、長期的影響は異なる観測対象として設計する。"
+              },
+              {
+                "id": "KNW-ARC-MEASUREMENT-H2",
+                "kind": "heading",
+                "text": "記録と実施",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-MEASUREMENT-P2",
+                "kind": "paragraph",
+                "text": "分母、母集団、計測条件、欠測、集計期間、プラットフォーム定義変更を報告する。"
+              },
+              {
+                "id": "KNW-ARC-MEASUREMENT-H3",
+                "kind": "heading",
+                "text": "解釈と判断の境界",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-MEASUREMENT-P3",
+                "kind": "paragraph",
+                "text": "観測された閲覧・拡散を原因とする行動変化の推論には追加の研究設計を要する。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-MEASUREMENT",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ARC-ARCHIVE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "保存パッケージと権利・アクセス管理"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-NDSA",
+                "locator": "https://www.ndsa.org/publications/levels-of-digital-preservation/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "NDSA Levels of Digital Preservation、2026年版を含む保存能力評価の枠組み。保存媒体と費用に合わせ選択する。"
+              },
+              {
+                "source_id": "SRC-LOC",
+                "locator": "https://www.loc.gov/programs/digital-collections-management/inventory-and-custody/data-integrity-management/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "米国議会図書館のデータ完全性管理方針。ファイル単位・集合単位の固定性管理の参考。"
+              },
+              {
+                "source_id": "SRC-PPC",
+                "locator": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "個人情報保護委員会の通則ガイドライン。具体的な個人情報取扱い、保存期間及び適用法令の検証が必要。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "08"
+              ],
+              "audiences": [
+                "編集・訂正担当者",
+                "科学的確認担当者",
+                "保存担当者",
+                "評価担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ARC-ARCHIVE-H1",
+                "kind": "heading",
+                "text": "対象と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-ARCHIVE-P1",
+                "kind": "paragraph",
+                "text": "保存は原本、公開派生物、修正通知、証跡、判断記録の関係を保持する。"
+              },
+              {
+                "id": "KNW-ARC-ARCHIVE-H2",
+                "kind": "heading",
+                "text": "記録と実施",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-ARCHIVE-P2",
+                "kind": "paragraph",
+                "text": "再公開可能性、第三者権利、個人情報、保持期限、廃棄義務と閲覧権限を別項目で管理する。"
+              },
+              {
+                "id": "KNW-ARC-ARCHIVE-H3",
+                "kind": "heading",
+                "text": "解釈と判断の境界",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-ARCHIVE-P3",
+                "kind": "paragraph",
+                "text": "永続保存を自動的に正当化せず、アクセス権と保存目的を定期的に見直す。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-ARCHIVE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ARC-FIXITY",
+            "version": "0.1.0",
+            "title": {
+              "ja": "固定性、複製、復元の継続点検"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-NDSA",
+                "locator": "https://www.ndsa.org/publications/levels-of-digital-preservation/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "NDSA Levels of Digital Preservation、2026年版を含む保存能力評価の枠組み。保存媒体と費用に合わせ選択する。"
+              },
+              {
+                "source_id": "SRC-LOC",
+                "locator": "https://www.loc.gov/programs/digital-collections-management/inventory-and-custody/data-integrity-management/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "米国議会図書館のデータ完全性管理方針。ファイル単位・集合単位の固定性管理の参考。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "08"
+              ],
+              "audiences": [
+                "編集・訂正担当者",
+                "科学的確認担当者",
+                "保存担当者",
+                "評価担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ARC-FIXITY-H1",
+                "kind": "heading",
+                "text": "対象と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-FIXITY-P1",
+                "kind": "paragraph",
+                "text": "ファイル・パッケージのハッシュを移管時点に取得し、その後も比較・監視する。"
+              },
+              {
+                "id": "KNW-ARC-FIXITY-H2",
+                "kind": "heading",
+                "text": "記録と実施",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-FIXITY-P2",
+                "kind": "paragraph",
+                "text": "保存媒体の複製先、担当、検査間隔、復元試験と移行履歴を記録する。"
+              },
+              {
+                "id": "KNW-ARC-FIXITY-H3",
+                "kind": "heading",
+                "text": "解釈と判断の境界",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-FIXITY-P3",
+                "kind": "paragraph",
+                "text": "完全性検査の成功は意味の正確性・権利適合・将来の可読性を保証しない。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-FIXITY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ARC-LEARNING",
+            "version": "0.1.0",
+            "title": {
+              "ja": "実務改善知識の再利用可能性"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-NDSA",
+                "locator": "https://www.ndsa.org/publications/levels-of-digital-preservation/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "NDSA Levels of Digital Preservation、2026年版を含む保存能力評価の枠組み。保存媒体と費用に合わせ選択する。"
+              },
+              {
+                "source_id": "SRC-JPA",
+                "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "日本心理学会による科学的研究のプレスリリース指針。特定分野の参考とし、全領域を拘束するものではない。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "08"
+              ],
+              "audiences": [
+                "編集・訂正担当者",
+                "科学的確認担当者",
+                "保存担当者",
+                "評価担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ARC-LEARNING-H1",
+                "kind": "heading",
+                "text": "対象と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-LEARNING-P1",
+                "kind": "paragraph",
+                "text": "プロジェクト固有の事象から汎用の改善案を導く際は観測事実、因果仮説、適用前提を分ける。"
+              },
+              {
+                "id": "KNW-ARC-LEARNING-H2",
+                "kind": "heading",
+                "text": "記録と実施",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-LEARNING-P2",
+                "kind": "paragraph",
+                "text": "変更を提案する標準、フォーム、手順、担当者と次回評価方法を明記する。"
+              },
+              {
+                "id": "KNW-ARC-LEARNING-H3",
+                "kind": "heading",
+                "text": "解釈と判断の境界",
+                "level": 2
+              },
+              {
+                "id": "KNW-ARC-LEARNING-P3",
+                "kind": "paragraph",
+                "text": "改善案の採用と内部規程化は別の権限行為であり、試案の完成によって承認されない。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-LEARNING",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-ARC-ETHICS",
+      "title_ja": "倫理、認識上の偏り、アクセスと責任",
+      "parts": [
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ETH-ARC-INTEGRITY",
+            "version": "0.1.0",
+            "title": {
+              "ja": "公開記録の真正性と訂正の説明責任"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-COPE",
+                "locator": "https://doi.org/10.24318/cope.2019.1.4",
+                "accessed_on": "2026-10-19",
+                "verification_note": "COPE Retraction Guidelines、2025年改訂。学術雑誌の撤回指針を参照し、一般のウェブ記事への法的適用は想定しない。"
+              },
+              {
+                "source_id": "SRC-CROSSREF",
+                "locator": "https://www.crossref.org/documentation/principles-practices/best-practices/versioning",
+                "accessed_on": "2026-10-19",
+                "verification_note": "Crossrefによる学術文献の版・訂正・撤回記録の指針。一般の広報物にDOI発行を義務付けるものではない。"
+              }
+            ],
+            "links": [],
+            "category": "ethics",
+            "scope": {
+              "stages": [
+                "08"
+              ],
+              "audiences": [
+                "編集・訂正担当者",
+                "科学的確認担当者",
+                "保存担当者",
+                "評価担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ETH-ARC-INTEGRITY-H1",
+                "kind": "heading",
+                "text": "対象と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-ARC-INTEGRITY-P1",
+                "kind": "paragraph",
+                "text": "誤りを確認した際は読者が改訂の存在と意味を理解できるように説明する。"
+              },
+              {
+                "id": "KNW-ETH-ARC-INTEGRITY-H2",
+                "kind": "heading",
+                "text": "記録と実施",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-ARC-INTEGRITY-P2",
+                "kind": "paragraph",
+                "text": "撤回や訂正の理由を学術的誠実性と当事者の権利の双方から検討する。"
+              },
+              {
+                "id": "KNW-ETH-ARC-INTEGRITY-H3",
+                "kind": "heading",
+                "text": "解釈と判断の境界",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-ARC-INTEGRITY-P3",
+                "kind": "paragraph",
+                "text": "訂正・撤回手続きを個人の制裁や名誉毀損の道具としない。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-ARC-INTEGRITY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ETH-ARC-ACCOUNTABILITY",
+            "version": "0.1.0",
+            "title": {
+              "ja": "判断権限、利益相反及び異議申立て"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-COPE",
+                "locator": "https://doi.org/10.24318/cope.2019.1.4",
+                "accessed_on": "2026-10-19",
+                "verification_note": "COPE Retraction Guidelines、2025年改訂。学術雑誌の撤回指針を参照し、一般のウェブ記事への法的適用は想定しない。"
+              }
+            ],
+            "links": [],
+            "category": "ethics",
+            "scope": {
+              "stages": [
+                "08"
+              ],
+              "audiences": [
+                "編集・訂正担当者",
+                "科学的確認担当者",
+                "保存担当者",
+                "評価担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ETH-ARC-ACCOUNTABILITY-H1",
+                "kind": "heading",
+                "text": "対象と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-ARC-ACCOUNTABILITY-P1",
+                "kind": "paragraph",
+                "text": "科学的妥当性を検討する者と公開判断を担う権限者の役割を記録する。"
+              },
+              {
+                "id": "KNW-ETH-ARC-ACCOUNTABILITY-H2",
+                "kind": "heading",
+                "text": "記録と実施",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-ARC-ACCOUNTABILITY-P2",
+                "kind": "paragraph",
+                "text": "利害関係や利益相反の可能性と再審査・異議申立て経路を記録する。"
+              },
+              {
+                "id": "KNW-ETH-ARC-ACCOUNTABILITY-H3",
+                "kind": "heading",
+                "text": "解釈と判断の境界",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-ARC-ACCOUNTABILITY-P3",
+                "kind": "paragraph",
+                "text": "チェックリスト完了や機械判定は実際の権限ある判断と区別する。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-ARC-ACCOUNTABILITY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ETH-ARC-PRIVACY",
+            "version": "0.1.0",
+            "title": {
+              "ja": "読者情報・旧版・問い合わせ記録の保護"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-PPC",
+                "locator": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "個人情報保護委員会の通則ガイドライン。具体的な個人情報取扱い、保存期間及び適用法令の検証が必要。"
+              }
+            ],
+            "links": [],
+            "category": "ethics",
+            "scope": {
+              "stages": [
+                "08"
+              ],
+              "audiences": [
+                "編集・訂正担当者",
+                "科学的確認担当者",
+                "保存担当者",
+                "評価担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ETH-ARC-PRIVACY-H1",
+                "kind": "heading",
+                "text": "対象と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-ARC-PRIVACY-P1",
+                "kind": "paragraph",
+                "text": "訂正請求、アンケート、アクセスログと旧版には個人情報を含み得る。"
+              },
+              {
+                "id": "KNW-ETH-ARC-PRIVACY-H2",
+                "kind": "heading",
+                "text": "記録と実施",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-ARC-PRIVACY-P2",
+                "kind": "paragraph",
+                "text": "最小限収集、利用目的、保管期限、本人の権利、役割別アクセス権を検討する。"
+              },
+              {
+                "id": "KNW-ETH-ARC-PRIVACY-H3",
+                "kind": "heading",
+                "text": "解釈と判断の境界",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-ARC-PRIVACY-P3",
+                "kind": "paragraph",
+                "text": "公開の透明性と秘匿性が競合する場合は法令・権利・安全の具体的条件を確認する。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-ARC-PRIVACY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ETH-ARC-DIALOGUE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "異なる立場の解釈と対話の継続"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-JPA",
+                "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "日本心理学会による科学的研究のプレスリリース指針。特定分野の参考とし、全領域を拘束するものではない。"
+              }
+            ],
+            "links": [],
+            "category": "ethics",
+            "scope": {
+              "stages": [
+                "08"
+              ],
+              "audiences": [
+                "編集・訂正担当者",
+                "科学的確認担当者",
+                "保存担当者",
+                "評価担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ETH-ARC-DIALOGUE-H1",
+                "kind": "heading",
+                "text": "対象と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-ARC-DIALOGUE-P1",
+                "kind": "paragraph",
+                "text": "批判、専門的な異論、読者の質問には信頼性改善につながる情報が含まれ得る。"
+              },
+              {
+                "id": "KNW-ETH-ARC-DIALOGUE-H2",
+                "kind": "heading",
+                "text": "記録と実施",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-ARC-DIALOGUE-P2",
+                "kind": "paragraph",
+                "text": "意見とその証拠、利用者が置かれた文脈を分けて記録する。"
+              },
+              {
+                "id": "KNW-ETH-ARC-DIALOGUE-H3",
+                "kind": "heading",
+                "text": "解釈と判断の境界",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-ARC-DIALOGUE-P3",
+                "kind": "paragraph",
+                "text": "クリック数や多数派の感想によって少数者の影響を不可視化しない。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-ARC-DIALOGUE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ETH-ARC-HARM",
+            "version": "0.1.0",
+            "title": {
+              "ja": "不利益、誤解、保存による二次的影響"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-COPE",
+                "locator": "https://doi.org/10.24318/cope.2019.1.4",
+                "accessed_on": "2026-10-19",
+                "verification_note": "COPE Retraction Guidelines、2025年改訂。学術雑誌の撤回指針を参照し、一般のウェブ記事への法的適用は想定しない。"
+              },
+              {
+                "source_id": "SRC-PPC",
+                "locator": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "個人情報保護委員会の通則ガイドライン。具体的な個人情報取扱い、保存期間及び適用法令の検証が必要。"
+              }
+            ],
+            "links": [],
+            "category": "ethics",
+            "scope": {
+              "stages": [
+                "08"
+              ],
+              "audiences": [
+                "編集・訂正担当者",
+                "科学的確認担当者",
+                "保存担当者",
+                "評価担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ETH-ARC-HARM-H1",
+                "kind": "heading",
+                "text": "対象と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-ARC-HARM-P1",
+                "kind": "paragraph",
+                "text": "誤った医療、教育、安全上の判断への波及等を、既知の証拠と可能性として区別して記録する。"
+              },
+              {
+                "id": "KNW-ETH-ARC-HARM-H2",
+                "kind": "heading",
+                "text": "記録と実施",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-ARC-HARM-P2",
+                "kind": "paragraph",
+                "text": "疑義の拡散により新たな不利益が生じないよう訂正通知の表現と連絡範囲を審査する。"
+              },
+              {
+                "id": "KNW-ETH-ARC-HARM-H3",
+                "kind": "heading",
+                "text": "解釈と判断の境界",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-ARC-HARM-P3",
+                "kind": "paragraph",
+                "text": "善意の訂正が不必要な個人情報露出や誤解を増大させる可能性も検討する。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-ARC-HARM",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ETH-ARC-ACCESS",
+            "version": "0.1.0",
+            "title": {
+              "ja": "保存資料の閲覧権と知識アクセスの継続性"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-NDSA",
+                "locator": "https://www.ndsa.org/publications/levels-of-digital-preservation/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "NDSA Levels of Digital Preservation、2026年版を含む保存能力評価の枠組み。保存媒体と費用に合わせ選択する。"
+              },
+              {
+                "source_id": "SRC-PPC",
+                "locator": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "個人情報保護委員会の通則ガイドライン。具体的な個人情報取扱い、保存期間及び適用法令の検証が必要。"
+              }
+            ],
+            "links": [],
+            "category": "ethics",
+            "scope": {
+              "stages": [
+                "08"
+              ],
+              "audiences": [
+                "編集・訂正担当者",
+                "科学的確認担当者",
+                "保存担当者",
+                "評価担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ETH-ARC-ACCESS-H1",
+                "kind": "heading",
+                "text": "対象と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-ARC-ACCESS-P1",
+                "kind": "paragraph",
+                "text": "訂正後も読者が正しい版と変更の理由へ到達できる導線を確保する。"
+              },
+              {
+                "id": "KNW-ETH-ARC-ACCESS-H2",
+                "kind": "heading",
+                "text": "記録と実施",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-ARC-ACCESS-P2",
+                "kind": "paragraph",
+                "text": "保存資料の閲覧制限、障害対応、形式移行、代替形式の必要性を確認する。"
+              },
+              {
+                "id": "KNW-ETH-ARC-ACCESS-H3",
+                "kind": "heading",
+                "text": "解釈と判断の境界",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-ARC-ACCESS-P3",
+                "kind": "paragraph",
+                "text": "将来のアクセス性と適法な非公開・削除措置の調整を継続する。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-ARC-ACCESS",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-ARC-CHECKS",
+      "title_ja": "訂正・評価・保存・改善の確認票",
+      "parts": [
+        {
+          "kind": "checklist_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TPL-CHK-042",
+            "kind": "checklist",
+            "slug": "correction_processing",
+            "title_ja": "訂正・更新対応チェックリスト",
+            "version": "0.2.0",
+            "lifecycle": "draft",
+            "status": "substantive_draft",
+            "priority": "P0",
+            "applicable_pipeline_stages": [
+              "08"
+            ],
+            "origin": "independent_proposal",
+            "authority_status": "unapproved",
+            "source_catalog": "templates/catalog.json",
+            "sections": [
+              {
+                "id": "TPL-CHK-042-S1",
+                "heading_ja": "確認項目",
+                "items": [
+                  {
+                    "id": "TPL-CHK-042-I001",
+                    "criterion_ja": "指摘の対象URL・旧版・原文・受付日時が特定される",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "受付記録と元版IDの識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-042-I002",
+                    "criterion_ja": "原因・科学的根拠・確認済み事実と解釈の違いを記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "一次資料、照合担当の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-042-I003",
+                    "criterion_ja": "影響範囲・緊急度・当事者の権利を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "媒体依存関係、権限者の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-042-I004",
+                    "criterion_ja": "訂正、説明、撤回、維持等の判断と理由が実在の権限者に確認された",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "判断記録、利益相反確認の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-042-I005",
+                    "criterion_ja": "旧版・新規版・通知の版、ハッシュ、URLが対応する",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "変更台帳、リンクの識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-042-I006",
+                    "criterion_ja": "派生媒体・SNS・字幕等へ訂正を反映し未達も記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "媒体別到達記録の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-042-I007",
+                    "criterion_ja": "読者への訂正表示と問い合わせ経路を検証した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "本番表示確認の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  }
+                ]
+              },
+              {
+                "id": "TPL-CHK-042-S2",
+                "heading_ja": "点検結果の記録",
+                "fields": [
+                  {
+                    "id": "TPL-CHK-042-F001",
+                    "label_ja": "対象案件・対象版",
+                    "type": "short_text",
+                    "required": false,
+                    "description_ja": "対象案件・対象版の対象版、証拠、確認者と未解決事項を記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-042-F002",
+                    "label_ja": "担当者と点検日",
+                    "type": "date",
+                    "required": false,
+                    "description_ja": "担当者と点検日の対象版、証拠、確認者と未解決事項を記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-042-F003",
+                    "label_ja": "未解決事項と対応",
+                    "type": "long_text",
+                    "required": false,
+                    "description_ja": "未解決事項と対応の対象版、証拠、確認者と未解決事項を記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-042-F004",
+                    "label_ja": "確認に用いた資料ID",
+                    "type": "table",
+                    "required": false,
+                    "description_ja": "確認に用いた資料IDの対象版、証拠、確認者と未解決事項を記録する。",
+                    "columns": [
+                      "対象・項目",
+                      "内容・参照",
+                      "担当・状態",
+                      "備考"
+                    ],
+                    "min_rows": 2
+                  }
+                ]
+              }
+            ],
+            "relationships": {
+              "related_task_ids": [
+                "TSK-ARC-SIGNALS",
+                "TSK-ARC-TRIAGE",
+                "TSK-ARC-VERIFY",
+                "TSK-ARC-DECISION",
+                "TSK-ARC-NOTICE",
+                "TSK-ARC-PROPAGATE"
+              ],
+              "knowledge_ids": [
+                "KNW-ARC-TRACE",
+                "KNW-ARC-DECISION"
+              ]
+            },
+            "rendering": {
+              "profile": "formal_japanese_mincho"
+            },
+            "notes_ja": "チェック項目の適合は実在の権限者の訂正・削除・公開判断を代行しない。",
+            "workflow_id": "editorial-eight-stage"
+          },
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-042",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "checklist_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TPL-CHK-043",
+            "kind": "checklist",
+            "slug": "evaluation_quality",
+            "title_ja": "効果測定・解釈確認チェックリスト",
+            "version": "0.2.0",
+            "lifecycle": "draft",
+            "status": "substantive_draft",
+            "priority": "P0",
+            "applicable_pipeline_stages": [
+              "08"
+            ],
+            "origin": "independent_proposal",
+            "authority_status": "unapproved",
+            "source_catalog": "templates/catalog.json",
+            "sections": [
+              {
+                "id": "TPL-CHK-043-S1",
+                "heading_ja": "確認項目",
+                "items": [
+                  {
+                    "id": "TPL-CHK-043-I001",
+                    "criterion_ja": "評価対象の到達・理解・利用・影響を別々に定義した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "指標定義書の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-043-I002",
+                    "criterion_ja": "期間、分母、母集団、計測手段、欠測が明示される",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "データ辞書の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-043-I003",
+                    "criterion_ja": "アンケート設計の偏り、回答の任意性と個人情報条件を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "質問票、収集条件の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-043-I004",
+                    "criterion_ja": "プラットフォーム間の比較可能性と仕様変更を検討した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "比較条件の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-043-I005",
+                    "criterion_ja": "集計値と定性的な意見、解釈を区別した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "分析根拠の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-043-I006",
+                    "criterion_ja": "因果推論の限界と未解決事項を明記した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "限界と反証の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-043-I007",
+                    "criterion_ja": "改善に必要な確認行動と担当者を決めた",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "評価フォローアップの識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  }
+                ]
+              },
+              {
+                "id": "TPL-CHK-043-S2",
+                "heading_ja": "点検結果の記録",
+                "fields": [
+                  {
+                    "id": "TPL-CHK-043-F001",
+                    "label_ja": "対象案件・対象版",
+                    "type": "short_text",
+                    "required": false,
+                    "description_ja": "対象案件・対象版の対象版、証拠、確認者と未解決事項を記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-043-F002",
+                    "label_ja": "担当者と点検日",
+                    "type": "date",
+                    "required": false,
+                    "description_ja": "担当者と点検日の対象版、証拠、確認者と未解決事項を記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-043-F003",
+                    "label_ja": "未解決事項と対応",
+                    "type": "long_text",
+                    "required": false,
+                    "description_ja": "未解決事項と対応の対象版、証拠、確認者と未解決事項を記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-043-F004",
+                    "label_ja": "確認に用いた資料ID",
+                    "type": "table",
+                    "required": false,
+                    "description_ja": "確認に用いた資料IDの対象版、証拠、確認者と未解決事項を記録する。",
+                    "columns": [
+                      "対象・項目",
+                      "内容・参照",
+                      "担当・状態",
+                      "備考"
+                    ],
+                    "min_rows": 2
+                  }
+                ]
+              }
+            ],
+            "relationships": {
+              "related_task_ids": [
+                "TSK-ARC-FEEDBACK",
+                "TSK-ARC-EVALUATE"
+              ],
+              "knowledge_ids": [
+                "KNW-ARC-TRACE",
+                "KNW-ARC-DECISION"
+              ]
+            },
+            "rendering": {
+              "profile": "formal_japanese_mincho"
+            },
+            "notes_ja": "チェック項目の適合は実在の権限者の訂正・削除・公開判断を代行しない。",
+            "workflow_id": "editorial-eight-stage"
+          },
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-043",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "checklist_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TPL-CHK-044",
+            "kind": "checklist",
+            "slug": "archive_handover",
+            "title_ja": "保存・引継ぎチェックリスト",
+            "version": "0.2.0",
+            "lifecycle": "draft",
+            "status": "substantive_draft",
+            "priority": "P0",
+            "applicable_pipeline_stages": [
+              "08"
+            ],
+            "origin": "independent_proposal",
+            "authority_status": "unapproved",
+            "source_catalog": "templates/catalog.json",
+            "sections": [
+              {
+                "id": "TPL-CHK-044-S1",
+                "heading_ja": "確認項目",
+                "items": [
+                  {
+                    "id": "TPL-CHK-044-I001",
+                    "criterion_ja": "原版と各訂正版、通知、公開来歴のIDを保存対象表で照合した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "保存目録の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-044-I002",
+                    "criterion_ja": "素材の権利、個人情報、閲覧制限及び保持期間を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "権利とアクセス権の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-044-I003",
+                    "criterion_ja": "ファイル・パッケージのハッシュを作成・記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "固定性目録の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-044-I004",
+                    "criterion_ja": "保存先と異なるコピーの場所、責任者を記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "複製配置の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-044-I005",
+                    "criterion_ja": "復元試験・完全性検査の方法と頻度を記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "検査手順の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-044-I006",
+                    "criterion_ja": "旧版と訂正通知の相互リンク、削除の例外を記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "来歴と訂正状態の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-044-I007",
+                    "criterion_ja": "引継ぎ先と再取得可能性を実際に確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "復元・引継ぎログの識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  }
+                ]
+              },
+              {
+                "id": "TPL-CHK-044-S2",
+                "heading_ja": "点検結果の記録",
+                "fields": [
+                  {
+                    "id": "TPL-CHK-044-F001",
+                    "label_ja": "対象案件・対象版",
+                    "type": "short_text",
+                    "required": false,
+                    "description_ja": "対象案件・対象版の対象版、証拠、確認者と未解決事項を記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-044-F002",
+                    "label_ja": "担当者と点検日",
+                    "type": "date",
+                    "required": false,
+                    "description_ja": "担当者と点検日の対象版、証拠、確認者と未解決事項を記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-044-F003",
+                    "label_ja": "未解決事項と対応",
+                    "type": "long_text",
+                    "required": false,
+                    "description_ja": "未解決事項と対応の対象版、証拠、確認者と未解決事項を記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-044-F004",
+                    "label_ja": "確認に用いた資料ID",
+                    "type": "table",
+                    "required": false,
+                    "description_ja": "確認に用いた資料IDの対象版、証拠、確認者と未解決事項を記録する。",
+                    "columns": [
+                      "対象・項目",
+                      "内容・参照",
+                      "担当・状態",
+                      "備考"
+                    ],
+                    "min_rows": 2
+                  }
+                ]
+              }
+            ],
+            "relationships": {
+              "related_task_ids": [
+                "TSK-ARC-HANDOFF",
+                "TSK-ARC-ARCHIVE",
+                "TSK-ARC-FIXITY"
+              ],
+              "knowledge_ids": [
+                "KNW-ARC-TRACE",
+                "KNW-ARC-DECISION"
+              ]
+            },
+            "rendering": {
+              "profile": "formal_japanese_mincho"
+            },
+            "notes_ja": "チェック項目の適合は実在の権限者の訂正・削除・公開判断を代行しない。",
+            "workflow_id": "editorial-eight-stage"
+          },
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-044",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "checklist_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TPL-CHK-045",
+            "kind": "checklist",
+            "slug": "retrospective",
+            "title_ja": "改善・振り返りチェックリスト",
+            "version": "0.2.0",
+            "lifecycle": "draft",
+            "status": "substantive_draft",
+            "priority": "P1",
+            "applicable_pipeline_stages": [
+              "08"
+            ],
+            "origin": "independent_proposal",
+            "authority_status": "unapproved",
+            "source_catalog": "templates/catalog.json",
+            "sections": [
+              {
+                "id": "TPL-CHK-045-S1",
+                "heading_ja": "確認項目",
+                "items": [
+                  {
+                    "id": "TPL-CHK-045-I001",
+                    "criterion_ja": "最初に定義した目標と実測結果を同じ単位で比較した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "企画記録、測定報告の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-045-I002",
+                    "criterion_ja": "良かった点と困難を根拠つきの事実として記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "観察・証言の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-045-I003",
+                    "criterion_ja": "原因仮説、認識上の偏り、相反する見解を明示した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "検討議事の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-045-I004",
+                    "criterion_ja": "改善項目を制度・技術・表現・運用に分類した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "改善候補の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-045-I005",
+                    "criterion_ja": "実施の権限、費用と担当・期限を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "実行計画の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-045-I006",
+                    "criterion_ja": "改善確認の指標と次回の検証時点を定めた",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "再評価計画の識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-045-I007",
+                    "criterion_ja": "次の企画で参照可能な教訓を保存記録につないだ",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "引継ぎIDの識別子、版、確認者と判断日時を記録する。",
+                    "human_review": true
+                  }
+                ]
+              },
+              {
+                "id": "TPL-CHK-045-S2",
+                "heading_ja": "点検結果の記録",
+                "fields": [
+                  {
+                    "id": "TPL-CHK-045-F001",
+                    "label_ja": "対象案件・対象版",
+                    "type": "short_text",
+                    "required": false,
+                    "description_ja": "対象案件・対象版の対象版、証拠、確認者と未解決事項を記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-045-F002",
+                    "label_ja": "担当者と点検日",
+                    "type": "date",
+                    "required": false,
+                    "description_ja": "担当者と点検日の対象版、証拠、確認者と未解決事項を記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-045-F003",
+                    "label_ja": "未解決事項と対応",
+                    "type": "long_text",
+                    "required": false,
+                    "description_ja": "未解決事項と対応の対象版、証拠、確認者と未解決事項を記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-045-F004",
+                    "label_ja": "確認に用いた資料ID",
+                    "type": "table",
+                    "required": false,
+                    "description_ja": "確認に用いた資料IDの対象版、証拠、確認者と未解決事項を記録する。",
+                    "columns": [
+                      "対象・項目",
+                      "内容・参照",
+                      "担当・状態",
+                      "備考"
+                    ],
+                    "min_rows": 2
+                  }
+                ]
+              }
+            ],
+            "relationships": {
+              "related_task_ids": [
+                "TSK-ARC-RETRO"
+              ],
+              "knowledge_ids": [
+                "KNW-ARC-TRACE",
+                "KNW-ARC-DECISION"
+              ]
+            },
+            "rendering": {
+              "profile": "formal_japanese_mincho"
+            },
+            "notes_ja": "チェック項目の適合は実在の権限者の訂正・削除・公開判断を代行しない。",
+            "workflow_id": "editorial-eight-stage"
+          },
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-045",
+            "version": "0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-ARC-CONTINUITY",
+      "title_ja": "記録の循環と次の企画段階への接続",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "第8段階で作成した公開後対応決定、訂正通知、測定方法と評価結果、保存目録、完全性点検、改善提案の識別子を、次の企画の初期資料へ接続する。経験則は検証可能な条件とともに記録し、今後の判断を予め拘束する規程として扱わない。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "読者の評価、将来の研究の更新、関係者からの新たな指摘により記録は再開される場合がある。案件の一次終了と記録・応答義務の存続を区別し、窓口と再評価条件を明記する。"
+        }
+      ]
+    }
+  ]
+}

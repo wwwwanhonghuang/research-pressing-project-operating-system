@@ -1,0 +1,179 @@
+{
+  "type": "template",
+  "id": "TPL-DOC-013",
+  "kind": "document",
+  "version": "0.1.0",
+  "status": "structural_template",
+  "workflow_id": "editorial-eight-stage",
+  "stages": [
+    "01",
+    "03",
+    "05",
+    "06",
+    "07",
+    "08"
+  ],
+  "title_ja": "会議議事録",
+  "sections": [
+    {
+      "id": "TPL-DOC-013-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-013-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-013-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-013-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-013-S2",
+      "heading_ja": "会議の概要",
+      "fields": [
+        {
+          "id": "TPL-DOC-013-F004",
+          "label_ja": "会議目的",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-013-F005",
+          "label_ja": "日時と場所",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-013-F006",
+          "label_ja": "参加者と役割",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-013-F007",
+          "label_ja": "議題",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-013-S3",
+      "heading_ja": "議論と合意",
+      "fields": [
+        {
+          "id": "TPL-DOC-013-F008",
+          "label_ja": "主な意見と根拠",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-013-F009",
+          "label_ja": "決定事項",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-013-F010",
+          "label_ja": "保留事項",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-013-F011",
+          "label_ja": "次の作業・担当・期限",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-013-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-013-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-013-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-013-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "composition_slots": [],
+  "review_status": "unapproved",
+  "semantic_sha256": "d937d523a420082cd8f6ba0ba9b051c64d381823194a11ec8fa2ac4c1f98deb1"
+}

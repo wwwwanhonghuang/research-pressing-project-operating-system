@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-EDT-HANDOFF",
+  "version": "0.1.0",
+  "title": {
+    "ja": "品質確認結果の統合と専門確認工程への引継ぎの実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集責任者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "編集責任者"
+  ],
+  "inputs": [
+    "編集済み版と派生媒体",
+    "全チェックリストの実施記録",
+    "未解決事項一覧"
+  ],
+  "outputs": [
+    "編集確認報告と受渡し版",
+    "専門確認・公開承認に必要な照会事項"
+  ],
+  "steps": [
+    {
+      "id": "PRC-EDT-HANDOFF-S1",
+      "instruction": "版固定された本文・図表・字幕・短文をマニフェストで束ねる",
+      "expected_output": "受渡し成果物一覧",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-EDT-HANDOFF-S2",
+      "instruction": "構成編集、校正、校閲、権利・媒体検査の各確認結果を整理する",
+      "expected_output": "品質確認集約表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-HANDOFF-S3",
+      "instruction": "重要な主張の根拠IDと未解決事項を別途付す",
+      "expected_output": "根拠・保留一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-HANDOFF-S4",
+      "instruction": "専門判断の要否、再検証の担当、期限を明確にする",
+      "expected_output": "専門確認依頼",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-HANDOFF-S5",
+      "instruction": "科学的、権利的、倫理的な未解決事項を状態別にまとめる",
+      "expected_output": "リスク・残課題簿",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-HANDOFF-S6",
+      "instruction": "担当者と引継ぎ先が確定版、欠陥及び必要な判断を確認する",
+      "expected_output": "引継ぎ記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-HANDOFF-S7",
+      "instruction": "編集完了が公開承認を意味しないことを記録する",
+      "expected_output": "承認境界確認",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "重大な未確認がある場合は差戻し又は保留とする",
+    "科学的確認者、法務等の権限を編集担当が代行しない"
+  ]
+}

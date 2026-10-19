@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-DEMO-SOURCE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "架空の資料参照例"
+  },
+  "lifecycle": "draft",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "informational",
+    "institutional_approval": "none"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": false
+  },
+  "category": "scientific_background",
+  "blocks": [
+    {
+      "id": "BLK-DEMO-01",
+      "kind": "paragraph",
+      "text": "架空の研究テーマを用いたモデル検証用の説明文。"
+    }
+  ],
+  "sources": [],
+  "source_refs": [
+    {
+      "kind": "source_record",
+      "id": "SRC-DEMO-001",
+      "version": "0.1.0"
+    }
+  ],
+  "claim_refs": [
+    {
+      "kind": "claim_record",
+      "id": "CLM-DEMO-001",
+      "version": "0.1.0"
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PUB-PLN-HANDBOOK",
+  "version": "0.1.0",
+  "title": {
+    "ja": "企画・編集方針 業務ハンドブック（試作）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "企画編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "output_kind": "handbook",
+  "audience": [
+    "科学コミュニケーション担当者",
+    "企画編集担当者"
+  ],
+  "style_profile": "formal_guideline",
+  "visibility": "public",
+  "chapter_plan": [
+    {
+      "chapter_id": "CH-PLN-INTRO",
+      "heading_ja": "目的・範囲・本資料の位置づけ",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "本書は、企画・編集方針の段階を理解し実施するための独立設計・試作の業務ハンドブックである。企画・調査・取材・制作・確認・公開・評価という全体過程のうち、本段階では次工程へ渡す問い、制約、責任と資料を整える。記載事項は特定組織の正式な業務規程、承認された手順、法令適合性を示すものではない。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "企画に必要な確認は段階的かつ反復的に行う。最初のレビューは公開承認ではなく、追加調査の進行条件の確認である。各タスクの実行記録はプロジェクト単位で作成し、標準定義の版と関連づける。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PLN-STD",
+      "heading_ja": "企画段階の共通業務標準",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PLANNING-TRACE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-CLAIM-BOUNDARY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-AUDIENCE-ACCESS",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PLN-ETH",
+      "heading_ja": "倫理・責任・認識上の配慮",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETHIC-SELECTION",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETHIC-INDEPENDENCE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PLN-INTAKE",
+      "heading_ja": "企画依頼の受理と対象範囲の設定",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PLN-INTAKE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PLN-INTAKE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PLN-TOPIC",
+      "heading_ja": "企画候補の探索・比較と暫定選定",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PLN-TOPIC",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PLN-TOPIC",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PLN-AUDIENCE",
+      "heading_ja": "読者・利用場面と情報アクセスの分析",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PLN-AUDIENCE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PLN-AUDIENCE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PLN-ANGLE",
+      "heading_ja": "編集上の問い・主張範囲と証拠状態の整理",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PLN-ANGLE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PLN-ANGLE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PLN-FORMAT",
+      "heading_ja": "媒体構成・制作工程・資源見積り",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PLN-FORMAT",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PLN-FORMAT",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PLN-GATE",
+      "heading_ja": "企画書統合・レビューと調査段階への引継ぎ",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PLN-GATE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PLN-GATE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PLN-REV",
+      "heading_ja": "判断と引継ぎの最終確認",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "本段階の完了確認には既存の企画書確認、企画候補評価、関係者・責任体制確認のチェックリスト定義を使用する。チェックリストの実施記録、根拠参照および実権限者の判断は独立のオブジェクトとして保存する。保留項目の残存は次段階での検証要件として明示する。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "引継ぎセットは、企画書の識別子と版、対象読者、主な問い、候補となる原資料、未検証の主張、倫理上の照会、担当と期限、媒体構成の仮説を最低限含む。必要な編集変更が発生したときは企画書版と判断記録を更新する。"
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-015",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-016",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-017",
+            "version": "0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PLN-REF",
+      "heading_ja": "参考資料と利用上の留意",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "参考資料：日本新聞協会『新聞倫理綱領』。参照先：https://www.pressnet.or.jp/outline/ethics/。日本心理学会『科学コミュニケーション・ガイドライン』。参照先：https://psych.or.jp/jpamember/press_release_guidelines/。これらは専門的な参照資料であり、本書の独自提案全体を外部機関が承認・保証していることを意味しない。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "本書の文章・手順・判断条件は今後の実地検証、法令・権利・組織規程の確認、および専門的な見直しの対象とする。公表または業務導入の判断は、責任ある人間の独立した審査に委ねる。"
+        }
+      ]
+    }
+  ]
+}

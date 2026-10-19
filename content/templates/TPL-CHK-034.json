@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-CHK-034",
+  "kind": "checklist",
+  "slug": "response_resolution",
+  "title_ja": "レビュー指摘対応チェックリスト",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "06"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-CHK-034-S1",
+      "heading_ja": "審査範囲・根拠",
+      "items": [
+        {
+          "id": "TPL-CHK-034-I001",
+          "criterion_ja": "全ての指摘に固有ID、発信者、対象版がある",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "指摘台帳の識別子・担当者・版・確認日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-034-I002",
+          "criterion_ja": "重要度、科学的影響、公開上の影響を区別した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "影響評価記録の識別子・担当者・版・確認日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-034-I003",
+          "criterion_ja": "変更前後の差分と判断理由が参照可能である",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "差分・変更理由の識別子・担当者・版・確認日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-034-I004",
+          "criterion_ja": "採用しなかった指摘と異論を保存した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "判断と反対意見記録の識別子・担当者・版・確認日時を記録する。",
+          "human_review": true
+        }
+      ]
+    },
+    {
+      "id": "TPL-CHK-034-S2",
+      "heading_ja": "対応判断・記録",
+      "items": [
+        {
+          "id": "TPL-CHK-034-I005",
+          "criterion_ja": "修正により他の媒体や図表へ影響が出たか確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "媒体別差分の識別子・担当者・版・確認日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-034-I006",
+          "criterion_ja": "再審査が必要な項目と再確認者を特定した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "再審査依頼の識別子・担当者・版・確認日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-034-I007",
+          "criterion_ja": "未完了指摘が公開決裁者へ明示されている",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "未解決事項一覧の識別子・担当者・版・確認日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-034-I008",
+          "criterion_ja": "指摘の閉鎖が権限ある担当者により記録された",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "クローズ記録の識別子・担当者・版・確認日時を記録する。",
+          "human_review": true
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho"
+  },
+  "notes_ja": "設問は専門的・法的な判断の代替ではない。実行記録の承認状態は別途管理する。",
+  "workflow_id": "editorial-eight-stage"
+}

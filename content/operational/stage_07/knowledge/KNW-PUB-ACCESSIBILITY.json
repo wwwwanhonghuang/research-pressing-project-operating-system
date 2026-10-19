@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-PUB-ACCESSIBILITY",
+  "version": "0.1.0",
+  "title": {
+    "ja": "公開媒体のアクセシビリティ"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "公開・配信業務の設計・審査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-WCAG22",
+      "locator": "https://www.w3.org/TR/WCAG22/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "WCAG 2.2 W3C Recommendation。適用する達成基準は媒体と契約・規程の範囲に従い定める。"
+    },
+    {
+      "source_id": "SRC-W3C-MEDIA",
+      "locator": "https://www.w3.org/WAI/media/av/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "W3C WAIの動画・音声アクセシビリティ指針。法的義務の一律の根拠ではない。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "07"
+    ],
+    "audiences": [
+      "編集担当者",
+      "配信担当者",
+      "レビュアー",
+      "公開責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-PUB-ACCESSIBILITY-H01",
+      "kind": "heading",
+      "text": "適用範囲と目的",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-ACCESSIBILITY-P01",
+      "kind": "paragraph",
+      "text": "対象媒体、対象者、適用する基準を先に定め、画面読み上げ、キーボード操作、字幕、書き起こし、必要な映像説明を点検する。"
+    },
+    {
+      "id": "KNW-PUB-ACCESSIBILITY-H02",
+      "kind": "heading",
+      "text": "実施上の確認事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-ACCESSIBILITY-P02",
+      "kind": "paragraph",
+      "text": "音声だけの資料、音声付き動画、無音動画では適切な代替形式が異なる。WCAG 2.2とWAIの媒体別ガイドを照合する。"
+    },
+    {
+      "id": "KNW-PUB-ACCESSIBILITY-H03",
+      "kind": "heading",
+      "text": "境界と判断事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-ACCESSIBILITY-P03",
+      "kind": "paragraph",
+      "text": "自動評価、標準適合、人の実際の利用可能性を区別し、未対応事項と代替経路を明らかにする。"
+    }
+  ]
+}

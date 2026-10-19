@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-INT-CONSENT",
+  "version": "0.1.0",
+  "title": {
+    "ja": "参加・録音・撮影・公表範囲の確認の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "取材責任者と記録担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "取材責任者と記録担当者"
+  ],
+  "inputs": [
+    "取材依頼記録",
+    "実施計画",
+    "収録機材",
+    "媒体・利用目的案"
+  ],
+  "outputs": [
+    "説明記録",
+    "同意・保留の項目別台帳",
+    "利用制限"
+  ],
+  "steps": [
+    {
+      "id": "PRC-INT-CONSENT-S1",
+      "instruction": "対象者へ取材目的と媒体、氏名の公表方針、録音・静止画・動画の別を説明する",
+      "expected_output": "説明記録",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-INT-CONSENT-S2",
+      "instruction": "取材参加と記録行為、素材の利用・再公開について別々に希望と条件を確認する",
+      "expected_output": "同意・保留の項目別台帳",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-CONSENT-S3",
+      "instruction": "個人情報、肖像、著作権、第三者の素材、未公開研究などの取扱いを確認する",
+      "expected_output": "利用制限",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-CONSENT-S4",
+      "instruction": "録音の開始前に条件を再確認し、確認時点と方法を記録する",
+      "expected_output": "説明記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-CONSENT-S5",
+      "instruction": "匿名・仮名・オフレコ等の用語を具体的に定義し、対象者と解釈の相違を減らす",
+      "expected_output": "同意・保留の項目別台帳",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-CONSENT-S6",
+      "instruction": "収録先、アクセス権、外部委託とAI文字起こしの可否を設定する",
+      "expected_output": "利用制限",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-CONSENT-S7",
+      "instruction": "範囲の追加・変更が生じたら再説明・再確認の記録を残す",
+      "expected_output": "説明記録",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "許可範囲が曖昧な素材は公開・外部AI入力を停止して判断を照会する",
+    "法の適用除外の可能性と取材倫理上の適切さを混同しない"
+  ]
+}

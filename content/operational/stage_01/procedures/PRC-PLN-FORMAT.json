@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-PLN-FORMAT",
+  "version": "0.1.0",
+  "title": {
+    "ja": "媒体構成・制作工程・資源見積りの標準手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "企画編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "制作調整担当者"
+  ],
+  "inputs": [
+    "編集方針、対象読者分析、利用可能な人員と媒体"
+  ],
+  "outputs": [
+    "媒体展開案、工程表、役割、レビューと予算上の制約"
+  ],
+  "steps": [
+    {
+      "id": "PRC-PLN-FORMAT-S1",
+      "instruction": "文章、図表、音声、映像、対話などの選択肢を列挙し、読者ごとの利点と負担を比較する。",
+      "expected_output": "媒体展開案、工程表、役割、レビューと予算上の制約",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-PLN-FORMAT-S2",
+      "instruction": "媒体ごとに必要な取材、写真、資料、翻訳、アクセシビリティ対応を整理する。",
+      "expected_output": "媒体展開案、工程表、役割、レビューと予算上の制約",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PLN-FORMAT-S3",
+      "instruction": "人員、専門確認、権利確認、制作・改訂の所要資源と日程依存を見積もる。",
+      "expected_output": "媒体展開案、工程表、役割、レビューと予算上の制約",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PLN-FORMAT-S4",
+      "instruction": "研究者などの確認可能時間と、公開予定・解禁予定の制約を整理する。",
+      "expected_output": "媒体展開案、工程表、役割、レビューと予算上の制約",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-PLN-FORMAT-S5",
+      "instruction": "素材が利用できない場合の代替経路と公開範囲を決める。",
+      "expected_output": "媒体展開案、工程表、役割、レビューと予算上の制約",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PLN-FORMAT-S6",
+      "instruction": "工程表と媒体展開案を作り、追加負担や未確定事項を明示する。",
+      "expected_output": "媒体展開案、工程表、役割、レビューと予算上の制約",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "一次資料が未公開、共有権限が未確認、利害関係または個人情報に問題がある場合は、状態を保留として必要な担当者へ照会する。",
+    "取材・公開条件が変化した場合は、版と変更理由を記録して影響する後続作業を再点検する。",
+    "AIの提案のみをもって完了または承認と判定しない。"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "task_id": "source_claim_register",
+  "items": [
+    {
+      "id": "C1",
+      "text": "主要な主張に参照元と該当箇所が記録されている",
+      "required": true
+    },
+    {
+      "id": "C2",
+      "text": "定量値、単位、条件及び対象集団を照合した",
+      "required": true
+    },
+    {
+      "id": "C3",
+      "text": "未解決の事項と確認責任者が記録されている",
+      "required": true
+    },
+    {
+      "id": "C4",
+      "text": "AIを利用した場合、人間による出典照合を実施した",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-CHK-028",
+  "kind": "checklist",
+  "slug": "multimedia_script",
+  "title_ja": "映像・音声台本確認チェックリスト",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P1",
+  "applicable_pipeline_stages": [
+    "04"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-CHK-028-S1",
+      "heading_ja": "確認項目",
+      "items": [
+        {
+          "id": "TPL-CHK-028-I001",
+          "criterion_ja": "動画・音声の構成が原稿本文と出典に対応している",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する原資料ID、原稿の該当版・箇所、確認者、判断理由と確認日を保存する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-028-I002",
+          "criterion_ja": "ナレーション、画面文字、テロップ・字幕の数値と固有名詞が一致する",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する原資料ID、原稿の該当版・箇所、確認者、判断理由と確認日を保存する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-028-I003",
+          "criterion_ja": "見せ方や効果音によって研究結果を過度に強調していない",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する原資料ID、原稿の該当版・箇所、確認者、判断理由と確認日を保存する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-028-I004",
+          "criterion_ja": "引用音声、人物、画像、音楽等の利用条件を確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する原資料ID、原稿の該当版・箇所、確認者、判断理由と確認日を保存する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-028-I005",
+          "criterion_ja": "字幕・書き起こし・図の代替説明を準備した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する原資料ID、原稿の該当版・箇所、確認者、判断理由と確認日を保存する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-028-I006",
+          "criterion_ja": "再生しなくても重要な情報へアクセスできる経路がある",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する原資料ID、原稿の該当版・箇所、確認者、判断理由と確認日を保存する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-028-I007",
+          "criterion_ja": "媒体ごとの解禁条件、リンク先、版を揃えた",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する原資料ID、原稿の該当版・箇所、確認者、判断理由と確認日を保存する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-028-I008",
+          "criterion_ja": "外部制作物の修正責任と未決事項を記録した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する原資料ID、原稿の該当版・箇所、確認者、判断理由と確認日を保存する。",
+          "human_review": true
+        }
+      ]
+    },
+    {
+      "id": "TPL-CHK-028-S2",
+      "heading_ja": "点検結果の記録",
+      "fields": [
+        {
+          "id": "TPL-CHK-028-F001",
+          "label_ja": "対象案件・対象版",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-CHK-028-F002",
+          "label_ja": "担当者と点検日",
+          "type": "date",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-CHK-028-F003",
+          "label_ja": "未解決事項と対応",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-CHK-028-F004",
+          "label_ja": "確認に用いた資料ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho"
+  },
+  "notes_ja": "設問は専門的・法的な判断の代替ではない。実行記録の承認状態は別途管理する。",
+  "workflow_id": "editorial-eight-stage"
+}

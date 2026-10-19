@@ -1,0 +1,4447 @@
+{
+  "schema_version": "0.1.0",
+  "document_id": "PUB-PUB-HANDBOOK",
+  "version": "0.1.0",
+  "title_ja": "公開・配信 業務ハンドブック（独立試案・統合版）",
+  "status": "independent_draft",
+  "chapters": [
+    {
+      "id": "CH-PUB-INTRO",
+      "title_ja": "適用範囲と第6段階の公開承認との関係",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "本書は承認済み原稿・素材を、アクセス可能かつ追跡可能な形で公開・配信するための独立の業務試案である。配信操作の実行、ウェブへの反映、読者が実際に閲覧できることはそれぞれ区別して記録する。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "第6段階の公開決裁記録と版の同一性を引き継ぐ。構造検証の結果や配信前チェックリストの完了は、実在の権限ある者の公開許可と同一ではない。判断条件が不明な場合は送信を保留する。"
+        }
+      ]
+    },
+    {
+      "id": "CH-PUB-PACKAGE",
+      "title_ja": "引継ぎ資料と承認済み配信単位の受領",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-PUB-PACKAGE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "引継ぎ資料と承認済み配信単位の受領"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "配信調整担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "07"
+            ],
+            "inputs": [
+              "第6段階の承認記録",
+              "対象原稿と素材",
+              "承認条件"
+            ],
+            "outputs": [
+              "公開パッケージ受領・相違点記録"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "公開パッケージ受領・相違点記録に公開対象の版、媒体、担当者及び確認日を記録した",
+              "根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した",
+              "第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した"
+            ],
+            "review_roles": [
+              "配信責任者",
+              "必要に応じた第6段階の審査責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-PUB-PACKAGE",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-PACKAGE",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-VERSION",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-PUB-ACCOUNTABILITY",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-077",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-037",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-PACKAGE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-PUB-PACKAGE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "引継ぎ資料と承認済み配信単位の受領の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "配信調整担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "配信調整担当者"
+            ],
+            "inputs": [
+              "第6段階の承認記録",
+              "対象原稿と素材",
+              "承認条件"
+            ],
+            "outputs": [
+              "公開パッケージ受領・相違点記録"
+            ],
+            "steps": [
+              {
+                "id": "PRC-PUB-PACKAGE-S1",
+                "instruction": "承認記録の対象媒体、版、ファイルハッシュ、期限を読取り、受領する",
+                "expected_output": "承認対象一覧",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-PACKAGE-S2",
+                "instruction": "原稿、画像、字幕、説明文、利用許諾を個別の配信単位へ対応させる",
+                "expected_output": "素材別ハッシュ・版台帳",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-PACKAGE-S3",
+                "instruction": "送信予定物と承認対象を機械的・人的に比較し差異を記録する",
+                "expected_output": "相違点一覧",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-PACKAGE-S4",
+                "instruction": "条件付き・失効・差戻しを検出したら配信を停止して審査担当者へ戻す",
+                "expected_output": "停止及び照会記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-PACKAGE-S5",
+                "instruction": "許可された範囲と担当者を引継ぎ票に明記する",
+                "expected_output": "受領確認",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "承認に含まれない媒体又は版は追加審査に回す",
+              "記録が構造的に整っていても権限者の実在性は機械判定できない"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-PACKAGE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PUB-CHANNEL",
+      "title_ja": "媒体と公開目的に応じた配信設計",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-PUB-CHANNEL",
+            "version": "0.1.0",
+            "title": {
+              "ja": "媒体と公開目的に応じた配信設計"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "配信企画担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "07"
+            ],
+            "inputs": [
+              "読者分析",
+              "承認媒体範囲",
+              "制作素材",
+              "利用条件"
+            ],
+            "outputs": [
+              "媒体別配信計画・素材対応表"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "媒体別配信計画・素材対応表に公開対象の版、媒体、担当者及び確認日を記録した",
+              "根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した",
+              "第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した"
+            ],
+            "review_roles": [
+              "配信責任者",
+              "必要に応じた第6段階の審査責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-PUB-CHANNEL",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-CHANNEL",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-CONSISTENCY",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-PUB-ACCESS",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-079",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-039",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-CHANNEL",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-PUB-CHANNEL",
+            "version": "0.1.0",
+            "title": {
+              "ja": "媒体と公開目的に応じた配信設計の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "配信企画担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "配信企画担当者"
+            ],
+            "inputs": [
+              "読者分析",
+              "承認媒体範囲",
+              "制作素材",
+              "利用条件"
+            ],
+            "outputs": [
+              "媒体別配信計画・素材対応表"
+            ],
+            "steps": [
+              {
+                "id": "PRC-PUB-CHANNEL-S1",
+                "instruction": "媒体ごとに受け手、利用場面、到達目標と誘導先を明示する",
+                "expected_output": "媒体別目的票",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-CHANNEL-S2",
+                "instruction": "ウェブ・SNS・音声・動画・文書の利用条件及び表現上の制約を整理する",
+                "expected_output": "媒体別要件表",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-CHANNEL-S3",
+                "instruction": "短縮表現と原稿の主張・条件・不確実性の対応関係を確認する",
+                "expected_output": "表現対応一覧",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-CHANNEL-S4",
+                "instruction": "各媒体に代替アクセス経路、出典、訂正窓口を割り当てる",
+                "expected_output": "誘導及びアクセス設計",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-CHANNEL-S5",
+                "instruction": "準備済み素材の担当者・期限・再審査条件を設定する",
+                "expected_output": "媒体別担当表",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "媒体固有の編集が承認済み主張を変更するときはStage 4–6へ差し戻す"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-CHANNEL",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PUB-SCHEDULE",
+      "title_ja": "公開時刻・解禁・関係者連絡の管理",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-PUB-SCHEDULE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "公開時刻・解禁・関係者連絡の管理"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開進行管理担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "07"
+            ],
+            "inputs": [
+              "解禁条件",
+              "承認日時",
+              "配信先",
+              "時区と関係者一覧"
+            ],
+            "outputs": [
+              "確定公開工程・時刻照合記録"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "確定公開工程・時刻照合記録に公開対象の版、媒体、担当者及び確認日を記録した",
+              "根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した",
+              "第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した"
+            ],
+            "review_roles": [
+              "配信責任者",
+              "必要に応じた第6段階の審査責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-PUB-SCHEDULE",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-SCHEDULE",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-RISK",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-PUB-ACCOUNTABILITY",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-077",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-037",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-SCHEDULE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-PUB-SCHEDULE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "公開時刻・解禁・関係者連絡の管理の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開進行管理担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "公開進行管理担当者"
+            ],
+            "inputs": [
+              "解禁条件",
+              "承認日時",
+              "配信先",
+              "時区と関係者一覧"
+            ],
+            "outputs": [
+              "確定公開工程・時刻照合記録"
+            ],
+            "steps": [
+              {
+                "id": "PRC-PUB-SCHEDULE-S1",
+                "instruction": "基準時刻と時区を明記し関係者間の解禁日時を照合する",
+                "expected_output": "日時・時区記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-SCHEDULE-S2",
+                "instruction": "予約公開、サイト公開、SNS、外部配信の依存関係を図示する",
+                "expected_output": "公開順序・依存関係表",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-SCHEDULE-S3",
+                "instruction": "権利上の公開期間、事前告知制限、取消し期限を確認する",
+                "expected_output": "媒体ごとの公開条件",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-SCHEDULE-S4",
+                "instruction": "障害・保留時の連絡窓口と停止指示の伝達方法を演習する",
+                "expected_output": "中止連絡手順",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-SCHEDULE-S5",
+                "instruction": "公開作業者と立会い者が最終予定版を確認する",
+                "expected_output": "時刻確認署名欄",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "解禁条件の不一致があれば日時を確定せず審査責任者に相談する",
+              "外部予約投稿の変更が反映されない場合は配信停止の実行可否を確認する"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-SCHEDULE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PUB-WEB",
+      "title_ja": "ウェブ掲載とページ品質の事前検証",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-PUB-WEB",
+            "version": "0.1.0",
+            "title": {
+              "ja": "ウェブ掲載とページ品質の事前検証"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "ウェブ公開担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "07"
+            ],
+            "inputs": [
+              "承認済み本文",
+              "画像",
+              "出典",
+              "リンク",
+              "メタデータ",
+              "掲載環境"
+            ],
+            "outputs": [
+              "ウェブ事前検証記録"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "ウェブ事前検証記録に公開対象の版、媒体、担当者及び確認日を記録した",
+              "根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した",
+              "第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した"
+            ],
+            "review_roles": [
+              "配信責任者",
+              "必要に応じた第6段階の審査責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-PUB-WEB",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-WEB",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-ACCESSIBILITY",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-VERSION",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-PUB-PRIVACY",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-078",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-038",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-WEB",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-PUB-WEB",
+            "version": "0.1.0",
+            "title": {
+              "ja": "ウェブ掲載とページ品質の事前検証の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "ウェブ公開担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "ウェブ公開担当者"
+            ],
+            "inputs": [
+              "承認済み本文",
+              "画像",
+              "出典",
+              "リンク",
+              "メタデータ",
+              "掲載環境"
+            ],
+            "outputs": [
+              "ウェブ事前検証記録"
+            ],
+            "steps": [
+              {
+                "id": "PRC-PUB-WEB-S1",
+                "instruction": "公開前環境で対象URLと表示版、認証・アクセス制限の状態を確認する",
+                "expected_output": "検証対象URL・環境",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-WEB-S2",
+                "instruction": "本文、出典、図表、画像代替テキスト、引用リンク、日時表示を照合する",
+                "expected_output": "表示・出典チェック記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-WEB-S3",
+                "instruction": "PC・モバイル・拡大表示・キーボード操作を実際に試す",
+                "expected_output": "利用可能性確認票",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-WEB-S4",
+                "instruction": "検索用タイトル、概要、正規URL、リダイレクト、言語指定を確認する",
+                "expected_output": "メタデータ・リンク記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-WEB-S5",
+                "instruction": "公開後の到達確認の方法と担当者を設定する",
+                "expected_output": "公開後検証手順",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "テスト環境の成功を本番反映の証拠として扱わない",
+              "機密ページの不用意な一般公開・検索露出は即時保留する"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-WEB",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PUB-ACCESS",
+      "title_ja": "アクセシビリティと利用選択の検証",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-PUB-ACCESS",
+            "version": "0.1.0",
+            "title": {
+              "ja": "アクセシビリティと利用選択の検証"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "アクセシビリティ確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "07"
+            ],
+            "inputs": [
+              "媒体別素材",
+              "字幕",
+              "書き起こし",
+              "代替テキスト",
+              "閲覧要件"
+            ],
+            "outputs": [
+              "媒体別アクセシビリティ確認記録"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "媒体別アクセシビリティ確認記録に公開対象の版、媒体、担当者及び確認日を記録した",
+              "根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した",
+              "第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した"
+            ],
+            "review_roles": [
+              "配信責任者",
+              "必要に応じた第6段階の審査責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-PUB-ACCESS",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-ACCESSIBILITY",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-CHANNEL",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-PUB-ACCESS",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [],
+            "checklist_refs": []
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-ACCESS",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-PUB-ACCESS",
+            "version": "0.1.0",
+            "title": {
+              "ja": "アクセシビリティと利用選択の検証の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "アクセシビリティ確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "アクセシビリティ確認担当者"
+            ],
+            "inputs": [
+              "媒体別素材",
+              "字幕",
+              "書き起こし",
+              "代替テキスト",
+              "閲覧要件"
+            ],
+            "outputs": [
+              "媒体別アクセシビリティ確認記録"
+            ],
+            "steps": [
+              {
+                "id": "PRC-PUB-ACCESS-S1",
+                "instruction": "適用する目標基準と閲覧環境を明示する",
+                "expected_output": "適用範囲",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-ACCESS-S2",
+                "instruction": "動画字幕、音声書き起こし、必要な映像説明と画像代替情報を確認する",
+                "expected_output": "代替表現対応票",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-ACCESS-S3",
+                "instruction": "見出し構造、読み上げ順、キーボード操作、コントラストを点検する",
+                "expected_output": "アクセシビリティ試験結果",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-ACCESS-S4",
+                "instruction": "形式別に未対応事項と代替アクセス先を記録する",
+                "expected_output": "改善及び代替計画",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-ACCESS-S5",
+                "instruction": "公開担当者に未解決問題と確認者の判定を返す",
+                "expected_output": "対応記録",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "自動検査のスコアだけで適合を確定しない",
+              "必須情報を特定媒体の利用に限定する仕様は再検討する"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-ACCESS",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PUB-SOCIAL",
+      "title_ja": "SNS投稿と対話導線の準備",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-PUB-SOCIAL",
+            "version": "0.1.0",
+            "title": {
+              "ja": "SNS投稿と対話導線の準備"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "SNS配信担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "07"
+            ],
+            "inputs": [
+              "承認済み要約",
+              "URL",
+              "画像",
+              "投稿方針",
+              "問い合わせ窓口"
+            ],
+            "outputs": [
+              "SNS投稿予約・リンク台帳"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "SNS投稿予約・リンク台帳に公開対象の版、媒体、担当者及び確認日を記録した",
+              "根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した",
+              "第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した"
+            ],
+            "review_roles": [
+              "配信責任者",
+              "必要に応じた第6段階の審査責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-PUB-SOCIAL",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-CONSISTENCY",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-CHANNEL",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-RISK",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-PUB-DIALOGUE",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-080",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-039",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-SOCIAL",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-PUB-SOCIAL",
+            "version": "0.1.0",
+            "title": {
+              "ja": "SNS投稿と対話導線の準備の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "SNS配信担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "SNS配信担当者"
+            ],
+            "inputs": [
+              "承認済み要約",
+              "URL",
+              "画像",
+              "投稿方針",
+              "問い合わせ窓口"
+            ],
+            "outputs": [
+              "SNS投稿予約・リンク台帳"
+            ],
+            "steps": [
+              {
+                "id": "PRC-PUB-SOCIAL-S1",
+                "instruction": "投稿ごとに原文への誘導と基になる主張IDを登録する",
+                "expected_output": "投稿と原稿の対応表",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-SOCIAL-S2",
+                "instruction": "短縮文、図版、ハッシュタグ、画像説明文の意味を再照合する",
+                "expected_output": "投稿校閲結果",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-SOCIAL-S3",
+                "instruction": "リンク先の公開予定と予約時刻を照合する",
+                "expected_output": "リンク・時刻対応表",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-SOCIAL-S4",
+                "instruction": "返信や質問の取扱い、削除・非表示の判断基準と担当者を準備する",
+                "expected_output": "運用応答計画",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-SOCIAL-S5",
+                "instruction": "配信後の投稿IDと実際の公開内容を記録する",
+                "expected_output": "投稿記録",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "投稿による断定強化や印象操作が認められる場合は修正・再審査する",
+              "投稿プラットフォームの表示仕様の変更を公開前に確認する"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-SOCIAL",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PUB-PRESS",
+      "title_ja": "報道機関への提供と問い合わせ準備",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-PUB-PRESS",
+            "version": "0.1.0",
+            "title": {
+              "ja": "報道機関への提供と問い合わせ準備"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "対外情報担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "07"
+            ],
+            "inputs": [
+              "配信資料",
+              "科学的Q&A",
+              "連絡条件",
+              "解禁条件"
+            ],
+            "outputs": [
+              "提供履歴・照会記録"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "提供履歴・照会記録に公開対象の版、媒体、担当者及び確認日を記録した",
+              "根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した",
+              "第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した"
+            ],
+            "review_roles": [
+              "配信責任者",
+              "必要に応じた第6段階の審査責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-PUB-PRESS",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-CHANNEL",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-TRACE",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-PUB-INDEPENDENCE",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-081",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-040",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-PRESS",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-PUB-PRESS",
+            "version": "0.1.0",
+            "title": {
+              "ja": "報道機関への提供と問い合わせ準備の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "対外情報担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "対外情報担当者"
+            ],
+            "inputs": [
+              "配信資料",
+              "科学的Q&A",
+              "連絡条件",
+              "解禁条件"
+            ],
+            "outputs": [
+              "提供履歴・照会記録"
+            ],
+            "steps": [
+              {
+                "id": "PRC-PUB-PRESS-S1",
+                "instruction": "提供物の出典、承認版、連絡先、解禁日時を明記する",
+                "expected_output": "提供パッケージ",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-PRESS-S2",
+                "instruction": "想定質問に対する回答の範囲、分からない事項と回答者を整理する",
+                "expected_output": "Q&A確認結果",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-PRESS-S3",
+                "instruction": "提供先、送信手段、日時、受領状況を記録する",
+                "expected_output": "送信台帳",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-PRESS-S4",
+                "instruction": "追加取材や訂正照会の受付と専門確認への回送を設計する",
+                "expected_output": "問い合わせ対応路線",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-PRESS-S5",
+                "instruction": "公開後の掲載内容は独立した媒体の判断として区別し対応を記録する",
+                "expected_output": "対応履歴",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "外部提供の再利用権限は提供契約等で区別する",
+              "未確認の科学的見解を組織見解として表明しない"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-PRESS",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PUB-EVENT",
+      "title_ja": "イベント・公開対話の進行管理",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-PUB-EVENT",
+            "version": "0.1.0",
+            "title": {
+              "ja": "イベント・公開対話の進行管理"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開イベント担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "07"
+            ],
+            "inputs": [
+              "登壇素材",
+              "会場・遠隔設定",
+              "参加者案内",
+              "配信条件"
+            ],
+            "outputs": [
+              "運営進行台本・緊急連絡表"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "運営進行台本・緊急連絡表に公開対象の版、媒体、担当者及び確認日を記録した",
+              "根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した",
+              "第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した"
+            ],
+            "review_roles": [
+              "配信責任者",
+              "必要に応じた第6段階の審査責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-PUB-EVENT",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-EVENT",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-ACCESSIBILITY",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-PUB-PRIVACY",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-PUB-DIALOGUE",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-083",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-041",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-EVENT",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-PUB-EVENT",
+            "version": "0.1.0",
+            "title": {
+              "ja": "イベント・公開対話の進行管理の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開イベント担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "公開イベント担当者"
+            ],
+            "inputs": [
+              "登壇素材",
+              "会場・遠隔設定",
+              "参加者案内",
+              "配信条件"
+            ],
+            "outputs": [
+              "運営進行台本・緊急連絡表"
+            ],
+            "steps": [
+              {
+                "id": "PRC-PUB-EVENT-S1",
+                "instruction": "参加者の導線、記録、配信範囲と同意条件を事前に整理する",
+                "expected_output": "参加案内",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-EVENT-S2",
+                "instruction": "音響、表示、字幕、配布資料、遠隔接続を試す",
+                "expected_output": "運営リハーサル結果",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-EVENT-S3",
+                "instruction": "登壇者・司会・技術担当者に当日の役割と連絡先を配布する",
+                "expected_output": "運営責任表",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-EVENT-S4",
+                "instruction": "質疑応答の記録と即答困難な質問の後日回答経路を用意する",
+                "expected_output": "質問・照会対応表",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-EVENT-S5",
+                "instruction": "実施後の記録公開と個人情報の扱いを再確認する",
+                "expected_output": "実施報告",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "登壇者の発言を承認済み原稿の一部と自動的に見なさない",
+              "録画又は配信条件が変化した場合は参加者への案内・同意を再確認する"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-EVENT",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PUB-DEPLOY",
+      "title_ja": "公開操作・実行ログの取得",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-PUB-DEPLOY",
+            "version": "0.1.0",
+            "title": {
+              "ja": "公開操作・実行ログの取得"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開実行担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "07"
+            ],
+            "inputs": [
+              "権限を確認した配信指示",
+              "固定版",
+              "掲載先と時刻"
+            ],
+            "outputs": [
+              "公開操作・結果ログ"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "公開操作・結果ログに公開対象の版、媒体、担当者及び確認日を記録した",
+              "根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した",
+              "第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した"
+            ],
+            "review_roles": [
+              "配信責任者",
+              "必要に応じた第6段階の審査責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-PUB-DEPLOY",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-DEPLOY",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-VERSION",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-TRACE",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-PUB-ACCOUNTABILITY",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-085",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-037",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-DEPLOY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-PUB-DEPLOY",
+            "version": "0.1.0",
+            "title": {
+              "ja": "公開操作・実行ログの取得の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開実行担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "公開実行担当者"
+            ],
+            "inputs": [
+              "権限を確認した配信指示",
+              "固定版",
+              "掲載先と時刻"
+            ],
+            "outputs": [
+              "公開操作・結果ログ"
+            ],
+            "steps": [
+              {
+                "id": "PRC-PUB-DEPLOY-S1",
+                "instruction": "直前時点で審査状況と人的な公開指示を照合する",
+                "expected_output": "実行前確認記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-DEPLOY-S2",
+                "instruction": "公開対象のファイルハッシュとチャネル・アカウントを読み上げ確認する",
+                "expected_output": "対象同一性の記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-DEPLOY-S3",
+                "instruction": "必要な資格情報・最小権限・二人目確認者を確認する",
+                "expected_output": "操作権限確認",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-DEPLOY-S4",
+                "instruction": "予定した媒体へ公開を実行し操作日時と戻り値を記録する",
+                "expected_output": "実行ログ",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-DEPLOY-S5",
+                "instruction": "公開後のURL・投稿ID・版・状態を取得し保管する",
+                "expected_output": "配信識別子台帳",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "承認指示の不備、差戻し、媒体変更、ハッシュ不一致では実行しない",
+              "送信成功の応答は受信者が読めることを保証しない"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-DEPLOY",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PUB-VERIFY",
+      "title_ja": "公開結果の独立確認と初期監視",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-PUB-VERIFY",
+            "version": "0.1.0",
+            "title": {
+              "ja": "公開結果の独立確認と初期監視"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開結果確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "07"
+            ],
+            "inputs": [
+              "公開操作ログ",
+              "本番URL",
+              "公開版マニフェスト"
+            ],
+            "outputs": [
+              "到達性・表示・版の確認票"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "到達性・表示・版の確認票に公開対象の版、媒体、担当者及び確認日を記録した",
+              "根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した",
+              "第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した"
+            ],
+            "review_roles": [
+              "配信責任者",
+              "必要に応じた第6段階の審査責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-PUB-VERIFY",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-TRACE",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-WEB",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-DEPLOY",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-PUB-ACCOUNTABILITY",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-085",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-038",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-VERIFY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-PUB-VERIFY",
+            "version": "0.1.0",
+            "title": {
+              "ja": "公開結果の独立確認と初期監視の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開結果確認担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "公開結果確認担当者"
+            ],
+            "inputs": [
+              "公開操作ログ",
+              "本番URL",
+              "公開版マニフェスト"
+            ],
+            "outputs": [
+              "到達性・表示・版の確認票"
+            ],
+            "steps": [
+              {
+                "id": "PRC-PUB-VERIFY-S1",
+                "instruction": "配信操作とは異なる経路・閲覧条件で本番URLを開く",
+                "expected_output": "独立到達テスト",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-VERIFY-S2",
+                "instruction": "HTTP応答、見える本文、掲載時刻、ダウンロード可能性を記録する",
+                "expected_output": "公開結果スナップショット",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-VERIFY-S3",
+                "instruction": "表示版と承認済みハッシュの一致を可能な範囲で照合する",
+                "expected_output": "一致確認",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-VERIFY-S4",
+                "instruction": "字幕、音声、主要リンク、関連媒体の誘導先を抜き取り点検する",
+                "expected_output": "利用検証記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-VERIFY-S5",
+                "instruction": "反映遅延・キャッシュ差異・第三者プラットフォーム障害を分類する",
+                "expected_output": "監視・是正記録",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "HTTP成功応答だけで掲載内容やアクセス可能性を保証しない",
+              "削除・非公開化が直ちにキャッシュから消えると想定しない"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-VERIFY",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PUB-INCIDENT",
+      "title_ja": "誤掲載・障害・公開停止と差戻し",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-PUB-INCIDENT",
+            "version": "0.1.0",
+            "title": {
+              "ja": "誤掲載・障害・公開停止と差戻し"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開事故対応責任者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "07"
+            ],
+            "inputs": [
+              "異常検知",
+              "問い合わせ",
+              "停止条件",
+              "公開記録"
+            ],
+            "outputs": [
+              "事故・公開停止・是正記録"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "事故・公開停止・是正記録に公開対象の版、媒体、担当者及び確認日を記録した",
+              "根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した",
+              "第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した"
+            ],
+            "review_roles": [
+              "配信責任者",
+              "必要に応じた第6段階の審査責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-PUB-INCIDENT",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-RISK",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-DEPLOY",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-TRACE",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-PUB-PRIVACY",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-PUB-ACCOUNTABILITY",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-085",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-037",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-INCIDENT",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-PUB-INCIDENT",
+            "version": "0.1.0",
+            "title": {
+              "ja": "誤掲載・障害・公開停止と差戻しの実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開事故対応責任者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "公開事故対応責任者"
+            ],
+            "inputs": [
+              "異常検知",
+              "問い合わせ",
+              "停止条件",
+              "公開記録"
+            ],
+            "outputs": [
+              "事故・公開停止・是正記録"
+            ],
+            "steps": [
+              {
+                "id": "PRC-PUB-INCIDENT-S1",
+                "instruction": "異常の内容、影響対象、発見日時、暫定重大度を記録する",
+                "expected_output": "事象記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-INCIDENT-S2",
+                "instruction": "権限ある責任者と連絡を取り配信停止又は保留の必要性を判断する",
+                "expected_output": "エスカレーション記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-INCIDENT-S3",
+                "instruction": "各媒体の表示状態、再共有、キャッシュ、外部再利用の可能性を確認する",
+                "expected_output": "影響範囲票",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-INCIDENT-S4",
+                "instruction": "差替え・訂正・撤回・追加説明を別々の選択肢として記録する",
+                "expected_output": "対応判断資料",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-INCIDENT-S5",
+                "instruction": "変更した素材と実行結果を残し必要な場合にStage 6又はStage 8へ接続する",
+                "expected_output": "是正履歴",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "個人情報漏えい疑いは適用規程の緊急報告経路へ",
+              "重大な科学的誤りと公開撤回の判断は適切な権限者へ"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-INCIDENT",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PUB-HANDOFF",
+      "title_ja": "公開記録の確定と訂正・評価段階への引継ぎ",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-PUB-HANDOFF",
+            "version": "0.1.0",
+            "title": {
+              "ja": "公開記録の確定と訂正・評価段階への引継ぎ"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "記録・評価連携担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "07"
+            ],
+            "inputs": [
+              "実公開版",
+              "URL・投稿ID",
+              "配信記録",
+              "問い合わせ",
+              "監視結果"
+            ],
+            "outputs": [
+              "第8段階への引継ぎパッケージ"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "第8段階への引継ぎパッケージに公開対象の版、媒体、担当者及び確認日を記録した",
+              "根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した",
+              "第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した"
+            ],
+            "review_roles": [
+              "配信責任者",
+              "必要に応じた第6段階の審査責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-PUB-HANDOFF",
+              "version": "0.1.0"
+            },
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-TRACE",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PUB-CONSISTENCY",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-PUB-DIALOGUE",
+                "version": "0.1.0"
+              }
+            ],
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-085",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-037",
+                "version": "0.2.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-HANDOFF",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-PUB-HANDOFF",
+            "version": "0.1.0",
+            "title": {
+              "ja": "公開記録の確定と訂正・評価段階への引継ぎの実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "記録・評価連携担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "記録・評価連携担当者"
+            ],
+            "inputs": [
+              "実公開版",
+              "URL・投稿ID",
+              "配信記録",
+              "問い合わせ",
+              "監視結果"
+            ],
+            "outputs": [
+              "第8段階への引継ぎパッケージ"
+            ],
+            "steps": [
+              {
+                "id": "PRC-PUB-HANDOFF-S1",
+                "instruction": "予定版、承認版、実公開版、変更履歴を対応づける",
+                "expected_output": "版関係表",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-HANDOFF-S2",
+                "instruction": "発信日時、媒体、URL、投稿ID、素材の権利条件をまとめる",
+                "expected_output": "公開来歴台帳",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-HANDOFF-S3",
+                "instruction": "未解決事項、問い合わせ、訂正候補、測定制約を明示する",
+                "expected_output": "継続対応一覧",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-HANDOFF-S4",
+                "instruction": "到達指標と理解・社会的影響を異なる評価対象として区別する",
+                "expected_output": "評価用データ辞書",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PUB-HANDOFF-S5",
+                "instruction": "第8段階の担当者と受領日時を記録する",
+                "expected_output": "引継ぎ確認",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "閲覧数や反応数を科学的正確性・理解度の証拠と見なさない"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-HANDOFF",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PUB-STANDARDS",
+      "title_ja": "公開・配信の品質標準",
+      "parts": [
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-PUB-PACKAGE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "配信単位と承認対象の同一性"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開・配信業務の設計・審査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-RFC-9110",
+                "locator": "https://www.rfc-editor.org/rfc/rfc9110.html",
+                "accessed_on": "2026-10-19",
+                "verification_note": "RFC 9110 HTTP Semantics。HTTP応答の技術的意味に限る。公開内容の正確性や許諾の規範ではない。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "07"
+              ],
+              "audiences": [
+                "編集担当者",
+                "配信担当者",
+                "レビュアー",
+                "公開責任者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-PUB-PACKAGE-H01",
+                "kind": "heading",
+                "text": "適用範囲と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-PACKAGE-P01",
+                "kind": "paragraph",
+                "text": "承認された本文や添付素材は媒体・改訂版・権利条件の組合せとして管理する。"
+              },
+              {
+                "id": "KNW-PUB-PACKAGE-H02",
+                "kind": "heading",
+                "text": "実施上の確認事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-PACKAGE-P02",
+                "kind": "paragraph",
+                "text": "同一性を確認する際は原稿と配信結果の内容ハッシュ、対象URL、担当者と時刻を並記する。ハッシュは内容同一性を補助するが権限の正当性を保証しない。"
+              },
+              {
+                "id": "KNW-PUB-PACKAGE-H03",
+                "kind": "heading",
+                "text": "境界と判断事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-PACKAGE-P03",
+                "kind": "paragraph",
+                "text": "大幅な短縮・翻訳・差替えは新たな編集表現として再確認を要する。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-PACKAGE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-PUB-VERSION",
+            "version": "0.1.0",
+            "title": {
+              "ja": "変更管理と配信再審査"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開・配信業務の設計・審査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-RFC-9110",
+                "locator": "https://www.rfc-editor.org/rfc/rfc9110.html",
+                "accessed_on": "2026-10-19",
+                "verification_note": "RFC 9110 HTTP Semantics。HTTP応答の技術的意味に限る。公開内容の正確性や許諾の規範ではない。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "07"
+              ],
+              "audiences": [
+                "編集担当者",
+                "配信担当者",
+                "レビュアー",
+                "公開責任者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-PUB-VERSION-H01",
+                "kind": "heading",
+                "text": "適用範囲と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-VERSION-P01",
+                "kind": "paragraph",
+                "text": "公開後・予約後の媒体別変更は、承認対象との対応が失われるかどうかを評価する。"
+              },
+              {
+                "id": "KNW-PUB-VERSION-H02",
+                "kind": "heading",
+                "text": "実施上の確認事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-VERSION-P02",
+                "kind": "paragraph",
+                "text": "修正の種類を誤植、意味変更、権利変更、公開条件変更に分け、誰が再確認するか記録する。"
+              },
+              {
+                "id": "KNW-PUB-VERSION-H03",
+                "kind": "heading",
+                "text": "境界と判断事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-VERSION-P03",
+                "kind": "paragraph",
+                "text": "修正前後の版を保存し、訂正履歴の公表要否は第8段階で検討する。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-VERSION",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-PUB-CHANNEL",
+            "version": "0.1.0",
+            "title": {
+              "ja": "媒体選択と読者のアクセス経路"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開・配信業務の設計・審査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-W3C-MEDIA",
+                "locator": "https://www.w3.org/WAI/media/av/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "W3C WAIの動画・音声アクセシビリティ指針。法的義務の一律の根拠ではない。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "07"
+              ],
+              "audiences": [
+                "編集担当者",
+                "配信担当者",
+                "レビュアー",
+                "公開責任者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-PUB-CHANNEL-H01",
+                "kind": "heading",
+                "text": "適用範囲と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-CHANNEL-P01",
+                "kind": "paragraph",
+                "text": "文章、音声、動画、画像、イベントの利用を特定媒体に強制せず、読者が利用形態を選べる設計を検討する。"
+              },
+              {
+                "id": "KNW-PUB-CHANNEL-H02",
+                "kind": "heading",
+                "text": "実施上の確認事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-CHANNEL-P02",
+                "kind": "paragraph",
+                "text": "同じ結論でも媒体によって説明密度が違う。短い形式から詳細な根拠へ到達できるよう導線を確保する。"
+              },
+              {
+                "id": "KNW-PUB-CHANNEL-H03",
+                "kind": "heading",
+                "text": "境界と判断事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-CHANNEL-P03",
+                "kind": "paragraph",
+                "text": "出典や数値の条件を削って誤解を招く可能性がある場合は短縮案を改める。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-CHANNEL",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-PUB-SCHEDULE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "時刻・時区・解禁の統合"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開・配信業務の設計・審査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-RFC-9110",
+                "locator": "https://www.rfc-editor.org/rfc/rfc9110.html",
+                "accessed_on": "2026-10-19",
+                "verification_note": "RFC 9110 HTTP Semantics。HTTP応答の技術的意味に限る。公開内容の正確性や許諾の規範ではない。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "07"
+              ],
+              "audiences": [
+                "編集担当者",
+                "配信担当者",
+                "レビュアー",
+                "公開責任者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-PUB-SCHEDULE-H01",
+                "kind": "heading",
+                "text": "適用範囲と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-SCHEDULE-P01",
+                "kind": "paragraph",
+                "text": "基準となる日時、時区、配信予約、利用許諾の期間、解禁条件を個別に記録する。"
+              },
+              {
+                "id": "KNW-PUB-SCHEDULE-H02",
+                "kind": "heading",
+                "text": "実施上の確認事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-SCHEDULE-P02",
+                "kind": "paragraph",
+                "text": "媒体による予約確定時刻、表示時刻、インデックス反映時刻は一致するとは限らない。確認主体と時刻を明示する。"
+              },
+              {
+                "id": "KNW-PUB-SCHEDULE-H03",
+                "kind": "heading",
+                "text": "境界と判断事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-SCHEDULE-P03",
+                "kind": "paragraph",
+                "text": "予告の取り消しや配信停止が技術的に可能か事前に点検する。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-SCHEDULE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-PUB-WEB",
+            "version": "0.1.0",
+            "title": {
+              "ja": "ウェブ公開品質と到達性"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開・配信業務の設計・審査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-RFC-9110",
+                "locator": "https://www.rfc-editor.org/rfc/rfc9110.html",
+                "accessed_on": "2026-10-19",
+                "verification_note": "RFC 9110 HTTP Semantics。HTTP応答の技術的意味に限る。公開内容の正確性や許諾の規範ではない。"
+              },
+              {
+                "source_id": "SRC-WCAG22",
+                "locator": "https://www.w3.org/TR/WCAG22/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "WCAG 2.2 W3C Recommendation。適用する達成基準は媒体と契約・規程の範囲に従い定める。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "07"
+              ],
+              "audiences": [
+                "編集担当者",
+                "配信担当者",
+                "レビュアー",
+                "公開責任者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-PUB-WEB-H01",
+                "kind": "heading",
+                "text": "適用範囲と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-WEB-P01",
+                "kind": "paragraph",
+                "text": "HTML表示、主要リンク、ダウンロード、言語指定、ページ見出し、検索用情報、モバイル閲覧を組み合わせて確認する。"
+              },
+              {
+                "id": "KNW-PUB-WEB-H02",
+                "kind": "heading",
+                "text": "実施上の確認事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-WEB-P02",
+                "kind": "paragraph",
+                "text": "HTTP成功応答、URL到達、正しい本文の表示、アクセシビリティの確認は異なる検査である。"
+              },
+              {
+                "id": "KNW-PUB-WEB-H03",
+                "kind": "heading",
+                "text": "境界と判断事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-WEB-P03",
+                "kind": "paragraph",
+                "text": "公開前環境と公開後本番環境を分けて結果を記録する。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-WEB",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-PUB-ACCESSIBILITY",
+            "version": "0.1.0",
+            "title": {
+              "ja": "公開媒体のアクセシビリティ"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開・配信業務の設計・審査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-WCAG22",
+                "locator": "https://www.w3.org/TR/WCAG22/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "WCAG 2.2 W3C Recommendation。適用する達成基準は媒体と契約・規程の範囲に従い定める。"
+              },
+              {
+                "source_id": "SRC-W3C-MEDIA",
+                "locator": "https://www.w3.org/WAI/media/av/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "W3C WAIの動画・音声アクセシビリティ指針。法的義務の一律の根拠ではない。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "07"
+              ],
+              "audiences": [
+                "編集担当者",
+                "配信担当者",
+                "レビュアー",
+                "公開責任者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-PUB-ACCESSIBILITY-H01",
+                "kind": "heading",
+                "text": "適用範囲と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-ACCESSIBILITY-P01",
+                "kind": "paragraph",
+                "text": "対象媒体、対象者、適用する基準を先に定め、画面読み上げ、キーボード操作、字幕、書き起こし、必要な映像説明を点検する。"
+              },
+              {
+                "id": "KNW-PUB-ACCESSIBILITY-H02",
+                "kind": "heading",
+                "text": "実施上の確認事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-ACCESSIBILITY-P02",
+                "kind": "paragraph",
+                "text": "音声だけの資料、音声付き動画、無音動画では適切な代替形式が異なる。WCAG 2.2とWAIの媒体別ガイドを照合する。"
+              },
+              {
+                "id": "KNW-PUB-ACCESSIBILITY-H03",
+                "kind": "heading",
+                "text": "境界と判断事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-ACCESSIBILITY-P03",
+                "kind": "paragraph",
+                "text": "自動評価、標準適合、人の実際の利用可能性を区別し、未対応事項と代替経路を明らかにする。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-ACCESSIBILITY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-PUB-CONSISTENCY",
+            "version": "0.1.0",
+            "title": {
+              "ja": "複数媒体の意味整合性"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開・配信業務の設計・審査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-W3C-MEDIA",
+                "locator": "https://www.w3.org/WAI/media/av/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "W3C WAIの動画・音声アクセシビリティ指針。法的義務の一律の根拠ではない。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "07"
+              ],
+              "audiences": [
+                "編集担当者",
+                "配信担当者",
+                "レビュアー",
+                "公開責任者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-PUB-CONSISTENCY-H01",
+                "kind": "heading",
+                "text": "適用範囲と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-CONSISTENCY-P01",
+                "kind": "paragraph",
+                "text": "媒体間の本文を完全一致させるより、要点、出典、留保、研究の射程が整合するかを検査する。"
+              },
+              {
+                "id": "KNW-PUB-CONSISTENCY-H02",
+                "kind": "heading",
+                "text": "実施上の確認事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-CONSISTENCY-P02",
+                "kind": "paragraph",
+                "text": "投稿文、画像の文字、音声台本、字幕、要約に関係する主張IDを対応づける。"
+              },
+              {
+                "id": "KNW-PUB-CONSISTENCY-H03",
+                "kind": "heading",
+                "text": "境界と判断事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-CONSISTENCY-P03",
+                "kind": "paragraph",
+                "text": "原稿変更時は依存する媒体表現を再評価し、古いリンクや要約を残さない。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-CONSISTENCY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-PUB-DEPLOY",
+            "version": "0.1.0",
+            "title": {
+              "ja": "公開操作、ログ及び撤回可能性"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開・配信業務の設計・審査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-RFC-9110",
+                "locator": "https://www.rfc-editor.org/rfc/rfc9110.html",
+                "accessed_on": "2026-10-19",
+                "verification_note": "RFC 9110 HTTP Semantics。HTTP応答の技術的意味に限る。公開内容の正確性や許諾の規範ではない。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "07"
+              ],
+              "audiences": [
+                "編集担当者",
+                "配信担当者",
+                "レビュアー",
+                "公開責任者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-PUB-DEPLOY-H01",
+                "kind": "heading",
+                "text": "適用範囲と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-DEPLOY-P01",
+                "kind": "paragraph",
+                "text": "実行者・依頼者・確認者を区別し、実行ログには時刻、対象、媒体、結果を残す。"
+              },
+              {
+                "id": "KNW-PUB-DEPLOY-H02",
+                "kind": "heading",
+                "text": "実施上の確認事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-DEPLOY-P02",
+                "kind": "paragraph",
+                "text": "公開成功の通知と閲覧者から見た実際の表示は分けて確認する。"
+              },
+              {
+                "id": "KNW-PUB-DEPLOY-H03",
+                "kind": "heading",
+                "text": "境界と判断事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-DEPLOY-P03",
+                "kind": "paragraph",
+                "text": "ログに資格情報や不要な個人情報を混入させず、アクセス制御と保存期間を設計する。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-DEPLOY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-PUB-TRACE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "配信来歴と訂正への接続"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開・配信業務の設計・審査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-RFC-9110",
+                "locator": "https://www.rfc-editor.org/rfc/rfc9110.html",
+                "accessed_on": "2026-10-19",
+                "verification_note": "RFC 9110 HTTP Semantics。HTTP応答の技術的意味に限る。公開内容の正確性や許諾の規範ではない。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "07"
+              ],
+              "audiences": [
+                "編集担当者",
+                "配信担当者",
+                "レビュアー",
+                "公開責任者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-PUB-TRACE-H01",
+                "kind": "heading",
+                "text": "適用範囲と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-TRACE-P01",
+                "kind": "paragraph",
+                "text": "原稿、公開素材、URL、投稿ID、公開版、承認記録、訂正履歴の関係を維持する。"
+              },
+              {
+                "id": "KNW-PUB-TRACE-H02",
+                "kind": "heading",
+                "text": "実施上の確認事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-TRACE-P02",
+                "kind": "paragraph",
+                "text": "公開された文書の版と、後に評価される反応・問い合わせを同じ対象に結び付ける。"
+              },
+              {
+                "id": "KNW-PUB-TRACE-H03",
+                "kind": "heading",
+                "text": "境界と判断事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-TRACE-P03",
+                "kind": "paragraph",
+                "text": "閲覧数は露出の一指標であり理解・信頼・正しさの単独代理指標と扱わない。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-TRACE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-PUB-RISK",
+            "version": "0.1.0",
+            "title": {
+              "ja": "異常検知と公開停止の判断"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開・配信業務の設計・審査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-RFC-9110",
+                "locator": "https://www.rfc-editor.org/rfc/rfc9110.html",
+                "accessed_on": "2026-10-19",
+                "verification_note": "RFC 9110 HTTP Semantics。HTTP応答の技術的意味に限る。公開内容の正確性や許諾の規範ではない。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "07"
+              ],
+              "audiences": [
+                "編集担当者",
+                "配信担当者",
+                "レビュアー",
+                "公開責任者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-PUB-RISK-H01",
+                "kind": "heading",
+                "text": "適用範囲と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-RISK-P01",
+                "kind": "paragraph",
+                "text": "リンク誤り、時刻相違、権利疑義、個人情報漏えい、重大な科学的誤解に対し連絡経路を定める。"
+              },
+              {
+                "id": "KNW-PUB-RISK-H02",
+                "kind": "heading",
+                "text": "実施上の確認事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-RISK-P02",
+                "kind": "paragraph",
+                "text": "削除、公開停止、差替え、訂正、撤回は目的と対外的説明の必要性が異なる。"
+              },
+              {
+                "id": "KNW-PUB-RISK-H03",
+                "kind": "heading",
+                "text": "境界と判断事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-RISK-P03",
+                "kind": "paragraph",
+                "text": "重要な変更には権限者の決定と記録を要し、機械的成功判定で進めない。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-RISK",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-PUB-EVENT",
+            "version": "0.1.0",
+            "title": {
+              "ja": "公開イベントの対話と記録"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開・配信業務の設計・審査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-W3C-MEDIA",
+                "locator": "https://www.w3.org/WAI/media/av/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "W3C WAIの動画・音声アクセシビリティ指針。法的義務の一律の根拠ではない。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "07"
+              ],
+              "audiences": [
+                "編集担当者",
+                "配信担当者",
+                "レビュアー",
+                "公開責任者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-PUB-EVENT-H01",
+                "kind": "heading",
+                "text": "適用範囲と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-EVENT-P01",
+                "kind": "paragraph",
+                "text": "参加目的、参加方法、撮影・配信条件、配布物、字幕等の要件を事前案内する。"
+              },
+              {
+                "id": "KNW-PUB-EVENT-H02",
+                "kind": "heading",
+                "text": "実施上の確認事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-EVENT-P02",
+                "kind": "paragraph",
+                "text": "発言時点で確認困難な質問は後日確認として管理し、返答期限と担当者を示す。"
+              },
+              {
+                "id": "KNW-PUB-EVENT-H03",
+                "kind": "heading",
+                "text": "境界と判断事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-PUB-EVENT-P03",
+                "kind": "paragraph",
+                "text": "配信後の録画再利用は別の媒体利用となるため権利・同意範囲を再照合する。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-EVENT",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PUB-ETHICS",
+      "title_ja": "倫理・責任と利用条件",
+      "parts": [
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ETH-PUB-ACCOUNTABILITY",
+            "version": "0.1.0",
+            "title": {
+              "ja": "配信判断の責任と人間の最終確認"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開・配信業務の設計・審査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-RFC-9110",
+                "locator": "https://www.rfc-editor.org/rfc/rfc9110.html",
+                "accessed_on": "2026-10-19",
+                "verification_note": "RFC 9110 HTTP Semantics。HTTP応答の技術的意味に限る。公開内容の正確性や許諾の規範ではない。"
+              }
+            ],
+            "links": [],
+            "category": "ethics",
+            "scope": {
+              "stages": [
+                "07"
+              ],
+              "audiences": [
+                "編集担当者",
+                "配信担当者",
+                "レビュアー",
+                "公開責任者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ETH-PUB-ACCOUNTABILITY-H01",
+                "kind": "heading",
+                "text": "適用範囲と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-PUB-ACCOUNTABILITY-P01",
+                "kind": "paragraph",
+                "text": "公開の最終判断は権限ある担当者が行い、配信者がシステムの判定を実際の許可と解釈しない。"
+              },
+              {
+                "id": "KNW-ETH-PUB-ACCOUNTABILITY-H02",
+                "kind": "heading",
+                "text": "実施上の確認事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-PUB-ACCOUNTABILITY-P02",
+                "kind": "paragraph",
+                "text": "権限不足・保留・条件不一致を発見した者が停止を提起できる報告経路を整える。"
+              },
+              {
+                "id": "KNW-ETH-PUB-ACCOUNTABILITY-H03",
+                "kind": "heading",
+                "text": "境界と判断事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-PUB-ACCOUNTABILITY-P03",
+                "kind": "paragraph",
+                "text": "承認が与えられた理由と具体的な媒体範囲の記録を残し、誤配信時の原因究明を可能にする。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-PUB-ACCOUNTABILITY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ETH-PUB-ACCESS",
+            "version": "0.1.0",
+            "title": {
+              "ja": "利用者の選択と障壁への配慮"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開・配信業務の設計・審査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-W3C-MEDIA",
+                "locator": "https://www.w3.org/WAI/media/av/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "W3C WAIの動画・音声アクセシビリティ指針。法的義務の一律の根拠ではない。"
+              },
+              {
+                "source_id": "SRC-WCAG22",
+                "locator": "https://www.w3.org/TR/WCAG22/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "WCAG 2.2 W3C Recommendation。適用する達成基準は媒体と契約・規程の範囲に従い定める。"
+              }
+            ],
+            "links": [],
+            "category": "ethics",
+            "scope": {
+              "stages": [
+                "07"
+              ],
+              "audiences": [
+                "編集担当者",
+                "配信担当者",
+                "レビュアー",
+                "公開責任者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ETH-PUB-ACCESS-H01",
+                "kind": "heading",
+                "text": "適用範囲と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-PUB-ACCESS-P01",
+                "kind": "paragraph",
+                "text": "一つの表示形式へのアクセスを利用の前提にせず、可能な範囲でテキスト、音声、映像、代替表現を組み合わせる。"
+              },
+              {
+                "id": "KNW-ETH-PUB-ACCESS-H02",
+                "kind": "heading",
+                "text": "実施上の確認事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-PUB-ACCESS-P02",
+                "kind": "paragraph",
+                "text": "可視化で重要な数値、色、位置などを用いる場合は文字や説明による情報保障を検討する。"
+              },
+              {
+                "id": "KNW-ETH-PUB-ACCESS-H03",
+                "kind": "heading",
+                "text": "境界と判断事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-PUB-ACCESS-P03",
+                "kind": "paragraph",
+                "text": "端末や障害、通信環境、言語能力等の差異によって必要な情報が失われないよう見直す。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-PUB-ACCESS",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ETH-PUB-PRIVACY",
+            "version": "0.1.0",
+            "title": {
+              "ja": "配信と問い合わせにおける個人情報の保護"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開・配信業務の設計・審査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-PPC",
+                "locator": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "個人情報保護委員会の通則ガイドライン。具体的な適用関係は確認を要する。"
+              }
+            ],
+            "links": [],
+            "category": "ethics",
+            "scope": {
+              "stages": [
+                "07"
+              ],
+              "audiences": [
+                "編集担当者",
+                "配信担当者",
+                "レビュアー",
+                "公開責任者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ETH-PUB-PRIVACY-H01",
+                "kind": "heading",
+                "text": "適用範囲と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-PUB-PRIVACY-P01",
+                "kind": "paragraph",
+                "text": "アクセス解析、問い合わせ、視聴者の反応、登壇者情報に関する取得目的と必要性を整理する。"
+              },
+              {
+                "id": "KNW-ETH-PUB-PRIVACY-H02",
+                "kind": "heading",
+                "text": "実施上の確認事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-PUB-PRIVACY-P02",
+                "kind": "paragraph",
+                "text": "外部プラットフォームや分析サービスへ渡す情報、保持期間とアクセス権を確認する。"
+              },
+              {
+                "id": "KNW-ETH-PUB-PRIVACY-H03",
+                "kind": "heading",
+                "text": "境界と判断事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-PUB-PRIVACY-P03",
+                "kind": "paragraph",
+                "text": "個人に不利益をもたらしうる情報の誤掲載を発見した場合は適切な報告先へ連絡する。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-PUB-PRIVACY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ETH-PUB-DIALOGUE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "公開後の対話・評価と表象の倫理"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開・配信業務の設計・審査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-W3C-MEDIA",
+                "locator": "https://www.w3.org/WAI/media/av/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "W3C WAIの動画・音声アクセシビリティ指針。法的義務の一律の根拠ではない。"
+              }
+            ],
+            "links": [],
+            "category": "ethics",
+            "scope": {
+              "stages": [
+                "07"
+              ],
+              "audiences": [
+                "編集担当者",
+                "配信担当者",
+                "レビュアー",
+                "公開責任者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ETH-PUB-DIALOGUE-H01",
+                "kind": "heading",
+                "text": "適用範囲と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-PUB-DIALOGUE-P01",
+                "kind": "paragraph",
+                "text": "質問、批判、異なる解釈を訂正や説明改善の可能性として記録する。"
+              },
+              {
+                "id": "KNW-ETH-PUB-DIALOGUE-H02",
+                "kind": "heading",
+                "text": "実施上の確認事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-PUB-DIALOGUE-P02",
+                "kind": "paragraph",
+                "text": "否定的反応の大きさのみで研究成果の妥当性を判断せず、具体的な指摘と根拠を読む。"
+              },
+              {
+                "id": "KNW-ETH-PUB-DIALOGUE-H03",
+                "kind": "heading",
+                "text": "境界と判断事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-PUB-DIALOGUE-P03",
+                "kind": "paragraph",
+                "text": "取材対象や読者を単なるクリック数に還元せず、理解と参加条件にも注目する。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-PUB-DIALOGUE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ETH-PUB-INDEPENDENCE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "対外配信と第三者の独立性"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "公開・配信業務の設計・審査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-JPA",
+                "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "日本心理学会のプレスリリース指針。科学的発信の参考であり他分野の全組織を拘束しない。"
+              }
+            ],
+            "links": [],
+            "category": "ethics",
+            "scope": {
+              "stages": [
+                "07"
+              ],
+              "audiences": [
+                "編集担当者",
+                "配信担当者",
+                "レビュアー",
+                "公開責任者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ETH-PUB-INDEPENDENCE-H01",
+                "kind": "heading",
+                "text": "適用範囲と目的",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-PUB-INDEPENDENCE-P01",
+                "kind": "paragraph",
+                "text": "報道機関や読者が独自に解釈しうることを認識し、提供資料と第三者の編集成果を区別する。"
+              },
+              {
+                "id": "KNW-ETH-PUB-INDEPENDENCE-H02",
+                "kind": "heading",
+                "text": "実施上の確認事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-PUB-INDEPENDENCE-P02",
+                "kind": "paragraph",
+                "text": "科学的留保、研究成果の帰属、利益相反に関する情報の欠落がないか検討する。"
+              },
+              {
+                "id": "KNW-ETH-PUB-INDEPENDENCE-H03",
+                "kind": "heading",
+                "text": "境界と判断事項",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-PUB-INDEPENDENCE-P03",
+                "kind": "paragraph",
+                "text": "問い合わせへの回答に際しては、確認できる事実と解釈を明確にする。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-PUB-INDEPENDENCE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PUB-CHECKLIST",
+      "title_ja": "公開直前・媒体別の確認票",
+      "parts": [
+        {
+          "kind": "checklist_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TPL-CHK-037",
+            "kind": "checklist",
+            "slug": "publication_preflight",
+            "title_ja": "公開直前最終確認チェックリスト",
+            "version": "0.2.0",
+            "lifecycle": "draft",
+            "status": "substantive_draft",
+            "priority": "P0",
+            "applicable_pipeline_stages": [
+              "07"
+            ],
+            "origin": "independent_proposal",
+            "authority_status": "unapproved",
+            "source_catalog": "templates/catalog.json",
+            "sections": [
+              {
+                "id": "TPL-CHK-037-S1",
+                "heading_ja": "確認項目",
+                "items": [
+                  {
+                    "id": "TPL-CHK-037-I001",
+                    "criterion_ja": "第6段階の公開決裁の実在性・範囲を担当者が確認し、判断記録IDを保存した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "決裁記録・対象媒体・確認者に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-037-I002",
+                    "criterion_ja": "実配信対象の原稿・素材と承認済みハッシュを照合した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "ファイルハッシュ・素材IDに加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-037-I003",
+                    "criterion_ja": "解禁日時・時区・予約設定・配信先が一致する",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "予約画面と解禁条件に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-037-I004",
+                    "criterion_ja": "本文・図表・リンク・主張の留保・出典を公開前環境で点検した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "検証ログ又は画面保存に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-037-I005",
+                    "criterion_ja": "アクセシビリティ、媒体別代替形式、問い合わせ先を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "アクセシビリティ記録に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-037-I006",
+                    "criterion_ja": "差戻し条件、停止経路、未解決の重大事項を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "連絡先と未解決一覧に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-037-I007",
+                    "criterion_ja": "公開操作担当と独立確認担当を定めた",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "担当記録に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  }
+                ]
+              },
+              {
+                "id": "TPL-CHK-037-S2",
+                "heading_ja": "点検結果の記録",
+                "fields": [
+                  {
+                    "id": "TPL-CHK-037-F001",
+                    "label_ja": "対象案件・対象版",
+                    "type": "short_text",
+                    "required": false,
+                    "description_ja": "対象案件・対象版を対象版・媒体・担当者・根拠資料に結び付ける。"
+                  },
+                  {
+                    "id": "TPL-CHK-037-F002",
+                    "label_ja": "担当者と点検日",
+                    "type": "date",
+                    "required": false,
+                    "description_ja": "担当者と点検日を対象版・媒体・担当者・根拠資料に結び付ける。"
+                  },
+                  {
+                    "id": "TPL-CHK-037-F003",
+                    "label_ja": "未解決事項と対応",
+                    "type": "long_text",
+                    "required": false,
+                    "description_ja": "未解決事項と対応を対象版・媒体・担当者・根拠資料に結び付ける。"
+                  },
+                  {
+                    "id": "TPL-CHK-037-F004",
+                    "label_ja": "確認に用いた資料ID",
+                    "type": "table",
+                    "required": false,
+                    "description_ja": "確認に用いた資料IDを対象版・媒体・担当者・根拠資料に結び付ける。",
+                    "columns": [
+                      "対象・項目",
+                      "内容・参照",
+                      "担当・状態",
+                      "備考"
+                    ],
+                    "min_rows": 2
+                  }
+                ]
+              }
+            ],
+            "relationships": {
+              "related_task_ids": [
+                "TSK-PUB-PACKAGE",
+                "TSK-PUB-SCHEDULE",
+                "TSK-PUB-DEPLOY",
+                "TSK-PUB-INCIDENT",
+                "TSK-PUB-HANDOFF"
+              ],
+              "knowledge_ids": [
+                "KNW-PUB-TRACE"
+              ]
+            },
+            "rendering": {
+              "profile": "formal_japanese_mincho"
+            },
+            "notes_ja": "本チェックリストの記入・集計は実際の公開権限や法令適合を証明しない。",
+            "workflow_id": "editorial-eight-stage"
+          },
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-037",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "checklist_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TPL-CHK-038",
+            "kind": "checklist",
+            "slug": "web_page_qa",
+            "title_ja": "ウェブ掲載品質チェックリスト",
+            "version": "0.2.0",
+            "lifecycle": "draft",
+            "status": "substantive_draft",
+            "priority": "P0",
+            "applicable_pipeline_stages": [
+              "07"
+            ],
+            "origin": "independent_proposal",
+            "authority_status": "unapproved",
+            "source_catalog": "templates/catalog.json",
+            "sections": [
+              {
+                "id": "TPL-CHK-038-S1",
+                "heading_ja": "確認項目",
+                "items": [
+                  {
+                    "id": "TPL-CHK-038-I001",
+                    "criterion_ja": "本番URLと表示内容、版を独立した閲覧条件で確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "表示スナップショット・ハッシュに加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-038-I002",
+                    "criterion_ja": "見出し構造・画像の代替情報・主要導線を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "閲覧・支援技術による確認に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-038-I003",
+                    "criterion_ja": "引用先URLと出典・数値の表示を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "照合結果に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-038-I004",
+                    "criterion_ja": "モバイル表示・拡大表示・キーボード操作を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "端末・条件記録に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-038-I005",
+                    "criterion_ja": "正規URL、公開日時、言語指定、検索用情報を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "検証記録に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-038-I006",
+                    "criterion_ja": "本番反映後の再確認責任者と記録経路を定めた",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "担当表に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  }
+                ]
+              },
+              {
+                "id": "TPL-CHK-038-S2",
+                "heading_ja": "点検結果の記録",
+                "fields": [
+                  {
+                    "id": "TPL-CHK-038-F001",
+                    "label_ja": "対象案件・対象版",
+                    "type": "short_text",
+                    "required": false,
+                    "description_ja": "対象案件・対象版を対象版・媒体・担当者・根拠資料に結び付ける。"
+                  },
+                  {
+                    "id": "TPL-CHK-038-F002",
+                    "label_ja": "担当者と点検日",
+                    "type": "date",
+                    "required": false,
+                    "description_ja": "担当者と点検日を対象版・媒体・担当者・根拠資料に結び付ける。"
+                  },
+                  {
+                    "id": "TPL-CHK-038-F003",
+                    "label_ja": "未解決事項と対応",
+                    "type": "long_text",
+                    "required": false,
+                    "description_ja": "未解決事項と対応を対象版・媒体・担当者・根拠資料に結び付ける。"
+                  },
+                  {
+                    "id": "TPL-CHK-038-F004",
+                    "label_ja": "確認に用いた資料ID",
+                    "type": "table",
+                    "required": false,
+                    "description_ja": "確認に用いた資料IDを対象版・媒体・担当者・根拠資料に結び付ける。",
+                    "columns": [
+                      "対象・項目",
+                      "内容・参照",
+                      "担当・状態",
+                      "備考"
+                    ],
+                    "min_rows": 2
+                  }
+                ]
+              }
+            ],
+            "relationships": {
+              "related_task_ids": [
+                "TSK-PUB-WEB",
+                "TSK-PUB-VERIFY"
+              ],
+              "knowledge_ids": [
+                "KNW-PUB-TRACE"
+              ]
+            },
+            "rendering": {
+              "profile": "formal_japanese_mincho"
+            },
+            "notes_ja": "本チェックリストの記入・集計は実際の公開権限や法令適合を証明しない。",
+            "workflow_id": "editorial-eight-stage"
+          },
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-038",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "checklist_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TPL-CHK-039",
+            "kind": "checklist",
+            "slug": "social_media_qa",
+            "title_ja": "SNS掲載確認チェックリスト",
+            "version": "0.2.0",
+            "lifecycle": "draft",
+            "status": "substantive_draft",
+            "priority": "P1",
+            "applicable_pipeline_stages": [
+              "07"
+            ],
+            "origin": "independent_proposal",
+            "authority_status": "unapproved",
+            "source_catalog": "templates/catalog.json",
+            "sections": [
+              {
+                "id": "TPL-CHK-039-S1",
+                "heading_ja": "確認項目",
+                "items": [
+                  {
+                    "id": "TPL-CHK-039-I001",
+                    "criterion_ja": "投稿文と承認原稿の主張・留保・出典の関係を記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "主張IDの対応表に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-039-I002",
+                    "criterion_ja": "画像説明と字幕、短縮文の意味が原文と整合する",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "媒体別校閲結果に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-039-I003",
+                    "criterion_ja": "投稿URL・アカウント・公開時刻と時区を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "予約確認と媒体情報に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-039-I004",
+                    "criterion_ja": "引用素材の再利用条件と掲載先での使用を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "利用許諾記録に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-039-I005",
+                    "criterion_ja": "公開後のリンク・訂正・問い合わせ対応先を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "窓口と受渡しに加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  }
+                ]
+              },
+              {
+                "id": "TPL-CHK-039-S2",
+                "heading_ja": "点検結果の記録",
+                "fields": [
+                  {
+                    "id": "TPL-CHK-039-F001",
+                    "label_ja": "対象案件・対象版",
+                    "type": "short_text",
+                    "required": false,
+                    "description_ja": "対象案件・対象版を対象版・媒体・担当者・根拠資料に結び付ける。"
+                  },
+                  {
+                    "id": "TPL-CHK-039-F002",
+                    "label_ja": "担当者と点検日",
+                    "type": "date",
+                    "required": false,
+                    "description_ja": "担当者と点検日を対象版・媒体・担当者・根拠資料に結び付ける。"
+                  },
+                  {
+                    "id": "TPL-CHK-039-F003",
+                    "label_ja": "未解決事項と対応",
+                    "type": "long_text",
+                    "required": false,
+                    "description_ja": "未解決事項と対応を対象版・媒体・担当者・根拠資料に結び付ける。"
+                  },
+                  {
+                    "id": "TPL-CHK-039-F004",
+                    "label_ja": "確認に用いた資料ID",
+                    "type": "table",
+                    "required": false,
+                    "description_ja": "確認に用いた資料IDを対象版・媒体・担当者・根拠資料に結び付ける。",
+                    "columns": [
+                      "対象・項目",
+                      "内容・参照",
+                      "担当・状態",
+                      "備考"
+                    ],
+                    "min_rows": 2
+                  }
+                ]
+              }
+            ],
+            "relationships": {
+              "related_task_ids": [
+                "TSK-PUB-CHANNEL",
+                "TSK-PUB-SOCIAL"
+              ],
+              "knowledge_ids": [
+                "KNW-PUB-TRACE"
+              ]
+            },
+            "rendering": {
+              "profile": "formal_japanese_mincho"
+            },
+            "notes_ja": "本チェックリストの記入・集計は実際の公開権限や法令適合を証明しない。",
+            "workflow_id": "editorial-eight-stage"
+          },
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-039",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "checklist_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TPL-CHK-040",
+            "kind": "checklist",
+            "slug": "media_contact",
+            "title_ja": "メディア対応確認チェックリスト",
+            "version": "0.2.0",
+            "lifecycle": "draft",
+            "status": "substantive_draft",
+            "priority": "P1",
+            "applicable_pipeline_stages": [
+              "07"
+            ],
+            "origin": "independent_proposal",
+            "authority_status": "unapproved",
+            "source_catalog": "templates/catalog.json",
+            "sections": [
+              {
+                "id": "TPL-CHK-040-S1",
+                "heading_ja": "確認項目",
+                "items": [
+                  {
+                    "id": "TPL-CHK-040-I001",
+                    "criterion_ja": "報道提供資料の固定版、出典、権利範囲を識別した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "提供素材ID・ハッシュに加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-040-I002",
+                    "criterion_ja": "解禁日時、時区及び提供先ごとの条件を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "提供日時・連絡先に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-040-I003",
+                    "criterion_ja": "科学的質問に対する確認責任者・回答範囲を記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "Q&A・担当表に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-040-I004",
+                    "criterion_ja": "対外提供履歴と訂正連絡経路を記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "送信記録に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-040-I005",
+                    "criterion_ja": "取材依頼と第三者報道の編集独立性を区別した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "提供条件・問合せ記録に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  }
+                ]
+              },
+              {
+                "id": "TPL-CHK-040-S2",
+                "heading_ja": "点検結果の記録",
+                "fields": [
+                  {
+                    "id": "TPL-CHK-040-F001",
+                    "label_ja": "対象案件・対象版",
+                    "type": "short_text",
+                    "required": false,
+                    "description_ja": "対象案件・対象版を対象版・媒体・担当者・根拠資料に結び付ける。"
+                  },
+                  {
+                    "id": "TPL-CHK-040-F002",
+                    "label_ja": "担当者と点検日",
+                    "type": "date",
+                    "required": false,
+                    "description_ja": "担当者と点検日を対象版・媒体・担当者・根拠資料に結び付ける。"
+                  },
+                  {
+                    "id": "TPL-CHK-040-F003",
+                    "label_ja": "未解決事項と対応",
+                    "type": "long_text",
+                    "required": false,
+                    "description_ja": "未解決事項と対応を対象版・媒体・担当者・根拠資料に結び付ける。"
+                  },
+                  {
+                    "id": "TPL-CHK-040-F004",
+                    "label_ja": "確認に用いた資料ID",
+                    "type": "table",
+                    "required": false,
+                    "description_ja": "確認に用いた資料IDを対象版・媒体・担当者・根拠資料に結び付ける。",
+                    "columns": [
+                      "対象・項目",
+                      "内容・参照",
+                      "担当・状態",
+                      "備考"
+                    ],
+                    "min_rows": 2
+                  }
+                ]
+              }
+            ],
+            "relationships": {
+              "related_task_ids": [
+                "TSK-PUB-PRESS"
+              ],
+              "knowledge_ids": [
+                "KNW-PUB-TRACE"
+              ]
+            },
+            "rendering": {
+              "profile": "formal_japanese_mincho"
+            },
+            "notes_ja": "本チェックリストの記入・集計は実際の公開権限や法令適合を証明しない。",
+            "workflow_id": "editorial-eight-stage"
+          },
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-040",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "checklist_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TPL-CHK-041",
+            "kind": "checklist",
+            "slug": "event_day",
+            "title_ja": "イベント運営チェックリスト",
+            "version": "0.2.0",
+            "lifecycle": "draft",
+            "status": "substantive_draft",
+            "priority": "P1",
+            "applicable_pipeline_stages": [
+              "07"
+            ],
+            "origin": "independent_proposal",
+            "authority_status": "unapproved",
+            "source_catalog": "templates/catalog.json",
+            "sections": [
+              {
+                "id": "TPL-CHK-041-S1",
+                "heading_ja": "確認項目",
+                "items": [
+                  {
+                    "id": "TPL-CHK-041-I001",
+                    "criterion_ja": "参加方式と日時、時区及び連絡先を告知した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "参加案内に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-041-I002",
+                    "criterion_ja": "撮影・録音・配信・二次利用の取扱条件を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "同意と権利記録に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-041-I003",
+                    "criterion_ja": "会場又はオンライン接続、音響と字幕等を事前検証した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "リハーサル記録に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-041-I004",
+                    "criterion_ja": "質疑応答における未確認事項と後日回答経路を定めた",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "対応者・期限に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-041-I005",
+                    "criterion_ja": "事故対応責任者、配布物、緊急連絡先を明記した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "運営台本に加え、記録の版と確認者を残す。",
+                    "human_review": true
+                  }
+                ]
+              },
+              {
+                "id": "TPL-CHK-041-S2",
+                "heading_ja": "点検結果の記録",
+                "fields": [
+                  {
+                    "id": "TPL-CHK-041-F001",
+                    "label_ja": "対象案件・対象版",
+                    "type": "short_text",
+                    "required": false,
+                    "description_ja": "対象案件・対象版を対象版・媒体・担当者・根拠資料に結び付ける。"
+                  },
+                  {
+                    "id": "TPL-CHK-041-F002",
+                    "label_ja": "担当者と点検日",
+                    "type": "date",
+                    "required": false,
+                    "description_ja": "担当者と点検日を対象版・媒体・担当者・根拠資料に結び付ける。"
+                  },
+                  {
+                    "id": "TPL-CHK-041-F003",
+                    "label_ja": "未解決事項と対応",
+                    "type": "long_text",
+                    "required": false,
+                    "description_ja": "未解決事項と対応を対象版・媒体・担当者・根拠資料に結び付ける。"
+                  },
+                  {
+                    "id": "TPL-CHK-041-F004",
+                    "label_ja": "確認に用いた資料ID",
+                    "type": "table",
+                    "required": false,
+                    "description_ja": "確認に用いた資料IDを対象版・媒体・担当者・根拠資料に結び付ける。",
+                    "columns": [
+                      "対象・項目",
+                      "内容・参照",
+                      "担当・状態",
+                      "備考"
+                    ],
+                    "min_rows": 2
+                  }
+                ]
+              }
+            ],
+            "relationships": {
+              "related_task_ids": [
+                "TSK-PUB-EVENT"
+              ],
+              "knowledge_ids": [
+                "KNW-PUB-TRACE"
+              ]
+            },
+            "rendering": {
+              "profile": "formal_japanese_mincho"
+            },
+            "notes_ja": "本チェックリストの記入・集計は実際の公開権限や法令適合を証明しない。",
+            "workflow_id": "editorial-eight-stage"
+          },
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-041",
+            "version": "0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PUB-HANDOFF",
+      "title_ja": "配信履歴と訂正・評価への引継ぎ",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "第8段階へ、公開日時、時区、公開版・素材ハッシュ、掲載先URL、投稿ID、担当者、承認対象との比較結果、例外、問い合わせ・訂正候補、アクセシビリティ未解決事項を渡す。閲覧数と、理解・納得・信頼・科学的正確性の評価は別の対象として記録する。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "本ハンドブックにおける外部資料は限定された適用範囲の参考である。掲載媒体、契約、法令、利用者の必要条件の確認を踏まえて実施手順を更新する。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-INT-TRACE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "発言と資料の来歴・対応"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "取材担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA-SC",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究上の限界、発言の正確な取扱い、報道前後の確認に関する専門指針。主として研究成果のプレスリリース向け。"
+    },
+    {
+      "source_id": "SRC-PRESS-ETH",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本新聞協会の倫理綱領。正確性、独立性、人権と訂正に関する一般原則。取材同意の詳細要件を定める法規ではない。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "03"
+    ],
+    "audiences": [
+      "取材担当者",
+      "編集責任者",
+      "協力者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-INT-TRACE-B01A",
+      "kind": "heading",
+      "text": "発言の単位",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-TRACE-B01B",
+      "kind": "paragraph",
+      "text": "録音ファイルID、時刻範囲、発言者、逐語転記、翻訳、要約、記事用編集文を区別する。異なる層を一つの引用文に上書きしない。"
+    },
+    {
+      "id": "KNW-INT-TRACE-B02A",
+      "kind": "heading",
+      "text": "逐語と整文",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-TRACE-B02B",
+      "kind": "paragraph",
+      "text": "誤記や語順の調整で意味・態度・確度を変えない。要約は逐語引用として表示しない。発言が根拠不明の場合は調査記録へ戻す。"
+    },
+    {
+      "id": "KNW-INT-TRACE-B03A",
+      "kind": "heading",
+      "text": "確認範囲",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-TRACE-B03B",
+      "kind": "paragraph",
+      "text": "専門家確認は科学的事実・発言意図の照会と、記事全体の編集権限を分ける。確認した版、期限、対象範囲、変更依頼への対応を記録する。"
+    },
+    {
+      "id": "KNW-INT-TRACE-B04A",
+      "kind": "heading",
+      "text": "版の連結",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-TRACE-B04B",
+      "kind": "paragraph",
+      "text": "記事原稿・引用候補・取材記録・一次資料の対応関係をIDで追跡可能にし、編集後の再検証を可能にする。"
+    }
+  ]
+}

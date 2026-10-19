@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-OWN",
+  "version": "0.1.0",
+  "title": {
+    "ja": "制作物・原素材・AIの権利と責任"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "汎用的な編集制作の独立設計案。媒体の役割、権利、組織規程、適用される法令は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PRESS-CODE",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本新聞協会の新聞倫理綱領。独立報道の職業倫理を示す。研究広報の承認権限を決めるものではない。"
+    },
+    {
+      "source_id": "SRC-JPA-SCI-COMM",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果発表に関する日本心理学会の専門指針。因果と相関、統計量、引用、制約、過度の一般化の取扱い。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "04"
+    ],
+    "audiences": [
+      "編集担当者",
+      "科学ライター",
+      "制作担当者",
+      "レビュー担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-OWN-H01",
+      "kind": "heading",
+      "text": "第三者素材",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-OWN-P01",
+      "kind": "paragraph",
+      "text": "他者の図表、写真、発言、音楽、書籍の抜粋などは利用許諾、適用される例外、出典、利用範囲を個別に記録する。"
+    },
+    {
+      "id": "KNW-ETH-OWN-H02",
+      "kind": "heading",
+      "text": "著作者とAI",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-OWN-P02",
+      "kind": "paragraph",
+      "text": "AIが文章や図版案を作った場合も、使用権、事実確認、人格的利益、責任の所在を人が確認する。出力に含まれる素材の権利が自動確定したとみなさない。"
+    },
+    {
+      "id": "KNW-ETH-OWN-H03",
+      "kind": "heading",
+      "text": "承認の区別",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-OWN-P03",
+      "kind": "paragraph",
+      "text": "専門家による原稿確認、著作物の利用許可、編集責任者による品質判断、公開承認を異なる工程として残す。"
+    }
+  ]
+}

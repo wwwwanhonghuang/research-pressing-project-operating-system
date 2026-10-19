@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-DEMO-READ",
+  "version": "0.1.0",
+  "title": {
+    "ja": "資料確認の抽象的手順"
+  },
+  "lifecycle": "draft",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "informational",
+    "institutional_approval": "none"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": false
+  },
+  "steps": [
+    {
+      "id": "STEP-DEMO-01",
+      "instruction": "仮想的な原資料の識別子を確認する。"
+    }
+  ]
+}

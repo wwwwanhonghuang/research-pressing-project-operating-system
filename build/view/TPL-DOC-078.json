@@ -1,0 +1,153 @@
+{
+  "type": "template",
+  "id": "TPL-DOC-078",
+  "kind": "document",
+  "version": "0.1.0",
+  "status": "structural_template",
+  "workflow_id": "editorial-eight-stage",
+  "stages": [
+    "07"
+  ],
+  "title_ja": "ウェブ掲載依頼票",
+  "sections": [
+    {
+      "id": "TPL-DOC-078-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-078-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-078-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-078-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-078-S2",
+      "heading_ja": "掲載依頼",
+      "fields": [
+        {
+          "id": "TPL-DOC-078-F004",
+          "label_ja": "ページタイトルと概要",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-078-F005",
+          "label_ja": "原稿・画像の固定版",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-078-F006",
+          "label_ja": "URL・公開日時の希望",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-078-F007",
+          "label_ja": "メタデータと検索表示",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-078-S3",
+      "heading_ja": "掲載条件",
+      "fields": [
+        {
+          "id": "TPL-DOC-078-F008",
+          "label_ja": "アクセシビリティ事項",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-078-F009",
+          "label_ja": "著作物と権利表記",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-078-F010",
+          "label_ja": "リンクと表示の確認",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-078-F011",
+          "label_ja": "差戻し・公開完了の連絡",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-078-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-078-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-078-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-078-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "composition_slots": [],
+  "review_status": "unapproved",
+  "semantic_sha256": "2029c269c12ad4aae9d90961c821e5fe4e6623795fbf9f0bac46f5698a6ed92e"
+}

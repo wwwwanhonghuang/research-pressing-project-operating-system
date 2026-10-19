@@ -1,0 +1,250 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-027",
+  "kind": "document",
+  "slug": "ethics_guidance",
+  "title_ja": "倫理・責任ガイダンス",
+  "version": "0.1.0",
+  "lifecycle": "draft",
+  "status": "structural_template",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-027-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-027-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-027-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-027-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-027-S2",
+      "heading_ja": "倫理的背景",
+      "fields": [
+        {
+          "id": "TPL-DOC-027-F004",
+          "label_ja": "対象となる関係者",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-027-F005",
+          "label_ja": "尊厳・権利・正義の論点",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-027-F006",
+          "label_ja": "状況と権力上の非対称性",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-027-F007",
+          "label_ja": "規範的な参照資料",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-027-S3",
+      "heading_ja": "実践判断の支援",
+      "fields": [
+        {
+          "id": "TPL-DOC-027-F008",
+          "label_ja": "典型的な葛藤と事例",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-027-F009",
+          "label_ja": "判断時の問い",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-027-F010",
+          "label_ja": "相談と救済の経路",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-027-F011",
+          "label_ja": "再検討と学習",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-027-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-027-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-027-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-027-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": [],
+    "checklist_template_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "記入欄の構造案。法的・組織的承認の代替として利用しない。",
+  "composition_slots": [
+    {
+      "id": "TPL-DOC-027-B01",
+      "title_ja": "問題の背景",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-027-B02",
+      "title_ja": "対象となる権利・責任",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-027-B03",
+      "title_ja": "倫理的な判断原則",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-027-B04",
+      "title_ja": "事例と相談経路",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    }
+  ],
+  "workflow_id": "editorial-eight-stage"
+}

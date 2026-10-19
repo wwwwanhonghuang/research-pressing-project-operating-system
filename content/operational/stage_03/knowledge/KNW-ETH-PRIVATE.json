@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-PRIVATE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "個人情報・第三者・機微な内容への配慮"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "取材担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PIPC-GUIDE",
+      "locator": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "個人情報の利用目的、安全管理等に関する法令ガイドライン。報道・著述などの適用除外を含め個別の適用は検討が必要。"
+    },
+    {
+      "source_id": "SRC-PIPC-EXC",
+      "locator": "https://www.ppc.go.jp/all_faq_index/faq1-q11-5/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "個人情報保護法57条の報道等の適用除外説明。すべての取材・広報に一律に適用されるものではない。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "03"
+    ],
+    "audiences": [
+      "取材担当者",
+      "編集責任者",
+      "協力者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-PRIVATE-B01A",
+      "kind": "heading",
+      "text": "公開判断",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-PRIVATE-B01B",
+      "kind": "paragraph",
+      "text": "個人情報、第三者の経験、未公表の研究協力者情報、センシティブな発言は、公共性、必要性、予見可能な不利益、利用範囲を検討する。"
+    },
+    {
+      "id": "KNW-ETH-PRIVATE-B02A",
+      "kind": "heading",
+      "text": "録音に含まれる第三者",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-PRIVATE-B02B",
+      "kind": "paragraph",
+      "text": "会場の音声や映像に無関係者が映り込む場合、必要に応じて撮影範囲を調整し、編集や使用条件を検討する。"
+    },
+    {
+      "id": "KNW-ETH-PRIVATE-B03A",
+      "kind": "heading",
+      "text": "AI処理",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-PRIVATE-B03B",
+      "kind": "paragraph",
+      "text": "個人を特定できる録音、要配慮情報、非公開研究計画を外部AIに入力しないことを原則とし、例外には権限、サービス条件、安全性の確認を要する。"
+    }
+  ]
+}

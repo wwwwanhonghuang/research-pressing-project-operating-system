@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-RES-PROVENANCE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "資料の同一性・版・来歴の確認"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学編集・調査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-COREF-2026",
+      "locator": "https://www.crossref.org/crossmark/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "論文の訂正・撤回等の更新状態を確認するための参考。登録状態は完全性を保証しない。"
+    },
+    {
+      "source_id": "SRC-COPE-2025",
+      "locator": "https://doi.org/10.24318/cope.2019.1.4",
+      "accessed_on": "2026-10-19",
+      "verification_note": "撤回と学術記録の訂正についての編集上の専門的指針。特定論文の健全性判断を代行しない。"
+    },
+    {
+      "source_id": "SRC-NDL-WARP",
+      "locator": "https://warp.ndl.go.jp/info/mechanism-index",
+      "accessed_on": "2026-10-19",
+      "verification_note": "変動するウェブ資料の保存と来歴追跡の背景参考。保存の完全性や再利用許諾を意味しない。"
+    },
+    {
+      "source_id": "SRC-BUNKA-COPY",
+      "locator": "https://www.bunka.go.jp/seisaku/bunka_gyosei/kibankyoka/faq/index.html",
+      "accessed_on": "2026-10-19",
+      "verification_note": "引用、出所明示および利用許諾の検討における公的解説。具体的な再利用可否は個別検討が必要。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "02"
+    ],
+    "audiences": [
+      "科学コミュニケーション担当者",
+      "調査担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-RES-PROVENANCE-B01",
+      "kind": "heading",
+      "text": "資料識別",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-PROVENANCE-B02",
+      "kind": "paragraph",
+      "text": "著者、題名、発行機関、発行年月日、論文識別子、版、利用先 URL、アクセス日時と取得方法を一組の資料記録として登録する。"
+    },
+    {
+      "id": "KNW-RES-PROVENANCE-B03",
+      "kind": "heading",
+      "text": "一次資料の範囲",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-PROVENANCE-B04",
+      "kind": "paragraph",
+      "text": "原著論文、研究報告書、プロトコル、試験登録、測定資料、公開データ等は内容と対象に応じて一次資料候補となる。広報資料や二次的解説についてはその作成主体と参照原典を辿る。"
+    },
+    {
+      "id": "KNW-RES-PROVENANCE-B05",
+      "kind": "heading",
+      "text": "版と更新",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-PROVENANCE-B06",
+      "kind": "paragraph",
+      "text": "プレプリントと査読後掲載版、訂正前と訂正後、撤回通知と元論文を区別する。確認した更新情報と確認時点を残し、後続の解釈へ反映する。"
+    },
+    {
+      "id": "KNW-RES-PROVENANCE-B07",
+      "kind": "heading",
+      "text": "ウェブ情報",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-PROVENANCE-B08",
+      "kind": "paragraph",
+      "text": "更新日時が不明なウェブページは閲覧日時を併記し、必要に応じて保存先やアーカイブを参照する。保存可能性と複製・再配布できる権利は別個に確認する。"
+    },
+    {
+      "id": "KNW-RES-PROVENANCE-B09",
+      "kind": "heading",
+      "text": "引用可能性",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-PROVENANCE-B10",
+      "kind": "paragraph",
+      "text": "資料へ到達できることと、図表や画像を再利用できることは異なる。リンク、引用、複製、改変、配信を区別して権利を記録する。"
+    },
+    {
+      "id": "KNW-RES-PROVENANCE-B11",
+      "kind": "paragraph",
+      "text": "参考：Crossref Crossmark（https://www.crossref.org/crossmark/）、COPE Retraction Guidelines (reviewed August 2025)（https://doi.org/10.24318/cope.2019.1.4）、国立国会図書館 WARP（https://warp.ndl.go.jp/info/mechanism-index）、文化庁 著作権に関する FAQ（https://www.bunka.go.jp/seisaku/bunka_gyosei/kibankyoka/faq/index.html）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。"
+    }
+  ]
+}

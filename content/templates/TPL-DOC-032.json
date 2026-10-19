@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-032",
+  "kind": "document",
+  "slug": "topic_candidate_sheet",
+  "title_ja": "企画候補・選定理由票",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "01"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-032-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-032-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": true,
+          "description_ja": "個別案件に固有のIDと、後続資料の照合に使う文書IDを記録する。"
+        },
+        {
+          "id": "TPL-DOC-032-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "作成者、所属や役割、更新に関する照会先を記録する。"
+        },
+        {
+          "id": "TPL-DOC-032-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "作成日・改訂日と対象版を別々に管理する。日付欄にはISO形式の値を入力する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-032-S2",
+      "heading_ja": "候補と選定理由",
+      "fields": [
+        {
+          "id": "TPL-DOC-032-F004",
+          "label_ja": "企画候補一覧",
+          "type": "table",
+          "required": true,
+          "description_ja": "比較対象、仮題、資料の有無、公共的関連性を同じ粒度で記録する。",
+          "columns": [
+            "候補ID・題名",
+            "関連性・根拠",
+            "状態・未確認",
+            "判断理由"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-032-F005",
+          "label_ja": "検討の背景",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "企画対象の選出に至る契機、選定が必要となった事情を記載する。"
+        },
+        {
+          "id": "TPL-DOC-032-F006",
+          "label_ja": "読者の関心と公共性",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "読者に関係する問いと公共上の意義の根拠を示す。単純な閲覧数と区別する。"
+        },
+        {
+          "id": "TPL-DOC-032-F007",
+          "label_ja": "取材可能な根拠",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "原著、一次記録、専門家の可用性と公開条件をまとめる。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-032-S3",
+      "heading_ja": "比較と判断",
+      "fields": [
+        {
+          "id": "TPL-DOC-032-F008",
+          "label_ja": "科学的成熟度",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "査読・予備段階・再現性・不確実性・因果推論の射程を区別する。"
+        },
+        {
+          "id": "TPL-DOC-032-F009",
+          "label_ja": "制作・確認に必要な資源",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "人員、時間、翻訳、図表、映像、アクセシビリティ支援、確認待ちを見積もる。"
+        },
+        {
+          "id": "TPL-DOC-032-F010",
+          "label_ja": "リスクと代替案",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "誤解、権利、機微情報、関係者への影響、素材不足と代替策を記す。"
+        },
+        {
+          "id": "TPL-DOC-032-F011",
+          "label_ja": "選定または保留の理由",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "採択・保留・見送りの区分と根拠、反対意見、再検討条件を明示する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-032-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-032-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "資料IDと版、アクセス日、根拠の位置、担当の照合状況を記す。",
+          "columns": [
+            "資料ID",
+            "出典・該当箇所",
+            "版・日付",
+            "確認状態"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-032-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "未解決の問題、確定に必要な資料、照会先、保留条件を列挙する。"
+        },
+        {
+          "id": "TPL-DOC-032-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "レビューの対象版、日時、判断主体、コメント、修正の採否と理由を記録する。",
+          "columns": [
+            "日時・版",
+            "確認者",
+            "判断・理由",
+            "変更点"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": [],
+    "checklist_template_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "企画段階に必要な記載指針を追加した独立した試作。空欄の許容と審査の要否は運用ごとに定める。",
+  "workflow_id": "editorial-eight-stage"
+}

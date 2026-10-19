@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.1.0",
+  "id": "06",
+  "workflow_id": "editorial-eight-stage",
+  "workflow_version": "0.1.0",
+  "name_ja": "専門確認・公開承認",
+  "name_en": "Expert review and release approval",
+  "objective": "Document scientific review, rights and accountable authorization.",
+  "task_definitions": [
+    {
+      "id": "TSK-REV-INTAKE",
+      "version": "0.2.0"
+    },
+    {
+      "id": "TSK-REV-ROLES",
+      "version": "0.2.0"
+    },
+    {
+      "id": "TSK-REV-SCIENCE",
+      "version": "0.2.0"
+    },
+    {
+      "id": "TSK-REV-EVIDENCE",
+      "version": "0.2.0"
+    },
+    {
+      "id": "TSK-REV-RIGHTS",
+      "version": "0.2.0"
+    },
+    {
+      "id": "TSK-REV-PRIVACY",
+      "version": "0.2.0"
+    },
+    {
+      "id": "TSK-REV-ETHICS",
+      "version": "0.2.0"
+    },
+    {
+      "id": "TSK-REV-ISSUES",
+      "version": "0.2.0"
+    },
+    {
+      "id": "TSK-REV-REVISIONS",
+      "version": "0.2.0"
+    },
+    {
+      "id": "TSK-REV-EMBARGO",
+      "version": "0.2.0"
+    },
+    {
+      "id": "TSK-REV-DECISION",
+      "version": "0.2.0"
+    },
+    {
+      "id": "TSK-REV-AUTH",
+      "version": "0.2.0"
+    },
+    {
+      "id": "TSK-REV-HANDOFF",
+      "version": "0.2.0"
+    }
+  ],
+  "review_gate": {
+    "definition_status": "draft_independent_proposal",
+    "human_signoff_required_for_publication": true,
+    "reviewer_role": "権限ある公開決裁責任者",
+    "handoff_requires": [
+      "公開対象の固定版・ハッシュ",
+      "公開可否の判断記録",
+      "適用条件と未解決事項",
+      "媒体別の公開条件"
+    ],
+    "note": "構造検証、チェックリスト完了、AIの点検は実際の公開決裁の代替ではない。",
+    "automated_publication": false
+  }
+}

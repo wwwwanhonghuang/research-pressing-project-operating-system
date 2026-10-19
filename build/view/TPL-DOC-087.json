@@ -1,0 +1,160 @@
+{
+  "type": "template",
+  "id": "TPL-DOC-087",
+  "kind": "document",
+  "version": "0.1.0",
+  "status": "structural_template",
+  "workflow_id": "editorial-eight-stage",
+  "stages": [
+    "08"
+  ],
+  "title_ja": "読者・参加者アンケート票",
+  "sections": [
+    {
+      "id": "TPL-DOC-087-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-087-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-087-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-087-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-087-S2",
+      "heading_ja": "調査の設計",
+      "fields": [
+        {
+          "id": "TPL-DOC-087-F004",
+          "label_ja": "調査目的",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-087-F005",
+          "label_ja": "対象者と実施方法",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-087-F006",
+          "label_ja": "質問文・回答形式",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-087-F007",
+          "label_ja": "任意回答と同意",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-087-S3",
+      "heading_ja": "分析と保護",
+      "fields": [
+        {
+          "id": "TPL-DOC-087-F008",
+          "label_ja": "個人情報の取得範囲",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-087-F009",
+          "label_ja": "回答の保存と廃棄",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-087-F010",
+          "label_ja": "偏り・無回答の見込み",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-087-F011",
+          "label_ja": "集計と公表範囲",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-087-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-087-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-087-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-087-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "composition_slots": [],
+  "review_status": "unapproved",
+  "semantic_sha256": "7fb1d590fa360586c1c295bfc801fd04ebfe25d12969be6cfaf8e892b6944533"
+}

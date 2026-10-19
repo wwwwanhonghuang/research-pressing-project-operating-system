@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-EDT-QUOTES",
+  "version": "0.1.0",
+  "title": {
+    "ja": "引用・話者・文脈・権利の確認の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "引用校閲担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "引用校閲担当者"
+  ],
+  "inputs": [
+    "逐語記録・録音の参照位置",
+    "原稿引用箇所",
+    "話者・利用条件台帳"
+  ],
+  "outputs": [
+    "引用照合記録",
+    "引用の修正・照会票"
+  ],
+  "steps": [
+    {
+      "id": "PRC-EDT-QUOTES-S1",
+      "instruction": "直接引用、翻訳引用、要約、記者の説明を区分する",
+      "expected_output": "引用区分一覧",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-EDT-QUOTES-S2",
+      "instruction": "引用文の録音又は逐語の原位置と話者・発言日時を照合する",
+      "expected_output": "引用出典台帳",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-QUOTES-S3",
+      "instruction": "省略箇所・前後の文脈を読み、発言趣旨が変わっていないか検査する",
+      "expected_output": "文脈点検表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-QUOTES-S4",
+      "instruction": "話者の氏名、所属、肩書、匿名条件を確認する",
+      "expected_output": "帰属確認記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-QUOTES-S5",
+      "instruction": "録音・転載・公開の各条件と権利上の制約を確認する",
+      "expected_output": "利用条件台帳",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-QUOTES-S6",
+      "instruction": "整文・翻訳・修正提案には原文、変更理由、担当者を記す",
+      "expected_output": "引用変更記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-QUOTES-S7",
+      "instruction": "必要な追加確認を話者へ照会し編集判断の独立性を保持する",
+      "expected_output": "照会・回答記録",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "原記録が閲覧不能な場合は引用確定を保留する",
+    "当事者の確認を記事全体の承認とみなさない"
+  ]
+}

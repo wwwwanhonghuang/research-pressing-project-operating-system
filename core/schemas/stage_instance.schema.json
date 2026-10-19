@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Operations OS project stage instance",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "stage_id",
+    "stage_name_ja",
+    "definition_version",
+    "status",
+    "tasks_instantiated",
+    "approval_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "stage_id": {
+      "type": "string",
+      "pattern": "^[0-9]{2}$"
+    },
+    "stage_name_ja": {
+      "type": "string"
+    },
+    "definition_version": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "not_started",
+        "active",
+        "in_review",
+        "blocked",
+        "completed",
+        "reopened",
+        "skipped"
+      ]
+    },
+    "tasks_instantiated": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "approval_status": {
+      "enum": [
+        "not_requested",
+        "pending",
+        "approved",
+        "rejected",
+        "not_applicable"
+      ]
+    }
+  }
+}

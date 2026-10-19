@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-WRT-MULTIMODAL",
+  "version": "0.1.0",
+  "title": {
+    "ja": "音声・映像・SNS・アクセシブルな説明の展開の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "マルチモーダル制作担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "汎用的な編集制作の独立設計案。媒体の役割、権利、組織規程、適用される法令は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "マルチモーダル制作担当者"
+  ],
+  "inputs": [
+    "本文草稿",
+    "図表仕様",
+    "公開可能素材",
+    "対象媒体の要件"
+  ],
+  "outputs": [
+    "動画台本",
+    "音声台本",
+    "短文原稿",
+    "字幕・代替テキスト"
+  ],
+  "steps": [
+    {
+      "id": "PRC-WRT-MULTIMODAL-S1",
+      "instruction": "媒体の目的と利用者の選択可能性を確定する",
+      "expected_output": "動画台本",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-WRT-MULTIMODAL-S2",
+      "instruction": "主要な科学的事実、制約、引用、出典を全媒体で共有する核として定義する",
+      "expected_output": "音声台本",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-MULTIMODAL-S3",
+      "instruction": "動画の場面、音声の語り、SNSの短文を個別に設計する",
+      "expected_output": "短文原稿",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-MULTIMODAL-S4",
+      "instruction": "視覚や音声だけに依存する重要事項にはテキスト等の代替を準備する",
+      "expected_output": "字幕・代替テキスト",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-MULTIMODAL-S5",
+      "instruction": "時間長や文字数によって研究上の留保が落ちていないか媒体間で比較する",
+      "expected_output": "動画台本",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-MULTIMODAL-S6",
+      "instruction": "字幕、書き起こし、画面説明、図版の権利と個人情報を点検する",
+      "expected_output": "音声台本",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-MULTIMODAL-S7",
+      "instruction": "担当者が内容の差と整合性を記録して専門確認へ渡す",
+      "expected_output": "短文原稿",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "動画未視聴でも重要情報を得られる経路を用意する",
+    "音声・字幕に原稿と異なる科学的断定があれば改訂する"
+  ]
+}

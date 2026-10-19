@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "id": "CLD-DEMO-01",
+  "version": "0.1.0",
+  "title": {
+    "ja": "試験用チェックリスト"
+  },
+  "lifecycle": "draft",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "informational",
+    "institutional_approval": "none"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": false
+  },
+  "template_catalog_id": "TPL-CHK-002",
+  "applicable_stage_ids": [
+    "02"
+  ],
+  "items": [
+    {
+      "id": "ITEM-DEMO-01",
+      "criterion_ja": "検証用資料IDが記載されている",
+      "mandatory": true,
+      "response_type": "pass_fail_na",
+      "evidence_required": true
+    }
+  ],
+  "completion_policy": "all_required_resolved",
+  "placeholder_path": "templates/checklists/shared/scientific_evidence.md"
+}

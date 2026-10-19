@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-WRT-FIG",
+  "version": "0.1.0",
+  "title": {
+    "ja": "図表・キャプション・数量表現の品質"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "汎用的な編集制作の独立設計案。媒体の役割、権利、組織規程、適用される法令は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA-SCI-COMM",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果発表に関する日本心理学会の専門指針。因果と相関、統計量、引用、制約、過度の一般化の取扱い。"
+    },
+    {
+      "source_id": "SRC-W3C-IMAGE-ALT",
+      "locator": "https://www.w3.org/WAI/tutorials/images/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "W3Cの画像代替テキストの説明。情報を運ぶ図と装飾画像、複雑な図の違いを説明。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "04"
+    ],
+    "audiences": [
+      "編集担当者",
+      "科学ライター",
+      "制作担当者",
+      "レビュー担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-WRT-FIG-H01",
+      "kind": "heading",
+      "text": "出典と再現",
+      "level": 2
+    },
+    {
+      "id": "KNW-WRT-FIG-P01",
+      "kind": "paragraph",
+      "text": "図表ごとにデータ又は原図の出所、利用条件、対象母集団、集計方法、作成者、更新時点を付す。再描画や単位換算は元の数値から追跡可能にする。"
+    },
+    {
+      "id": "KNW-WRT-FIG-H02",
+      "kind": "heading",
+      "text": "視覚的意味",
+      "level": 2
+    },
+    {
+      "id": "KNW-WRT-FIG-P02",
+      "kind": "paragraph",
+      "text": "目盛、軸の範囲、色と形、分母、ゼロの扱い、差異の強調、統計的不確実性を点検する。視覚上の大小と科学的な重要性を同一とみなさない。"
+    },
+    {
+      "id": "KNW-WRT-FIG-H03",
+      "kind": "heading",
+      "text": "本文との整合",
+      "level": 2
+    },
+    {
+      "id": "KNW-WRT-FIG-P03",
+      "kind": "paragraph",
+      "text": "キャプションに何が示されるか、どの条件下の結果か、出典と限界を簡潔に示し、本文、図、代替説明の主張を相互照合する。"
+    },
+    {
+      "id": "KNW-WRT-FIG-H04",
+      "kind": "heading",
+      "text": "複数の読み方",
+      "level": 2
+    },
+    {
+      "id": "KNW-WRT-FIG-P04",
+      "kind": "paragraph",
+      "text": "複雑な図には本文で要点を説明し、必要に応じてデータ表、詳細な図解説明、アクセシブルな代替を提供する。"
+    }
+  ]
+}

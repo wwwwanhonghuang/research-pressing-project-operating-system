@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-REV-SCOPE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "専門確認の範囲・専門性・独立性"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "専門確認・公開管理担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。法令、契約、内部権限規程等の適用と現行版は個別に検討する。実在の承認を意味しない。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-SCI-COMM-GUIDE",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果プレスリリースについての専門学会による指針。科学的主張・誇張・引用・再利用等を扱う。一般の全業務に法的拘束力を与えるものではない。"
+    },
+    {
+      "source_id": "SRC-NEWS-ETHICS",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "新聞報道の職業倫理綱領。正確さ、独立、権利尊重と訂正に関する参照枠組み。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "06"
+    ],
+    "audiences": [
+      "研究者",
+      "編集者",
+      "専門確認担当者",
+      "公開承認責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-REV-SCOPE-H01",
+      "kind": "heading",
+      "text": "審査対象と依頼目的",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-SCOPE-P01",
+      "kind": "paragraph",
+      "text": "専門確認の対象を科学的正確性、方法・推論、専門用語、適用限界、媒体別表現に分けて明示する。対象外となる権利・公開決裁は別の判断へ送る。"
+    },
+    {
+      "id": "KNW-REV-SCOPE-H02",
+      "kind": "heading",
+      "text": "適格性と利益相反",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-SCOPE-P02",
+      "kind": "paragraph",
+      "text": "確認者の分野・経験、関与の範囲、対象研究との関係及び利益相反を記録する。利害関係が存在する場合の独立確認の要否を検討する。"
+    },
+    {
+      "id": "KNW-REV-SCOPE-H03",
+      "kind": "heading",
+      "text": "回答の範囲",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-SCOPE-P03",
+      "kind": "paragraph",
+      "text": "専門家への依頼には対象版、命題ID、回答期限、所望の確認粒度を付す。部分的な確認を全文承認として扱わない。"
+    },
+    {
+      "id": "KNW-REV-SCOPE-H04",
+      "kind": "heading",
+      "text": "異議の扱い",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-SCOPE-P04",
+      "kind": "paragraph",
+      "text": "異なる専門的見解は原資料・根拠とともに保持し、公開判断者へ未解決事項として渡す。"
+    }
+  ]
+}

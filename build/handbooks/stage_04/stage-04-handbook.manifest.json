@@ -1,0 +1,281 @@
+{
+  "recipe": "PUB-WRT-HANDBOOK",
+  "version": "0.1.0",
+  "included": [
+    {
+      "id": "KNW-WRT-ARCH",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "8ade3deaab08df1c74dbf4631842916234b89a0cd187ad93dad55e74c01beedb",
+      "path": "content/operational/stage_04/knowledge/KNW-WRT-ARCH.json"
+    },
+    {
+      "id": "KNW-WRT-EVID",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "8f67a37b9573b70739a030dac27bc73b283064d4e5b8e37bfd2017fc65c6e48f",
+      "path": "content/operational/stage_04/knowledge/KNW-WRT-EVID.json"
+    },
+    {
+      "id": "KNW-WRT-JP",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "4e450d6b175584da0b89a8016e394092346dff58286bbb515fc087a95d79f555",
+      "path": "content/operational/stage_04/knowledge/KNW-WRT-JP.json"
+    },
+    {
+      "id": "KNW-WRT-QUOTE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "a53ad8096941541767cf46c4e88df6cb81bbd9f706c245b9092ffa43153cdacd",
+      "path": "content/operational/stage_04/knowledge/KNW-WRT-QUOTE.json"
+    },
+    {
+      "id": "KNW-WRT-FIG",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "181c30300e9069ac8a4c9eb836ce4329956575e62a3404574973eaa1810dc525",
+      "path": "content/operational/stage_04/knowledge/KNW-WRT-FIG.json"
+    },
+    {
+      "id": "KNW-WRT-MODAL",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "3a0f94e64d1e7cc88943e6135517e5ebfeeca3a4297a656b2e68a7a6626a5ebd",
+      "path": "content/operational/stage_04/knowledge/KNW-WRT-MODAL.json"
+    },
+    {
+      "id": "KNW-WRT-AI",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "c4ab9c7bc71dfe75a8f4756459133573fbc823f376181be4bcea6ba2f19131f8",
+      "path": "content/operational/stage_04/knowledge/KNW-WRT-AI.json"
+    },
+    {
+      "id": "KNW-WRT-HANDOFF",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "fa0bba55ddb7d5f8f446c6ae06cb53337ab6533e14b530a42a5158cc1f51a803",
+      "path": "content/operational/stage_04/knowledge/KNW-WRT-HANDOFF.json"
+    },
+    {
+      "id": "KNW-ETH-SPIN",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "a79d6c535d9f6d239d7287bf1613a226021ee293979d0500fb15d165e4323f84",
+      "path": "content/operational/stage_04/knowledge/KNW-ETH-SPIN.json"
+    },
+    {
+      "id": "KNW-ETH-AGENCY",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "0057bfaba4372aaa06ec2171e91dd2a9226b00b41cc8e38a633aaca07707563f",
+      "path": "content/operational/stage_04/knowledge/KNW-ETH-AGENCY.json"
+    },
+    {
+      "id": "KNW-ETH-ACCESS",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "bd15718874c8270cfe33ac1fde5accdfc8846e8080ad1b5cbd86b1fe5facf2a4",
+      "path": "content/operational/stage_04/knowledge/KNW-ETH-ACCESS.json"
+    },
+    {
+      "id": "KNW-ETH-OWN",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "d443d38089750dc2f17fec68a08fd501c5f8b9c9e192b72eb63c39f5b8714b10",
+      "path": "content/operational/stage_04/knowledge/KNW-ETH-OWN.json"
+    },
+    {
+      "id": "TSK-WRT-BRIEF",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "d93252dfb90d7b95aca1139e3c7a294c34ed94a34cb4ee863943e3aca93a8261",
+      "path": "content/operational/stage_04/tasks/TSK-WRT-BRIEF.json"
+    },
+    {
+      "id": "PRC-WRT-BRIEF",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "3b588c97ac01055a9ce866fd0392e94777dfde822af2b5482dbefe160a0d77b8",
+      "path": "content/operational/stage_04/procedures/PRC-WRT-BRIEF.json"
+    },
+    {
+      "id": "TSK-WRT-OUTLINE",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "f79c30538fda830bebb068f84790d89f36e1842e25ff453fa76b806f5a349aad",
+      "path": "content/operational/stage_04/tasks/TSK-WRT-OUTLINE.json"
+    },
+    {
+      "id": "PRC-WRT-OUTLINE",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "0ea7cf2def7516d314eb794792ac5b0e4e9c431304cb83c547ff5efe9553bb1b",
+      "path": "content/operational/stage_04/procedures/PRC-WRT-OUTLINE.json"
+    },
+    {
+      "id": "TSK-WRT-FEATURE",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "1e611f0a73e16865b2d3a824663784d4dbfb92f19797ffece2df6bdc28150bde",
+      "path": "content/operational/stage_04/tasks/TSK-WRT-FEATURE.json"
+    },
+    {
+      "id": "PRC-WRT-FEATURE",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "6bf750ada549aef5bae356c73804723bae54406e27b8a6e9a1789d126729df7d",
+      "path": "content/operational/stage_04/procedures/PRC-WRT-FEATURE.json"
+    },
+    {
+      "id": "TSK-WRT-NEWS",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "94428f2f38420f9b19f4eaa07e0457eac3c38ca0aa009bce612377947e5cd05b",
+      "path": "content/operational/stage_04/tasks/TSK-WRT-NEWS.json"
+    },
+    {
+      "id": "PRC-WRT-NEWS",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "1afd48e38a31ecad640d878776552d6fcab30355ba222e0ea045d6bc82e653cd",
+      "path": "content/operational/stage_04/procedures/PRC-WRT-NEWS.json"
+    },
+    {
+      "id": "TSK-WRT-JAPANESE",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "e0a6e74f942ba94be3c76692b9393ee776d9eded40cfd3af1d1e5f512b7dd567",
+      "path": "content/operational/stage_04/tasks/TSK-WRT-JAPANESE.json"
+    },
+    {
+      "id": "PRC-WRT-JAPANESE",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "d09083235f7aa76280337e9f59811cf326164dbfab573dc88598a5392231486d",
+      "path": "content/operational/stage_04/procedures/PRC-WRT-JAPANESE.json"
+    },
+    {
+      "id": "TSK-WRT-QUOTES",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "5d146df6838ecee56f5f547a9081f65ca91b8c9c6ca86b6d26b5f7b656d4a899",
+      "path": "content/operational/stage_04/tasks/TSK-WRT-QUOTES.json"
+    },
+    {
+      "id": "PRC-WRT-QUOTES",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "f5068a87fcade6918962f9a1bdcaca922cc07bf3786d5848e680416c553e6340",
+      "path": "content/operational/stage_04/procedures/PRC-WRT-QUOTES.json"
+    },
+    {
+      "id": "TSK-WRT-FIGURES",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "7f536be15fc8d610f55b6d944fc9913a79b831b683113b59ac56baf38f4e3da9",
+      "path": "content/operational/stage_04/tasks/TSK-WRT-FIGURES.json"
+    },
+    {
+      "id": "PRC-WRT-FIGURES",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "3cfca65200b94e11e5da186d1dc776e495059e85590010211dcd72068eedbf3b",
+      "path": "content/operational/stage_04/procedures/PRC-WRT-FIGURES.json"
+    },
+    {
+      "id": "TSK-WRT-MULTIMODAL",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "c6f93ef5f0ac45132f5dc9e9a9d65c8ec39308e0b5e3d08134d2e5d35e157235",
+      "path": "content/operational/stage_04/tasks/TSK-WRT-MULTIMODAL.json"
+    },
+    {
+      "id": "PRC-WRT-MULTIMODAL",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "da9e055d785f014976b2e7d1c0c2603af3455ed9920fdce62d14ba80a70dc767",
+      "path": "content/operational/stage_04/procedures/PRC-WRT-MULTIMODAL.json"
+    },
+    {
+      "id": "TSK-WRT-HANDOFF",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "e0e7d6ce164a9dca5d908932d3af4bdbbd528994320171d0a4a64bc457037571",
+      "path": "content/operational/stage_04/tasks/TSK-WRT-HANDOFF.json"
+    },
+    {
+      "id": "PRC-WRT-HANDOFF",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "3cec95f8f61d91d5e3493935c5ec7b21bfaeaac1694b28854073e3f4b4b339ef",
+      "path": "content/operational/stage_04/procedures/PRC-WRT-HANDOFF.json"
+    },
+    {
+      "id": "TPL-CHK-007",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "1b5f5c09439501c21760deb3aaec7b89c70c896e6391a97dba7b4208dc977485",
+      "path": "content/templates/TPL-CHK-007.json"
+    },
+    {
+      "id": "TPL-CHK-010",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "ff523b38c71796994f53f65ef3fcc780021f59ca6e1c3182a1810cc9702aca0a",
+      "path": "content/templates/TPL-CHK-010.json"
+    },
+    {
+      "id": "TPL-CHK-011",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "1047854ab80228549cee77ef40a05d69adcad8985e659d736c75d32d67322219",
+      "path": "content/templates/TPL-CHK-011.json"
+    },
+    {
+      "id": "TPL-CHK-025",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "def37347b94949d0a7827f79bd01ddc6029bfbc0cf1dc4facf5267429e281595",
+      "path": "content/templates/TPL-CHK-025.json"
+    },
+    {
+      "id": "TPL-CHK-026",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "376258ed4b166b55980410f45924ef75078eea4ded90c5e8704f670271a911ad",
+      "path": "content/templates/TPL-CHK-026.json"
+    },
+    {
+      "id": "TPL-CHK-027",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "bfa75dbdfb57de4c710f7d6c5213d6d9ff9b06b530606eb7be04defddbf3c92b",
+      "path": "content/templates/TPL-CHK-027.json"
+    },
+    {
+      "id": "TPL-CHK-028",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "42be8c62e2e6b69017fb18910e0c21c6d746909c22d32e49dec8e7bbdfeeb51e",
+      "path": "content/templates/TPL-CHK-028.json"
+    },
+    {
+      "id": "PUB-WRT-HANDBOOK",
+      "kind": "publication_recipe",
+      "version": "0.1.0",
+      "sha256": "4d6d667f7c3427c897e4dee3350860ae8dd849fea9f62642977ff9fff3353671",
+      "path": "content/operational/stage_04/recipes/PUB-WRT-HANDBOOK.json"
+    },
+    {
+      "id": "RENDER-TEX",
+      "kind": "renderer",
+      "version": "0.1.0",
+      "sha256": "617d6e9cc572b2059e37dc9ca9ec9ce8bab0453fe7b3741f42c40eb482a7414d",
+      "path": "script/compose_handbook.py"
+    }
+  ],
+  "print_style_sha256": "c5560109a7441048abd09e3581b874cb264eac39b65420456dc57431665e7b2a",
+  "tex_sha256": "e0a222a57dc6db8fe89c71a01c25dd652aeb86d9e852c0bc077a4c8920b3f6a4"
+}

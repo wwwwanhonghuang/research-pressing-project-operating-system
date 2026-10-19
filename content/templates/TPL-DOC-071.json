@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-071",
+  "kind": "document",
+  "slug": "review_response_matrix",
+  "title_ja": "レビュー対応・修正対応表",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "06"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-071-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-071-F001",
+          "label_ja": "指摘ID・指摘内容",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-071-F002",
+          "label_ja": "重要度と影響を受ける主張ID",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-071-F003",
+          "label_ja": "変更前の箇所と変更後の箇所",
+          "type": "date",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-071-S2",
+      "heading_ja": "指摘と対応",
+      "fields": [
+        {
+          "id": "TPL-DOC-071-F004",
+          "label_ja": "参照根拠と決定理由",
+          "type": "table",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-071-F005",
+          "label_ja": "対応担当者と期限",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-071-F006",
+          "label_ja": "対応状態・対象版",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-071-F007",
+          "label_ja": "異議と未解決事項",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-071-S3",
+      "heading_ja": "確認と終結",
+      "fields": [
+        {
+          "id": "TPL-DOC-071-F008",
+          "label_ja": "再審査者・再確認結果",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-071-F009",
+          "label_ja": "指摘ID・指摘内容",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-071-F010",
+          "label_ja": "重要度と影響を受ける主張ID",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-071-F011",
+          "label_ja": "変更前の箇所と変更後の箇所",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-071-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-071-F012",
+          "label_ja": "参照根拠と決定理由",
+          "type": "table",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-071-F013",
+          "label_ja": "対応担当者と期限",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-071-F014",
+          "label_ja": "対応状態・対象版",
+          "type": "table",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": [],
+    "checklist_template_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "記入欄の構造案。法的・組織的承認の代替として利用しない。",
+  "workflow_id": "editorial-eight-stage"
+}

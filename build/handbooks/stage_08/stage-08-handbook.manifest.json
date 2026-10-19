@@ -1,0 +1,351 @@
+{
+  "recipe": "PUB-ARC-HANDBOOK",
+  "version": "0.1.0",
+  "included": [
+    {
+      "id": "TSK-ARC-HANDOFF",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "4b3e4a9d190ce1415acda2f3703b2f25996ca27645f578135ad439e50902a6fd",
+      "path": "content/operational/stage_08/tasks/TSK-ARC-HANDOFF.json"
+    },
+    {
+      "id": "PRC-ARC-HANDOFF",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "b2eccb4377acb6d61f4cd803d1ea0ae1d5da858c0bdadbcbef8a4b1368224464",
+      "path": "content/operational/stage_08/procedures/PRC-ARC-HANDOFF.json"
+    },
+    {
+      "id": "TSK-ARC-SIGNALS",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "7b4999c3b879e56e1cd02329b3e62ebd5ae59f2ce02007b0ed85d8102d28de9a",
+      "path": "content/operational/stage_08/tasks/TSK-ARC-SIGNALS.json"
+    },
+    {
+      "id": "PRC-ARC-SIGNALS",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "114c0f9530c39905f1496a581ae913bc5735883d2e617efc38e457496d2a11e2",
+      "path": "content/operational/stage_08/procedures/PRC-ARC-SIGNALS.json"
+    },
+    {
+      "id": "TSK-ARC-TRIAGE",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "d0f18c00b6e95270105946e1732b78381a2af9c4ff00fdd536552a60b8165c49",
+      "path": "content/operational/stage_08/tasks/TSK-ARC-TRIAGE.json"
+    },
+    {
+      "id": "PRC-ARC-TRIAGE",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "569430f6a0d45672a17434f1e083276ba6e963ed0be04e93275d3c337edbca56",
+      "path": "content/operational/stage_08/procedures/PRC-ARC-TRIAGE.json"
+    },
+    {
+      "id": "TSK-ARC-VERIFY",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "3957a8431bea3d1e2b509bf9111cec9fe4c26dc2e631edbca7142a3387da34f5",
+      "path": "content/operational/stage_08/tasks/TSK-ARC-VERIFY.json"
+    },
+    {
+      "id": "PRC-ARC-VERIFY",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "8720d6b40c3b7534e5476fdf332fd7eea466ad5d2b857eb8d921adb049b82df4",
+      "path": "content/operational/stage_08/procedures/PRC-ARC-VERIFY.json"
+    },
+    {
+      "id": "TSK-ARC-DECISION",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "24c84399fc3704c0f9563ef2314b85a0ac810772fdc3513c9bc5ee8eb7ec0b3f",
+      "path": "content/operational/stage_08/tasks/TSK-ARC-DECISION.json"
+    },
+    {
+      "id": "PRC-ARC-DECISION",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "2795b48559c93a50d41336b4b5920102009579b6f9ef6c374d3a22c71c79faba",
+      "path": "content/operational/stage_08/procedures/PRC-ARC-DECISION.json"
+    },
+    {
+      "id": "TSK-ARC-NOTICE",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "fb2b70b5f81ea55a669ae42ff9e46630de94f1d7fe472b3b717a423069c99e13",
+      "path": "content/operational/stage_08/tasks/TSK-ARC-NOTICE.json"
+    },
+    {
+      "id": "PRC-ARC-NOTICE",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "0fea07b213624056a3fb6404c04febde951598d346c265ff9bab39a4c8224994",
+      "path": "content/operational/stage_08/procedures/PRC-ARC-NOTICE.json"
+    },
+    {
+      "id": "TSK-ARC-PROPAGATE",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "815a661bcb1d2a3d579ef2807fdc55bc343c550f474ac4af36fcb85fbf5ba8be",
+      "path": "content/operational/stage_08/tasks/TSK-ARC-PROPAGATE.json"
+    },
+    {
+      "id": "PRC-ARC-PROPAGATE",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "8532879ed82151ffa8dfc4e42c394e1bc45a0844d3161aca4e1decae023af1cc",
+      "path": "content/operational/stage_08/procedures/PRC-ARC-PROPAGATE.json"
+    },
+    {
+      "id": "TSK-ARC-FEEDBACK",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "ca38c7dbd7b23a62ab8d57d9395fea6ee4f196b899aa15803670819c4e791822",
+      "path": "content/operational/stage_08/tasks/TSK-ARC-FEEDBACK.json"
+    },
+    {
+      "id": "PRC-ARC-FEEDBACK",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "61b3178ff6cf1871ea5eac3814c6ebf0e631bdfb2cd5f613941febac998bdc8d",
+      "path": "content/operational/stage_08/procedures/PRC-ARC-FEEDBACK.json"
+    },
+    {
+      "id": "TSK-ARC-EVALUATE",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "25d40b6158d024590be680442bc24991e2337aaef29a1cda1ea3363b3a6173bc",
+      "path": "content/operational/stage_08/tasks/TSK-ARC-EVALUATE.json"
+    },
+    {
+      "id": "PRC-ARC-EVALUATE",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "99a2f9e012ed3e0f434a985393c42646d514b5f12aa1e85dffc73a2638cb50a2",
+      "path": "content/operational/stage_08/procedures/PRC-ARC-EVALUATE.json"
+    },
+    {
+      "id": "TSK-ARC-ARCHIVE",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "ddbec41fd0d88ac9d5214d093296c866d3eb2a55ea71e17b34fa9b936796907c",
+      "path": "content/operational/stage_08/tasks/TSK-ARC-ARCHIVE.json"
+    },
+    {
+      "id": "PRC-ARC-ARCHIVE",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "1b3313c9acc55a625f176cff8abaddeb24190ed14f08424a833e10d7d9e58cc9",
+      "path": "content/operational/stage_08/procedures/PRC-ARC-ARCHIVE.json"
+    },
+    {
+      "id": "TSK-ARC-FIXITY",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "a874407d31fbe91ea9660403b2e295ae3e0fb9b9c0ceae113d546067d08798bf",
+      "path": "content/operational/stage_08/tasks/TSK-ARC-FIXITY.json"
+    },
+    {
+      "id": "PRC-ARC-FIXITY",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "22457561355aac9bf03618c465998bf11228be94689275d0e0a5316996f7cb18",
+      "path": "content/operational/stage_08/procedures/PRC-ARC-FIXITY.json"
+    },
+    {
+      "id": "TSK-ARC-RETRO",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "8b7fd2db27c5b5b844935b0f2a07785f5f9c9a9a4dff37490efe3ade9636951f",
+      "path": "content/operational/stage_08/tasks/TSK-ARC-RETRO.json"
+    },
+    {
+      "id": "PRC-ARC-RETRO",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "697ac6932d1e15d71fe909d6f17acdca91669c9cc1c72ffd31cc870c67dd2c26",
+      "path": "content/operational/stage_08/procedures/PRC-ARC-RETRO.json"
+    },
+    {
+      "id": "KNW-ARC-INTAKE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "0e7300605c6450ab2e64ecf891496152ac2df69fa0c5b48f78cc1ae0d96af903",
+      "path": "content/operational/stage_08/knowledge/KNW-ARC-INTAKE.json"
+    },
+    {
+      "id": "KNW-ARC-TRACE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "ad57e5d73cb6b6fb72d33601f64d31e6a70ed6c09c7279cb219a4ab61cbda5af",
+      "path": "content/operational/stage_08/knowledge/KNW-ARC-TRACE.json"
+    },
+    {
+      "id": "KNW-ARC-TRIAGE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "2e31b0e022fe87d92d3907f905bd365c6f087a58d513199f3651f585be29de68",
+      "path": "content/operational/stage_08/knowledge/KNW-ARC-TRIAGE.json"
+    },
+    {
+      "id": "KNW-ARC-VERIFICATION",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "9b0ce3f69929c28f084e18ef08e84f6d4d4c4dee329412405ac9a34f0a2190b6",
+      "path": "content/operational/stage_08/knowledge/KNW-ARC-VERIFICATION.json"
+    },
+    {
+      "id": "KNW-ARC-DECISION",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "bb250a9db9061eff924c7a35304488db6d1eef056ed478ef51c97a200f06d9d4",
+      "path": "content/operational/stage_08/knowledge/KNW-ARC-DECISION.json"
+    },
+    {
+      "id": "KNW-ARC-NOTICES",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "8e4ead6ed73191222322cd20ba8ebfde09b529049fb264d58a644416a8492ecb",
+      "path": "content/operational/stage_08/knowledge/KNW-ARC-NOTICES.json"
+    },
+    {
+      "id": "KNW-ARC-VERSION",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "f9ba1ad6bd1c40dd6ff0d655a398bdb600d3ab4b95bdf6da32496984e57507d1",
+      "path": "content/operational/stage_08/knowledge/KNW-ARC-VERSION.json"
+    },
+    {
+      "id": "KNW-ARC-PROPAGATION",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "ddcadf57289279ea9b7308fb3747841ff974f428e8ee220bc26cdca035f74856",
+      "path": "content/operational/stage_08/knowledge/KNW-ARC-PROPAGATION.json"
+    },
+    {
+      "id": "KNW-ARC-FEEDBACK",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "080f70404a5e8df904d4fda70bdf50457f04ff59a488b381b2cb90037b5f8195",
+      "path": "content/operational/stage_08/knowledge/KNW-ARC-FEEDBACK.json"
+    },
+    {
+      "id": "KNW-ARC-MEASUREMENT",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "ca69f6f241e6c34b6356900e253d4e4166f70c934f98036665efef3ba98b7488",
+      "path": "content/operational/stage_08/knowledge/KNW-ARC-MEASUREMENT.json"
+    },
+    {
+      "id": "KNW-ARC-ARCHIVE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "e307022730e00ca30b211afde2b847db382b79e24a77110bb33959c3708673d3",
+      "path": "content/operational/stage_08/knowledge/KNW-ARC-ARCHIVE.json"
+    },
+    {
+      "id": "KNW-ARC-FIXITY",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "81bb0ba70c31b0f9bfec0d050c4188e157f3e04e4dee8475d930793e539a42fd",
+      "path": "content/operational/stage_08/knowledge/KNW-ARC-FIXITY.json"
+    },
+    {
+      "id": "KNW-ARC-LEARNING",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "32f185fce4007ce5f0d72abad7a8c00d18471865af117f5d06934be58aba4174",
+      "path": "content/operational/stage_08/knowledge/KNW-ARC-LEARNING.json"
+    },
+    {
+      "id": "KNW-ETH-ARC-INTEGRITY",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "22283e9da882d4a5d0d4e61ea02255ea9d26d4aa86fda6ecd3690df36386b0e7",
+      "path": "content/operational/stage_08/knowledge/KNW-ETH-ARC-INTEGRITY.json"
+    },
+    {
+      "id": "KNW-ETH-ARC-ACCOUNTABILITY",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "0ae8507587a46a790d2dd62a95bd2a2877c20c26f8d3e5ad79b2c0c183f5df8f",
+      "path": "content/operational/stage_08/knowledge/KNW-ETH-ARC-ACCOUNTABILITY.json"
+    },
+    {
+      "id": "KNW-ETH-ARC-PRIVACY",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "93d99d55d5f20f59e0cab930e260c9f6fe892764382bd22f215a1077506483d2",
+      "path": "content/operational/stage_08/knowledge/KNW-ETH-ARC-PRIVACY.json"
+    },
+    {
+      "id": "KNW-ETH-ARC-DIALOGUE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "0f1f9e4909f4be5b431a82da33b1f5a34366d50a498f58591197a0a665d1e36c",
+      "path": "content/operational/stage_08/knowledge/KNW-ETH-ARC-DIALOGUE.json"
+    },
+    {
+      "id": "KNW-ETH-ARC-HARM",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "b1f9e81ed2ff91af5b3eb2433a3b821c969c0afee9c2fac963cbe3c480b51dfc",
+      "path": "content/operational/stage_08/knowledge/KNW-ETH-ARC-HARM.json"
+    },
+    {
+      "id": "KNW-ETH-ARC-ACCESS",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "a55dcfd78dc10587b568382d0cf4029471de23db0e3a507d21edc36f7791c123",
+      "path": "content/operational/stage_08/knowledge/KNW-ETH-ARC-ACCESS.json"
+    },
+    {
+      "id": "TPL-CHK-042",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "0bc9ef6dbf9ea16779808c4798182b21ad5ed9ff038cfb800e963c8d74130b1c",
+      "path": "content/templates/TPL-CHK-042.json"
+    },
+    {
+      "id": "TPL-CHK-043",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "33378f21e688376a7ecf8f43be6576a801e998a68c032850905bfbbd5d2215ad",
+      "path": "content/templates/TPL-CHK-043.json"
+    },
+    {
+      "id": "TPL-CHK-044",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "71202a47829441b80f950f119c9a9611e1e931597adecc7b02fb5fcc7d336d42",
+      "path": "content/templates/TPL-CHK-044.json"
+    },
+    {
+      "id": "TPL-CHK-045",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "3fb3f0162ac0ff5df43c07b2db5a3ef50ebbaa89043c3a661d5f107d962f7214",
+      "path": "content/templates/TPL-CHK-045.json"
+    },
+    {
+      "id": "PUB-ARC-HANDBOOK",
+      "kind": "publication_recipe",
+      "version": "0.1.0",
+      "sha256": "fc2ea72e6868de1b2453fa16a590e7bdf32cfba93f91b083e34daca1feb1872c",
+      "path": "content/operational/stage_08/recipes/PUB-ARC-HANDBOOK.json"
+    },
+    {
+      "id": "RENDER-TEX",
+      "kind": "renderer",
+      "version": "0.1.0",
+      "sha256": "617d6e9cc572b2059e37dc9ca9ec9ce8bab0453fe7b3741f42c40eb482a7414d",
+      "path": "script/compose_handbook.py"
+    }
+  ],
+  "print_style_sha256": "c5560109a7441048abd09e3581b874cb264eac39b65420456dc57431665e7b2a",
+  "tex_sha256": "81eeff72bc55a4b7b862501b72dbb9aa98fa81e7d0bac26d8cf8fb1a36214358"
+}

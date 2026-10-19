@@ -1,0 +1,183 @@
+{
+  "type": "template",
+  "id": "TPL-CHK-016",
+  "kind": "checklist",
+  "version": "0.1.0",
+  "status": "structural_template",
+  "workflow_id": "editorial-eight-stage",
+  "stages": [
+    "01"
+  ],
+  "title_ja": "企画候補評価チェックリスト",
+  "sections": [
+    {
+      "id": "TPL-CHK-016-S1",
+      "heading_ja": "確認項目",
+      "items": [
+        {
+          "id": "TPL-CHK-016-I001",
+          "criterion_ja": "社会的意義と想定読者を説明できる",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "根拠となる原資料、担当判断、実施記録を記載する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-016-I002",
+          "criterion_ja": "科学的根拠の成熟度を確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "根拠となる原資料、担当判断、実施記録を記載する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-016-I003",
+          "criterion_ja": "取材可能性と資源を検討した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "根拠となる原資料、担当判断、実施記録を記載する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-016-I004",
+          "criterion_ja": "代替候補との比較理由を記録した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "根拠となる原資料、担当判断、実施記録を記載する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-016-I005",
+          "criterion_ja": "未確定事項と選定責任を明示した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "根拠となる原資料、担当判断、実施記録を記載する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-016-I006",
+          "criterion_ja": "点検対象の文書・版・活動を明示した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "根拠となる原資料、担当判断、実施記録を記載する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-016-I007",
+          "criterion_ja": "対象外と判断した項目には理由を記録した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "根拠となる原資料、担当判断、実施記録を記載する。",
+          "human_review": true
+        }
+      ]
+    },
+    {
+      "id": "TPL-CHK-016-S2",
+      "heading_ja": "点検結果の記録",
+      "fields": [
+        {
+          "id": "TPL-CHK-016-F001",
+          "label_ja": "対象案件・対象版",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-CHK-016-F002",
+          "label_ja": "担当者と点検日",
+          "type": "date",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-CHK-016-F003",
+          "label_ja": "未解決事項と対応",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-CHK-016-F004",
+          "label_ja": "確認に用いた資料ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "composition_slots": [],
+  "review_status": "unapproved",
+  "semantic_sha256": "b8214b7b3ad6793b1803cfdd01a0c2ff48f42c7573abc4a725a5b3a52b330076"
+}

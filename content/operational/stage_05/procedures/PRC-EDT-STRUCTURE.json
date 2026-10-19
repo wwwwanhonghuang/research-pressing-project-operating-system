@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-EDT-STRUCTURE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "構成編集・論理連結のレビューの実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "構成編集者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "構成編集者"
+  ],
+  "inputs": [
+    "構成案と現行初稿",
+    "編集目的・読者設定",
+    "出典と主張ID"
+  ],
+  "outputs": [
+    "構成レビュー票",
+    "段落再配置案"
+  ],
+  "steps": [
+    {
+      "id": "PRC-EDT-STRUCTURE-S1",
+      "instruction": "段落ごとに説明上の役割、主張ID、必要な前提知識を注記する",
+      "expected_output": "構成レビュー票",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-EDT-STRUCTURE-S2",
+      "instruction": "見出しと導入が本文の検証済み範囲を超えないか比較する",
+      "expected_output": "見出し評価",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-STRUCTURE-S3",
+      "instruction": "重要な研究限界や反対結果の省略を洗い出す",
+      "expected_output": "抜け項目リスト",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-STRUCTURE-S4",
+      "instruction": "主語の変動、時系列の逆転、比較対象のすり替わりを検査する",
+      "expected_output": "論理点検記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-STRUCTURE-S5",
+      "instruction": "削除・移動・再構成の提案を優先度付きで記録する",
+      "expected_output": "編集修正記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-STRUCTURE-S6",
+      "instruction": "重要な科学的意味変更は著者又は専門家への照会として分離する",
+      "expected_output": "専門照会票",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-STRUCTURE-S7",
+      "instruction": "修正後のリード・結論・小見出しが整合しているか再読する",
+      "expected_output": "構成再確認",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "情報の不足は原稿の流暢化だけで埋めない",
+    "検証不能な中心主張がある場合は企画や調査工程への差戻しを提案する"
+  ]
+}

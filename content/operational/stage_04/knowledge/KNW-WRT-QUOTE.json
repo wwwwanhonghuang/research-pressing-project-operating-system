@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-WRT-QUOTE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "引用・発言・翻訳の編集規律"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "汎用的な編集制作の独立設計案。媒体の役割、権利、組織規程、適用される法令は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA-SCI-COMM",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果発表に関する日本心理学会の専門指針。因果と相関、統計量、引用、制約、過度の一般化の取扱い。"
+    },
+    {
+      "source_id": "SRC-PRESS-CODE",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本新聞協会の新聞倫理綱領。独立報道の職業倫理を示す。研究広報の承認権限を決めるものではない。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "04"
+    ],
+    "audiences": [
+      "編集担当者",
+      "科学ライター",
+      "制作担当者",
+      "レビュー担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-WRT-QUOTE-H01",
+      "kind": "heading",
+      "text": "発言の来歴",
+      "level": 2
+    },
+    {
+      "id": "KNW-WRT-QUOTE-P01",
+      "kind": "paragraph",
+      "text": "直接引用には録音・逐語記録の位置、発言者、日時、前後の文脈を結び付ける。要約と翻訳は直接引用に置き換えず、編集変換の記録を保持する。"
+    },
+    {
+      "id": "KNW-WRT-QUOTE-H02",
+      "kind": "heading",
+      "text": "科学的確認",
+      "level": 2
+    },
+    {
+      "id": "KNW-WRT-QUOTE-P02",
+      "kind": "paragraph",
+      "text": "発言中の技術的な説明は論文等の一次資料で別に確認する。発言が正確に記録されたことと、その内容の科学的妥当性を区分する。"
+    },
+    {
+      "id": "KNW-WRT-QUOTE-H03",
+      "kind": "heading",
+      "text": "引用の必要性",
+      "level": 2
+    },
+    {
+      "id": "KNW-WRT-QUOTE-P03",
+      "kind": "paragraph",
+      "text": "本人の経験や専門的説明を伝える役割を確かめ、過度の切り取りや不均衡な引用が印象を誘導しないか検討する。事前合意した用途と出典表示を確認する。"
+    },
+    {
+      "id": "KNW-WRT-QUOTE-H04",
+      "kind": "heading",
+      "text": "疑義の差戻し",
+      "level": 2
+    },
+    {
+      "id": "KNW-WRT-QUOTE-P04",
+      "kind": "paragraph",
+      "text": "発言に不明確な点があれば取材担当へ照会し、該当箇所を仮置きとして残す。確認済みと未確認の区別が原稿上でも維持されるようにする。"
+    }
+  ]
+}

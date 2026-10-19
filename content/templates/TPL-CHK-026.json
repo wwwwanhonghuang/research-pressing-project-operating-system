@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-CHK-026",
+  "kind": "checklist",
+  "slug": "accessible_japanese",
+  "title_ja": "わかりやすい日本語チェックリスト",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "04"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-CHK-026-S1",
+      "heading_ja": "確認項目",
+      "items": [
+        {
+          "id": "TPL-CHK-026-I001",
+          "criterion_ja": "対象読者に必要な技術語を初出で説明した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する原資料ID、原稿の該当版・箇所、確認者、判断理由と確認日を保存する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-026-I002",
+          "criterion_ja": "略語、固有名詞、研究段階と専門概念を一貫して表記した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する原資料ID、原稿の該当版・箇所、確認者、判断理由と確認日を保存する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-026-I003",
+          "criterion_ja": "一文の主語・述語・修飾先、指示語の対象が理解できる",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する原資料ID、原稿の該当版・箇所、確認者、判断理由と確認日を保存する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-026-I004",
+          "criterion_ja": "数字、時点、単位、比較対象が読み誤られにくい",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する原資料ID、原稿の該当版・箇所、確認者、判断理由と確認日を保存する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-026-I005",
+          "criterion_ja": "類比を使った箇所で成立する範囲と限界を説明した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する原資料ID、原稿の該当版・箇所、確認者、判断理由と確認日を保存する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-026-I006",
+          "criterion_ja": "読みやすくする変更で因果・適用範囲・留保が変化していない",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する原資料ID、原稿の該当版・箇所、確認者、判断理由と確認日を保存する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-026-I007",
+          "criterion_ja": "媒体に適切な句読点、見出し、段落の長さを確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する原資料ID、原稿の該当版・箇所、確認者、判断理由と確認日を保存する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-026-I008",
+          "criterion_ja": "科学的意味が変わり得る言い換えを専門確認へ渡した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する原資料ID、原稿の該当版・箇所、確認者、判断理由と確認日を保存する。",
+          "human_review": true
+        }
+      ]
+    },
+    {
+      "id": "TPL-CHK-026-S2",
+      "heading_ja": "点検結果の記録",
+      "fields": [
+        {
+          "id": "TPL-CHK-026-F001",
+          "label_ja": "対象案件・対象版",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-CHK-026-F002",
+          "label_ja": "担当者と点検日",
+          "type": "date",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-CHK-026-F003",
+          "label_ja": "未解決事項と対応",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-CHK-026-F004",
+          "label_ja": "確認に用いた資料ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho"
+  },
+  "notes_ja": "設問は専門的・法的な判断の代替ではない。実行記録の承認状態は別途管理する。",
+  "workflow_id": "editorial-eight-stage"
+}

@@ -1,0 +1,25 @@
+{
+  "release": "v11",
+  "status": "independent_draft",
+  "stage_id": "02",
+  "task_count": 8,
+  "procedure_count": 8,
+  "standard_count": 5,
+  "ethics_count": 3,
+  "revised_checklist_ids": [
+    "TPL-CHK-002",
+    "TPL-CHK-003",
+    "TPL-CHK-018",
+    "TPL-CHK-019",
+    "TPL-CHK-020"
+  ],
+  "checklist_history": "content/template_versions",
+  "handbook_recipe": "content/operational/stage_02/recipes/PUB-RES-HANDBOOK.json",
+  "generated_pdf": "pipeline/2_Presurvery_And_Precollection_Of_Data/docs/handbooks/事前調査・資料収集_業務ハンドブック_独立試作.pdf",
+  "limitations": [
+    "draft guidance; no organizational approval",
+    "not a systematic literature review",
+    "no case-specific scientific validation",
+    "human review and legal checks remain required"
+  ]
+}

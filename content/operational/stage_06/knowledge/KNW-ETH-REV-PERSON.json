@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-REV-PERSON",
+  "version": "0.1.0",
+  "title": {
+    "ja": "被取材者の尊厳・私生活と同意の境界"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "倫理・権利担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。法令、契約、内部権限規程等の適用と現行版は個別に検討する。実在の承認を意味しない。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PPC-GENERAL-2026",
+      "locator": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "個人情報保護委員会ガイドライン通則編。2026年改正版の適用条項・対象主体・処理状況を案件ごとに確認する。"
+    },
+    {
+      "source_id": "SRC-NEWS-ETHICS",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "新聞報道の職業倫理綱領。正確さ、独立、権利尊重と訂正に関する参照枠組み。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "06"
+    ],
+    "audiences": [
+      "研究者",
+      "編集者",
+      "専門確認担当者",
+      "公開承認責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-REV-PERSON-H01",
+      "kind": "heading",
+      "text": "本人の利益",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-REV-PERSON-P01",
+      "kind": "paragraph",
+      "text": "発言、画像、取材記録の公開が本人や周囲へもたらす影響を具体的に想定する。"
+    },
+    {
+      "id": "KNW-ETH-REV-PERSON-H02",
+      "kind": "heading",
+      "text": "同意の区別",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-REV-PERSON-P02",
+      "kind": "paragraph",
+      "text": "取材参加、録音、引用、画像利用、公開対象・目的の説明は別の事項として評価する。同意のみをすべての権利・法的根拠とみなさない。"
+    },
+    {
+      "id": "KNW-ETH-REV-PERSON-H03",
+      "kind": "heading",
+      "text": "適切な相談",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-REV-PERSON-P03",
+      "kind": "paragraph",
+      "text": "センシティブな情報、未成年者、再識別のおそれがある場合は必要な専門的確認と公開範囲の再検討を行う。"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ARC-VERSION",
+  "version": "0.1.0",
+  "title": {
+    "ja": "版履歴・更新通知の機械可読な記録"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-CROSSREF",
+      "locator": "https://www.crossref.org/documentation/principles-practices/best-practices/versioning",
+      "accessed_on": "2026-10-19",
+      "verification_note": "Crossrefによる学術文献の版・訂正・撤回記録の指針。一般の広報物にDOI発行を義務付けるものではない。"
+    },
+    {
+      "source_id": "SRC-CROSSMARK",
+      "locator": "https://www.crossref.org/services/crossmark/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "Crossref Crossmarkの変更状態表示と相互リンクに関する説明。参加・利用には別途条件がある。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "08"
+    ],
+    "audiences": [
+      "編集・訂正担当者",
+      "科学的確認担当者",
+      "保存担当者",
+      "評価担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ARC-VERSION-H1",
+      "kind": "heading",
+      "text": "対象と目的",
+      "level": 2
+    },
+    {
+      "id": "KNW-ARC-VERSION-P1",
+      "kind": "paragraph",
+      "text": "公開版ごとに日時、識別子、ハッシュ、URL、変更種別、関連する訂正通知を記録する。"
+    },
+    {
+      "id": "KNW-ARC-VERSION-H2",
+      "kind": "heading",
+      "text": "記録と実施",
+      "level": 2
+    },
+    {
+      "id": "KNW-ARC-VERSION-P2",
+      "kind": "paragraph",
+      "text": "小規模な表記修正と解釈に影響する変更を区別し、後者の通知を特に重視する。"
+    },
+    {
+      "id": "KNW-ARC-VERSION-H3",
+      "kind": "heading",
+      "text": "解釈と判断の境界",
+      "level": 2
+    },
+    {
+      "id": "KNW-ARC-VERSION-P3",
+      "kind": "paragraph",
+      "text": "DOIやCrossmarkは利用資格に依存する一つの方法であり、同等の関係記録を内部台帳でも保持できる。"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-REV-HARM",
+  "version": "0.1.0",
+  "title": {
+    "ja": "予見可能な社会的被害と表現上の配慮"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "倫理・権利担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。法令、契約、内部権限規程等の適用と現行版は個別に検討する。実在の承認を意味しない。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-SCI-COMM-GUIDE",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果プレスリリースについての専門学会による指針。科学的主張・誇張・引用・再利用等を扱う。一般の全業務に法的拘束力を与えるものではない。"
+    },
+    {
+      "source_id": "SRC-NEWS-ETHICS",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "新聞報道の職業倫理綱領。正確さ、独立、権利尊重と訂正に関する参照枠組み。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "06"
+    ],
+    "audiences": [
+      "研究者",
+      "編集者",
+      "専門確認担当者",
+      "公開承認責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-REV-HARM-H01",
+      "kind": "heading",
+      "text": "有害な読み違い",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-REV-HARM-P01",
+      "kind": "paragraph",
+      "text": "健康、教育、社会的属性等のテーマでは将来予測や効果の誇張が不当な期待や危険を生む可能性を検討する。"
+    },
+    {
+      "id": "KNW-ETH-REV-HARM-H02",
+      "kind": "heading",
+      "text": "文脈保持",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-REV-HARM-P02",
+      "kind": "paragraph",
+      "text": "研究の限界、対象集団、技術水準と代替的解釈を、受け手の理解に必要な範囲で提供する。"
+    },
+    {
+      "id": "KNW-ETH-REV-HARM-H03",
+      "kind": "heading",
+      "text": "修正と救済",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-REV-HARM-P03",
+      "kind": "paragraph",
+      "text": "不利益の指摘を受ける窓口を整え、訂正・非公開化・追加説明の判断経路を記録する。"
+    }
+  ]
+}

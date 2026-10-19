@@ -1,0 +1,47 @@
+% Operations OS print standard: black and white Japanese Mincho.
+% All .tex documents are generated from versioned structured content.
+% This style is the single editable authority for print presentation.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{operationsform}[2026/10/19 v1.0 Monochrome Mincho print rendering]
+\RequirePackage{fontspec}
+\RequirePackage{xeCJK}
+\RequirePackage[a4paper,left=27mm,right=25mm,top=25mm,bottom=23mm]{geometry}
+\RequirePackage{tabularx,array,needspace,amssymb,fancyhdr}
+\setmainfont{Noto Serif}
+\setCJKmainfont{Noto Serif CJK JP}
+\setCJKsansfont{Noto Serif CJK JP}
+\setCJKmonofont{Noto Serif CJK JP}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{1.17}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[L]{{\fontsize{7}{10}\selectfont 独立試作・未承認の作業用ひな形}}
+\fancyfoot[R]{{\fontsize{8}{10}\selectfont\thepage}}
+\newcommand{\OPStitle}[3]{%
+  \begin{center}{\fontsize{16}{22}\selectfont\bfseries #1}\end{center}%
+  \vspace{1mm}\noindent\hfill{\fontsize{8}{10}\selectfont 様式ID #2\quad 版 #3}\par
+  \vspace{5mm}%
+}
+\newcommand{\OPSsection}[2]{%
+  \par\Needspace{5\baselineskip}\vspace{4mm}%
+  {\fontsize{11.5}{17}\selectfont\bfseries #1.\hspace{.6em}#2}\par\vspace{2mm}%
+}
+\newcommand{\OPSblankshort}[1]{%
+  \par\noindent {\bfseries #1}\par\vspace{6mm}%
+}
+\newcommand{\OPSblanklong}[1]{%
+  \par\noindent{\bfseries #1}\par\vspace{11mm}%
+}
+\newcommand{\OPSfilled}[2]{%
+  \par\noindent{\bfseries #1}\par\noindent #2\par\vspace{3mm}%
+}
+\newcommand{\OPScheck}[2]{%
+  \par\Needspace{3\baselineskip}\noindent #1.\quad #2\par\vspace{1mm}%
+  {\fontsize{8.5}{13}\selectfont $\square$ 適合\quad $\square$ 不適合\quad $\square$ 対象外\quad $\square$ 未確認}\par\vspace{4mm}%
+}
+\newcommand{\OPSnote}[1]{%
+  \par\noindent {\fontsize{8.3}{12}\selectfont #1}\par\vspace{3mm}%
+}

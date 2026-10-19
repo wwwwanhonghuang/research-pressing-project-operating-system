@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-ARC-FIXITY",
+  "version": "0.1.0",
+  "title": {
+    "ja": "長期保存の完全性と再取得可能性の点検の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "保存品質確認担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "保存品質確認担当者"
+  ],
+  "inputs": [
+    "保存パッケージ",
+    "ハッシュ一覧",
+    "複製配置",
+    "保持方針"
+  ],
+  "outputs": [
+    "完全性検査・復元点検記録"
+  ],
+  "steps": [
+    {
+      "id": "PRC-ARC-FIXITY-S1",
+      "instruction": "移管時点にファイル単位・パッケージ単位の固定性情報を生成する",
+      "expected_output": "SHA-256目録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-FIXITY-S2",
+      "instruction": "異なる保存場所の複製数とアクセス権限を記録する",
+      "expected_output": "冗長性とアクセス記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-FIXITY-S3",
+      "instruction": "定期検査、失敗の通知先、例外時の保全方法を定義する",
+      "expected_output": "固定性検査計画",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-FIXITY-S4",
+      "instruction": "抜き取り又は必要範囲の復元試験を実行し読取可能性を確認する",
+      "expected_output": "復元試験ログ",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-FIXITY-S5",
+      "instruction": "形式の老朽化、移行履歴、技術依存性を定期点検する",
+      "expected_output": "保存維持計画",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "ハッシュ一致だけで閲覧可能性、権利適合や科学的正確さを保証しない",
+    "チェックサム差異を検出した時点で破損の原因を確定しない"
+  ]
+}

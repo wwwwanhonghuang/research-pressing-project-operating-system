@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "id": "SRC-DEMO-001",
+  "version": "0.1.0",
+  "title": {
+    "ja": "架空の出典"
+  },
+  "lifecycle": "draft",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "informational",
+    "institutional_approval": "none"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": false
+  },
+  "source_type": "official_program_record",
+  "creator_or_issuer": "架空機関（テスト用）",
+  "verification_status": "not_checked",
+  "uri": "https://example.invalid/sample",
+  "rights": {
+    "clearance": "not_checked"
+  },
+  "limitations": [
+    "実在する資料ではない"
+  ]
+}

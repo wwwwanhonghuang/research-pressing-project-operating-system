@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-INT-REQUEST",
+  "version": "0.1.0",
+  "title": {
+    "ja": "取材依頼・連絡条件と日程調整の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "取材調整担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "取材調整担当者"
+  ],
+  "inputs": [
+    "取材方針書",
+    "連絡先",
+    "事前に公開できる説明事項"
+  ],
+  "outputs": [
+    "取材依頼記録",
+    "承諾・保留の経緯",
+    "日程・実施方式"
+  ],
+  "steps": [
+    {
+      "id": "PRC-INT-REQUEST-S1",
+      "instruction": "対象者または窓口の権限・連絡経路を確認する",
+      "expected_output": "取材依頼記録",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-INT-REQUEST-S2",
+      "instruction": "取材目的、使用予定媒体、取材者、所要時間、テーマ、候補日時と協力が任意であることを説明する",
+      "expected_output": "承諾・保留の経緯",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-REQUEST-S3",
+      "instruction": "録音・撮影・匿名性・公開前の確認について未確定事項を明示し、確認の方法を提案する",
+      "expected_output": "日程・実施方式",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-REQUEST-S4",
+      "instruction": "回答期限、日時、場所、オンライン接続、配慮事項を調整する",
+      "expected_output": "取材依頼記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-REQUEST-S5",
+      "instruction": "承諾・保留・辞退・条件付承諾の区分を記録する",
+      "expected_output": "承諾・保留の経緯",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-REQUEST-S6",
+      "instruction": "条件変更がある場合は対象者と担当者で再確認する",
+      "expected_output": "日程・実施方式",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "辞退や無回答に対して反復的・威圧的連絡を避ける",
+    "資料の非公表条件、解禁条件が不明なら依頼内容を確定しない"
+  ]
+}

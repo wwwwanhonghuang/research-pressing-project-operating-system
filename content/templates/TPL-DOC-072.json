@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-072",
+  "kind": "document",
+  "slug": "release_approval_request",
+  "title_ja": "公開承認申請書",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "06"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-072-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-072-F001",
+          "label_ja": "申請対象の版・ハッシュ",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-072-F002",
+          "label_ja": "対象媒体・URL・公開予定",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-072-F003",
+          "label_ja": "審査・権利・情報保護の記録ID",
+          "type": "date",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-072-S2",
+      "heading_ja": "公開の申請",
+      "fields": [
+        {
+          "id": "TPL-DOC-072-F004",
+          "label_ja": "審査対象外事項・残留リスク",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-072-F005",
+          "label_ja": "必要な公開条件と禁輸日時",
+          "type": "date",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-072-F006",
+          "label_ja": "決裁予定者と権限の根拠",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-072-F007",
+          "label_ja": "申請時点の未解決事項",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-072-S3",
+      "heading_ja": "審査の前提",
+      "fields": [
+        {
+          "id": "TPL-DOC-072-F008",
+          "label_ja": "差戻し時の連絡先",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-072-F009",
+          "label_ja": "申請対象の版・ハッシュ",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-072-F010",
+          "label_ja": "対象媒体・URL・公開予定",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-072-F011",
+          "label_ja": "審査・権利・情報保護の記録ID",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-072-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-072-F012",
+          "label_ja": "審査対象外事項・残留リスク",
+          "type": "table",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-072-F013",
+          "label_ja": "必要な公開条件と禁輸日時",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-072-F014",
+          "label_ja": "決裁予定者と権限の根拠",
+          "type": "table",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": [],
+    "checklist_template_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "記入欄の構造案。法的・組織的承認の代替として利用しない。",
+  "workflow_id": "editorial-eight-stage"
+}

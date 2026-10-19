@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-RES-HANDOFF",
+  "version": "0.1.0",
+  "title": {
+    "ja": "調査結果の品質ゲートと引継ぎ"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学編集・調査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA-2026",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "プレスリリースにおける文献明示、誇張防止、方法・統計・利益相反等の専門的ガイダンス。記事全般の法的義務を設定するものではない。"
+    },
+    {
+      "source_id": "SRC-MEXT-INTEGRITY",
+      "locator": "https://www.mext.go.jp/a_menu/jinzai/fusei/index.htm",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究公正に関する制度情報。調査編集担当者が不正認定を行う根拠ではない。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "02"
+    ],
+    "audiences": [
+      "科学コミュニケーション担当者",
+      "調査担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-RES-HANDOFF-B01",
+      "kind": "heading",
+      "text": "出口条件",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-HANDOFF-B02",
+      "kind": "paragraph",
+      "text": "中心となる問いに関する資料台帳と主張対応表、主要な方法・限界、相違する資料、残存する確認事項、次の取材質問を揃える。"
+    },
+    {
+      "id": "KNW-RES-HANDOFF-B03",
+      "kind": "heading",
+      "text": "判断の記録",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-HANDOFF-B04",
+      "kind": "paragraph",
+      "text": "調査の暫定的な完了は編集工程上の引継ぎ判断である。科学的真理、当該研究の妥当性、取材・公開承認を意味しない。"
+    },
+    {
+      "id": "KNW-RES-HANDOFF-B05",
+      "kind": "heading",
+      "text": "再開条件",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-HANDOFF-B06",
+      "kind": "paragraph",
+      "text": "新たな訂正通知、追加データ、専門家の異論、公開条件の変更が生じた場合に再調査できる状態を維持する。"
+    },
+    {
+      "id": "KNW-RES-HANDOFF-B07",
+      "kind": "heading",
+      "text": "保護と保持",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-HANDOFF-B08",
+      "kind": "paragraph",
+      "text": "保存先、アクセス制限、保管期間、第三者共有可否、AIへの入力可否を資料単位で記録し、実際の保存は各組織の運用規程による。"
+    },
+    {
+      "id": "KNW-RES-HANDOFF-B09",
+      "kind": "paragraph",
+      "text": "参考：日本心理学会 科学コミュニケーション・ガイドライン（https://psych.or.jp/jpamember/press_release_guidelines/）、文部科学省 研究活動における不正行為への対応等（https://www.mext.go.jp/a_menu/jinzai/fusei/index.htm）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-PUB-WEB",
+  "version": "0.1.0",
+  "title": {
+    "ja": "ウェブ掲載とページ品質の事前検証の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "ウェブ公開担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "ウェブ公開担当者"
+  ],
+  "inputs": [
+    "承認済み本文",
+    "画像",
+    "出典",
+    "リンク",
+    "メタデータ",
+    "掲載環境"
+  ],
+  "outputs": [
+    "ウェブ事前検証記録"
+  ],
+  "steps": [
+    {
+      "id": "PRC-PUB-WEB-S1",
+      "instruction": "公開前環境で対象URLと表示版、認証・アクセス制限の状態を確認する",
+      "expected_output": "検証対象URL・環境",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-WEB-S2",
+      "instruction": "本文、出典、図表、画像代替テキスト、引用リンク、日時表示を照合する",
+      "expected_output": "表示・出典チェック記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-WEB-S3",
+      "instruction": "PC・モバイル・拡大表示・キーボード操作を実際に試す",
+      "expected_output": "利用可能性確認票",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-WEB-S4",
+      "instruction": "検索用タイトル、概要、正規URL、リダイレクト、言語指定を確認する",
+      "expected_output": "メタデータ・リンク記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-WEB-S5",
+      "instruction": "公開後の到達確認の方法と担当者を設定する",
+      "expected_output": "公開後検証手順",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "テスト環境の成功を本番反映の証拠として扱わない",
+    "機密ページの不用意な一般公開・検索露出は即時保留する"
+  ]
+}

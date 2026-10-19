@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-EDT-CHANGES",
+  "version": "0.1.0",
+  "title": {
+    "ja": "変更・課題・異議対応の管理の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集責任者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "編集責任者"
+  ],
+  "inputs": [
+    "校正・校閲指摘",
+    "修正前後の版",
+    "関係者からの意見"
+  ],
+  "outputs": [
+    "課題と決定の追跡台帳",
+    "未解決事項の引継ぎ票"
+  ],
+  "steps": [
+    {
+      "id": "PRC-EDT-CHANGES-S1",
+      "instruction": "指摘を内容、根拠、責任者、重大度、対象媒体別に登録する",
+      "expected_output": "変更管理台帳",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-EDT-CHANGES-S2",
+      "instruction": "修正と照会の区分、優先度及び対応期限を設定する",
+      "expected_output": "課題管理表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-CHANGES-S3",
+      "instruction": "修正案の根拠と影響する見出し・図表・字幕を確認する",
+      "expected_output": "影響分析票",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-CHANGES-S4",
+      "instruction": "指摘者・修正実施者・再確認者を分け、結果を記録する",
+      "expected_output": "再確認履歴",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-CHANGES-S5",
+      "instruction": "研究者又は取材者からの訂正要請を根拠に基づき検討する",
+      "expected_output": "異議記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-CHANGES-S6",
+      "instruction": "問題の未解決・再調査・保留等の状態を監査できる形で保持する",
+      "expected_output": "未解決一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-CHANGES-S7",
+      "instruction": "引継ぎ版と差分・既知の欠陥を確定する",
+      "expected_output": "編集成果物マニフェスト",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "重大な誤認・権利侵害の疑いは公開準備へ移さない",
+    "編集者自身が指摘を無審査でクローズしない運用を検討する"
+  ]
+}

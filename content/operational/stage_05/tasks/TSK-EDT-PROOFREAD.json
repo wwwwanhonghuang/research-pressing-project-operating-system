@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-EDT-PROOFREAD",
+  "version": "0.1.0",
+  "title": {
+    "ja": "校正・ゲラと組版の照合"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "校正担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "05"
+  ],
+  "inputs": [
+    "版固定済みゲラ・配信プレビュー",
+    "修正履歴",
+    "原稿と用語表"
+  ],
+  "outputs": [
+    "校正指示書",
+    "反映済み再校記録"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "校正指示書が登録され、担当者・日時・対象版が追跡できる",
+    "反映済み再校記録が登録され、担当者・日時・対象版が追跡できる",
+    "重大な未解決問題の状態と差戻し条件が記録され、次工程の判断者へ明示された"
+  ],
+  "review_roles": [
+    "編集責任者",
+    "分野の担当確認者（必要時）"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-EDT-PROOFREAD",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-065",
+      "version": "0.2.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-030",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-010",
+      "version": "0.2.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-EDT-PROOF",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-EDT-LANGUAGE",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-EDT-CORRECTION",
+      "version": "0.1.0"
+    }
+  ]
+}

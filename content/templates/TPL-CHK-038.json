@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-CHK-038",
+  "kind": "checklist",
+  "slug": "web_page_qa",
+  "title_ja": "ウェブ掲載品質チェックリスト",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "07"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-CHK-038-S1",
+      "heading_ja": "確認項目",
+      "items": [
+        {
+          "id": "TPL-CHK-038-I001",
+          "criterion_ja": "本番URLと表示内容、版を独立した閲覧条件で確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "表示スナップショット・ハッシュに加え、記録の版と確認者を残す。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-038-I002",
+          "criterion_ja": "見出し構造・画像の代替情報・主要導線を確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "閲覧・支援技術による確認に加え、記録の版と確認者を残す。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-038-I003",
+          "criterion_ja": "引用先URLと出典・数値の表示を確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "照合結果に加え、記録の版と確認者を残す。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-038-I004",
+          "criterion_ja": "モバイル表示・拡大表示・キーボード操作を確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "端末・条件記録に加え、記録の版と確認者を残す。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-038-I005",
+          "criterion_ja": "正規URL、公開日時、言語指定、検索用情報を確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "検証記録に加え、記録の版と確認者を残す。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-038-I006",
+          "criterion_ja": "本番反映後の再確認責任者と記録経路を定めた",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "担当表に加え、記録の版と確認者を残す。",
+          "human_review": true
+        }
+      ]
+    },
+    {
+      "id": "TPL-CHK-038-S2",
+      "heading_ja": "点検結果の記録",
+      "fields": [
+        {
+          "id": "TPL-CHK-038-F001",
+          "label_ja": "対象案件・対象版",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "対象案件・対象版を対象版・媒体・担当者・根拠資料に結び付ける。"
+        },
+        {
+          "id": "TPL-CHK-038-F002",
+          "label_ja": "担当者と点検日",
+          "type": "date",
+          "required": false,
+          "description_ja": "担当者と点検日を対象版・媒体・担当者・根拠資料に結び付ける。"
+        },
+        {
+          "id": "TPL-CHK-038-F003",
+          "label_ja": "未解決事項と対応",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "未解決事項と対応を対象版・媒体・担当者・根拠資料に結び付ける。"
+        },
+        {
+          "id": "TPL-CHK-038-F004",
+          "label_ja": "確認に用いた資料ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "確認に用いた資料IDを対象版・媒体・担当者・根拠資料に結び付ける。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [
+      "TSK-PUB-WEB",
+      "TSK-PUB-VERIFY"
+    ],
+    "knowledge_ids": [
+      "KNW-PUB-TRACE"
+    ]
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho"
+  },
+  "notes_ja": "本チェックリストの記入・集計は実際の公開権限や法令適合を証明しない。",
+  "workflow_id": "editorial-eight-stage"
+}

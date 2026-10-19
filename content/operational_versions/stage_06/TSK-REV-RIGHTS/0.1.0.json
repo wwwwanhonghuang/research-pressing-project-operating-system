@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "version": "0.1.0",
+  "lifecycle": "draft",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。具体的な権限、適用法令、契約及び組織規程は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "id": "TSK-REV-RIGHTS",
+  "title": {
+    "ja": "著作物・肖像・素材利用条件の確認"
+  },
+  "responsible_role": "審査調整担当者",
+  "stage_ids": [
+    "06"
+  ],
+  "inputs": [
+    "審査対象原稿",
+    "出典・根拠台帳",
+    "関連する条件と記録"
+  ],
+  "outputs": [
+    "著作物・肖像・素材利用条件の確認確認記録"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "対象版、根拠、担当者及び未解決事項を記録した",
+    "権限を持つ担当者の判断又は保留が明示されている"
+  ],
+  "review_roles": [
+    "審査責任者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-REV-RIGHTS",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [],
+  "checklist_refs": []
+}

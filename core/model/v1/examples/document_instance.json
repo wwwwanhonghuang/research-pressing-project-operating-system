@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "id": "DOC-DEMO-001",
+  "version": "0.1.0",
+  "title": {
+    "ja": "仮想文書インスタンス"
+  },
+  "lifecycle": "draft",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "informational",
+    "institutional_approval": "none"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": false
+  },
+  "project_id": "synthetic-project",
+  "template_ref": {
+    "kind": "document_template",
+    "id": "DTPL-DEMO-01",
+    "version": "0.1.0"
+  },
+  "field_values": {
+    "FIELD-DEMO-01": "架空の研究企画"
+  },
+  "publication_state": "awaiting_review"
+}

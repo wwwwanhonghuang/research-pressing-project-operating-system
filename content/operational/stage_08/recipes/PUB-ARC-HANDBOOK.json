@@ -1,0 +1,532 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PUB-ARC-HANDBOOK",
+  "version": "0.1.0",
+  "title": {
+    "ja": "訂正・評価・アーカイブ 業務ハンドブック（独立試案・統合版）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "訂正・評価・保存統括担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "output_kind": "handbook",
+  "audience": [
+    "編集・訂正担当者",
+    "科学的確認担当者",
+    "評価担当者",
+    "保存担当者",
+    "公開責任者"
+  ],
+  "style_profile": "formal_guideline",
+  "visibility": "public",
+  "chapter_plan": [
+    {
+      "chapter_id": "CH-ARC-INTRO",
+      "heading_ja": "適用範囲と第7段階からの継続性",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "本書は公開後に発見された問題への対応、読者からの異議、効果評価、保存及び改善を一連の記録可能な実務として構成する。元の公開版、科学的根拠、公開後の更新情報、判断者、修正通知、各媒体の掲載状況を結び付ける。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "第7段階の配信ログと第6段階の決裁対象を引き継ぐ。研究成果の学術的撤回と広報資料の修正・撤回は適用条件が異なる。担当者は判断権限と媒体ごとの利用・契約条件を確認する。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "本書の記録と自動検証は権限者による処分・訂正・公表の判断を意味しない。観測値、解釈、原因仮説、改善提案を区別する。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-ARC-HANDOFF",
+      "heading_ja": "公開記録と継続対応事項の受領",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-HANDOFF",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-HANDOFF",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-ARC-SIGNALS",
+      "heading_ja": "読者からの指摘・更新情報の受理",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-SIGNALS",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-SIGNALS",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-ARC-TRIAGE",
+      "heading_ja": "指摘の緊急度と影響範囲の一次評価",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-TRIAGE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-TRIAGE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-ARC-VERIFY",
+      "heading_ja": "指摘内容と原資料・現行知見の再照合",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-VERIFY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-VERIFY",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-ARC-DECISION",
+      "heading_ja": "訂正・説明追加・撤回・維持の判断",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-DECISION",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-DECISION",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-ARC-NOTICE",
+      "heading_ja": "訂正通知・版履歴と公開説明の作成",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-NOTICE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-NOTICE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-ARC-PROPAGATE",
+      "heading_ja": "媒体横断の訂正反映と通知結果確認",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-PROPAGATE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-PROPAGATE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-ARC-FEEDBACK",
+      "heading_ja": "読者の理解・意見・異議の収集",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-FEEDBACK",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-FEEDBACK",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-ARC-EVALUATE",
+      "heading_ja": "到達・理解・利用・影響の評価",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-EVALUATE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-EVALUATE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-ARC-ARCHIVE",
+      "heading_ja": "保存対象・権利・来歴の確定",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-ARCHIVE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-ARCHIVE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-ARC-FIXITY",
+      "heading_ja": "長期保存の完全性と再取得可能性の点検",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-FIXITY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-FIXITY",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-ARC-RETRO",
+      "heading_ja": "振り返り・改善の制度化と再接続",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-ARC-RETRO",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-ARC-RETRO",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-ARC-STANDARDS",
+      "heading_ja": "科学的正確性・訂正・評価と保存の標準",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-INTAKE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-TRACE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-TRIAGE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-VERIFICATION",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-DECISION",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-NOTICES",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-VERSION",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-PROPAGATION",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-FEEDBACK",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-MEASUREMENT",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-ARCHIVE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-FIXITY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ARC-LEARNING",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-ARC-ETHICS",
+      "heading_ja": "倫理、認識上の偏り、アクセスと責任",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-ARC-INTEGRITY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-ARC-ACCOUNTABILITY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-ARC-PRIVACY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-ARC-DIALOGUE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-ARC-HARM",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-ARC-ACCESS",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-ARC-CHECKS",
+      "heading_ja": "訂正・評価・保存・改善の確認票",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-042",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-043",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-044",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-045",
+            "version": "0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-ARC-CONTINUITY",
+      "heading_ja": "記録の循環と次の企画段階への接続",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "第8段階で作成した公開後対応決定、訂正通知、測定方法と評価結果、保存目録、完全性点検、改善提案の識別子を、次の企画の初期資料へ接続する。経験則は検証可能な条件とともに記録し、今後の判断を予め拘束する規程として扱わない。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "読者の評価、将来の研究の更新、関係者からの新たな指摘により記録は再開される場合がある。案件の一次終了と記録・応答義務の存続を区別し、窓口と再評価条件を明記する。"
+        }
+      ]
+    }
+  ]
+}

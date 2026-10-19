@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-PUB-VERIFY",
+  "version": "0.1.0",
+  "title": {
+    "ja": "公開結果の独立確認と初期監視の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "公開結果確認担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "公開結果確認担当者"
+  ],
+  "inputs": [
+    "公開操作ログ",
+    "本番URL",
+    "公開版マニフェスト"
+  ],
+  "outputs": [
+    "到達性・表示・版の確認票"
+  ],
+  "steps": [
+    {
+      "id": "PRC-PUB-VERIFY-S1",
+      "instruction": "配信操作とは異なる経路・閲覧条件で本番URLを開く",
+      "expected_output": "独立到達テスト",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-VERIFY-S2",
+      "instruction": "HTTP応答、見える本文、掲載時刻、ダウンロード可能性を記録する",
+      "expected_output": "公開結果スナップショット",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-VERIFY-S3",
+      "instruction": "表示版と承認済みハッシュの一致を可能な範囲で照合する",
+      "expected_output": "一致確認",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-VERIFY-S4",
+      "instruction": "字幕、音声、主要リンク、関連媒体の誘導先を抜き取り点検する",
+      "expected_output": "利用検証記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-VERIFY-S5",
+      "instruction": "反映遅延・キャッシュ差異・第三者プラットフォーム障害を分類する",
+      "expected_output": "監視・是正記録",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "HTTP成功応答だけで掲載内容やアクセス可能性を保証しない",
+    "削除・非公開化が直ちにキャッシュから消えると想定しない"
+  ]
+}

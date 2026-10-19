@@ -1,0 +1,288 @@
+{
+  "recipe": "PUB-EDT-HANDBOOK",
+  "version": "0.1.0",
+  "included": [
+    {
+      "id": "KNW-EDT-STRUCT",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "c3cd5d9bac0ebf3068cec88882e81b54336ef71b7bba135eca3e72fe39ebaf50",
+      "path": "content/operational/stage_05/knowledge/KNW-EDT-STRUCT.json"
+    },
+    {
+      "id": "KNW-EDT-LANGUAGE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "c35b765c1eb8dd6637b5c04a207bc349ee615b21e9c4e24df2ebfc57f39ab4b9",
+      "path": "content/operational/stage_05/knowledge/KNW-EDT-LANGUAGE.json"
+    },
+    {
+      "id": "KNW-EDT-PROOF",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "452a19b2d8aea9244deb98ee8d2cf2f18905d8538a44ebdb0f50cdc6084626c9",
+      "path": "content/operational/stage_05/knowledge/KNW-EDT-PROOF.json"
+    },
+    {
+      "id": "KNW-EDT-FACT",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "9d714bc0fa8cc6a6c39980f391a6f34545793e3c8413ba379831cd4f82162e99",
+      "path": "content/operational/stage_05/knowledge/KNW-EDT-FACT.json"
+    },
+    {
+      "id": "KNW-EDT-QUOTE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "d76ca790ee6f0583b6ad18040a114cbeddfc8273c81450bb3b58bcec7a47259c",
+      "path": "content/operational/stage_05/knowledge/KNW-EDT-QUOTE.json"
+    },
+    {
+      "id": "KNW-EDT-IMAGES",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "3485c50a036ce8e0f6dff07202afcf07fabea2d591232be1ff8b21e804921cfa",
+      "path": "content/operational/stage_05/knowledge/KNW-EDT-IMAGES.json"
+    },
+    {
+      "id": "KNW-EDT-ISSUES",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "bf264cf46d2e608e2a234a93478888881f96aabd68d5f74c1ba6fa90dbc4b43c",
+      "path": "content/operational/stage_05/knowledge/KNW-EDT-ISSUES.json"
+    },
+    {
+      "id": "KNW-EDT-AI",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "64e0d0a02624486e5566292e27341101a5dcf0c79765c78302e26a190578ee2b",
+      "path": "content/operational/stage_05/knowledge/KNW-EDT-AI.json"
+    },
+    {
+      "id": "KNW-ETH-EDT-HARM",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "503a77e45557ee349d5fb037a494abe0032627423771872d356582b06f17c115",
+      "path": "content/operational/stage_05/knowledge/KNW-ETH-EDT-HARM.json"
+    },
+    {
+      "id": "KNW-ETH-EDT-INDEPENDENCE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "43afda728e89773f26b884f77294fde851fe5c14e34093b3747a5d7709d7e6e6",
+      "path": "content/operational/stage_05/knowledge/KNW-ETH-EDT-INDEPENDENCE.json"
+    },
+    {
+      "id": "KNW-ETH-EDT-PRIVACY",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "eeea02561baba532f32cabae180f77fbf618deb140be1b0637bc3ddaa4cb18de",
+      "path": "content/operational/stage_05/knowledge/KNW-ETH-EDT-PRIVACY.json"
+    },
+    {
+      "id": "KNW-ETH-EDT-CORRECTION",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "837359cf9d07da04fa9afc5a4fbd506cbae9bfeea87309ab75d62b11a04b53b2",
+      "path": "content/operational/stage_05/knowledge/KNW-ETH-EDT-CORRECTION.json"
+    },
+    {
+      "id": "TSK-EDT-INTAKE",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "c6d2dc6fd57bea1ed641f02675bb0f862b69bc4aa91ed1ed7c80d5edf2b25af7",
+      "path": "content/operational/stage_05/tasks/TSK-EDT-INTAKE.json"
+    },
+    {
+      "id": "PRC-EDT-INTAKE",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "528edf190da490b13de9a54da1c91853681809749c14b80232ebf4461fcf98d4",
+      "path": "content/operational/stage_05/procedures/PRC-EDT-INTAKE.json"
+    },
+    {
+      "id": "TSK-EDT-STRUCTURE",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "557460d8103037bb8c9a24c08cd4d03ffcfd9765191743a7d3a36f014aaf5ba1",
+      "path": "content/operational/stage_05/tasks/TSK-EDT-STRUCTURE.json"
+    },
+    {
+      "id": "PRC-EDT-STRUCTURE",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "f4af778875f16f0a7e2b7bc0bf2b0818c8cb0e44988edd164e017a86cec3656f",
+      "path": "content/operational/stage_05/procedures/PRC-EDT-STRUCTURE.json"
+    },
+    {
+      "id": "TSK-EDT-COPYEDIT",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "2c88d4806c1368fffe19a5d57f1bf3b4dc7b976cf196304d5b2bb0a9580b7554",
+      "path": "content/operational/stage_05/tasks/TSK-EDT-COPYEDIT.json"
+    },
+    {
+      "id": "PRC-EDT-COPYEDIT",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "0c22c67ce9deda32959c6aaea712286b80948e32ff15dbe625d36393a25bd355",
+      "path": "content/operational/stage_05/procedures/PRC-EDT-COPYEDIT.json"
+    },
+    {
+      "id": "TSK-EDT-PROOFREAD",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "b9d7cd36d56797e3f541f1026c99d3dd5cda88d405c72028e28e0d1ff77de5ce",
+      "path": "content/operational/stage_05/tasks/TSK-EDT-PROOFREAD.json"
+    },
+    {
+      "id": "PRC-EDT-PROOFREAD",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "38002bc5ab1bb09a3f1a52d5b49a8fc262aa830fcddd5f1c74d1100e63af5558",
+      "path": "content/operational/stage_05/procedures/PRC-EDT-PROOFREAD.json"
+    },
+    {
+      "id": "TSK-EDT-FACTCHECK",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "ac4dec6cdb22dfa70d97585c0ce7e7b196c1ecb3d87a132e3f5e1da690367d4a",
+      "path": "content/operational/stage_05/tasks/TSK-EDT-FACTCHECK.json"
+    },
+    {
+      "id": "PRC-EDT-FACTCHECK",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "3b3d7094247ea1bdc5d3b013333acc91cf2e51a2354d80229fd669cadfcb1989",
+      "path": "content/operational/stage_05/procedures/PRC-EDT-FACTCHECK.json"
+    },
+    {
+      "id": "TSK-EDT-QUOTES",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "0cca3f94d4e3912c311cea64d023d76e6a9c366ac793a21c1a380119eeed8b80",
+      "path": "content/operational/stage_05/tasks/TSK-EDT-QUOTES.json"
+    },
+    {
+      "id": "PRC-EDT-QUOTES",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "7c8dabefa6a27b2940ffa441593bcf8719c2dd0ca0aaa31f6f170a5d0a1fb50f",
+      "path": "content/operational/stage_05/procedures/PRC-EDT-QUOTES.json"
+    },
+    {
+      "id": "TSK-EDT-MEDIA",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "7dffea9e7378259afa12175d5e75ce21063fd8da5dfb9f7bf20f4139fba13f82",
+      "path": "content/operational/stage_05/tasks/TSK-EDT-MEDIA.json"
+    },
+    {
+      "id": "PRC-EDT-MEDIA",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "1593ef331b6ee71fd386a5c6f023a28be44e8e7664979a2233e8fa4f55922879",
+      "path": "content/operational/stage_05/procedures/PRC-EDT-MEDIA.json"
+    },
+    {
+      "id": "TSK-EDT-CHANGES",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "3af2e9f9ba0dc76251b2c013f53ad0f7d7a06e807e90514048c561e9b13f429a",
+      "path": "content/operational/stage_05/tasks/TSK-EDT-CHANGES.json"
+    },
+    {
+      "id": "PRC-EDT-CHANGES",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "088a2f0e06692f0cf339c5055c44897245d368c7ccd99d71ae8cab7d80fdbb13",
+      "path": "content/operational/stage_05/procedures/PRC-EDT-CHANGES.json"
+    },
+    {
+      "id": "TSK-EDT-HANDOFF",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "39fda731745b323f58a03a964fe564a6eb5b0b50dbdf20174914e0e99eac7fa1",
+      "path": "content/operational/stage_05/tasks/TSK-EDT-HANDOFF.json"
+    },
+    {
+      "id": "PRC-EDT-HANDOFF",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "e1924a89b906f4fe84ffdb23c86832de8d70ba7114114881eefafc344b0055c7",
+      "path": "content/operational/stage_05/procedures/PRC-EDT-HANDOFF.json"
+    },
+    {
+      "id": "TPL-CHK-029",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "d6f1425a0506fe8a2956c36bf77c04546f7f92b6dc77527271562b88ee5a06ba",
+      "path": "content/templates/TPL-CHK-029.json"
+    },
+    {
+      "id": "TPL-CHK-030",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "da367ff0c962a792c46b21989cbe6b9775c9680329ac58cfb359df9e5bc6e92d",
+      "path": "content/templates/TPL-CHK-030.json"
+    },
+    {
+      "id": "TPL-CHK-031",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "55f9c79d87003464e45e9c497492a464fb8e4e73cb3177dad6e5698e279553aa",
+      "path": "content/templates/TPL-CHK-031.json"
+    },
+    {
+      "id": "TPL-CHK-032",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "5c881229f2b868cf0e113851c32c26998d82544f47c8a8cda4f9d0ef904ee010",
+      "path": "content/templates/TPL-CHK-032.json"
+    },
+    {
+      "id": "TPL-CHK-002",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "7c37342325ad614de0ca5336a7cd69cae15e104a140f37b5d8e5d1d712c917e2",
+      "path": "content/templates/TPL-CHK-002.json"
+    },
+    {
+      "id": "TPL-CHK-003",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "3f0c6e47d2a28631b2ed9653eb05495ed3549e62fb454e0e7df1ec4c9f32c76b",
+      "path": "content/templates/TPL-CHK-003.json"
+    },
+    {
+      "id": "TPL-CHK-010",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "ff523b38c71796994f53f65ef3fcc780021f59ca6e1c3182a1810cc9702aca0a",
+      "path": "content/templates/TPL-CHK-010.json"
+    },
+    {
+      "id": "TPL-CHK-011",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "1047854ab80228549cee77ef40a05d69adcad8985e659d736c75d32d67322219",
+      "path": "content/templates/TPL-CHK-011.json"
+    },
+    {
+      "id": "PUB-EDT-HANDBOOK",
+      "kind": "publication_recipe",
+      "version": "0.1.0",
+      "sha256": "866816086966bc2ec8f1b81722155da980abb6ab77d83f51d2753ec53a10c682",
+      "path": "content/operational/stage_05/recipes/PUB-EDT-HANDBOOK.json"
+    },
+    {
+      "id": "RENDER-TEX",
+      "kind": "renderer",
+      "version": "0.1.0",
+      "sha256": "617d6e9cc572b2059e37dc9ca9ec9ce8bab0453fe7b3741f42c40eb482a7414d",
+      "path": "script/compose_handbook.py"
+    }
+  ],
+  "print_style_sha256": "c5560109a7441048abd09e3581b874cb264eac39b65420456dc57431665e7b2a",
+  "tex_sha256": "d25d9462b4b12a57f760a818658d7915dcf82e17214e453f8c1f090b2aa69a00"
+}

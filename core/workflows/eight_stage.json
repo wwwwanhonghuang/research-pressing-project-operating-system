@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.1.0",
+  "id": "editorial-eight-stage",
+  "version": "0.1.0",
+  "status": "independent_prototype",
+  "description": "Reusable default editorial lifecycle; stages can iterate and tasks may overlap.",
+  "stages": [
+    {
+      "id": "01",
+      "directory": "1_Project_Design_and_Edtorial_Principles",
+      "name_ja": "企画・編集方針",
+      "name_en": "Planning and editorial direction",
+      "objective": "Agree on audience, scope and editorial purpose."
+    },
+    {
+      "id": "02",
+      "directory": "2_Presurvery_And_Precollection_Of_Data",
+      "name_ja": "事前調査・資料収集",
+      "name_en": "Preliminary research and source collection",
+      "objective": "Collect and assess source material and evidence."
+    },
+    {
+      "id": "03",
+      "directory": "3_Interview_And_Additional_Confirmation",
+      "name_ja": "取材・追加確認",
+      "name_en": "Interviews and reporting",
+      "objective": "Conduct interviews, verify statements and resolve gaps."
+    },
+    {
+      "id": "04",
+      "directory": "4_Structuring_And_Writing",
+      "name_ja": "構成・執筆",
+      "name_en": "Structure and writing",
+      "objective": "Develop narrative, language and supporting materials."
+    },
+    {
+      "id": "05",
+      "directory": "5_Edit_Proofreading_And_Corrections",
+      "name_ja": "編集・校正・校閲",
+      "name_en": "Editing, proofreading and fact-checking",
+      "objective": "Improve editorial quality and audit claims and details."
+    },
+    {
+      "id": "06",
+      "directory": "6_Fact_And_Scientific_Review_And_Approval_For_Publication",
+      "name_ja": "専門確認・公開承認",
+      "name_en": "Expert review and release approval",
+      "objective": "Document scientific review, rights and accountable authorization."
+    },
+    {
+      "id": "07",
+      "directory": "7_Publication_And_Dissemination",
+      "name_ja": "公開・配信",
+      "name_en": "Publication and distribution",
+      "objective": "Release authorized versions and verify the published result."
+    },
+    {
+      "id": "08",
+      "directory": "8_Correction_Evaluation_And_Archieve",
+      "name_ja": "訂正・評価・アーカイブ",
+      "name_en": "Corrections, evaluation and archive",
+      "objective": "Record corrections, evaluate outcomes, retain evidence and history."
+    }
+  ],
+  "rules": {
+    "sequential_completion_required": false,
+    "rework_allowed": true,
+    "rework_record_required": true,
+    "publication_requires_explicit_human_authorization": true,
+    "ai_cannot_authorize_publication": true,
+    "task_dependencies": "defined by future task contracts, not inferred from numeric stage order"
+  }
+}

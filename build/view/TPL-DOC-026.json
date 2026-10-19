@@ -1,0 +1,236 @@
+{
+  "type": "template",
+  "id": "TPL-DOC-026",
+  "kind": "document",
+  "version": "0.1.0",
+  "status": "structural_template",
+  "workflow_id": "editorial-eight-stage",
+  "stages": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08"
+  ],
+  "title_ja": "業務標準・品質基準書",
+  "sections": [
+    {
+      "id": "TPL-DOC-026-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-026-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-026-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-026-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-026-S2",
+      "heading_ja": "規範の基本事項",
+      "fields": [
+        {
+          "id": "TPL-DOC-026-F004",
+          "label_ja": "標準の目的と範囲",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-026-F005",
+          "label_ja": "用語と定義",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-026-F006",
+          "label_ja": "適用の前提",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-026-F007",
+          "label_ja": "規範の根拠と出典",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-026-S3",
+      "heading_ja": "要求事項と評価",
+      "fields": [
+        {
+          "id": "TPL-DOC-026-F008",
+          "label_ja": "要求事項",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-026-F009",
+          "label_ja": "達成判断に必要な証拠",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-026-F010",
+          "label_ja": "適用外条件と例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-026-F011",
+          "label_ja": "改訂・廃止の管理",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-026-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-026-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-026-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-026-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "composition_slots": [
+    {
+      "id": "TPL-DOC-026-B01",
+      "title_ja": "適用範囲",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-026-B02",
+      "title_ja": "用語と定義",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-026-B03",
+      "title_ja": "要求事項",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-026-B04",
+      "title_ja": "遵守確認と改訂",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    }
+  ],
+  "review_status": "unapproved",
+  "semantic_sha256": "11d1ca9a840321e6dc2aed2950bbf4d55add5cd0894a962c7e1dc3e1e8a106b5"
+}

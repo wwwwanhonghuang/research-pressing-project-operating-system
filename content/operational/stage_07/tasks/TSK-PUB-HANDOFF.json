@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-PUB-HANDOFF",
+  "version": "0.1.0",
+  "title": {
+    "ja": "公開記録の確定と訂正・評価段階への引継ぎ"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "記録・評価連携担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "07"
+  ],
+  "inputs": [
+    "実公開版",
+    "URL・投稿ID",
+    "配信記録",
+    "問い合わせ",
+    "監視結果"
+  ],
+  "outputs": [
+    "第8段階への引継ぎパッケージ"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "第8段階への引継ぎパッケージに公開対象の版、媒体、担当者及び確認日を記録した",
+    "根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した",
+    "第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した"
+  ],
+  "review_roles": [
+    "配信責任者",
+    "必要に応じた第6段階の審査責任者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-PUB-HANDOFF",
+    "version": "0.1.0"
+  },
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-PUB-TRACE",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-PUB-CONSISTENCY",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-PUB-DIALOGUE",
+      "version": "0.1.0"
+    }
+  ],
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-085",
+      "version": "0.2.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-037",
+      "version": "0.2.0"
+    }
+  ]
+}

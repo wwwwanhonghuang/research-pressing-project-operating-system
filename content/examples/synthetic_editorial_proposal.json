@@ -1,0 +1,29 @@
+{
+  "id": "EXAMPLE-DOC-001",
+  "template_id": "TPL-DOC-030",
+  "template_version": "0.2.0",
+  "project_id": "synthetic-demo",
+  "status": "draft",
+  "field_values": {
+    "TPL-DOC-030-F001": "SYNTHETIC-001",
+    "TPL-DOC-030-F002": "編集担当（架空）",
+    "TPL-DOC-030-F004": "科学的な説明の正確さと読者の理解を検討する架空の企画である。",
+    "TPL-DOC-030-F005": "研究成果の成立条件を説明し、未確認事項を明示する。"
+  },
+  "content_blocks": [
+    {
+      "id": "BLK-001",
+      "kind": "heading",
+      "authority": "independent_proposal",
+      "version": "0.1.0",
+      "text_ja": "試作の説明"
+    },
+    {
+      "id": "BLK-002",
+      "kind": "paragraph",
+      "authority": "independent_proposal",
+      "version": "0.1.0",
+      "text_ja": "これは架空の内容であり、実在の研究成果や所属組織の正式な見解を記録したものではない。"
+    }
+  ]
+}

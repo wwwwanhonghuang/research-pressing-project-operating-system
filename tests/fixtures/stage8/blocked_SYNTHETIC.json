@@ -1,0 +1,18 @@
+{
+  "publication_id": "SYNTHETIC-PUBLICATION-01",
+  "original_version": "1.0.0",
+  "original_sha256": "sha256-original-placeholder",
+  "publication_url": "https://example.invalid/synthetic",
+  "finding_id": "SYNTHETIC-FINDING-01",
+  "finding_description": "A numerical claim in a fictional article may be wrong.",
+  "evidence_refs": ["SYNTHETIC-SOURCE-01"],
+  "decision_status": "investigate",
+  "decision_record_id": "SYNTHETIC-DECISION-01",
+  "responsible_role": "fictional_editor",
+  "notice_url": "",
+  "updated_version": "",
+  "updated_sha256": "",
+  "affected_channels": [{"channel_id":"synthetic-web","original_asset_id":"synthetic-v1","status":"pending","verified_at":""}],
+  "preservation_manifest_id": "",
+  "unresolved_major_issues": ["Source verification incomplete"]
+}

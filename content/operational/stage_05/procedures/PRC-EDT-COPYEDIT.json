@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-EDT-COPYEDIT",
+  "version": "0.1.0",
+  "title": {
+    "ja": "文章推敲・表記用語の統一の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集・推敲担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "編集・推敲担当者"
+  ],
+  "inputs": [
+    "構成修正後の原稿",
+    "用語台帳",
+    "媒体別の文体・表記規則"
+  ],
+  "outputs": [
+    "校訂済み原稿",
+    "用語・表記差分一覧"
+  ],
+  "steps": [
+    {
+      "id": "PRC-EDT-COPYEDIT-S1",
+      "instruction": "文章を意味単位で読み、係り受け、主語、指示語、重複を点検する",
+      "expected_output": "推敲指摘記録",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-EDT-COPYEDIT-S2",
+      "instruction": "日本語固有名詞、肩書、学術用語、単位、全角半角の表記を統一する",
+      "expected_output": "用語台帳",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-COPYEDIT-S3",
+      "instruction": "専門的言い換えは元の研究概念を保持するか確認する",
+      "expected_output": "意味確認メモ",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-COPYEDIT-S4",
+      "instruction": "引用を編集する際は直接引用・要約・整文の扱いを記録する",
+      "expected_output": "引用編集記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-COPYEDIT-S5",
+      "instruction": "全文と見出し、字幕、キャプションの文体の不統一を点検する",
+      "expected_output": "媒体横断用語表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-COPYEDIT-S6",
+      "instruction": "修正ごとの理由、影響、確認者、対象版を記録する",
+      "expected_output": "編集修正記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-COPYEDIT-S7",
+      "instruction": "科学的意味の変更があり得る箇所を校閲担当へ引き渡す",
+      "expected_output": "校閲照会事項",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "原著者の専門用語を置き換えることができないときは注釈を追加する",
+    "編集担当者の推測を研究者本人の発言として扱わない"
+  ]
+}

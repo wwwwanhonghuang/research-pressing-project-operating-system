@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-REV-EVIDENCE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "命題・根拠・変更版の再照合の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学校閲責任者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。法令、契約、内部権限規程等の適用と現行版は個別に検討する。実在の承認を意味しない。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "科学校閲責任者"
+  ],
+  "inputs": [
+    "原資料台帳・主張台帳・専門家指摘"
+  ],
+  "outputs": [
+    "照合済み命題表と差分記録"
+  ],
+  "steps": [
+    {
+      "id": "PRC-REV-EVIDENCE-S1",
+      "instruction": "主張の原稿位置と原資料の該当箇所を対応させる",
+      "expected_output": "命題・根拠対応表",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-REV-EVIDENCE-S2",
+      "instruction": "撤回・訂正・新規公開情報の疑義を調査し状態を記録する",
+      "expected_output": "更新確認記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-REV-EVIDENCE-S3",
+      "instruction": "修正後の命題と改稿前の命題の差を検証する",
+      "expected_output": "改稿影響表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-REV-EVIDENCE-S4",
+      "instruction": "図表、短文、字幕、タイトルにも同じ品質の照合を行う",
+      "expected_output": "媒体別確認記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-REV-EVIDENCE-S5",
+      "instruction": "再検査未了の命題を未解決として申請対象へ渡す",
+      "expected_output": "未確認命題一覧",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "原資料へのアクセス不能は検証済みとせず条件付きの照会へ移す",
+    "重大な不一致は対象版の再編集へ差し戻す"
+  ]
+}

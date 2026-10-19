@@ -1,0 +1,225 @@
+{
+  "recipe": "PUB-RES-HANDBOOK",
+  "version": "0.1.0",
+  "included": [
+    {
+      "id": "KNW-RES-SEARCH",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "96b018c17489e833d4ae917f2e2cfe195f8b0e101845169bded95ebfb5004a01",
+      "path": "content/operational/stage_02/knowledge/KNW-RES-SEARCH.json"
+    },
+    {
+      "id": "KNW-RES-PROVENANCE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "8f3e4da956ae816ae936dfee8bac702b9bc17c1c42cb5ce134753c5960217573",
+      "path": "content/operational/stage_02/knowledge/KNW-RES-PROVENANCE.json"
+    },
+    {
+      "id": "KNW-RES-EVIDENCE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "4ec476d4aa32ba820d92bcdbb4073e0f56f6ad14ccfb6a9c2d804b288087e2aa",
+      "path": "content/operational/stage_02/knowledge/KNW-RES-EVIDENCE.json"
+    },
+    {
+      "id": "KNW-RES-TRACE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "0b7d8c427a40bde5a7be8be2e43133af1eea19d74bd78cd70f4d146925d42612",
+      "path": "content/operational/stage_02/knowledge/KNW-RES-TRACE.json"
+    },
+    {
+      "id": "KNW-RES-HANDOFF",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "a55146861f54e7539077072de7e205056fc646934f94b7f57b9f5494a321c9e6",
+      "path": "content/operational/stage_02/knowledge/KNW-RES-HANDOFF.json"
+    },
+    {
+      "id": "KNW-ETH-RESBIAS",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "6d70e9a9ca297315aa4ea3eb4529aa67ca04fd46d3818e61dfc8b216cffec06b",
+      "path": "content/operational/stage_02/knowledge/KNW-ETH-RESBIAS.json"
+    },
+    {
+      "id": "KNW-ETH-RIGHTS",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "af63f19911445a40b985cda92cae60eb7bcf4c9901e612dd0c69335255bd931e",
+      "path": "content/operational/stage_02/knowledge/KNW-ETH-RIGHTS.json"
+    },
+    {
+      "id": "KNW-ETH-INTEGRITY",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "dbfea4ca40fe071ae7272a554adce7a182e49bc46e0ea88f98dfaf6ffca18fdb",
+      "path": "content/operational/stage_02/knowledge/KNW-ETH-INTEGRITY.json"
+    },
+    {
+      "id": "TSK-RES-PLAN",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "26deeee1485bc65a0d3472227087c6cabbd02cc2368bfa5d4727b41271729d7d",
+      "path": "content/operational/stage_02/tasks/TSK-RES-PLAN.json"
+    },
+    {
+      "id": "PRC-RES-PLAN",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "7ece373518a6c0f4ee173c09e39e1b89ad6002ae7c441ee809376b6b34a12591",
+      "path": "content/operational/stage_02/procedures/PRC-RES-PLAN.json"
+    },
+    {
+      "id": "TSK-RES-DISCOVER",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "3de054cdbd74e1d7bba0e43ce3c40ed6dccfb8a66b8332edc9d242adca0ebc9b",
+      "path": "content/operational/stage_02/tasks/TSK-RES-DISCOVER.json"
+    },
+    {
+      "id": "PRC-RES-DISCOVER",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "1f17236b79c64585bdef587fe9d51ee1ff4f04d00968b8eaa369cffcc9548a72",
+      "path": "content/operational/stage_02/procedures/PRC-RES-DISCOVER.json"
+    },
+    {
+      "id": "TSK-RES-REGISTER",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "e87fe9def99c994bd6c18a08e8b5a2677b8ee55c1f7da43087cc92350aa9a9d2",
+      "path": "content/operational/stage_02/tasks/TSK-RES-REGISTER.json"
+    },
+    {
+      "id": "PRC-RES-REGISTER",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "766fcdfe9ff2542b3f0d72f5340c532d3b4ebe118fe8ae331bc3ebb874ff42ef",
+      "path": "content/operational/stage_02/procedures/PRC-RES-REGISTER.json"
+    },
+    {
+      "id": "TSK-RES-METHOD",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "b18d71fe8cb6da1e7501d33d9d28be92fff1eac6feeb482884389408526b9f22",
+      "path": "content/operational/stage_02/tasks/TSK-RES-METHOD.json"
+    },
+    {
+      "id": "PRC-RES-METHOD",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "7166c5a2bf6814a5978a5ff4a4f61e9c6b632642abf354b8e85fc4097d807287",
+      "path": "content/operational/stage_02/procedures/PRC-RES-METHOD.json"
+    },
+    {
+      "id": "TSK-RES-QUANT",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "87e3395c709d1b2d49febd2e4fd7ca1d3e86ce3f198c0e00604170174d94be46",
+      "path": "content/operational/stage_02/tasks/TSK-RES-QUANT.json"
+    },
+    {
+      "id": "PRC-RES-QUANT",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "650ea4b39d7b6364d61fefa7d737939d0585bc4ecf3a8c29185ff29980bd3b8e",
+      "path": "content/operational/stage_02/procedures/PRC-RES-QUANT.json"
+    },
+    {
+      "id": "TSK-RES-CONTEXT",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "b654ae1b5d70625dcb9e8bce2a9f87495e63a96e3fc4cb3d1198b1d6aca15ae2",
+      "path": "content/operational/stage_02/tasks/TSK-RES-CONTEXT.json"
+    },
+    {
+      "id": "PRC-RES-CONTEXT",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "3721fc38daba619ea5a0c0a2f099768180ad593f1c1de11bc20d907ffcb95a1b",
+      "path": "content/operational/stage_02/procedures/PRC-RES-CONTEXT.json"
+    },
+    {
+      "id": "TSK-RES-CLAIM",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "be9ff0f10eb7a713b738362888a66f04e0a06705eb18667d865bd0831ee890e8",
+      "path": "content/operational/stage_02/tasks/TSK-RES-CLAIM.json"
+    },
+    {
+      "id": "PRC-RES-CLAIM",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "6bd9c07768481b5502a3456d2dab99932d60949e2bcd0029cef0b9a7385cdaef",
+      "path": "content/operational/stage_02/procedures/PRC-RES-CLAIM.json"
+    },
+    {
+      "id": "TSK-RES-HANDOFF",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "85b9d9414c646b1dcbe96638f076cbca477eb9d7094077d3dc4abcc2ac6f3037",
+      "path": "content/operational/stage_02/tasks/TSK-RES-HANDOFF.json"
+    },
+    {
+      "id": "PRC-RES-HANDOFF",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "78b969120d9cd91501d6e4f4d412488454b86ed4129712aeeaa9191c832caccf",
+      "path": "content/operational/stage_02/procedures/PRC-RES-HANDOFF.json"
+    },
+    {
+      "id": "TPL-CHK-018",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "941f9a8cf5f0217ce855f0bb177698e1d39c37c5bace510c6e81f75983b787e4",
+      "path": "content/templates/TPL-CHK-018.json"
+    },
+    {
+      "id": "TPL-CHK-003",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "3f0c6e47d2a28631b2ed9653eb05495ed3549e62fb454e0e7df1ec4c9f32c76b",
+      "path": "content/templates/TPL-CHK-003.json"
+    },
+    {
+      "id": "TPL-CHK-019",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "b7101433b95327a76ee4914d619beb4fc0c61a2dd538c7a7d69b48575648687f",
+      "path": "content/templates/TPL-CHK-019.json"
+    },
+    {
+      "id": "TPL-CHK-002",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "7c37342325ad614de0ca5336a7cd69cae15e104a140f37b5d8e5d1d712c917e2",
+      "path": "content/templates/TPL-CHK-002.json"
+    },
+    {
+      "id": "TPL-CHK-020",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "0b08a5e60669872203644e108a24019e2fffb127f44d3c0fca7d2a48730a81fd",
+      "path": "content/templates/TPL-CHK-020.json"
+    },
+    {
+      "id": "PUB-RES-HANDBOOK",
+      "kind": "publication_recipe",
+      "version": "0.1.0",
+      "sha256": "4cf23584a97a6cdf331c593e6f3882601444b18d4877994a516d6dcf5ce9fa56",
+      "path": "content/operational/stage_02/recipes/PUB-RES-HANDBOOK.json"
+    },
+    {
+      "id": "RENDER-TEX",
+      "kind": "renderer",
+      "version": "0.1.0",
+      "sha256": "43d89689e6999ad16cb89e9af9ea3e037f2fd942e2003050d92d3384cb1b2784",
+      "path": "script/compose_handbook.py"
+    }
+  ],
+  "print_style_sha256": "c5560109a7441048abd09e3581b874cb264eac39b65420456dc57431665e7b2a",
+  "tex_sha256": "9410b4082744ca1e8e46d883d4246cacd323c36d4eb17d3fdf148a6114ef0e0b"
+}

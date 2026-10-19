@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-REV-EMBARGO",
+  "version": "0.1.0",
+  "title": {
+    "ja": "公表日時・共同発信と公開条件の検証の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "公開調整担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。法令、契約、内部権限規程等の適用と現行版は個別に検討する。実在の承認を意味しない。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "公開調整担当者"
+  ],
+  "inputs": [
+    "公開スケジュール・関係者合意・配信先一覧"
+  ],
+  "outputs": [
+    "解禁日時確認書と公開制約一覧"
+  ],
+  "steps": [
+    {
+      "id": "PRC-REV-EMBARGO-S1",
+      "instruction": "論文・会見・ウェブ等の公開時点とタイムゾーンを照合する",
+      "expected_output": "日時照合記録",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-REV-EMBARGO-S2",
+      "instruction": "禁止事項の根拠を契約、運用ルール、合意ごとに区別する",
+      "expected_output": "条件根拠表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-REV-EMBARGO-S3",
+      "instruction": "共同発表者・関係窓口・公開順序を確認する",
+      "expected_output": "連携確認記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-REV-EMBARGO-S4",
+      "instruction": "公開直前の時刻変更・中止連絡先を定める",
+      "expected_output": "緊急連絡経路",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-REV-EMBARGO-S5",
+      "instruction": "各媒体・配信システムのスケジュール状態を点検する",
+      "expected_output": "配信条件記録",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "日時・禁輸の条件が不明確なら配信を保留する",
+    "時間帯の変換結果が一致しなければ再確認する"
+  ]
+}

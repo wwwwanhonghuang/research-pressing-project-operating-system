@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-CHK-006",
+  "kind": "checklist",
+  "slug": "privacy_consent",
+  "title_ja": "個人情報・同意確認チェックリスト",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "03",
+    "04",
+    "06",
+    "07",
+    "08"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-CHK-006-S1",
+      "heading_ja": "確認項目",
+      "items": [
+        {
+          "id": "TPL-CHK-006-I001",
+          "criterion_ja": "取得・記録する個人情報と利用目的を具体化した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する記録ID、判断の根拠、確認者と日時を記載する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-006-I002",
+          "criterion_ja": "録音・写真・氏名掲載などの説明と確認経緯を記録した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する記録ID、判断の根拠、確認者と日時を記載する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-006-I003",
+          "criterion_ja": "第三者や関係者に関する情報の必要性と公開範囲を検討した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する記録ID、判断の根拠、確認者と日時を記載する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-006-I004",
+          "criterion_ja": "要配慮情報・未公開研究資料と一般公開資料を区分した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する記録ID、判断の根拠、確認者と日時を記載する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-006-I005",
+          "criterion_ja": "保存場所・閲覧権限・廃棄方針と委託先を確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する記録ID、判断の根拠、確認者と日時を記載する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-006-I006",
+          "criterion_ja": "外部AI入力や第三者提供の可否を独立して確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する記録ID、判断の根拠、確認者と日時を記載する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-006-I007",
+          "criterion_ja": "報道等の適用除外や個別法規の適用可能性を調べた",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する記録ID、判断の根拠、確認者と日時を記載する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-006-I008",
+          "criterion_ja": "疑義や利用範囲変更の際のエスカレーション経路を決めた",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "関連する記録ID、判断の根拠、確認者と日時を記載する。",
+          "human_review": true
+        }
+      ]
+    },
+    {
+      "id": "TPL-CHK-006-S2",
+      "heading_ja": "点検結果の記録",
+      "fields": [
+        {
+          "id": "TPL-CHK-006-F001",
+          "label_ja": "対象案件・対象版",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-CHK-006-F002",
+          "label_ja": "担当者と点検日",
+          "type": "date",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-CHK-006-F003",
+          "label_ja": "未解決事項と対応",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-CHK-006-F004",
+          "label_ja": "確認に用いた資料ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho"
+  },
+  "notes_ja": "設問は専門的・法的な判断の代替ではない。実行記録の承認状態は別途管理する。",
+  "workflow_id": "editorial-eight-stage"
+}

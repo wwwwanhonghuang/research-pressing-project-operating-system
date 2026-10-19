@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-AUDIENCE-ACCESS",
+  "version": "0.1.0",
+  "title": {
+    "ja": "対象読者と媒体選択の適合性"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "企画編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "01"
+    ],
+    "audiences": [
+      "企画編集担当者",
+      "科学コミュニケーション担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-AUDIENCE-ACCESS-B01",
+      "kind": "heading",
+      "text": "読者の多様性",
+      "level": 2
+    },
+    {
+      "id": "KNW-AUDIENCE-ACCESS-B02",
+      "kind": "paragraph",
+      "text": "読者集団を年齢や専門領域だけで一括りにせず、知識、言語、利用環境、情報取得目的、アクセシビリティ上の必要、参加意欲に応じて複数の利用場面を想定する。推定と確認済みの読者情報を区別する。"
+    },
+    {
+      "id": "KNW-AUDIENCE-ACCESS-B03",
+      "kind": "heading",
+      "text": "媒体選択",
+      "level": 2
+    },
+    {
+      "id": "KNW-AUDIENCE-ACCESS-B04",
+      "kind": "paragraph",
+      "text": "文章、図、音声、映像、対話形式、印刷物などの候補から、各媒体が提供する理解上の利点、利用負担、制作・更新負担を比較する。すべての読者に単一の形式の利用を要求しない。"
+    },
+    {
+      "id": "KNW-AUDIENCE-ACCESS-B05",
+      "kind": "paragraph",
+      "text": "音声・映像を採用する場合、理解上重要な内容への別経路を検討し、適切な字幕、文字起こし、代替テキスト、図の説明などを企画時から見積もる。アクセシビリティの技術基準への適合判定は別工程で行う。"
+    },
+    {
+      "id": "KNW-AUDIENCE-ACCESS-B06",
+      "kind": "heading",
+      "text": "評価可能性",
+      "level": 2
+    },
+    {
+      "id": "KNW-AUDIENCE-ACCESS-B07",
+      "kind": "paragraph",
+      "text": "閲覧数や再生数の増加を理解そのものの指標とみなさず、必要に応じて読者理解、質問、誤解、反応、参加の質を観測する方法を企画書に明示する。"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-PUB-ACCESS",
+  "version": "0.1.0",
+  "title": {
+    "ja": "利用者の選択と障壁への配慮"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "公開・配信業務の設計・審査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-W3C-MEDIA",
+      "locator": "https://www.w3.org/WAI/media/av/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "W3C WAIの動画・音声アクセシビリティ指針。法的義務の一律の根拠ではない。"
+    },
+    {
+      "source_id": "SRC-WCAG22",
+      "locator": "https://www.w3.org/TR/WCAG22/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "WCAG 2.2 W3C Recommendation。適用する達成基準は媒体と契約・規程の範囲に従い定める。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "07"
+    ],
+    "audiences": [
+      "編集担当者",
+      "配信担当者",
+      "レビュアー",
+      "公開責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-PUB-ACCESS-H01",
+      "kind": "heading",
+      "text": "適用範囲と目的",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-PUB-ACCESS-P01",
+      "kind": "paragraph",
+      "text": "一つの表示形式へのアクセスを利用の前提にせず、可能な範囲でテキスト、音声、映像、代替表現を組み合わせる。"
+    },
+    {
+      "id": "KNW-ETH-PUB-ACCESS-H02",
+      "kind": "heading",
+      "text": "実施上の確認事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-PUB-ACCESS-P02",
+      "kind": "paragraph",
+      "text": "可視化で重要な数値、色、位置などを用いる場合は文字や説明による情報保障を検討する。"
+    },
+    {
+      "id": "KNW-ETH-PUB-ACCESS-H03",
+      "kind": "heading",
+      "text": "境界と判断事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-PUB-ACCESS-P03",
+      "kind": "paragraph",
+      "text": "端末や障害、通信環境、言語能力等の差異によって必要な情報が失われないよう見直す。"
+    }
+  ]
+}

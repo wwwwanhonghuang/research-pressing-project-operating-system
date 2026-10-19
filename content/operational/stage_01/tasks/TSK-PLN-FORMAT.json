@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-PLN-FORMAT",
+  "version": "0.1.0",
+  "title": {
+    "ja": "媒体構成・制作工程・資源見積り"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "制作調整担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "01"
+  ],
+  "inputs": [
+    "編集方針、対象読者分析、利用可能な人員と媒体"
+  ],
+  "outputs": [
+    "媒体展開案、工程表、役割、レビューと予算上の制約"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "媒体ごとの必要性と代替経路を説明できる",
+    "原稿、図表、撮影、字幕、確認時間を見積もった",
+    "関係者の作業と確認期限の見込みが共有された"
+  ],
+  "review_roles": [
+    "編集責任者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-PLN-FORMAT",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-009",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-035",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-010",
+      "version": "0.1.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-017",
+      "version": "0.2.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-PLANNING-TRACE",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-CLAIM-BOUNDARY",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-AUDIENCE-ACCESS",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETHIC-SELECTION",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETHIC-INDEPENDENCE",
+      "version": "0.1.0"
+    }
+  ]
+}

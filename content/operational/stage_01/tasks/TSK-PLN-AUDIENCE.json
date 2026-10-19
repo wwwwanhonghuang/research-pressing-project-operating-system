@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-PLN-AUDIENCE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "読者・利用場面と情報アクセスの分析"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "企画編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "01"
+  ],
+  "inputs": [
+    "企画候補、媒体の利用状況、読者からの質問や過去の反応"
+  ],
+  "outputs": [
+    "対象読者分析票、利用場面、アクセシビリティ配慮事項"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "読者群の区分を推測と観測に分けて説明できる",
+    "言語、利用環境、基礎知識、利用目的の多様性を記録した",
+    "代替媒体の必要性と検証方法を示した"
+  ],
+  "review_roles": [
+    "編集責任者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-PLN-AUDIENCE",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-007",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-034",
+      "version": "0.2.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-010",
+      "version": "0.1.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-PLANNING-TRACE",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-CLAIM-BOUNDARY",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-AUDIENCE-ACCESS",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETHIC-SELECTION",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETHIC-INDEPENDENCE",
+      "version": "0.1.0"
+    }
+  ]
+}

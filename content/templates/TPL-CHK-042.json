@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-CHK-042",
+  "kind": "checklist",
+  "slug": "correction_processing",
+  "title_ja": "訂正・更新対応チェックリスト",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "08"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-CHK-042-S1",
+      "heading_ja": "確認項目",
+      "items": [
+        {
+          "id": "TPL-CHK-042-I001",
+          "criterion_ja": "指摘の対象URL・旧版・原文・受付日時が特定される",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "受付記録と元版IDの識別子、版、確認者と判断日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-042-I002",
+          "criterion_ja": "原因・科学的根拠・確認済み事実と解釈の違いを記録した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "一次資料、照合担当の識別子、版、確認者と判断日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-042-I003",
+          "criterion_ja": "影響範囲・緊急度・当事者の権利を確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "媒体依存関係、権限者の識別子、版、確認者と判断日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-042-I004",
+          "criterion_ja": "訂正、説明、撤回、維持等の判断と理由が実在の権限者に確認された",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "判断記録、利益相反確認の識別子、版、確認者と判断日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-042-I005",
+          "criterion_ja": "旧版・新規版・通知の版、ハッシュ、URLが対応する",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "変更台帳、リンクの識別子、版、確認者と判断日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-042-I006",
+          "criterion_ja": "派生媒体・SNS・字幕等へ訂正を反映し未達も記録した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "媒体別到達記録の識別子、版、確認者と判断日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-042-I007",
+          "criterion_ja": "読者への訂正表示と問い合わせ経路を検証した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "本番表示確認の識別子、版、確認者と判断日時を記録する。",
+          "human_review": true
+        }
+      ]
+    },
+    {
+      "id": "TPL-CHK-042-S2",
+      "heading_ja": "点検結果の記録",
+      "fields": [
+        {
+          "id": "TPL-CHK-042-F001",
+          "label_ja": "対象案件・対象版",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "対象案件・対象版の対象版、証拠、確認者と未解決事項を記録する。"
+        },
+        {
+          "id": "TPL-CHK-042-F002",
+          "label_ja": "担当者と点検日",
+          "type": "date",
+          "required": false,
+          "description_ja": "担当者と点検日の対象版、証拠、確認者と未解決事項を記録する。"
+        },
+        {
+          "id": "TPL-CHK-042-F003",
+          "label_ja": "未解決事項と対応",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "未解決事項と対応の対象版、証拠、確認者と未解決事項を記録する。"
+        },
+        {
+          "id": "TPL-CHK-042-F004",
+          "label_ja": "確認に用いた資料ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "確認に用いた資料IDの対象版、証拠、確認者と未解決事項を記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [
+      "TSK-ARC-SIGNALS",
+      "TSK-ARC-TRIAGE",
+      "TSK-ARC-VERIFY",
+      "TSK-ARC-DECISION",
+      "TSK-ARC-NOTICE",
+      "TSK-ARC-PROPAGATE"
+    ],
+    "knowledge_ids": [
+      "KNW-ARC-TRACE",
+      "KNW-ARC-DECISION"
+    ]
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho"
+  },
+  "notes_ja": "チェック項目の適合は実在の権限者の訂正・削除・公開判断を代行しない。",
+  "workflow_id": "editorial-eight-stage"
+}

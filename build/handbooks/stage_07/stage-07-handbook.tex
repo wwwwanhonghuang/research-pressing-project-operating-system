@@ -1,0 +1,595 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{operationshandbook}
+\begin{document}
+\begin{center}
+{\Large\bfseries 公開・配信 業務ハンドブック（独立試案・統合版）}\par\medskip
+{\small 独立設計・試作・内容確認未了}\par
+{\small v0.1.0\quad 2026年10月19日}\par
+\end{center}
+\vspace{6mm}
+\noindent 本書は組織から承認を受けた規程又は公式の業務マニュアルを示すものではありません。実務への適用に際しては、必要な法令、利用許諾及び組織の権限規程を確認してください。\par
+\tableofcontents
+\clearpage
+\section{適用範囲と第6段階の公開承認との関係}
+\par 本書は承認済み原稿・素材を、アクセス可能かつ追跡可能な形で公開・配信するための独立の業務試案である。配信操作の実行、ウェブへの反映、読者が実際に閲覧できることはそれぞれ区別して記録する。\par\medskip
+\par 第6段階の公開決裁記録と版の同一性を引き継ぐ。構造検証の結果や配信前チェックリストの完了は、実在の権限ある者の公開許可と同一ではない。判断条件が不明な場合は送信を保留する。\par\medskip
+\section{引継ぎ資料と承認済み配信単位の受領}
+\subsection{引継ぎ資料と承認済み配信単位の受領}
+\par 担当：配信調整担当者\par\medskip
+\subsubsection*{入力資料}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 第6段階の承認記録
+\item 対象原稿と素材
+\item 承認条件
+\end{enumerate}
+\subsubsection*{成果物}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 公開パッケージ受領・相違点記録
+\end{enumerate}
+\subsubsection*{完了の確認事項}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 公開パッケージ受領・相違点記録に公開対象の版、媒体、担当者及び確認日を記録した
+\item 根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した
+\item 第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した
+\end{enumerate}
+\par 人による判断を要する：はい\par\medskip
+\subsubsection*{実施手順}
+\begin{enumerate}[leftmargin=2em,itemsep=0.65em]
+\item 承認記録の対象媒体、版、ファイルハッシュ、期限を読取り、受領する\par\noindent\textit{記録・成果：}承認対象一覧\nobreak\smallskip
+\item 原稿、画像、字幕、説明文、利用許諾を個別の配信単位へ対応させる\par\noindent\textit{記録・成果：}素材別ハッシュ・版台帳\nobreak\smallskip
+\item 送信予定物と承認対象を機械的・人的に比較し差異を記録する\par\noindent\textit{記録・成果：}相違点一覧\nobreak\smallskip
+\item 条件付き・失効・差戻しを検出したら配信を停止して審査担当者へ戻す\par\noindent\textit{記録・成果：}停止及び照会記録\nobreak\smallskip
+\item 許可された範囲と担当者を引継ぎ票に明記する\par\noindent\textit{記録・成果：}受領確認\nobreak\smallskip
+\end{enumerate}
+\subsubsection*{例外・差戻し}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 承認に含まれない媒体又は版は追加審査に回す
+\item 記録が構造的に整っていても権限者の実在性は機械判定できない
+\end{enumerate}
+\section{媒体と公開目的に応じた配信設計}
+\subsection{媒体と公開目的に応じた配信設計}
+\par 担当：配信企画担当者\par\medskip
+\subsubsection*{入力資料}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 読者分析
+\item 承認媒体範囲
+\item 制作素材
+\item 利用条件
+\end{enumerate}
+\subsubsection*{成果物}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 媒体別配信計画・素材対応表
+\end{enumerate}
+\subsubsection*{完了の確認事項}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 媒体別配信計画・素材対応表に公開対象の版、媒体、担当者及び確認日を記録した
+\item 根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した
+\item 第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した
+\end{enumerate}
+\par 人による判断を要する：はい\par\medskip
+\subsubsection*{実施手順}
+\begin{enumerate}[leftmargin=2em,itemsep=0.65em]
+\item 媒体ごとに受け手、利用場面、到達目標と誘導先を明示する\par\noindent\textit{記録・成果：}媒体別目的票\nobreak\smallskip
+\item ウェブ・SNS・音声・動画・文書の利用条件及び表現上の制約を整理する\par\noindent\textit{記録・成果：}媒体別要件表\nobreak\smallskip
+\item 短縮表現と原稿の主張・条件・不確実性の対応関係を確認する\par\noindent\textit{記録・成果：}表現対応一覧\nobreak\smallskip
+\item 各媒体に代替アクセス経路、出典、訂正窓口を割り当てる\par\noindent\textit{記録・成果：}誘導及びアクセス設計\nobreak\smallskip
+\item 準備済み素材の担当者・期限・再審査条件を設定する\par\noindent\textit{記録・成果：}媒体別担当表\nobreak\smallskip
+\end{enumerate}
+\subsubsection*{例外・差戻し}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 媒体固有の編集が承認済み主張を変更するときはStage 4–6へ差し戻す
+\end{enumerate}
+\section{公開時刻・解禁・関係者連絡の管理}
+\subsection{公開時刻・解禁・関係者連絡の管理}
+\par 担当：公開進行管理担当者\par\medskip
+\subsubsection*{入力資料}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 解禁条件
+\item 承認日時
+\item 配信先
+\item 時区と関係者一覧
+\end{enumerate}
+\subsubsection*{成果物}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 確定公開工程・時刻照合記録
+\end{enumerate}
+\subsubsection*{完了の確認事項}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 確定公開工程・時刻照合記録に公開対象の版、媒体、担当者及び確認日を記録した
+\item 根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した
+\item 第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した
+\end{enumerate}
+\par 人による判断を要する：はい\par\medskip
+\subsubsection*{実施手順}
+\begin{enumerate}[leftmargin=2em,itemsep=0.65em]
+\item 基準時刻と時区を明記し関係者間の解禁日時を照合する\par\noindent\textit{記録・成果：}日時・時区記録\nobreak\smallskip
+\item 予約公開、サイト公開、SNS、外部配信の依存関係を図示する\par\noindent\textit{記録・成果：}公開順序・依存関係表\nobreak\smallskip
+\item 権利上の公開期間、事前告知制限、取消し期限を確認する\par\noindent\textit{記録・成果：}媒体ごとの公開条件\nobreak\smallskip
+\item 障害・保留時の連絡窓口と停止指示の伝達方法を演習する\par\noindent\textit{記録・成果：}中止連絡手順\nobreak\smallskip
+\item 公開作業者と立会い者が最終予定版を確認する\par\noindent\textit{記録・成果：}時刻確認署名欄\nobreak\smallskip
+\end{enumerate}
+\subsubsection*{例外・差戻し}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 解禁条件の不一致があれば日時を確定せず審査責任者に相談する
+\item 外部予約投稿の変更が反映されない場合は配信停止の実行可否を確認する
+\end{enumerate}
+\section{ウェブ掲載とページ品質の事前検証}
+\subsection{ウェブ掲載とページ品質の事前検証}
+\par 担当：ウェブ公開担当者\par\medskip
+\subsubsection*{入力資料}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 承認済み本文
+\item 画像
+\item 出典
+\item リンク
+\item メタデータ
+\item 掲載環境
+\end{enumerate}
+\subsubsection*{成果物}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item ウェブ事前検証記録
+\end{enumerate}
+\subsubsection*{完了の確認事項}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item ウェブ事前検証記録に公開対象の版、媒体、担当者及び確認日を記録した
+\item 根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した
+\item 第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した
+\end{enumerate}
+\par 人による判断を要する：はい\par\medskip
+\subsubsection*{実施手順}
+\begin{enumerate}[leftmargin=2em,itemsep=0.65em]
+\item 公開前環境で対象URLと表示版、認証・アクセス制限の状態を確認する\par\noindent\textit{記録・成果：}検証対象URL・環境\nobreak\smallskip
+\item 本文、出典、図表、画像代替テキスト、引用リンク、日時表示を照合する\par\noindent\textit{記録・成果：}表示・出典チェック記録\nobreak\smallskip
+\item PC・モバイル・拡大表示・キーボード操作を実際に試す\par\noindent\textit{記録・成果：}利用可能性確認票\nobreak\smallskip
+\item 検索用タイトル、概要、正規URL、リダイレクト、言語指定を確認する\par\noindent\textit{記録・成果：}メタデータ・リンク記録\nobreak\smallskip
+\item 公開後の到達確認の方法と担当者を設定する\par\noindent\textit{記録・成果：}公開後検証手順\nobreak\smallskip
+\end{enumerate}
+\subsubsection*{例外・差戻し}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item テスト環境の成功を本番反映の証拠として扱わない
+\item 機密ページの不用意な一般公開・検索露出は即時保留する
+\end{enumerate}
+\section{アクセシビリティと利用選択の検証}
+\subsection{アクセシビリティと利用選択の検証}
+\par 担当：アクセシビリティ確認担当者\par\medskip
+\subsubsection*{入力資料}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 媒体別素材
+\item 字幕
+\item 書き起こし
+\item 代替テキスト
+\item 閲覧要件
+\end{enumerate}
+\subsubsection*{成果物}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 媒体別アクセシビリティ確認記録
+\end{enumerate}
+\subsubsection*{完了の確認事項}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 媒体別アクセシビリティ確認記録に公開対象の版、媒体、担当者及び確認日を記録した
+\item 根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した
+\item 第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した
+\end{enumerate}
+\par 人による判断を要する：はい\par\medskip
+\subsubsection*{実施手順}
+\begin{enumerate}[leftmargin=2em,itemsep=0.65em]
+\item 適用する目標基準と閲覧環境を明示する\par\noindent\textit{記録・成果：}適用範囲\nobreak\smallskip
+\item 動画字幕、音声書き起こし、必要な映像説明と画像代替情報を確認する\par\noindent\textit{記録・成果：}代替表現対応票\nobreak\smallskip
+\item 見出し構造、読み上げ順、キーボード操作、コントラストを点検する\par\noindent\textit{記録・成果：}アクセシビリティ試験結果\nobreak\smallskip
+\item 形式別に未対応事項と代替アクセス先を記録する\par\noindent\textit{記録・成果：}改善及び代替計画\nobreak\smallskip
+\item 公開担当者に未解決問題と確認者の判定を返す\par\noindent\textit{記録・成果：}対応記録\nobreak\smallskip
+\end{enumerate}
+\subsubsection*{例外・差戻し}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 自動検査のスコアだけで適合を確定しない
+\item 必須情報を特定媒体の利用に限定する仕様は再検討する
+\end{enumerate}
+\section{SNS投稿と対話導線の準備}
+\subsection{SNS投稿と対話導線の準備}
+\par 担当：SNS配信担当者\par\medskip
+\subsubsection*{入力資料}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 承認済み要約
+\item URL
+\item 画像
+\item 投稿方針
+\item 問い合わせ窓口
+\end{enumerate}
+\subsubsection*{成果物}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item SNS投稿予約・リンク台帳
+\end{enumerate}
+\subsubsection*{完了の確認事項}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item SNS投稿予約・リンク台帳に公開対象の版、媒体、担当者及び確認日を記録した
+\item 根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した
+\item 第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した
+\end{enumerate}
+\par 人による判断を要する：はい\par\medskip
+\subsubsection*{実施手順}
+\begin{enumerate}[leftmargin=2em,itemsep=0.65em]
+\item 投稿ごとに原文への誘導と基になる主張IDを登録する\par\noindent\textit{記録・成果：}投稿と原稿の対応表\nobreak\smallskip
+\item 短縮文、図版、ハッシュタグ、画像説明文の意味を再照合する\par\noindent\textit{記録・成果：}投稿校閲結果\nobreak\smallskip
+\item リンク先の公開予定と予約時刻を照合する\par\noindent\textit{記録・成果：}リンク・時刻対応表\nobreak\smallskip
+\item 返信や質問の取扱い、削除・非表示の判断基準と担当者を準備する\par\noindent\textit{記録・成果：}運用応答計画\nobreak\smallskip
+\item 配信後の投稿IDと実際の公開内容を記録する\par\noindent\textit{記録・成果：}投稿記録\nobreak\smallskip
+\end{enumerate}
+\subsubsection*{例外・差戻し}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 投稿による断定強化や印象操作が認められる場合は修正・再審査する
+\item 投稿プラットフォームの表示仕様の変更を公開前に確認する
+\end{enumerate}
+\section{報道機関への提供と問い合わせ準備}
+\subsection{報道機関への提供と問い合わせ準備}
+\par 担当：対外情報担当者\par\medskip
+\subsubsection*{入力資料}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 配信資料
+\item 科学的Q\&A
+\item 連絡条件
+\item 解禁条件
+\end{enumerate}
+\subsubsection*{成果物}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 提供履歴・照会記録
+\end{enumerate}
+\subsubsection*{完了の確認事項}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 提供履歴・照会記録に公開対象の版、媒体、担当者及び確認日を記録した
+\item 根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した
+\item 第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した
+\end{enumerate}
+\par 人による判断を要する：はい\par\medskip
+\subsubsection*{実施手順}
+\begin{enumerate}[leftmargin=2em,itemsep=0.65em]
+\item 提供物の出典、承認版、連絡先、解禁日時を明記する\par\noindent\textit{記録・成果：}提供パッケージ\nobreak\smallskip
+\item 想定質問に対する回答の範囲、分からない事項と回答者を整理する\par\noindent\textit{記録・成果：}Q\&A確認結果\nobreak\smallskip
+\item 提供先、送信手段、日時、受領状況を記録する\par\noindent\textit{記録・成果：}送信台帳\nobreak\smallskip
+\item 追加取材や訂正照会の受付と専門確認への回送を設計する\par\noindent\textit{記録・成果：}問い合わせ対応路線\nobreak\smallskip
+\item 公開後の掲載内容は独立した媒体の判断として区別し対応を記録する\par\noindent\textit{記録・成果：}対応履歴\nobreak\smallskip
+\end{enumerate}
+\subsubsection*{例外・差戻し}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 外部提供の再利用権限は提供契約等で区別する
+\item 未確認の科学的見解を組織見解として表明しない
+\end{enumerate}
+\section{イベント・公開対話の進行管理}
+\subsection{イベント・公開対話の進行管理}
+\par 担当：公開イベント担当者\par\medskip
+\subsubsection*{入力資料}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 登壇素材
+\item 会場・遠隔設定
+\item 参加者案内
+\item 配信条件
+\end{enumerate}
+\subsubsection*{成果物}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 運営進行台本・緊急連絡表
+\end{enumerate}
+\subsubsection*{完了の確認事項}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 運営進行台本・緊急連絡表に公開対象の版、媒体、担当者及び確認日を記録した
+\item 根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した
+\item 第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した
+\end{enumerate}
+\par 人による判断を要する：はい\par\medskip
+\subsubsection*{実施手順}
+\begin{enumerate}[leftmargin=2em,itemsep=0.65em]
+\item 参加者の導線、記録、配信範囲と同意条件を事前に整理する\par\noindent\textit{記録・成果：}参加案内\nobreak\smallskip
+\item 音響、表示、字幕、配布資料、遠隔接続を試す\par\noindent\textit{記録・成果：}運営リハーサル結果\nobreak\smallskip
+\item 登壇者・司会・技術担当者に当日の役割と連絡先を配布する\par\noindent\textit{記録・成果：}運営責任表\nobreak\smallskip
+\item 質疑応答の記録と即答困難な質問の後日回答経路を用意する\par\noindent\textit{記録・成果：}質問・照会対応表\nobreak\smallskip
+\item 実施後の記録公開と個人情報の扱いを再確認する\par\noindent\textit{記録・成果：}実施報告\nobreak\smallskip
+\end{enumerate}
+\subsubsection*{例外・差戻し}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 登壇者の発言を承認済み原稿の一部と自動的に見なさない
+\item 録画又は配信条件が変化した場合は参加者への案内・同意を再確認する
+\end{enumerate}
+\section{公開操作・実行ログの取得}
+\subsection{公開操作・実行ログの取得}
+\par 担当：公開実行担当者\par\medskip
+\subsubsection*{入力資料}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 権限を確認した配信指示
+\item 固定版
+\item 掲載先と時刻
+\end{enumerate}
+\subsubsection*{成果物}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 公開操作・結果ログ
+\end{enumerate}
+\subsubsection*{完了の確認事項}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 公開操作・結果ログに公開対象の版、媒体、担当者及び確認日を記録した
+\item 根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した
+\item 第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した
+\end{enumerate}
+\par 人による判断を要する：はい\par\medskip
+\subsubsection*{実施手順}
+\begin{enumerate}[leftmargin=2em,itemsep=0.65em]
+\item 直前時点で審査状況と人的な公開指示を照合する\par\noindent\textit{記録・成果：}実行前確認記録\nobreak\smallskip
+\item 公開対象のファイルハッシュとチャネル・アカウントを読み上げ確認する\par\noindent\textit{記録・成果：}対象同一性の記録\nobreak\smallskip
+\item 必要な資格情報・最小権限・二人目確認者を確認する\par\noindent\textit{記録・成果：}操作権限確認\nobreak\smallskip
+\item 予定した媒体へ公開を実行し操作日時と戻り値を記録する\par\noindent\textit{記録・成果：}実行ログ\nobreak\smallskip
+\item 公開後のURL・投稿ID・版・状態を取得し保管する\par\noindent\textit{記録・成果：}配信識別子台帳\nobreak\smallskip
+\end{enumerate}
+\subsubsection*{例外・差戻し}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 承認指示の不備、差戻し、媒体変更、ハッシュ不一致では実行しない
+\item 送信成功の応答は受信者が読めることを保証しない
+\end{enumerate}
+\section{公開結果の独立確認と初期監視}
+\subsection{公開結果の独立確認と初期監視}
+\par 担当：公開結果確認担当者\par\medskip
+\subsubsection*{入力資料}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 公開操作ログ
+\item 本番URL
+\item 公開版マニフェスト
+\end{enumerate}
+\subsubsection*{成果物}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 到達性・表示・版の確認票
+\end{enumerate}
+\subsubsection*{完了の確認事項}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 到達性・表示・版の確認票に公開対象の版、媒体、担当者及び確認日を記録した
+\item 根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した
+\item 第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した
+\end{enumerate}
+\par 人による判断を要する：はい\par\medskip
+\subsubsection*{実施手順}
+\begin{enumerate}[leftmargin=2em,itemsep=0.65em]
+\item 配信操作とは異なる経路・閲覧条件で本番URLを開く\par\noindent\textit{記録・成果：}独立到達テスト\nobreak\smallskip
+\item HTTP応答、見える本文、掲載時刻、ダウンロード可能性を記録する\par\noindent\textit{記録・成果：}公開結果スナップショット\nobreak\smallskip
+\item 表示版と承認済みハッシュの一致を可能な範囲で照合する\par\noindent\textit{記録・成果：}一致確認\nobreak\smallskip
+\item 字幕、音声、主要リンク、関連媒体の誘導先を抜き取り点検する\par\noindent\textit{記録・成果：}利用検証記録\nobreak\smallskip
+\item 反映遅延・キャッシュ差異・第三者プラットフォーム障害を分類する\par\noindent\textit{記録・成果：}監視・是正記録\nobreak\smallskip
+\end{enumerate}
+\subsubsection*{例外・差戻し}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item HTTP成功応答だけで掲載内容やアクセス可能性を保証しない
+\item 削除・非公開化が直ちにキャッシュから消えると想定しない
+\end{enumerate}
+\section{誤掲載・障害・公開停止と差戻し}
+\subsection{誤掲載・障害・公開停止と差戻し}
+\par 担当：公開事故対応責任者\par\medskip
+\subsubsection*{入力資料}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 異常検知
+\item 問い合わせ
+\item 停止条件
+\item 公開記録
+\end{enumerate}
+\subsubsection*{成果物}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 事故・公開停止・是正記録
+\end{enumerate}
+\subsubsection*{完了の確認事項}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 事故・公開停止・是正記録に公開対象の版、媒体、担当者及び確認日を記録した
+\item 根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した
+\item 第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した
+\end{enumerate}
+\par 人による判断を要する：はい\par\medskip
+\subsubsection*{実施手順}
+\begin{enumerate}[leftmargin=2em,itemsep=0.65em]
+\item 異常の内容、影響対象、発見日時、暫定重大度を記録する\par\noindent\textit{記録・成果：}事象記録\nobreak\smallskip
+\item 権限ある責任者と連絡を取り配信停止又は保留の必要性を判断する\par\noindent\textit{記録・成果：}エスカレーション記録\nobreak\smallskip
+\item 各媒体の表示状態、再共有、キャッシュ、外部再利用の可能性を確認する\par\noindent\textit{記録・成果：}影響範囲票\nobreak\smallskip
+\item 差替え・訂正・撤回・追加説明を別々の選択肢として記録する\par\noindent\textit{記録・成果：}対応判断資料\nobreak\smallskip
+\item 変更した素材と実行結果を残し必要な場合にStage 6又はStage 8へ接続する\par\noindent\textit{記録・成果：}是正履歴\nobreak\smallskip
+\end{enumerate}
+\subsubsection*{例外・差戻し}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 個人情報漏えい疑いは適用規程の緊急報告経路へ
+\item 重大な科学的誤りと公開撤回の判断は適切な権限者へ
+\end{enumerate}
+\section{公開記録の確定と訂正・評価段階への引継ぎ}
+\subsection{公開記録の確定と訂正・評価段階への引継ぎ}
+\par 担当：記録・評価連携担当者\par\medskip
+\subsubsection*{入力資料}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 実公開版
+\item URL・投稿ID
+\item 配信記録
+\item 問い合わせ
+\item 監視結果
+\end{enumerate}
+\subsubsection*{成果物}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 第8段階への引継ぎパッケージ
+\end{enumerate}
+\subsubsection*{完了の確認事項}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 第8段階への引継ぎパッケージに公開対象の版、媒体、担当者及び確認日を記録した
+\item 根拠・実行結果・例外と未確認事項を識別し、必要な人的判断を残した
+\item 第6段階の決裁条件を逸脱する変更があれば停止・差戻し先を記録した
+\end{enumerate}
+\par 人による判断を要する：はい\par\medskip
+\subsubsection*{実施手順}
+\begin{enumerate}[leftmargin=2em,itemsep=0.65em]
+\item 予定版、承認版、実公開版、変更履歴を対応づける\par\noindent\textit{記録・成果：}版関係表\nobreak\smallskip
+\item 発信日時、媒体、URL、投稿ID、素材の権利条件をまとめる\par\noindent\textit{記録・成果：}公開来歴台帳\nobreak\smallskip
+\item 未解決事項、問い合わせ、訂正候補、測定制約を明示する\par\noindent\textit{記録・成果：}継続対応一覧\nobreak\smallskip
+\item 到達指標と理解・社会的影響を異なる評価対象として区別する\par\noindent\textit{記録・成果：}評価用データ辞書\nobreak\smallskip
+\item 第8段階の担当者と受領日時を記録する\par\noindent\textit{記録・成果：}引継ぎ確認\nobreak\smallskip
+\end{enumerate}
+\subsubsection*{例外・差戻し}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 閲覧数や反応数を科学的正確性・理解度の証拠と見なさない
+\end{enumerate}
+\section{公開・配信の品質標準}
+\subsection{配信単位と承認対象の同一性}
+\subsubsection{適用範囲と目的}
+\par 承認された本文や添付素材は媒体・改訂版・権利条件の組合せとして管理する。\par\medskip
+\subsubsection{実施上の確認事項}
+\par 同一性を確認する際は原稿と配信結果の内容ハッシュ、対象URL、担当者と時刻を並記する。ハッシュは内容同一性を補助するが権限の正当性を保証しない。\par\medskip
+\subsubsection{境界と判断事項}
+\par 大幅な短縮・翻訳・差替えは新たな編集表現として再確認を要する。\par\medskip
+\subsection{変更管理と配信再審査}
+\subsubsection{適用範囲と目的}
+\par 公開後・予約後の媒体別変更は、承認対象との対応が失われるかどうかを評価する。\par\medskip
+\subsubsection{実施上の確認事項}
+\par 修正の種類を誤植、意味変更、権利変更、公開条件変更に分け、誰が再確認するか記録する。\par\medskip
+\subsubsection{境界と判断事項}
+\par 修正前後の版を保存し、訂正履歴の公表要否は第8段階で検討する。\par\medskip
+\subsection{媒体選択と読者のアクセス経路}
+\subsubsection{適用範囲と目的}
+\par 文章、音声、動画、画像、イベントの利用を特定媒体に強制せず、読者が利用形態を選べる設計を検討する。\par\medskip
+\subsubsection{実施上の確認事項}
+\par 同じ結論でも媒体によって説明密度が違う。短い形式から詳細な根拠へ到達できるよう導線を確保する。\par\medskip
+\subsubsection{境界と判断事項}
+\par 出典や数値の条件を削って誤解を招く可能性がある場合は短縮案を改める。\par\medskip
+\subsection{時刻・時区・解禁の統合}
+\subsubsection{適用範囲と目的}
+\par 基準となる日時、時区、配信予約、利用許諾の期間、解禁条件を個別に記録する。\par\medskip
+\subsubsection{実施上の確認事項}
+\par 媒体による予約確定時刻、表示時刻、インデックス反映時刻は一致するとは限らない。確認主体と時刻を明示する。\par\medskip
+\subsubsection{境界と判断事項}
+\par 予告の取り消しや配信停止が技術的に可能か事前に点検する。\par\medskip
+\subsection{ウェブ公開品質と到達性}
+\subsubsection{適用範囲と目的}
+\par HTML表示、主要リンク、ダウンロード、言語指定、ページ見出し、検索用情報、モバイル閲覧を組み合わせて確認する。\par\medskip
+\subsubsection{実施上の確認事項}
+\par HTTP成功応答、URL到達、正しい本文の表示、アクセシビリティの確認は異なる検査である。\par\medskip
+\subsubsection{境界と判断事項}
+\par 公開前環境と公開後本番環境を分けて結果を記録する。\par\medskip
+\subsection{公開媒体のアクセシビリティ}
+\subsubsection{適用範囲と目的}
+\par 対象媒体、対象者、適用する基準を先に定め、画面読み上げ、キーボード操作、字幕、書き起こし、必要な映像説明を点検する。\par\medskip
+\subsubsection{実施上の確認事項}
+\par 音声だけの資料、音声付き動画、無音動画では適切な代替形式が異なる。WCAG 2.2とWAIの媒体別ガイドを照合する。\par\medskip
+\subsubsection{境界と判断事項}
+\par 自動評価、標準適合、人の実際の利用可能性を区別し、未対応事項と代替経路を明らかにする。\par\medskip
+\subsection{複数媒体の意味整合性}
+\subsubsection{適用範囲と目的}
+\par 媒体間の本文を完全一致させるより、要点、出典、留保、研究の射程が整合するかを検査する。\par\medskip
+\subsubsection{実施上の確認事項}
+\par 投稿文、画像の文字、音声台本、字幕、要約に関係する主張IDを対応づける。\par\medskip
+\subsubsection{境界と判断事項}
+\par 原稿変更時は依存する媒体表現を再評価し、古いリンクや要約を残さない。\par\medskip
+\subsection{公開操作、ログ及び撤回可能性}
+\subsubsection{適用範囲と目的}
+\par 実行者・依頼者・確認者を区別し、実行ログには時刻、対象、媒体、結果を残す。\par\medskip
+\subsubsection{実施上の確認事項}
+\par 公開成功の通知と閲覧者から見た実際の表示は分けて確認する。\par\medskip
+\subsubsection{境界と判断事項}
+\par ログに資格情報や不要な個人情報を混入させず、アクセス制御と保存期間を設計する。\par\medskip
+\subsection{配信来歴と訂正への接続}
+\subsubsection{適用範囲と目的}
+\par 原稿、公開素材、URL、投稿ID、公開版、承認記録、訂正履歴の関係を維持する。\par\medskip
+\subsubsection{実施上の確認事項}
+\par 公開された文書の版と、後に評価される反応・問い合わせを同じ対象に結び付ける。\par\medskip
+\subsubsection{境界と判断事項}
+\par 閲覧数は露出の一指標であり理解・信頼・正しさの単独代理指標と扱わない。\par\medskip
+\subsection{異常検知と公開停止の判断}
+\subsubsection{適用範囲と目的}
+\par リンク誤り、時刻相違、権利疑義、個人情報漏えい、重大な科学的誤解に対し連絡経路を定める。\par\medskip
+\subsubsection{実施上の確認事項}
+\par 削除、公開停止、差替え、訂正、撤回は目的と対外的説明の必要性が異なる。\par\medskip
+\subsubsection{境界と判断事項}
+\par 重要な変更には権限者の決定と記録を要し、機械的成功判定で進めない。\par\medskip
+\subsection{公開イベントの対話と記録}
+\subsubsection{適用範囲と目的}
+\par 参加目的、参加方法、撮影・配信条件、配布物、字幕等の要件を事前案内する。\par\medskip
+\subsubsection{実施上の確認事項}
+\par 発言時点で確認困難な質問は後日確認として管理し、返答期限と担当者を示す。\par\medskip
+\subsubsection{境界と判断事項}
+\par 配信後の録画再利用は別の媒体利用となるため権利・同意範囲を再照合する。\par\medskip
+\section{倫理・責任と利用条件}
+\subsection{配信判断の責任と人間の最終確認}
+\subsubsection{適用範囲と目的}
+\par 公開の最終判断は権限ある担当者が行い、配信者がシステムの判定を実際の許可と解釈しない。\par\medskip
+\subsubsection{実施上の確認事項}
+\par 権限不足・保留・条件不一致を発見した者が停止を提起できる報告経路を整える。\par\medskip
+\subsubsection{境界と判断事項}
+\par 承認が与えられた理由と具体的な媒体範囲の記録を残し、誤配信時の原因究明を可能にする。\par\medskip
+\subsection{利用者の選択と障壁への配慮}
+\subsubsection{適用範囲と目的}
+\par 一つの表示形式へのアクセスを利用の前提にせず、可能な範囲でテキスト、音声、映像、代替表現を組み合わせる。\par\medskip
+\subsubsection{実施上の確認事項}
+\par 可視化で重要な数値、色、位置などを用いる場合は文字や説明による情報保障を検討する。\par\medskip
+\subsubsection{境界と判断事項}
+\par 端末や障害、通信環境、言語能力等の差異によって必要な情報が失われないよう見直す。\par\medskip
+\subsection{配信と問い合わせにおける個人情報の保護}
+\subsubsection{適用範囲と目的}
+\par アクセス解析、問い合わせ、視聴者の反応、登壇者情報に関する取得目的と必要性を整理する。\par\medskip
+\subsubsection{実施上の確認事項}
+\par 外部プラットフォームや分析サービスへ渡す情報、保持期間とアクセス権を確認する。\par\medskip
+\subsubsection{境界と判断事項}
+\par 個人に不利益をもたらしうる情報の誤掲載を発見した場合は適切な報告先へ連絡する。\par\medskip
+\subsection{公開後の対話・評価と表象の倫理}
+\subsubsection{適用範囲と目的}
+\par 質問、批判、異なる解釈を訂正や説明改善の可能性として記録する。\par\medskip
+\subsubsection{実施上の確認事項}
+\par 否定的反応の大きさのみで研究成果の妥当性を判断せず、具体的な指摘と根拠を読む。\par\medskip
+\subsubsection{境界と判断事項}
+\par 取材対象や読者を単なるクリック数に還元せず、理解と参加条件にも注目する。\par\medskip
+\subsection{対外配信と第三者の独立性}
+\subsubsection{適用範囲と目的}
+\par 報道機関や読者が独自に解釈しうることを認識し、提供資料と第三者の編集成果を区別する。\par\medskip
+\subsubsection{実施上の確認事項}
+\par 科学的留保、研究成果の帰属、利益相反に関する情報の欠落がないか検討する。\par\medskip
+\subsubsection{境界と判断事項}
+\par 問い合わせへの回答に際しては、確認できる事実と解釈を明確にする。\par\medskip
+\section{公開直前・媒体別の確認票}
+\subsection{公開直前最終確認チェックリスト}
+\par 確認用の定義であり、個別案件での実施状況、根拠資料、確認者、レビューの結果は別途保存する。\par\medskip
+\subsubsection*{確認項目}
+\begin{enumerate}[leftmargin=2em,itemsep=0.3em]
+\item 第6段階の公開決裁の実在性・範囲を担当者が確認し、判断記録IDを保存した\par
+\item 実配信対象の原稿・素材と承認済みハッシュを照合した\par
+\item 解禁日時・時区・予約設定・配信先が一致する\par
+\item 本文・図表・リンク・主張の留保・出典を公開前環境で点検した\par
+\item アクセシビリティ、媒体別代替形式、問い合わせ先を確認した\par
+\item 差戻し条件、停止経路、未解決の重大事項を確認した\par
+\item 公開操作担当と独立確認担当を定めた\par
+\end{enumerate}
+\subsection{ウェブ掲載品質チェックリスト}
+\par 確認用の定義であり、個別案件での実施状況、根拠資料、確認者、レビューの結果は別途保存する。\par\medskip
+\subsubsection*{確認項目}
+\begin{enumerate}[leftmargin=2em,itemsep=0.3em]
+\item 本番URLと表示内容、版を独立した閲覧条件で確認した\par
+\item 見出し構造・画像の代替情報・主要導線を確認した\par
+\item 引用先URLと出典・数値の表示を確認した\par
+\item モバイル表示・拡大表示・キーボード操作を確認した\par
+\item 正規URL、公開日時、言語指定、検索用情報を確認した\par
+\item 本番反映後の再確認責任者と記録経路を定めた\par
+\end{enumerate}
+\subsection{SNS掲載確認チェックリスト}
+\par 確認用の定義であり、個別案件での実施状況、根拠資料、確認者、レビューの結果は別途保存する。\par\medskip
+\subsubsection*{確認項目}
+\begin{enumerate}[leftmargin=2em,itemsep=0.3em]
+\item 投稿文と承認原稿の主張・留保・出典の関係を記録した\par
+\item 画像説明と字幕、短縮文の意味が原文と整合する\par
+\item 投稿URL・アカウント・公開時刻と時区を確認した\par
+\item 引用素材の再利用条件と掲載先での使用を確認した\par
+\item 公開後のリンク・訂正・問い合わせ対応先を確認した\par
+\end{enumerate}
+\subsection{メディア対応確認チェックリスト}
+\par 確認用の定義であり、個別案件での実施状況、根拠資料、確認者、レビューの結果は別途保存する。\par\medskip
+\subsubsection*{確認項目}
+\begin{enumerate}[leftmargin=2em,itemsep=0.3em]
+\item 報道提供資料の固定版、出典、権利範囲を識別した\par
+\item 解禁日時、時区及び提供先ごとの条件を確認した\par
+\item 科学的質問に対する確認責任者・回答範囲を記録した\par
+\item 対外提供履歴と訂正連絡経路を記録した\par
+\item 取材依頼と第三者報道の編集独立性を区別した\par
+\end{enumerate}
+\subsection{イベント運営チェックリスト}
+\par 確認用の定義であり、個別案件での実施状況、根拠資料、確認者、レビューの結果は別途保存する。\par\medskip
+\subsubsection*{確認項目}
+\begin{enumerate}[leftmargin=2em,itemsep=0.3em]
+\item 参加方式と日時、時区及び連絡先を告知した\par
+\item 撮影・録音・配信・二次利用の取扱条件を確認した\par
+\item 会場又はオンライン接続、音響と字幕等を事前検証した\par
+\item 質疑応答における未確認事項と後日回答経路を定めた\par
+\item 事故対応責任者、配布物、緊急連絡先を明記した\par
+\end{enumerate}
+\section{配信履歴と訂正・評価への引継ぎ}
+\par 第8段階へ、公開日時、時区、公開版・素材ハッシュ、掲載先URL、投稿ID、担当者、承認対象との比較結果、例外、問い合わせ・訂正候補、アクセシビリティ未解決事項を渡す。閲覧数と、理解・納得・信頼・科学的正確性の評価は別の対象として記録する。\par\medskip
+\par 本ハンドブックにおける外部資料は限定された適用範囲の参考である。掲載媒体、契約、法令、利用者の必要条件の確認を踏まえて実施手順を更新する。\par\medskip
+\end{document}

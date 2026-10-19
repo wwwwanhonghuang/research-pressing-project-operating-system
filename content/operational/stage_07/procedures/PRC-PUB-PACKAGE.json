@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-PUB-PACKAGE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "引継ぎ資料と承認済み配信単位の受領の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "配信調整担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "配信調整担当者"
+  ],
+  "inputs": [
+    "第6段階の承認記録",
+    "対象原稿と素材",
+    "承認条件"
+  ],
+  "outputs": [
+    "公開パッケージ受領・相違点記録"
+  ],
+  "steps": [
+    {
+      "id": "PRC-PUB-PACKAGE-S1",
+      "instruction": "承認記録の対象媒体、版、ファイルハッシュ、期限を読取り、受領する",
+      "expected_output": "承認対象一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-PACKAGE-S2",
+      "instruction": "原稿、画像、字幕、説明文、利用許諾を個別の配信単位へ対応させる",
+      "expected_output": "素材別ハッシュ・版台帳",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-PACKAGE-S3",
+      "instruction": "送信予定物と承認対象を機械的・人的に比較し差異を記録する",
+      "expected_output": "相違点一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-PACKAGE-S4",
+      "instruction": "条件付き・失効・差戻しを検出したら配信を停止して審査担当者へ戻す",
+      "expected_output": "停止及び照会記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-PACKAGE-S5",
+      "instruction": "許可された範囲と担当者を引継ぎ票に明記する",
+      "expected_output": "受領確認",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "承認に含まれない媒体又は版は追加審査に回す",
+    "記録が構造的に整っていても権限者の実在性は機械判定できない"
+  ]
+}

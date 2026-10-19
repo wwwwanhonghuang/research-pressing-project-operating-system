@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-REV-AI",
+  "version": "0.1.0",
+  "title": {
+    "ja": "AI支援・外部提供と人による責任"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "倫理・権利担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。法令、契約、内部権限規程等の適用と現行版は個別に検討する。実在の承認を意味しない。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PPC-GENERAL-2026",
+      "locator": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "個人情報保護委員会ガイドライン通則編。2026年改正版の適用条項・対象主体・処理状況を案件ごとに確認する。"
+    },
+    {
+      "source_id": "SRC-SCI-COMM-GUIDE",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果プレスリリースについての専門学会による指針。科学的主張・誇張・引用・再利用等を扱う。一般の全業務に法的拘束力を与えるものではない。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "06"
+    ],
+    "audiences": [
+      "研究者",
+      "編集者",
+      "専門確認担当者",
+      "公開承認責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-REV-AI-H01",
+      "kind": "heading",
+      "text": "データの入力範囲",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-REV-AI-P01",
+      "kind": "paragraph",
+      "text": "未公開原稿、個人情報、画像、契約、評価コメントを外部AIへ送る前に契約・内部基準・アクセス条件を確認する。"
+    },
+    {
+      "id": "KNW-ETH-REV-AI-H02",
+      "kind": "heading",
+      "text": "機械判定の限界",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-REV-AI-P02",
+      "kind": "paragraph",
+      "text": "AIが検出した疑義や推奨を人の確認候補として扱い、専門確認や承認の代行とみなさない。"
+    },
+    {
+      "id": "KNW-ETH-REV-AI-H03",
+      "kind": "heading",
+      "text": "記録",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-REV-AI-P03",
+      "kind": "paragraph",
+      "text": "AI利用の範囲、入力の類型、生成結果、確認者による採否と修正根拠を記録する。"
+    }
+  ]
+}

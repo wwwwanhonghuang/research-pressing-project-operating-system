@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-PUB-SOCIAL",
+  "version": "0.1.0",
+  "title": {
+    "ja": "SNS投稿と対話導線の準備の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "SNS配信担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "SNS配信担当者"
+  ],
+  "inputs": [
+    "承認済み要約",
+    "URL",
+    "画像",
+    "投稿方針",
+    "問い合わせ窓口"
+  ],
+  "outputs": [
+    "SNS投稿予約・リンク台帳"
+  ],
+  "steps": [
+    {
+      "id": "PRC-PUB-SOCIAL-S1",
+      "instruction": "投稿ごとに原文への誘導と基になる主張IDを登録する",
+      "expected_output": "投稿と原稿の対応表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-SOCIAL-S2",
+      "instruction": "短縮文、図版、ハッシュタグ、画像説明文の意味を再照合する",
+      "expected_output": "投稿校閲結果",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-SOCIAL-S3",
+      "instruction": "リンク先の公開予定と予約時刻を照合する",
+      "expected_output": "リンク・時刻対応表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-SOCIAL-S4",
+      "instruction": "返信や質問の取扱い、削除・非表示の判断基準と担当者を準備する",
+      "expected_output": "運用応答計画",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-SOCIAL-S5",
+      "instruction": "配信後の投稿IDと実際の公開内容を記録する",
+      "expected_output": "投稿記録",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "投稿による断定強化や印象操作が認められる場合は修正・再審査する",
+    "投稿プラットフォームの表示仕様の変更を公開前に確認する"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-WRT-QUOTES",
+  "version": "0.1.0",
+  "title": {
+    "ja": "引用・科学的主張・叙述の対応確認の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "汎用的な編集制作の独立設計案。媒体の役割、権利、組織規程、適用される法令は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "科学編集担当者"
+  ],
+  "inputs": [
+    "取材逐語記録",
+    "引用台帳",
+    "主張台帳",
+    "各種初稿"
+  ],
+  "outputs": [
+    "文章と原資料の対応表",
+    "要照会文言と修正記録"
+  ],
+  "steps": [
+    {
+      "id": "PRC-WRT-QUOTES-S1",
+      "instruction": "本文中の引用文、翻訳、意訳、記者による推論を別々に識別する",
+      "expected_output": "文章と原資料の対応表",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-WRT-QUOTES-S2",
+      "instruction": "直接引用は時点・発言者・原音・逐語の対応を照合する",
+      "expected_output": "要照会文言と修正記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-QUOTES-S3",
+      "instruction": "数字と研究主張を一次資料の方法・対象・結論に対応づける",
+      "expected_output": "文章と原資料の対応表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-QUOTES-S4",
+      "instruction": "見出し・脚注・図版でも因果の断定や条件の欠落がないか調べる",
+      "expected_output": "要照会文言と修正記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-QUOTES-S5",
+      "instruction": "取材時の利用条件、第三者著作物、未公開情報と公開方法を確認する",
+      "expected_output": "文章と原資料の対応表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-QUOTES-S6",
+      "instruction": "論争的な箇所や発言の意味が変わる箇所を追加照会として登録する",
+      "expected_output": "要照会文言と修正記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-QUOTES-S7",
+      "instruction": "引用管理台帳の状態と変更履歴を更新する",
+      "expected_output": "文章と原資料の対応表",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "研究者が記事の事実確認をしたことを本文全体の科学的保証と扱わない",
+    "引用の条件に疑義があれば掲載判断を保留する"
+  ]
+}

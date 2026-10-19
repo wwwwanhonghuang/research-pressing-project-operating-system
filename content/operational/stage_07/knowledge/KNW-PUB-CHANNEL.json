@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-PUB-CHANNEL",
+  "version": "0.1.0",
+  "title": {
+    "ja": "媒体選択と読者のアクセス経路"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "公開・配信業務の設計・審査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-W3C-MEDIA",
+      "locator": "https://www.w3.org/WAI/media/av/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "W3C WAIの動画・音声アクセシビリティ指針。法的義務の一律の根拠ではない。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "07"
+    ],
+    "audiences": [
+      "編集担当者",
+      "配信担当者",
+      "レビュアー",
+      "公開責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-PUB-CHANNEL-H01",
+      "kind": "heading",
+      "text": "適用範囲と目的",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-CHANNEL-P01",
+      "kind": "paragraph",
+      "text": "文章、音声、動画、画像、イベントの利用を特定媒体に強制せず、読者が利用形態を選べる設計を検討する。"
+    },
+    {
+      "id": "KNW-PUB-CHANNEL-H02",
+      "kind": "heading",
+      "text": "実施上の確認事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-CHANNEL-P02",
+      "kind": "paragraph",
+      "text": "同じ結論でも媒体によって説明密度が違う。短い形式から詳細な根拠へ到達できるよう導線を確保する。"
+    },
+    {
+      "id": "KNW-PUB-CHANNEL-H03",
+      "kind": "heading",
+      "text": "境界と判断事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-CHANNEL-P03",
+      "kind": "paragraph",
+      "text": "出典や数値の条件を削って誤解を招く可能性がある場合は短縮案を改める。"
+    }
+  ]
+}

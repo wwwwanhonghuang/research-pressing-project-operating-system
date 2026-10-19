@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0.0",
+  "version": "0.1.0",
+  "lifecycle": "draft",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。具体的な権限、適用法令、契約及び組織規程は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "id": "PRC-REV-ETHICS",
+  "title": {
+    "ja": "倫理・安全・社会的影響の確認の実施手順（試案）"
+  },
+  "responsible_role": "審査調整担当者",
+  "required_roles": [
+    "審査調整担当者"
+  ],
+  "inputs": [
+    "審査対象原稿",
+    "出典・根拠台帳",
+    "関連する条件と記録"
+  ],
+  "outputs": [
+    "倫理・安全・社会的影響の確認確認記録"
+  ],
+  "steps": [
+    {
+      "id": "PRC-REV-ETHICS-S1",
+      "instruction": "対象資料の識別子、版、担当者、受領日時を記録する",
+      "expected_output": "受領記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-REV-ETHICS-S2",
+      "instruction": "尊厳、差別、誤認、危害及び当事者への影響を検討する",
+      "expected_output": "確認結果",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-REV-ETHICS-S3",
+      "instruction": "判断根拠、反対意見、未解決事項及び相談先を記録する",
+      "expected_output": "論点記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-REV-ETHICS-S4",
+      "instruction": "修正の要否、再審査条件、引継ぎ先を明示する",
+      "expected_output": "差戻し・引継ぎ記録",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "権限者又は根拠が不足する場合は判断を保留する",
+    "公開停止を要する疑義は責任者に報告する"
+  ]
+}

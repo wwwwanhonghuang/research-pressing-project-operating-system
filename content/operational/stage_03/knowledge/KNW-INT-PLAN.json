@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-INT-PLAN",
+  "version": "0.1.0",
+  "title": {
+    "ja": "取材設計・説明可能な計画"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "取材担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA-SC",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究上の限界、発言の正確な取扱い、報道前後の確認に関する専門指針。主として研究成果のプレスリリース向け。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "03"
+    ],
+    "audiences": [
+      "取材担当者",
+      "編集責任者",
+      "協力者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-INT-PLAN-B01A",
+      "kind": "heading",
+      "text": "目的と境界",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-PLAN-B01B",
+      "kind": "paragraph",
+      "text": "取材目的は「事実の確認」「研究過程の理解」「人物・経験の理解」「将来の見通し」の水準で明示する。取材依頼の際には公開媒体、対象読者、予定期間、説明可能な編集上の裁量範囲を記録する。"
+    },
+    {
+      "id": "KNW-INT-PLAN-B02A",
+      "kind": "heading",
+      "text": "取材範囲",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-PLAN-B02B",
+      "kind": "paragraph",
+      "text": "対象の発表論文、研究成果、過去の説明資料と未解決の主張を結び、既知の情報と新たに尋ねる事項を区分する。研究者の発言だけを検証資料の代替としない。"
+    },
+    {
+      "id": "KNW-INT-PLAN-B03A",
+      "kind": "heading",
+      "text": "調整と履歴",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-PLAN-B03B",
+      "kind": "paragraph",
+      "text": "取材者、対象者、窓口、同席者、録音担当の役割を記録する。条件の変更は、変更理由・合意状況・連絡日時を追記する。"
+    },
+    {
+      "id": "KNW-INT-PLAN-B04A",
+      "kind": "heading",
+      "text": "成立条件",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-PLAN-B04B",
+      "kind": "paragraph",
+      "text": "目的、想定テーマ、媒体、実施日時・方法、記録と公開の方針、問合せ先が相互に了解された段階で取材準備を確定する。"
+    }
+  ]
+}

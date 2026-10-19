@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-BOUNDARY",
+  "version": "0.1.0",
+  "title": {
+    "ja": "取材者の独立性・利益相反"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "取材担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PRESS-ETH",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本新聞協会の倫理綱領。正確性、独立性、人権と訂正に関する一般原則。取材同意の詳細要件を定める法規ではない。"
+    },
+    {
+      "source_id": "SRC-JPA-SC",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究上の限界、発言の正確な取扱い、報道前後の確認に関する専門指針。主として研究成果のプレスリリース向け。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "03"
+    ],
+    "audiences": [
+      "取材担当者",
+      "編集責任者",
+      "協力者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-BOUNDARY-B01A",
+      "kind": "heading",
+      "text": "役割",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-BOUNDARY-B01B",
+      "kind": "paragraph",
+      "text": "科学広報、委託取材、独立報道では編集権、事実確認・訂正権、公開承認の範囲が異なる。担当者は今回の役割を記録して取材対象へ伝える。"
+    },
+    {
+      "id": "KNW-ETH-BOUNDARY-B02A",
+      "kind": "heading",
+      "text": "利益相反",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-BOUNDARY-B02B",
+      "kind": "paragraph",
+      "text": "資金提供、研究上の利害、所属関係、謝礼や接遇が内容選択に与え得る影響を申告し、必要な開示を検討する。"
+    },
+    {
+      "id": "KNW-ETH-BOUNDARY-B03A",
+      "kind": "heading",
+      "text": "確認の限界",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-BOUNDARY-B03B",
+      "kind": "paragraph",
+      "text": "発言者による事実確認を企画全体の検閲権や自動的な採否権へ拡張しない。組織の契約と権限に基づく確認経路を定める。"
+    }
+  ]
+}

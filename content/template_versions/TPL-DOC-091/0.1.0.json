@@ -1,0 +1,250 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-091",
+  "kind": "document",
+  "slug": "communication_metrics_report",
+  "title_ja": "配信・閲覧データ分析表",
+  "version": "0.1.0",
+  "lifecycle": "draft",
+  "status": "structural_template",
+  "priority": "P1",
+  "applicable_pipeline_stages": [
+    "08"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-091-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-091-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-091-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-091-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-091-S2",
+      "heading_ja": "測定対象",
+      "fields": [
+        {
+          "id": "TPL-DOC-091-F004",
+          "label_ja": "媒体・期間と対象者",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-091-F005",
+          "label_ja": "指標・算出方法",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-091-F006",
+          "label_ja": "測定元と欠測",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-091-F007",
+          "label_ja": "比較可能性",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-091-S3",
+      "heading_ja": "結果と解釈",
+      "fields": [
+        {
+          "id": "TPL-DOC-091-F008",
+          "label_ja": "測定結果",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-091-F009",
+          "label_ja": "解釈できる範囲",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-091-F010",
+          "label_ja": "バイアスと交絡",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-091-F011",
+          "label_ja": "次回の改善",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-091-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-091-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-091-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-091-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": [],
+    "checklist_template_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "記入欄の構造案。法的・組織的承認の代替として利用しない。",
+  "composition_slots": [
+    {
+      "id": "TPL-DOC-091-B01",
+      "title_ja": "評価目的",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-091-B02",
+      "title_ja": "指標と計測方法",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-091-B03",
+      "title_ja": "観測結果",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-091-B04",
+      "title_ja": "解釈の留保・改善",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    }
+  ],
+  "workflow_id": "editorial-eight-stage"
+}

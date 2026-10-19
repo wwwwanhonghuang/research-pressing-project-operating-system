@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-050",
+  "kind": "document",
+  "slug": "quotation_register",
+  "title_ja": "発言・引用候補整理表",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "03"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-050-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-050-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": true,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-050-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-050-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-050-S2",
+      "heading_ja": "発言候補",
+      "fields": [
+        {
+          "id": "TPL-DOC-050-F004",
+          "label_ja": "発言者と発言日時",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-050-F005",
+          "label_ja": "逐語記録と時刻",
+          "type": "table",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。",
+          "columns": [
+            "原記録ID・時点",
+            "発言者",
+            "逐語の文言",
+            "文脈・確度"
+          ],
+          "min_rows": 3
+        },
+        {
+          "id": "TPL-DOC-050-F006",
+          "label_ja": "引用に必要な前後文脈",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-050-F007",
+          "label_ja": "記事中の使用予定箇所",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-050-S3",
+      "heading_ja": "照合と許諾",
+      "fields": [
+        {
+          "id": "TPL-DOC-050-F008",
+          "label_ja": "逐語と要約の区分",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "逐語、意訳、要約、翻訳など編集形態を明示する。"
+        },
+        {
+          "id": "TPL-DOC-050-F009",
+          "label_ja": "正確性の確認結果",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-050-F010",
+          "label_ja": "権利・同意の条件",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "取材の条件と著作権、個人情報、出典明示の確認状況を区別する。"
+        },
+        {
+          "id": "TPL-DOC-050-F011",
+          "label_ja": "修正または見送り理由",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-050-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-050-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。",
+          "columns": [
+            "出典・時点",
+            "研究根拠",
+            "確認者",
+            "修正状況"
+          ],
+          "min_rows": 3
+        },
+        {
+          "id": "TPL-DOC-050-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-050-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "取材に関する原資料、責任者、取材条件、根拠IDを必要に応じて記録する。",
+          "columns": [
+            "対象・記録ID",
+            "内容・根拠",
+            "確認者・日付",
+            "状態・備考"
+          ],
+          "min_rows": 3
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": [],
+    "checklist_template_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "記入欄の構造案。法的・組織的承認の代替として利用しない。",
+  "workflow_id": "editorial-eight-stage"
+}

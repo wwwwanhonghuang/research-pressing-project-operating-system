@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TRUN-DEMO-001",
+  "version": "0.1.0",
+  "title": {
+    "ja": "仮想タスク実行"
+  },
+  "lifecycle": "draft",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "informational",
+    "institutional_approval": "none"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": false
+  },
+  "project_id": "synthetic-project",
+  "definition_ref": {
+    "kind": "task_definition",
+    "id": "TSK-DEMO-REVIEW",
+    "version": "0.1.0"
+  },
+  "stage_id": "02",
+  "state": "review_requested"
+}

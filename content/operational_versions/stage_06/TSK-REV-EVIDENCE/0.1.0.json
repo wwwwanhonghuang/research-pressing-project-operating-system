@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-REV-EVIDENCE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "命題・根拠・変更版の再照合"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学校閲責任者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。法令、契約、内部権限規程等の適用と現行版は個別に検討する。実在の承認を意味しない。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "06"
+  ],
+  "inputs": [
+    "原資料台帳・主張台帳・専門家指摘"
+  ],
+  "outputs": [
+    "照合済み命題表と差分記録"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "照合済み命題表と差分記録に案件ID・対象版・確認者と記録日時が対応付けられている",
+    "重大な未解決事項を判別し、公開判断者に必要な照会と差戻し条件を渡している",
+    "当該作業の確認と公開の承認が区別して記録されている"
+  ],
+  "review_roles": [
+    "科学校閲責任者",
+    "編集責任者",
+    "公開判断者（承認対象となるとき）"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-REV-EVIDENCE",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-070",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-071",
+      "version": "0.2.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-033",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-034",
+      "version": "0.2.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-REV-EVIDENCE",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-REV-SCIENCE",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-REV-HARM",
+      "version": "0.1.0"
+    }
+  ]
+}

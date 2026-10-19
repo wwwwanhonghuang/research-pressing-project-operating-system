@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-EDT-PRIVACY",
+  "version": "0.1.0",
+  "title": {
+    "ja": "原稿と検証資料の情報保護"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集責任者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PPC-GENERAL",
+      "locator": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "個人情報保護委員会・通則編。対象者・データと適用の事実確認が必要。"
+    },
+    {
+      "source_id": "SRC-PRESS-CODE",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本新聞協会・新聞倫理綱領。正確、公正、独立、人権尊重、訂正に関する報道倫理。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "05"
+    ],
+    "audiences": [
+      "編集者",
+      "校正者",
+      "校閲者",
+      "制作担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-EDT-PRIVACY-H01",
+      "kind": "heading",
+      "text": "必要最小限",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-EDT-PRIVACY-P01",
+      "kind": "paragraph",
+      "text": "校閲に用いる原記録は目的に必要な範囲へ限定し、案件ごとにアクセス権を設定する。情報保護に関する法的義務は適用主体、情報類型、契約条件に照らして判断する。"
+    },
+    {
+      "id": "KNW-ETH-EDT-PRIVACY-H02",
+      "kind": "heading",
+      "text": "匿名化と再識別",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-EDT-PRIVACY-P02",
+      "kind": "paragraph",
+      "text": "氏名削除のみで識別可能性が消えたと判断せず、所属、年齢、画像、時点を組み合わせた再識別可能性を検討する。"
+    },
+    {
+      "id": "KNW-ETH-EDT-PRIVACY-H03",
+      "kind": "heading",
+      "text": "保持と削除",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-EDT-PRIVACY-P03",
+      "kind": "paragraph",
+      "text": "コメント履歴、録音、原稿の古い版、外部AIへの送信ログの保管期間・共有先・廃棄責任を確認する。"
+    }
+  ]
+}

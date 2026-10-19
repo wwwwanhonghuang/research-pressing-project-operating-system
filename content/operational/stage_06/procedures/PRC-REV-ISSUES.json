@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-REV-ISSUES",
+  "version": "0.1.0",
+  "title": {
+    "ja": "専門指摘・修正・異議の調整と再審の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集責任者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。法令、契約、内部権限規程等の適用と現行版は個別に検討する。実在の承認を意味しない。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "編集責任者"
+  ],
+  "inputs": [
+    "各審査の指摘と修正履歴"
+  ],
+  "outputs": [
+    "再審記録・残余問題一覧"
+  ],
+  "steps": [
+    {
+      "id": "PRC-REV-ISSUES-S1",
+      "instruction": "指摘を命題、素材、媒体、重大度別に登録する",
+      "expected_output": "指摘管理台帳",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-REV-ISSUES-S2",
+      "instruction": "採用、追加確認、却下、保留の判断理由と責任者を記録する",
+      "expected_output": "対応判断表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-REV-ISSUES-S3",
+      "instruction": "改稿・素材差替えが他媒体や権利に及ぼす影響を検討する",
+      "expected_output": "影響分析表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-REV-ISSUES-S4",
+      "instruction": "重要な修正を対応する専門家・権限者へ再確認する",
+      "expected_output": "再審結果",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-REV-ISSUES-S5",
+      "instruction": "未解決の高重大度事項を公開判断のゲートに残す",
+      "expected_output": "未解決事項表",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "異議を出した専門家自身の意見を編集上の承認として自動確定しない",
+    "未解決重大事項は保留し必要な以前の工程に差し戻す"
+  ]
+}

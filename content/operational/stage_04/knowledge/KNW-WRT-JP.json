@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-WRT-JP",
+  "version": "0.1.0",
+  "title": {
+    "ja": "読者に応じた技術日本語・用語運用"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "汎用的な編集制作の独立設計案。媒体の役割、権利、組織規程、適用される法令は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-BUNKA-PUBLIC-DOC",
+      "locator": "https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/93651301.html",
+      "accessed_on": "2026-10-19",
+      "verification_note": "文化庁による公用文作成の考え方（2022年）。法令本文には直接適用されない。読者や用途に応じた日本語の参考。"
+    },
+    {
+      "source_id": "SRC-JPA-SCI-COMM",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果発表に関する日本心理学会の専門指針。因果と相関、統計量、引用、制約、過度の一般化の取扱い。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "04"
+    ],
+    "audiences": [
+      "編集担当者",
+      "科学ライター",
+      "制作担当者",
+      "レビュー担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-WRT-JP-H01",
+      "kind": "heading",
+      "text": "読者設定",
+      "level": 2
+    },
+    {
+      "id": "KNW-WRT-JP-P01",
+      "kind": "paragraph",
+      "text": "読む前に求められる知識、専門用語、略語を推定ではなく企画書と対象読者分析に基づき設定する。一般読者向けの説明と専門知識のある読者向けの説明に適した詳細度を選ぶ。"
+    },
+    {
+      "id": "KNW-WRT-JP-H02",
+      "kind": "heading",
+      "text": "専門用語の説明",
+      "level": 2
+    },
+    {
+      "id": "KNW-WRT-JP-P02",
+      "kind": "paragraph",
+      "text": "技術語の初出時は文脈に即した短い説明を置き、必要なら注記やFAQへ接続する。類比はどの特徴を説明し、どこで成立しなくなるか明記する。"
+    },
+    {
+      "id": "KNW-WRT-JP-H03",
+      "kind": "heading",
+      "text": "文章上の確認",
+      "level": 2
+    },
+    {
+      "id": "KNW-WRT-JP-P03",
+      "kind": "paragraph",
+      "text": "一文の対象と述語、修飾関係、主語の変化、時制、固有名詞、助数詞、数値の単位を整える。文章の読みやすさを改善しても原資料の限定条件は維持する。"
+    },
+    {
+      "id": "KNW-WRT-JP-H04",
+      "kind": "heading",
+      "text": "用字方針",
+      "level": 2
+    },
+    {
+      "id": "KNW-WRT-JP-P04",
+      "kind": "paragraph",
+      "text": "媒体別のスタイルブックを参照し、公用文のための政府の一般的な手引を一律の強制規則として扱わない。専門用語と固有名詞の表記方針を用語台帳に保存する。"
+    }
+  ]
+}

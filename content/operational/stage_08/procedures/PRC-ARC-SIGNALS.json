@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-ARC-SIGNALS",
+  "version": "0.1.0",
+  "title": {
+    "ja": "読者からの指摘・更新情報の受理の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "読者対応担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "読者対応担当者"
+  ],
+  "inputs": [
+    "問い合わせ",
+    "科学論文の更新",
+    "外部掲載",
+    "自己点検の発見"
+  ],
+  "outputs": [
+    "指摘・更新受付台帳"
+  ],
+  "steps": [
+    {
+      "id": "PRC-ARC-SIGNALS-S1",
+      "instruction": "受付日時、対象URL、版、連絡経路と受付者を記録する",
+      "expected_output": "案件識別子",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-SIGNALS-S2",
+      "instruction": "指摘の原文と証拠を分け、発信者を必要以上に特定しない",
+      "expected_output": "原文保存とアクセス制限",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-SIGNALS-S3",
+      "instruction": "科学的信頼性、個人情報、安全、権利、誤植等の性質を暫定分類する",
+      "expected_output": "疑義の分類",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-SIGNALS-S4",
+      "instruction": "受付確認、期限、連絡方法、対応言語を決める",
+      "expected_output": "受付応答記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-SIGNALS-S5",
+      "instruction": "事実と解釈の不一致を区別して調査担当に引き渡す",
+      "expected_output": "調査依頼",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "生命・身体や個人情報への重大な影響を疑う場合は緊急経路に直結する",
+    "匿名の指摘も内容の根拠によって評価する"
+  ]
+}

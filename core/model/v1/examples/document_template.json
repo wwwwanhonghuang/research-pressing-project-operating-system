@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "id": "DTPL-DEMO-01",
+  "version": "0.1.0",
+  "title": {
+    "ja": "試験用文書フォーム"
+  },
+  "lifecycle": "draft",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "informational",
+    "institutional_approval": "none"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": false
+  },
+  "template_catalog_id": "TPL-DOC-030",
+  "applicable_stage_ids": [
+    "01"
+  ],
+  "sections": [
+    {
+      "id": "SEC-DEMO-01",
+      "heading_ja": "サンプル",
+      "fields": [
+        {
+          "id": "FIELD-DEMO-01",
+          "label_ja": "仮の題名",
+          "data_type": "short_text",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "style_profile": "administrative_form",
+  "human_review_required": true,
+  "placeholder_path": "templates/documents/stage_01/editorial_proposal.md"
+}

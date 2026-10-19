@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-WRT-JAPANESE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "専門表現・日本語の可読性と用語統一の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "日本語編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "汎用的な編集制作の独立設計案。媒体の役割、権利、組織規程、適用される法令は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "日本語編集担当者"
+  ],
+  "inputs": [
+    "各種草稿",
+    "用語台帳",
+    "対象読者設定",
+    "原資料"
+  ],
+  "outputs": [
+    "表現改訂案",
+    "用語・略語台帳",
+    "難解事項一覧"
+  ],
+  "steps": [
+    {
+      "id": "PRC-WRT-JAPANESE-S1",
+      "instruction": "文体、敬体・常体、表記の方針を媒体別に決める",
+      "expected_output": "表現改訂案",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-WRT-JAPANESE-S2",
+      "instruction": "専門用語と略語を初出と既出で区分し読者に必要な説明を整える",
+      "expected_output": "用語・略語台帳",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-JAPANESE-S3",
+      "instruction": "主語、述語、修飾先、論理関係、時制と代名詞の指す対象を確認する",
+      "expected_output": "難解事項一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-JAPANESE-S4",
+      "instruction": "概念の言い換えによって比較条件や科学的限定が脱落しないか原資料と照合する",
+      "expected_output": "表現改訂案",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-JAPANESE-S5",
+      "instruction": "数値、単位、地名、人名、所属、用字を台帳と整合させる",
+      "expected_output": "用語・略語台帳",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-JAPANESE-S6",
+      "instruction": "複数の読者層向けに説明の深さを変更する場合は科学的な核を維持する",
+      "expected_output": "難解事項一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-JAPANESE-S7",
+      "instruction": "改訂履歴と科学的確認が必要な言い換えを明示する",
+      "expected_output": "表現改訂案",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "わかりやすい表現が科学的事実を変える場合は事実確認へ戻す",
+    "新たな用語の訳語が定着していない場合は暫定表記の根拠を付す"
+  ]
+}

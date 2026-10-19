@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-DEMO-REVIEW",
+  "version": "0.1.0",
+  "title": {
+    "ja": "仮想資料確認タスク"
+  },
+  "lifecycle": "draft",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "informational",
+    "institutional_approval": "none"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": false
+  },
+  "stage_ids": [
+    "02"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-DEMO-READ",
+    "version": "0.1.0"
+  },
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "CLD-DEMO-01",
+      "version": "0.1.0"
+    }
+  ],
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "DTPL-DEMO-01",
+      "version": "0.1.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-DEMO-SOURCE",
+      "version": "0.1.0"
+    }
+  ],
+  "claim_refs": [
+    {
+      "kind": "claim_record",
+      "id": "CLM-DEMO-001",
+      "version": "0.1.0"
+    }
+  ],
+  "requires_human_decision": true
+}

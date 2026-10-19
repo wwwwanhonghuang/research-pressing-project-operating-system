@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-WRT-OUTLINE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "記事の論理構成・見出しと読者の理解順序の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "汎用的な編集制作の独立設計案。媒体の役割、権利、組織規程、適用される法令は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "科学編集担当者"
+  ],
+  "inputs": [
+    "編集ブリーフ",
+    "根拠台帳",
+    "研究背景",
+    "媒体と対象読者"
+  ],
+  "outputs": [
+    "構成案",
+    "節ごとの中心主張・出典対応表",
+    "検証上の留意点"
+  ],
+  "steps": [
+    {
+      "id": "PRC-WRT-OUTLINE-S1",
+      "instruction": "問いと確認可能な中心的事実を一文で仮置きする",
+      "expected_output": "構成案",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-WRT-OUTLINE-S2",
+      "instruction": "論文の発表順と読者の理解に必要な説明順の違いを認識する",
+      "expected_output": "節ごとの中心主張・出典対応表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-OUTLINE-S3",
+      "instruction": "導入、研究背景、方法、結果、限界、展望の段落機能を定める",
+      "expected_output": "検証上の留意点",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-OUTLINE-S4",
+      "instruction": "各節に主張IDと根拠ID、未確認の対立見解を付ける",
+      "expected_output": "構成案",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-OUTLINE-S5",
+      "instruction": "見出しが主張の確度を超えていないか点検する",
+      "expected_output": "節ごとの中心主張・出典対応表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-OUTLINE-S6",
+      "instruction": "読者が段落間の関係を理解できる接続文や図の配置を計画する",
+      "expected_output": "検証上の留意点",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-OUTLINE-S7",
+      "instruction": "編集担当と科学確認担当が構成上の問題点を記録する",
+      "expected_output": "構成案",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "誤った因果順序を誘導する構成案は修正する",
+    "冒頭の印象だけで複雑な結果を単純な成功例に変換しない"
+  ]
+}

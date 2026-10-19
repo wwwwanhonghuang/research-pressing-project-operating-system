@@ -1,0 +1,243 @@
+{
+  "type": "template",
+  "id": "TPL-DOC-028",
+  "kind": "document",
+  "version": "0.1.0",
+  "status": "structural_template",
+  "workflow_id": "editorial-eight-stage",
+  "stages": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08"
+  ],
+  "title_ja": "工程別業務ハンドブック",
+  "sections": [
+    {
+      "id": "TPL-DOC-028-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-028-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-028-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-028-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-028-S2",
+      "heading_ja": "工程の位置づけ",
+      "fields": [
+        {
+          "id": "TPL-DOC-028-F004",
+          "label_ja": "工程の目的・範囲",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-028-F005",
+          "label_ja": "前後工程との関係",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-028-F006",
+          "label_ja": "関連業務・成果物",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-028-F007",
+          "label_ja": "必要な知識と権限",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-028-S3",
+      "heading_ja": "業務実施の案内",
+      "fields": [
+        {
+          "id": "TPL-DOC-028-F008",
+          "label_ja": "作業別の実施概要",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-028-F009",
+          "label_ja": "適用標準と倫理",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-028-F010",
+          "label_ja": "例外・審査・相談経路",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-028-F011",
+          "label_ja": "参照資料と改訂履歴",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-028-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-028-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-028-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-028-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "composition_slots": [
+    {
+      "id": "TPL-DOC-028-B01",
+      "title_ja": "工程の目的と位置づけ",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-028-B02",
+      "title_ja": "工程に属するタスクと依存関係",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-028-B03",
+      "title_ja": "適用する標準と倫理",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-028-B04",
+      "title_ja": "例外・品質管理・改訂",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    }
+  ],
+  "review_status": "unapproved",
+  "semantic_sha256": "430abfff3bdce7573502bb5bf3b02b3a0a6d281f24ed24cd1231f758df5a0919"
+}

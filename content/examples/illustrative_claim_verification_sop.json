@@ -1,0 +1,31 @@
+{
+  "id": "SYNTHETIC-SOP-001",
+  "template_id": "TPL-DOC-025",
+  "template_version": "0.1.0",
+  "project_id": "example-only",
+  "status": "draft",
+  "field_values": {
+    "TPL-DOC-025-F001": "SYNTHETIC-SOP-001",
+    "TPL-DOC-025-F002": "独立した設計例",
+    "TPL-DOC-025-F004": "科学に関する文章の主張と根拠を照合するための試作手順",
+    "TPL-DOC-025-F005": "科学コミュニケーションの説明原稿および記事案",
+    "TPL-DOC-025-F006": "原稿の版と引用元が明らかであること",
+    "TPL-DOC-025-F007": "一次資料、原稿、主張台帳、出典一覧"
+  },
+  "content_blocks": [
+    {"id":"SOP-B001","slot_id":"TPL-DOC-025-B01","kind":"paragraph","authority":"independent_proposal","version":"0.1.0","text_ja":"本手順の目的は、科学に関する公表文書の重要な主張を追跡可能な資料に照合し、観測された内容、解釈、仮説および将来の展望を識別することである。適用対象は、取材記事、研究紹介、図表説明、FAQその他の説明用原稿とする。"},
+    {"id":"SOP-B002","slot_id":"TPL-DOC-025-B01","kind":"paragraph","authority":"independent_proposal","version":"0.1.0","text_ja":"本手順は独立した設計試案である。法令や特定組織の承認済み規程を代替するものではない。専門分野、公開媒体および使用する情報に応じて、適用範囲と確認責任を別途確定する。"},
+    {"id":"SOP-B003","slot_id":"TPL-DOC-025-B02","kind":"paragraph","authority":"independent_proposal","version":"0.1.0","text_ja":"執筆担当者は主張と出典を対応づけ、確認に用いた原文の位置を記録する。専門確認者は所管分野の方法、測定、解釈を点検する。編集担当者は読者への表現と文脈上の誤認可能性を検討する。"},
+    {"id":"SOP-B004","slot_id":"TPL-DOC-025-B02","kind":"paragraph","authority":"independent_proposal","version":"0.1.0","text_ja":"確認者の権限と判断の対象を記録する。AIによる資料探索、主張候補の抽出、文章の比較は作業を補助できるが、引用の真実性や専門的な承認を証明するものではない。"},
+    {"id":"SOP-B005","slot_id":"TPL-DOC-025-B03","kind":"procedure_step","authority":"independent_proposal","version":"0.1.0","text_ja":"手順1　原稿の対象版と掲載予定媒体を固定する。見出し、リード、本文、図表および字幕から検証すべき主張を抽出する。"},
+    {"id":"SOP-B006","slot_id":"TPL-DOC-025-B03","kind":"procedure_step","authority":"independent_proposal","version":"0.1.0","text_ja":"手順2　各主張を観測結果、統計的関連、因果的解釈、仮説、推測、将来目標に区分し、表現上の確実性を記録する。"},
+    {"id":"SOP-B007","slot_id":"TPL-DOC-025-B03","kind":"procedure_step","authority":"independent_proposal","version":"0.1.0","text_ja":"手順3　可能な限り原著論文、研究データ、一次報告、責任ある取材記録に遡り、資料の版、著者、日付、識別子、該当箇所を台帳化する。"},
+    {"id":"SOP-B008","slot_id":"TPL-DOC-025-B03","kind":"procedure_step","authority":"independent_proposal","version":"0.1.0","text_ja":"手順4　研究対象、研究デザイン、測定方法、数値、単位、比較条件と不確実性を照合し、過度の一般化や因果推論の飛躍を点検する。"},
+    {"id":"SOP-B009","slot_id":"TPL-DOC-025-B03","kind":"procedure_step","authority":"independent_proposal","version":"0.1.0","text_ja":"手順5　直接引用と要約を区別し、発言前後の文脈、権利条件、原資料への到達可能性を確認する。"},
+    {"id":"SOP-B010","slot_id":"TPL-DOC-025-B03","kind":"procedure_step","authority":"independent_proposal","version":"0.1.0","text_ja":"手順6　不一致や未確認事項を保留課題として記録し、必要に応じて専門家、執筆者、権限者に照会する。"},
+    {"id":"SOP-B011","slot_id":"TPL-DOC-025-B03","kind":"procedure_step","authority":"independent_proposal","version":"0.1.0","text_ja":"手順7　修正前後の表現、修正根拠、確認者、確認日を記録し、承認を必要とする原稿は別の責任ある判断手続に渡す。"},
+    {"id":"SOP-B012","slot_id":"TPL-DOC-025-B04","kind":"paragraph","authority":"independent_proposal","version":"0.1.0","text_ja":"原資料が入手できない、研究結果が撤回された、発言が争われている、機微情報の取扱いが不明な場合は、関連する主張を保留し、掲載の可否を担当権限者に相談する。保留状態を自動的な承認に変換しない。"},
+    {"id":"SOP-B013","slot_id":"TPL-DOC-025-B04","kind":"paragraph","authority":"independent_proposal","version":"0.1.0","text_ja":"確認記録には、主張ID、使用した資料IDと版、参照箇所、判断者、未解決の論点、修正履歴を含める。公表後に問題が判明した場合は、元の公開版を保存したうえで、訂正と通知の手続へ接続する。"},
+    {"id":"SOP-B014","slot_id":"TPL-DOC-025-B04","kind":"reference","authority":"informational","version":"0.1.0","text_ja":"参考資料：日本心理学会『科学コミュニケーション・ガイドライン』、日本新聞協会『新聞倫理綱領』。適用時は原文と現行版を再確認する。","references":[{"source_id":"PUBLIC-PSYCHOLOGY-GUIDANCE","locator":"https://psych.or.jp/jpamember/press_release_guidelines/"},{"source_id":"PUBLIC-PRESS-ETHICS","locator":"https://www.pressnet.or.jp/outline/ethics/"}]}
+  ]
+}

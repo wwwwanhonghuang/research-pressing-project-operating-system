@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-035",
+  "kind": "document",
+  "slug": "editorial_calendar",
+  "title_ja": "編集制作カレンダー",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "01"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-035-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-035-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": true,
+          "description_ja": "個別案件に固有のIDと、後続資料の照合に使う文書IDを記録する。"
+        },
+        {
+          "id": "TPL-DOC-035-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "作成者、所属や役割、更新に関する照会先を記録する。"
+        },
+        {
+          "id": "TPL-DOC-035-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "作成日・改訂日と対象版を別々に管理する。日付欄にはISO形式の値を入力する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-035-S2",
+      "heading_ja": "制作予定",
+      "fields": [
+        {
+          "id": "TPL-DOC-035-F004",
+          "label_ja": "掲載案件一覧",
+          "type": "table",
+          "required": false,
+          "description_ja": "案件ID、仮題、制作種別、想定公開日、依存関係を一覧化する。",
+          "columns": [
+            "案件ID",
+            "予定時期",
+            "工程",
+            "担当"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-035-F005",
+          "label_ja": "取材と原稿の期限",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "調査・取材・執筆の中間期限および担当を記録する。"
+        },
+        {
+          "id": "TPL-DOC-035-F006",
+          "label_ja": "専門確認と承認の期限",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "科学確認、権利確認、公開判断の予定と待機時間を区別する。"
+        },
+        {
+          "id": "TPL-DOC-035-F007",
+          "label_ja": "公開候補日",
+          "type": "date",
+          "required": false,
+          "description_ja": "公開候補日を記録する。解禁時刻や公開許可は別途確認する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-035-S3",
+      "heading_ja": "進捗と変更",
+      "fields": [
+        {
+          "id": "TPL-DOC-035-F008",
+          "label_ja": "担当者別の作業",
+          "type": "table",
+          "required": false,
+          "description_ja": "作業担当、成果物ID、状態、時間見積りを記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-035-F009",
+          "label_ja": "依存関係",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "取材待ち、権利確認、専門家確認などの先行条件を記す。"
+        },
+        {
+          "id": "TPL-DOC-035-F010",
+          "label_ja": "日程変更の記録",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "変更した時点、理由、影響を受ける工程、通知先を記す。"
+        },
+        {
+          "id": "TPL-DOC-035-F011",
+          "label_ja": "関係者への通知",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "誰に、どの変更を、いつ、どの媒体で通知するかを示す。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-035-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-035-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "資料IDと版、アクセス日、根拠の位置、担当の照合状況を記す。",
+          "columns": [
+            "資料ID",
+            "出典・該当箇所",
+            "版・日付",
+            "確認状態"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-035-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "未解決の問題、確定に必要な資料、照会先、保留条件を列挙する。"
+        },
+        {
+          "id": "TPL-DOC-035-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "レビューの対象版、日時、判断主体、コメント、修正の採否と理由を記録する。",
+          "columns": [
+            "日時・版",
+            "確認者",
+            "判断・理由",
+            "変更点"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": [],
+    "checklist_template_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "企画段階に必要な記載指針を追加した独立した試作。空欄の許容と審査の要否は運用ごとに定める。",
+  "workflow_id": "editorial-eight-stage"
+}

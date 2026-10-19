@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-ARC-DECISION",
+  "version": "0.1.0",
+  "title": {
+    "ja": "訂正・説明追加・撤回・維持の判断の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集責任者と必要な専門審査者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "編集責任者と必要な専門審査者"
+  ],
+  "inputs": [
+    "照合結果",
+    "影響範囲",
+    "元版・訂正案",
+    "関係者の権利条件"
+  ],
+  "outputs": [
+    "理由付き公開後対応決定"
+  ],
+  "steps": [
+    {
+      "id": "PRC-ARC-DECISION-S1",
+      "instruction": "誤植、理解に影響する修正、説明追加、重大な信頼性問題を区別する",
+      "expected_output": "変更区分",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-DECISION-S2",
+      "instruction": "訂正・追記・懸念表明・撤回・削除・原文維持の選択肢と結果を比較する",
+      "expected_output": "意思決定表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-DECISION-S3",
+      "instruction": "研究の撤回と広報記事の取り下げの法的位置付けを区別する",
+      "expected_output": "適用範囲記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-DECISION-S4",
+      "instruction": "必要な科学・倫理・法的専門判断と公開決裁権限を確認する",
+      "expected_output": "専門確認・権限記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-DECISION-S5",
+      "instruction": "結論、理由、反対意見、再評価の条件及び予定を保存する",
+      "expected_output": "理由付き決定",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "権限や根拠が不十分なら公開後の判断を保留し緊急対応のみ別経路で審査する",
+    "懲罰の目的と学術記録を正確にする目的を混同しない"
+  ]
+}

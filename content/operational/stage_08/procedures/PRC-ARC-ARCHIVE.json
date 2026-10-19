@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-ARC-ARCHIVE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "保存対象・権利・来歴の確定の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "デジタル保存担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "デジタル保存担当者"
+  ],
+  "inputs": [
+    "最終公開版",
+    "旧版",
+    "訂正通知",
+    "根拠台帳",
+    "許諾",
+    "実行ログ"
+  ],
+  "outputs": [
+    "保存パッケージと目録"
+  ],
+  "steps": [
+    {
+      "id": "PRC-ARC-ARCHIVE-S1",
+      "instruction": "保存目的、公開可否、アクセス制限、保存期限、廃棄義務を評価する",
+      "expected_output": "保存方針と権限記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-ARCHIVE-S2",
+      "instruction": "原資料と生成物、版間関係、訂正判断を別オブジェクトで表現する",
+      "expected_output": "保存対象一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-ARCHIVE-S3",
+      "instruction": "本文・図表・字幕・台本・調査表・公開メタデータを識別子で連結する",
+      "expected_output": "保存構造マップ",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-ARCHIVE-S4",
+      "instruction": "ファイル形式、技術要件、ライセンス、時刻・時区を記録する",
+      "expected_output": "保存メタデータ票",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-ARCHIVE-S5",
+      "instruction": "保存処理と復元試験の責任者・日時・場所を確定する",
+      "expected_output": "移管受領記録",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "保存に必要な最小限の個人情報とアクセス制限を確認する",
+    "第三者の著作物は保存・再公開の許諾を別途確認する"
+  ]
+}

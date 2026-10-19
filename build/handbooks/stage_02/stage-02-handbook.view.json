@@ -1,0 +1,3555 @@
+{
+  "schema_version": "0.1.0",
+  "document_id": "PUB-RES-HANDBOOK",
+  "version": "0.1.0",
+  "title_ja": "事前調査・資料収集 業務ハンドブック（独立試作）",
+  "status": "independent_draft",
+  "chapters": [
+    {
+      "id": "CH-RES-INTRO",
+      "title_ja": "目的・対象・情報構造",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "本書は、企画で定めた問いを原資料に結びつけ、研究方法と主張の根拠を評価し、次の取材・執筆へ引き継ぐための独立した業務設計試案である。探索から引継ぎまでの各判断に資料の識別子、版、確認日と責任を持たせる。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "本文は研究調査、科学コミュニケーション、編集制作の場面を想定する。研究の査読、研究不正認定、法律上の許認可、組織の公式な公開承認を代替しない。正確性に関する原典確認と、倫理・権利・組織権限の確認を分けて扱う。"
+        }
+      ]
+    },
+    {
+      "id": "CH-RES-SRC",
+      "title_ja": "調査の単位と資料・主張の関係",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "資料記録は SourceRecord、科学的に意味のある個々の命題は ClaimRecord として区別する。資料の識別子、版、引用位置、資料が主張を支持又は限定する関係を明記する。本文の参考文献表示と内部の来歴管理は相互に接続する。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "科学的主張の区分は、観測、推定、解釈、仮説、予測、研究目標を基本とする。対象集団・方法・尺度・時間範囲の違いを後続の編集で失わないよう、必要な留保を主張ごとに保存する。"
+        }
+      ]
+    },
+    {
+      "id": "CH-RES-STANDARDS",
+      "title_ja": "共通の品質標準（独立提案）",
+      "parts": [
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-RES-SEARCH",
+            "version": "0.1.0",
+            "title": {
+              "ja": "調査目的と探索の再現可能性"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "科学編集・調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-JPA-2026",
+                "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "プレスリリースにおける文献明示、誇張防止、方法・統計・利益相反等の専門的ガイダンス。記事全般の法的義務を設定するものではない。"
+              },
+              {
+                "source_id": "SRC-NDL-WARP",
+                "locator": "https://warp.ndl.go.jp/info/mechanism-index",
+                "accessed_on": "2026-10-19",
+                "verification_note": "変動するウェブ資料の保存と来歴追跡の背景参考。保存の完全性や再利用許諾を意味しない。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "02"
+              ],
+              "audiences": [
+                "科学コミュニケーション担当者",
+                "調査担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-RES-SEARCH-B01",
+                "kind": "heading",
+                "text": "目的と適用",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-SEARCH-B02",
+                "kind": "paragraph",
+                "text": "候補探索は、企画上の問いに対応する調査対象、検索語、検索先、検索期間、除外条件及び探索者を記録して行う。調査の方法と未収集範囲も併記する。"
+              },
+              {
+                "id": "KNW-RES-SEARCH-B03",
+                "kind": "heading",
+                "text": "探索記録",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-SEARCH-B04",
+                "kind": "paragraph",
+                "text": "複数言語・同義語・専門用語、研究者名、論文識別子などを適切に組み合わせ、検索日、使用データベース、並べ替え条件、検索式、候補件数を保存する。検索件数の再現性は検索環境と更新時点にも依存する。"
+              },
+              {
+                "id": "KNW-RES-SEARCH-B05",
+                "kind": "heading",
+                "text": "探索の偏り",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-SEARCH-B06",
+                "kind": "paragraph",
+                "text": "高引用・高順位、英文献、オープンアクセス資料、所属機関の発表資料への偏重が生じ得る。重要な異説、原典、否定的結果、研究対象外の集団も必要に応じて探索対象に含める。"
+              },
+              {
+                "id": "KNW-RES-SEARCH-B07",
+                "kind": "heading",
+                "text": "停止条件",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-SEARCH-B08",
+                "kind": "paragraph",
+                "text": "探索を暫定終了する際は、必要な主張が検討可能な範囲、未確認の領域、追加探索を要する契機と引継ぎ先を記録する。網羅的な体系的レビューを行ったとの表現は、対応する方法に基づく場合に限る。"
+              },
+              {
+                "id": "KNW-RES-SEARCH-B09",
+                "kind": "paragraph",
+                "text": "参考：日本心理学会 科学コミュニケーション・ガイドライン（https://psych.or.jp/jpamember/press_release_guidelines/）、国立国会図書館 WARP（https://warp.ndl.go.jp/info/mechanism-index）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-RES-SEARCH",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-RES-PROVENANCE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "資料の同一性・版・来歴の確認"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "科学編集・調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-COREF-2026",
+                "locator": "https://www.crossref.org/crossmark/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "論文の訂正・撤回等の更新状態を確認するための参考。登録状態は完全性を保証しない。"
+              },
+              {
+                "source_id": "SRC-COPE-2025",
+                "locator": "https://doi.org/10.24318/cope.2019.1.4",
+                "accessed_on": "2026-10-19",
+                "verification_note": "撤回と学術記録の訂正についての編集上の専門的指針。特定論文の健全性判断を代行しない。"
+              },
+              {
+                "source_id": "SRC-NDL-WARP",
+                "locator": "https://warp.ndl.go.jp/info/mechanism-index",
+                "accessed_on": "2026-10-19",
+                "verification_note": "変動するウェブ資料の保存と来歴追跡の背景参考。保存の完全性や再利用許諾を意味しない。"
+              },
+              {
+                "source_id": "SRC-BUNKA-COPY",
+                "locator": "https://www.bunka.go.jp/seisaku/bunka_gyosei/kibankyoka/faq/index.html",
+                "accessed_on": "2026-10-19",
+                "verification_note": "引用、出所明示および利用許諾の検討における公的解説。具体的な再利用可否は個別検討が必要。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "02"
+              ],
+              "audiences": [
+                "科学コミュニケーション担当者",
+                "調査担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-RES-PROVENANCE-B01",
+                "kind": "heading",
+                "text": "資料識別",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-PROVENANCE-B02",
+                "kind": "paragraph",
+                "text": "著者、題名、発行機関、発行年月日、論文識別子、版、利用先 URL、アクセス日時と取得方法を一組の資料記録として登録する。"
+              },
+              {
+                "id": "KNW-RES-PROVENANCE-B03",
+                "kind": "heading",
+                "text": "一次資料の範囲",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-PROVENANCE-B04",
+                "kind": "paragraph",
+                "text": "原著論文、研究報告書、プロトコル、試験登録、測定資料、公開データ等は内容と対象に応じて一次資料候補となる。広報資料や二次的解説についてはその作成主体と参照原典を辿る。"
+              },
+              {
+                "id": "KNW-RES-PROVENANCE-B05",
+                "kind": "heading",
+                "text": "版と更新",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-PROVENANCE-B06",
+                "kind": "paragraph",
+                "text": "プレプリントと査読後掲載版、訂正前と訂正後、撤回通知と元論文を区別する。確認した更新情報と確認時点を残し、後続の解釈へ反映する。"
+              },
+              {
+                "id": "KNW-RES-PROVENANCE-B07",
+                "kind": "heading",
+                "text": "ウェブ情報",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-PROVENANCE-B08",
+                "kind": "paragraph",
+                "text": "更新日時が不明なウェブページは閲覧日時を併記し、必要に応じて保存先やアーカイブを参照する。保存可能性と複製・再配布できる権利は別個に確認する。"
+              },
+              {
+                "id": "KNW-RES-PROVENANCE-B09",
+                "kind": "heading",
+                "text": "引用可能性",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-PROVENANCE-B10",
+                "kind": "paragraph",
+                "text": "資料へ到達できることと、図表や画像を再利用できることは異なる。リンク、引用、複製、改変、配信を区別して権利を記録する。"
+              },
+              {
+                "id": "KNW-RES-PROVENANCE-B11",
+                "kind": "paragraph",
+                "text": "参考：Crossref Crossmark（https://www.crossref.org/crossmark/）、COPE Retraction Guidelines (reviewed August 2025)（https://doi.org/10.24318/cope.2019.1.4）、国立国会図書館 WARP（https://warp.ndl.go.jp/info/mechanism-index）、文化庁 著作権に関する FAQ（https://www.bunka.go.jp/seisaku/bunka_gyosei/kibankyoka/faq/index.html）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-RES-PROVENANCE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-RES-EVIDENCE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "研究方法・結論・不確実性の対応"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "科学編集・調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-JPA-2026",
+                "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "プレスリリースにおける文献明示、誇張防止、方法・統計・利益相反等の専門的ガイダンス。記事全般の法的義務を設定するものではない。"
+              },
+              {
+                "source_id": "SRC-COREF-2026",
+                "locator": "https://www.crossref.org/crossmark/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "論文の訂正・撤回等の更新状態を確認するための参考。登録状態は完全性を保証しない。"
+              },
+              {
+                "source_id": "SRC-COPE-2025",
+                "locator": "https://doi.org/10.24318/cope.2019.1.4",
+                "accessed_on": "2026-10-19",
+                "verification_note": "撤回と学術記録の訂正についての編集上の専門的指針。特定論文の健全性判断を代行しない。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "02"
+              ],
+              "audiences": [
+                "科学コミュニケーション担当者",
+                "調査担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-RES-EVIDENCE-B01",
+                "kind": "heading",
+                "text": "方法の把握",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-EVIDENCE-B02",
+                "kind": "paragraph",
+                "text": "研究対象、標本、比較群、データ取得法、解析法、追跡期間、事前登録、欠測・除外条件を原資料から確認し、記述可能な範囲を特定する。"
+              },
+              {
+                "id": "KNW-RES-EVIDENCE-B03",
+                "kind": "heading",
+                "text": "解釈階層",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-EVIDENCE-B04",
+                "kind": "paragraph",
+                "text": "測定・観測値、推定結果、研究者の解釈、仮説、一般向けの応用見通しを区別する。因果的主張については研究デザインと識別上の仮定を明記する。"
+              },
+              {
+                "id": "KNW-RES-EVIDENCE-B05",
+                "kind": "heading",
+                "text": "定量表現",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-EVIDENCE-B06",
+                "kind": "paragraph",
+                "text": "割合の母数、絶対数、単位、比較基準、期間、効果量、区間推定、欠測値などを照合する。統計的有意性だけで効果の実務的重要性を断定しない。"
+              },
+              {
+                "id": "KNW-RES-EVIDENCE-B07",
+                "kind": "heading",
+                "text": "一般化",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-EVIDENCE-B08",
+                "kind": "paragraph",
+                "text": "対象集団・環境・尺度・追跡期間に照らして、どこまで説明できるかを記録する。前臨床研究や予測モデルの知見を、直ちに臨床的効用と同一視しない。"
+              },
+              {
+                "id": "KNW-RES-EVIDENCE-B09",
+                "kind": "heading",
+                "text": "更新時の再確認",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-EVIDENCE-B10",
+                "kind": "paragraph",
+                "text": "原資料の訂正、撤回、修正や新しい追試が見つかった場合、関連主張の検証状態を保留又は要再検討へ変更する。"
+              },
+              {
+                "id": "KNW-RES-EVIDENCE-B11",
+                "kind": "paragraph",
+                "text": "参考：日本心理学会 科学コミュニケーション・ガイドライン（https://psych.or.jp/jpamember/press_release_guidelines/）、Crossref Crossmark（https://www.crossref.org/crossmark/）、COPE Retraction Guidelines (reviewed August 2025)（https://doi.org/10.24318/cope.2019.1.4）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-RES-EVIDENCE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-RES-TRACE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "主張と根拠の追跡可能性"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "科学編集・調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-JPA-2026",
+                "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "プレスリリースにおける文献明示、誇張防止、方法・統計・利益相反等の専門的ガイダンス。記事全般の法的義務を設定するものではない。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "02"
+              ],
+              "audiences": [
+                "科学コミュニケーション担当者",
+                "調査担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-RES-TRACE-B01",
+                "kind": "heading",
+                "text": "単位の定義",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-TRACE-B02",
+                "kind": "paragraph",
+                "text": "記事中の独立した実質的主張に識別子を与え、出典資料の識別子、該当箇所、支持の仕方、限界、反対資料の有無を結びつける。"
+              },
+              {
+                "id": "KNW-RES-TRACE-B03",
+                "kind": "heading",
+                "text": "関係の種類",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-TRACE-B04",
+                "kind": "paragraph",
+                "text": "根拠資料と主張の関係は支持、反証、限定、未確定、背景説明等に区別する。引用したという事実だけで支持の強さを確定しない。"
+              },
+              {
+                "id": "KNW-RES-TRACE-B05",
+                "kind": "heading",
+                "text": "保留状態",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-TRACE-B06",
+                "kind": "paragraph",
+                "text": "参照不能、要再計算、解釈上の争点、未公開資料に依存する主張は未解決として登録し、公開可能な表現を再検討する。"
+              },
+              {
+                "id": "KNW-RES-TRACE-B07",
+                "kind": "heading",
+                "text": "人の判断",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-TRACE-B08",
+                "kind": "paragraph",
+                "text": "AI が作成した資料要約や対応表は確認候補として扱い、重要な主張は原資料と照合した担当者と照合日を残す。"
+              },
+              {
+                "id": "KNW-RES-TRACE-B09",
+                "kind": "heading",
+                "text": "変更追跡",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-TRACE-B10",
+                "kind": "paragraph",
+                "text": "主張文言・引用場所・元論文の版のいずれかに変更があれば関連する記事、図表、FAQ を影響範囲として再確認する。"
+              },
+              {
+                "id": "KNW-RES-TRACE-B11",
+                "kind": "paragraph",
+                "text": "参考：日本心理学会 科学コミュニケーション・ガイドライン（https://psych.or.jp/jpamember/press_release_guidelines/）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-RES-TRACE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-RES-HANDOFF",
+            "version": "0.1.0",
+            "title": {
+              "ja": "調査結果の品質ゲートと引継ぎ"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "科学編集・調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-JPA-2026",
+                "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "プレスリリースにおける文献明示、誇張防止、方法・統計・利益相反等の専門的ガイダンス。記事全般の法的義務を設定するものではない。"
+              },
+              {
+                "source_id": "SRC-MEXT-INTEGRITY",
+                "locator": "https://www.mext.go.jp/a_menu/jinzai/fusei/index.htm",
+                "accessed_on": "2026-10-19",
+                "verification_note": "研究公正に関する制度情報。調査編集担当者が不正認定を行う根拠ではない。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "02"
+              ],
+              "audiences": [
+                "科学コミュニケーション担当者",
+                "調査担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-RES-HANDOFF-B01",
+                "kind": "heading",
+                "text": "出口条件",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-HANDOFF-B02",
+                "kind": "paragraph",
+                "text": "中心となる問いに関する資料台帳と主張対応表、主要な方法・限界、相違する資料、残存する確認事項、次の取材質問を揃える。"
+              },
+              {
+                "id": "KNW-RES-HANDOFF-B03",
+                "kind": "heading",
+                "text": "判断の記録",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-HANDOFF-B04",
+                "kind": "paragraph",
+                "text": "調査の暫定的な完了は編集工程上の引継ぎ判断である。科学的真理、当該研究の妥当性、取材・公開承認を意味しない。"
+              },
+              {
+                "id": "KNW-RES-HANDOFF-B05",
+                "kind": "heading",
+                "text": "再開条件",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-HANDOFF-B06",
+                "kind": "paragraph",
+                "text": "新たな訂正通知、追加データ、専門家の異論、公開条件の変更が生じた場合に再調査できる状態を維持する。"
+              },
+              {
+                "id": "KNW-RES-HANDOFF-B07",
+                "kind": "heading",
+                "text": "保護と保持",
+                "level": 2
+              },
+              {
+                "id": "KNW-RES-HANDOFF-B08",
+                "kind": "paragraph",
+                "text": "保存先、アクセス制限、保管期間、第三者共有可否、AIへの入力可否を資料単位で記録し、実際の保存は各組織の運用規程による。"
+              },
+              {
+                "id": "KNW-RES-HANDOFF-B09",
+                "kind": "paragraph",
+                "text": "参考：日本心理学会 科学コミュニケーション・ガイドライン（https://psych.or.jp/jpamember/press_release_guidelines/）、文部科学省 研究活動における不正行為への対応等（https://www.mext.go.jp/a_menu/jinzai/fusei/index.htm）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-RES-HANDOFF",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-RES-ETHICS",
+      "title_ja": "倫理・権利・研究公正の配慮",
+      "parts": [
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ETH-RESBIAS",
+            "version": "0.1.0",
+            "title": {
+              "ja": "資料収集と解釈における認識上の偏り"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "科学編集・調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-JPA-2026",
+                "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "プレスリリースにおける文献明示、誇張防止、方法・統計・利益相反等の専門的ガイダンス。記事全般の法的義務を設定するものではない。"
+              }
+            ],
+            "links": [],
+            "category": "ethics",
+            "scope": {
+              "stages": [
+                "02"
+              ],
+              "audiences": [
+                "科学コミュニケーション担当者",
+                "調査担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ETH-RESBIAS-B01",
+                "kind": "heading",
+                "text": "観察・認識の偏り",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-RESBIAS-B02",
+                "kind": "paragraph",
+                "text": "研究分野、言語、検索順位、発表主体、掲載媒体、資金状況、測定可能性が資料の可視性を左右する。収集できた資料と関連する現実の全体を区別して検討する。"
+              },
+              {
+                "id": "KNW-ETH-RESBIAS-B03",
+                "kind": "heading",
+                "text": "解釈の偏り",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-RESBIAS-B04",
+                "kind": "paragraph",
+                "text": "同じデータでも概念分類、比較集団、分析単位、因果仮説の違いが異なる解釈を生む。対立する読み方を必要な範囲で記録し、その証拠を確認する。"
+              },
+              {
+                "id": "KNW-ETH-RESBIAS-B05",
+                "kind": "heading",
+                "text": "影響を受ける人々",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-RESBIAS-B06",
+                "kind": "paragraph",
+                "text": "対象集団や当事者の経験を単純な代表例へ還元する際の影響を考慮し、標本の属性と外挿範囲を明示する。"
+              },
+              {
+                "id": "KNW-ETH-RESBIAS-B07",
+                "kind": "heading",
+                "text": "記録",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-RESBIAS-B08",
+                "kind": "paragraph",
+                "text": "除外した資料、判断の理由、残存する不一致を必要な範囲で保存し、見えにくい資料や知識の不足について次工程へ伝える。"
+              },
+              {
+                "id": "KNW-ETH-RESBIAS-B09",
+                "kind": "paragraph",
+                "text": "参考：日本心理学会 科学コミュニケーション・ガイドライン（https://psych.or.jp/jpamember/press_release_guidelines/）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-RESBIAS",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ETH-RIGHTS",
+            "version": "0.1.0",
+            "title": {
+              "ja": "資料の権利・機密・利用範囲"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "科学編集・調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-BUNKA-COPY",
+                "locator": "https://www.bunka.go.jp/seisaku/bunka_gyosei/kibankyoka/faq/index.html",
+                "accessed_on": "2026-10-19",
+                "verification_note": "引用、出所明示および利用許諾の検討における公的解説。具体的な再利用可否は個別検討が必要。"
+              },
+              {
+                "source_id": "SRC-JPA-2026",
+                "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "プレスリリースにおける文献明示、誇張防止、方法・統計・利益相反等の専門的ガイダンス。記事全般の法的義務を設定するものではない。"
+              }
+            ],
+            "links": [],
+            "category": "ethics",
+            "scope": {
+              "stages": [
+                "02"
+              ],
+              "audiences": [
+                "科学コミュニケーション担当者",
+                "調査担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ETH-RIGHTS-B01",
+                "kind": "heading",
+                "text": "権利とアクセス",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-RIGHTS-B02",
+                "kind": "paragraph",
+                "text": "閲覧可能な資料についても、取得、二次利用、長期保存、共有、公開、AI投入に必要な権限を別々に確認する。"
+              },
+              {
+                "id": "KNW-ETH-RIGHTS-B03",
+                "kind": "heading",
+                "text": "個人情報",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-RIGHTS-B04",
+                "kind": "paragraph",
+                "text": "連絡先、被験者情報、未公開のインタビュー発言等は必要性と権限を確認し、機微な内容を一般公開用の資料集や外部サービスへ移さない。"
+              },
+              {
+                "id": "KNW-ETH-RIGHTS-B05",
+                "kind": "heading",
+                "text": "未公開研究",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-RIGHTS-B06",
+                "kind": "paragraph",
+                "text": "査読中原稿、未発表の図表、研究室からの共有資料には公表可否・守秘条件・解禁条件が存在し得る。未確認の場合は公開や外部共有を保留する。"
+              },
+              {
+                "id": "KNW-ETH-RIGHTS-B07",
+                "kind": "heading",
+                "text": "AI補助",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-RIGHTS-B08",
+                "kind": "paragraph",
+                "text": "AI に入力する際は公表範囲、利用規約、組織内規程、著作権、個人情報の条件を確認する。AI の要約は原典の代替にならない。"
+              },
+              {
+                "id": "KNW-ETH-RIGHTS-B09",
+                "kind": "paragraph",
+                "text": "参考：文化庁 著作権に関する FAQ（https://www.bunka.go.jp/seisaku/bunka_gyosei/kibankyoka/faq/index.html）、日本心理学会 科学コミュニケーション・ガイドライン（https://psych.or.jp/jpamember/press_release_guidelines/）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-RIGHTS",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ETH-INTEGRITY",
+            "version": "0.1.0",
+            "title": {
+              "ja": "研究公正への配慮と職責の境界"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "科学編集・調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "SRC-MEXT-INTEGRITY",
+                "locator": "https://www.mext.go.jp/a_menu/jinzai/fusei/index.htm",
+                "accessed_on": "2026-10-19",
+                "verification_note": "研究公正に関する制度情報。調査編集担当者が不正認定を行う根拠ではない。"
+              },
+              {
+                "source_id": "SRC-COPE-2025",
+                "locator": "https://doi.org/10.24318/cope.2019.1.4",
+                "accessed_on": "2026-10-19",
+                "verification_note": "撤回と学術記録の訂正についての編集上の専門的指針。特定論文の健全性判断を代行しない。"
+              },
+              {
+                "source_id": "SRC-JPA-2026",
+                "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "プレスリリースにおける文献明示、誇張防止、方法・統計・利益相反等の専門的ガイダンス。記事全般の法的義務を設定するものではない。"
+              }
+            ],
+            "links": [],
+            "category": "ethics",
+            "scope": {
+              "stages": [
+                "02"
+              ],
+              "audiences": [
+                "科学コミュニケーション担当者",
+                "調査担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ETH-INTEGRITY-B01",
+                "kind": "heading",
+                "text": "役割の区分",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-INTEGRITY-B02",
+                "kind": "paragraph",
+                "text": "編集担当者は科学的主張の出典や根拠の照合を担うが、研究不正の公式認定や研究機関の調査を代行しない。懸念は根拠とともに権限ある窓口へ照会する。"
+              },
+              {
+                "id": "KNW-ETH-INTEGRITY-B03",
+                "kind": "heading",
+                "text": "撤回と疑義",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-INTEGRITY-B04",
+                "kind": "paragraph",
+                "text": "撤回通知・訂正・懸念表明は各々の意味を区別して記録する。非難の推測や人物評価に結びつけず、科学的な影響範囲の確認を優先する。"
+              },
+              {
+                "id": "KNW-ETH-INTEGRITY-B05",
+                "kind": "heading",
+                "text": "利益相反",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-INTEGRITY-B06",
+                "kind": "paragraph",
+                "text": "研究資金、所属、特許・商業的利害など、資料の解釈に関係する公表済み情報を記録する。未確認事項は推測で補わない。"
+              },
+              {
+                "id": "KNW-ETH-INTEGRITY-B07",
+                "kind": "heading",
+                "text": "説明責任",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETH-INTEGRITY-B08",
+                "kind": "paragraph",
+                "text": "資料選択と主張の留保を示せること、異議が生じた際に再確認できることを業務品質として扱う。"
+              },
+              {
+                "id": "KNW-ETH-INTEGRITY-B09",
+                "kind": "paragraph",
+                "text": "参考：文部科学省 研究活動における不正行為への対応等（https://www.mext.go.jp/a_menu/jinzai/fusei/index.htm）、COPE Retraction Guidelines (reviewed August 2025)（https://doi.org/10.24318/cope.2019.1.4）、日本心理学会 科学コミュニケーション・ガイドライン（https://psych.or.jp/jpamember/press_release_guidelines/）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-INTEGRITY",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-RES-PLAN",
+      "title_ja": "調査目的・情報需要と探索計画の確定",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-RES-PLAN",
+            "version": "0.1.0",
+            "title": {
+              "ja": "調査目的・情報需要と探索計画の確定"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "02"
+            ],
+            "inputs": [
+              "企画書、研究・科学情報についての問い、公開予定、既存の資料一覧"
+            ],
+            "outputs": [
+              "調査計画書、探索対象と除外条件、時間・権限の制約"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "調査対象と除外範囲が明記された",
+              "探索の再現方法と打切り条件が説明できる",
+              "情報の取得と利用の権限を確認した"
+            ],
+            "review_roles": [
+              "調査責任者又は編集責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-RES-PLAN",
+              "version": "0.1.0"
+            },
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-037",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-043",
+                "version": "0.1.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-018",
+                "version": "0.2.0"
+              }
+            ],
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-RES-SEARCH",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-RES-PROVENANCE",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-RESBIAS",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-RIGHTS",
+                "version": "0.1.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-RES-PLAN",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-RES-PLAN",
+            "version": "0.1.0",
+            "title": {
+              "ja": "調査目的・情報需要と探索計画の確定の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "調査担当者"
+            ],
+            "inputs": [
+              "企画書、研究・科学情報についての問い、公開予定、既存の資料一覧"
+            ],
+            "outputs": [
+              "調査計画書、探索対象と除外条件、時間・権限の制約"
+            ],
+            "steps": [
+              {
+                "id": "PRC-RES-PLAN-S1",
+                "instruction": "企画の問いを、確認可能な研究内容、背景、方法、限界、評価の各小問に分割する。",
+                "expected_output": "調査計画書、探索対象と除外条件、時間・権限の制約",
+                "evidence_needed": false
+              },
+              {
+                "id": "PRC-RES-PLAN-S2",
+                "instruction": "必要な原典の種類と検索先を選び、言語、年度、分野、検索式の初期案を記録する。",
+                "expected_output": "調査計画書、探索対象と除外条件、時間・権限の制約",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-PLAN-S3",
+                "instruction": "資料取得の優先順位を付ける際、発表主体への近さ、再現可能性、利益相反、適時性を併記する。",
+                "expected_output": "調査計画書、探索対象と除外条件、時間・権限の制約",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-PLAN-S4",
+                "instruction": "再探索条件と探索打切り条件を暫定的に設定する。",
+                "expected_output": "調査計画書、探索対象と除外条件、時間・権限の制約",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-PLAN-S5",
+                "instruction": "非公開資料、個人情報、著作物の扱いを確認して共有範囲を記録する。",
+                "expected_output": "調査計画書、探索対象と除外条件、時間・権限の制約",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-PLAN-S6",
+                "instruction": "調査計画書をレビューし、変更履歴と担当を確定する。",
+                "expected_output": "調査計画書、探索対象と除外条件、時間・権限の制約",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "原資料に到達できないとき、資料の真正性が確認できないとき、又は版の不一致が見つかったときは、関連項目を未確認として保留し照会先を特定する。",
+              "権利又は秘密保持上の問題がある資料は外部共有・公開・外部AIへの入力を止め、担当者が許可条件を確認する。",
+              "新たな反証、研究内容の訂正、追加データが明らかになった際は、元の判断を上書きせず再調査の記録を追記する。"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-RES-PLAN",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-RES-DISCOVER",
+      "title_ja": "候補資料の探索と収集範囲の評価",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-RES-DISCOVER",
+            "version": "0.1.0",
+            "title": {
+              "ja": "候補資料の探索と収集範囲の評価"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "02"
+            ],
+            "inputs": [
+              "調査計画書、検索語一覧、関係する分野の資料群"
+            ],
+            "outputs": [
+              "検索履歴、候補資料一覧、除外理由、追加検索候補"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "検索履歴を再確認できる",
+              "候補の包含除外理由を記録した",
+              "相違する資料の探索経路を検討した"
+            ],
+            "review_roles": [
+              "調査責任者又は編集責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-RES-DISCOVER",
+              "version": "0.1.0"
+            },
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-038",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-039",
+                "version": "0.1.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-018",
+                "version": "0.2.0"
+              }
+            ],
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-RES-SEARCH",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-RESBIAS",
+                "version": "0.1.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-RES-DISCOVER",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-RES-DISCOVER",
+            "version": "0.1.0",
+            "title": {
+              "ja": "候補資料の探索と収集範囲の評価の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "調査担当者"
+            ],
+            "inputs": [
+              "調査計画書、検索語一覧、関係する分野の資料群"
+            ],
+            "outputs": [
+              "検索履歴、候補資料一覧、除外理由、追加検索候補"
+            ],
+            "steps": [
+              {
+                "id": "PRC-RES-DISCOVER-S1",
+                "instruction": "検索対象を一次資料・関連するレビュー・制度資料・解説記事等に分ける。",
+                "expected_output": "検索履歴、候補資料一覧、除外理由、追加検索候補",
+                "evidence_needed": false
+              },
+              {
+                "id": "PRC-RES-DISCOVER-S2",
+                "instruction": "データベースや公的サイトごとの検索語、実行日、検索結果の範囲を保存する。",
+                "expected_output": "検索履歴、候補資料一覧、除外理由、追加検索候補",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-DISCOVER-S3",
+                "instruction": "引用文献と被引用文献の追跡、研究者名・研究プロジェクト名による補完検索を行う。",
+                "expected_output": "検索履歴、候補資料一覧、除外理由、追加検索候補",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-DISCOVER-S4",
+                "instruction": "資料候補の発行時期、研究対象、原典への到達可能性を整理する。",
+                "expected_output": "検索履歴、候補資料一覧、除外理由、追加検索候補",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-DISCOVER-S5",
+                "instruction": "肯定的な結果だけでなく否定的結果、反例、異なる方法を用いた研究を探索する。",
+                "expected_output": "検索履歴、候補資料一覧、除外理由、追加検索候補",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-DISCOVER-S6",
+                "instruction": "除外理由と探索の限界を記録し、検索計画の追加・修正を判断する。",
+                "expected_output": "検索履歴、候補資料一覧、除外理由、追加検索候補",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "原資料に到達できないとき、資料の真正性が確認できないとき、又は版の不一致が見つかったときは、関連項目を未確認として保留し照会先を特定する。",
+              "権利又は秘密保持上の問題がある資料は外部共有・公開・外部AIへの入力を止め、担当者が許可条件を確認する。",
+              "新たな反証、研究内容の訂正、追加データが明らかになった際は、元の判断を上書きせず再調査の記録を追記する。"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-RES-DISCOVER",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-RES-REGISTER",
+      "title_ja": "一次資料の取得・同一性・版・来歴の登録",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-RES-REGISTER",
+            "version": "0.1.0",
+            "title": {
+              "ja": "一次資料の取得・同一性・版・来歴の登録"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "02"
+            ],
+            "inputs": [
+              "候補資料一覧、論文・報告書・データへのアクセス権"
+            ],
+            "outputs": [
+              "資料・出典台帳、版情報、引用位置と取得条件の記録"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "原資料への到達経路が記録された",
+              "引用位置と版が照合できる",
+              "更新情報、権利及び取得日が明示された"
+            ],
+            "review_roles": [
+              "調査責任者又は編集責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-RES-REGISTER",
+              "version": "0.1.0"
+            },
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-016",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-039",
+                "version": "0.1.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-003",
+                "version": "0.2.0"
+              },
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-005",
+                "version": "0.1.0"
+              }
+            ],
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-RES-PROVENANCE",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-RIGHTS",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-INTEGRITY",
+                "version": "0.1.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-RES-REGISTER",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-RES-REGISTER",
+            "version": "0.1.0",
+            "title": {
+              "ja": "一次資料の取得・同一性・版・来歴の登録の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "調査担当者"
+            ],
+            "inputs": [
+              "候補資料一覧、論文・報告書・データへのアクセス権"
+            ],
+            "outputs": [
+              "資料・出典台帳、版情報、引用位置と取得条件の記録"
+            ],
+            "steps": [
+              {
+                "id": "PRC-RES-REGISTER-S1",
+                "instruction": "著者、標題、誌名・機関、識別子、発表日、版、言語を原資料に基づき記載する。",
+                "expected_output": "資料・出典台帳、版情報、引用位置と取得条件の記録",
+                "evidence_needed": false
+              },
+              {
+                "id": "PRC-RES-REGISTER-S2",
+                "instruction": "記事・報告・データの本文を可能な範囲で入手し、二次的な紹介文との相違を記録する。",
+                "expected_output": "資料・出典台帳、版情報、引用位置と取得条件の記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-REGISTER-S3",
+                "instruction": "プレプリント、査読後版、修正版の関係を確認する。",
+                "expected_output": "資料・出典台帳、版情報、引用位置と取得条件の記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-REGISTER-S4",
+                "instruction": "訂正、撤回、懸念表明など更新情報の有無を確認日とともに記録する。",
+                "expected_output": "資料・出典台帳、版情報、引用位置と取得条件の記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-REGISTER-S5",
+                "instruction": "資料の保存先、アクセス条件、共有の可否、転載許諾の状態を別々に記録する。",
+                "expected_output": "資料・出典台帳、版情報、引用位置と取得条件の記録",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-REGISTER-S6",
+                "instruction": "出典の特定が難しい資料を保留にし、原典照会先を特定する。",
+                "expected_output": "資料・出典台帳、版情報、引用位置と取得条件の記録",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "原資料に到達できないとき、資料の真正性が確認できないとき、又は版の不一致が見つかったときは、関連項目を未確認として保留し照会先を特定する。",
+              "権利又は秘密保持上の問題がある資料は外部共有・公開・外部AIへの入力を止め、担当者が許可条件を確認する。",
+              "新たな反証、研究内容の訂正、追加データが明らかになった際は、元の判断を上書きせず再調査の記録を追記する。"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-RES-REGISTER",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-RES-METHOD",
+      "title_ja": "研究方法・標本・適用範囲の読解",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-RES-METHOD",
+            "version": "0.1.0",
+            "title": {
+              "ja": "研究方法・標本・適用範囲の読解"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "02"
+            ],
+            "inputs": [
+              "取得した研究原著、プロトコル、補足資料、登録情報"
+            ],
+            "outputs": [
+              "研究方法要約票、一般化の範囲、方法上の未確認事項"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "研究デザインと比較条件を説明できる",
+              "観測結果と推論を分けた",
+              "外挿・一般化の限界を記録した"
+            ],
+            "review_roles": [
+              "調査責任者又は編集責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-RES-METHOD",
+              "version": "0.1.0"
+            },
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-040",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-041",
+                "version": "0.1.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-019",
+                "version": "0.2.0"
+              }
+            ],
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-RES-EVIDENCE",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-RESBIAS",
+                "version": "0.1.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-RES-METHOD",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-RES-METHOD",
+            "version": "0.1.0",
+            "title": {
+              "ja": "研究方法・標本・適用範囲の読解の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "調査担当者"
+            ],
+            "inputs": [
+              "取得した研究原著、プロトコル、補足資料、登録情報"
+            ],
+            "outputs": [
+              "研究方法要約票、一般化の範囲、方法上の未確認事項"
+            ],
+            "steps": [
+              {
+                "id": "PRC-RES-METHOD-S1",
+                "instruction": "問い、仮説、デザイン、比較条件、研究対象、測定対象を区別して要約する。",
+                "expected_output": "研究方法要約票、一般化の範囲、方法上の未確認事項",
+                "evidence_needed": false
+              },
+              {
+                "id": "PRC-RES-METHOD-S2",
+                "instruction": "標本抽出、選択・除外条件、欠測、観測期間、介入又は観察の区別を確認する。",
+                "expected_output": "研究方法要約票、一般化の範囲、方法上の未確認事項",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-METHOD-S3",
+                "instruction": "評価指標、測定法、前処理、解析手法、統計的仮定を記録する。",
+                "expected_output": "研究方法要約票、一般化の範囲、方法上の未確認事項",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-METHOD-S4",
+                "instruction": "事前登録と事後的な解析変更が確認できる場合、その位置と内容を控える。",
+                "expected_output": "研究方法要約票、一般化の範囲、方法上の未確認事項",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-METHOD-S5",
+                "instruction": "研究が直接対象とした集団・場面と記事が想定する読者集団の差を整理する。",
+                "expected_output": "研究方法要約票、一般化の範囲、方法上の未確認事項",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-METHOD-S6",
+                "instruction": "研究者による解釈とデータから確かめられる範囲の差を一覧にする。",
+                "expected_output": "研究方法要約票、一般化の範囲、方法上の未確認事項",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-METHOD-S7",
+                "instruction": "追加取材が必要な方法上の不明点と質問案を作成する。",
+                "expected_output": "研究方法要約票、一般化の範囲、方法上の未確認事項",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "原資料に到達できないとき、資料の真正性が確認できないとき、又は版の不一致が見つかったときは、関連項目を未確認として保留し照会先を特定する。",
+              "権利又は秘密保持上の問題がある資料は外部共有・公開・外部AIへの入力を止め、担当者が許可条件を確認する。",
+              "新たな反証、研究内容の訂正、追加データが明らかになった際は、元の判断を上書きせず再調査の記録を追記する。"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-RES-METHOD",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-RES-QUANT",
+      "title_ja": "数値・図表・推定結果の照合",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-RES-QUANT",
+            "version": "0.1.0",
+            "title": {
+              "ja": "数値・図表・推定結果の照合"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "02"
+            ],
+            "inputs": [
+              "本文、図表、補足データ、測定単位と解析仕様"
+            ],
+            "outputs": [
+              "数値確認記録、図表出典一覧、未再現項目"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "数値の原典位置と母数が追える",
+              "再計算の条件と丸めを残した",
+              "図表の著作権及び解釈限界を確認した"
+            ],
+            "review_roles": [
+              "調査責任者又は編集責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-RES-QUANT",
+              "version": "0.1.0"
+            },
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-041",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-017",
+                "version": "0.1.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-019",
+                "version": "0.2.0"
+              },
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-002",
+                "version": "0.2.0"
+              }
+            ],
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-RES-EVIDENCE",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-RES-TRACE",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-RIGHTS",
+                "version": "0.1.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-RES-QUANT",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-RES-QUANT",
+            "version": "0.1.0",
+            "title": {
+              "ja": "数値・図表・推定結果の照合の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "調査担当者"
+            ],
+            "inputs": [
+              "本文、図表、補足データ、測定単位と解析仕様"
+            ],
+            "outputs": [
+              "数値確認記録、図表出典一覧、未再現項目"
+            ],
+            "steps": [
+              {
+                "id": "PRC-RES-QUANT-S1",
+                "instruction": "記事へ転用する数値の母数、単位、測定時点、比較群と算出方法を確認する。",
+                "expected_output": "数値確認記録、図表出典一覧、未再現項目",
+                "evidence_needed": false
+              },
+              {
+                "id": "PRC-RES-QUANT-S2",
+                "instruction": "数値と元論文の表・図・本文に対応する箇所を登録する。",
+                "expected_output": "数値確認記録、図表出典一覧、未再現項目",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-QUANT-S3",
+                "instruction": "割合、絶対差、相対変化、推定区間を区別し、必要な再計算は式と丸め規則を記録する。",
+                "expected_output": "数値確認記録、図表出典一覧、未再現項目",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-QUANT-S4",
+                "instruction": "統計的検定、有意水準、効果量、区間推定、欠測の取扱いを可能な範囲で確認する。",
+                "expected_output": "数値確認記録、図表出典一覧、未再現項目",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-QUANT-S5",
+                "instruction": "図表キャプション、軸、正規化、対数変換、画像の切抜きによる意味の変化を検討する。",
+                "expected_output": "数値確認記録、図表出典一覧、未再現項目",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-QUANT-S6",
+                "instruction": "資料だけでは再現できない項目を「未確認」として保留する。",
+                "expected_output": "数値確認記録、図表出典一覧、未再現項目",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-QUANT-S7",
+                "instruction": "数値の使用を予定する文章について、読み手が誤解し得る分母と比較基準を整理する。",
+                "expected_output": "数値確認記録、図表出典一覧、未再現項目",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "原資料に到達できないとき、資料の真正性が確認できないとき、又は版の不一致が見つかったときは、関連項目を未確認として保留し照会先を特定する。",
+              "権利又は秘密保持上の問題がある資料は外部共有・公開・外部AIへの入力を止め、担当者が許可条件を確認する。",
+              "新たな反証、研究内容の訂正、追加データが明らかになった際は、元の判断を上書きせず再調査の記録を追記する。"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-RES-QUANT",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-RES-CONTEXT",
+      "title_ja": "先行研究・異なる解釈・更新情報の検討",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-RES-CONTEXT",
+            "version": "0.1.0",
+            "title": {
+              "ja": "先行研究・異なる解釈・更新情報の検討"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "02"
+            ],
+            "inputs": [
+              "一次資料群、先行研究、レビュー、訂正通知、検討者の意見"
+            ],
+            "outputs": [
+              "研究史と論点整理、相違する主張の一覧、更新情報"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "既存知見と今回の結果の関係が明確",
+              "重要な相違や反例を検討した",
+              "資料の更新状態を確認した"
+            ],
+            "review_roles": [
+              "調査責任者又は編集責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-RES-CONTEXT",
+              "version": "0.1.0"
+            },
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-038",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-043",
+                "version": "0.1.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-020",
+                "version": "0.2.0"
+              },
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-003",
+                "version": "0.2.0"
+              }
+            ],
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-RES-SEARCH",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-RES-EVIDENCE",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-RESBIAS",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-INTEGRITY",
+                "version": "0.1.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-RES-CONTEXT",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-RES-CONTEXT",
+            "version": "0.1.0",
+            "title": {
+              "ja": "先行研究・異なる解釈・更新情報の検討の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "調査担当者"
+            ],
+            "inputs": [
+              "一次資料群、先行研究、レビュー、訂正通知、検討者の意見"
+            ],
+            "outputs": [
+              "研究史と論点整理、相違する主張の一覧、更新情報"
+            ],
+            "steps": [
+              {
+                "id": "PRC-RES-CONTEXT-S1",
+                "instruction": "当該研究が解こうとした問題の成立史、主要な先行研究、既存の制約を整理する。",
+                "expected_output": "研究史と論点整理、相違する主張の一覧、更新情報",
+                "evidence_needed": false
+              },
+              {
+                "id": "PRC-RES-CONTEXT-S2",
+                "instruction": "同じ現象に関する異なる研究デザインと異なる解釈を探す。",
+                "expected_output": "研究史と論点整理、相違する主張の一覧、更新情報",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-CONTEXT-S3",
+                "instruction": "方法、標本、用語、測定尺度、時間軸の違いを表にして比較する。",
+                "expected_output": "研究史と論点整理、相違する主張の一覧、更新情報",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-CONTEXT-S4",
+                "instruction": "出典の撤回・訂正・解説更新を再度確認し、更新の影響を評価する。",
+                "expected_output": "研究史と論点整理、相違する主張の一覧、更新情報",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-CONTEXT-S5",
+                "instruction": "エビデンスの不一致を「争点」「外挿範囲の差」「資料不足」等に分ける。",
+                "expected_output": "研究史と論点整理、相違する主張の一覧、更新情報",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-CONTEXT-S6",
+                "instruction": "読者に提示すべき不確実性と、取材で確認すべき事項を提案する。",
+                "expected_output": "研究史と論点整理、相違する主張の一覧、更新情報",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "原資料に到達できないとき、資料の真正性が確認できないとき、又は版の不一致が見つかったときは、関連項目を未確認として保留し照会先を特定する。",
+              "権利又は秘密保持上の問題がある資料は外部共有・公開・外部AIへの入力を止め、担当者が許可条件を確認する。",
+              "新たな反証、研究内容の訂正、追加データが明らかになった際は、元の判断を上書きせず再調査の記録を追記する。"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-RES-CONTEXT",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-RES-CLAIM",
+      "title_ja": "科学的主張・根拠対応表の構成と評価",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-RES-CLAIM",
+            "version": "0.1.0",
+            "title": {
+              "ja": "科学的主張・根拠対応表の構成と評価"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "02"
+            ],
+            "inputs": [
+              "出典台帳、方法要約票、数字確認記録、対立資料"
+            ],
+            "outputs": [
+              "主張・根拠対応表、留保した主張と修正案"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "主張が原資料に結びついている",
+              "根拠の支持・限定の別を記録した",
+              "暫定解釈と直接確認済み事項を区別した"
+            ],
+            "review_roles": [
+              "調査責任者又は編集責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-RES-CLAIM",
+              "version": "0.1.0"
+            },
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-017",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-041",
+                "version": "0.1.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-002",
+                "version": "0.2.0"
+              },
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-007",
+                "version": "0.1.0"
+              }
+            ],
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-RES-TRACE",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-RES-EVIDENCE",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-RESBIAS",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-INTEGRITY",
+                "version": "0.1.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-RES-CLAIM",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-RES-CLAIM",
+            "version": "0.1.0",
+            "title": {
+              "ja": "科学的主張・根拠対応表の構成と評価の実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "調査担当者"
+            ],
+            "inputs": [
+              "出典台帳、方法要約票、数字確認記録、対立資料"
+            ],
+            "outputs": [
+              "主張・根拠対応表、留保した主張と修正案"
+            ],
+            "steps": [
+              {
+                "id": "PRC-RES-CLAIM-S1",
+                "instruction": "伝えたい主要な内容を独立した検証可能な主張単位に分ける。",
+                "expected_output": "主張・根拠対応表、留保した主張と修正案",
+                "evidence_needed": false
+              },
+              {
+                "id": "PRC-RES-CLAIM-S2",
+                "instruction": "主張に観測、推定、解釈、仮説、予測、目標の区分を付す。",
+                "expected_output": "主張・根拠対応表、留保した主張と修正案",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-CLAIM-S3",
+                "instruction": "出典識別子と該当ページ・図表・データを結びつける。",
+                "expected_output": "主張・根拠対応表、留保した主張と修正案",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-CLAIM-S4",
+                "instruction": "出典が当該主張を支持、限定、反証、又は未検証のどれに相当するか評価する。",
+                "expected_output": "主張・根拠対応表、留保した主張と修正案",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-CLAIM-S5",
+                "instruction": "研究対象や方法から許される文言の範囲を明記し、誇張を避ける表現を提案する。",
+                "expected_output": "主張・根拠対応表、留保した主張と修正案",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-CLAIM-S6",
+                "instruction": "AI支援による候補と人間が原資料を照合した記録を区別する。",
+                "expected_output": "主張・根拠対応表、留保した主張と修正案",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-CLAIM-S7",
+                "instruction": "未解決の主張を先送りする際は公開予定の表現と取材質問の見直し条件を示す。",
+                "expected_output": "主張・根拠対応表、留保した主張と修正案",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "原資料に到達できないとき、資料の真正性が確認できないとき、又は版の不一致が見つかったときは、関連項目を未確認として保留し照会先を特定する。",
+              "権利又は秘密保持上の問題がある資料は外部共有・公開・外部AIへの入力を止め、担当者が許可条件を確認する。",
+              "新たな反証、研究内容の訂正、追加データが明らかになった際は、元の判断を上書きせず再調査の記録を追記する。"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-RES-CLAIM",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-RES-HANDOFF",
+      "title_ja": "未解決事項・取材質問・調査成果の引継ぎ",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-RES-HANDOFF",
+            "version": "0.1.0",
+            "title": {
+              "ja": "未解決事項・取材質問・調査成果の引継ぎ"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "02"
+            ],
+            "inputs": [
+              "調査計画、資料台帳、主張対応表、未確認事項、編集企画"
+            ],
+            "outputs": [
+              "調査引継ぎ記録、取材質問候補、要追加検証一覧"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "成果と未確認事項の両方を引き継いだ",
+              "再調査・照会の担当を決めた",
+              "引継ぎ判断と公開承認の区別が記録された"
+            ],
+            "review_roles": [
+              "調査責任者又は編集責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-RES-HANDOFF",
+              "version": "0.1.0"
+            },
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-043",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-016",
+                "version": "0.1.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-020",
+                "version": "0.2.0"
+              },
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-008",
+                "version": "0.1.0"
+              }
+            ],
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-RES-HANDOFF",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-RES-PROVENANCE",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETH-RIGHTS",
+                "version": "0.1.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-RES-HANDOFF",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-RES-HANDOFF",
+            "version": "0.1.0",
+            "title": {
+              "ja": "未解決事項・取材質問・調査成果の引継ぎの実施手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "調査担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "調査担当者"
+            ],
+            "inputs": [
+              "調査計画、資料台帳、主張対応表、未確認事項、編集企画"
+            ],
+            "outputs": [
+              "調査引継ぎ記録、取材質問候補、要追加検証一覧"
+            ],
+            "steps": [
+              {
+                "id": "PRC-RES-HANDOFF-S1",
+                "instruction": "調査の問いに対して直接確認できた範囲と未解決の範囲を整理する。",
+                "expected_output": "調査引継ぎ記録、取材質問候補、要追加検証一覧",
+                "evidence_needed": false
+              },
+              {
+                "id": "PRC-RES-HANDOFF-S2",
+                "instruction": "資料台帳、引用箇所、方法要約、数値確認、異説・更新情報をまとめて引き渡す。",
+                "expected_output": "調査引継ぎ記録、取材質問候補、要追加検証一覧",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-HANDOFF-S3",
+                "instruction": "次の取材で確認すべき質問を「科学的内容」「方法」「制約」「公開条件」に分類する。",
+                "expected_output": "調査引継ぎ記録、取材質問候補、要追加検証一覧",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-HANDOFF-S4",
+                "instruction": "権利、機密、個人情報、AI入力の制約を資料単位で記録する。",
+                "expected_output": "調査引継ぎ記録、取材質問候補、要追加検証一覧",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-HANDOFF-S5",
+                "instruction": "資料不足、解釈不一致、期限未達、重要な訂正情報がある場合の差戻し経路を明確にする。",
+                "expected_output": "調査引継ぎ記録、取材質問候補、要追加検証一覧",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-HANDOFF-S6",
+                "instruction": "編集責任者が引継ぎ条件を判断し、未完了の課題に担当者と期限を付す。",
+                "expected_output": "調査引継ぎ記録、取材質問候補、要追加検証一覧",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-RES-HANDOFF-S7",
+                "instruction": "後続の取材や校閲により必要となった再調査を追跡できる状態にする。",
+                "expected_output": "調査引継ぎ記録、取材質問候補、要追加検証一覧",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "原資料に到達できないとき、資料の真正性が確認できないとき、又は版の不一致が見つかったときは、関連項目を未確認として保留し照会先を特定する。",
+              "権利又は秘密保持上の問題がある資料は外部共有・公開・外部AIへの入力を止め、担当者が許可条件を確認する。",
+              "新たな反証、研究内容の訂正、追加データが明らかになった際は、元の判断を上書きせず再調査の記録を追記する。"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-RES-HANDOFF",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-RES-CHECK",
+      "title_ja": "資料品質のチェックリスト",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "以下のチェックリストは作業を確認するための共通定義である。各項目の判定、関連資料の参照先、担当者、再確認日およびレビュー結果は個別の ChecklistRun に記録する。判断理由を欠く「適合」は科学的な根拠の代替にならない。"
+        },
+        {
+          "kind": "checklist_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TPL-CHK-018",
+            "kind": "checklist",
+            "slug": "source_selection",
+            "title_ja": "資料選定チェックリスト",
+            "version": "0.2.0",
+            "lifecycle": "draft",
+            "status": "structural_template",
+            "priority": "P0",
+            "applicable_pipeline_stages": [
+              "02"
+            ],
+            "origin": "independent_proposal",
+            "authority_status": "unapproved",
+            "source_catalog": "templates/catalog.json",
+            "sections": [
+              {
+                "id": "TPL-CHK-018-S1",
+                "heading_ja": "確認項目",
+                "items": [
+                  {
+                    "id": "TPL-CHK-018-I001",
+                    "criterion_ja": "調査目的と検索対象が明記されている",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-018-I002",
+                    "criterion_ja": "検索したデータベース・サイトと検索日が記録されている",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-018-I003",
+                    "criterion_ja": "検索式・検索語・言語の条件が保存されている",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-018-I004",
+                    "criterion_ja": "候補資料の発行主体と識別子が特定されている",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-018-I005",
+                    "criterion_ja": "一次資料への到達可能性を評価した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-018-I006",
+                    "criterion_ja": "資料の包含・除外理由が記録されている",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-018-I007",
+                    "criterion_ja": "異なる結果や解釈の探索を検討した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-018-I008",
+                    "criterion_ja": "収集の限界と再探索条件が記載されている",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  }
+                ]
+              },
+              {
+                "id": "TPL-CHK-018-S2",
+                "heading_ja": "点検結果の記録",
+                "fields": [
+                  {
+                    "id": "TPL-CHK-018-F001",
+                    "label_ja": "対象案件・対象版",
+                    "type": "short_text",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-018-F002",
+                    "label_ja": "担当者と点検日",
+                    "type": "date",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-018-F003",
+                    "label_ja": "未解決事項と対応",
+                    "type": "long_text",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-018-F004",
+                    "label_ja": "確認に用いた資料ID",
+                    "type": "table",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+                    "columns": [
+                      "対象・項目",
+                      "内容・参照",
+                      "担当・状態",
+                      "備考"
+                    ],
+                    "min_rows": 2
+                  }
+                ]
+              }
+            ],
+            "relationships": {
+              "related_task_ids": [],
+              "knowledge_ids": []
+            },
+            "rendering": {
+              "profile": "formal_japanese_mincho"
+            },
+            "notes_ja": "調査担当者向けの試案。各判断は資料・版・原典箇所を残して記録し、確認済みという状態だけで科学的又は公開上の承認とはしない。",
+            "workflow_id": "editorial-eight-stage"
+          },
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-018",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "checklist_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TPL-CHK-003",
+            "kind": "checklist",
+            "slug": "source_provenance",
+            "title_ja": "出典・資料来歴確認チェックリスト",
+            "version": "0.2.0",
+            "lifecycle": "draft",
+            "status": "structural_template",
+            "priority": "P0",
+            "applicable_pipeline_stages": [
+              "02",
+              "03",
+              "04",
+              "05",
+              "06",
+              "08"
+            ],
+            "origin": "independent_proposal",
+            "authority_status": "unapproved",
+            "source_catalog": "templates/catalog.json",
+            "sections": [
+              {
+                "id": "TPL-CHK-003-S1",
+                "heading_ja": "確認項目",
+                "items": [
+                  {
+                    "id": "TPL-CHK-003-I001",
+                    "criterion_ja": "資料の著者・題名・発行機関が記録されている",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-003-I002",
+                    "criterion_ja": "DOI等の識別子と直接参照先が確認されている",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-003-I003",
+                    "criterion_ja": "取得日・発表日・版を区別して記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-003-I004",
+                    "criterion_ja": "一次資料と二次資料を区分した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-003-I005",
+                    "criterion_ja": "プレプリント・修正版・掲載版の関係を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-003-I006",
+                    "criterion_ja": "訂正・撤回・更新情報を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-003-I007",
+                    "criterion_ja": "引用位置・図表番号・ページを特定した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-003-I008",
+                    "criterion_ja": "取得・保存・転載の権限や制限を記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  }
+                ]
+              },
+              {
+                "id": "TPL-CHK-003-S2",
+                "heading_ja": "点検結果の記録",
+                "fields": [
+                  {
+                    "id": "TPL-CHK-003-F001",
+                    "label_ja": "対象案件・対象版",
+                    "type": "short_text",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-003-F002",
+                    "label_ja": "担当者と点検日",
+                    "type": "date",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-003-F003",
+                    "label_ja": "未解決事項と対応",
+                    "type": "long_text",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-003-F004",
+                    "label_ja": "確認に用いた資料ID",
+                    "type": "table",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+                    "columns": [
+                      "対象・項目",
+                      "内容・参照",
+                      "担当・状態",
+                      "備考"
+                    ],
+                    "min_rows": 2
+                  }
+                ]
+              }
+            ],
+            "relationships": {
+              "related_task_ids": [],
+              "knowledge_ids": []
+            },
+            "rendering": {
+              "profile": "formal_japanese_mincho"
+            },
+            "notes_ja": "調査担当者向けの試案。各判断は資料・版・原典箇所を残して記録し、確認済みという状態だけで科学的又は公開上の承認とはしない。",
+            "workflow_id": "editorial-eight-stage"
+          },
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-003",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "checklist_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TPL-CHK-019",
+            "kind": "checklist",
+            "slug": "study_design_interpretation",
+            "title_ja": "研究方法・結論対応確認チェックリスト",
+            "version": "0.2.0",
+            "lifecycle": "draft",
+            "status": "structural_template",
+            "priority": "P0",
+            "applicable_pipeline_stages": [
+              "02"
+            ],
+            "origin": "independent_proposal",
+            "authority_status": "unapproved",
+            "source_catalog": "templates/catalog.json",
+            "sections": [
+              {
+                "id": "TPL-CHK-019-S1",
+                "heading_ja": "確認項目",
+                "items": [
+                  {
+                    "id": "TPL-CHK-019-I001",
+                    "criterion_ja": "研究目的と主要な仮説を把握した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-019-I002",
+                    "criterion_ja": "研究デザインと比較条件を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-019-I003",
+                    "criterion_ja": "標本・対象集団と除外条件を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-019-I004",
+                    "criterion_ja": "主要な測定方法・解析方法を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-019-I005",
+                    "criterion_ja": "数値の単位・母数・比較基準を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-019-I006",
+                    "criterion_ja": "相関と因果推論の根拠を区別した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-019-I007",
+                    "criterion_ja": "一般化可能な範囲と限界を記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-019-I008",
+                    "criterion_ja": "不明点と追加照会先を明示した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  }
+                ]
+              },
+              {
+                "id": "TPL-CHK-019-S2",
+                "heading_ja": "点検結果の記録",
+                "fields": [
+                  {
+                    "id": "TPL-CHK-019-F001",
+                    "label_ja": "対象案件・対象版",
+                    "type": "short_text",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-019-F002",
+                    "label_ja": "担当者と点検日",
+                    "type": "date",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-019-F003",
+                    "label_ja": "未解決事項と対応",
+                    "type": "long_text",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-019-F004",
+                    "label_ja": "確認に用いた資料ID",
+                    "type": "table",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+                    "columns": [
+                      "対象・項目",
+                      "内容・参照",
+                      "担当・状態",
+                      "備考"
+                    ],
+                    "min_rows": 2
+                  }
+                ]
+              }
+            ],
+            "relationships": {
+              "related_task_ids": [],
+              "knowledge_ids": []
+            },
+            "rendering": {
+              "profile": "formal_japanese_mincho"
+            },
+            "notes_ja": "調査担当者向けの試案。各判断は資料・版・原典箇所を残して記録し、確認済みという状態だけで科学的又は公開上の承認とはしない。",
+            "workflow_id": "editorial-eight-stage"
+          },
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-019",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "checklist_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TPL-CHK-002",
+            "kind": "checklist",
+            "slug": "scientific_evidence",
+            "title_ja": "科学的事実・根拠確認チェックリスト",
+            "version": "0.2.0",
+            "lifecycle": "draft",
+            "status": "structural_template",
+            "priority": "P0",
+            "applicable_pipeline_stages": [
+              "02",
+              "03",
+              "04",
+              "05",
+              "06",
+              "08"
+            ],
+            "origin": "independent_proposal",
+            "authority_status": "unapproved",
+            "source_catalog": "templates/catalog.json",
+            "sections": [
+              {
+                "id": "TPL-CHK-002-S1",
+                "heading_ja": "確認項目",
+                "items": [
+                  {
+                    "id": "TPL-CHK-002-I001",
+                    "criterion_ja": "主張ごとに原資料識別子が記録されている",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-002-I002",
+                    "criterion_ja": "資料が当該主張を支持する範囲を確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-002-I003",
+                    "criterion_ja": "研究対象・方法・観測時点が整合している",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-002-I004",
+                    "criterion_ja": "数値の母数・単位・区間を原典と照合した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-002-I005",
+                    "criterion_ja": "観測・推定・解釈・仮説・将来目標を区別した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-002-I006",
+                    "criterion_ja": "相関関係と因果的な主張を区別した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-002-I007",
+                    "criterion_ja": "相違する資料・訂正・撤回の確認をした",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-002-I008",
+                    "criterion_ja": "未確認の主張には保留理由と担当を記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  }
+                ]
+              },
+              {
+                "id": "TPL-CHK-002-S2",
+                "heading_ja": "点検結果の記録",
+                "fields": [
+                  {
+                    "id": "TPL-CHK-002-F001",
+                    "label_ja": "対象案件・対象版",
+                    "type": "short_text",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-002-F002",
+                    "label_ja": "担当者と点検日",
+                    "type": "date",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-002-F003",
+                    "label_ja": "未解決事項と対応",
+                    "type": "long_text",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-002-F004",
+                    "label_ja": "確認に用いた資料ID",
+                    "type": "table",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+                    "columns": [
+                      "対象・項目",
+                      "内容・参照",
+                      "担当・状態",
+                      "備考"
+                    ],
+                    "min_rows": 2
+                  }
+                ]
+              }
+            ],
+            "relationships": {
+              "related_task_ids": [],
+              "knowledge_ids": []
+            },
+            "rendering": {
+              "profile": "formal_japanese_mincho"
+            },
+            "notes_ja": "調査担当者向けの試案。各判断は資料・版・原典箇所を残して記録し、確認済みという状態だけで科学的又は公開上の承認とはしない。",
+            "workflow_id": "editorial-eight-stage"
+          },
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-002",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "checklist_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TPL-CHK-020",
+            "kind": "checklist",
+            "slug": "research_gaps",
+            "title_ja": "未確認事項整理チェックリスト",
+            "version": "0.2.0",
+            "lifecycle": "draft",
+            "status": "structural_template",
+            "priority": "P0",
+            "applicable_pipeline_stages": [
+              "02"
+            ],
+            "origin": "independent_proposal",
+            "authority_status": "unapproved",
+            "source_catalog": "templates/catalog.json",
+            "sections": [
+              {
+                "id": "TPL-CHK-020-S1",
+                "heading_ja": "確認項目",
+                "items": [
+                  {
+                    "id": "TPL-CHK-020-I001",
+                    "criterion_ja": "未確認事項に一意の識別子を付した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-020-I002",
+                    "criterion_ja": "問題の種類と影響する主張を記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-020-I003",
+                    "criterion_ja": "追加資料・専門家照会の必要性を整理した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-020-I004",
+                    "criterion_ja": "公開予定の表現に関する影響を評価した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-020-I005",
+                    "criterion_ja": "担当者と次の確認条件を割り当てた",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-020-I006",
+                    "criterion_ja": "保留と暫定採用の判断を区別した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-020-I007",
+                    "criterion_ja": "更新・撤回の再確認条件を設定した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-020-I008",
+                    "criterion_ja": "引継ぎの責任者と判断記録を残した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+                    "human_review": true
+                  }
+                ]
+              },
+              {
+                "id": "TPL-CHK-020-S2",
+                "heading_ja": "点検結果の記録",
+                "fields": [
+                  {
+                    "id": "TPL-CHK-020-F001",
+                    "label_ja": "対象案件・対象版",
+                    "type": "short_text",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-020-F002",
+                    "label_ja": "担当者と点検日",
+                    "type": "date",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-020-F003",
+                    "label_ja": "未解決事項と対応",
+                    "type": "long_text",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-020-F004",
+                    "label_ja": "確認に用いた資料ID",
+                    "type": "table",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+                    "columns": [
+                      "対象・項目",
+                      "内容・参照",
+                      "担当・状態",
+                      "備考"
+                    ],
+                    "min_rows": 2
+                  }
+                ]
+              }
+            ],
+            "relationships": {
+              "related_task_ids": [],
+              "knowledge_ids": []
+            },
+            "rendering": {
+              "profile": "formal_japanese_mincho"
+            },
+            "notes_ja": "調査担当者向けの試案。各判断は資料・版・原典箇所を残して記録し、確認済みという状態だけで科学的又は公開上の承認とはしない。",
+            "workflow_id": "editorial-eight-stage"
+          },
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-020",
+            "version": "0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-RES-HANDOVER",
+      "title_ja": "判断ゲートと次段階への引継ぎ",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "次段階への引継ぎ時には、少なくとも資料台帳、主張対応表、方法と数値の確認記録、異なる結果・解釈、権利上の制約、未確認事項、専門家へ確認する質問をそろえる。省略した場合は適用外判断とその理由を残す。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "担当責任者は資料の範囲と未解決事項を確認し、追加調査の要否を記録する。この判断は研究成果の科学的な保証又は公開承認を意味しない。"
+        }
+      ]
+    },
+    {
+      "id": "CH-RES-REFS",
+      "title_ja": "参考資料・適用上の留意",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "本書の設計では、日本心理学会による研究成果の科学コミュニケーションに関する指針、国立国会図書館によるウェブ資料保存の説明、Crossref と COPE による研究記録の更新に関する説明、文部科学省と文化庁の公表資料を参照した。各資料の適用対象、制度上の位置づけ、公開日時及び個別判断への適用可能性は区別する。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "外部参照先と確認事項の一覧は content/operational/stage_02/REFERENCES.md に記録した。外部の専門ガイダンスを本OSがそのまま採用したと扱うことなく、組織の規程・法令の確認と人による判断を継続する。"
+        }
+      ]
+    }
+  ]
+}

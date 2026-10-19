@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-PUB-CHANNEL",
+  "version": "0.1.0",
+  "title": {
+    "ja": "媒体と公開目的に応じた配信設計の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "配信企画担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "配信企画担当者"
+  ],
+  "inputs": [
+    "読者分析",
+    "承認媒体範囲",
+    "制作素材",
+    "利用条件"
+  ],
+  "outputs": [
+    "媒体別配信計画・素材対応表"
+  ],
+  "steps": [
+    {
+      "id": "PRC-PUB-CHANNEL-S1",
+      "instruction": "媒体ごとに受け手、利用場面、到達目標と誘導先を明示する",
+      "expected_output": "媒体別目的票",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-CHANNEL-S2",
+      "instruction": "ウェブ・SNS・音声・動画・文書の利用条件及び表現上の制約を整理する",
+      "expected_output": "媒体別要件表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-CHANNEL-S3",
+      "instruction": "短縮表現と原稿の主張・条件・不確実性の対応関係を確認する",
+      "expected_output": "表現対応一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-CHANNEL-S4",
+      "instruction": "各媒体に代替アクセス経路、出典、訂正窓口を割り当てる",
+      "expected_output": "誘導及びアクセス設計",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-CHANNEL-S5",
+      "instruction": "準備済み素材の担当者・期限・再審査条件を設定する",
+      "expected_output": "媒体別担当表",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "媒体固有の編集が承認済み主張を変更するときはStage 4–6へ差し戻す"
+  ]
+}

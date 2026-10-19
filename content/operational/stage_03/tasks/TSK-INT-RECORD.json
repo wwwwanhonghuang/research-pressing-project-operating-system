@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-INT-RECORD",
+  "version": "0.1.0",
+  "title": {
+    "ja": "原記録保全・文字起こしと情報分類"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "記録担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "03"
+  ],
+  "inputs": [
+    "音声・映像・メモ",
+    "取得時の説明・許諾記録"
+  ],
+  "outputs": [
+    "原記録台帳",
+    "文字起こし",
+    "閲覧・利用制限",
+    "修正履歴"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "手順で定めた7項目を確認し、未完了の項目と理由を記録した",
+    "関連する発言・資料・許諾・例外について追跡可能な参照先を登録した",
+    "責任者が実施結果・未確認事項・次の対応を確認した"
+  ],
+  "review_roles": [
+    "編集責任者又は取材責任者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-INT-RECORD",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-049",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-021",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-019",
+      "version": "0.1.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-024",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-009",
+      "version": "0.1.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-INT-TRACE",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-INT-SECURITY",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-PRIVATE",
+      "version": "0.1.0"
+    }
+  ]
+}

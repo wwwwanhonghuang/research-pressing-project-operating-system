@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-EDT-PROOFREAD",
+  "version": "0.1.0",
+  "title": {
+    "ja": "校正・ゲラと組版の照合の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "校正担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "校正担当者"
+  ],
+  "inputs": [
+    "版固定済みゲラ・配信プレビュー",
+    "修正履歴",
+    "原稿と用語表"
+  ],
+  "outputs": [
+    "校正指示書",
+    "反映済み再校記録"
+  ],
+  "steps": [
+    {
+      "id": "PRC-EDT-PROOFREAD-S1",
+      "instruction": "校正対象の原稿版・ゲラ版・媒体・日時を固定する",
+      "expected_output": "校正管理票",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-EDT-PROOFREAD-S2",
+      "instruction": "誤字脱字、漢字仮名、句読点、表記揺れと見出し階層を照合する",
+      "expected_output": "校正差分",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-PROOFREAD-S3",
+      "instruction": "数字、単位、固有名詞と表・脚注・図番号を視認確認する",
+      "expected_output": "数値と名称の校正票",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-PROOFREAD-S4",
+      "instruction": "リンク、ルビ、代替テキスト、字幕、文字化け、図の欠落を確認する",
+      "expected_output": "掲載ゲラ検査記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-PROOFREAD-S5",
+      "instruction": "指示箇所に原稿位置、修正候補、責任者を付す",
+      "expected_output": "校正指示票",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-PROOFREAD-S6",
+      "instruction": "修正後の再校で反映、意図しない変更、関連箇所を追跡する",
+      "expected_output": "再校結果",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-PROOFREAD-S7",
+      "instruction": "残余の表示不具合を媒体側担当者へ引き継ぐ",
+      "expected_output": "残課題記録",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "校正で科学的真偽が確定したと推定しない",
+    "版差分が不明瞭な場合は初校に戻る"
+  ]
+}

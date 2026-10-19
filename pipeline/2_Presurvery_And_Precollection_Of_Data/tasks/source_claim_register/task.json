@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "id": "source_claim_register",
+  "version": "0.1.0",
+  "stage_id": "02",
+  "title": "原資料・主張対応表の作成",
+  "competencies": [
+    "1.1"
+  ],
+  "inputs": [
+    "公開研究成果資料",
+    "記事企画の目的・対象読者"
+  ],
+  "outputs": [
+    "主張・根拠対応表",
+    "追加確認事項一覧"
+  ],
+  "procedure": "procedure.json",
+  "checklist": "checklist.json",
+  "standard_refs": [
+    "STD-SOURCE-TRACEABILITY"
+  ],
+  "ethics_refs": [
+    "ETH-REPRESENTATION"
+  ],
+  "ai_assist_refs": [],
+  "review_roles": [
+    "editor",
+    "scientific_reviewer"
+  ],
+  "requires_human_approval": false,
+  "acceptance_criteria": [
+    "主要な科学的主張に根拠への参照がある",
+    "推論・予測・不確実性が明示されている"
+  ]
+}

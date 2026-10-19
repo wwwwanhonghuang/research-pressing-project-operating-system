@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-ARC-INTEGRITY",
+  "version": "0.1.0",
+  "title": {
+    "ja": "公開記録の真正性と訂正の説明責任"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "訂正・評価・保存の設計と専門確認担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-COPE",
+      "locator": "https://doi.org/10.24318/cope.2019.1.4",
+      "accessed_on": "2026-10-19",
+      "verification_note": "COPE Retraction Guidelines、2025年改訂。学術雑誌の撤回指針を参照し、一般のウェブ記事への法的適用は想定しない。"
+    },
+    {
+      "source_id": "SRC-CROSSREF",
+      "locator": "https://www.crossref.org/documentation/principles-practices/best-practices/versioning",
+      "accessed_on": "2026-10-19",
+      "verification_note": "Crossrefによる学術文献の版・訂正・撤回記録の指針。一般の広報物にDOI発行を義務付けるものではない。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "08"
+    ],
+    "audiences": [
+      "編集・訂正担当者",
+      "科学的確認担当者",
+      "保存担当者",
+      "評価担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-ARC-INTEGRITY-H1",
+      "kind": "heading",
+      "text": "対象と目的",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-ARC-INTEGRITY-P1",
+      "kind": "paragraph",
+      "text": "誤りを確認した際は読者が改訂の存在と意味を理解できるように説明する。"
+    },
+    {
+      "id": "KNW-ETH-ARC-INTEGRITY-H2",
+      "kind": "heading",
+      "text": "記録と実施",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-ARC-INTEGRITY-P2",
+      "kind": "paragraph",
+      "text": "撤回や訂正の理由を学術的誠実性と当事者の権利の双方から検討する。"
+    },
+    {
+      "id": "KNW-ETH-ARC-INTEGRITY-H3",
+      "kind": "heading",
+      "text": "解釈と判断の境界",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-ARC-INTEGRITY-P3",
+      "kind": "paragraph",
+      "text": "訂正・撤回手続きを個人の制裁や名誉毀損の道具としない。"
+    }
+  ]
+}

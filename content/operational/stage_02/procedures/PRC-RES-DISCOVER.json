@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-RES-DISCOVER",
+  "version": "0.1.0",
+  "title": {
+    "ja": "候補資料の探索と収集範囲の評価の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "調査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "調査担当者"
+  ],
+  "inputs": [
+    "調査計画書、検索語一覧、関係する分野の資料群"
+  ],
+  "outputs": [
+    "検索履歴、候補資料一覧、除外理由、追加検索候補"
+  ],
+  "steps": [
+    {
+      "id": "PRC-RES-DISCOVER-S1",
+      "instruction": "検索対象を一次資料・関連するレビュー・制度資料・解説記事等に分ける。",
+      "expected_output": "検索履歴、候補資料一覧、除外理由、追加検索候補",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-RES-DISCOVER-S2",
+      "instruction": "データベースや公的サイトごとの検索語、実行日、検索結果の範囲を保存する。",
+      "expected_output": "検索履歴、候補資料一覧、除外理由、追加検索候補",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-RES-DISCOVER-S3",
+      "instruction": "引用文献と被引用文献の追跡、研究者名・研究プロジェクト名による補完検索を行う。",
+      "expected_output": "検索履歴、候補資料一覧、除外理由、追加検索候補",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-RES-DISCOVER-S4",
+      "instruction": "資料候補の発行時期、研究対象、原典への到達可能性を整理する。",
+      "expected_output": "検索履歴、候補資料一覧、除外理由、追加検索候補",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-RES-DISCOVER-S5",
+      "instruction": "肯定的な結果だけでなく否定的結果、反例、異なる方法を用いた研究を探索する。",
+      "expected_output": "検索履歴、候補資料一覧、除外理由、追加検索候補",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-RES-DISCOVER-S6",
+      "instruction": "除外理由と探索の限界を記録し、検索計画の追加・修正を判断する。",
+      "expected_output": "検索履歴、候補資料一覧、除外理由、追加検索候補",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "原資料に到達できないとき、資料の真正性が確認できないとき、又は版の不一致が見つかったときは、関連項目を未確認として保留し照会先を特定する。",
+    "権利又は秘密保持上の問題がある資料は外部共有・公開・外部AIへの入力を止め、担当者が許可条件を確認する。",
+    "新たな反証、研究内容の訂正、追加データが明らかになった際は、元の判断を上書きせず再調査の記録を追記する。"
+  ]
+}

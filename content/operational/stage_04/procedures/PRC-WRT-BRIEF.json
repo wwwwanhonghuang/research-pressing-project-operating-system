@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-WRT-BRIEF",
+  "version": "0.1.0",
+  "title": {
+    "ja": "取材・調査成果の受領と編集ブリーフの確定の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集責任者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "汎用的な編集制作の独立設計案。媒体の役割、権利、組織規程、適用される法令は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "編集責任者"
+  ],
+  "inputs": [
+    "Stage 1企画書",
+    "Stage 2資料台帳・主張対応表",
+    "Stage 3取材記録・許諾条件"
+  ],
+  "outputs": [
+    "編集ブリーフ",
+    "利用可能素材一覧",
+    "未決リスクの台帳"
+  ],
+  "steps": [
+    {
+      "id": "PRC-WRT-BRIEF-S1",
+      "instruction": "企画目的、対象読者、掲載媒体、原稿の役割と分量を再確認する",
+      "expected_output": "編集ブリーフ",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-WRT-BRIEF-S2",
+      "instruction": "前工程の資料・取材記録の存在、版、使用条件と担当者を確認する",
+      "expected_output": "利用可能素材一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-BRIEF-S3",
+      "instruction": "結果、方法、解釈、予測、研究目標の類型別に使用候補を抽出する",
+      "expected_output": "未決リスクの台帳",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-BRIEF-S4",
+      "instruction": "中心的な問いと社会的文脈、研究上の論点、読者の既有知識を記す",
+      "expected_output": "編集ブリーフ",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-BRIEF-S5",
+      "instruction": "主要な未確認事項と権利上の未解決事項を制作対象から暫定的に除外する",
+      "expected_output": "利用可能素材一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-BRIEF-S6",
+      "instruction": "執筆担当、図表担当、確認窓口、締切と変更経路を整理する",
+      "expected_output": "未決リスクの台帳",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-BRIEF-S7",
+      "instruction": "編集責任者が使用可能な根拠、保留素材、構成作業の開始条件を記録する",
+      "expected_output": "編集ブリーフ",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "調査成果が不足する場合はStage 2に補足を依頼する",
+    "原記録・発言の権利条件が不明な場合はStage 3で追加確認する"
+  ]
+}

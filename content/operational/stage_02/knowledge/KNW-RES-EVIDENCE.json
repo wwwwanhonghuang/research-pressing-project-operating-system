@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-RES-EVIDENCE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "研究方法・結論・不確実性の対応"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学編集・調査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA-2026",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "プレスリリースにおける文献明示、誇張防止、方法・統計・利益相反等の専門的ガイダンス。記事全般の法的義務を設定するものではない。"
+    },
+    {
+      "source_id": "SRC-COREF-2026",
+      "locator": "https://www.crossref.org/crossmark/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "論文の訂正・撤回等の更新状態を確認するための参考。登録状態は完全性を保証しない。"
+    },
+    {
+      "source_id": "SRC-COPE-2025",
+      "locator": "https://doi.org/10.24318/cope.2019.1.4",
+      "accessed_on": "2026-10-19",
+      "verification_note": "撤回と学術記録の訂正についての編集上の専門的指針。特定論文の健全性判断を代行しない。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "02"
+    ],
+    "audiences": [
+      "科学コミュニケーション担当者",
+      "調査担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-RES-EVIDENCE-B01",
+      "kind": "heading",
+      "text": "方法の把握",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-EVIDENCE-B02",
+      "kind": "paragraph",
+      "text": "研究対象、標本、比較群、データ取得法、解析法、追跡期間、事前登録、欠測・除外条件を原資料から確認し、記述可能な範囲を特定する。"
+    },
+    {
+      "id": "KNW-RES-EVIDENCE-B03",
+      "kind": "heading",
+      "text": "解釈階層",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-EVIDENCE-B04",
+      "kind": "paragraph",
+      "text": "測定・観測値、推定結果、研究者の解釈、仮説、一般向けの応用見通しを区別する。因果的主張については研究デザインと識別上の仮定を明記する。"
+    },
+    {
+      "id": "KNW-RES-EVIDENCE-B05",
+      "kind": "heading",
+      "text": "定量表現",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-EVIDENCE-B06",
+      "kind": "paragraph",
+      "text": "割合の母数、絶対数、単位、比較基準、期間、効果量、区間推定、欠測値などを照合する。統計的有意性だけで効果の実務的重要性を断定しない。"
+    },
+    {
+      "id": "KNW-RES-EVIDENCE-B07",
+      "kind": "heading",
+      "text": "一般化",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-EVIDENCE-B08",
+      "kind": "paragraph",
+      "text": "対象集団・環境・尺度・追跡期間に照らして、どこまで説明できるかを記録する。前臨床研究や予測モデルの知見を、直ちに臨床的効用と同一視しない。"
+    },
+    {
+      "id": "KNW-RES-EVIDENCE-B09",
+      "kind": "heading",
+      "text": "更新時の再確認",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-EVIDENCE-B10",
+      "kind": "paragraph",
+      "text": "原資料の訂正、撤回、修正や新しい追試が見つかった場合、関連主張の検証状態を保留又は要再検討へ変更する。"
+    },
+    {
+      "id": "KNW-RES-EVIDENCE-B11",
+      "kind": "paragraph",
+      "text": "参考：日本心理学会 科学コミュニケーション・ガイドライン（https://psych.or.jp/jpamember/press_release_guidelines/）、Crossref Crossmark（https://www.crossref.org/crossmark/）、COPE Retraction Guidelines (reviewed August 2025)（https://doi.org/10.24318/cope.2019.1.4）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。"
+    }
+  ]
+}

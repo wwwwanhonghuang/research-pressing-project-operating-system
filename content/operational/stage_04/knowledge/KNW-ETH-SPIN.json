@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-SPIN",
+  "version": "0.1.0",
+  "title": {
+    "ja": "強調・誇張と誤認を生む編集"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "汎用的な編集制作の独立設計案。媒体の役割、権利、組織規程、適用される法令は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA-SCI-COMM",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果発表に関する日本心理学会の専門指針。因果と相関、統計量、引用、制約、過度の一般化の取扱い。"
+    },
+    {
+      "source_id": "SRC-PRESS-CODE",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本新聞協会の新聞倫理綱領。独立報道の職業倫理を示す。研究広報の承認権限を決めるものではない。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "04"
+    ],
+    "audiences": [
+      "編集担当者",
+      "科学ライター",
+      "制作担当者",
+      "レビュー担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-SPIN-H01",
+      "kind": "heading",
+      "text": "確度と期待",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-SPIN-P01",
+      "kind": "paragraph",
+      "text": "センセーショナルな見出し、将来の治療・社会応用への過大な期待、検証前の技術を確立した成果として示す文章の影響を評価する。"
+    },
+    {
+      "id": "KNW-ETH-SPIN-H02",
+      "kind": "heading",
+      "text": "省略による偏り",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-SPIN-P02",
+      "kind": "paragraph",
+      "text": "数字や成功事例を選んで提示する際、対象外の結果、限定条件、失敗や相反する報告の省略が結論を変えるか確認する。"
+    },
+    {
+      "id": "KNW-ETH-SPIN-H03",
+      "kind": "heading",
+      "text": "公共への責任",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-SPIN-P03",
+      "kind": "paragraph",
+      "text": "読みやすい文章と正確性を同時に追求し、短縮によって誤認が避けられない場合は追加説明への明瞭な経路を提供する。"
+    }
+  ]
+}

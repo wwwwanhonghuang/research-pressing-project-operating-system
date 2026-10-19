@@ -1,0 +1,528 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/operations-os/model/v1/task_run.schema.json",
+  "title": "Operations OS task_run canonical v1",
+  "description": "Independent prototype; no institutional authorization is asserted.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^TRUN-[A-Z0-9]+(?:-[A-Z0-9]+)*$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "title": {
+      "type": "object",
+      "properties": {
+        "ja": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "ja"
+      ],
+      "additionalProperties": false
+    },
+    "lifecycle": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "in_review",
+        "validated_for_use",
+        "deprecated",
+        "withdrawn"
+      ]
+    },
+    "responsible_role": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authority": {
+      "type": "object",
+      "properties": {
+        "origin": {
+          "type": "string",
+          "enum": [
+            "independent_proposal",
+            "external_source",
+            "institutional_adopted"
+          ]
+        },
+        "normative_class": {
+          "type": "string",
+          "enum": [
+            "law",
+            "regulation",
+            "institutional_policy",
+            "professional_guidance",
+            "operational_proposal",
+            "informational"
+          ]
+        },
+        "institutional_approval": {
+          "type": "string",
+          "enum": [
+            "none",
+            "unverified",
+            "pending",
+            "approved",
+            "rejected"
+          ]
+        },
+        "jurisdiction": {
+          "type": "string",
+          "minLength": 1
+        },
+        "verified_on": {
+          "type": "string",
+          "format": "date"
+        },
+        "verified_by": {
+          "type": "string",
+          "minLength": 1
+        },
+        "applicability_note": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "origin",
+        "normative_class",
+        "institutional_approval"
+      ],
+      "additionalProperties": false
+    },
+    "access": {
+      "type": "object",
+      "properties": {
+        "classification": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "restricted"
+          ]
+        },
+        "may_share_with_external_ai": {
+          "type": "boolean"
+        },
+        "embargo_until": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "classification",
+        "may_share_with_external_ai"
+      ],
+      "additionalProperties": false
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "pattern": "^[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)+$"
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "accessed_on": {
+            "type": "string",
+            "format": "date"
+          },
+          "verification_note": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "source_id"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "relation": {
+            "type": "string",
+            "enum": [
+              "applies_to",
+              "governed_by",
+              "implements",
+              "requires",
+              "uses",
+              "supports",
+              "derived_from",
+              "supersedes",
+              "presents",
+              "assesses",
+              "produces"
+            ]
+          },
+          "target": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "knowledge_entry",
+                  "procedure_definition",
+                  "task_definition",
+                  "document_template",
+                  "checklist_definition",
+                  "document_instance",
+                  "checklist_run",
+                  "task_run",
+                  "review_decision",
+                  "publication_recipe",
+                  "media_asset",
+                  "rendered_artifact",
+                  "source_record",
+                  "claim_record"
+                ]
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)+$"
+              },
+              "version": {
+                "type": "string",
+                "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+              },
+              "anchor": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "kind",
+              "id",
+              "version"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "relation",
+          "target"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "project_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "definition_ref": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "knowledge_entry",
+            "procedure_definition",
+            "task_definition",
+            "document_template",
+            "checklist_definition",
+            "document_instance",
+            "checklist_run",
+            "task_run",
+            "review_decision",
+            "publication_recipe",
+            "media_asset",
+            "rendered_artifact",
+            "source_record",
+            "claim_record"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)+$"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "anchor": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "kind",
+        "id",
+        "version"
+      ],
+      "additionalProperties": false
+    },
+    "stage_id": {
+      "type": "string",
+      "pattern": "^0[1-8]$"
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "not_started",
+        "in_progress",
+        "blocked",
+        "review_requested",
+        "completed",
+        "reopened",
+        "skipped"
+      ]
+    },
+    "assignee_role": {
+      "type": "string",
+      "minLength": 1
+    },
+    "input_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "knowledge_entry",
+              "procedure_definition",
+              "task_definition",
+              "document_template",
+              "checklist_definition",
+              "document_instance",
+              "checklist_run",
+              "task_run",
+              "review_decision",
+              "publication_recipe",
+              "media_asset",
+              "rendered_artifact",
+              "source_record",
+              "claim_record"
+            ]
+          },
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)+$"
+          },
+          "version": {
+            "type": "string",
+            "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+          },
+          "anchor": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "kind",
+          "id",
+          "version"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "output_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "knowledge_entry",
+              "procedure_definition",
+              "task_definition",
+              "document_template",
+              "checklist_definition",
+              "document_instance",
+              "checklist_run",
+              "task_run",
+              "review_decision",
+              "publication_recipe",
+              "media_asset",
+              "rendered_artifact",
+              "source_record",
+              "claim_record"
+            ]
+          },
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)+$"
+          },
+          "version": {
+            "type": "string",
+            "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+          },
+          "anchor": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "kind",
+          "id",
+          "version"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "checklist_run_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "knowledge_entry",
+              "procedure_definition",
+              "task_definition",
+              "document_template",
+              "checklist_definition",
+              "document_instance",
+              "checklist_run",
+              "task_run",
+              "review_decision",
+              "publication_recipe",
+              "media_asset",
+              "rendered_artifact",
+              "source_record",
+              "claim_record"
+            ]
+          },
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)+$"
+          },
+          "version": {
+            "type": "string",
+            "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+          },
+          "anchor": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "kind",
+          "id",
+          "version"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "decision_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "knowledge_entry",
+              "procedure_definition",
+              "task_definition",
+              "document_template",
+              "checklist_definition",
+              "document_instance",
+              "checklist_run",
+              "task_run",
+              "review_decision",
+              "publication_recipe",
+              "media_asset",
+              "rendered_artifact",
+              "source_record",
+              "claim_record"
+            ]
+          },
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)+$"
+          },
+          "version": {
+            "type": "string",
+            "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+          },
+          "anchor": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "kind",
+          "id",
+          "version"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "event": {
+            "type": "string",
+            "minLength": 1
+          },
+          "at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "actor": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "event",
+          "at",
+          "actor"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "version",
+    "title",
+    "lifecycle",
+    "authority",
+    "access",
+    "project_id",
+    "definition_ref",
+    "stage_id",
+    "state"
+  ],
+  "additionalProperties": false
+}

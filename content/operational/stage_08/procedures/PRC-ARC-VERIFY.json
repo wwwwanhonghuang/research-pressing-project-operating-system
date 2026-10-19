@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-ARC-VERIFY",
+  "version": "0.1.0",
+  "title": {
+    "ja": "指摘内容と原資料・現行知見の再照合の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学的・編集的確認担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "科学的・編集的確認担当者"
+  ],
+  "inputs": [
+    "公開版",
+    "研究資料",
+    "引用箇所",
+    "指摘原文",
+    "更新された一次情報"
+  ],
+  "outputs": [
+    "照合結果・確実性評価"
+  ],
+  "steps": [
+    {
+      "id": "PRC-ARC-VERIFY-S1",
+      "instruction": "問題となる文、図、統計、引用と原資料の箇所を一対一で結ぶ",
+      "expected_output": "対象箇所一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-VERIFY-S2",
+      "instruction": "原資料の版、訂正・撤回状態、方法・測定条件を確認する",
+      "expected_output": "根拠状態票",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-VERIFY-S3",
+      "instruction": "確認できた事実、専門家の意見、解釈、未解決の問いを分ける",
+      "expected_output": "論点別照合記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-VERIFY-S4",
+      "instruction": "影響する結論・見出し・字幕・画像文字・SNS投稿を洗い出す",
+      "expected_output": "主張依存関係表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-VERIFY-S5",
+      "instruction": "照合担当以外のレビュー担当者に結果と留保を渡す",
+      "expected_output": "独立再確認",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "原資料が確認できない場合は判断保留と追加調査の条件を記録する",
+    "専門家間の見解の相違を消去せず記録する"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-WRT-JAPANESE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "専門表現・日本語の可読性と用語統一"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "日本語編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "汎用的な編集制作の独立設計案。媒体の役割、権利、組織規程、適用される法令は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "04"
+  ],
+  "inputs": [
+    "各種草稿",
+    "用語台帳",
+    "対象読者設定",
+    "原資料"
+  ],
+  "outputs": [
+    "表現改訂案",
+    "用語・略語台帳",
+    "難解事項一覧"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "目的、対象読者、参照できる根拠と使用可能な素材が記録された",
+    "文書の対象版、編集上の判断、未解決事項が後から追跡できる",
+    "担当者と編集責任者が後工程に渡せる範囲と差戻し条件を確認した"
+  ],
+  "review_roles": [
+    "編集責任者又は担当レビュー者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-WRT-JAPANESE",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-018",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-054",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-057",
+      "version": "0.2.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-026",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-007",
+      "version": "0.2.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-WRT-JP",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-WRT-EVID",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-ACCESS",
+      "version": "0.1.0"
+    }
+  ]
+}

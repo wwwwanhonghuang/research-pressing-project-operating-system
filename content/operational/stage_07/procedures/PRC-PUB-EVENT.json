@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-PUB-EVENT",
+  "version": "0.1.0",
+  "title": {
+    "ja": "イベント・公開対話の進行管理の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "公開イベント担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "公開イベント担当者"
+  ],
+  "inputs": [
+    "登壇素材",
+    "会場・遠隔設定",
+    "参加者案内",
+    "配信条件"
+  ],
+  "outputs": [
+    "運営進行台本・緊急連絡表"
+  ],
+  "steps": [
+    {
+      "id": "PRC-PUB-EVENT-S1",
+      "instruction": "参加者の導線、記録、配信範囲と同意条件を事前に整理する",
+      "expected_output": "参加案内",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-EVENT-S2",
+      "instruction": "音響、表示、字幕、配布資料、遠隔接続を試す",
+      "expected_output": "運営リハーサル結果",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-EVENT-S3",
+      "instruction": "登壇者・司会・技術担当者に当日の役割と連絡先を配布する",
+      "expected_output": "運営責任表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-EVENT-S4",
+      "instruction": "質疑応答の記録と即答困難な質問の後日回答経路を用意する",
+      "expected_output": "質問・照会対応表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-EVENT-S5",
+      "instruction": "実施後の記録公開と個人情報の扱いを再確認する",
+      "expected_output": "実施報告",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "登壇者の発言を承認済み原稿の一部と自動的に見なさない",
+    "録画又は配信条件が変化した場合は参加者への案内・同意を再確認する"
+  ]
+}

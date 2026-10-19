@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Operations OS project instance",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "workflow_id",
+    "workflow_version",
+    "created_at_utc",
+    "authority_status",
+    "stage_ids"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]{0,63}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "workflow_id": {
+      "type": "string"
+    },
+    "workflow_version": {
+      "type": "string"
+    },
+    "created_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "authority_status": {
+      "const": "independent_prototype"
+    },
+    "stage_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9]{2}$"
+      },
+      "uniqueItems": true
+    }
+  }
+}

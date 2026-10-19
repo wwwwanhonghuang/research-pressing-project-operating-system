@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-REV-SCIENCE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "科学的妥当性・推論範囲の確認"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "専門確認・公開管理担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。法令、契約、内部権限規程等の適用と現行版は個別に検討する。実在の承認を意味しない。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-SCI-COMM-GUIDE",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果プレスリリースについての専門学会による指針。科学的主張・誇張・引用・再利用等を扱う。一般の全業務に法的拘束力を与えるものではない。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "06"
+    ],
+    "audiences": [
+      "研究者",
+      "編集者",
+      "専門確認担当者",
+      "公開承認責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-REV-SCIENCE-H01",
+      "kind": "heading",
+      "text": "命題別点検",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-SCIENCE-P01",
+      "kind": "paragraph",
+      "text": "対象記事の命題を研究で測定した事実、統計的関連、因果解釈、外挿、将来の構想に分けて照合する。"
+    },
+    {
+      "id": "KNW-REV-SCIENCE-H02",
+      "kind": "heading",
+      "text": "方法と不確実性",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-SCIENCE-P02",
+      "kind": "paragraph",
+      "text": "研究設計、母集団、標本、対照、効果量、研究段階、再現性に関する限界を必要な精度で記録する。"
+    },
+    {
+      "id": "KNW-REV-SCIENCE-H03",
+      "kind": "heading",
+      "text": "媒体間の伝播",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-SCIENCE-P03",
+      "kind": "paragraph",
+      "text": "見出し、図表、字幕、SNS用要約等の強い表現にも同じ主張IDを関連付ける。"
+    },
+    {
+      "id": "KNW-REV-SCIENCE-H04",
+      "kind": "heading",
+      "text": "見解の帰属",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-SCIENCE-P04",
+      "kind": "paragraph",
+      "text": "専門家が確認した範囲と編集責任者が選択した表現を区別し、根拠のない保証や推奨を付与しない。"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reusable editorial task definition (provisional)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "version",
+    "stage_id",
+    "title",
+    "inputs",
+    "outputs",
+    "procedure",
+    "checklist"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]*$"
+    },
+    "version": {
+      "type": "string"
+    },
+    "stage_id": {
+      "type": "string",
+      "pattern": "^[0-9]{2}$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "competencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "procedure": {
+      "type": "string"
+    },
+    "checklist": {
+      "type": "string"
+    },
+    "standard_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ethics_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ai_assist_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "review_roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "requires_human_approval": {
+      "type": "boolean"
+    },
+    "acceptance_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

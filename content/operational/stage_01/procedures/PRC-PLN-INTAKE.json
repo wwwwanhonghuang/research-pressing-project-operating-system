@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-PLN-INTAKE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "企画依頼の受理と対象範囲の設定の標準手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "企画編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "編集担当者"
+  ],
+  "inputs": [
+    "依頼内容、背景説明、既存資料、依頼主との連絡経路"
+  ],
+  "outputs": [
+    "企画依頼記録、対象範囲・除外範囲、未確認事項"
+  ],
+  "steps": [
+    {
+      "id": "PRC-PLN-INTAKE-S1",
+      "instruction": "依頼目的、背景、希望媒体、期限、公開制限の有無を確認する。",
+      "expected_output": "企画依頼記録、対象範囲・除外範囲、未確認事項",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-PLN-INTAKE-S2",
+      "instruction": "業務の公共的目的と依頼元の期待を整理し、現時点で確認できない事項を分類する。",
+      "expected_output": "企画依頼記録、対象範囲・除外範囲、未確認事項",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PLN-INTAKE-S3",
+      "instruction": "成果物の種類、対象となる情報と除外範囲、見込まれる関係者を列挙する。",
+      "expected_output": "企画依頼記録、対象範囲・除外範囲、未確認事項",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PLN-INTAKE-S4",
+      "instruction": "先行する発表や既存の記事を調べ、編集上の追加価値と重複を確認する。",
+      "expected_output": "企画依頼記録、対象範囲・除外範囲、未確認事項",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-PLN-INTAKE-S5",
+      "instruction": "個人情報、未公開研究、利害関係など必要な初期照会先を決める。",
+      "expected_output": "企画依頼記録、対象範囲・除外範囲、未確認事項",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PLN-INTAKE-S6",
+      "instruction": "企画依頼記録を作成し、範囲変更条件と次の検討者を登録する。",
+      "expected_output": "企画依頼記録、対象範囲・除外範囲、未確認事項",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "一次資料が未公開、共有権限が未確認、利害関係または個人情報に問題がある場合は、状態を保留として必要な担当者へ照会する。",
+    "取材・公開条件が変化した場合は、版と変更理由を記録して影響する後続作業を再点検する。",
+    "AIの提案のみをもって完了または承認と判定しない。"
+  ]
+}

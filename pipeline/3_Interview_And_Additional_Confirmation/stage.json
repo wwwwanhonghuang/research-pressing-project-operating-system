@@ -1,0 +1,33 @@
+{
+  "schema_version": "0.1.0",
+  "id": "03",
+  "workflow_id": "editorial-eight-stage",
+  "workflow_version": "0.1.0",
+  "name_ja": "取材・追加確認",
+  "name_en": "Interviews and reporting",
+  "objective": "Conduct interviews, verify statements and resolve gaps.",
+  "task_definitions": [
+    "TSK-INT-PLAN",
+    "TSK-INT-REQUEST",
+    "TSK-INT-QUESTION",
+    "TSK-INT-CONSENT",
+    "TSK-INT-CONDUCT",
+    "TSK-INT-RECORD",
+    "TSK-INT-QUOTE",
+    "TSK-INT-FOLLOWUP",
+    "TSK-INT-HANDOFF"
+  ],
+  "review_gate": {
+    "definition_status": "independent_draft",
+    "human_signoff_required_for_publication": false,
+    "handoff_requires": [
+      "取材条件・説明と同意の記録",
+      "原記録と取材メモ",
+      "引用・発言候補の参照台帳",
+      "追加照会の履歴と未確認事項",
+      "音声・画像・映像の利用条件とアクセス制限"
+    ],
+    "reviewer_role": "編集責任者",
+    "note": "取材成果の編集工程への引継ぎであり、科学的妥当性・権利許諾・公開承認を自動確定しない。"
+  }
+}

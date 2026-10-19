@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-RESBIAS",
+  "version": "0.1.0",
+  "title": {
+    "ja": "資料収集と解釈における認識上の偏り"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学編集・調査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA-2026",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "プレスリリースにおける文献明示、誇張防止、方法・統計・利益相反等の専門的ガイダンス。記事全般の法的義務を設定するものではない。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "02"
+    ],
+    "audiences": [
+      "科学コミュニケーション担当者",
+      "調査担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-RESBIAS-B01",
+      "kind": "heading",
+      "text": "観察・認識の偏り",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-RESBIAS-B02",
+      "kind": "paragraph",
+      "text": "研究分野、言語、検索順位、発表主体、掲載媒体、資金状況、測定可能性が資料の可視性を左右する。収集できた資料と関連する現実の全体を区別して検討する。"
+    },
+    {
+      "id": "KNW-ETH-RESBIAS-B03",
+      "kind": "heading",
+      "text": "解釈の偏り",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-RESBIAS-B04",
+      "kind": "paragraph",
+      "text": "同じデータでも概念分類、比較集団、分析単位、因果仮説の違いが異なる解釈を生む。対立する読み方を必要な範囲で記録し、その証拠を確認する。"
+    },
+    {
+      "id": "KNW-ETH-RESBIAS-B05",
+      "kind": "heading",
+      "text": "影響を受ける人々",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-RESBIAS-B06",
+      "kind": "paragraph",
+      "text": "対象集団や当事者の経験を単純な代表例へ還元する際の影響を考慮し、標本の属性と外挿範囲を明示する。"
+    },
+    {
+      "id": "KNW-ETH-RESBIAS-B07",
+      "kind": "heading",
+      "text": "記録",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-RESBIAS-B08",
+      "kind": "paragraph",
+      "text": "除外した資料、判断の理由、残存する不一致を必要な範囲で保存し、見えにくい資料や知識の不足について次工程へ伝える。"
+    },
+    {
+      "id": "KNW-ETH-RESBIAS-B09",
+      "kind": "paragraph",
+      "text": "参考：日本心理学会 科学コミュニケーション・ガイドライン（https://psych.or.jp/jpamember/press_release_guidelines/）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。"
+    }
+  ]
+}

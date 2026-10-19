@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-INTEGRITY",
+  "version": "0.1.0",
+  "title": {
+    "ja": "研究公正への配慮と職責の境界"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学編集・調査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-MEXT-INTEGRITY",
+      "locator": "https://www.mext.go.jp/a_menu/jinzai/fusei/index.htm",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究公正に関する制度情報。調査編集担当者が不正認定を行う根拠ではない。"
+    },
+    {
+      "source_id": "SRC-COPE-2025",
+      "locator": "https://doi.org/10.24318/cope.2019.1.4",
+      "accessed_on": "2026-10-19",
+      "verification_note": "撤回と学術記録の訂正についての編集上の専門的指針。特定論文の健全性判断を代行しない。"
+    },
+    {
+      "source_id": "SRC-JPA-2026",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "プレスリリースにおける文献明示、誇張防止、方法・統計・利益相反等の専門的ガイダンス。記事全般の法的義務を設定するものではない。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "02"
+    ],
+    "audiences": [
+      "科学コミュニケーション担当者",
+      "調査担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-INTEGRITY-B01",
+      "kind": "heading",
+      "text": "役割の区分",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-INTEGRITY-B02",
+      "kind": "paragraph",
+      "text": "編集担当者は科学的主張の出典や根拠の照合を担うが、研究不正の公式認定や研究機関の調査を代行しない。懸念は根拠とともに権限ある窓口へ照会する。"
+    },
+    {
+      "id": "KNW-ETH-INTEGRITY-B03",
+      "kind": "heading",
+      "text": "撤回と疑義",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-INTEGRITY-B04",
+      "kind": "paragraph",
+      "text": "撤回通知・訂正・懸念表明は各々の意味を区別して記録する。非難の推測や人物評価に結びつけず、科学的な影響範囲の確認を優先する。"
+    },
+    {
+      "id": "KNW-ETH-INTEGRITY-B05",
+      "kind": "heading",
+      "text": "利益相反",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-INTEGRITY-B06",
+      "kind": "paragraph",
+      "text": "研究資金、所属、特許・商業的利害など、資料の解釈に関係する公表済み情報を記録する。未確認事項は推測で補わない。"
+    },
+    {
+      "id": "KNW-ETH-INTEGRITY-B07",
+      "kind": "heading",
+      "text": "説明責任",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-INTEGRITY-B08",
+      "kind": "paragraph",
+      "text": "資料選択と主張の留保を示せること、異議が生じた際に再確認できることを業務品質として扱う。"
+    },
+    {
+      "id": "KNW-ETH-INTEGRITY-B09",
+      "kind": "paragraph",
+      "text": "参考：文部科学省 研究活動における不正行為への対応等（https://www.mext.go.jp/a_menu/jinzai/fusei/index.htm）、COPE Retraction Guidelines (reviewed August 2025)（https://doi.org/10.24318/cope.2019.1.4）、日本心理学会 科学コミュニケーション・ガイドライン（https://psych.or.jp/jpamember/press_release_guidelines/）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。"
+    }
+  ]
+}

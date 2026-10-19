@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-CHK-029",
+  "kind": "checklist",
+  "slug": "copyediting",
+  "title_ja": "編集・推敲確認チェックリスト",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "05"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-CHK-029-S1",
+      "heading_ja": "確認項目",
+      "items": [
+        {
+          "id": "TPL-CHK-029-I001",
+          "criterion_ja": "編集対象の媒体・版・読者・目的が固定されている",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "原稿版・原資料の位置・確認者・記録日時を記す。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-029-I002",
+          "criterion_ja": "導入、本文、結論の主張と論理接続を説明できる",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "原稿版・原資料の位置・確認者・記録日時を記す。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-029-I003",
+          "criterion_ja": "省略・見出し修正による意味の変化を確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "原稿版・原資料の位置・確認者・記録日時を記す。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-029-I004",
+          "criterion_ja": "文体・用語・固有名詞の差異を管理した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "原稿版・原資料の位置・確認者・記録日時を記す。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-029-I005",
+          "criterion_ja": "変更理由、担当、再確認状況が追跡できる",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "原稿版・原資料の位置・確認者・記録日時を記す。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-029-I006",
+          "criterion_ja": "科学的意味を変える変更を専門照会へ送った",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "原稿版・原資料の位置・確認者・記録日時を記す。",
+          "human_review": true
+        }
+      ]
+    },
+    {
+      "id": "TPL-CHK-029-S2",
+      "heading_ja": "点検結果の記録",
+      "fields": [
+        {
+          "id": "TPL-CHK-029-F001",
+          "label_ja": "対象案件・対象版",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-CHK-029-F002",
+          "label_ja": "担当者と点検日",
+          "type": "date",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-CHK-029-F003",
+          "label_ja": "未解決事項と対応",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-CHK-029-F004",
+          "label_ja": "確認に用いた資料ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho"
+  },
+  "notes_ja": "設問は専門的・法的な判断の代替ではない。実行記録の承認状態は別途管理する。",
+  "workflow_id": "editorial-eight-stage"
+}

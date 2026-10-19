@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-ATTR",
+  "version": "0.1.0",
+  "title": {
+    "ja": "引用・著作物と説明責任"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "取材担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-BUNKA-QUOTE",
+      "locator": "https://www.bunka.go.jp/seisaku/chosakuken/seidokaisetsu/seminar/2025/pdf/94270801_01.pdf",
+      "accessed_on": "2026-10-19",
+      "verification_note": "文化庁の著作権資料、引用の条件についての解説。個別の発言・写真等の権利判断には別途検討を要する。"
+    },
+    {
+      "source_id": "SRC-JPA-SC",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究上の限界、発言の正確な取扱い、報道前後の確認に関する専門指針。主として研究成果のプレスリリース向け。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "03"
+    ],
+    "audiences": [
+      "取材担当者",
+      "編集責任者",
+      "協力者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-ATTR-B01A",
+      "kind": "heading",
+      "text": "引用と言及",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-ATTR-B01B",
+      "kind": "paragraph",
+      "text": "出所明示や公正な慣行、引用の必要性等は対象資料の性質に応じて判断する。著作権上の引用が認められることと、個人情報や取材上の説明責任が適切であることは異なる。"
+    },
+    {
+      "id": "KNW-ETH-ATTR-B02A",
+      "kind": "heading",
+      "text": "他者資料",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-ATTR-B02B",
+      "kind": "paragraph",
+      "text": "論文の図表、第三者撮影写真、資料配布スライド、音楽等は個別の権利と利用許諾を確認する。録音を所有するだけで全ての利用許可を得るわけではない。"
+    },
+    {
+      "id": "KNW-ETH-ATTR-B03A",
+      "kind": "heading",
+      "text": "訂正",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-ATTR-B03B",
+      "kind": "paragraph",
+      "text": "発言の誤帰属、改変による趣旨の変化、出典の失念が判明した場合は事実関係、影響を受ける媒体、訂正方法を記録する。"
+    }
+  ]
+}

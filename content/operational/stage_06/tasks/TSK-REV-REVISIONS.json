@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。具体的な権限、適用法令、契約及び組織規程は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "id": "TSK-REV-REVISIONS",
+  "title": {
+    "ja": "指摘対応と再審査"
+  },
+  "responsible_role": "編集責任者",
+  "stage_ids": [
+    "06"
+  ],
+  "inputs": [
+    "審査対象資料（固定版・ファイルハッシュ）",
+    "適用する根拠台帳・素材台帳・確認記録",
+    "権限及び公開条件に関する関係記録"
+  ],
+  "outputs": [
+    "指摘対応と再審査に関する確認記録",
+    "未解決事項、差戻し条件及び責任者一覧"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "対象文書の版・ハッシュ・対象媒体・確認者を記録した",
+    "担当範囲内の審査結果、証拠、対象外及び未解決事項を識別した",
+    "判断保留・差戻し・条件付き判断について責任者と再審査条件を記載した"
+  ],
+  "review_roles": [
+    "関係する専門確認者",
+    "審査責任者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-REV-REVISIONS",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-071",
+      "version": "0.2.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-034",
+      "version": "0.2.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-REV-EVIDENCE",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-REV-INDEPENDENCE",
+      "version": "0.1.0"
+    }
+  ]
+}

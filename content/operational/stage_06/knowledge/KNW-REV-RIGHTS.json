@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-REV-RIGHTS",
+  "version": "0.1.0",
+  "title": {
+    "ja": "著作物・画像・音声等の権利調査"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "専門確認・公開管理担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。法令、契約、内部権限規程等の適用と現行版は個別に検討する。実在の承認を意味しない。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-CULTURAL-RIGHTS",
+      "locator": "https://www.bunka.go.jp/seisaku/chosakuken/seidokaisetsu/chosakukensha_fumei/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "文化庁の他人の著作物利用に関する説明。人格権、肖像等は別途確認が必要。許諾が常に必要とする案内ではない。"
+    },
+    {
+      "source_id": "SRC-SCI-COMM-GUIDE",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果プレスリリースについての専門学会による指針。科学的主張・誇張・引用・再利用等を扱う。一般の全業務に法的拘束力を与えるものではない。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "06"
+    ],
+    "audiences": [
+      "研究者",
+      "編集者",
+      "専門確認担当者",
+      "公開承認責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-REV-RIGHTS-H01",
+      "kind": "heading",
+      "text": "利用素材台帳",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-RIGHTS-P01",
+      "kind": "paragraph",
+      "text": "著作者・権利管理者、利用媒体、改変の有無、引用等の法的根拠、許諾の範囲と期限を素材単位で記録する。"
+    },
+    {
+      "id": "KNW-REV-RIGHTS-H02",
+      "kind": "heading",
+      "text": "異なる権利",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-RIGHTS-P02",
+      "kind": "paragraph",
+      "text": "著作権、著作者人格権、肖像、名誉、商標、契約、個人情報を一括の許可として扱わない。"
+    },
+    {
+      "id": "KNW-REV-RIGHTS-H03",
+      "kind": "heading",
+      "text": "公開方法別の確認",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-RIGHTS-P03",
+      "kind": "paragraph",
+      "text": "ウェブ、PDF、SNS、動画、二次配布、再編集等の利用態様に応じて既存許諾の適用範囲を確かめる。"
+    },
+    {
+      "id": "KNW-REV-RIGHTS-H04",
+      "kind": "heading",
+      "text": "判断と相談",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-RIGHTS-P04",
+      "kind": "paragraph",
+      "text": "例外規定の該当性等を断定しにくい案件は権限ある担当又は専門家に照会し、公開方法の変更も検討する。"
+    }
+  ]
+}

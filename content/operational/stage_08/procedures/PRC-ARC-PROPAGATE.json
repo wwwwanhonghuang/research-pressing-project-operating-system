@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-ARC-PROPAGATE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "媒体横断の訂正反映と通知結果確認の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "媒体運用・校閲担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "媒体運用・校閲担当者"
+  ],
+  "inputs": [
+    "承認済み訂正通知",
+    "依存素材台帳",
+    "公開URL・投稿ID一覧"
+  ],
+  "outputs": [
+    "媒体別反映・到達確認台帳"
+  ],
+  "steps": [
+    {
+      "id": "PRC-ARC-PROPAGATE-S1",
+      "instruction": "記事、PDF、SNS、音声、動画、字幕、画像、イベント資料の依存先を抽出する",
+      "expected_output": "更新対象一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-PROPAGATE-S2",
+      "instruction": "修正対象と実施不可の第三者再配信先を区別する",
+      "expected_output": "実施可能性分類",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-PROPAGATE-S3",
+      "instruction": "各媒体の変更後版、ハッシュ、URL、公開日時を保存する",
+      "expected_output": "反映操作記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-PROPAGATE-S4",
+      "instruction": "異なる端末・閲覧条件で読者に見える訂正表示を点検する",
+      "expected_output": "公開結果独立確認",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-PROPAGATE-S5",
+      "instruction": "関係者への通知と未達・キャッシュ遅延を記録する",
+      "expected_output": "通知・例外記録",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "削除・訂正の実施と外部複製からの消滅を同一視しない",
+    "第三者への要請は権限内の事実連絡として扱う"
+  ]
+}

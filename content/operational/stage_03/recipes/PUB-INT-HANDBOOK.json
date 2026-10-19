@@ -1,0 +1,461 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PUB-INT-HANDBOOK",
+  "version": "0.1.0",
+  "title": {
+    "ja": "取材・追加確認 業務ハンドブック（独立試作）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学編集・取材担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA-SC",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究上の限界、発言の正確な取扱い、報道前後の確認に関する専門指針。主として研究成果のプレスリリース向け。"
+    },
+    {
+      "source_id": "SRC-PRESS-ETH",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本新聞協会の倫理綱領。正確性、独立性、人権と訂正に関する一般原則。取材同意の詳細要件を定める法規ではない。"
+    },
+    {
+      "source_id": "SRC-PIPC-GUIDE",
+      "locator": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "個人情報の利用目的、安全管理等に関する法令ガイドライン。報道・著述などの適用除外を含め個別の適用は検討が必要。"
+    },
+    {
+      "source_id": "SRC-PIPC-EXC",
+      "locator": "https://www.ppc.go.jp/all_faq_index/faq1-q11-5/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "個人情報保護法57条の報道等の適用除外説明。すべての取材・広報に一律に適用されるものではない。"
+    },
+    {
+      "source_id": "SRC-BUNKA-QUOTE",
+      "locator": "https://www.bunka.go.jp/seisaku/chosakuken/seidokaisetsu/seminar/2025/pdf/94270801_01.pdf",
+      "accessed_on": "2026-10-19",
+      "verification_note": "文化庁の著作権資料、引用の条件についての解説。個別の発言・写真等の権利判断には別途検討を要する。"
+    }
+  ],
+  "links": [],
+  "output_kind": "handbook",
+  "audience": [
+    "取材担当者",
+    "科学編集担当者",
+    "編集責任者"
+  ],
+  "style_profile": "formal_guideline",
+  "visibility": "public",
+  "chapter_plan": [
+    {
+      "chapter_id": "CH-INT-INTRO",
+      "heading_ja": "目的・適用範囲と業務の全体像",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "本書は一般化した取材・追加確認の実務を設計する独立研究上の草案である。取材による知識の生成と確認、本人の権利、取材記録の保存・解釈、編集上の独立性、専門的説明責任を継続して検討する。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "準備、依頼、質問設計、収録条件、実施、原記録管理、引用確認、追加照会、編集引継ぎの九つの作業を中心に構成する。順序は標準的な見取り図であり、差戻し・並行作業を許容する。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-INT-STANDARDS",
+      "heading_ja": "共通の業務標準",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "次の標準は本OSの提案であり、参照した学会指針や法令解説をそのまま制度化したものではない。"
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-INT-PLAN",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-INT-QUEST",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-INT-CONSENT",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-INT-TRACE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-INT-SECURITY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-INT-HANDOFF",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-INT-ETHICS",
+      "heading_ja": "取材倫理・権利・認識上の注意",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "倫理上の適切さ、個人情報に関する法律の適用、著作権、報道・広報の関係はそれぞれ独立して検討する。"
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-VOICE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-BOUNDARY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-PRIVATE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-ATTR",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-INT-PLAN",
+      "heading_ja": "取材目的・範囲と事前条件の設定",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-INT-PLAN",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-INT-PLAN",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-INT-REQUEST",
+      "heading_ja": "取材依頼・連絡条件と日程調整",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-INT-REQUEST",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-INT-REQUEST",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-INT-QUESTION",
+      "heading_ja": "研究論点・質問と追質問の設計",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-INT-QUESTION",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-INT-QUESTION",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-INT-CONSENT",
+      "heading_ja": "参加・録音・撮影・公表範囲の確認",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-INT-CONSENT",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-INT-CONSENT",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-INT-CONDUCT",
+      "heading_ja": "取材の実施・科学的追質問と文脈確認",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-INT-CONDUCT",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-INT-CONDUCT",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-INT-RECORD",
+      "heading_ja": "原記録保全・文字起こしと情報分類",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-INT-RECORD",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-INT-RECORD",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-INT-QUOTE",
+      "heading_ja": "引用候補・帰属と意味の照合",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-INT-QUOTE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-INT-QUOTE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-INT-FOLLOWUP",
+      "heading_ja": "追加確認・発言照会と変更の管理",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-INT-FOLLOWUP",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-INT-FOLLOWUP",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-INT-HANDOFF",
+      "heading_ja": "取材成果の確認・制作工程への引継ぎ",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-INT-HANDOFF",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-INT-HANDOFF",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-INT-CHECK",
+      "heading_ja": "作業段階ごとの点検チェックリスト",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "各項目は実際の結果を保証する証明書ではない。適合・不適合・対象外の判断には根拠資料、担当者、実施日、説明をChecklistRunとして残す。"
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-021",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-022",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-023",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-024",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-004",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-006",
+            "version": "0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-INT-HANDOVER",
+      "heading_ja": "編集工程への引継ぎと判断ゲート",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "引継ぎの必須事項は原記録の参照、逐語引用と要約の区別、研究主張の根拠、同意・権利・公開条件、未解決の照会と担当期限である。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "編集責任者は「制作に渡せる範囲」と「停止すべき素材」を区別して記録する。取材の完了は科学的な保証でも公開承認でもない。第4段階で新たな問題が明らかになれば調査・取材へ差し戻す。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-INT-REFERENCES",
+      "heading_ja": "参照資料と継続的改訂",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "日本心理学会の科学コミュニケーション・ガイドライン、日本新聞協会の新聞倫理綱領、個人情報保護委員会のガイドラインおよび報道等の適用除外説明、文化庁の著作権・引用解説を参照した。正式な引用・所在と各資料の射程は content/operational/stage_03/REFERENCES.md に示す。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "とくに報道等の適用除外は組織や目的によって条件が異なるため一律の適用を断定せず、収録・引用・撮影について単一の包括的な許可を推定しない。"
+        }
+      ]
+    }
+  ]
+}

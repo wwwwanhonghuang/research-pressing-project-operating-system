@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-EDT-PROOF",
+  "version": "0.1.0",
+  "title": {
+    "ja": "校正・組版・配信面の確認基準"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集品質担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PRESS-CODE",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本新聞協会・新聞倫理綱領。正確、公正、独立、人権尊重、訂正に関する報道倫理。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "05"
+    ],
+    "audiences": [
+      "編集者",
+      "校正者",
+      "校閲者",
+      "制作担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-EDT-PROOF-H01",
+      "kind": "heading",
+      "text": "ゲラ校正",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-PROOF-P01",
+      "kind": "paragraph",
+      "text": "原稿、掲載ゲラ、配信プレビューの版を固定して比較する。誤字、脱字、段落、注、見出し、ルビ、図表番号、リンク、句読点と行送りを確認する。"
+    },
+    {
+      "id": "KNW-EDT-PROOF-H02",
+      "kind": "heading",
+      "text": "最終媒体",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-PROOF-P02",
+      "kind": "paragraph",
+      "text": "PDF・Web・スマートフォン・字幕で発生する改行、文字化け、文字欠落、リンク不備、図版切れを原稿の誤りと区別して記録する。媒体別の校正結果を残す。"
+    },
+    {
+      "id": "KNW-EDT-PROOF-H03",
+      "kind": "heading",
+      "text": "再校正",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-PROOF-P03",
+      "kind": "paragraph",
+      "text": "最終校正後の編集変更が発生した場合、影響箇所だけでなく見出し、目次、図表索引、字幕など派生部分を再点検する。"
+    },
+    {
+      "id": "KNW-EDT-PROOF-H04",
+      "kind": "heading",
+      "text": "作業記録",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-PROOF-P04",
+      "kind": "paragraph",
+      "text": "版識別子、校正者、実施日、原稿行又は位置、修正指示、反映確認を記録する。未反映指摘を公開承認前の残課題として送る。"
+    }
+  ]
+}

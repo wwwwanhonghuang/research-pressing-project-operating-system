@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-RES-TRACE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "主張と根拠の追跡可能性"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学編集・調査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA-2026",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "プレスリリースにおける文献明示、誇張防止、方法・統計・利益相反等の専門的ガイダンス。記事全般の法的義務を設定するものではない。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "02"
+    ],
+    "audiences": [
+      "科学コミュニケーション担当者",
+      "調査担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-RES-TRACE-B01",
+      "kind": "heading",
+      "text": "単位の定義",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-TRACE-B02",
+      "kind": "paragraph",
+      "text": "記事中の独立した実質的主張に識別子を与え、出典資料の識別子、該当箇所、支持の仕方、限界、反対資料の有無を結びつける。"
+    },
+    {
+      "id": "KNW-RES-TRACE-B03",
+      "kind": "heading",
+      "text": "関係の種類",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-TRACE-B04",
+      "kind": "paragraph",
+      "text": "根拠資料と主張の関係は支持、反証、限定、未確定、背景説明等に区別する。引用したという事実だけで支持の強さを確定しない。"
+    },
+    {
+      "id": "KNW-RES-TRACE-B05",
+      "kind": "heading",
+      "text": "保留状態",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-TRACE-B06",
+      "kind": "paragraph",
+      "text": "参照不能、要再計算、解釈上の争点、未公開資料に依存する主張は未解決として登録し、公開可能な表現を再検討する。"
+    },
+    {
+      "id": "KNW-RES-TRACE-B07",
+      "kind": "heading",
+      "text": "人の判断",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-TRACE-B08",
+      "kind": "paragraph",
+      "text": "AI が作成した資料要約や対応表は確認候補として扱い、重要な主張は原資料と照合した担当者と照合日を残す。"
+    },
+    {
+      "id": "KNW-RES-TRACE-B09",
+      "kind": "heading",
+      "text": "変更追跡",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-TRACE-B10",
+      "kind": "paragraph",
+      "text": "主張文言・引用場所・元論文の版のいずれかに変更があれば関連する記事、図表、FAQ を影響範囲として再確認する。"
+    },
+    {
+      "id": "KNW-RES-TRACE-B11",
+      "kind": "paragraph",
+      "text": "参考：日本心理学会 科学コミュニケーション・ガイドライン（https://psych.or.jp/jpamember/press_release_guidelines/）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。"
+    }
+  ]
+}

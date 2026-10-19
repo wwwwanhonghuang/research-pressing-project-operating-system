@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-EDT-HARM",
+  "version": "0.1.0",
+  "title": {
+    "ja": "編集における尊厳・名誉・被害予防"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集責任者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PRESS-CODE",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本新聞協会・新聞倫理綱領。正確、公正、独立、人権尊重、訂正に関する報道倫理。"
+    },
+    {
+      "source_id": "SRC-PPC-GENERAL",
+      "locator": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "個人情報保護委員会・通則編。対象者・データと適用の事実確認が必要。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "05"
+    ],
+    "audiences": [
+      "編集者",
+      "校正者",
+      "校閲者",
+      "制作担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-EDT-HARM-H01",
+      "kind": "heading",
+      "text": "記述の影響",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-EDT-HARM-P01",
+      "kind": "paragraph",
+      "text": "取材対象者・第三者の名誉や尊厳、文脈を外れた引用による被害を点検する。公益性と必要性を評価し、不要な個人属性・識別情報の掲載を見直す。"
+    },
+    {
+      "id": "KNW-ETH-EDT-HARM-H02",
+      "kind": "heading",
+      "text": "読者への影響",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-EDT-HARM-P02",
+      "kind": "paragraph",
+      "text": "科学の不確実性を削った断定や不適切な医療・健康行動への誘導可能性を検討する。誤解のリスクと修正手段を記録する。"
+    },
+    {
+      "id": "KNW-ETH-EDT-HARM-H03",
+      "kind": "heading",
+      "text": "応答の正義",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-EDT-HARM-P03",
+      "kind": "paragraph",
+      "text": "関係者が異議を申し出る窓口と適切な確認機会を確保し、編集上の修正と異論の併記を区別する。形式的なチェックで影響を解消したことにはしない。"
+    }
+  ]
+}

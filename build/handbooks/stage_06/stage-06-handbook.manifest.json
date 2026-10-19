@@ -1,0 +1,316 @@
+{
+  "recipe": "PUB-REV-HANDBOOK",
+  "version": "0.2.0",
+  "included": [
+    {
+      "id": "TSK-REV-INTAKE",
+      "version": "0.2.0",
+      "kind": "task_definition",
+      "sha256": "fd15e1399640c58aa01dc73343e3f0722d25197c6a1335adc42c2392ddd08c18",
+      "path": "content/operational/stage_06/tasks/TSK-REV-INTAKE.json"
+    },
+    {
+      "id": "PRC-REV-INTAKE",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "9d69f578e71ef1a2edd30885a4f4388c6742ff13a94359fed6a4de30b1d9c17e",
+      "path": "content/operational/stage_06/procedures/PRC-REV-INTAKE.json"
+    },
+    {
+      "id": "TSK-REV-ROLES",
+      "version": "0.2.0",
+      "kind": "task_definition",
+      "sha256": "a2d2454b1ea5938367d3d51f71744e0a8aa98aae01bd083f3f706a33e9269801",
+      "path": "content/operational/stage_06/tasks/TSK-REV-ROLES.json"
+    },
+    {
+      "id": "PRC-REV-ROLES",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "90b488734524ea03b83053ba87b1bf5fc49234d31c25845a9effe05f1eae89d4",
+      "path": "content/operational/stage_06/procedures/PRC-REV-ROLES.json"
+    },
+    {
+      "id": "TSK-REV-SCIENCE",
+      "version": "0.2.0",
+      "kind": "task_definition",
+      "sha256": "92636608a51a8266f92b3942f8071449f44998ee519d6e246c6a7ceb1258c414",
+      "path": "content/operational/stage_06/tasks/TSK-REV-SCIENCE.json"
+    },
+    {
+      "id": "PRC-REV-SCIENCE",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "4f5889544e92a5b463fb1fdeb48dbd93733d3b0d06721d92bb392b3f03fd5dd5",
+      "path": "content/operational/stage_06/procedures/PRC-REV-SCIENCE.json"
+    },
+    {
+      "id": "TSK-REV-EVIDENCE",
+      "version": "0.2.0",
+      "kind": "task_definition",
+      "sha256": "032962b826ae9b61b2f8af4da8b8c4de078519e2ca70bbfc4ce3fe80b470daa4",
+      "path": "content/operational/stage_06/tasks/TSK-REV-EVIDENCE.json"
+    },
+    {
+      "id": "PRC-REV-EVIDENCE",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "3599f9a12ca6b4362f3f741dcac409d92a0e6b77d9beda891755cae87a3cb571",
+      "path": "content/operational/stage_06/procedures/PRC-REV-EVIDENCE.json"
+    },
+    {
+      "id": "TSK-REV-RIGHTS",
+      "version": "0.2.0",
+      "kind": "task_definition",
+      "sha256": "72c6e2d55d919e0f82abf893d6a00ea92019d82c9edccd5c656510f29a077256",
+      "path": "content/operational/stage_06/tasks/TSK-REV-RIGHTS.json"
+    },
+    {
+      "id": "PRC-REV-RIGHTS",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "6e76af0055e10c6118695b0dd7e736022b191a9816cd633f64f4d8b3a611ccef",
+      "path": "content/operational/stage_06/procedures/PRC-REV-RIGHTS.json"
+    },
+    {
+      "id": "TSK-REV-PRIVACY",
+      "version": "0.2.0",
+      "kind": "task_definition",
+      "sha256": "f161c83c57151b31be12432c83a584f7e9c5d70d59269fcee85848597eb53c4b",
+      "path": "content/operational/stage_06/tasks/TSK-REV-PRIVACY.json"
+    },
+    {
+      "id": "PRC-REV-PRIVACY",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "ac5c8b654293931a2eb01792e588221046159ccb819ce5855c5618b0381942f3",
+      "path": "content/operational/stage_06/procedures/PRC-REV-PRIVACY.json"
+    },
+    {
+      "id": "TSK-REV-ETHICS",
+      "version": "0.2.0",
+      "kind": "task_definition",
+      "sha256": "3510dc23f6ad3fbb67109d6e05791cf0aa968879477b876f43548bafb4cd4561",
+      "path": "content/operational/stage_06/tasks/TSK-REV-ETHICS.json"
+    },
+    {
+      "id": "PRC-REV-ETHICS",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "24ff596d98e75ed2da35ed946629d678130f7beea02b750db55e0feb50546308",
+      "path": "content/operational/stage_06/procedures/PRC-REV-ETHICS.json"
+    },
+    {
+      "id": "TSK-REV-ISSUES",
+      "version": "0.2.0",
+      "kind": "task_definition",
+      "sha256": "5b25a710d19d02ec9562a5ebd9401dee19d150011115b379d639d6c0ce3edb2c",
+      "path": "content/operational/stage_06/tasks/TSK-REV-ISSUES.json"
+    },
+    {
+      "id": "PRC-REV-ISSUES",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "9b7c4d9e39250f7b1cb32a256be2b9639ade90d4c7a16171a71c0f6dc096082c",
+      "path": "content/operational/stage_06/procedures/PRC-REV-ISSUES.json"
+    },
+    {
+      "id": "TSK-REV-REVISIONS",
+      "version": "0.2.0",
+      "kind": "task_definition",
+      "sha256": "4efc4d55a65cab051c830a408ba6243ecc9f248db22f804067aee79a9d87e77f",
+      "path": "content/operational/stage_06/tasks/TSK-REV-REVISIONS.json"
+    },
+    {
+      "id": "PRC-REV-REVISIONS",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "8b3cbfc26c4d6f56876eeda58dd03b6d9f68f623c5c2246ad363b77ab82c078f",
+      "path": "content/operational/stage_06/procedures/PRC-REV-REVISIONS.json"
+    },
+    {
+      "id": "TSK-REV-EMBARGO",
+      "version": "0.2.0",
+      "kind": "task_definition",
+      "sha256": "d413bfc13ab09524595fe479f844ec5caa3e16293264fd39f4f61ee0fdf9002a",
+      "path": "content/operational/stage_06/tasks/TSK-REV-EMBARGO.json"
+    },
+    {
+      "id": "PRC-REV-EMBARGO",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "b34d77a7c2d9497acb279e911d58749d43d54804d2bf3373e6efdbebe24a859a",
+      "path": "content/operational/stage_06/procedures/PRC-REV-EMBARGO.json"
+    },
+    {
+      "id": "TSK-REV-DECISION",
+      "version": "0.2.0",
+      "kind": "task_definition",
+      "sha256": "5572801f2acb37ac4325f0311786fd5c0dc530fd992466f638ae830611e32cf9",
+      "path": "content/operational/stage_06/tasks/TSK-REV-DECISION.json"
+    },
+    {
+      "id": "PRC-REV-DECISION",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "fa4660426f28dbd1aa517bbc0fd5b14353a50d960681cd0de270ff90a0a6e387",
+      "path": "content/operational/stage_06/procedures/PRC-REV-DECISION.json"
+    },
+    {
+      "id": "TSK-REV-AUTH",
+      "version": "0.2.0",
+      "kind": "task_definition",
+      "sha256": "ab80d7fe9e1c31854afce117001bc8087e09cdc60e14a5794b0cf78245c94a69",
+      "path": "content/operational/stage_06/tasks/TSK-REV-AUTH.json"
+    },
+    {
+      "id": "PRC-REV-AUTH",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "d2f3de4118f10b04796ce92cf48b1dc186b85d38614c350ed4c9908343e90ad9",
+      "path": "content/operational/stage_06/procedures/PRC-REV-AUTH.json"
+    },
+    {
+      "id": "TSK-REV-HANDOFF",
+      "version": "0.2.0",
+      "kind": "task_definition",
+      "sha256": "3b5f8076e50817ea397d459396d7e364f182610aee65d9d01faadd18894eba31",
+      "path": "content/operational/stage_06/tasks/TSK-REV-HANDOFF.json"
+    },
+    {
+      "id": "PRC-REV-HANDOFF",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "3f3f332fa3c9d5d86811b75344e29bd2d6f6c4295dfe92a4e8157b5b24f1d4bd",
+      "path": "content/operational/stage_06/procedures/PRC-REV-HANDOFF.json"
+    },
+    {
+      "id": "KNW-REV-SCOPE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "118794bd797d9ee0ddeb83fe960672d97cd0c52e1c66b506e525bdaab7fb9cee",
+      "path": "content/operational/stage_06/knowledge/KNW-REV-SCOPE.json"
+    },
+    {
+      "id": "KNW-REV-EVIDENCE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "3c70a06ecbfb6941bed8ed55d478ce004a6d27998a703ca687386804178d2de2",
+      "path": "content/operational/stage_06/knowledge/KNW-REV-EVIDENCE.json"
+    },
+    {
+      "id": "KNW-REV-SCIENCE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "c7769fd84795f3895508a96e7df11e9a18e35bac06bb4a07dd552e866288fd80",
+      "path": "content/operational/stage_06/knowledge/KNW-REV-SCIENCE.json"
+    },
+    {
+      "id": "KNW-REV-RIGHTS",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "301c359baa698eed0c03e3994c4c0f244217e3abfc101dc45ec6101172973509",
+      "path": "content/operational/stage_06/knowledge/KNW-REV-RIGHTS.json"
+    },
+    {
+      "id": "KNW-REV-PRIVACY",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "4c9f171b8c22b29a46af25e4f718a5cf41024867e045f4dd6ccc031c6cfed5c5",
+      "path": "content/operational/stage_06/knowledge/KNW-REV-PRIVACY.json"
+    },
+    {
+      "id": "KNW-REV-EMBARGO",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "7c30f637ded0de84e45fdbe35c5829463f94e271568210c9972681677d6e2f6d",
+      "path": "content/operational/stage_06/knowledge/KNW-REV-EMBARGO.json"
+    },
+    {
+      "id": "KNW-REV-DECISION",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "aecd82397e74e44c0b13a1d15891ca06cd1821f9b9f99859a25bbfae05e00cb4",
+      "path": "content/operational/stage_06/knowledge/KNW-REV-DECISION.json"
+    },
+    {
+      "id": "KNW-REV-RELEASE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "0cd62e47f40cde2dd48e40cc67868030e9f921646f9c26c03bdc1920f27881c2",
+      "path": "content/operational/stage_06/knowledge/KNW-REV-RELEASE.json"
+    },
+    {
+      "id": "KNW-ETH-REV-INDEPENDENCE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "d7d5e489960c6e0df6385ccede911fa89e20787d6ab13694ef801c1c90f34772",
+      "path": "content/operational/stage_06/knowledge/KNW-ETH-REV-INDEPENDENCE.json"
+    },
+    {
+      "id": "KNW-ETH-REV-PERSON",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "b3c33bb4bc316e3462790a9bfffc8e868202615568646977b1296e2fd24b9454",
+      "path": "content/operational/stage_06/knowledge/KNW-ETH-REV-PERSON.json"
+    },
+    {
+      "id": "KNW-ETH-REV-HARM",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "2663588a2b192def77a47b35cde88d52802403721d957e931019249f0b28da03",
+      "path": "content/operational/stage_06/knowledge/KNW-ETH-REV-HARM.json"
+    },
+    {
+      "id": "KNW-ETH-REV-AI",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "33a26243bff3c33bd9d15b167b68c6dcc88c2dd69871aaadefc500c6c7777847",
+      "path": "content/operational/stage_06/knowledge/KNW-ETH-REV-AI.json"
+    },
+    {
+      "id": "TPL-CHK-033",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "1fc27273b26838da8cb514e65f861815d362ab1815c0cec08c26704eb359044c",
+      "path": "content/templates/TPL-CHK-033.json"
+    },
+    {
+      "id": "TPL-CHK-034",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "44a4982c2aa29337471d2ebcef0bd09dec51369e2360348aed392040dbd94f76",
+      "path": "content/templates/TPL-CHK-034.json"
+    },
+    {
+      "id": "TPL-CHK-035",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "5a35c7ace036120fd561f3cbb221c1485f45b66acd899fcee0e3653756c2f000",
+      "path": "content/templates/TPL-CHK-035.json"
+    },
+    {
+      "id": "TPL-CHK-036",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "ec3421b2942ab3475462953f50d008c879175c93a0759f63e1eafaa717646100",
+      "path": "content/templates/TPL-CHK-036.json"
+    },
+    {
+      "id": "PUB-REV-HANDBOOK",
+      "kind": "publication_recipe",
+      "version": "0.2.0",
+      "sha256": "b658bf068b3d069c221794bb2959566438fd47dcec3e5107c781dd86bda4154d",
+      "path": "content/operational/stage_06/recipes/PUB-REV-HANDBOOK.json"
+    },
+    {
+      "id": "RENDER-TEX",
+      "kind": "renderer",
+      "version": "0.1.0",
+      "sha256": "617d6e9cc572b2059e37dc9ca9ec9ce8bab0453fe7b3741f42c40eb482a7414d",
+      "path": "script/compose_handbook.py"
+    }
+  ],
+  "print_style_sha256": "c5560109a7441048abd09e3581b874cb264eac39b65420456dc57431665e7b2a",
+  "tex_sha256": "3632ec1aa0f2c5f6520968f0cca015e94b11474fa947d07ef2c6b62cf3620b57"
+}

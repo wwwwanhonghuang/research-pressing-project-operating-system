@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-EDT-MEDIA",
+  "version": "0.1.0",
+  "title": {
+    "ja": "図表・写真・字幕・媒体間整合の校閲の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "媒体品質担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "媒体品質担当者"
+  ],
+  "inputs": [
+    "図表元データと版",
+    "本文・字幕・SNS草稿",
+    "素材許諾記録"
+  ],
+  "outputs": [
+    "図表・字幕修正リスト",
+    "媒体間主張整合表"
+  ],
+  "steps": [
+    {
+      "id": "PRC-EDT-MEDIA-S1",
+      "instruction": "図表の軸、凡例、単位、対象集団、期間、出典を再確認する",
+      "expected_output": "図表評価記録",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-EDT-MEDIA-S2",
+      "instruction": "キャプション・代替テキストが図の主張と矛盾していないか点検する",
+      "expected_output": "図表説明修正",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-MEDIA-S3",
+      "instruction": "グラフの省略軸、色の意味、欠測の不可視化を確認する",
+      "expected_output": "視覚的誤認リスク",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-MEDIA-S4",
+      "instruction": "写真・動画に含まれる人物情報、権利、匿名条件を確認する",
+      "expected_output": "使用条件記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-MEDIA-S5",
+      "instruction": "短尺・SNS・音声・字幕と本文の同一主張を追跡する",
+      "expected_output": "媒体別主張対応表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-MEDIA-S6",
+      "instruction": "字幕同期、読み上げ、テキスト代替、スマートフォン表示を確認する",
+      "expected_output": "アクセシビリティ記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-MEDIA-S7",
+      "instruction": "媒体ごとの異なる修正を反映し再検証する",
+      "expected_output": "媒体間再確認結果",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "表や図の原データが得られない場合は検証不能と記録する",
+    "文字だけで重要情報が利用できる代替経路も評価する"
+  ]
+}

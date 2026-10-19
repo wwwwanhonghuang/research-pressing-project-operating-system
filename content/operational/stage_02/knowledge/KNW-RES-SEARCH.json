@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-RES-SEARCH",
+  "version": "0.1.0",
+  "title": {
+    "ja": "調査目的と探索の再現可能性"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学編集・調査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA-2026",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "プレスリリースにおける文献明示、誇張防止、方法・統計・利益相反等の専門的ガイダンス。記事全般の法的義務を設定するものではない。"
+    },
+    {
+      "source_id": "SRC-NDL-WARP",
+      "locator": "https://warp.ndl.go.jp/info/mechanism-index",
+      "accessed_on": "2026-10-19",
+      "verification_note": "変動するウェブ資料の保存と来歴追跡の背景参考。保存の完全性や再利用許諾を意味しない。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "02"
+    ],
+    "audiences": [
+      "科学コミュニケーション担当者",
+      "調査担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-RES-SEARCH-B01",
+      "kind": "heading",
+      "text": "目的と適用",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-SEARCH-B02",
+      "kind": "paragraph",
+      "text": "候補探索は、企画上の問いに対応する調査対象、検索語、検索先、検索期間、除外条件及び探索者を記録して行う。調査の方法と未収集範囲も併記する。"
+    },
+    {
+      "id": "KNW-RES-SEARCH-B03",
+      "kind": "heading",
+      "text": "探索記録",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-SEARCH-B04",
+      "kind": "paragraph",
+      "text": "複数言語・同義語・専門用語、研究者名、論文識別子などを適切に組み合わせ、検索日、使用データベース、並べ替え条件、検索式、候補件数を保存する。検索件数の再現性は検索環境と更新時点にも依存する。"
+    },
+    {
+      "id": "KNW-RES-SEARCH-B05",
+      "kind": "heading",
+      "text": "探索の偏り",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-SEARCH-B06",
+      "kind": "paragraph",
+      "text": "高引用・高順位、英文献、オープンアクセス資料、所属機関の発表資料への偏重が生じ得る。重要な異説、原典、否定的結果、研究対象外の集団も必要に応じて探索対象に含める。"
+    },
+    {
+      "id": "KNW-RES-SEARCH-B07",
+      "kind": "heading",
+      "text": "停止条件",
+      "level": 2
+    },
+    {
+      "id": "KNW-RES-SEARCH-B08",
+      "kind": "paragraph",
+      "text": "探索を暫定終了する際は、必要な主張が検討可能な範囲、未確認の領域、追加探索を要する契機と引継ぎ先を記録する。網羅的な体系的レビューを行ったとの表現は、対応する方法に基づく場合に限る。"
+    },
+    {
+      "id": "KNW-RES-SEARCH-B09",
+      "kind": "paragraph",
+      "text": "参考：日本心理学会 科学コミュニケーション・ガイドライン（https://psych.or.jp/jpamember/press_release_guidelines/）、国立国会図書館 WARP（https://warp.ndl.go.jp/info/mechanism-index）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。"
+    }
+  ]
+}

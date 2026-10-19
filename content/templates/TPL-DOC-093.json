@@ -1,0 +1,253 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-093",
+  "kind": "document",
+  "slug": "lessons_learned",
+  "title_ja": "振り返り・改善提案書",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P1",
+  "applicable_pipeline_stages": [
+    "08"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-093-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-093-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「案件・文書の識別子」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        },
+        {
+          "id": "TPL-DOC-093-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "「作成者と連絡先」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        },
+        {
+          "id": "TPL-DOC-093-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "「作成日と対象版」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-093-S2",
+      "heading_ja": "振り返り",
+      "fields": [
+        {
+          "id": "TPL-DOC-093-F004",
+          "label_ja": "当初の目的と結果",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "プロジェクト開始時に定義した成果目標と評価質問を引用する。"
+        },
+        {
+          "id": "TPL-DOC-093-F005",
+          "label_ja": "成功した実務と理由",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "実測により説明できる成功要因と未確認の仮説を区別する。"
+        },
+        {
+          "id": "TPL-DOC-093-F006",
+          "label_ja": "困難・不適合の事実",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "不適合事実、影響と原因仮説をそれぞれ分離して書く。"
+        },
+        {
+          "id": "TPL-DOC-093-F007",
+          "label_ja": "関係者からの意見",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「関係者からの意見」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-093-S3",
+      "heading_ja": "改善と継承",
+      "fields": [
+        {
+          "id": "TPL-DOC-093-F008",
+          "label_ja": "改善案と優先順位",
+          "type": "table",
+          "required": false,
+          "description_ja": "改善の候補、必要資源、優先順位を根拠とともに示す。",
+          "columns": [
+            "対象と版",
+            "根拠・参照ID",
+            "判断・担当",
+            "例外と日時"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-093-F009",
+          "label_ja": "制度・標準への反映候補",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「制度・標準への反映候補」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        },
+        {
+          "id": "TPL-DOC-093-F010",
+          "label_ja": "担当と検証予定",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "担当、期限、評価指標及び再検討条件を示す。"
+        },
+        {
+          "id": "TPL-DOC-093-F011",
+          "label_ja": "残された問い",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「残された問い」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-093-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-093-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "「参照資料と根拠ID」について対象版、根拠識別子、確認日時と未確認事項を示す。",
+          "columns": [
+            "対象と版",
+            "根拠・参照ID",
+            "判断・担当",
+            "例外と日時"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-093-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「未確認事項・例外」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        },
+        {
+          "id": "TPL-DOC-093-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "「点検・改訂の記録」について対象版、根拠識別子、確認日時と未確認事項を示す。",
+          "columns": [
+            "対象と版",
+            "根拠・参照ID",
+            "判断・担当",
+            "例外と日時"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [
+      "TSK-ARC-RETRO"
+    ],
+    "knowledge_ids": [
+      "KNW-ARC-TRACE",
+      "KNW-ARC-VERSION"
+    ],
+    "checklist_template_ids": [
+      "TPL-CHK-042",
+      "TPL-CHK-043",
+      "TPL-CHK-044",
+      "TPL-CHK-045"
+    ]
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "独立の運用試案。記録の存在は科学的妥当性、個人情報適合、修正又は撤回の決裁権限を保証しない。",
+  "composition_slots": [
+    {
+      "id": "TPL-DOC-093-B01",
+      "title_ja": "目的と経緯",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-093-B02",
+      "title_ja": "実施したこと",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-093-B03",
+      "title_ja": "観察した困難",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-093-B04",
+      "title_ja": "今後の改善",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    }
+  ],
+  "workflow_id": "editorial-eight-stage"
+}

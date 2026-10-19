@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-REV-EMBARGO",
+  "version": "0.1.0",
+  "title": {
+    "ja": "公表日時・共同発信と公開条件の検証"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "公開調整担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。法令、契約、内部権限規程等の適用と現行版は個別に検討する。実在の承認を意味しない。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "06"
+  ],
+  "inputs": [
+    "公開スケジュール・関係者合意・配信先一覧"
+  ],
+  "outputs": [
+    "解禁日時確認書と公開制約一覧"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "解禁日時確認書と公開制約一覧に案件ID・対象版・確認者と記録日時が対応付けられている",
+    "重大な未解決事項を判別し、公開判断者に必要な照会と差戻し条件を渡している",
+    "当該作業の確認と公開の承認が区別して記録されている"
+  ],
+  "review_roles": [
+    "公開調整担当者",
+    "編集責任者",
+    "公開判断者（承認対象となるとき）"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-REV-EMBARGO",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-075",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-072",
+      "version": "0.2.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-035",
+      "version": "0.2.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-REV-EMBARGO",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-REV-RELEASE",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-REV-INDEPENDENCE",
+      "version": "0.1.0"
+    }
+  ]
+}

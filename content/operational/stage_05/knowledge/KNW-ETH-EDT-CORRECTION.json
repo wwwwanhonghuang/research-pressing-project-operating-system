@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-EDT-CORRECTION",
+  "version": "0.1.0",
+  "title": {
+    "ja": "訂正・異議・説明可能性の倫理"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集責任者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PRESS-CODE",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本新聞協会・新聞倫理綱領。正確、公正、独立、人権尊重、訂正に関する報道倫理。"
+    },
+    {
+      "source_id": "SRC-JPA-SCI-COMM",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果のプレスリリースを対象とする学会の科学コミュニケーション指針。正確性・限定条件・誇張回避。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "05"
+    ],
+    "audiences": [
+      "編集者",
+      "校正者",
+      "校閲者",
+      "制作担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-EDT-CORRECTION-H01",
+      "kind": "heading",
+      "text": "発見時の責任",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-EDT-CORRECTION-P01",
+      "kind": "paragraph",
+      "text": "重大な誤りが判明した場合は下流の公開・配信工程と連携し、対象版、影響範囲、初動、公開済み素材の扱いを記録する。"
+    },
+    {
+      "id": "KNW-ETH-EDT-CORRECTION-H02",
+      "kind": "heading",
+      "text": "訂正の見える化",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-EDT-CORRECTION-P02",
+      "kind": "paragraph",
+      "text": "修正前の内容、修正理由、確認した根拠、影響した媒体をたどれるよう記録する。安全とプライバシーに配慮し公開訂正の範囲を判断する。"
+    },
+    {
+      "id": "KNW-ETH-EDT-CORRECTION-H03",
+      "kind": "heading",
+      "text": "学習への還流",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-EDT-CORRECTION-P03",
+      "kind": "paragraph",
+      "text": "校正・校閲の指摘を再利用可能な表記ルール・検証手順に還元する一方、個別人物の機微情報を共有資料に持ち込まない。"
+    }
+  ]
+}

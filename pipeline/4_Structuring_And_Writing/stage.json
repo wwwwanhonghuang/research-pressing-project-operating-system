@@ -1,0 +1,33 @@
+{
+  "schema_version": "0.1.0",
+  "id": "04",
+  "workflow_id": "editorial-eight-stage",
+  "workflow_version": "0.1.0",
+  "name_ja": "構成・執筆",
+  "name_en": "Structure and writing",
+  "objective": "Develop narrative, language and supporting materials.",
+  "task_definitions": [
+    "TSK-WRT-BRIEF",
+    "TSK-WRT-OUTLINE",
+    "TSK-WRT-FEATURE",
+    "TSK-WRT-NEWS",
+    "TSK-WRT-JAPANESE",
+    "TSK-WRT-QUOTES",
+    "TSK-WRT-FIGURES",
+    "TSK-WRT-MULTIMODAL",
+    "TSK-WRT-HANDOFF"
+  ],
+  "review_gate": {
+    "definition_status": "independent_draft",
+    "human_signoff_required_for_publication": false,
+    "reviewer_role": "編集責任者",
+    "handoff_requires": [
+      "各媒体の制作物と版番号",
+      "主張・出典対応表と引用の原記録ID",
+      "図表・字幕等の権利と利用条件",
+      "研究上の未確認事項と担当期限",
+      "校正・校閲・科学的確認に求める重点項目"
+    ],
+    "note": "制作上の引継ぎであり、専門確認・法的許諾・公開承認を自動的に完了しない。"
+  }
+}

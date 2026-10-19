@@ -1,0 +1,243 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-059",
+  "kind": "document",
+  "slug": "visual_storyboard",
+  "title_ja": "動画・ビジュアル構成台本",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P1",
+  "applicable_pipeline_stages": [
+    "04"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-059-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-059-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": true,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「案件・文書の識別子」を記録する。"
+        },
+        {
+          "id": "TPL-DOC-059-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「作成者と連絡先」を記録する。"
+        },
+        {
+          "id": "TPL-DOC-059-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「作成日と対象版」を記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-059-S2",
+      "heading_ja": "映像構成",
+      "fields": [
+        {
+          "id": "TPL-DOC-059-F004",
+          "label_ja": "映像の目的と対象",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「映像の目的と対象」を記録する。"
+        },
+        {
+          "id": "TPL-DOC-059-F005",
+          "label_ja": "シーン構成",
+          "type": "table",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「シーン構成」を記録する。",
+          "columns": [
+            "箇所・ID",
+            "記述・出典",
+            "確認者・状態",
+            "留意点"
+          ],
+          "min_rows": 3
+        },
+        {
+          "id": "TPL-DOC-059-F006",
+          "label_ja": "画面内文字とナレーション",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「画面内文字とナレーション」を記録する。"
+        },
+        {
+          "id": "TPL-DOC-059-F007",
+          "label_ja": "必要な素材",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「必要な素材」を記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-059-S3",
+      "heading_ja": "制作条件",
+      "fields": [
+        {
+          "id": "TPL-DOC-059-F008",
+          "label_ja": "映像・音声の同期",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「映像・音声の同期」を記録する。"
+        },
+        {
+          "id": "TPL-DOC-059-F009",
+          "label_ja": "視聴テンポと説明時間",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「視聴テンポと説明時間」を記録する。"
+        },
+        {
+          "id": "TPL-DOC-059-F010",
+          "label_ja": "字幕と代替手段",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「字幕と代替手段」を記録する。"
+        },
+        {
+          "id": "TPL-DOC-059-F011",
+          "label_ja": "撮影・利用許諾",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「撮影・利用許諾」を記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-059-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-059-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「参照資料と根拠ID」を記録する。",
+          "columns": [
+            "箇所・ID",
+            "記述・出典",
+            "確認者・状態",
+            "留意点"
+          ],
+          "min_rows": 3
+        },
+        {
+          "id": "TPL-DOC-059-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「未確認事項・例外」を記録する。"
+        },
+        {
+          "id": "TPL-DOC-059-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "出典ID、適用範囲、媒体上の位置、確認担当と未決の論点が判別できる形で「点検・改訂の記録」を記録する。",
+          "columns": [
+            "箇所・ID",
+            "記述・出典",
+            "確認者・状態",
+            "留意点"
+          ],
+          "min_rows": 3
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": [],
+    "checklist_template_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "記入欄の構造案。法的・組織的承認の代替として利用しない。",
+  "composition_slots": [
+    {
+      "id": "TPL-DOC-059-B01",
+      "title_ja": "映像の主題",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-059-B02",
+      "title_ja": "場面設計",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-059-B03",
+      "title_ja": "時間・音声との対応",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-059-B04",
+      "title_ja": "権利・字幕・アクセシビリティ",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    }
+  ],
+  "workflow_id": "editorial-eight-stage"
+}

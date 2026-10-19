@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-084",
+  "kind": "document",
+  "slug": "event_run_sheet",
+  "title_ja": "イベント当日進行台本",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P1",
+  "applicable_pipeline_stages": [
+    "07"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-084-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-084-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「案件・文書の識別子」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        },
+        {
+          "id": "TPL-DOC-084-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "「作成者と連絡先」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        },
+        {
+          "id": "TPL-DOC-084-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "「作成日と対象版」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-084-S2",
+      "heading_ja": "進行管理",
+      "fields": [
+        {
+          "id": "TPL-DOC-084-F004",
+          "label_ja": "進行時刻と活動",
+          "type": "table",
+          "required": false,
+          "description_ja": "進行時刻、役割、登壇者、要確認発言の記録経路を確認する。",
+          "columns": [
+            "対象／版",
+            "媒体／参照ID",
+            "担当／確認結果",
+            "例外・履歴"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-084-F005",
+          "label_ja": "担当者と連絡方法",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "「担当者と連絡方法」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        },
+        {
+          "id": "TPL-DOC-084-F006",
+          "label_ja": "登壇・映像・音声の指示",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「登壇・映像・音声の指示」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        },
+        {
+          "id": "TPL-DOC-084-F007",
+          "label_ja": "参加者案内",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「参加者案内」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-084-S3",
+      "heading_ja": "例外時の対応",
+      "fields": [
+        {
+          "id": "TPL-DOC-084-F008",
+          "label_ja": "遅延時の調整方法",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「遅延時の調整方法」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        },
+        {
+          "id": "TPL-DOC-084-F009",
+          "label_ja": "機材障害と中止判断",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「機材障害と中止判断」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        },
+        {
+          "id": "TPL-DOC-084-F010",
+          "label_ja": "安全・プライバシー配慮",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「安全・プライバシー配慮」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        },
+        {
+          "id": "TPL-DOC-084-F011",
+          "label_ja": "終了後の撤収と記録",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「終了後の撤収と記録」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-084-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-084-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "「参照資料と根拠ID」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。",
+          "columns": [
+            "対象／版",
+            "媒体／参照ID",
+            "担当／確認結果",
+            "例外・履歴"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-084-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「未確認事項・例外」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        },
+        {
+          "id": "TPL-DOC-084-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "「点検・改訂の記録」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。",
+          "columns": [
+            "対象／版",
+            "媒体／参照ID",
+            "担当／確認結果",
+            "例外・履歴"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": [
+      "KNW-PUB-TRACE",
+      "KNW-PUB-PACKAGE"
+    ],
+    "checklist_template_ids": [
+      "TPL-CHK-037"
+    ]
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "独立の運用試案。記入結果は実際の公開決裁の証拠にはならない。媒体、版、根拠、担当者と判断記録を区別する。",
+  "workflow_id": "editorial-eight-stage"
+}

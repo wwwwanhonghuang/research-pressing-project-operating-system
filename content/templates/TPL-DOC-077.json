@@ -1,0 +1,181 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-077",
+  "kind": "document",
+  "slug": "publication_plan",
+  "title_ja": "公開・配信実施計画書",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "07"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-077-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-077-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「案件・文書の識別子」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        },
+        {
+          "id": "TPL-DOC-077-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "「作成者と連絡先」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        },
+        {
+          "id": "TPL-DOC-077-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "「作成日と対象版」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-077-S2",
+      "heading_ja": "公開内容",
+      "fields": [
+        {
+          "id": "TPL-DOC-077-F004",
+          "label_ja": "公開予定の成果物",
+          "type": "table",
+          "required": false,
+          "description_ja": "成果物ごとに識別子、版、ハッシュ、対象媒体、依存素材を記録する。",
+          "columns": [
+            "対象／版",
+            "媒体／参照ID",
+            "担当／確認結果",
+            "例外・履歴"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-077-F005",
+          "label_ja": "掲載先と公開日",
+          "type": "date",
+          "required": false,
+          "description_ja": "公開年月日、時刻、時区、解禁条件と変更期限を記録する。"
+        },
+        {
+          "id": "TPL-DOC-077-F006",
+          "label_ja": "閲覧対象と誘導導線",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「閲覧対象と誘導導線」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        },
+        {
+          "id": "TPL-DOC-077-F007",
+          "label_ja": "媒体別の要件",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「媒体別の要件」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-077-S3",
+      "heading_ja": "運用と確認",
+      "fields": [
+        {
+          "id": "TPL-DOC-077-F008",
+          "label_ja": "完成版と承認記録",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "第6段階の決裁記録IDと対象媒体を転記する。承認を推測しない。"
+        },
+        {
+          "id": "TPL-DOC-077-F009",
+          "label_ja": "掲載・配信の担当",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "「掲載・配信の担当」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        },
+        {
+          "id": "TPL-DOC-077-F010",
+          "label_ja": "緊急訂正の連絡経路",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "緊急停止を判断する責任者と媒体別の連絡先を記録する。"
+        },
+        {
+          "id": "TPL-DOC-077-F011",
+          "label_ja": "公開後の点検予定",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「公開後の点検予定」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-077-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-077-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "「参照資料と根拠ID」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。",
+          "columns": [
+            "対象／版",
+            "媒体／参照ID",
+            "担当／確認結果",
+            "例外・履歴"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-077-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「未確認事項・例外」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。"
+        },
+        {
+          "id": "TPL-DOC-077-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "「点検・改訂の記録」について対象版・配信先・担当・根拠資料ID・未確認事項を記録する。",
+          "columns": [
+            "対象／版",
+            "媒体／参照ID",
+            "担当／確認結果",
+            "例外・履歴"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [
+      "TSK-PUB-PACKAGE",
+      "TSK-PUB-SCHEDULE"
+    ],
+    "knowledge_ids": [
+      "KNW-PUB-TRACE",
+      "KNW-PUB-PACKAGE"
+    ],
+    "checklist_template_ids": [
+      "TPL-CHK-037"
+    ]
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "独立の運用試案。記入結果は実際の公開決裁の証拠にはならない。媒体、版、根拠、担当者と判断記録を区別する。",
+  "workflow_id": "editorial-eight-stage"
+}

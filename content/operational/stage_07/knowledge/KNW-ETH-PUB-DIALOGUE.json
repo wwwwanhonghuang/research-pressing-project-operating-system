@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-PUB-DIALOGUE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "公開後の対話・評価と表象の倫理"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "公開・配信業務の設計・審査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-W3C-MEDIA",
+      "locator": "https://www.w3.org/WAI/media/av/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "W3C WAIの動画・音声アクセシビリティ指針。法的義務の一律の根拠ではない。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "07"
+    ],
+    "audiences": [
+      "編集担当者",
+      "配信担当者",
+      "レビュアー",
+      "公開責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-PUB-DIALOGUE-H01",
+      "kind": "heading",
+      "text": "適用範囲と目的",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-PUB-DIALOGUE-P01",
+      "kind": "paragraph",
+      "text": "質問、批判、異なる解釈を訂正や説明改善の可能性として記録する。"
+    },
+    {
+      "id": "KNW-ETH-PUB-DIALOGUE-H02",
+      "kind": "heading",
+      "text": "実施上の確認事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-PUB-DIALOGUE-P02",
+      "kind": "paragraph",
+      "text": "否定的反応の大きさのみで研究成果の妥当性を判断せず、具体的な指摘と根拠を読む。"
+    },
+    {
+      "id": "KNW-ETH-PUB-DIALOGUE-H03",
+      "kind": "heading",
+      "text": "境界と判断事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-PUB-DIALOGUE-P03",
+      "kind": "paragraph",
+      "text": "取材対象や読者を単なるクリック数に還元せず、理解と参加条件にも注目する。"
+    }
+  ]
+}

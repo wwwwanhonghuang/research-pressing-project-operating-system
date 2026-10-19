@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-076",
+  "kind": "document",
+  "slug": "privacy_legal_review_note",
+  "title_ja": "個人情報・法的論点確認票",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "06"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-076-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-076-F001",
+          "label_ja": "公開対象ID・版・取扱目的",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-076-F002",
+          "label_ja": "個人情報と機密情報の分類",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-076-F003",
+          "label_ja": "利用目的・本人への説明",
+          "type": "date",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-076-S2",
+      "heading_ja": "論点と情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-076-F004",
+          "label_ja": "提供元・共有先・保存範囲",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-076-F005",
+          "label_ja": "公表可否の根拠と条件",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-076-F006",
+          "label_ja": "本人意思・法的相談等の記録",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-076-F007",
+          "label_ja": "匿名化等の処理と再識別可能性",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-076-S3",
+      "heading_ja": "評価と相談",
+      "fields": [
+        {
+          "id": "TPL-DOC-076-F008",
+          "label_ja": "判断留保・アクセス制限と相談先",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-076-F009",
+          "label_ja": "公開対象ID・版・取扱目的",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-076-F010",
+          "label_ja": "個人情報と機密情報の分類",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-076-F011",
+          "label_ja": "利用目的・本人への説明",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-076-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-076-F012",
+          "label_ja": "提供元・共有先・保存範囲",
+          "type": "table",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-076-F013",
+          "label_ja": "公表可否の根拠と条件",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-076-F014",
+          "label_ja": "本人意思・法的相談等の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": [],
+    "checklist_template_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "記入欄の構造案。法的・組織的承認の代替として利用しない。",
+  "workflow_id": "editorial-eight-stage"
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-PUB-EVENT",
+  "version": "0.1.0",
+  "title": {
+    "ja": "公開イベントの対話と記録"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "公開・配信業務の設計・審査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-W3C-MEDIA",
+      "locator": "https://www.w3.org/WAI/media/av/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "W3C WAIの動画・音声アクセシビリティ指針。法的義務の一律の根拠ではない。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "07"
+    ],
+    "audiences": [
+      "編集担当者",
+      "配信担当者",
+      "レビュアー",
+      "公開責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-PUB-EVENT-H01",
+      "kind": "heading",
+      "text": "適用範囲と目的",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-EVENT-P01",
+      "kind": "paragraph",
+      "text": "参加目的、参加方法、撮影・配信条件、配布物、字幕等の要件を事前案内する。"
+    },
+    {
+      "id": "KNW-PUB-EVENT-H02",
+      "kind": "heading",
+      "text": "実施上の確認事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-EVENT-P02",
+      "kind": "paragraph",
+      "text": "発言時点で確認困難な質問は後日確認として管理し、返答期限と担当者を示す。"
+    },
+    {
+      "id": "KNW-PUB-EVENT-H03",
+      "kind": "heading",
+      "text": "境界と判断事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-EVENT-P03",
+      "kind": "paragraph",
+      "text": "配信後の録画再利用は別の媒体利用となるため権利・同意範囲を再照合する。"
+    }
+  ]
+}

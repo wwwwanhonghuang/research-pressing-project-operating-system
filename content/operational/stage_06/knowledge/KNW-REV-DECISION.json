@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-REV-DECISION",
+  "version": "0.1.0",
+  "title": {
+    "ja": "公開判断と承認権限の分離"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "専門確認・公開管理担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。法令、契約、内部権限規程等の適用と現行版は個別に検討する。実在の承認を意味しない。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-NEWS-ETHICS",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "新聞報道の職業倫理綱領。正確さ、独立、権利尊重と訂正に関する参照枠組み。"
+    },
+    {
+      "source_id": "SRC-SCI-COMM-GUIDE",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果プレスリリースについての専門学会による指針。科学的主張・誇張・引用・再利用等を扱う。一般の全業務に法的拘束力を与えるものではない。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "06"
+    ],
+    "audiences": [
+      "研究者",
+      "編集者",
+      "専門確認担当者",
+      "公開承認責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-REV-DECISION-H01",
+      "kind": "heading",
+      "text": "判断の種類",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-DECISION-P01",
+      "kind": "paragraph",
+      "text": "科学的確認、法令・権利判断、倫理評価、編集評価、公開決裁は目的と責任が異なる。判断を統合して単一の無条件合格とみなさない。"
+    },
+    {
+      "id": "KNW-REV-DECISION-H02",
+      "kind": "heading",
+      "text": "権限確認",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-DECISION-P02",
+      "kind": "paragraph",
+      "text": "公開決裁を行う人物または機関と決裁範囲を実際の規程・委任に照らして特定する。モデル上の役割名だけで権限は生じない。"
+    },
+    {
+      "id": "KNW-REV-DECISION-H03",
+      "kind": "heading",
+      "text": "状態遷移",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-DECISION-P03",
+      "kind": "paragraph",
+      "text": "承認、条件付き保留、差戻し、不承認、追加照会の区分を設け、条件付き承認の自動公開を禁止する。"
+    },
+    {
+      "id": "KNW-REV-DECISION-H04",
+      "kind": "heading",
+      "text": "記録と再審",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-DECISION-P04",
+      "kind": "paragraph",
+      "text": "決裁対象版、承認者、日付、理由、付帯条件、再審要件を保存し、重要な変更は必要な承認を再取得する。"
+    }
+  ]
+}

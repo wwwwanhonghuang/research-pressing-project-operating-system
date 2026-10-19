@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-WRT-NEWS",
+  "version": "0.1.0",
+  "title": {
+    "ja": "研究ニュース・発表原稿・FAQの作成の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "汎用的な編集制作の独立設計案。媒体の役割、権利、組織規程、適用される法令は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "科学編集担当者"
+  ],
+  "inputs": [
+    "一次資料",
+    "研究解説草稿",
+    "発表状況",
+    "媒体別の分量方針"
+  ],
+  "outputs": [
+    "短いニュース草稿",
+    "発表原稿案",
+    "FAQと保留事項"
+  ],
+  "steps": [
+    {
+      "id": "PRC-WRT-NEWS-S1",
+      "instruction": "短文の目的、対象読者、公開状況、記事の文脈を確定する",
+      "expected_output": "短いニュース草稿",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-WRT-NEWS-S2",
+      "instruction": "何が確かめられたか、対象範囲、研究の段階と重要な限定条件を整理する",
+      "expected_output": "発表原稿案",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-NEWS-S3",
+      "instruction": "タイトル・リードに観測と推測の境界を保持する",
+      "expected_output": "FAQと保留事項",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-NEWS-S4",
+      "instruction": "プレス向け原稿の発表主体、論文出典、研究手法、共同研究情報と問合せ先を確認する",
+      "expected_output": "短いニュース草稿",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-NEWS-S5",
+      "instruction": "FAQは読者の疑問を独立した問いとして構成し、過度に断定せず回答する",
+      "expected_output": "発表原稿案",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-NEWS-S6",
+      "instruction": "用途別の分量制限による意味の脱落を比較表に記録する",
+      "expected_output": "FAQと保留事項",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-NEWS-S7",
+      "instruction": "内容と公開条件を編集責任者が確認する",
+      "expected_output": "短いニュース草稿",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "未発表結果の発信は公開解禁条件と研究者の確認へ戻す",
+    "短文に必要な留保が入らない場合は詳細説明先の明示を検討する"
+  ]
+}

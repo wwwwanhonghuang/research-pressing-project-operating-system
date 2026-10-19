@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-EDT-FACTCHECK",
+  "version": "0.1.0",
+  "title": {
+    "ja": "主張・数字・科学的妥当性の校閲の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学校閲担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "科学校閲担当者"
+  ],
+  "inputs": [
+    "原稿全文と主張台帳",
+    "原論文・一次資料",
+    "数表と推定条件"
+  ],
+  "outputs": [
+    "命題別校閲記録",
+    "科学的照会・保留リスト"
+  ],
+  "steps": [
+    {
+      "id": "PRC-EDT-FACTCHECK-S1",
+      "instruction": "本文、見出し、図、キャプション、短文投稿の検証可能な命題を抽出する",
+      "expected_output": "命題一覧",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-EDT-FACTCHECK-S2",
+      "instruction": "各命題に一次資料の版・頁・図表・発言位置を対応付ける",
+      "expected_output": "主張出典対応表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-FACTCHECK-S3",
+      "instruction": "対象、研究設計、期間、単位、分母、比較群、推定条件を確認する",
+      "expected_output": "研究条件点検票",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-FACTCHECK-S4",
+      "instruction": "相関・因果、仮説・結果、実現目標・現況が混同されていないか確認する",
+      "expected_output": "主張の強度評価",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-FACTCHECK-S5",
+      "instruction": "数値を元データと計算方法に照合し、丸め方と不確実性を点検する",
+      "expected_output": "数値再計算・照合記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-FACTCHECK-S6",
+      "instruction": "訂正情報・撤回・後続の反証資料の存在を確認し調査の限界を明記する",
+      "expected_output": "更新確認記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-FACTCHECK-S7",
+      "instruction": "重大な未確認事項に照会先、期限、掲載保留条件を設定する",
+      "expected_output": "校閲未解決事項一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-EDT-FACTCHECK-S8",
+      "instruction": "修正後の最終主張と元資料の対応が維持されたか再検証する",
+      "expected_output": "校閲再検証記録",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "専門的判断が必要な評価は次工程に渡す",
+    "一次資料に到達できない事実命題は未確認として扱う"
+  ]
+}

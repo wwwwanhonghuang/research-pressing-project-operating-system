@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "id": "CLM-DEMO-001",
+  "version": "0.1.0",
+  "title": {
+    "ja": "架空の検証対象主張"
+  },
+  "lifecycle": "draft",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "informational",
+    "institutional_approval": "none"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": false
+  },
+  "statement_ja": "試験用の架空の科学的主張。",
+  "epistemic_status": "hypothesis",
+  "support": [
+    {
+      "source_ref": {
+        "kind": "source_record",
+        "id": "SRC-DEMO-001",
+        "version": "0.1.0"
+      },
+      "locator": "demo section",
+      "relation": "insufficient"
+    }
+  ],
+  "uncertainty_note": "実証を伴わないテストデータ",
+  "human_review_status": "not_reviewed",
+  "open_questions": [
+    "どのような資料が必要か"
+  ]
+}

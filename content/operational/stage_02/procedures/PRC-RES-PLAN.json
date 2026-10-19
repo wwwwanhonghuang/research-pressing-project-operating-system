@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-RES-PLAN",
+  "version": "0.1.0",
+  "title": {
+    "ja": "調査目的・情報需要と探索計画の確定の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "調査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "調査担当者"
+  ],
+  "inputs": [
+    "企画書、研究・科学情報についての問い、公開予定、既存の資料一覧"
+  ],
+  "outputs": [
+    "調査計画書、探索対象と除外条件、時間・権限の制約"
+  ],
+  "steps": [
+    {
+      "id": "PRC-RES-PLAN-S1",
+      "instruction": "企画の問いを、確認可能な研究内容、背景、方法、限界、評価の各小問に分割する。",
+      "expected_output": "調査計画書、探索対象と除外条件、時間・権限の制約",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-RES-PLAN-S2",
+      "instruction": "必要な原典の種類と検索先を選び、言語、年度、分野、検索式の初期案を記録する。",
+      "expected_output": "調査計画書、探索対象と除外条件、時間・権限の制約",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-RES-PLAN-S3",
+      "instruction": "資料取得の優先順位を付ける際、発表主体への近さ、再現可能性、利益相反、適時性を併記する。",
+      "expected_output": "調査計画書、探索対象と除外条件、時間・権限の制約",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-RES-PLAN-S4",
+      "instruction": "再探索条件と探索打切り条件を暫定的に設定する。",
+      "expected_output": "調査計画書、探索対象と除外条件、時間・権限の制約",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-RES-PLAN-S5",
+      "instruction": "非公開資料、個人情報、著作物の扱いを確認して共有範囲を記録する。",
+      "expected_output": "調査計画書、探索対象と除外条件、時間・権限の制約",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-RES-PLAN-S6",
+      "instruction": "調査計画書をレビューし、変更履歴と担当を確定する。",
+      "expected_output": "調査計画書、探索対象と除外条件、時間・権限の制約",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "原資料に到達できないとき、資料の真正性が確認できないとき、又は版の不一致が見つかったときは、関連項目を未確認として保留し照会先を特定する。",
+    "権利又は秘密保持上の問題がある資料は外部共有・公開・外部AIへの入力を止め、担当者が許可条件を確認する。",
+    "新たな反証、研究内容の訂正、追加データが明らかになった際は、元の判断を上書きせず再調査の記録を追記する。"
+  ]
+}

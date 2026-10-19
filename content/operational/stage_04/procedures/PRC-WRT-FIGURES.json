@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-WRT-FIGURES",
+  "version": "0.1.0",
+  "title": {
+    "ja": "図表・写真・キャプションと説明資料の設計の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "図表制作担当者と科学編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "汎用的な編集制作の独立設計案。媒体の役割、権利、組織規程、適用される法令は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "図表制作担当者と科学編集担当者"
+  ],
+  "inputs": [
+    "データ・原図",
+    "図表の目的",
+    "利用条件",
+    "草稿本文"
+  ],
+  "outputs": [
+    "図表仕様書",
+    "キャプション",
+    "出典・権利記録",
+    "代替説明"
+  ],
+  "steps": [
+    {
+      "id": "PRC-WRT-FIGURES-S1",
+      "instruction": "各図の目的と読者が理解すべき要点を一つずつ定める",
+      "expected_output": "図表仕様書",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-WRT-FIGURES-S2",
+      "instruction": "データの出典、定義、対象、算出方法、時点と利用権限を記録する",
+      "expected_output": "キャプション",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-FIGURES-S3",
+      "instruction": "目盛、軸、単位、分母、縮尺、表示順序、誤差の表現を設計する",
+      "expected_output": "出典・権利記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-FIGURES-S4",
+      "instruction": "グラフや図による関係の可視化と因果の実証の違いを確認する",
+      "expected_output": "代替説明",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-FIGURES-S5",
+      "instruction": "本文との整合、キャプションの限定条件と出典の表示を点検する",
+      "expected_output": "図表仕様書",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-FIGURES-S6",
+      "instruction": "情報を運ぶ図の代替テキスト・長い説明又はデータ表を準備する",
+      "expected_output": "キャプション",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-FIGURES-S7",
+      "instruction": "改訂の経緯、最終確認者、再利用範囲を記録する",
+      "expected_output": "出典・権利記録",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "画像の見た目で効果が誇張される場合は軸・尺度を改める",
+    "図の権利が不明なら公開向け制作を保留する"
+  ]
+}

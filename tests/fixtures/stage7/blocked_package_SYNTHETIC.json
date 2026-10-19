@@ -1,0 +1,8 @@
+{
+ "package_id":"SYNTHETIC-PUBLICATION-001",
+ "review_record_ref":"EXAMPLE-NONOPERATIONAL-001",
+ "target":{"artifact_id":"EXAMPLE-ARTICLE","version":"0.1.0","sha256":"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"},
+ "operator":"synthetic-publisher",
+ "independent_verifier":"synthetic-checker",
+ "channels":[{"channel_id":"SYNTHETIC-WEB","asset_id":"EXAMPLE-ARTICLE","asset_sha256":"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb","destination":"https://example.invalid/article","planned_at":"2026-10-20T09:00:00+09:00","timezone":"Asia/Tokyo","review_scope_reference":"SYNTHETIC-NON-AUTHORIZATION"}]
+}

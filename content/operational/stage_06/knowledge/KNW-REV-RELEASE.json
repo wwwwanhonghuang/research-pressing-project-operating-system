@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-REV-RELEASE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "公開用パッケージ・最終受渡し条件"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "専門確認・公開管理担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。法令、契約、内部権限規程等の適用と現行版は個別に検討する。実在の承認を意味しない。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-SCI-COMM-GUIDE",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果プレスリリースについての専門学会による指針。科学的主張・誇張・引用・再利用等を扱う。一般の全業務に法的拘束力を与えるものではない。"
+    },
+    {
+      "source_id": "SRC-W3C-WCAG",
+      "locator": "https://www.w3.org/TR/WCAG22/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "ウェブコンテンツのアクセシビリティ参照基準。適用規格は公開主体・契約・媒体に従う。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "06"
+    ],
+    "audiences": [
+      "研究者",
+      "編集者",
+      "専門確認担当者",
+      "公開承認責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-REV-RELEASE-H01",
+      "kind": "heading",
+      "text": "公開版の固定",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-RELEASE-P01",
+      "kind": "paragraph",
+      "text": "記事・添付素材・字幕・説明文・掲載先の組合せを列挙し、承認対象の版と送信版の同一性を確認する。"
+    },
+    {
+      "id": "KNW-REV-RELEASE-H02",
+      "kind": "heading",
+      "text": "媒体別準備",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-RELEASE-P02",
+      "kind": "paragraph",
+      "text": "アクセシビリティ、問い合わせ先、出典、訂正経路、コンテンツ警告等を対象媒体に応じて確認する。"
+    },
+    {
+      "id": "KNW-REV-RELEASE-H03",
+      "kind": "heading",
+      "text": "差戻し条件",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-RELEASE-P03",
+      "kind": "paragraph",
+      "text": "未解消の権利・人権・科学的誤認や公開時刻不一致がある場合は公開に移さず判断者へ返す。"
+    },
+    {
+      "id": "KNW-REV-RELEASE-H04",
+      "kind": "heading",
+      "text": "引継ぎ記録",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-RELEASE-P04",
+      "kind": "paragraph",
+      "text": "公開担当者へ配信可能版、公開日時、承認記録、撤回条件、監視窓口を渡し受領を記録する。"
+    }
+  ]
+}

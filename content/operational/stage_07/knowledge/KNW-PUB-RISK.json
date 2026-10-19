@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-PUB-RISK",
+  "version": "0.1.0",
+  "title": {
+    "ja": "異常検知と公開停止の判断"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "公開・配信業務の設計・審査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-RFC-9110",
+      "locator": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "accessed_on": "2026-10-19",
+      "verification_note": "RFC 9110 HTTP Semantics。HTTP応答の技術的意味に限る。公開内容の正確性や許諾の規範ではない。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "07"
+    ],
+    "audiences": [
+      "編集担当者",
+      "配信担当者",
+      "レビュアー",
+      "公開責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-PUB-RISK-H01",
+      "kind": "heading",
+      "text": "適用範囲と目的",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-RISK-P01",
+      "kind": "paragraph",
+      "text": "リンク誤り、時刻相違、権利疑義、個人情報漏えい、重大な科学的誤解に対し連絡経路を定める。"
+    },
+    {
+      "id": "KNW-PUB-RISK-H02",
+      "kind": "heading",
+      "text": "実施上の確認事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-RISK-P02",
+      "kind": "paragraph",
+      "text": "削除、公開停止、差替え、訂正、撤回は目的と対外的説明の必要性が異なる。"
+    },
+    {
+      "id": "KNW-PUB-RISK-H03",
+      "kind": "heading",
+      "text": "境界と判断事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-RISK-P03",
+      "kind": "paragraph",
+      "text": "重要な変更には権限者の決定と記録を要し、機械的成功判定で進めない。"
+    }
+  ]
+}

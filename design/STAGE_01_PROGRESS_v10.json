@@ -1,0 +1,38 @@
+{
+  "release": "v10",
+  "date": "2026-10-19",
+  "scope": "stage_01",
+  "status": "independent_draft",
+  "task_definitions": 6,
+  "procedures": 6,
+  "knowledge_entries": 5,
+  "publication_recipes": 1,
+  "revised_document_template_ids": [
+    "TPL-DOC-030",
+    "TPL-DOC-031",
+    "TPL-DOC-032",
+    "TPL-DOC-033",
+    "TPL-DOC-034",
+    "TPL-DOC-035",
+    "TPL-DOC-036"
+  ],
+  "revised_checklist_template_ids": [
+    "TPL-CHK-015",
+    "TPL-CHK-016",
+    "TPL-CHK-017"
+  ],
+  "validation": [
+    "v1 schemas",
+    "template catalog",
+    "reference resolution",
+    "xelatex",
+    "13 regression tests"
+  ],
+  "pending": [
+    "professional substance review",
+    "legal scope review",
+    "organizational adoption",
+    "project execution runtime",
+    "stage_02 documents"
+  ]
+}

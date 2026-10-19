@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-CHK-019",
+  "kind": "checklist",
+  "slug": "study_design_interpretation",
+  "title_ja": "研究方法・結論対応確認チェックリスト",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "structural_template",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "02"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-CHK-019-S1",
+      "heading_ja": "確認項目",
+      "items": [
+        {
+          "id": "TPL-CHK-019-I001",
+          "criterion_ja": "研究目的と主要な仮説を把握した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-019-I002",
+          "criterion_ja": "研究デザインと比較条件を確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-019-I003",
+          "criterion_ja": "標本・対象集団と除外条件を確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-019-I004",
+          "criterion_ja": "主要な測定方法・解析方法を確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-019-I005",
+          "criterion_ja": "数値の単位・母数・比較基準を確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-019-I006",
+          "criterion_ja": "相関と因果推論の根拠を区別した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-019-I007",
+          "criterion_ja": "一般化可能な範囲と限界を記録した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-019-I008",
+          "criterion_ja": "不明点と追加照会先を明示した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "確認した原資料ID・版・該当箇所・判断理由を記載する。",
+          "human_review": true
+        }
+      ]
+    },
+    {
+      "id": "TPL-CHK-019-S2",
+      "heading_ja": "点検結果の記録",
+      "fields": [
+        {
+          "id": "TPL-CHK-019-F001",
+          "label_ja": "対象案件・対象版",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-CHK-019-F002",
+          "label_ja": "担当者と点検日",
+          "type": "date",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-CHK-019-F003",
+          "label_ja": "未解決事項と対応",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-CHK-019-F004",
+          "label_ja": "確認に用いた資料ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho"
+  },
+  "notes_ja": "調査担当者向けの試案。各判断は資料・版・原典箇所を残して記録し、確認済みという状態だけで科学的又は公開上の承認とはしない。",
+  "workflow_id": "editorial-eight-stage"
+}

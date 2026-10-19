@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "id": "DEC-DEMO-001",
+  "version": "0.1.0",
+  "title": {
+    "ja": "仮想判断記録"
+  },
+  "lifecycle": "draft",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "informational",
+    "institutional_approval": "none"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": false
+  },
+  "target_ref": {
+    "kind": "checklist_run",
+    "id": "CRUN-DEMO-001",
+    "version": "0.1.0"
+  },
+  "decision": "changes_requested",
+  "reviewer_role": "synthetic_editor",
+  "decided_at": "2026-10-19T00:00:00Z",
+  "institutional_authorization": false
+}

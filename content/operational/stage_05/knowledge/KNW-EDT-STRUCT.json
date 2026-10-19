@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-EDT-STRUCT",
+  "version": "0.1.0",
+  "title": {
+    "ja": "編集構成・論理連結の品質基準"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集品質担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PRESS-CODE",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本新聞協会・新聞倫理綱領。正確、公正、独立、人権尊重、訂正に関する報道倫理。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "05"
+    ],
+    "audiences": [
+      "編集者",
+      "校正者",
+      "校閲者",
+      "制作担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-EDT-STRUCT-H01",
+      "kind": "heading",
+      "text": "構成の設計対象",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-STRUCT-P01",
+      "kind": "paragraph",
+      "text": "原稿の目的、対象読者、中心となる問い、情報の出所を編集ブリーフに照合する。見出しから結論まで各段落の役割を明確にし、前提説明と証拠の提示、解釈、今後の課題を区別して配列する。"
+    },
+    {
+      "id": "KNW-EDT-STRUCT-H02",
+      "kind": "heading",
+      "text": "論理の継ぎ目",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-STRUCT-P02",
+      "kind": "paragraph",
+      "text": "段落間で主語や対象範囲が変わる箇所、研究方法から応用可能性へ飛躍する箇所、相反する結果が削除されている箇所を識別する。修正後は導入と結論を再読して意味の連続性を確認する。"
+    },
+    {
+      "id": "KNW-EDT-STRUCT-H03",
+      "kind": "heading",
+      "text": "編集修正の検証",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-STRUCT-P03",
+      "kind": "paragraph",
+      "text": "大幅な削除、段落移動、見出しの変更は編集変更簿に旧版と新版、理由、影響を記録する。科学的意味が変わり得る場合は著者等の専門確認へ回す。"
+    },
+    {
+      "id": "KNW-EDT-STRUCT-H04",
+      "kind": "heading",
+      "text": "完了指標",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-STRUCT-P04",
+      "kind": "paragraph",
+      "text": "構成レビューには対象原稿の版番号、編集上の論点、優先度、担当、解決状況を記録し、未決事項を完了扱いにしない。"
+    }
+  ]
+}

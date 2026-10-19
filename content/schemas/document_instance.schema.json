@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project-specific form instance (draft record; not an authorization)",
+  "type": "object",
+  "required": [
+    "id",
+    "template_id",
+    "template_version",
+    "status",
+    "field_values"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "template_id": {
+      "type": "string",
+      "pattern": "^TPL-(DOC|CHK)-[0-9]{3}$"
+    },
+    "template_version": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "in_review",
+        "final"
+      ]
+    },
+    "field_values": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null",
+          "array",
+          "object"
+        ]
+      }
+    },
+    "check_results": {
+      "type": "object"
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "review_decision_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "content_blocks": {
+      "type": "array",
+      "items": {
+        "$ref": "content_block.schema.json"
+      }
+    }
+  }
+}

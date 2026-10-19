@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-ARC-ARCHIVE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "保存対象・権利・来歴の確定"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "デジタル保存担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "08"
+  ],
+  "inputs": [
+    "最終公開版",
+    "旧版",
+    "訂正通知",
+    "根拠台帳",
+    "許諾",
+    "実行ログ"
+  ],
+  "outputs": [
+    "保存パッケージと目録"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "保存パッケージと目録に対象URL、版、判断主体、日時、根拠及び未解決事項を結び付けた",
+    "元の公開記録と変更後の記録を対応づけ、例外と人的な判断・保留を識別した",
+    "次の担当への通知又は引継ぎと、必要な再審査条件を残した"
+  ],
+  "review_roles": [
+    "訂正・評価責任者",
+    "必要な専門家と権限者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-ARC-ARCHIVE",
+    "version": "0.1.0"
+  },
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ARC-ARCHIVE",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ARC-TRACE",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-ARC-PRIVACY",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-ARC-ACCESS",
+      "version": "0.1.0"
+    }
+  ],
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-092",
+      "version": "0.2.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-044",
+      "version": "0.2.0"
+    }
+  ]
+}

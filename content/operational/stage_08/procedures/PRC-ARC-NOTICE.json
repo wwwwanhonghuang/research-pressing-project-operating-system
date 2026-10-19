@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-ARC-NOTICE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "訂正通知・版履歴と公開説明の作成の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "訂正通知編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "訂正通知編集担当者"
+  ],
+  "inputs": [
+    "公開後対応決定",
+    "修正前後の原稿",
+    "媒体別記録"
+  ],
+  "outputs": [
+    "訂正通知・改訂履歴"
+  ],
+  "steps": [
+    {
+      "id": "PRC-ARC-NOTICE-S1",
+      "instruction": "対象題名、URL、元版、改訂版、変更日時と時区を明示する",
+      "expected_output": "訂正通知見出し",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-NOTICE-S2",
+      "instruction": "誤った記述と確かめられた訂正内容を特定し理由を記す",
+      "expected_output": "変更点と根拠",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-NOTICE-S3",
+      "instruction": "結論への影響と過去版の引用上の注意を説明する",
+      "expected_output": "影響説明",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-NOTICE-S4",
+      "instruction": "本文、PDF、動画説明欄などへの通知位置と相互リンクを定める",
+      "expected_output": "公開表示設計",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-NOTICE-S5",
+      "instruction": "検証者・承認者の判断記録を受け取り改訂後版を確定する",
+      "expected_output": "新しい版の承認記録",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "個人情報を含む旧版は公開保持の是非を個別に審査する",
+    "法令等による削除義務と学術記録保全の原則は個別に調整する"
+  ]
+}

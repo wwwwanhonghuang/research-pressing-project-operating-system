@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-CLAIM-BOUNDARY",
+  "version": "0.1.0",
+  "title": {
+    "ja": "主張の射程と研究成果の位置づけ"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "企画編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "PUBLIC-PRESS-ETHICS",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "報道倫理の一般的な参照資料。組織的な遵守認証または直接の法的拘束力を主張しない。"
+    },
+    {
+      "source_id": "PUBLIC-PSYCHOLOGY-GUIDANCE",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "科学広報の資料検証、一般化、出典、著者確認の参考。分野・媒体への適用は個別に検討する。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "01"
+    ],
+    "audiences": [
+      "企画編集担当者",
+      "科学コミュニケーション担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-CLAIM-BOUNDARY-B01",
+      "kind": "heading",
+      "text": "研究成果と研究構想の区別",
+      "level": 2
+    },
+    {
+      "id": "KNW-CLAIM-BOUNDARY-B02",
+      "kind": "paragraph",
+      "text": "企画段階で予定する主要な説明を、観測された事実、解析からの推論、因果的解釈、研究上の仮説、社会的応用の見通し、長期目標に暫定区分する。区分は追加調査に伴い改訂できる。"
+    },
+    {
+      "id": "KNW-CLAIM-BOUNDARY-B03",
+      "kind": "paragraph",
+      "text": "現時点で根拠未確認の主張は企画上の検証課題として扱う。確定済みの結論を前提とする見出しや紹介文を先行して固定しない。"
+    },
+    {
+      "id": "KNW-CLAIM-BOUNDARY-B04",
+      "kind": "heading",
+      "text": "研究方法と一般化",
+      "level": 2
+    },
+    {
+      "id": "KNW-CLAIM-BOUNDARY-B05",
+      "kind": "paragraph",
+      "text": "対象集団、サンプル、方法、測定、比較条件、効果の大きさと不確実性について、企画段階で把握できる情報を記録する。モデル生物、実験系、観察研究などから他の集団や実世界への拡張には別途根拠が必要である。"
+    },
+    {
+      "id": "KNW-CLAIM-BOUNDARY-B06",
+      "kind": "heading",
+      "text": "独立した編集判断",
+      "level": 2
+    },
+    {
+      "id": "KNW-CLAIM-BOUNDARY-B07",
+      "kind": "paragraph",
+      "text": "科学的内容に関する研究者への照会と、編集上の焦点、読者への説明責任、発言の正確な表現を区別する。取材対象の確認は、編集責任者の判断および組織の正式な公開手続を自動的に代替しない。"
+    },
+    {
+      "id": "KNW-CLAIM-BOUNDARY-B08",
+      "kind": "heading",
+      "text": "次段階への引継ぎ",
+      "level": 2
+    },
+    {
+      "id": "KNW-CLAIM-BOUNDARY-B09",
+      "kind": "paragraph",
+      "text": "原資料の識別子、主張候補、根拠の強さが未確定な箇所、照会先と確認の期限を資料収集担当に渡す。"
+    }
+  ]
+}

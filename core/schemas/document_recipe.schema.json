@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Operations OS document composition recipe (pilot v0.1)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "version",
+    "title_ja",
+    "status",
+    "output_stage_id",
+    "chapters"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "title_ja": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "in_review",
+        "approved"
+      ]
+    },
+    "output_stage_id": {
+      "type": "string",
+      "pattern": "^[0-9]{2}$"
+    },
+    "chapters": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title_ja",
+          "sections"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title_ja": {
+            "type": "string"
+          },
+          "sections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "title_ja",
+                "items"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title_ja": {
+                  "type": "string"
+                },
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "kind"
+                    ],
+                    "properties": {
+                      "kind": {
+                        "enum": [
+                          "narrative",
+                          "include"
+                        ]
+                      },
+                      "text": {
+                        "type": "string"
+                      },
+                      "ref": {
+                        "type": "string"
+                      }
+                    },
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

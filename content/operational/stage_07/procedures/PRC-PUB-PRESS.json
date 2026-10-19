@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-PUB-PRESS",
+  "version": "0.1.0",
+  "title": {
+    "ja": "報道機関への提供と問い合わせ準備の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "対外情報担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "対外情報担当者"
+  ],
+  "inputs": [
+    "配信資料",
+    "科学的Q&A",
+    "連絡条件",
+    "解禁条件"
+  ],
+  "outputs": [
+    "提供履歴・照会記録"
+  ],
+  "steps": [
+    {
+      "id": "PRC-PUB-PRESS-S1",
+      "instruction": "提供物の出典、承認版、連絡先、解禁日時を明記する",
+      "expected_output": "提供パッケージ",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-PRESS-S2",
+      "instruction": "想定質問に対する回答の範囲、分からない事項と回答者を整理する",
+      "expected_output": "Q&A確認結果",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-PRESS-S3",
+      "instruction": "提供先、送信手段、日時、受領状況を記録する",
+      "expected_output": "送信台帳",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-PRESS-S4",
+      "instruction": "追加取材や訂正照会の受付と専門確認への回送を設計する",
+      "expected_output": "問い合わせ対応路線",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-PRESS-S5",
+      "instruction": "公開後の掲載内容は独立した媒体の判断として区別し対応を記録する",
+      "expected_output": "対応履歴",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "外部提供の再利用権限は提供契約等で区別する",
+    "未確認の科学的見解を組織見解として表明しない"
+  ]
+}

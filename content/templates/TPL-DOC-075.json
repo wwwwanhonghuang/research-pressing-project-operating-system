@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-075",
+  "kind": "document",
+  "slug": "embargo_coordination",
+  "title_ja": "解禁日時・報道調整確認書",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P1",
+  "applicable_pipeline_stages": [
+    "06"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-075-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-075-F001",
+          "label_ja": "公開対象ID・確定版",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-075-F002",
+          "label_ja": "公開予定日時・時区分",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-075-F003",
+          "label_ja": "出版社等の解禁条件の出所",
+          "type": "date",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-075-S2",
+      "heading_ja": "公開時刻と関係先",
+      "fields": [
+        {
+          "id": "TPL-DOC-075-F004",
+          "label_ja": "共同発信先と確認担当",
+          "type": "date",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-075-F005",
+          "label_ja": "公開プラットフォーム一覧",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-075-F006",
+          "label_ja": "配信前に守る条件",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-075-F007",
+          "label_ja": "条件変更時の再調整手続",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-075-S3",
+      "heading_ja": "連絡と事故防止",
+      "fields": [
+        {
+          "id": "TPL-DOC-075-F008",
+          "label_ja": "公開担当者への引継ぎ記録",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-075-F009",
+          "label_ja": "公開対象ID・確定版",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-075-F010",
+          "label_ja": "公開予定日時・時区分",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-075-F011",
+          "label_ja": "出版社等の解禁条件の出所",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-075-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-075-F012",
+          "label_ja": "共同発信先と確認担当",
+          "type": "table",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-075-F013",
+          "label_ja": "公開プラットフォーム一覧",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-075-F014",
+          "label_ja": "配信前に守る条件",
+          "type": "table",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": [],
+    "checklist_template_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "記入欄の構造案。法的・組織的承認の代替として利用しない。",
+  "workflow_id": "editorial-eight-stage"
+}

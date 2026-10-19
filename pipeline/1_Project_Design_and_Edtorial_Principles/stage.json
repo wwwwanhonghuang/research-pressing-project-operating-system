@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "id": "01",
+  "workflow_id": "editorial-eight-stage",
+  "workflow_version": "0.1.0",
+  "name_ja": "企画・編集方針",
+  "name_en": "Planning and editorial direction",
+  "objective": "Agree on audience, scope and editorial purpose.",
+  "task_definitions": [
+    "TSK-PLN-INTAKE",
+    "TSK-PLN-TOPIC",
+    "TSK-PLN-AUDIENCE",
+    "TSK-PLN-ANGLE",
+    "TSK-PLN-FORMAT",
+    "TSK-PLN-GATE"
+  ],
+  "review_gate": {
+    "definition_status": "draft_proposed",
+    "human_signoff_required_for_publication": false,
+    "criteria": [
+      "企画書、主張範囲、読者分析、未確認事項の識別子と版を記録した",
+      "調査段階への担当と確認事項を定義した",
+      "実権限者の判断を別途記録する"
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-INT-RECORD",
+  "version": "0.1.0",
+  "title": {
+    "ja": "原記録保全・文字起こしと情報分類の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "記録担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "記録担当者"
+  ],
+  "inputs": [
+    "音声・映像・メモ",
+    "取得時の説明・許諾記録"
+  ],
+  "outputs": [
+    "原記録台帳",
+    "文字起こし",
+    "閲覧・利用制限",
+    "修正履歴"
+  ],
+  "steps": [
+    {
+      "id": "PRC-INT-RECORD-S1",
+      "instruction": "ファイルID、日時、取材対象、媒体、収録区間、機器・作成者を記録する",
+      "expected_output": "原記録台帳",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-INT-RECORD-S2",
+      "instruction": "原ファイルのハッシュ・保存先とアクセス権を確認し、編集用複製を分離する",
+      "expected_output": "文字起こし",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-RECORD-S3",
+      "instruction": "逐語書き起こしと要約を明確に区分し、発言者識別、タイムスタンプ、聞取不能箇所を示す",
+      "expected_output": "閲覧・利用制限",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-RECORD-S4",
+      "instruction": "自動文字起こし・翻訳の出力を原音とサンプル照合し、不確実箇所は確認待ちにする",
+      "expected_output": "修正履歴",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-RECORD-S5",
+      "instruction": "オフレコ等の合意、第三者個人情報、未公開情報をアクセス制限とともに付記する",
+      "expected_output": "原記録台帳",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-RECORD-S6",
+      "instruction": "収録素材・注釈・改訂履歴を関連付け、目的外の複製と送信を避ける",
+      "expected_output": "文字起こし",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-RECORD-S7",
+      "instruction": "次工程に必要な参照先と閲覧条件を整理する",
+      "expected_output": "閲覧・利用制限",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "記録の真正性に疑義があれば原ファイルを保存し原因を確認する",
+    "外部AIサービスの取扱条件が不明な録音は送信しない"
+  ]
+}

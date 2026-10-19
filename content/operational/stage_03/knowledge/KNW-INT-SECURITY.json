@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-INT-SECURITY",
+  "version": "0.1.0",
+  "title": {
+    "ja": "取材記録の機密・安全・保存"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "取材担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PIPC-GUIDE",
+      "locator": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "個人情報の利用目的、安全管理等に関する法令ガイドライン。報道・著述などの適用除外を含め個別の適用は検討が必要。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "03"
+    ],
+    "audiences": [
+      "取材担当者",
+      "編集責任者",
+      "協力者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-INT-SECURITY-B01A",
+      "kind": "heading",
+      "text": "分類",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-SECURITY-B01B",
+      "kind": "paragraph",
+      "text": "公表可能資料、関係者のみ閲覧可能な記録、個人情報を含む資料、取扱制限が強い資料を区分し、作成時点で管理責任者を定める。"
+    },
+    {
+      "id": "KNW-INT-SECURITY-B02A",
+      "kind": "heading",
+      "text": "必要性と最小化",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-SECURITY-B02B",
+      "kind": "paragraph",
+      "text": "目的に不要な個人情報や第三者の情報を記録しない。録音、写真、書き起こし、AI転記の複製先・アクセス権・保存期限を確認する。"
+    },
+    {
+      "id": "KNW-INT-SECURITY-B03A",
+      "kind": "heading",
+      "text": "収録管理",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-SECURITY-B03B",
+      "kind": "paragraph",
+      "text": "記録媒体の紛失、クラウド同期、共同編集権限、他者の映り込みをリスクとして確認する。未公開資料を外部AIへ送信する場合は明示的な許可と運用ポリシーを要する。"
+    },
+    {
+      "id": "KNW-INT-SECURITY-B04A",
+      "kind": "heading",
+      "text": "事故と廃棄",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-SECURITY-B04B",
+      "kind": "paragraph",
+      "text": "漏えい・誤送信が疑われる際は拡散を止めて報告経路へ連絡する。保存期間・安全な削除方法は組織規程と法令、利用目的に照らして定める。"
+    }
+  ]
+}

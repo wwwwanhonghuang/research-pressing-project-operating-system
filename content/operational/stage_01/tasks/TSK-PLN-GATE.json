@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-PLN-GATE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "企画書統合・レビューと調査段階への引継ぎ"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集責任者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "01"
+  ],
+  "inputs": [
+    "企画書案、候補比較、主張境界、読者分析、媒体工程案"
+  ],
+  "outputs": [
+    "企画書の版、レビュー結果、要調査事項一覧、担当割当"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "企画書の必要項目と未確認事項が追跡できる",
+    "権限ある人の判断と修正指示が別記録に保存された",
+    "調査段階の優先課題と担当が明確になった"
+  ],
+  "review_roles": [
+    "編集責任者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-PLN-GATE",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-030",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-031",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-036",
+      "version": "0.2.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-015",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-017",
+      "version": "0.2.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-PLANNING-TRACE",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-CLAIM-BOUNDARY",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-AUDIENCE-ACCESS",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETHIC-SELECTION",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETHIC-INDEPENDENCE",
+      "version": "0.1.0"
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-074",
+  "kind": "document",
+  "slug": "rights_clearance_record",
+  "title_ja": "権利・許諾確認記録",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "06"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-074-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-074-F001",
+          "label_ja": "素材ID・権利者・出所",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-074-F002",
+          "label_ja": "著作権・契約・肖像等の別",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-074-F003",
+          "label_ja": "許諾・例外規定の根拠",
+          "type": "date",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-074-S2",
+      "heading_ja": "権利確認の対象",
+      "fields": [
+        {
+          "id": "TPL-DOC-074-F004",
+          "label_ja": "利用媒体・期間・地域・改変範囲",
+          "type": "table",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-074-F005",
+          "label_ja": "クレジット表記と再配布条件",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-074-F006",
+          "label_ja": "制約付き素材の代替方針",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-074-F007",
+          "label_ja": "確認者・確認日",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-074-S3",
+      "heading_ja": "確認結果",
+      "fields": [
+        {
+          "id": "TPL-DOC-074-F008",
+          "label_ja": "未解決事項と相談先",
+          "type": "table",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-074-F009",
+          "label_ja": "素材ID・権利者・出所",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-074-F010",
+          "label_ja": "著作権・契約・肖像等の別",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-074-F011",
+          "label_ja": "許諾・例外規定の根拠",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-074-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-074-F012",
+          "label_ja": "利用媒体・期間・地域・改変範囲",
+          "type": "table",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-074-F013",
+          "label_ja": "クレジット表記と再配布条件",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。"
+        },
+        {
+          "id": "TPL-DOC-074-F014",
+          "label_ja": "制約付き素材の代替方針",
+          "type": "table",
+          "required": false,
+          "description_ja": "対象・版・根拠を明記する。記載の完成は承認又は権利処理の成立を意味しない。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": [],
+    "checklist_template_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "記入欄の構造案。法的・組織的承認の代替として利用しない。",
+  "workflow_id": "editorial-eight-stage"
+}

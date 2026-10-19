@@ -1,0 +1,93 @@
+[
+  {
+    "template_id": "TPL-CHK-042",
+    "template_version": "0.2.0",
+    "canonical_sha256": "0bc9ef6dbf9ea16779808c4798182b21ad5ed9ff038cfb800e963c8d74130b1c",
+    "print_style_sha256": "1a8c9121ba723d9e9aaef383e7695a02b6548d6088079df7d7d86533070addf7",
+    "tex_sha256": "9f87d9f3a72fa4943be401277bdcf2eb8de779f2bd43c46d8b130de777a2c240"
+  },
+  {
+    "template_id": "TPL-CHK-043",
+    "template_version": "0.2.0",
+    "canonical_sha256": "33378f21e688376a7ecf8f43be6576a801e998a68c032850905bfbbd5d2215ad",
+    "print_style_sha256": "1a8c9121ba723d9e9aaef383e7695a02b6548d6088079df7d7d86533070addf7",
+    "tex_sha256": "fbd9c70f0f57b02b00624995c903b3c5021bfe92880d46c817c771cbadc54a26"
+  },
+  {
+    "template_id": "TPL-CHK-044",
+    "template_version": "0.2.0",
+    "canonical_sha256": "71202a47829441b80f950f119c9a9611e1e931597adecc7b02fb5fcc7d336d42",
+    "print_style_sha256": "1a8c9121ba723d9e9aaef383e7695a02b6548d6088079df7d7d86533070addf7",
+    "tex_sha256": "f8387f52b4b735f74d1136412874a78da68d614d989367391c4f932ecdf7c32d"
+  },
+  {
+    "template_id": "TPL-CHK-045",
+    "template_version": "0.2.0",
+    "canonical_sha256": "3fb3f0162ac0ff5df43c07b2db5a3ef50ebbaa89043c3a661d5f107d962f7214",
+    "print_style_sha256": "1a8c9121ba723d9e9aaef383e7695a02b6548d6088079df7d7d86533070addf7",
+    "tex_sha256": "1a686bfd2b488884932b9302ab4b5682de30be63b06dec82769d81fe46dc74e4"
+  },
+  {
+    "template_id": "TPL-DOC-086",
+    "template_version": "0.2.0",
+    "canonical_sha256": "4e54642af1a05ad6f055757b3eea3190a5ecb5661d2e31a77728b8c7f35540cd",
+    "print_style_sha256": "1a8c9121ba723d9e9aaef383e7695a02b6548d6088079df7d7d86533070addf7",
+    "tex_sha256": "6fb7a2c00a0ce7943efdb2e655baae2798782853075ac6c8dec45f18c0277905"
+  },
+  {
+    "template_id": "TPL-DOC-087",
+    "template_version": "0.2.0",
+    "canonical_sha256": "f71e65fbbaeea99cb0051c82abfa9fb2b6bcf5d1500a102191892e008e8acb4f",
+    "print_style_sha256": "1a8c9121ba723d9e9aaef383e7695a02b6548d6088079df7d7d86533070addf7",
+    "tex_sha256": "2ae51a22efa00e03be22ee371692e23ac0389ef021d3e49eb32753ffbbeaab37"
+  },
+  {
+    "template_id": "TPL-DOC-088",
+    "template_version": "0.2.0",
+    "canonical_sha256": "c8a0db672ece5db9ec07b18ca8a95ca80c2c683a180d9f9710e4f190aca0ea04",
+    "print_style_sha256": "1a8c9121ba723d9e9aaef383e7695a02b6548d6088079df7d7d86533070addf7",
+    "tex_sha256": "62225a7f70f0ea5ae1646bdb022943b59a6266eb7769972388ad59cc09626bb2"
+  },
+  {
+    "template_id": "TPL-DOC-089",
+    "template_version": "0.2.0",
+    "canonical_sha256": "245ad3f8d29d591b192667cf977e7ba4b33329fcdbc92c31322f5157554426a0",
+    "print_style_sha256": "1a8c9121ba723d9e9aaef383e7695a02b6548d6088079df7d7d86533070addf7",
+    "tex_sha256": "4f719a3847a37f93b9063aa303cd7c66b0f610c8fd3f471490832e1fb9c493a9"
+  },
+  {
+    "template_id": "TPL-DOC-090",
+    "template_version": "0.2.0",
+    "canonical_sha256": "0d413d045de047edb3a1fb53f239623a3c10f44c15013da24d0767980da4fd4a",
+    "print_style_sha256": "1a8c9121ba723d9e9aaef383e7695a02b6548d6088079df7d7d86533070addf7",
+    "tex_sha256": "ef074de5dbfee89384aff26f034a5f998e5a0824ec9f2d261d004cdd8e9cd537"
+  },
+  {
+    "template_id": "TPL-DOC-091",
+    "template_version": "0.2.0",
+    "canonical_sha256": "5f6de5c9583a9859d99f3fbeecac72c5ba76cb97d4e0e86e77d42f4ad35d4525",
+    "print_style_sha256": "1a8c9121ba723d9e9aaef383e7695a02b6548d6088079df7d7d86533070addf7",
+    "tex_sha256": "8785627491e44d694637953ab8ea2e2d875b708f9629b8c29771dd81fe7c669e"
+  },
+  {
+    "template_id": "TPL-DOC-092",
+    "template_version": "0.2.0",
+    "canonical_sha256": "4c0f9bae2eb5f72bc45e54d1e6c044bbb7fae107bfec326a9c243148d644af7d",
+    "print_style_sha256": "1a8c9121ba723d9e9aaef383e7695a02b6548d6088079df7d7d86533070addf7",
+    "tex_sha256": "8114c649410bdf9f74be1748ff779691cd45de992c13d67e41d7c8e47cc8678b"
+  },
+  {
+    "template_id": "TPL-DOC-093",
+    "template_version": "0.2.0",
+    "canonical_sha256": "be7b521269b00efc93d5f1d9190f3469918f83cc51e794ae78edc5b1c2d59e77",
+    "print_style_sha256": "1a8c9121ba723d9e9aaef383e7695a02b6548d6088079df7d7d86533070addf7",
+    "tex_sha256": "705a1be8a24862af8152e9899e8df09de8ce1f114106d75660e2bd7000c6c443"
+  },
+  {
+    "template_id": "TPL-DOC-094",
+    "template_version": "0.2.0",
+    "canonical_sha256": "ca690474f9d1deccfe797b52bba59555e1f9ae266cd4b6e836f645d81feb36e3",
+    "print_style_sha256": "1a8c9121ba723d9e9aaef383e7695a02b6548d6088079df7d7d86533070addf7",
+    "tex_sha256": "8e574fbc0d12481c461a3f7ff4969e30fc0527bf96d0a1ceb18015210f925fbc"
+  }
+]

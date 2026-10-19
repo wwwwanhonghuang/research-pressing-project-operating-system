@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-PUB-VERSION",
+  "version": "0.1.0",
+  "title": {
+    "ja": "変更管理と配信再審査"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "公開・配信業務の設計・審査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-RFC-9110",
+      "locator": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "accessed_on": "2026-10-19",
+      "verification_note": "RFC 9110 HTTP Semantics。HTTP応答の技術的意味に限る。公開内容の正確性や許諾の規範ではない。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "07"
+    ],
+    "audiences": [
+      "編集担当者",
+      "配信担当者",
+      "レビュアー",
+      "公開責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-PUB-VERSION-H01",
+      "kind": "heading",
+      "text": "適用範囲と目的",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-VERSION-P01",
+      "kind": "paragraph",
+      "text": "公開後・予約後の媒体別変更は、承認対象との対応が失われるかどうかを評価する。"
+    },
+    {
+      "id": "KNW-PUB-VERSION-H02",
+      "kind": "heading",
+      "text": "実施上の確認事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-VERSION-P02",
+      "kind": "paragraph",
+      "text": "修正の種類を誤植、意味変更、権利変更、公開条件変更に分け、誰が再確認するか記録する。"
+    },
+    {
+      "id": "KNW-PUB-VERSION-H03",
+      "kind": "heading",
+      "text": "境界と判断事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-VERSION-P03",
+      "kind": "paragraph",
+      "text": "修正前後の版を保存し、訂正履歴の公表要否は第8段階で検討する。"
+    }
+  ]
+}

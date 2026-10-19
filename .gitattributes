@@ -1,0 +1,11 @@
+# Build manifests record SHA-256 hashes of exact source bytes. Line-ending
+# conversion on checkout (e.g. core.autocrlf=true on Windows) would silently
+# invalidate them, so text is always stored and checked out with LF.
+* text=auto eol=lf
+
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary

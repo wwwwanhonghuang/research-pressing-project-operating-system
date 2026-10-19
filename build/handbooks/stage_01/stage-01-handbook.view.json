@@ -1,0 +1,2291 @@
+{
+  "schema_version": "0.1.0",
+  "document_id": "PUB-PLN-HANDBOOK",
+  "version": "0.1.0",
+  "title_ja": "企画・編集方針 業務ハンドブック（試作）",
+  "status": "independent_draft",
+  "chapters": [
+    {
+      "id": "CH-PLN-INTRO",
+      "title_ja": "目的・範囲・本資料の位置づけ",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "本書は、企画・編集方針の段階を理解し実施するための独立設計・試作の業務ハンドブックである。企画・調査・取材・制作・確認・公開・評価という全体過程のうち、本段階では次工程へ渡す問い、制約、責任と資料を整える。記載事項は特定組織の正式な業務規程、承認された手順、法令適合性を示すものではない。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "企画に必要な確認は段階的かつ反復的に行う。最初のレビューは公開承認ではなく、追加調査の進行条件の確認である。各タスクの実行記録はプロジェクト単位で作成し、標準定義の版と関連づける。"
+        }
+      ]
+    },
+    {
+      "id": "CH-PLN-STD",
+      "title_ja": "企画段階の共通業務標準",
+      "parts": [
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-PLANNING-TRACE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "企画判断の追跡可能性と判断記録"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "企画編集担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "01"
+              ],
+              "audiences": [
+                "企画編集担当者",
+                "科学コミュニケーション担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-PLANNING-TRACE-B01",
+                "kind": "heading",
+                "text": "目的と適用範囲",
+                "level": 2
+              },
+              {
+                "id": "KNW-PLANNING-TRACE-B02",
+                "kind": "paragraph",
+                "text": "本基準案は、企画の採否を含む編集判断について、その根拠、代替案、未確認事項および決定権限を後から検討できるようにすることを目的とする。広報記事、インタビュー、解説記事、対話型教材その他の科学コミュニケーション企画の立案に適用する。"
+              },
+              {
+                "id": "KNW-PLANNING-TRACE-B03",
+                "kind": "heading",
+                "text": "企画対象と選定理由",
+                "level": 2
+              },
+              {
+                "id": "KNW-PLANNING-TRACE-B04",
+                "kind": "paragraph",
+                "text": "企画候補ごとに、対象とする研究・出来事・論点、発生時点と資料公開時点、想定読者、企画上の問いを明確にする。読者に提供し得る知識上の価値と公共的な関連性を記録し、候補間で検討した観点を残す。"
+              },
+              {
+                "id": "KNW-PLANNING-TRACE-B05",
+                "kind": "paragraph",
+                "text": "採否の説明は、話題性だけに依拠せず、確認可能な資料の存在、取材可能性、編集資源、利益相反、関係する人々への影響を踏まえる。内容の重要性と露出の大きさを別の評価対象として扱う。"
+              },
+              {
+                "id": "KNW-PLANNING-TRACE-B06",
+                "kind": "heading",
+                "text": "判断履歴",
+                "level": 2
+              },
+              {
+                "id": "KNW-PLANNING-TRACE-B07",
+                "kind": "paragraph",
+                "text": "企画書および候補一覧に、作成者、検討日、使用資料、版、判断者、決定内容、保留条件を関連づける。採用後の企画変更についても変更理由と影響範囲を記録する。"
+              },
+              {
+                "id": "KNW-PLANNING-TRACE-B08",
+                "kind": "heading",
+                "text": "出口条件",
+                "level": 2
+              },
+              {
+                "id": "KNW-PLANNING-TRACE-B09",
+                "kind": "paragraph",
+                "text": "企画の目的、対象読者、取り上げる範囲、主要な未確認事項、次段階で検証すべき問い、および責任ある確認経路が特定されているとき、調査段階への引継ぎを提案できる。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PLANNING-TRACE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-CLAIM-BOUNDARY",
+            "version": "0.1.0",
+            "title": {
+              "ja": "主張の射程と研究成果の位置づけ"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "企画編集担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "PUBLIC-PRESS-ETHICS",
+                "locator": "https://www.pressnet.or.jp/outline/ethics/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "報道倫理の一般的な参照資料。組織的な遵守認証または直接の法的拘束力を主張しない。"
+              },
+              {
+                "source_id": "PUBLIC-PSYCHOLOGY-GUIDANCE",
+                "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "科学広報の資料検証、一般化、出典、著者確認の参考。分野・媒体への適用は個別に検討する。"
+              }
+            ],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "01"
+              ],
+              "audiences": [
+                "企画編集担当者",
+                "科学コミュニケーション担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-CLAIM-BOUNDARY-B01",
+                "kind": "heading",
+                "text": "研究成果と研究構想の区別",
+                "level": 2
+              },
+              {
+                "id": "KNW-CLAIM-BOUNDARY-B02",
+                "kind": "paragraph",
+                "text": "企画段階で予定する主要な説明を、観測された事実、解析からの推論、因果的解釈、研究上の仮説、社会的応用の見通し、長期目標に暫定区分する。区分は追加調査に伴い改訂できる。"
+              },
+              {
+                "id": "KNW-CLAIM-BOUNDARY-B03",
+                "kind": "paragraph",
+                "text": "現時点で根拠未確認の主張は企画上の検証課題として扱う。確定済みの結論を前提とする見出しや紹介文を先行して固定しない。"
+              },
+              {
+                "id": "KNW-CLAIM-BOUNDARY-B04",
+                "kind": "heading",
+                "text": "研究方法と一般化",
+                "level": 2
+              },
+              {
+                "id": "KNW-CLAIM-BOUNDARY-B05",
+                "kind": "paragraph",
+                "text": "対象集団、サンプル、方法、測定、比較条件、効果の大きさと不確実性について、企画段階で把握できる情報を記録する。モデル生物、実験系、観察研究などから他の集団や実世界への拡張には別途根拠が必要である。"
+              },
+              {
+                "id": "KNW-CLAIM-BOUNDARY-B06",
+                "kind": "heading",
+                "text": "独立した編集判断",
+                "level": 2
+              },
+              {
+                "id": "KNW-CLAIM-BOUNDARY-B07",
+                "kind": "paragraph",
+                "text": "科学的内容に関する研究者への照会と、編集上の焦点、読者への説明責任、発言の正確な表現を区別する。取材対象の確認は、編集責任者の判断および組織の正式な公開手続を自動的に代替しない。"
+              },
+              {
+                "id": "KNW-CLAIM-BOUNDARY-B08",
+                "kind": "heading",
+                "text": "次段階への引継ぎ",
+                "level": 2
+              },
+              {
+                "id": "KNW-CLAIM-BOUNDARY-B09",
+                "kind": "paragraph",
+                "text": "原資料の識別子、主張候補、根拠の強さが未確定な箇所、照会先と確認の期限を資料収集担当に渡す。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-CLAIM-BOUNDARY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-AUDIENCE-ACCESS",
+            "version": "0.1.0",
+            "title": {
+              "ja": "対象読者と媒体選択の適合性"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "企画編集担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "category": "standard",
+            "scope": {
+              "stages": [
+                "01"
+              ],
+              "audiences": [
+                "企画編集担当者",
+                "科学コミュニケーション担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-AUDIENCE-ACCESS-B01",
+                "kind": "heading",
+                "text": "読者の多様性",
+                "level": 2
+              },
+              {
+                "id": "KNW-AUDIENCE-ACCESS-B02",
+                "kind": "paragraph",
+                "text": "読者集団を年齢や専門領域だけで一括りにせず、知識、言語、利用環境、情報取得目的、アクセシビリティ上の必要、参加意欲に応じて複数の利用場面を想定する。推定と確認済みの読者情報を区別する。"
+              },
+              {
+                "id": "KNW-AUDIENCE-ACCESS-B03",
+                "kind": "heading",
+                "text": "媒体選択",
+                "level": 2
+              },
+              {
+                "id": "KNW-AUDIENCE-ACCESS-B04",
+                "kind": "paragraph",
+                "text": "文章、図、音声、映像、対話形式、印刷物などの候補から、各媒体が提供する理解上の利点、利用負担、制作・更新負担を比較する。すべての読者に単一の形式の利用を要求しない。"
+              },
+              {
+                "id": "KNW-AUDIENCE-ACCESS-B05",
+                "kind": "paragraph",
+                "text": "音声・映像を採用する場合、理解上重要な内容への別経路を検討し、適切な字幕、文字起こし、代替テキスト、図の説明などを企画時から見積もる。アクセシビリティの技術基準への適合判定は別工程で行う。"
+              },
+              {
+                "id": "KNW-AUDIENCE-ACCESS-B06",
+                "kind": "heading",
+                "text": "評価可能性",
+                "level": 2
+              },
+              {
+                "id": "KNW-AUDIENCE-ACCESS-B07",
+                "kind": "paragraph",
+                "text": "閲覧数や再生数の増加を理解そのものの指標とみなさず、必要に応じて読者理解、質問、誤解、反応、参加の質を観測する方法を企画書に明示する。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-AUDIENCE-ACCESS",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PLN-ETH",
+      "title_ja": "倫理・責任・認識上の配慮",
+      "parts": [
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ETHIC-SELECTION",
+            "version": "0.1.0",
+            "title": {
+              "ja": "企画選択と表象に伴う認識上の偏り"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "企画編集担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "PUBLIC-PRESS-ETHICS",
+                "locator": "https://www.pressnet.or.jp/outline/ethics/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "報道倫理の一般的な参照資料。組織的な遵守認証または直接の法的拘束力を主張しない。"
+              },
+              {
+                "source_id": "PUBLIC-PSYCHOLOGY-GUIDANCE",
+                "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "科学広報の資料検証、一般化、出典、著者確認の参考。分野・媒体への適用は個別に検討する。"
+              }
+            ],
+            "links": [],
+            "category": "ethics",
+            "scope": {
+              "stages": [
+                "01"
+              ],
+              "audiences": [
+                "企画編集担当者",
+                "科学コミュニケーション担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ETHIC-SELECTION-B01",
+                "kind": "heading",
+                "text": "注目の分配",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETHIC-SELECTION-B02",
+                "kind": "paragraph",
+                "text": "どの研究、研究者、問いを紹介するかという選択は、社会に提示される知識の構成に影響する。知名度、所属先、発表言語、既存の取材関係、見栄えなどが選定を左右する可能性を点検する。"
+              },
+              {
+                "id": "KNW-ETHIC-SELECTION-B03",
+                "kind": "heading",
+                "text": "複数の立場と証拠の非対称性",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETHIC-SELECTION-B04",
+                "kind": "paragraph",
+                "text": "論争的なテーマを扱う場合は、異なる立場の存在と各立場を支える根拠の強さを別々に検討する。多様な意見を紹介することが、証拠の強さに関係なく全主張を等しいと扱う根拠にはならない。"
+              },
+              {
+                "id": "KNW-ETHIC-SELECTION-B05",
+                "kind": "heading",
+                "text": "関係者への影響",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETHIC-SELECTION-B06",
+                "kind": "paragraph",
+                "text": "研究参加者、患者、当事者、研究者、地域住民などへの潜在的な影響を見積もる。説明による利益と、誤解、烙印、期待の過熱、個人の特定などの不利益を検討し、必要に応じて適切な相談先を決める。"
+              },
+              {
+                "id": "KNW-ETHIC-SELECTION-B07",
+                "kind": "heading",
+                "text": "判断の記録",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETHIC-SELECTION-B08",
+                "kind": "paragraph",
+                "text": "配慮を理由とした省略・匿名化・構成変更を行う場合は、目的、影響、実施者、判断の範囲を記録し、編集上の判断を将来に再検討できるようにする。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETHIC-SELECTION",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "knowledge_entry",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "KNW-ETHIC-INDEPENDENCE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "独立性、利益相反、権利・責任の予備評価"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "企画編集担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [
+              {
+                "source_id": "PUBLIC-PRESS-ETHICS",
+                "locator": "https://www.pressnet.or.jp/outline/ethics/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "報道倫理の一般的な参照資料。組織的な遵守認証または直接の法的拘束力を主張しない。"
+              },
+              {
+                "source_id": "PUBLIC-PSYCHOLOGY-GUIDANCE",
+                "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+                "accessed_on": "2026-10-19",
+                "verification_note": "科学広報の資料検証、一般化、出典、著者確認の参考。分野・媒体への適用は個別に検討する。"
+              }
+            ],
+            "links": [],
+            "category": "ethics",
+            "scope": {
+              "stages": [
+                "01"
+              ],
+              "audiences": [
+                "企画編集担当者",
+                "科学コミュニケーション担当者"
+              ]
+            },
+            "blocks": [
+              {
+                "id": "KNW-ETHIC-INDEPENDENCE-B01",
+                "kind": "heading",
+                "text": "広報と独立報道",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETHIC-INDEPENDENCE-B02",
+                "kind": "paragraph",
+                "text": "発信主体と編集権限を明示し、組織広報、研究者の成果紹介、独立取材記事を区別する。取材協力者や協賛者による内容確認の範囲、編集判断への関与可能性を事前に整理する。"
+              },
+              {
+                "id": "KNW-ETHIC-INDEPENDENCE-B03",
+                "kind": "heading",
+                "text": "利益相反",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETHIC-INDEPENDENCE-B04",
+                "kind": "paragraph",
+                "text": "資金提供、共同研究、委託関係、組織の利害、個人的な関係などが企画の選択、表現、公開時期に与え得る影響を確認する。開示事項は企画段階の記録へ接続し、適用される開示ルールは正式担当者へ照会する。"
+              },
+              {
+                "id": "KNW-ETHIC-INDEPENDENCE-B05",
+                "kind": "heading",
+                "text": "権利と情報の分類",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETHIC-INDEPENDENCE-B06",
+                "kind": "paragraph",
+                "text": "図表、写真、音声、顔や氏名、未公開研究内容に関する使用見込みを記録する。著作権、肖像、個人情報、取材同意、公開時期を個別に確認し、実際の許諾取得は担当工程へ引き継ぐ。"
+              },
+              {
+                "id": "KNW-ETHIC-INDEPENDENCE-B07",
+                "kind": "heading",
+                "text": "AIの補助利用",
+                "level": 2
+              },
+              {
+                "id": "KNW-ETHIC-INDEPENDENCE-B08",
+                "kind": "paragraph",
+                "text": "AIによる候補収集、質問案生成、表現比較は補助作業とし、根拠照合と編集決定は人が担う。機密資料、公開前研究、個人情報は、利用可能なサービスと正式な情報取扱条件が確定するまで外部AIへ投入しない。"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETHIC-INDEPENDENCE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PLN-INTAKE",
+      "title_ja": "企画依頼の受理と対象範囲の設定",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-PLN-INTAKE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "企画依頼の受理と対象範囲の設定"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "編集担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "01"
+            ],
+            "inputs": [
+              "依頼内容、背景説明、既存資料、依頼主との連絡経路"
+            ],
+            "outputs": [
+              "企画依頼記録、対象範囲・除外範囲、未確認事項"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "依頼目的と読者の情報需要を別々に記録できる",
+              "企画対象、非対象、情報公開条件を暫定的に定義した",
+              "依頼主と編集担当者の責任分界を明確にした"
+            ],
+            "review_roles": [
+              "編集責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-PLN-INTAKE",
+              "version": "0.1.0"
+            },
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-002",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-036",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-017",
+                "version": "0.2.0"
+              }
+            ],
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PLANNING-TRACE",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-CLAIM-BOUNDARY",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-AUDIENCE-ACCESS",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETHIC-SELECTION",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETHIC-INDEPENDENCE",
+                "version": "0.1.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PLN-INTAKE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-PLN-INTAKE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "企画依頼の受理と対象範囲の設定の標準手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "企画編集担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "編集担当者"
+            ],
+            "inputs": [
+              "依頼内容、背景説明、既存資料、依頼主との連絡経路"
+            ],
+            "outputs": [
+              "企画依頼記録、対象範囲・除外範囲、未確認事項"
+            ],
+            "steps": [
+              {
+                "id": "PRC-PLN-INTAKE-S1",
+                "instruction": "依頼目的、背景、希望媒体、期限、公開制限の有無を確認する。",
+                "expected_output": "企画依頼記録、対象範囲・除外範囲、未確認事項",
+                "evidence_needed": false
+              },
+              {
+                "id": "PRC-PLN-INTAKE-S2",
+                "instruction": "業務の公共的目的と依頼元の期待を整理し、現時点で確認できない事項を分類する。",
+                "expected_output": "企画依頼記録、対象範囲・除外範囲、未確認事項",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PLN-INTAKE-S3",
+                "instruction": "成果物の種類、対象となる情報と除外範囲、見込まれる関係者を列挙する。",
+                "expected_output": "企画依頼記録、対象範囲・除外範囲、未確認事項",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PLN-INTAKE-S4",
+                "instruction": "先行する発表や既存の記事を調べ、編集上の追加価値と重複を確認する。",
+                "expected_output": "企画依頼記録、対象範囲・除外範囲、未確認事項",
+                "evidence_needed": false
+              },
+              {
+                "id": "PRC-PLN-INTAKE-S5",
+                "instruction": "個人情報、未公開研究、利害関係など必要な初期照会先を決める。",
+                "expected_output": "企画依頼記録、対象範囲・除外範囲、未確認事項",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PLN-INTAKE-S6",
+                "instruction": "企画依頼記録を作成し、範囲変更条件と次の検討者を登録する。",
+                "expected_output": "企画依頼記録、対象範囲・除外範囲、未確認事項",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "一次資料が未公開、共有権限が未確認、利害関係または個人情報に問題がある場合は、状態を保留として必要な担当者へ照会する。",
+              "取材・公開条件が変化した場合は、版と変更理由を記録して影響する後続作業を再点検する。",
+              "AIの提案のみをもって完了または承認と判定しない。"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PLN-INTAKE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PLN-TOPIC",
+      "title_ja": "企画候補の探索・比較と暫定選定",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-PLN-TOPIC",
+            "version": "0.1.0",
+            "title": {
+              "ja": "企画候補の探索・比較と暫定選定"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "企画編集担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "01"
+            ],
+            "inputs": [
+              "取材候補一覧、一次資料の所在、既存記事、公開可能な情報"
+            ],
+            "outputs": [
+              "企画候補比較票、選定理由、保留候補と再検討条件"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "候補の公共的関連性と根拠資料の有無を記録した",
+              "話題性とエビデンス確実性を別の尺度で評価した",
+              "採否と代替候補について判断理由を記録した"
+            ],
+            "review_roles": [
+              "編集責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-PLN-TOPIC",
+              "version": "0.1.0"
+            },
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-032",
+                "version": "0.2.0"
+              },
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-030",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-016",
+                "version": "0.2.0"
+              }
+            ],
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PLANNING-TRACE",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-CLAIM-BOUNDARY",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-AUDIENCE-ACCESS",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETHIC-SELECTION",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETHIC-INDEPENDENCE",
+                "version": "0.1.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PLN-TOPIC",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-PLN-TOPIC",
+            "version": "0.1.0",
+            "title": {
+              "ja": "企画候補の探索・比較と暫定選定の標準手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "企画編集担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "企画編集担当者"
+            ],
+            "inputs": [
+              "取材候補一覧、一次資料の所在、既存記事、公開可能な情報"
+            ],
+            "outputs": [
+              "企画候補比較票、選定理由、保留候補と再検討条件"
+            ],
+            "steps": [
+              {
+                "id": "PRC-PLN-TOPIC-S1",
+                "instruction": "候補ごとに対象とする現象、研究、ニュース価値の根拠、読者にとっての問いを定義する。",
+                "expected_output": "企画候補比較票、選定理由、保留候補と再検討条件",
+                "evidence_needed": false
+              },
+              {
+                "id": "PRC-PLN-TOPIC-S2",
+                "instruction": "各候補について基礎資料の公開状況、調査の困難さ、日付と版を確認する。",
+                "expected_output": "企画候補比較票、選定理由、保留候補と再検討条件",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PLN-TOPIC-S3",
+                "instruction": "公共的関連性、新規性、説明可能性、編集資源、倫理的リスクを別々に記録する。",
+                "expected_output": "企画候補比較票、選定理由、保留候補と再検討条件",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PLN-TOPIC-S4",
+                "instruction": "評価軸を単純に合計して自動決定することを避け、比較できない観点を残す。",
+                "expected_output": "企画候補比較票、選定理由、保留候補と再検討条件",
+                "evidence_needed": false
+              },
+              {
+                "id": "PRC-PLN-TOPIC-S5",
+                "instruction": "知名度、言語、所属、関係性による選択の偏りがないか検討する。",
+                "expected_output": "企画候補比較票、選定理由、保留候補と再検討条件",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PLN-TOPIC-S6",
+                "instruction": "採択、保留、見送りの判断、理由、確認者、再審査条件を登録する。",
+                "expected_output": "企画候補比較票、選定理由、保留候補と再検討条件",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "一次資料が未公開、共有権限が未確認、利害関係または個人情報に問題がある場合は、状態を保留として必要な担当者へ照会する。",
+              "取材・公開条件が変化した場合は、版と変更理由を記録して影響する後続作業を再点検する。",
+              "AIの提案のみをもって完了または承認と判定しない。"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PLN-TOPIC",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PLN-AUDIENCE",
+      "title_ja": "読者・利用場面と情報アクセスの分析",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-PLN-AUDIENCE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "読者・利用場面と情報アクセスの分析"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "企画編集担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "01"
+            ],
+            "inputs": [
+              "企画候補、媒体の利用状況、読者からの質問や過去の反応"
+            ],
+            "outputs": [
+              "対象読者分析票、利用場面、アクセシビリティ配慮事項"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "読者群の区分を推測と観測に分けて説明できる",
+              "言語、利用環境、基礎知識、利用目的の多様性を記録した",
+              "代替媒体の必要性と検証方法を示した"
+            ],
+            "review_roles": [
+              "編集責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-PLN-AUDIENCE",
+              "version": "0.1.0"
+            },
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-007",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-034",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-010",
+                "version": "0.1.0"
+              }
+            ],
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PLANNING-TRACE",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-CLAIM-BOUNDARY",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-AUDIENCE-ACCESS",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETHIC-SELECTION",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETHIC-INDEPENDENCE",
+                "version": "0.1.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PLN-AUDIENCE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-PLN-AUDIENCE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "読者・利用場面と情報アクセスの分析の標準手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "企画編集担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "企画編集担当者"
+            ],
+            "inputs": [
+              "企画候補、媒体の利用状況、読者からの質問や過去の反応"
+            ],
+            "outputs": [
+              "対象読者分析票、利用場面、アクセシビリティ配慮事項"
+            ],
+            "steps": [
+              {
+                "id": "PRC-PLN-AUDIENCE-S1",
+                "instruction": "予定読者とその情報ニーズを記述し、企画元の期待と区別する。",
+                "expected_output": "対象読者分析票、利用場面、アクセシビリティ配慮事項",
+                "evidence_needed": false
+              },
+              {
+                "id": "PRC-PLN-AUDIENCE-S2",
+                "instruction": "読者の事前知識、求める具体的な判断や疑問を想定する。",
+                "expected_output": "対象読者分析票、利用場面、アクセシビリティ配慮事項",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PLN-AUDIENCE-S3",
+                "instruction": "言語、障害、機器、帯域、視聴環境、利用時間に伴うアクセス条件を確認する。",
+                "expected_output": "対象読者分析票、利用場面、アクセシビリティ配慮事項",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PLN-AUDIENCE-S4",
+                "instruction": "仮説的な読者像はその旨を表示し、可能なら過去の問い合わせや観測資料で検証する。",
+                "expected_output": "対象読者分析票、利用場面、アクセシビリティ配慮事項",
+                "evidence_needed": false
+              },
+              {
+                "id": "PRC-PLN-AUDIENCE-S5",
+                "instruction": "情報の核となる部分に複数の到達経路を用意する必要性を検討する。",
+                "expected_output": "対象読者分析票、利用場面、アクセシビリティ配慮事項",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PLN-AUDIENCE-S6",
+                "instruction": "誤解されやすい表現、専門用語、図表について追加確認事項を提出する。",
+                "expected_output": "対象読者分析票、利用場面、アクセシビリティ配慮事項",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "一次資料が未公開、共有権限が未確認、利害関係または個人情報に問題がある場合は、状態を保留として必要な担当者へ照会する。",
+              "取材・公開条件が変化した場合は、版と変更理由を記録して影響する後続作業を再点検する。",
+              "AIの提案のみをもって完了または承認と判定しない。"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PLN-AUDIENCE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PLN-ANGLE",
+      "title_ja": "編集上の問い・主張範囲と証拠状態の整理",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-PLN-ANGLE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "編集上の問い・主張範囲と証拠状態の整理"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "編集担当者・専門確認者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "01"
+            ],
+            "inputs": [
+              "候補と先行研究情報、論文・発表資料、読者分析"
+            ],
+            "outputs": [
+              "編集上の問い、暫定主張一覧、検証すべき点、原資料参照"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "確定情報と仮説・将来目標を区別した",
+              "見出し案と原資料の主張範囲に齟齬がないか確認した",
+              "未検証事項を明確にして次の調査に引き渡した"
+            ],
+            "review_roles": [
+              "編集責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-PLN-ANGLE",
+              "version": "0.1.0"
+            },
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-033",
+                "version": "0.2.0"
+              },
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-030",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-015",
+                "version": "0.2.0"
+              }
+            ],
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PLANNING-TRACE",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-CLAIM-BOUNDARY",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-AUDIENCE-ACCESS",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETHIC-SELECTION",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETHIC-INDEPENDENCE",
+                "version": "0.1.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PLN-ANGLE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-PLN-ANGLE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "編集上の問い・主張範囲と証拠状態の整理の標準手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "企画編集担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "編集担当者・専門確認者"
+            ],
+            "inputs": [
+              "候補と先行研究情報、論文・発表資料、読者分析"
+            ],
+            "outputs": [
+              "編集上の問い、暫定主張一覧、検証すべき点、原資料参照"
+            ],
+            "steps": [
+              {
+                "id": "PRC-PLN-ANGLE-S1",
+                "instruction": "企画の中心的な問いと、その問いを選ぶ理由を一文で記述する。",
+                "expected_output": "編集上の問い、暫定主張一覧、検証すべき点、原資料参照",
+                "evidence_needed": false
+              },
+              {
+                "id": "PRC-PLN-ANGLE-S2",
+                "instruction": "取り扱う研究成果、比較対象、歴史的背景と射程の限界を整理する。",
+                "expected_output": "編集上の問い、暫定主張一覧、検証すべき点、原資料参照",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PLN-ANGLE-S3",
+                "instruction": "主張候補を観測、関連、因果解釈、仮説、予測、長期目標に暫定区分する。",
+                "expected_output": "編集上の問い、暫定主張一覧、検証すべき点、原資料参照",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PLN-ANGLE-S4",
+                "instruction": "一次資料への参照と、そこで実際に測定・主張された内容を照合する。",
+                "expected_output": "編集上の問い、暫定主張一覧、検証すべき点、原資料参照",
+                "evidence_needed": false
+              },
+              {
+                "id": "PRC-PLN-ANGLE-S5",
+                "instruction": "社会的含意が検証を越える場合、期待・解釈の区別と条件を明記する。",
+                "expected_output": "編集上の問い、暫定主張一覧、検証すべき点、原資料参照",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PLN-ANGLE-S6",
+                "instruction": "科学的な確認が必要な事項と表現・編集上の判断を分けて引き継ぐ。",
+                "expected_output": "編集上の問い、暫定主張一覧、検証すべき点、原資料参照",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "一次資料が未公開、共有権限が未確認、利害関係または個人情報に問題がある場合は、状態を保留として必要な担当者へ照会する。",
+              "取材・公開条件が変化した場合は、版と変更理由を記録して影響する後続作業を再点検する。",
+              "AIの提案のみをもって完了または承認と判定しない。"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PLN-ANGLE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PLN-FORMAT",
+      "title_ja": "媒体構成・制作工程・資源見積り",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-PLN-FORMAT",
+            "version": "0.1.0",
+            "title": {
+              "ja": "媒体構成・制作工程・資源見積り"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "制作調整担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "01"
+            ],
+            "inputs": [
+              "編集方針、対象読者分析、利用可能な人員と媒体"
+            ],
+            "outputs": [
+              "媒体展開案、工程表、役割、レビューと予算上の制約"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "媒体ごとの必要性と代替経路を説明できる",
+              "原稿、図表、撮影、字幕、確認時間を見積もった",
+              "関係者の作業と確認期限の見込みが共有された"
+            ],
+            "review_roles": [
+              "編集責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-PLN-FORMAT",
+              "version": "0.1.0"
+            },
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-009",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-035",
+                "version": "0.2.0"
+              },
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-010",
+                "version": "0.1.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-017",
+                "version": "0.2.0"
+              }
+            ],
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PLANNING-TRACE",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-CLAIM-BOUNDARY",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-AUDIENCE-ACCESS",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETHIC-SELECTION",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETHIC-INDEPENDENCE",
+                "version": "0.1.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PLN-FORMAT",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-PLN-FORMAT",
+            "version": "0.1.0",
+            "title": {
+              "ja": "媒体構成・制作工程・資源見積りの標準手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "企画編集担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "制作調整担当者"
+            ],
+            "inputs": [
+              "編集方針、対象読者分析、利用可能な人員と媒体"
+            ],
+            "outputs": [
+              "媒体展開案、工程表、役割、レビューと予算上の制約"
+            ],
+            "steps": [
+              {
+                "id": "PRC-PLN-FORMAT-S1",
+                "instruction": "文章、図表、音声、映像、対話などの選択肢を列挙し、読者ごとの利点と負担を比較する。",
+                "expected_output": "媒体展開案、工程表、役割、レビューと予算上の制約",
+                "evidence_needed": false
+              },
+              {
+                "id": "PRC-PLN-FORMAT-S2",
+                "instruction": "媒体ごとに必要な取材、写真、資料、翻訳、アクセシビリティ対応を整理する。",
+                "expected_output": "媒体展開案、工程表、役割、レビューと予算上の制約",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PLN-FORMAT-S3",
+                "instruction": "人員、専門確認、権利確認、制作・改訂の所要資源と日程依存を見積もる。",
+                "expected_output": "媒体展開案、工程表、役割、レビューと予算上の制約",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PLN-FORMAT-S4",
+                "instruction": "研究者などの確認可能時間と、公開予定・解禁予定の制約を整理する。",
+                "expected_output": "媒体展開案、工程表、役割、レビューと予算上の制約",
+                "evidence_needed": false
+              },
+              {
+                "id": "PRC-PLN-FORMAT-S5",
+                "instruction": "素材が利用できない場合の代替経路と公開範囲を決める。",
+                "expected_output": "媒体展開案、工程表、役割、レビューと予算上の制約",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PLN-FORMAT-S6",
+                "instruction": "工程表と媒体展開案を作り、追加負担や未確定事項を明示する。",
+                "expected_output": "媒体展開案、工程表、役割、レビューと予算上の制約",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "一次資料が未公開、共有権限が未確認、利害関係または個人情報に問題がある場合は、状態を保留として必要な担当者へ照会する。",
+              "取材・公開条件が変化した場合は、版と変更理由を記録して影響する後続作業を再点検する。",
+              "AIの提案のみをもって完了または承認と判定しない。"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PLN-FORMAT",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PLN-GATE",
+      "title_ja": "企画書統合・レビューと調査段階への引継ぎ",
+      "parts": [
+        {
+          "kind": "task_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TSK-PLN-GATE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "企画書統合・レビューと調査段階への引継ぎ"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "編集責任者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "stage_ids": [
+              "01"
+            ],
+            "inputs": [
+              "企画書案、候補比較、主張境界、読者分析、媒体工程案"
+            ],
+            "outputs": [
+              "企画書の版、レビュー結果、要調査事項一覧、担当割当"
+            ],
+            "requires_human_decision": true,
+            "acceptance_criteria": [
+              "企画書の必要項目と未確認事項が追跡できる",
+              "権限ある人の判断と修正指示が別記録に保存された",
+              "調査段階の優先課題と担当が明確になった"
+            ],
+            "review_roles": [
+              "編集責任者"
+            ],
+            "procedure_ref": {
+              "kind": "procedure_definition",
+              "id": "PRC-PLN-GATE",
+              "version": "0.1.0"
+            },
+            "document_template_refs": [
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-030",
+                "version": "0.2.0"
+              },
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-031",
+                "version": "0.2.0"
+              },
+              {
+                "kind": "document_template",
+                "id": "TPL-DOC-036",
+                "version": "0.2.0"
+              }
+            ],
+            "checklist_refs": [
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-015",
+                "version": "0.2.0"
+              },
+              {
+                "kind": "checklist_definition",
+                "id": "TPL-CHK-017",
+                "version": "0.2.0"
+              }
+            ],
+            "standard_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-PLANNING-TRACE",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-CLAIM-BOUNDARY",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-AUDIENCE-ACCESS",
+                "version": "0.1.0"
+              }
+            ],
+            "ethics_refs": [
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETHIC-SELECTION",
+                "version": "0.1.0"
+              },
+              {
+                "kind": "knowledge_entry",
+                "id": "KNW-ETHIC-INDEPENDENCE",
+                "version": "0.1.0"
+              }
+            ]
+          },
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PLN-GATE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "procedure_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "PRC-PLN-GATE",
+            "version": "0.1.0",
+            "title": {
+              "ja": "企画書統合・レビューと調査段階への引継ぎの標準手順（試案）"
+            },
+            "lifecycle": "draft",
+            "responsible_role": "企画編集担当者",
+            "authority": {
+              "origin": "independent_proposal",
+              "normative_class": "operational_proposal",
+              "institutional_approval": "none",
+              "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+            },
+            "access": {
+              "classification": "public",
+              "may_share_with_external_ai": true
+            },
+            "sources": [],
+            "links": [],
+            "required_roles": [
+              "編集責任者"
+            ],
+            "inputs": [
+              "企画書案、候補比較、主張境界、読者分析、媒体工程案"
+            ],
+            "outputs": [
+              "企画書の版、レビュー結果、要調査事項一覧、担当割当"
+            ],
+            "steps": [
+              {
+                "id": "PRC-PLN-GATE-S1",
+                "instruction": "企画書に目的、読者、対象、問い、根拠資料、リスク、制作工程を統合する。",
+                "expected_output": "企画書の版、レビュー結果、要調査事項一覧、担当割当",
+                "evidence_needed": false
+              },
+              {
+                "id": "PRC-PLN-GATE-S2",
+                "instruction": "科学的に未確認の主張、期待・推測、発言確認が必要な箇所を整理する。",
+                "expected_output": "企画書の版、レビュー結果、要調査事項一覧、担当割当",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PLN-GATE-S3",
+                "instruction": "編集、専門確認、権利・情報管理の関係者に必要な範囲を照会する。",
+                "expected_output": "企画書の版、レビュー結果、要調査事項一覧、担当割当",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PLN-GATE-S4",
+                "instruction": "条件付き進行、保留、差戻しの選択肢と判断理由を記録する。",
+                "expected_output": "企画書の版、レビュー結果、要調査事項一覧、担当割当",
+                "evidence_needed": false
+              },
+              {
+                "id": "PRC-PLN-GATE-S5",
+                "instruction": "判断主体、日付、企画書版、照会事項を含むレビュー記録を残す。",
+                "expected_output": "企画書の版、レビュー結果、要調査事項一覧、担当割当",
+                "evidence_needed": true
+              },
+              {
+                "id": "PRC-PLN-GATE-S6",
+                "instruction": "事前調査段階の担当、入力資料、確認すべき問い、期限と引継ぎ条件を登録する。",
+                "expected_output": "企画書の版、レビュー結果、要調査事項一覧、担当割当",
+                "evidence_needed": true
+              }
+            ],
+            "exception_handling": [
+              "一次資料が未公開、共有権限が未確認、利害関係または個人情報に問題がある場合は、状態を保留として必要な担当者へ照会する。",
+              "取材・公開条件が変化した場合は、版と変更理由を記録して影響する後続作業を再点検する。",
+              "AIの提案のみをもって完了または承認と判定しない。"
+            ]
+          },
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PLN-GATE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PLN-REV",
+      "title_ja": "判断と引継ぎの最終確認",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "本段階の完了確認には既存の企画書確認、企画候補評価、関係者・責任体制確認のチェックリスト定義を使用する。チェックリストの実施記録、根拠参照および実権限者の判断は独立のオブジェクトとして保存する。保留項目の残存は次段階での検証要件として明示する。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "引継ぎセットは、企画書の識別子と版、対象読者、主な問い、候補となる原資料、未検証の主張、倫理上の照会、担当と期限、媒体構成の仮説を最低限含む。必要な編集変更が発生したときは企画書版と判断記録を更新する。"
+        },
+        {
+          "kind": "checklist_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TPL-CHK-015",
+            "kind": "checklist",
+            "slug": "proposal_review",
+            "title_ja": "企画書確認チェックリスト",
+            "version": "0.2.0",
+            "lifecycle": "draft",
+            "status": "substantive_draft",
+            "priority": "P0",
+            "applicable_pipeline_stages": [
+              "01"
+            ],
+            "origin": "independent_proposal",
+            "authority_status": "unapproved",
+            "source_catalog": "templates/catalog.json",
+            "sections": [
+              {
+                "id": "TPL-CHK-015-S1",
+                "heading_ja": "確認項目",
+                "items": [
+                  {
+                    "id": "TPL-CHK-015-I001",
+                    "criterion_ja": "企画の目的・対象読者・対象範囲が記録されている",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "判断の根拠、対象資料のIDと版、確認者、確認日を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-015-I002",
+                    "criterion_ja": "中心的な問いと選定理由が明示されている",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "判断の根拠、対象資料のIDと版、確認者、確認日を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-015-I003",
+                    "criterion_ja": "主要な根拠資料と未確認事項が対応づけられている",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "判断の根拠、対象資料のIDと版、確認者、確認日を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-015-I004",
+                    "criterion_ja": "発信主体、編集責任、レビュー経路が明らかである",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "判断の根拠、対象資料のIDと版、確認者、確認日を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-015-I005",
+                    "criterion_ja": "企画変更時の版・判断履歴の扱いを確認した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "判断の根拠、対象資料のIDと版、確認者、確認日を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-015-I006",
+                    "criterion_ja": "点検対象の文書・版・活動を明示した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "根拠となる原資料、担当判断、実施記録を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-015-I007",
+                    "criterion_ja": "対象外と判断した項目には理由を記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "根拠となる原資料、担当判断、実施記録を記載する。",
+                    "human_review": true
+                  }
+                ]
+              },
+              {
+                "id": "TPL-CHK-015-S2",
+                "heading_ja": "点検結果の記録",
+                "fields": [
+                  {
+                    "id": "TPL-CHK-015-F001",
+                    "label_ja": "対象案件・対象版",
+                    "type": "short_text",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-015-F002",
+                    "label_ja": "担当者と点検日",
+                    "type": "date",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-015-F003",
+                    "label_ja": "未解決事項と対応",
+                    "type": "long_text",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-015-F004",
+                    "label_ja": "確認に用いた資料ID",
+                    "type": "table",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+                    "columns": [
+                      "対象・項目",
+                      "内容・参照",
+                      "担当・状態",
+                      "備考"
+                    ],
+                    "min_rows": 2
+                  }
+                ]
+              }
+            ],
+            "relationships": {
+              "related_task_ids": [],
+              "knowledge_ids": []
+            },
+            "rendering": {
+              "profile": "formal_japanese_mincho"
+            },
+            "notes_ja": "企画段階の検証可能な判断項目へ改訂した独立試案。人の実審査・承認を代替しない。",
+            "workflow_id": "editorial-eight-stage"
+          },
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-015",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "checklist_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TPL-CHK-016",
+            "kind": "checklist",
+            "slug": "topic_selection",
+            "title_ja": "企画候補評価チェックリスト",
+            "version": "0.2.0",
+            "lifecycle": "draft",
+            "status": "substantive_draft",
+            "priority": "P0",
+            "applicable_pipeline_stages": [
+              "01"
+            ],
+            "origin": "independent_proposal",
+            "authority_status": "unapproved",
+            "source_catalog": "templates/catalog.json",
+            "sections": [
+              {
+                "id": "TPL-CHK-016-S1",
+                "heading_ja": "確認項目",
+                "items": [
+                  {
+                    "id": "TPL-CHK-016-I001",
+                    "criterion_ja": "各企画候補の読者にとっての関連性を記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "判断の根拠、対象資料のIDと版、確認者、確認日を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-016-I002",
+                    "criterion_ja": "候補の一次資料と確認可能性を評価した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "判断の根拠、対象資料のIDと版、確認者、確認日を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-016-I003",
+                    "criterion_ja": "話題性と科学的根拠の強さを分けて検討した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "判断の根拠、対象資料のIDと版、確認者、確認日を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-016-I004",
+                    "criterion_ja": "候補間で時間・取材資源と影響の条件を比較した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "判断の根拠、対象資料のIDと版、確認者、確認日を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-016-I005",
+                    "criterion_ja": "選定による表象の偏りと利益相反を検討した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "判断の根拠、対象資料のIDと版、確認者、確認日を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-016-I006",
+                    "criterion_ja": "採択・保留・見送りの理由と判断者を記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "判断の根拠、対象資料のIDと版、確認者、確認日を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-016-I007",
+                    "criterion_ja": "対象外と判断した項目には理由を記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "根拠となる原資料、担当判断、実施記録を記載する。",
+                    "human_review": true
+                  }
+                ]
+              },
+              {
+                "id": "TPL-CHK-016-S2",
+                "heading_ja": "点検結果の記録",
+                "fields": [
+                  {
+                    "id": "TPL-CHK-016-F001",
+                    "label_ja": "対象案件・対象版",
+                    "type": "short_text",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-016-F002",
+                    "label_ja": "担当者と点検日",
+                    "type": "date",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-016-F003",
+                    "label_ja": "未解決事項と対応",
+                    "type": "long_text",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-016-F004",
+                    "label_ja": "確認に用いた資料ID",
+                    "type": "table",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+                    "columns": [
+                      "対象・項目",
+                      "内容・参照",
+                      "担当・状態",
+                      "備考"
+                    ],
+                    "min_rows": 2
+                  }
+                ]
+              }
+            ],
+            "relationships": {
+              "related_task_ids": [],
+              "knowledge_ids": []
+            },
+            "rendering": {
+              "profile": "formal_japanese_mincho"
+            },
+            "notes_ja": "企画段階の検証可能な判断項目へ改訂した独立試案。人の実審査・承認を代替しない。",
+            "workflow_id": "editorial-eight-stage"
+          },
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-016",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "checklist_definition",
+          "object": {
+            "schema_version": "1.0.0",
+            "id": "TPL-CHK-017",
+            "kind": "checklist",
+            "slug": "stakeholder_alignment",
+            "title_ja": "関係者・責任体制確認チェックリスト",
+            "version": "0.2.0",
+            "lifecycle": "draft",
+            "status": "substantive_draft",
+            "priority": "P0",
+            "applicable_pipeline_stages": [
+              "01"
+            ],
+            "origin": "independent_proposal",
+            "authority_status": "unapproved",
+            "source_catalog": "templates/catalog.json",
+            "sections": [
+              {
+                "id": "TPL-CHK-017-S1",
+                "heading_ja": "確認項目",
+                "items": [
+                  {
+                    "id": "TPL-CHK-017-I001",
+                    "criterion_ja": "発信主体と編集・専門確認・公開権限を区別した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "判断の根拠、対象資料のIDと版、確認者、確認日を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-017-I002",
+                    "criterion_ja": "取材対象・協力者との確認範囲を明らかにした",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "判断の根拠、対象資料のIDと版、確認者、確認日を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-017-I003",
+                    "criterion_ja": "情報管理・権利照会の責任者を特定した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "判断の根拠、対象資料のIDと版、確認者、確認日を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-017-I004",
+                    "criterion_ja": "調査・制作・承認の関係者に確認期限を提示した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "判断の根拠、対象資料のIDと版、確認者、確認日を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-017-I005",
+                    "criterion_ja": "未解決事項の照会先と引継ぎ経路を記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "判断の根拠、対象資料のIDと版、確認者、確認日を記録する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-017-I006",
+                    "criterion_ja": "点検対象の文書・版・活動を明示した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "根拠となる原資料、担当判断、実施記録を記載する。",
+                    "human_review": true
+                  },
+                  {
+                    "id": "TPL-CHK-017-I007",
+                    "criterion_ja": "対象外と判断した項目には理由を記録した",
+                    "status_options": [
+                      "未確認",
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_required_for": [
+                      "適合",
+                      "不適合",
+                      "対象外"
+                    ],
+                    "evidence_hint_ja": "根拠となる原資料、担当判断、実施記録を記載する。",
+                    "human_review": true
+                  }
+                ]
+              },
+              {
+                "id": "TPL-CHK-017-S2",
+                "heading_ja": "点検結果の記録",
+                "fields": [
+                  {
+                    "id": "TPL-CHK-017-F001",
+                    "label_ja": "対象案件・対象版",
+                    "type": "short_text",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-017-F002",
+                    "label_ja": "担当者と点検日",
+                    "type": "date",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-017-F003",
+                    "label_ja": "未解決事項と対応",
+                    "type": "long_text",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。"
+                  },
+                  {
+                    "id": "TPL-CHK-017-F004",
+                    "label_ja": "確認に用いた資料ID",
+                    "type": "table",
+                    "required": false,
+                    "description_ja": "記入内容と出典・判断理由を必要に応じて記録する。",
+                    "columns": [
+                      "対象・項目",
+                      "内容・参照",
+                      "担当・状態",
+                      "備考"
+                    ],
+                    "min_rows": 2
+                  }
+                ]
+              }
+            ],
+            "relationships": {
+              "related_task_ids": [],
+              "knowledge_ids": []
+            },
+            "rendering": {
+              "profile": "formal_japanese_mincho"
+            },
+            "notes_ja": "企画段階の検証可能な判断項目へ改訂した独立試案。人の実審査・承認を代替しない。",
+            "workflow_id": "editorial-eight-stage"
+          },
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-017",
+            "version": "0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CH-PLN-REF",
+      "title_ja": "参考資料と利用上の留意",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "参考資料：日本新聞協会『新聞倫理綱領』。参照先：https://www.pressnet.or.jp/outline/ethics/。日本心理学会『科学コミュニケーション・ガイドライン』。参照先：https://psych.or.jp/jpamember/press_release_guidelines/。これらは専門的な参照資料であり、本書の独自提案全体を外部機関が承認・保証していることを意味しない。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "text_ja": "本書の文章・手順・判断条件は今後の実地検証、法令・権利・組織規程の確認、および専門的な見直しの対象とする。公表または業務導入の判断は、責任ある人間の独立した審査に委ねる。"
+        }
+      ]
+    }
+  ]
+}

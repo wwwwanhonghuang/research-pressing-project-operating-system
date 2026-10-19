@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-PLN-INTAKE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "企画依頼の受理と対象範囲の設定"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "01"
+  ],
+  "inputs": [
+    "依頼内容、背景説明、既存資料、依頼主との連絡経路"
+  ],
+  "outputs": [
+    "企画依頼記録、対象範囲・除外範囲、未確認事項"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "依頼目的と読者の情報需要を別々に記録できる",
+    "企画対象、非対象、情報公開条件を暫定的に定義した",
+    "依頼主と編集担当者の責任分界を明確にした"
+  ],
+  "review_roles": [
+    "編集責任者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-PLN-INTAKE",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-002",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-036",
+      "version": "0.2.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-017",
+      "version": "0.2.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-PLANNING-TRACE",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-CLAIM-BOUNDARY",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-AUDIENCE-ACCESS",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETHIC-SELECTION",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETHIC-INDEPENDENCE",
+      "version": "0.1.0"
+    }
+  ]
+}

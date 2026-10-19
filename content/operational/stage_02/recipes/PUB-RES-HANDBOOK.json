@@ -1,0 +1,390 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PUB-RES-HANDBOOK",
+  "version": "0.1.0",
+  "title": {
+    "ja": "事前調査・資料収集 業務ハンドブック（独立試作）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学編集・調査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "output_kind": "handbook",
+  "audience": [
+    "科学コミュニケーション担当者",
+    "研究広報担当者",
+    "編集担当者"
+  ],
+  "style_profile": "formal_guideline",
+  "visibility": "public",
+  "chapter_plan": [
+    {
+      "chapter_id": "CH-RES-INTRO",
+      "heading_ja": "目的・対象・情報構造",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "本書は、企画で定めた問いを原資料に結びつけ、研究方法と主張の根拠を評価し、次の取材・執筆へ引き継ぐための独立した業務設計試案である。探索から引継ぎまでの各判断に資料の識別子、版、確認日と責任を持たせる。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "本文は研究調査、科学コミュニケーション、編集制作の場面を想定する。研究の査読、研究不正認定、法律上の許認可、組織の公式な公開承認を代替しない。正確性に関する原典確認と、倫理・権利・組織権限の確認を分けて扱う。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-RES-SRC",
+      "heading_ja": "調査の単位と資料・主張の関係",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "資料記録は SourceRecord、科学的に意味のある個々の命題は ClaimRecord として区別する。資料の識別子、版、引用位置、資料が主張を支持又は限定する関係を明記する。本文の参考文献表示と内部の来歴管理は相互に接続する。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "科学的主張の区分は、観測、推定、解釈、仮説、予測、研究目標を基本とする。対象集団・方法・尺度・時間範囲の違いを後続の編集で失わないよう、必要な留保を主張ごとに保存する。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-RES-STANDARDS",
+      "heading_ja": "共通の品質標準（独立提案）",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-RES-SEARCH",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-RES-PROVENANCE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-RES-EVIDENCE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-RES-TRACE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-RES-HANDOFF",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-RES-ETHICS",
+      "heading_ja": "倫理・権利・研究公正の配慮",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-RESBIAS",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-RIGHTS",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-INTEGRITY",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-RES-PLAN",
+      "heading_ja": "調査目的・情報需要と探索計画の確定",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-RES-PLAN",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-RES-PLAN",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-RES-DISCOVER",
+      "heading_ja": "候補資料の探索と収集範囲の評価",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-RES-DISCOVER",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-RES-DISCOVER",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-RES-REGISTER",
+      "heading_ja": "一次資料の取得・同一性・版・来歴の登録",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-RES-REGISTER",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-RES-REGISTER",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-RES-METHOD",
+      "heading_ja": "研究方法・標本・適用範囲の読解",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-RES-METHOD",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-RES-METHOD",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-RES-QUANT",
+      "heading_ja": "数値・図表・推定結果の照合",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-RES-QUANT",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-RES-QUANT",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-RES-CONTEXT",
+      "heading_ja": "先行研究・異なる解釈・更新情報の検討",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-RES-CONTEXT",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-RES-CONTEXT",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-RES-CLAIM",
+      "heading_ja": "科学的主張・根拠対応表の構成と評価",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-RES-CLAIM",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-RES-CLAIM",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-RES-HANDOFF",
+      "heading_ja": "未解決事項・取材質問・調査成果の引継ぎ",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-RES-HANDOFF",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-RES-HANDOFF",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-RES-CHECK",
+      "heading_ja": "資料品質のチェックリスト",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "以下のチェックリストは作業を確認するための共通定義である。各項目の判定、関連資料の参照先、担当者、再確認日およびレビュー結果は個別の ChecklistRun に記録する。判断理由を欠く「適合」は科学的な根拠の代替にならない。"
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-018",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-003",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-019",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-002",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-020",
+            "version": "0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-RES-HANDOVER",
+      "heading_ja": "判断ゲートと次段階への引継ぎ",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "次段階への引継ぎ時には、少なくとも資料台帳、主張対応表、方法と数値の確認記録、異なる結果・解釈、権利上の制約、未確認事項、専門家へ確認する質問をそろえる。省略した場合は適用外判断とその理由を残す。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "担当責任者は資料の範囲と未解決事項を確認し、追加調査の要否を記録する。この判断は研究成果の科学的な保証又は公開承認を意味しない。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-RES-REFS",
+      "heading_ja": "参考資料・適用上の留意",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "本書の設計では、日本心理学会による研究成果の科学コミュニケーションに関する指針、国立国会図書館によるウェブ資料保存の説明、Crossref と COPE による研究記録の更新に関する説明、文部科学省と文化庁の公表資料を参照した。各資料の適用対象、制度上の位置づけ、公開日時及び個別判断への適用可能性は区別する。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "外部参照先と確認事項の一覧は content/operational/stage_02/REFERENCES.md に記録した。外部の専門ガイダンスを本OSがそのまま採用したと扱うことなく、組織の規程・法令の確認と人による判断を継続する。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-EDT-QUOTE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "引用・発言文脈と帰属の確認"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集品質担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA-SCI-COMM",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果のプレスリリースを対象とする学会の科学コミュニケーション指針。正確性・限定条件・誇張回避。"
+    },
+    {
+      "source_id": "SRC-PRESS-CODE",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本新聞協会・新聞倫理綱領。正確、公正、独立、人権尊重、訂正に関する報道倫理。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "05"
+    ],
+    "audiences": [
+      "編集者",
+      "校正者",
+      "校閲者",
+      "制作担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-EDT-QUOTE-H01",
+      "kind": "heading",
+      "text": "原記録との対応",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-QUOTE-P01",
+      "kind": "paragraph",
+      "text": "直接引用は録音・逐語記録の原位置、発言者、発言日時と照合する。要約・翻訳・意訳にはその区分を明示し、発言の前後関係から意味を切り離さない。"
+    },
+    {
+      "id": "KNW-EDT-QUOTE-H02",
+      "kind": "heading",
+      "text": "名義と権利",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-QUOTE-P02",
+      "kind": "paragraph",
+      "text": "話者の氏名表記、肩書、匿名の合意、記録の利用条件を確かめる。取材協力と録音許可、原稿確認、引用の転載許可は別に把握する。"
+    },
+    {
+      "id": "KNW-EDT-QUOTE-H03",
+      "kind": "heading",
+      "text": "確認の目的",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-QUOTE-P03",
+      "kind": "paragraph",
+      "text": "確認依頼は当事者が関与した部分の事実・引用の正確性を中心とし、媒体の編集権限との境界を明記する。発言者の承認を全面的な記事承認として扱わない。"
+    },
+    {
+      "id": "KNW-EDT-QUOTE-H04",
+      "kind": "heading",
+      "text": "修正履歴",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-QUOTE-P04",
+      "kind": "paragraph",
+      "text": "引用の整文・省略・話者からの修正要請は差分と編集理由を残し、必要に応じて異なる見解の併記や追加取材につなげる。"
+    }
+  ]
+}

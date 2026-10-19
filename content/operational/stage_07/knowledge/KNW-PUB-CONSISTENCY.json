@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-PUB-CONSISTENCY",
+  "version": "0.1.0",
+  "title": {
+    "ja": "複数媒体の意味整合性"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "公開・配信業務の設計・審査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-W3C-MEDIA",
+      "locator": "https://www.w3.org/WAI/media/av/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "W3C WAIの動画・音声アクセシビリティ指針。法的義務の一律の根拠ではない。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "07"
+    ],
+    "audiences": [
+      "編集担当者",
+      "配信担当者",
+      "レビュアー",
+      "公開責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-PUB-CONSISTENCY-H01",
+      "kind": "heading",
+      "text": "適用範囲と目的",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-CONSISTENCY-P01",
+      "kind": "paragraph",
+      "text": "媒体間の本文を完全一致させるより、要点、出典、留保、研究の射程が整合するかを検査する。"
+    },
+    {
+      "id": "KNW-PUB-CONSISTENCY-H02",
+      "kind": "heading",
+      "text": "実施上の確認事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-CONSISTENCY-P02",
+      "kind": "paragraph",
+      "text": "投稿文、画像の文字、音声台本、字幕、要約に関係する主張IDを対応づける。"
+    },
+    {
+      "id": "KNW-PUB-CONSISTENCY-H03",
+      "kind": "heading",
+      "text": "境界と判断事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-PUB-CONSISTENCY-P03",
+      "kind": "paragraph",
+      "text": "原稿変更時は依存する媒体表現を再評価し、古いリンクや要約を残さない。"
+    }
+  ]
+}

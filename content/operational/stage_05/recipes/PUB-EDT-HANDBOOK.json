@@ -1,0 +1,490 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PUB-EDT-HANDBOOK",
+  "version": "0.1.0",
+  "title": {
+    "ja": "編集・校正・校閲 業務ハンドブック（独立試作）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集品質担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA-SCI-COMM",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果のプレスリリースを対象とする学会の科学コミュニケーション指針。正確性・限定条件・誇張回避。"
+    },
+    {
+      "source_id": "SRC-PRESS-CODE",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本新聞協会・新聞倫理綱領。正確、公正、独立、人権尊重、訂正に関する報道倫理。"
+    },
+    {
+      "source_id": "SRC-W3C-IMAGE-ALT",
+      "locator": "https://www.w3.org/WAI/tutorials/images/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "W3C WAIの画像代替テキスト設計。画像の目的と複雑さに応じた情報提供。"
+    },
+    {
+      "source_id": "SRC-PPC-GENERAL",
+      "locator": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "個人情報保護委員会・通則編。対象者・データと適用の事実確認が必要。"
+    },
+    {
+      "source_id": "SRC-W3C-WCAG22",
+      "locator": "https://www.w3.org/TR/wcag/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "WCAG 2.2。ウェブ・マルチメディアのアクセシビリティ参照標準。"
+    }
+  ],
+  "links": [],
+  "output_kind": "handbook",
+  "audience": [
+    "編集者",
+    "校正担当者",
+    "校閲担当者",
+    "科学コミュニケーション担当者"
+  ],
+  "style_profile": "formal_guideline",
+  "visibility": "public",
+  "chapter_plan": [
+    {
+      "chapter_id": "CH-EDT-INTRO",
+      "heading_ja": "目的・範囲と検証の責任",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "本書は編集・校正・校閲の品質検証のための独立試案である。文章の構成、表記、事実命題、取材引用、図表、各媒体の内容を連携して点検し、確認に用いた版と根拠、判断した人、未解決事項を記録する。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "編集、校正、校閲、科学的な専門確認、法的・権利上の判断、公開承認は職責が異なる。第5段階の完了により第6段階の専門審査又は発行の承認が成立することはない。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-EDT-STANDARDS",
+      "heading_ja": "品質基準：構成・表記・根拠と媒体",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "以下は外部の専門資料を参照した独立設計上の品質基準である。複数の参照資料は異なる職業的又は技術的な適用範囲を持つ。"
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-EDT-STRUCT",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-EDT-LANGUAGE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-EDT-PROOF",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-EDT-FACT",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-EDT-QUOTE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-EDT-IMAGES",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-EDT-ISSUES",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-EDT-AI",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-EDT-ETHICS",
+      "heading_ja": "倫理と権限の境界",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "校閲過程は他者の尊厳・取材条件・個人情報・編集独立性に影響する。一般的な配慮と具体的な法的適用判断は区別する。"
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-EDT-HARM",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-EDT-INDEPENDENCE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-EDT-PRIVACY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-EDT-CORRECTION",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-EDT-TASK-1",
+      "heading_ja": "編集対象の受領・版固定と確認方針",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-EDT-INTAKE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-EDT-INTAKE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-EDT-TASK-2",
+      "heading_ja": "構成編集・論理連結のレビュー",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-EDT-STRUCTURE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-EDT-STRUCTURE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-EDT-TASK-3",
+      "heading_ja": "文章推敲・表記用語の統一",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-EDT-COPYEDIT",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-EDT-COPYEDIT",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-EDT-TASK-4",
+      "heading_ja": "校正・ゲラと組版の照合",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-EDT-PROOFREAD",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-EDT-PROOFREAD",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-EDT-TASK-5",
+      "heading_ja": "主張・数字・科学的妥当性の校閲",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-EDT-FACTCHECK",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-EDT-FACTCHECK",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-EDT-TASK-6",
+      "heading_ja": "引用・話者・文脈・権利の確認",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-EDT-QUOTES",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-EDT-QUOTES",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-EDT-TASK-7",
+      "heading_ja": "図表・写真・字幕・媒体間整合の校閲",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-EDT-MEDIA",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-EDT-MEDIA",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-EDT-TASK-8",
+      "heading_ja": "変更・課題・異議対応の管理",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-EDT-CHANGES",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-EDT-CHANGES",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-EDT-TASK-9",
+      "heading_ja": "品質確認結果の統合と専門確認工程への引継ぎ",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-EDT-HANDOFF",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-EDT-HANDOFF",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-EDT-CHECKLISTS",
+      "heading_ja": "確認チェックリストと記録管理",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "次のチェックリストは再利用可能な定義である。個別の実施記録と根拠ファイル、判定者、保留理由、版情報は各プロジェクトのChecklistRun等に保存する。形式的なチェック完了だけで専門判断が成立したとは扱わない。"
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-029",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-030",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-031",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-032",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-002",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-003",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-010",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-011",
+            "version": "0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-EDT-HANDOFF",
+      "heading_ja": "専門確認への引継ぎ条件",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "編集責任者は編集済みの成果物、校正・校閲の実施範囲、反映済み修正、解消済み及び未解決の指摘を整理し、次工程に必要な判断と担当を明示する。重大な事実疑義又は権利上の不確実性があるときは編集上の合格と扱わず、差戻し・保留を記録する。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-EDT-REFERENCES",
+      "heading_ja": "参照資料の性格と適用上の注意",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "日本心理学会の指針は主として研究成果プレスリリースを対象とする。日本新聞協会の倫理綱領は新聞報道の倫理である。W3Cのガイドラインは技術的アクセシビリティの参照枠組みであり、個人情報保護委員会の指針は対象行為と情報の類型に基づき適用される。これらを混同して本書を公認の規則にしない。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "参照先のURL、確認日、適用範囲は同ディレクトリのREFERENCES.mdと構造化オブジェクト内のsourcesに記録する。"
+        }
+      ]
+    }
+  ]
+}

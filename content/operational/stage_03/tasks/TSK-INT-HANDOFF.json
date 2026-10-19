@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-INT-HANDOFF",
+  "version": "0.1.0",
+  "title": {
+    "ja": "取材成果の確認・制作工程への引継ぎ"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集責任者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "03"
+  ],
+  "inputs": [
+    "取材記録、引用台帳、許諾条件、未確認事項、照会履歴"
+  ],
+  "outputs": [
+    "取材引継ぎ包",
+    "編集用素材一覧",
+    "再確認の担当と期限"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "手順で定めた7項目を確認し、未完了の項目と理由を記録した",
+    "関連する発言・資料・許諾・例外について追跡可能な参照先を登録した",
+    "責任者が実施結果・未確認事項・次の対応を確認した"
+  ],
+  "review_roles": [
+    "編集責任者又は取材責任者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-INT-HANDOFF",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-015",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-050",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-019",
+      "version": "0.1.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-024",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-013",
+      "version": "0.1.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-INT-HANDOFF",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-INT-SECURITY",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-PRIVATE",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-ATTR",
+      "version": "0.1.0"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETHIC-SELECTION",
+  "version": "0.1.0",
+  "title": {
+    "ja": "企画選択と表象に伴う認識上の偏り"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "企画編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "PUBLIC-PRESS-ETHICS",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "報道倫理の一般的な参照資料。組織的な遵守認証または直接の法的拘束力を主張しない。"
+    },
+    {
+      "source_id": "PUBLIC-PSYCHOLOGY-GUIDANCE",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "科学広報の資料検証、一般化、出典、著者確認の参考。分野・媒体への適用は個別に検討する。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "01"
+    ],
+    "audiences": [
+      "企画編集担当者",
+      "科学コミュニケーション担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETHIC-SELECTION-B01",
+      "kind": "heading",
+      "text": "注目の分配",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETHIC-SELECTION-B02",
+      "kind": "paragraph",
+      "text": "どの研究、研究者、問いを紹介するかという選択は、社会に提示される知識の構成に影響する。知名度、所属先、発表言語、既存の取材関係、見栄えなどが選定を左右する可能性を点検する。"
+    },
+    {
+      "id": "KNW-ETHIC-SELECTION-B03",
+      "kind": "heading",
+      "text": "複数の立場と証拠の非対称性",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETHIC-SELECTION-B04",
+      "kind": "paragraph",
+      "text": "論争的なテーマを扱う場合は、異なる立場の存在と各立場を支える根拠の強さを別々に検討する。多様な意見を紹介することが、証拠の強さに関係なく全主張を等しいと扱う根拠にはならない。"
+    },
+    {
+      "id": "KNW-ETHIC-SELECTION-B05",
+      "kind": "heading",
+      "text": "関係者への影響",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETHIC-SELECTION-B06",
+      "kind": "paragraph",
+      "text": "研究参加者、患者、当事者、研究者、地域住民などへの潜在的な影響を見積もる。説明による利益と、誤解、烙印、期待の過熱、個人の特定などの不利益を検討し、必要に応じて適切な相談先を決める。"
+    },
+    {
+      "id": "KNW-ETHIC-SELECTION-B07",
+      "kind": "heading",
+      "text": "判断の記録",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETHIC-SELECTION-B08",
+      "kind": "paragraph",
+      "text": "配慮を理由とした省略・匿名化・構成変更を行う場合は、目的、影響、実施者、判断の範囲を記録し、編集上の判断を将来に再検討できるようにする。"
+    }
+  ]
+}

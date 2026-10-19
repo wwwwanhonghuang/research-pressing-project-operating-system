@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-INT-HANDOFF",
+  "version": "0.1.0",
+  "title": {
+    "ja": "追加確認・後工程への引継ぎ"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "取材担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA-SC",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究上の限界、発言の正確な取扱い、報道前後の確認に関する専門指針。主として研究成果のプレスリリース向け。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "03"
+    ],
+    "audiences": [
+      "取材担当者",
+      "編集責任者",
+      "協力者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-INT-HANDOFF-B01A",
+      "kind": "heading",
+      "text": "未決の登録",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-HANDOFF-B01B",
+      "kind": "paragraph",
+      "text": "確認できなかった数値、技術語、著者間で異なる見解、公開可能性、引用の帰属を「未確認」として独立記録し、未確認のまま確定文へ転写しない。"
+    },
+    {
+      "id": "KNW-INT-HANDOFF-B02A",
+      "kind": "heading",
+      "text": "問合せ",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-HANDOFF-B02B",
+      "kind": "paragraph",
+      "text": "追加照会は「回答を求める事実」「照会の根拠」「回答希望日」「無回答の場合の扱い」を明示して送る。質問に誘導や威圧がないか確認する。"
+    },
+    {
+      "id": "KNW-INT-HANDOFF-B03A",
+      "kind": "heading",
+      "text": "次工程への出力",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-HANDOFF-B03B",
+      "kind": "paragraph",
+      "text": "取材メモ、逐語記録、引用候補一覧、確認済み・保留の区分、写真等の利用許諾、研究論文の出典、変更記録を束ねる。"
+    },
+    {
+      "id": "KNW-INT-HANDOFF-B04A",
+      "kind": "heading",
+      "text": "ゲート",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-HANDOFF-B04B",
+      "kind": "paragraph",
+      "text": "編集責任者は制作へ渡せる範囲を判断し、残る課題の担当と期限を記録する。この引継ぎは科学的妥当性や公開の承認とは別である。"
+    }
+  ]
+}

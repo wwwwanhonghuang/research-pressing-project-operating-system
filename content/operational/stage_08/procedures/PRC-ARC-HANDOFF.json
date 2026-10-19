@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-ARC-HANDOFF",
+  "version": "0.1.0",
+  "title": {
+    "ja": "公開記録と継続対応事項の受領の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "記録管理担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "記録管理担当者"
+  ],
+  "inputs": [
+    "第7段階の配信ログ",
+    "実公開版",
+    "公開承認ID",
+    "各媒体のURLと投稿ID"
+  ],
+  "outputs": [
+    "第8段階の受領記録"
+  ],
+  "steps": [
+    {
+      "id": "PRC-ARC-HANDOFF-S1",
+      "instruction": "承認版と実公開版、媒体、URL、日時・時区、公開担当者を対応づける",
+      "expected_output": "版・媒体対応表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-HANDOFF-S2",
+      "instruction": "第7段階の未解決事項、初期監視、緊急連絡先を引き継ぐ",
+      "expected_output": "継続対応票",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-HANDOFF-S3",
+      "instruction": "刊行物・動画・SNS・配布資料の依存関係を登録する",
+      "expected_output": "派生物・配信先グラフ",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-HANDOFF-S4",
+      "instruction": "証跡の欠損、公開条件の相違、再取得できない素材を記録する",
+      "expected_output": "不足資料票",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-HANDOFF-S5",
+      "instruction": "受領担当者と確認日時を残し、必要に応じて第7段階へ照会する",
+      "expected_output": "受領確認",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "実公開版が特定できない場合は後続の訂正判定を保留する"
+  ]
+}

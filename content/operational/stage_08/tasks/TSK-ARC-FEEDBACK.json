@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-ARC-FEEDBACK",
+  "version": "0.1.0",
+  "title": {
+    "ja": "読者の理解・意見・異議の収集"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "対話・評価担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "08"
+  ],
+  "inputs": [
+    "閲覧者からの応答",
+    "任意アンケート",
+    "問い合わせ記録"
+  ],
+  "outputs": [
+    "反応データ辞書・論点表"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "反応データ辞書・論点表に対象URL、版、判断主体、日時、根拠及び未解決事項を結び付けた",
+    "元の公開記録と変更後の記録を対応づけ、例外と人的な判断・保留を識別した",
+    "次の担当への通知又は引継ぎと、必要な再審査条件を残した"
+  ],
+  "review_roles": [
+    "訂正・評価責任者",
+    "必要な専門家と権限者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-ARC-FEEDBACK",
+    "version": "0.1.0"
+  },
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ARC-FEEDBACK",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ARC-MEASUREMENT",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-ARC-PRIVACY",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-ARC-DIALOGUE",
+      "version": "0.1.0"
+    }
+  ],
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-087",
+      "version": "0.2.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-043",
+      "version": "0.2.0"
+    }
+  ]
+}

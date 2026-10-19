@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-ARC-EVALUATE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "到達・理解・利用・影響の評価の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "効果評価担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "効果評価担当者"
+  ],
+  "inputs": [
+    "配信統計",
+    "分析定義",
+    "閲覧者調査",
+    "当初の目的"
+  ],
+  "outputs": [
+    "評価方法・結果・不確実性報告"
+  ],
+  "steps": [
+    {
+      "id": "PRC-ARC-EVALUATE-S1",
+      "instruction": "事前に記録した目的と評価質問に対応する指標を特定する",
+      "expected_output": "評価計画照合",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-EVALUATE-S2",
+      "instruction": "到達、閲覧、理解、利用、対話及び長期的変化を異なる測定対象とする",
+      "expected_output": "指標定義と測定表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-EVALUATE-S3",
+      "instruction": "観測単位、期間、分母、欠測、媒体の仕様変更を記録する",
+      "expected_output": "データ品質表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-EVALUATE-S4",
+      "instruction": "選択バイアス、サンプルの偏り、交絡、因果推論の限界を検討する",
+      "expected_output": "解釈上の限界",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-EVALUATE-S5",
+      "instruction": "質的証言と集計値を統合し、次の行動に用いる判断範囲を明記する",
+      "expected_output": "評価報告書",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "閲覧数や好意的反応を理解・科学的正確性の直接証拠にしない",
+    "母数不明の比率や異なる測定定義の比較は留保する"
+  ]
+}

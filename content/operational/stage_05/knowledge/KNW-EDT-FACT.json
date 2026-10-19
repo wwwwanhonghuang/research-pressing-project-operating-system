@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-EDT-FACT",
+  "version": "0.1.0",
+  "title": {
+    "ja": "事実確認と根拠の強度評価"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集品質担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA-SCI-COMM",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果のプレスリリースを対象とする学会の科学コミュニケーション指針。正確性・限定条件・誇張回避。"
+    },
+    {
+      "source_id": "SRC-PRESS-CODE",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本新聞協会・新聞倫理綱領。正確、公正、独立、人権尊重、訂正に関する報道倫理。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "05"
+    ],
+    "audiences": [
+      "編集者",
+      "校正者",
+      "校閲者",
+      "制作担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-EDT-FACT-H01",
+      "kind": "heading",
+      "text": "命題単位の確認",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-FACT-P01",
+      "kind": "paragraph",
+      "text": "見出し、リード、本文、表、図、SNS投稿から独立した事実命題を抽出し、主張ID、原稿位置、出典ID、原資料の箇所、確認状態に関連付ける。二次記事は一次資料を代替しない。"
+    },
+    {
+      "id": "KNW-EDT-FACT-H02",
+      "kind": "heading",
+      "text": "研究主張の検査",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-FACT-P02",
+      "kind": "paragraph",
+      "text": "研究対象、標本、対照、測定方法、観測期間、効果量、不確実性、相関と因果、動物実験と人への一般化、目標と実証結果の区別を確認する。必要な専門判断は次工程の専門確認に付す。"
+    },
+    {
+      "id": "KNW-EDT-FACT-H03",
+      "kind": "heading",
+      "text": "更新・反証資料",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-FACT-P03",
+      "kind": "paragraph",
+      "text": "引用した研究に訂正・撤回・後続研究があるか、適切な情報源で確認する。見つからないことを「問題がない」と断定しない。競合する説明は見落としと重要性を分けて記録する。"
+    },
+    {
+      "id": "KNW-EDT-FACT-H04",
+      "kind": "heading",
+      "text": "照会と保留",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-FACT-P04",
+      "kind": "paragraph",
+      "text": "原資料の解釈が揺れる主張、数字の矛盾、根拠不足は「未解決」に登録する。出典に到達できない場合は掲載保留又は主張の削除を編集責任者へ提案する。"
+    }
+  ]
+}

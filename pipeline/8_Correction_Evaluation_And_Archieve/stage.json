@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.1.0",
+  "id": "08",
+  "workflow_id": "editorial-eight-stage",
+  "workflow_version": "0.1.0",
+  "name_ja": "訂正・評価・アーカイブ",
+  "name_en": "Corrections, evaluation and archive",
+  "objective": "Manage corrections and withdrawals, assess communication outcomes with epistemic limits, preserve versioned records, and feed evidence into future planning.",
+  "task_definitions": [
+    {
+      "id": "TSK-ARC-HANDOFF",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-ARC-SIGNALS",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-ARC-TRIAGE",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-ARC-VERIFY",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-ARC-DECISION",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-ARC-NOTICE",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-ARC-PROPAGATE",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-ARC-FEEDBACK",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-ARC-EVALUATE",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-ARC-ARCHIVE",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-ARC-FIXITY",
+      "version": "0.1.0"
+    },
+    {
+      "id": "TSK-ARC-RETRO",
+      "version": "0.1.0"
+    }
+  ],
+  "review_gate": {
+    "definition_status": "draft_independent_proposal",
+    "human_signoff_required_for_publication": false,
+    "human_signoff_required_for_correction_or_removal": true,
+    "automated_correction": false,
+    "reviewer_role": "訂正・編集・権利に関する実際の権限者",
+    "handoff_requires": [
+      "第7段階の実公開版、URL、媒体、公開日時と承認記録",
+      "未解決の問い合わせ・指摘と公開後の監視結果",
+      "訂正履歴、評価資料、保存権限・保持方針、引継ぎ担当"
+    ],
+    "note": "チェックリストの完了、ハッシュ照合、自動判定は実際の訂正・削除・撤回を許可しない。"
+  }
+}

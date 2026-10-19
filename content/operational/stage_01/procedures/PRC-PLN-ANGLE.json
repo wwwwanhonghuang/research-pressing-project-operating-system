@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-PLN-ANGLE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "編集上の問い・主張範囲と証拠状態の整理の標準手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "企画編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "編集担当者・専門確認者"
+  ],
+  "inputs": [
+    "候補と先行研究情報、論文・発表資料、読者分析"
+  ],
+  "outputs": [
+    "編集上の問い、暫定主張一覧、検証すべき点、原資料参照"
+  ],
+  "steps": [
+    {
+      "id": "PRC-PLN-ANGLE-S1",
+      "instruction": "企画の中心的な問いと、その問いを選ぶ理由を一文で記述する。",
+      "expected_output": "編集上の問い、暫定主張一覧、検証すべき点、原資料参照",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-PLN-ANGLE-S2",
+      "instruction": "取り扱う研究成果、比較対象、歴史的背景と射程の限界を整理する。",
+      "expected_output": "編集上の問い、暫定主張一覧、検証すべき点、原資料参照",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PLN-ANGLE-S3",
+      "instruction": "主張候補を観測、関連、因果解釈、仮説、予測、長期目標に暫定区分する。",
+      "expected_output": "編集上の問い、暫定主張一覧、検証すべき点、原資料参照",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PLN-ANGLE-S4",
+      "instruction": "一次資料への参照と、そこで実際に測定・主張された内容を照合する。",
+      "expected_output": "編集上の問い、暫定主張一覧、検証すべき点、原資料参照",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-PLN-ANGLE-S5",
+      "instruction": "社会的含意が検証を越える場合、期待・解釈の区別と条件を明記する。",
+      "expected_output": "編集上の問い、暫定主張一覧、検証すべき点、原資料参照",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PLN-ANGLE-S6",
+      "instruction": "科学的な確認が必要な事項と表現・編集上の判断を分けて引き継ぐ。",
+      "expected_output": "編集上の問い、暫定主張一覧、検証すべき点、原資料参照",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "一次資料が未公開、共有権限が未確認、利害関係または個人情報に問題がある場合は、状態を保留として必要な担当者へ照会する。",
+    "取材・公開条件が変化した場合は、版と変更理由を記録して影響する後続作業を再点検する。",
+    "AIの提案のみをもって完了または承認と判定しない。"
+  ]
+}

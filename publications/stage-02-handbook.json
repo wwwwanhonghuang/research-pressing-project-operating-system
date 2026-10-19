@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1.0",
+  "id": "stage-02-handbook",
+  "version": "0.1.0",
+  "title_ja": "事前調査・資料収集 業務ハンドブック（構造化試作）",
+  "status": "draft",
+  "output_stage_id": "02",
+  "chapters": [
+    {
+      "id": "CH-01",
+      "title_ja": "目的、適用範囲及び資料の性格",
+      "sections": [
+        {
+          "id": "SEC-01-01",
+          "title_ja": "目的と前提",
+          "items": [
+            {
+              "kind": "narrative",
+              "text": "本書はOperations OSの独立設計試作であり、科学記事制作の事前調査・資料収集段階を扱う。特定組織の正式な業務手順を示すものではない。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CH-02",
+      "title_ja": "運営手順と参照基準",
+      "sections": [
+        {
+          "id": "SEC-02-01",
+          "title_ja": "タスク及び手順",
+          "items": [
+            {
+              "kind": "include",
+              "ref": "source_claim_register"
+            }
+          ]
+        },
+        {
+          "id": "SEC-02-02",
+          "title_ja": "適用する基準（試案）",
+          "items": [
+            {
+              "kind": "include",
+              "ref": "STD-SOURCE-TRACEABILITY"
+            }
+          ]
+        },
+        {
+          "id": "SEC-02-03",
+          "title_ja": "倫理的検討（試案）",
+          "items": [
+            {
+              "kind": "include",
+              "ref": "ETH-REPRESENTATION"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CH-03",
+      "title_ja": "記録、確認及び改訂",
+      "sections": [
+        {
+          "id": "SEC-03-01",
+          "title_ja": "運用時の記録",
+          "items": [
+            {
+              "kind": "narrative",
+              "text": "プロジェクト実行時のチェック済み項目、証拠、修正及び承認は、共有定義を変更せず個別プロジェクトの記録として保存する。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

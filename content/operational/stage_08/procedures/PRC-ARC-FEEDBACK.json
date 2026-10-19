@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-ARC-FEEDBACK",
+  "version": "0.1.0",
+  "title": {
+    "ja": "読者の理解・意見・異議の収集の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "対話・評価担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "対話・評価担当者"
+  ],
+  "inputs": [
+    "閲覧者からの応答",
+    "任意アンケート",
+    "問い合わせ記録"
+  ],
+  "outputs": [
+    "反応データ辞書・論点表"
+  ],
+  "steps": [
+    {
+      "id": "PRC-ARC-FEEDBACK-S1",
+      "instruction": "収集目的、対象期間、利用媒体と回答者への説明を明示する",
+      "expected_output": "データ取得計画",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-FEEDBACK-S2",
+      "instruction": "質問文、回答方法、任意性、アクセス手段を点検する",
+      "expected_output": "質問票と代替回答経路",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-FEEDBACK-S3",
+      "instruction": "公開コメントと個別連絡の情報を区別し再識別リスクを確認する",
+      "expected_output": "個人情報対応票",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-FEEDBACK-S4",
+      "instruction": "肯定的・否定的・不明瞭な反応と根拠を偏りなく分類する",
+      "expected_output": "論点別記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-FEEDBACK-S5",
+      "instruction": "再確認・返答・修正へつながる指摘を適切な担当者へ引き渡す",
+      "expected_output": "フォローアップ表",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "取得した個人情報の用途外利用を避ける",
+    "プラットフォーム上で発言しない読者を分析から消さない"
+  ]
+}

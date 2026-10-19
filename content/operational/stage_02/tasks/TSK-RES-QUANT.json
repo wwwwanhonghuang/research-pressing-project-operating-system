@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-RES-QUANT",
+  "version": "0.1.0",
+  "title": {
+    "ja": "数値・図表・推定結果の照合"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "調査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "02"
+  ],
+  "inputs": [
+    "本文、図表、補足データ、測定単位と解析仕様"
+  ],
+  "outputs": [
+    "数値確認記録、図表出典一覧、未再現項目"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "数値の原典位置と母数が追える",
+    "再計算の条件と丸めを残した",
+    "図表の著作権及び解釈限界を確認した"
+  ],
+  "review_roles": [
+    "調査責任者又は編集責任者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-RES-QUANT",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-041",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-017",
+      "version": "0.1.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-019",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-002",
+      "version": "0.2.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-RES-EVIDENCE",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-RES-TRACE",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-RIGHTS",
+      "version": "0.1.0"
+    }
+  ]
+}

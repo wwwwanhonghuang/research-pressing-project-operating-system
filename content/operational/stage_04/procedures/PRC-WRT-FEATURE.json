@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-WRT-FEATURE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "研究解説・人物記事の初稿作成の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学ライター",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "汎用的な編集制作の独立設計案。媒体の役割、権利、組織規程、適用される法令は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "科学ライター"
+  ],
+  "inputs": [
+    "構成案",
+    "一次資料",
+    "確認済み引用",
+    "読者設定"
+  ],
+  "outputs": [
+    "初稿",
+    "段落別の根拠対応",
+    "暫定見出し・脚注"
+  ],
+  "steps": [
+    {
+      "id": "PRC-WRT-FEATURE-S1",
+      "instruction": "各段落の役割と中心となる確認済みの事実を記してから本文を展開する",
+      "expected_output": "初稿",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-WRT-FEATURE-S2",
+      "instruction": "研究方法、対象、結果、解釈と未解決課題の区分を本文でも保持する",
+      "expected_output": "段落別の根拠対応",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-FEATURE-S3",
+      "instruction": "調査で確認した固有名詞、数値、比較条件と出典を追跡できる形で挿入する",
+      "expected_output": "暫定見出し・脚注",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-FEATURE-S4",
+      "instruction": "取材発言を逐語・要約・編集上の記述に分けて組み込む",
+      "expected_output": "初稿",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-FEATURE-S5",
+      "instruction": "技術語は初出で説明し、類比を用いる場合は成立する範囲を示す",
+      "expected_output": "段落別の根拠対応",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-FEATURE-S6",
+      "instruction": "研究の背景・過程・協働とその時間的文脈を必要に応じて加える",
+      "expected_output": "暫定見出し・脚注",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-WRT-FEATURE-S7",
+      "instruction": "見出し、リード、本文、図の相互整合を通読し不明点を残す",
+      "expected_output": "初稿",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "事例から集団全体への一般化が難しいときは対象範囲を限定する",
+    "原文が確認できない引用は発言として確定しない"
+  ]
+}

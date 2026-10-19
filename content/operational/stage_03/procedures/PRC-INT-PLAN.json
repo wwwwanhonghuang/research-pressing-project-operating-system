@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-INT-PLAN",
+  "version": "0.1.0",
+  "title": {
+    "ja": "取材目的・範囲と事前条件の設定の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集責任者と取材担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "編集責任者と取材担当者"
+  ],
+  "inputs": [
+    "承認対象の企画書",
+    "Stage 2資料台帳",
+    "暫定の主張・根拠対応表"
+  ],
+  "outputs": [
+    "取材方針書",
+    "対象選定理由",
+    "条件・未確認事項一覧"
+  ],
+  "steps": [
+    {
+      "id": "PRC-INT-PLAN-S1",
+      "instruction": "取材の目的と読者に必要な情報を企画書から抽出し、科学的事実と経験談のどちらを聞くか区別する",
+      "expected_output": "取材方針書",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-INT-PLAN-S2",
+      "instruction": "取材対象者・同席者の選定理由と代替意見の探索可能性を記録する",
+      "expected_output": "対象選定理由",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-PLAN-S3",
+      "instruction": "資料の確度・未確認事項と質問によって解決できる事項を対応づける",
+      "expected_output": "条件・未確認事項一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-PLAN-S4",
+      "instruction": "媒体、公開時期、取材者の役割、費用、時間、問合せ先を整理する",
+      "expected_output": "取材方針書",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-PLAN-S5",
+      "instruction": "参加者の負担、アクセス、機微情報、AI利用、利益相反を初期評価する",
+      "expected_output": "対象選定理由",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-PLAN-S6",
+      "instruction": "編集責任者が取材可否、範囲、調整担当者を記録して確定する",
+      "expected_output": "条件・未確認事項一覧",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "依頼目的と公表予定が整合しない場合は再企画する",
+    "取材対象者の選定に偏りが疑われる場合は複数の情報源を検討する"
+  ]
+}

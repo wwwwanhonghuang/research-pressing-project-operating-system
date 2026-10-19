@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-RES-HANDOFF",
+  "version": "0.1.0",
+  "title": {
+    "ja": "未解決事項・取材質問・調査成果の引継ぎの実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "調査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "調査担当者"
+  ],
+  "inputs": [
+    "調査計画、資料台帳、主張対応表、未確認事項、編集企画"
+  ],
+  "outputs": [
+    "調査引継ぎ記録、取材質問候補、要追加検証一覧"
+  ],
+  "steps": [
+    {
+      "id": "PRC-RES-HANDOFF-S1",
+      "instruction": "調査の問いに対して直接確認できた範囲と未解決の範囲を整理する。",
+      "expected_output": "調査引継ぎ記録、取材質問候補、要追加検証一覧",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-RES-HANDOFF-S2",
+      "instruction": "資料台帳、引用箇所、方法要約、数値確認、異説・更新情報をまとめて引き渡す。",
+      "expected_output": "調査引継ぎ記録、取材質問候補、要追加検証一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-RES-HANDOFF-S3",
+      "instruction": "次の取材で確認すべき質問を「科学的内容」「方法」「制約」「公開条件」に分類する。",
+      "expected_output": "調査引継ぎ記録、取材質問候補、要追加検証一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-RES-HANDOFF-S4",
+      "instruction": "権利、機密、個人情報、AI入力の制約を資料単位で記録する。",
+      "expected_output": "調査引継ぎ記録、取材質問候補、要追加検証一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-RES-HANDOFF-S5",
+      "instruction": "資料不足、解釈不一致、期限未達、重要な訂正情報がある場合の差戻し経路を明確にする。",
+      "expected_output": "調査引継ぎ記録、取材質問候補、要追加検証一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-RES-HANDOFF-S6",
+      "instruction": "編集責任者が引継ぎ条件を判断し、未完了の課題に担当者と期限を付す。",
+      "expected_output": "調査引継ぎ記録、取材質問候補、要追加検証一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-RES-HANDOFF-S7",
+      "instruction": "後続の取材や校閲により必要となった再調査を追跡できる状態にする。",
+      "expected_output": "調査引継ぎ記録、取材質問候補、要追加検証一覧",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "原資料に到達できないとき、資料の真正性が確認できないとき、又は版の不一致が見つかったときは、関連項目を未確認として保留し照会先を特定する。",
+    "権利又は秘密保持上の問題がある資料は外部共有・公開・外部AIへの入力を止め、担当者が許可条件を確認する。",
+    "新たな反証、研究内容の訂正、追加データが明らかになった際は、元の判断を上書きせず再調査の記録を追記する。"
+  ]
+}

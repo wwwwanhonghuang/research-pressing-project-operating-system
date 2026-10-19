@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-PLANNING-TRACE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "企画判断の追跡可能性と判断記録"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "企画編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "01"
+    ],
+    "audiences": [
+      "企画編集担当者",
+      "科学コミュニケーション担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-PLANNING-TRACE-B01",
+      "kind": "heading",
+      "text": "目的と適用範囲",
+      "level": 2
+    },
+    {
+      "id": "KNW-PLANNING-TRACE-B02",
+      "kind": "paragraph",
+      "text": "本基準案は、企画の採否を含む編集判断について、その根拠、代替案、未確認事項および決定権限を後から検討できるようにすることを目的とする。広報記事、インタビュー、解説記事、対話型教材その他の科学コミュニケーション企画の立案に適用する。"
+    },
+    {
+      "id": "KNW-PLANNING-TRACE-B03",
+      "kind": "heading",
+      "text": "企画対象と選定理由",
+      "level": 2
+    },
+    {
+      "id": "KNW-PLANNING-TRACE-B04",
+      "kind": "paragraph",
+      "text": "企画候補ごとに、対象とする研究・出来事・論点、発生時点と資料公開時点、想定読者、企画上の問いを明確にする。読者に提供し得る知識上の価値と公共的な関連性を記録し、候補間で検討した観点を残す。"
+    },
+    {
+      "id": "KNW-PLANNING-TRACE-B05",
+      "kind": "paragraph",
+      "text": "採否の説明は、話題性だけに依拠せず、確認可能な資料の存在、取材可能性、編集資源、利益相反、関係する人々への影響を踏まえる。内容の重要性と露出の大きさを別の評価対象として扱う。"
+    },
+    {
+      "id": "KNW-PLANNING-TRACE-B06",
+      "kind": "heading",
+      "text": "判断履歴",
+      "level": 2
+    },
+    {
+      "id": "KNW-PLANNING-TRACE-B07",
+      "kind": "paragraph",
+      "text": "企画書および候補一覧に、作成者、検討日、使用資料、版、判断者、決定内容、保留条件を関連づける。採用後の企画変更についても変更理由と影響範囲を記録する。"
+    },
+    {
+      "id": "KNW-PLANNING-TRACE-B08",
+      "kind": "heading",
+      "text": "出口条件",
+      "level": 2
+    },
+    {
+      "id": "KNW-PLANNING-TRACE-B09",
+      "kind": "paragraph",
+      "text": "企画の目的、対象読者、取り上げる範囲、主要な未確認事項、次段階で検証すべき問い、および責任ある確認経路が特定されているとき、調査段階への引継ぎを提案できる。"
+    }
+  ]
+}

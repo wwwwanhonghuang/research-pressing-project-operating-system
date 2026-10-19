@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-INT-QUESTION",
+  "version": "0.1.0",
+  "title": {
+    "ja": "研究論点・質問と追質問の設計"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "取材担当者と科学編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "03"
+  ],
+  "inputs": [
+    "研究論文・報告書",
+    "Stage 2の主張台帳",
+    "取材目的"
+  ],
+  "outputs": [
+    "質問設計表",
+    "質問の優先順位",
+    "出典・未解決事項の対応"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "手順で定めた7項目を確認し、未完了の項目と理由を記録した",
+    "関連する発言・資料・許諾・例外について追跡可能な参照先を登録した",
+    "責任者が実施結果・未確認事項・次の対応を確認した"
+  ],
+  "review_roles": [
+    "編集責任者又は取材責任者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-INT-QUESTION",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-046",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-017",
+      "version": "0.1.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-022",
+      "version": "0.2.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-INT-QUEST",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-INT-TRACE",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-VOICE",
+      "version": "0.1.0"
+    }
+  ]
+}

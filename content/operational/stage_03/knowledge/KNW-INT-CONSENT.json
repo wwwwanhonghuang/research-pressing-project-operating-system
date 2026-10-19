@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-INT-CONSENT",
+  "version": "0.1.0",
+  "title": {
+    "ja": "収録・公表条件と同意の管理"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "取材担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PIPC-GUIDE",
+      "locator": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "個人情報の利用目的、安全管理等に関する法令ガイドライン。報道・著述などの適用除外を含め個別の適用は検討が必要。"
+    },
+    {
+      "source_id": "SRC-PIPC-EXC",
+      "locator": "https://www.ppc.go.jp/all_faq_index/faq1-q11-5/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "個人情報保護法57条の報道等の適用除外説明。すべての取材・広報に一律に適用されるものではない。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "03"
+    ],
+    "audiences": [
+      "取材担当者",
+      "編集責任者",
+      "協力者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-INT-CONSENT-B01A",
+      "kind": "heading",
+      "text": "分離した取扱い",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-CONSENT-B01B",
+      "kind": "paragraph",
+      "text": "取材への参加、録音、写真撮影、映像撮影、第三者提供、氏名・所属の公表、発言の引用、再利用を個別に記録する。取材への参加のみから全利用についての許可が当然に成立したと推定しない。"
+    },
+    {
+      "id": "KNW-INT-CONSENT-B02A",
+      "kind": "heading",
+      "text": "説明と確認",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-CONSENT-B02B",
+      "kind": "paragraph",
+      "text": "用途、予定媒体、公開範囲、管理主体、保存方針、事後の照会窓口を説明し、理解と承諾の状況を記録する。録音等の法的な要件は状況により異なるため、全事案で同意が法定必須だと記載しない。"
+    },
+    {
+      "id": "KNW-INT-CONSENT-B03A",
+      "kind": "heading",
+      "text": "適用の確認",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-CONSENT-B03B",
+      "kind": "paragraph",
+      "text": "個人情報保護法には報道・著述活動等に関する適用除外がある。対象機関・目的・活動が該当するかを事案ごとに確認し、法的判断と取材倫理上の手続を分ける。"
+    },
+    {
+      "id": "KNW-INT-CONSENT-B04A",
+      "kind": "heading",
+      "text": "変更と撤回の相談",
+      "level": 2
+    },
+    {
+      "id": "KNW-INT-CONSENT-B04B",
+      "kind": "paragraph",
+      "text": "当初の利用目的からの逸脱、第三者の映り込み、対象者からの異議には担当者が対応を保留して権限者へ確認する。取消・撤回が常に法的に可能であると保証しない。"
+    }
+  ]
+}

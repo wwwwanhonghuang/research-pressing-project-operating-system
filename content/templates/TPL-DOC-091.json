@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-091",
+  "kind": "document",
+  "slug": "communication_metrics_report",
+  "title_ja": "配信・閲覧データ分析表",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P1",
+  "applicable_pipeline_stages": [
+    "08"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-091-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-091-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「案件・文書の識別子」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        },
+        {
+          "id": "TPL-DOC-091-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "「作成者と連絡先」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        },
+        {
+          "id": "TPL-DOC-091-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "「作成日と対象版」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-091-S2",
+      "heading_ja": "測定対象",
+      "fields": [
+        {
+          "id": "TPL-DOC-091-F004",
+          "label_ja": "媒体・期間と対象者",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "観測対象とデータ取得期間、媒体、母集団の範囲を記録する。"
+        },
+        {
+          "id": "TPL-DOC-091-F005",
+          "label_ja": "指標・算出方法",
+          "type": "table",
+          "required": false,
+          "description_ja": "到達、閲覧、理解、利用、信頼などの指標を独立して定義する。",
+          "columns": [
+            "対象と版",
+            "根拠・参照ID",
+            "判断・担当",
+            "例外と日時"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-091-F006",
+          "label_ja": "測定元と欠測",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "データ提供元と集計規則、欠測・削除・アルゴリズム変更を明記する。"
+        },
+        {
+          "id": "TPL-DOC-091-F007",
+          "label_ja": "比較可能性",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "比較条件や母集団の違いを検討する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-091-S3",
+      "heading_ja": "結果と解釈",
+      "fields": [
+        {
+          "id": "TPL-DOC-091-F008",
+          "label_ja": "測定結果",
+          "type": "table",
+          "required": false,
+          "description_ja": "「測定結果」について対象版、根拠識別子、確認日時と未確認事項を示す。",
+          "columns": [
+            "対象と版",
+            "根拠・参照ID",
+            "判断・担当",
+            "例外と日時"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-091-F009",
+          "label_ja": "解釈できる範囲",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「解釈できる範囲」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        },
+        {
+          "id": "TPL-DOC-091-F010",
+          "label_ja": "バイアスと交絡",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "偏り、交絡、自己選択と因果的解釈の限界を明記する。"
+        },
+        {
+          "id": "TPL-DOC-091-F011",
+          "label_ja": "次回の改善",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「次回の改善」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-091-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-091-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "「参照資料と根拠ID」について対象版、根拠識別子、確認日時と未確認事項を示す。",
+          "columns": [
+            "対象と版",
+            "根拠・参照ID",
+            "判断・担当",
+            "例外と日時"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-091-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「未確認事項・例外」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        },
+        {
+          "id": "TPL-DOC-091-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "「点検・改訂の記録」について対象版、根拠識別子、確認日時と未確認事項を示す。",
+          "columns": [
+            "対象と版",
+            "根拠・参照ID",
+            "判断・担当",
+            "例外と日時"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": [
+      "KNW-ARC-TRACE",
+      "KNW-ARC-VERSION"
+    ],
+    "checklist_template_ids": [
+      "TPL-CHK-042",
+      "TPL-CHK-043",
+      "TPL-CHK-044",
+      "TPL-CHK-045"
+    ]
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "独立の運用試案。記録の存在は科学的妥当性、個人情報適合、修正又は撤回の決裁権限を保証しない。",
+  "composition_slots": [
+    {
+      "id": "TPL-DOC-091-B01",
+      "title_ja": "評価目的",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-091-B02",
+      "title_ja": "指標と計測方法",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-091-B03",
+      "title_ja": "観測結果",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    },
+    {
+      "id": "TPL-DOC-091-B04",
+      "title_ja": "解釈の留保・改善",
+      "allowed_block_kinds": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "quotation",
+        "reference",
+        "figure",
+        "normative_clause",
+        "procedure_step",
+        "case"
+      ],
+      "required": false
+    }
+  ],
+  "workflow_id": "editorial-eight-stage"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PUB-DEMO-001",
+  "version": "0.1.0",
+  "title": {
+    "ja": "仮想ハンドブック構成"
+  },
+  "lifecycle": "draft",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "informational",
+    "institutional_approval": "none"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": false
+  },
+  "output_kind": "handbook",
+  "chapter_plan": [
+    {
+      "chapter_id": "CH-DEMO-01",
+      "heading_ja": "参考資料",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-DEMO-SOURCE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    }
+  ],
+  "visibility": "internal",
+  "style_profile": "formal_guideline"
+}

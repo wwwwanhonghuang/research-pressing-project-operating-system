@@ -1,0 +1,448 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{operationshandbook}
+\begin{document}
+\begin{center}
+{\Large\bfseries 事前調査・資料収集 業務ハンドブック（独立試作）}\par\medskip
+{\small 独立設計・試作・内容確認未了}\par
+{\small v0.1.0\quad 2026年10月19日}\par
+\end{center}
+\vspace{6mm}
+\noindent 本書は組織から承認を受けた規程又は公式の業務マニュアルを示すものではありません。実務への適用に際しては、必要な法令、利用許諾及び組織の権限規程を確認してください。\par
+\tableofcontents
+\clearpage
+\section{目的・対象・情報構造}
+\par 本書は、企画で定めた問いを原資料に結びつけ、研究方法と主張の根拠を評価し、次の取材・執筆へ引き継ぐための独立した業務設計試案である。探索から引継ぎまでの各判断に資料の識別子、版、確認日と責任を持たせる。\par\medskip
+\par 本文は研究調査、科学コミュニケーション、編集制作の場面を想定する。研究の査読、研究不正認定、法律上の許認可、組織の公式な公開承認を代替しない。正確性に関する原典確認と、倫理・権利・組織権限の確認を分けて扱う。\par\medskip
+\section{調査の単位と資料・主張の関係}
+\par 資料記録は SourceRecord、科学的に意味のある個々の命題は ClaimRecord として区別する。資料の識別子、版、引用位置、資料が主張を支持又は限定する関係を明記する。本文の参考文献表示と内部の来歴管理は相互に接続する。\par\medskip
+\par 科学的主張の区分は、観測、推定、解釈、仮説、予測、研究目標を基本とする。対象集団・方法・尺度・時間範囲の違いを後続の編集で失わないよう、必要な留保を主張ごとに保存する。\par\medskip
+\section{共通の品質標準（独立提案）}
+\subsection{調査目的と探索の再現可能性}
+\subsubsection{目的と適用}
+\par 候補探索は、企画上の問いに対応する調査対象、検索語、検索先、検索期間、除外条件及び探索者を記録して行う。調査の方法と未収集範囲も併記する。\par\medskip
+\subsubsection{探索記録}
+\par 複数言語・同義語・専門用語、研究者名、論文識別子などを適切に組み合わせ、検索日、使用データベース、並べ替え条件、検索式、候補件数を保存する。検索件数の再現性は検索環境と更新時点にも依存する。\par\medskip
+\subsubsection{探索の偏り}
+\par 高引用・高順位、英文献、オープンアクセス資料、所属機関の発表資料への偏重が生じ得る。重要な異説、原典、否定的結果、研究対象外の集団も必要に応じて探索対象に含める。\par\medskip
+\subsubsection{停止条件}
+\par 探索を暫定終了する際は、必要な主張が検討可能な範囲、未確認の領域、追加探索を要する契機と引継ぎ先を記録する。網羅的な体系的レビューを行ったとの表現は、対応する方法に基づく場合に限る。\par\medskip
+\par 参考：日本心理学会 科学コミュニケーション・ガイドライン（\url{https://psych.or.jp/jpamember/press_release_guidelines/}）、国立国会図書館 WARP（\url{https://warp.ndl.go.jp/info/mechanism-index}）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。\par\medskip
+\subsection{資料の同一性・版・来歴の確認}
+\subsubsection{資料識別}
+\par 著者、題名、発行機関、発行年月日、論文識別子、版、利用先 URL、アクセス日時と取得方法を一組の資料記録として登録する。\par\medskip
+\subsubsection{一次資料の範囲}
+\par 原著論文、研究報告書、プロトコル、試験登録、測定資料、公開データ等は内容と対象に応じて一次資料候補となる。広報資料や二次的解説についてはその作成主体と参照原典を辿る。\par\medskip
+\subsubsection{版と更新}
+\par プレプリントと査読後掲載版、訂正前と訂正後、撤回通知と元論文を区別する。確認した更新情報と確認時点を残し、後続の解釈へ反映する。\par\medskip
+\subsubsection{ウェブ情報}
+\par 更新日時が不明なウェブページは閲覧日時を併記し、必要に応じて保存先やアーカイブを参照する。保存可能性と複製・再配布できる権利は別個に確認する。\par\medskip
+\subsubsection{引用可能性}
+\par 資料へ到達できることと、図表や画像を再利用できることは異なる。リンク、引用、複製、改変、配信を区別して権利を記録する。\par\medskip
+\par 参考：Crossref Crossmark（\url{https://www.crossref.org/crossmark/}）、COPE Retraction Guidelines (reviewed August 2025)（\url{https://doi.org/10.24318/cope.2019.1.4}）、国立国会図書館 WARP（\url{https://warp.ndl.go.jp/info/mechanism-index}）、文化庁 著作権に関する FAQ（\url{https://www.bunka.go.jp/seisaku/bunka_gyosei/kibankyoka/faq/index.html}）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。\par\medskip
+\subsection{研究方法・結論・不確実性の対応}
+\subsubsection{方法の把握}
+\par 研究対象、標本、比較群、データ取得法、解析法、追跡期間、事前登録、欠測・除外条件を原資料から確認し、記述可能な範囲を特定する。\par\medskip
+\subsubsection{解釈階層}
+\par 測定・観測値、推定結果、研究者の解釈、仮説、一般向けの応用見通しを区別する。因果的主張については研究デザインと識別上の仮定を明記する。\par\medskip
+\subsubsection{定量表現}
+\par 割合の母数、絶対数、単位、比較基準、期間、効果量、区間推定、欠測値などを照合する。統計的有意性だけで効果の実務的重要性を断定しない。\par\medskip
+\subsubsection{一般化}
+\par 対象集団・環境・尺度・追跡期間に照らして、どこまで説明できるかを記録する。前臨床研究や予測モデルの知見を、直ちに臨床的効用と同一視しない。\par\medskip
+\subsubsection{更新時の再確認}
+\par 原資料の訂正、撤回、修正や新しい追試が見つかった場合、関連主張の検証状態を保留又は要再検討へ変更する。\par\medskip
+\par 参考：日本心理学会 科学コミュニケーション・ガイドライン（\url{https://psych.or.jp/jpamember/press_release_guidelines/}）、Crossref Crossmark（\url{https://www.crossref.org/crossmark/}）、COPE Retraction Guidelines (reviewed August 2025)（\url{https://doi.org/10.24318/cope.2019.1.4}）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。\par\medskip
+\subsection{主張と根拠の追跡可能性}
+\subsubsection{単位の定義}
+\par 記事中の独立した実質的主張に識別子を与え、出典資料の識別子、該当箇所、支持の仕方、限界、反対資料の有無を結びつける。\par\medskip
+\subsubsection{関係の種類}
+\par 根拠資料と主張の関係は支持、反証、限定、未確定、背景説明等に区別する。引用したという事実だけで支持の強さを確定しない。\par\medskip
+\subsubsection{保留状態}
+\par 参照不能、要再計算、解釈上の争点、未公開資料に依存する主張は未解決として登録し、公開可能な表現を再検討する。\par\medskip
+\subsubsection{人の判断}
+\par AI が作成した資料要約や対応表は確認候補として扱い、重要な主張は原資料と照合した担当者と照合日を残す。\par\medskip
+\subsubsection{変更追跡}
+\par 主張文言・引用場所・元論文の版のいずれかに変更があれば関連する記事、図表、FAQ を影響範囲として再確認する。\par\medskip
+\par 参考：日本心理学会 科学コミュニケーション・ガイドライン（\url{https://psych.or.jp/jpamember/press_release_guidelines/}）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。\par\medskip
+\subsection{調査結果の品質ゲートと引継ぎ}
+\subsubsection{出口条件}
+\par 中心となる問いに関する資料台帳と主張対応表、主要な方法・限界、相違する資料、残存する確認事項、次の取材質問を揃える。\par\medskip
+\subsubsection{判断の記録}
+\par 調査の暫定的な完了は編集工程上の引継ぎ判断である。科学的真理、当該研究の妥当性、取材・公開承認を意味しない。\par\medskip
+\subsubsection{再開条件}
+\par 新たな訂正通知、追加データ、専門家の異論、公開条件の変更が生じた場合に再調査できる状態を維持する。\par\medskip
+\subsubsection{保護と保持}
+\par 保存先、アクセス制限、保管期間、第三者共有可否、AIへの入力可否を資料単位で記録し、実際の保存は各組織の運用規程による。\par\medskip
+\par 参考：日本心理学会 科学コミュニケーション・ガイドライン（\url{https://psych.or.jp/jpamember/press_release_guidelines/}）、文部科学省 研究活動における不正行為への対応等（\url{https://www.mext.go.jp/a_menu/jinzai/fusei/index.htm}）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。\par\medskip
+\section{倫理・権利・研究公正の配慮}
+\subsection{資料収集と解釈における認識上の偏り}
+\subsubsection{観察・認識の偏り}
+\par 研究分野、言語、検索順位、発表主体、掲載媒体、資金状況、測定可能性が資料の可視性を左右する。収集できた資料と関連する現実の全体を区別して検討する。\par\medskip
+\subsubsection{解釈の偏り}
+\par 同じデータでも概念分類、比較集団、分析単位、因果仮説の違いが異なる解釈を生む。対立する読み方を必要な範囲で記録し、その証拠を確認する。\par\medskip
+\subsubsection{影響を受ける人々}
+\par 対象集団や当事者の経験を単純な代表例へ還元する際の影響を考慮し、標本の属性と外挿範囲を明示する。\par\medskip
+\subsubsection{記録}
+\par 除外した資料、判断の理由、残存する不一致を必要な範囲で保存し、見えにくい資料や知識の不足について次工程へ伝える。\par\medskip
+\par 参考：日本心理学会 科学コミュニケーション・ガイドライン（\url{https://psych.or.jp/jpamember/press_release_guidelines/}）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。\par\medskip
+\subsection{資料の権利・機密・利用範囲}
+\subsubsection{権利とアクセス}
+\par 閲覧可能な資料についても、取得、二次利用、長期保存、共有、公開、AI投入に必要な権限を別々に確認する。\par\medskip
+\subsubsection{個人情報}
+\par 連絡先、被験者情報、未公開のインタビュー発言等は必要性と権限を確認し、機微な内容を一般公開用の資料集や外部サービスへ移さない。\par\medskip
+\subsubsection{未公開研究}
+\par 査読中原稿、未発表の図表、研究室からの共有資料には公表可否・守秘条件・解禁条件が存在し得る。未確認の場合は公開や外部共有を保留する。\par\medskip
+\subsubsection{AI補助}
+\par AI に入力する際は公表範囲、利用規約、組織内規程、著作権、個人情報の条件を確認する。AI の要約は原典の代替にならない。\par\medskip
+\par 参考：文化庁 著作権に関する FAQ（\url{https://www.bunka.go.jp/seisaku/bunka_gyosei/kibankyoka/faq/index.html}）、日本心理学会 科学コミュニケーション・ガイドライン（\url{https://psych.or.jp/jpamember/press_release_guidelines/}）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。\par\medskip
+\subsection{研究公正への配慮と職責の境界}
+\subsubsection{役割の区分}
+\par 編集担当者は科学的主張の出典や根拠の照合を担うが、研究不正の公式認定や研究機関の調査を代行しない。懸念は根拠とともに権限ある窓口へ照会する。\par\medskip
+\subsubsection{撤回と疑義}
+\par 撤回通知・訂正・懸念表明は各々の意味を区別して記録する。非難の推測や人物評価に結びつけず、科学的な影響範囲の確認を優先する。\par\medskip
+\subsubsection{利益相反}
+\par 研究資金、所属、特許・商業的利害など、資料の解釈に関係する公表済み情報を記録する。未確認事項は推測で補わない。\par\medskip
+\subsubsection{説明責任}
+\par 資料選択と主張の留保を示せること、異議が生じた際に再確認できることを業務品質として扱う。\par\medskip
+\par 参考：文部科学省 研究活動における不正行為への対応等（\url{https://www.mext.go.jp/a_menu/jinzai/fusei/index.htm}）、COPE Retraction Guidelines (reviewed August 2025)（\url{https://doi.org/10.24318/cope.2019.1.4}）、日本心理学会 科学コミュニケーション・ガイドライン（\url{https://psych.or.jp/jpamember/press_release_guidelines/}）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。\par\medskip
+\section{調査目的・情報需要と探索計画の確定}
+\subsection{調査目的・情報需要と探索計画の確定}
+\par 担当：調査担当者\par\medskip
+\subsubsection*{入力資料}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 企画書、研究・科学情報についての問い、公開予定、既存の資料一覧
+\end{enumerate}
+\subsubsection*{成果物}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 調査計画書、探索対象と除外条件、時間・権限の制約
+\end{enumerate}
+\subsubsection*{完了の確認事項}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 調査対象と除外範囲が明記された
+\item 探索の再現方法と打切り条件が説明できる
+\item 情報の取得と利用の権限を確認した
+\end{enumerate}
+\par 人による判断を要する：はい\par\medskip
+\subsubsection*{実施手順}
+\begin{enumerate}[leftmargin=2em,itemsep=0.65em]
+\item 企画の問いを、確認可能な研究内容、背景、方法、限界、評価の各小問に分割する。\par\noindent\textit{記録・成果：}調査計画書、探索対象と除外条件、時間・権限の制約\nobreak\smallskip
+\item 必要な原典の種類と検索先を選び、言語、年度、分野、検索式の初期案を記録する。\par\noindent\textit{記録・成果：}調査計画書、探索対象と除外条件、時間・権限の制約\nobreak\smallskip
+\item 資料取得の優先順位を付ける際、発表主体への近さ、再現可能性、利益相反、適時性を併記する。\par\noindent\textit{記録・成果：}調査計画書、探索対象と除外条件、時間・権限の制約\nobreak\smallskip
+\item 再探索条件と探索打切り条件を暫定的に設定する。\par\noindent\textit{記録・成果：}調査計画書、探索対象と除外条件、時間・権限の制約\nobreak\smallskip
+\item 非公開資料、個人情報、著作物の扱いを確認して共有範囲を記録する。\par\noindent\textit{記録・成果：}調査計画書、探索対象と除外条件、時間・権限の制約\nobreak\smallskip
+\item 調査計画書をレビューし、変更履歴と担当を確定する。\par\noindent\textit{記録・成果：}調査計画書、探索対象と除外条件、時間・権限の制約\nobreak\smallskip
+\end{enumerate}
+\subsubsection*{例外・差戻し}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 原資料に到達できないとき、資料の真正性が確認できないとき、又は版の不一致が見つかったときは、関連項目を未確認として保留し照会先を特定する。
+\item 権利又は秘密保持上の問題がある資料は外部共有・公開・外部AIへの入力を止め、担当者が許可条件を確認する。
+\item 新たな反証、研究内容の訂正、追加データが明らかになった際は、元の判断を上書きせず再調査の記録を追記する。
+\end{enumerate}
+\section{候補資料の探索と収集範囲の評価}
+\subsection{候補資料の探索と収集範囲の評価}
+\par 担当：調査担当者\par\medskip
+\subsubsection*{入力資料}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 調査計画書、検索語一覧、関係する分野の資料群
+\end{enumerate}
+\subsubsection*{成果物}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 検索履歴、候補資料一覧、除外理由、追加検索候補
+\end{enumerate}
+\subsubsection*{完了の確認事項}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 検索履歴を再確認できる
+\item 候補の包含除外理由を記録した
+\item 相違する資料の探索経路を検討した
+\end{enumerate}
+\par 人による判断を要する：はい\par\medskip
+\subsubsection*{実施手順}
+\begin{enumerate}[leftmargin=2em,itemsep=0.65em]
+\item 検索対象を一次資料・関連するレビュー・制度資料・解説記事等に分ける。\par\noindent\textit{記録・成果：}検索履歴、候補資料一覧、除外理由、追加検索候補\nobreak\smallskip
+\item データベースや公的サイトごとの検索語、実行日、検索結果の範囲を保存する。\par\noindent\textit{記録・成果：}検索履歴、候補資料一覧、除外理由、追加検索候補\nobreak\smallskip
+\item 引用文献と被引用文献の追跡、研究者名・研究プロジェクト名による補完検索を行う。\par\noindent\textit{記録・成果：}検索履歴、候補資料一覧、除外理由、追加検索候補\nobreak\smallskip
+\item 資料候補の発行時期、研究対象、原典への到達可能性を整理する。\par\noindent\textit{記録・成果：}検索履歴、候補資料一覧、除外理由、追加検索候補\nobreak\smallskip
+\item 肯定的な結果だけでなく否定的結果、反例、異なる方法を用いた研究を探索する。\par\noindent\textit{記録・成果：}検索履歴、候補資料一覧、除外理由、追加検索候補\nobreak\smallskip
+\item 除外理由と探索の限界を記録し、検索計画の追加・修正を判断する。\par\noindent\textit{記録・成果：}検索履歴、候補資料一覧、除外理由、追加検索候補\nobreak\smallskip
+\end{enumerate}
+\subsubsection*{例外・差戻し}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 原資料に到達できないとき、資料の真正性が確認できないとき、又は版の不一致が見つかったときは、関連項目を未確認として保留し照会先を特定する。
+\item 権利又は秘密保持上の問題がある資料は外部共有・公開・外部AIへの入力を止め、担当者が許可条件を確認する。
+\item 新たな反証、研究内容の訂正、追加データが明らかになった際は、元の判断を上書きせず再調査の記録を追記する。
+\end{enumerate}
+\section{一次資料の取得・同一性・版・来歴の登録}
+\subsection{一次資料の取得・同一性・版・来歴の登録}
+\par 担当：調査担当者\par\medskip
+\subsubsection*{入力資料}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 候補資料一覧、論文・報告書・データへのアクセス権
+\end{enumerate}
+\subsubsection*{成果物}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 資料・出典台帳、版情報、引用位置と取得条件の記録
+\end{enumerate}
+\subsubsection*{完了の確認事項}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 原資料への到達経路が記録された
+\item 引用位置と版が照合できる
+\item 更新情報、権利及び取得日が明示された
+\end{enumerate}
+\par 人による判断を要する：はい\par\medskip
+\subsubsection*{実施手順}
+\begin{enumerate}[leftmargin=2em,itemsep=0.65em]
+\item 著者、標題、誌名・機関、識別子、発表日、版、言語を原資料に基づき記載する。\par\noindent\textit{記録・成果：}資料・出典台帳、版情報、引用位置と取得条件の記録\nobreak\smallskip
+\item 記事・報告・データの本文を可能な範囲で入手し、二次的な紹介文との相違を記録する。\par\noindent\textit{記録・成果：}資料・出典台帳、版情報、引用位置と取得条件の記録\nobreak\smallskip
+\item プレプリント、査読後版、修正版の関係を確認する。\par\noindent\textit{記録・成果：}資料・出典台帳、版情報、引用位置と取得条件の記録\nobreak\smallskip
+\item 訂正、撤回、懸念表明など更新情報の有無を確認日とともに記録する。\par\noindent\textit{記録・成果：}資料・出典台帳、版情報、引用位置と取得条件の記録\nobreak\smallskip
+\item 資料の保存先、アクセス条件、共有の可否、転載許諾の状態を別々に記録する。\par\noindent\textit{記録・成果：}資料・出典台帳、版情報、引用位置と取得条件の記録\nobreak\smallskip
+\item 出典の特定が難しい資料を保留にし、原典照会先を特定する。\par\noindent\textit{記録・成果：}資料・出典台帳、版情報、引用位置と取得条件の記録\nobreak\smallskip
+\end{enumerate}
+\subsubsection*{例外・差戻し}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 原資料に到達できないとき、資料の真正性が確認できないとき、又は版の不一致が見つかったときは、関連項目を未確認として保留し照会先を特定する。
+\item 権利又は秘密保持上の問題がある資料は外部共有・公開・外部AIへの入力を止め、担当者が許可条件を確認する。
+\item 新たな反証、研究内容の訂正、追加データが明らかになった際は、元の判断を上書きせず再調査の記録を追記する。
+\end{enumerate}
+\section{研究方法・標本・適用範囲の読解}
+\subsection{研究方法・標本・適用範囲の読解}
+\par 担当：調査担当者\par\medskip
+\subsubsection*{入力資料}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 取得した研究原著、プロトコル、補足資料、登録情報
+\end{enumerate}
+\subsubsection*{成果物}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 研究方法要約票、一般化の範囲、方法上の未確認事項
+\end{enumerate}
+\subsubsection*{完了の確認事項}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 研究デザインと比較条件を説明できる
+\item 観測結果と推論を分けた
+\item 外挿・一般化の限界を記録した
+\end{enumerate}
+\par 人による判断を要する：はい\par\medskip
+\subsubsection*{実施手順}
+\begin{enumerate}[leftmargin=2em,itemsep=0.65em]
+\item 問い、仮説、デザイン、比較条件、研究対象、測定対象を区別して要約する。\par\noindent\textit{記録・成果：}研究方法要約票、一般化の範囲、方法上の未確認事項\nobreak\smallskip
+\item 標本抽出、選択・除外条件、欠測、観測期間、介入又は観察の区別を確認する。\par\noindent\textit{記録・成果：}研究方法要約票、一般化の範囲、方法上の未確認事項\nobreak\smallskip
+\item 評価指標、測定法、前処理、解析手法、統計的仮定を記録する。\par\noindent\textit{記録・成果：}研究方法要約票、一般化の範囲、方法上の未確認事項\nobreak\smallskip
+\item 事前登録と事後的な解析変更が確認できる場合、その位置と内容を控える。\par\noindent\textit{記録・成果：}研究方法要約票、一般化の範囲、方法上の未確認事項\nobreak\smallskip
+\item 研究が直接対象とした集団・場面と記事が想定する読者集団の差を整理する。\par\noindent\textit{記録・成果：}研究方法要約票、一般化の範囲、方法上の未確認事項\nobreak\smallskip
+\item 研究者による解釈とデータから確かめられる範囲の差を一覧にする。\par\noindent\textit{記録・成果：}研究方法要約票、一般化の範囲、方法上の未確認事項\nobreak\smallskip
+\item 追加取材が必要な方法上の不明点と質問案を作成する。\par\noindent\textit{記録・成果：}研究方法要約票、一般化の範囲、方法上の未確認事項\nobreak\smallskip
+\end{enumerate}
+\subsubsection*{例外・差戻し}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 原資料に到達できないとき、資料の真正性が確認できないとき、又は版の不一致が見つかったときは、関連項目を未確認として保留し照会先を特定する。
+\item 権利又は秘密保持上の問題がある資料は外部共有・公開・外部AIへの入力を止め、担当者が許可条件を確認する。
+\item 新たな反証、研究内容の訂正、追加データが明らかになった際は、元の判断を上書きせず再調査の記録を追記する。
+\end{enumerate}
+\section{数値・図表・推定結果の照合}
+\subsection{数値・図表・推定結果の照合}
+\par 担当：調査担当者\par\medskip
+\subsubsection*{入力資料}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 本文、図表、補足データ、測定単位と解析仕様
+\end{enumerate}
+\subsubsection*{成果物}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 数値確認記録、図表出典一覧、未再現項目
+\end{enumerate}
+\subsubsection*{完了の確認事項}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 数値の原典位置と母数が追える
+\item 再計算の条件と丸めを残した
+\item 図表の著作権及び解釈限界を確認した
+\end{enumerate}
+\par 人による判断を要する：はい\par\medskip
+\subsubsection*{実施手順}
+\begin{enumerate}[leftmargin=2em,itemsep=0.65em]
+\item 記事へ転用する数値の母数、単位、測定時点、比較群と算出方法を確認する。\par\noindent\textit{記録・成果：}数値確認記録、図表出典一覧、未再現項目\nobreak\smallskip
+\item 数値と元論文の表・図・本文に対応する箇所を登録する。\par\noindent\textit{記録・成果：}数値確認記録、図表出典一覧、未再現項目\nobreak\smallskip
+\item 割合、絶対差、相対変化、推定区間を区別し、必要な再計算は式と丸め規則を記録する。\par\noindent\textit{記録・成果：}数値確認記録、図表出典一覧、未再現項目\nobreak\smallskip
+\item 統計的検定、有意水準、効果量、区間推定、欠測の取扱いを可能な範囲で確認する。\par\noindent\textit{記録・成果：}数値確認記録、図表出典一覧、未再現項目\nobreak\smallskip
+\item 図表キャプション、軸、正規化、対数変換、画像の切抜きによる意味の変化を検討する。\par\noindent\textit{記録・成果：}数値確認記録、図表出典一覧、未再現項目\nobreak\smallskip
+\item 資料だけでは再現できない項目を「未確認」として保留する。\par\noindent\textit{記録・成果：}数値確認記録、図表出典一覧、未再現項目\nobreak\smallskip
+\item 数値の使用を予定する文章について、読み手が誤解し得る分母と比較基準を整理する。\par\noindent\textit{記録・成果：}数値確認記録、図表出典一覧、未再現項目\nobreak\smallskip
+\end{enumerate}
+\subsubsection*{例外・差戻し}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 原資料に到達できないとき、資料の真正性が確認できないとき、又は版の不一致が見つかったときは、関連項目を未確認として保留し照会先を特定する。
+\item 権利又は秘密保持上の問題がある資料は外部共有・公開・外部AIへの入力を止め、担当者が許可条件を確認する。
+\item 新たな反証、研究内容の訂正、追加データが明らかになった際は、元の判断を上書きせず再調査の記録を追記する。
+\end{enumerate}
+\section{先行研究・異なる解釈・更新情報の検討}
+\subsection{先行研究・異なる解釈・更新情報の検討}
+\par 担当：調査担当者\par\medskip
+\subsubsection*{入力資料}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 一次資料群、先行研究、レビュー、訂正通知、検討者の意見
+\end{enumerate}
+\subsubsection*{成果物}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 研究史と論点整理、相違する主張の一覧、更新情報
+\end{enumerate}
+\subsubsection*{完了の確認事項}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 既存知見と今回の結果の関係が明確
+\item 重要な相違や反例を検討した
+\item 資料の更新状態を確認した
+\end{enumerate}
+\par 人による判断を要する：はい\par\medskip
+\subsubsection*{実施手順}
+\begin{enumerate}[leftmargin=2em,itemsep=0.65em]
+\item 当該研究が解こうとした問題の成立史、主要な先行研究、既存の制約を整理する。\par\noindent\textit{記録・成果：}研究史と論点整理、相違する主張の一覧、更新情報\nobreak\smallskip
+\item 同じ現象に関する異なる研究デザインと異なる解釈を探す。\par\noindent\textit{記録・成果：}研究史と論点整理、相違する主張の一覧、更新情報\nobreak\smallskip
+\item 方法、標本、用語、測定尺度、時間軸の違いを表にして比較する。\par\noindent\textit{記録・成果：}研究史と論点整理、相違する主張の一覧、更新情報\nobreak\smallskip
+\item 出典の撤回・訂正・解説更新を再度確認し、更新の影響を評価する。\par\noindent\textit{記録・成果：}研究史と論点整理、相違する主張の一覧、更新情報\nobreak\smallskip
+\item エビデンスの不一致を「争点」「外挿範囲の差」「資料不足」等に分ける。\par\noindent\textit{記録・成果：}研究史と論点整理、相違する主張の一覧、更新情報\nobreak\smallskip
+\item 読者に提示すべき不確実性と、取材で確認すべき事項を提案する。\par\noindent\textit{記録・成果：}研究史と論点整理、相違する主張の一覧、更新情報\nobreak\smallskip
+\end{enumerate}
+\subsubsection*{例外・差戻し}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 原資料に到達できないとき、資料の真正性が確認できないとき、又は版の不一致が見つかったときは、関連項目を未確認として保留し照会先を特定する。
+\item 権利又は秘密保持上の問題がある資料は外部共有・公開・外部AIへの入力を止め、担当者が許可条件を確認する。
+\item 新たな反証、研究内容の訂正、追加データが明らかになった際は、元の判断を上書きせず再調査の記録を追記する。
+\end{enumerate}
+\section{科学的主張・根拠対応表の構成と評価}
+\subsection{科学的主張・根拠対応表の構成と評価}
+\par 担当：調査担当者\par\medskip
+\subsubsection*{入力資料}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 出典台帳、方法要約票、数字確認記録、対立資料
+\end{enumerate}
+\subsubsection*{成果物}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 主張・根拠対応表、留保した主張と修正案
+\end{enumerate}
+\subsubsection*{完了の確認事項}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 主張が原資料に結びついている
+\item 根拠の支持・限定の別を記録した
+\item 暫定解釈と直接確認済み事項を区別した
+\end{enumerate}
+\par 人による判断を要する：はい\par\medskip
+\subsubsection*{実施手順}
+\begin{enumerate}[leftmargin=2em,itemsep=0.65em]
+\item 伝えたい主要な内容を独立した検証可能な主張単位に分ける。\par\noindent\textit{記録・成果：}主張・根拠対応表、留保した主張と修正案\nobreak\smallskip
+\item 主張に観測、推定、解釈、仮説、予測、目標の区分を付す。\par\noindent\textit{記録・成果：}主張・根拠対応表、留保した主張と修正案\nobreak\smallskip
+\item 出典識別子と該当ページ・図表・データを結びつける。\par\noindent\textit{記録・成果：}主張・根拠対応表、留保した主張と修正案\nobreak\smallskip
+\item 出典が当該主張を支持、限定、反証、又は未検証のどれに相当するか評価する。\par\noindent\textit{記録・成果：}主張・根拠対応表、留保した主張と修正案\nobreak\smallskip
+\item 研究対象や方法から許される文言の範囲を明記し、誇張を避ける表現を提案する。\par\noindent\textit{記録・成果：}主張・根拠対応表、留保した主張と修正案\nobreak\smallskip
+\item AI支援による候補と人間が原資料を照合した記録を区別する。\par\noindent\textit{記録・成果：}主張・根拠対応表、留保した主張と修正案\nobreak\smallskip
+\item 未解決の主張を先送りする際は公開予定の表現と取材質問の見直し条件を示す。\par\noindent\textit{記録・成果：}主張・根拠対応表、留保した主張と修正案\nobreak\smallskip
+\end{enumerate}
+\subsubsection*{例外・差戻し}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 原資料に到達できないとき、資料の真正性が確認できないとき、又は版の不一致が見つかったときは、関連項目を未確認として保留し照会先を特定する。
+\item 権利又は秘密保持上の問題がある資料は外部共有・公開・外部AIへの入力を止め、担当者が許可条件を確認する。
+\item 新たな反証、研究内容の訂正、追加データが明らかになった際は、元の判断を上書きせず再調査の記録を追記する。
+\end{enumerate}
+\section{未解決事項・取材質問・調査成果の引継ぎ}
+\subsection{未解決事項・取材質問・調査成果の引継ぎ}
+\par 担当：調査担当者\par\medskip
+\subsubsection*{入力資料}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 調査計画、資料台帳、主張対応表、未確認事項、編集企画
+\end{enumerate}
+\subsubsection*{成果物}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 調査引継ぎ記録、取材質問候補、要追加検証一覧
+\end{enumerate}
+\subsubsection*{完了の確認事項}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 成果と未確認事項の両方を引き継いだ
+\item 再調査・照会の担当を決めた
+\item 引継ぎ判断と公開承認の区別が記録された
+\end{enumerate}
+\par 人による判断を要する：はい\par\medskip
+\subsubsection*{実施手順}
+\begin{enumerate}[leftmargin=2em,itemsep=0.65em]
+\item 調査の問いに対して直接確認できた範囲と未解決の範囲を整理する。\par\noindent\textit{記録・成果：}調査引継ぎ記録、取材質問候補、要追加検証一覧\nobreak\smallskip
+\item 資料台帳、引用箇所、方法要約、数値確認、異説・更新情報をまとめて引き渡す。\par\noindent\textit{記録・成果：}調査引継ぎ記録、取材質問候補、要追加検証一覧\nobreak\smallskip
+\item 次の取材で確認すべき質問を「科学的内容」「方法」「制約」「公開条件」に分類する。\par\noindent\textit{記録・成果：}調査引継ぎ記録、取材質問候補、要追加検証一覧\nobreak\smallskip
+\item 権利、機密、個人情報、AI入力の制約を資料単位で記録する。\par\noindent\textit{記録・成果：}調査引継ぎ記録、取材質問候補、要追加検証一覧\nobreak\smallskip
+\item 資料不足、解釈不一致、期限未達、重要な訂正情報がある場合の差戻し経路を明確にする。\par\noindent\textit{記録・成果：}調査引継ぎ記録、取材質問候補、要追加検証一覧\nobreak\smallskip
+\item 編集責任者が引継ぎ条件を判断し、未完了の課題に担当者と期限を付す。\par\noindent\textit{記録・成果：}調査引継ぎ記録、取材質問候補、要追加検証一覧\nobreak\smallskip
+\item 後続の取材や校閲により必要となった再調査を追跡できる状態にする。\par\noindent\textit{記録・成果：}調査引継ぎ記録、取材質問候補、要追加検証一覧\nobreak\smallskip
+\end{enumerate}
+\subsubsection*{例外・差戻し}
+\begin{enumerate}[leftmargin=2em,itemsep=0.35em]
+\item 原資料に到達できないとき、資料の真正性が確認できないとき、又は版の不一致が見つかったときは、関連項目を未確認として保留し照会先を特定する。
+\item 権利又は秘密保持上の問題がある資料は外部共有・公開・外部AIへの入力を止め、担当者が許可条件を確認する。
+\item 新たな反証、研究内容の訂正、追加データが明らかになった際は、元の判断を上書きせず再調査の記録を追記する。
+\end{enumerate}
+\section{資料品質のチェックリスト}
+\par 以下のチェックリストは作業を確認するための共通定義である。各項目の判定、関連資料の参照先、担当者、再確認日およびレビュー結果は個別の ChecklistRun に記録する。判断理由を欠く「適合」は科学的な根拠の代替にならない。\par\medskip
+\subsection{資料選定チェックリスト}
+\par 確認用の定義であり、個別案件での実施状況、根拠資料、確認者、レビューの結果は別途保存する。\par\medskip
+\subsubsection*{確認項目}
+\begin{enumerate}[leftmargin=2em,itemsep=0.3em]
+\item 調査目的と検索対象が明記されている\par
+\item 検索したデータベース・サイトと検索日が記録されている\par
+\item 検索式・検索語・言語の条件が保存されている\par
+\item 候補資料の発行主体と識別子が特定されている\par
+\item 一次資料への到達可能性を評価した\par
+\item 資料の包含・除外理由が記録されている\par
+\item 異なる結果や解釈の探索を検討した\par
+\item 収集の限界と再探索条件が記載されている\par
+\end{enumerate}
+\subsection{出典・資料来歴確認チェックリスト}
+\par 確認用の定義であり、個別案件での実施状況、根拠資料、確認者、レビューの結果は別途保存する。\par\medskip
+\subsubsection*{確認項目}
+\begin{enumerate}[leftmargin=2em,itemsep=0.3em]
+\item 資料の著者・題名・発行機関が記録されている\par
+\item DOI等の識別子と直接参照先が確認されている\par
+\item 取得日・発表日・版を区別して記録した\par
+\item 一次資料と二次資料を区分した\par
+\item プレプリント・修正版・掲載版の関係を確認した\par
+\item 訂正・撤回・更新情報を確認した\par
+\item 引用位置・図表番号・ページを特定した\par
+\item 取得・保存・転載の権限や制限を記録した\par
+\end{enumerate}
+\subsection{研究方法・結論対応確認チェックリスト}
+\par 確認用の定義であり、個別案件での実施状況、根拠資料、確認者、レビューの結果は別途保存する。\par\medskip
+\subsubsection*{確認項目}
+\begin{enumerate}[leftmargin=2em,itemsep=0.3em]
+\item 研究目的と主要な仮説を把握した\par
+\item 研究デザインと比較条件を確認した\par
+\item 標本・対象集団と除外条件を確認した\par
+\item 主要な測定方法・解析方法を確認した\par
+\item 数値の単位・母数・比較基準を確認した\par
+\item 相関と因果推論の根拠を区別した\par
+\item 一般化可能な範囲と限界を記録した\par
+\item 不明点と追加照会先を明示した\par
+\end{enumerate}
+\subsection{科学的事実・根拠確認チェックリスト}
+\par 確認用の定義であり、個別案件での実施状況、根拠資料、確認者、レビューの結果は別途保存する。\par\medskip
+\subsubsection*{確認項目}
+\begin{enumerate}[leftmargin=2em,itemsep=0.3em]
+\item 主張ごとに原資料識別子が記録されている\par
+\item 資料が当該主張を支持する範囲を確認した\par
+\item 研究対象・方法・観測時点が整合している\par
+\item 数値の母数・単位・区間を原典と照合した\par
+\item 観測・推定・解釈・仮説・将来目標を区別した\par
+\item 相関関係と因果的な主張を区別した\par
+\item 相違する資料・訂正・撤回の確認をした\par
+\item 未確認の主張には保留理由と担当を記録した\par
+\end{enumerate}
+\subsection{未確認事項整理チェックリスト}
+\par 確認用の定義であり、個別案件での実施状況、根拠資料、確認者、レビューの結果は別途保存する。\par\medskip
+\subsubsection*{確認項目}
+\begin{enumerate}[leftmargin=2em,itemsep=0.3em]
+\item 未確認事項に一意の識別子を付した\par
+\item 問題の種類と影響する主張を記録した\par
+\item 追加資料・専門家照会の必要性を整理した\par
+\item 公開予定の表現に関する影響を評価した\par
+\item 担当者と次の確認条件を割り当てた\par
+\item 保留と暫定採用の判断を区別した\par
+\item 更新・撤回の再確認条件を設定した\par
+\item 引継ぎの責任者と判断記録を残した\par
+\end{enumerate}
+\section{判断ゲートと次段階への引継ぎ}
+\par 次段階への引継ぎ時には、少なくとも資料台帳、主張対応表、方法と数値の確認記録、異なる結果・解釈、権利上の制約、未確認事項、専門家へ確認する質問をそろえる。省略した場合は適用外判断とその理由を残す。\par\medskip
+\par 担当責任者は資料の範囲と未解決事項を確認し、追加調査の要否を記録する。この判断は研究成果の科学的な保証又は公開承認を意味しない。\par\medskip
+\section{参考資料・適用上の留意}
+\par 本書の設計では、日本心理学会による研究成果の科学コミュニケーションに関する指針、国立国会図書館によるウェブ資料保存の説明、Crossref と COPE による研究記録の更新に関する説明、文部科学省と文化庁の公表資料を参照した。各資料の適用対象、制度上の位置づけ、公開日時及び個別判断への適用可能性は区別する。\par\medskip
+\par 外部参照先と確認事項の一覧は content/operational/stage\_02/REFERENCES.md に記録した。外部の専門ガイダンスを本OSがそのまま採用したと扱うことなく、組織の規程・法令の確認と人による判断を継続する。\par\medskip
+\end{document}

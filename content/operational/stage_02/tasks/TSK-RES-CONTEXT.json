@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-RES-CONTEXT",
+  "version": "0.1.0",
+  "title": {
+    "ja": "先行研究・異なる解釈・更新情報の検討"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "調査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "02"
+  ],
+  "inputs": [
+    "一次資料群、先行研究、レビュー、訂正通知、検討者の意見"
+  ],
+  "outputs": [
+    "研究史と論点整理、相違する主張の一覧、更新情報"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "既存知見と今回の結果の関係が明確",
+    "重要な相違や反例を検討した",
+    "資料の更新状態を確認した"
+  ],
+  "review_roles": [
+    "調査責任者又は編集責任者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-RES-CONTEXT",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-038",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-043",
+      "version": "0.1.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-020",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-003",
+      "version": "0.2.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-RES-SEARCH",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-RES-EVIDENCE",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-RESBIAS",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-INTEGRITY",
+      "version": "0.1.0"
+    }
+  ]
+}

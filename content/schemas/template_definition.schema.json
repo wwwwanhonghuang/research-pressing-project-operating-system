@@ -1,0 +1,255 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Operations OS reusable template definition v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "kind",
+    "slug",
+    "title_ja",
+    "version",
+    "lifecycle",
+    "status",
+    "applicable_pipeline_stages",
+    "origin",
+    "authority_status",
+    "sections",
+    "workflow_id"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^TPL-(DOC|CHK)-[0-9]{3}$"
+    },
+    "kind": {
+      "enum": [
+        "document",
+        "checklist"
+      ]
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "title_ja": {
+      "type": "string",
+      "minLength": 2
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "lifecycle": {
+      "enum": [
+        "draft",
+        "in_review",
+        "approved_for_internal_use",
+        "deprecated"
+      ]
+    },
+    "status": {
+      "enum": [
+        "structural_template",
+        "substantive_draft",
+        "reviewed"
+      ]
+    },
+    "priority": {
+      "enum": [
+        "P0",
+        "P1",
+        "P2"
+      ]
+    },
+    "applicable_pipeline_stages": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9]{2}$"
+      }
+    },
+    "origin": {
+      "enum": [
+        "independent_proposal",
+        "adopted_with_provenance"
+      ]
+    },
+    "authority_status": {
+      "enum": [
+        "unapproved",
+        "review_pending",
+        "approved"
+      ]
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "$ref": "#/$defs/section"
+      }
+    },
+    "relationships": {
+      "type": "object"
+    },
+    "rendering": {
+      "type": "object"
+    },
+    "notes_ja": {
+      "type": "string"
+    },
+    "composition_slots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title_ja",
+          "allowed_block_kinds"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title_ja": {
+            "type": "string"
+          },
+          "allowed_block_kinds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "required": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "workflow_id": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "$defs": {
+    "field": {
+      "type": "object",
+      "required": [
+        "id",
+        "label_ja",
+        "type",
+        "required"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "label_ja": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "enum": [
+            "short_text",
+            "long_text",
+            "table",
+            "date",
+            "choice",
+            "rich_text",
+            "reference",
+            "number"
+          ]
+        },
+        "required": {
+          "type": "boolean"
+        },
+        "description_ja": {
+          "type": "string"
+        },
+        "columns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "min_rows": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "item": {
+      "type": "object",
+      "required": [
+        "id",
+        "criterion_ja",
+        "status_options",
+        "evidence_required_for"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "criterion_ja": {
+          "type": "string",
+          "minLength": 2
+        },
+        "status_options": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence_required_for": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence_hint_ja": {
+          "type": "string"
+        },
+        "human_review": {
+          "type": "boolean"
+        }
+      }
+    },
+    "section": {
+      "type": "object",
+      "required": [
+        "id",
+        "heading_ja"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "heading_ja": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/field"
+          }
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/item"
+          }
+        }
+      }
+    }
+  }
+}

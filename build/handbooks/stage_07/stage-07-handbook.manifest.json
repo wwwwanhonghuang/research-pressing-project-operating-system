@@ -1,0 +1,337 @@
+{
+  "recipe": "PUB-PUB-HANDBOOK",
+  "version": "0.1.0",
+  "included": [
+    {
+      "id": "TSK-PUB-PACKAGE",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "6e3ecac47bc08d5b2fa1abc17e314ad7f6fcf6adecb4d09227a7ba6771a72c31",
+      "path": "content/operational/stage_07/tasks/TSK-PUB-PACKAGE.json"
+    },
+    {
+      "id": "PRC-PUB-PACKAGE",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "b29be908223f20d730ed6c7d587e2d839c5b9b33da5fd6c6ab83316581276175",
+      "path": "content/operational/stage_07/procedures/PRC-PUB-PACKAGE.json"
+    },
+    {
+      "id": "TSK-PUB-CHANNEL",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "c7ac70eb4f893379ff771bfe28cb77b965cf009e96e6ba9ef75d5d0540db1e94",
+      "path": "content/operational/stage_07/tasks/TSK-PUB-CHANNEL.json"
+    },
+    {
+      "id": "PRC-PUB-CHANNEL",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "e45527a2d3853b6e1e34ac316cd91202d0af8d09081e529e87a3f254c9efd6f1",
+      "path": "content/operational/stage_07/procedures/PRC-PUB-CHANNEL.json"
+    },
+    {
+      "id": "TSK-PUB-SCHEDULE",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "23231078b9f65ff5e144e52df7405213ecc193f79b813761321abb0e40688596",
+      "path": "content/operational/stage_07/tasks/TSK-PUB-SCHEDULE.json"
+    },
+    {
+      "id": "PRC-PUB-SCHEDULE",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "9bf125ad991fe3f4a981e60fc705b11e7903bf041a534fb3d6ac5a8c973af245",
+      "path": "content/operational/stage_07/procedures/PRC-PUB-SCHEDULE.json"
+    },
+    {
+      "id": "TSK-PUB-WEB",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "350d6cb944ee5478a49483e97a2a03f43509cf7cec8910e6f58ea7c5ed0f4efd",
+      "path": "content/operational/stage_07/tasks/TSK-PUB-WEB.json"
+    },
+    {
+      "id": "PRC-PUB-WEB",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "58eb792b20be53e3a8c8020b9b4ebee6a491318210340c36cc953b9362947fa2",
+      "path": "content/operational/stage_07/procedures/PRC-PUB-WEB.json"
+    },
+    {
+      "id": "TSK-PUB-ACCESS",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "79cfb688bf2281c40b048d2d14d3e6a03b629b4164e23940e373e4b7b137cca0",
+      "path": "content/operational/stage_07/tasks/TSK-PUB-ACCESS.json"
+    },
+    {
+      "id": "PRC-PUB-ACCESS",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "1d84ca6f02c098655e55661322f3e72e34ca6e8886088a9bf74b831c556feb95",
+      "path": "content/operational/stage_07/procedures/PRC-PUB-ACCESS.json"
+    },
+    {
+      "id": "TSK-PUB-SOCIAL",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "c18e5137aee2164b752154dd3c1b154215b5aed92aad3a241e4bd1262ebb1aaf",
+      "path": "content/operational/stage_07/tasks/TSK-PUB-SOCIAL.json"
+    },
+    {
+      "id": "PRC-PUB-SOCIAL",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "920a7c45485edb30ed55d9335091231fb8afecb272bc9aefe3f25edb4c4efe81",
+      "path": "content/operational/stage_07/procedures/PRC-PUB-SOCIAL.json"
+    },
+    {
+      "id": "TSK-PUB-PRESS",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "73b92f4f29996571f3242e8890bba33f964ff956410bb69bedda687d12031ed7",
+      "path": "content/operational/stage_07/tasks/TSK-PUB-PRESS.json"
+    },
+    {
+      "id": "PRC-PUB-PRESS",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "bf75c7ed48ad792fa00f8339ef5be77b606c1d36f7431a7e70c98304358b0f70",
+      "path": "content/operational/stage_07/procedures/PRC-PUB-PRESS.json"
+    },
+    {
+      "id": "TSK-PUB-EVENT",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "fef1510890def2f06596334902eeac8be7f38a85fa3dc70c8cfedbc06ea3c9d7",
+      "path": "content/operational/stage_07/tasks/TSK-PUB-EVENT.json"
+    },
+    {
+      "id": "PRC-PUB-EVENT",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "f18a72310713bb6deb3a11c1965a426c4c75a023f83317daf0d17720bdc06b2a",
+      "path": "content/operational/stage_07/procedures/PRC-PUB-EVENT.json"
+    },
+    {
+      "id": "TSK-PUB-DEPLOY",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "c2fa578aff56cdae7903f606527d233b1dca71066fad79763637c33d3ed2c6b1",
+      "path": "content/operational/stage_07/tasks/TSK-PUB-DEPLOY.json"
+    },
+    {
+      "id": "PRC-PUB-DEPLOY",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "14b5f353bab954f1cae1024d8965762f2a61ed071ce3fd61ed8bae2d82c8cfd8",
+      "path": "content/operational/stage_07/procedures/PRC-PUB-DEPLOY.json"
+    },
+    {
+      "id": "TSK-PUB-VERIFY",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "8ee1a8f7a7fac8cda9a6e4a37be0ab9665f56905c4ba3cfd80494cabdc50ab3a",
+      "path": "content/operational/stage_07/tasks/TSK-PUB-VERIFY.json"
+    },
+    {
+      "id": "PRC-PUB-VERIFY",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "3f87b366e816cd56170c4561efa8a8a5e958d0df7e09f7739fda3f23456abea0",
+      "path": "content/operational/stage_07/procedures/PRC-PUB-VERIFY.json"
+    },
+    {
+      "id": "TSK-PUB-INCIDENT",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "dc142f321b5ec352555179eed43e68816508ad7ce23426bfb20cab75ef23e7d1",
+      "path": "content/operational/stage_07/tasks/TSK-PUB-INCIDENT.json"
+    },
+    {
+      "id": "PRC-PUB-INCIDENT",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "32d64b0b675ecc31aacc2ce104b84d41e0aab855b4d1028faaae3857817470e3",
+      "path": "content/operational/stage_07/procedures/PRC-PUB-INCIDENT.json"
+    },
+    {
+      "id": "TSK-PUB-HANDOFF",
+      "version": "0.1.0",
+      "kind": "task_definition",
+      "sha256": "9f5b67981120299cfc0ee19eeaedab515f4404e68d0d474aa018fd3b2170288a",
+      "path": "content/operational/stage_07/tasks/TSK-PUB-HANDOFF.json"
+    },
+    {
+      "id": "PRC-PUB-HANDOFF",
+      "version": "0.1.0",
+      "kind": "procedure_definition",
+      "sha256": "816219fd47079a38db81d9dd7878afa679175eb90cea32d2d68db23921992cee",
+      "path": "content/operational/stage_07/procedures/PRC-PUB-HANDOFF.json"
+    },
+    {
+      "id": "KNW-PUB-PACKAGE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "9255525fef779ace12502b4bfc055776cd342a74a3aaec7ed47a7db6bf40571c",
+      "path": "content/operational/stage_07/knowledge/KNW-PUB-PACKAGE.json"
+    },
+    {
+      "id": "KNW-PUB-VERSION",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "46dfa3d3fe6497ffd8ebc6287b9043aa1ae5a7d3688e3fba426a25b02e9c94ae",
+      "path": "content/operational/stage_07/knowledge/KNW-PUB-VERSION.json"
+    },
+    {
+      "id": "KNW-PUB-CHANNEL",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "a04aeac1956f69aa06c695352c9c28b7551cddea74a1435cdd5c7136351c7988",
+      "path": "content/operational/stage_07/knowledge/KNW-PUB-CHANNEL.json"
+    },
+    {
+      "id": "KNW-PUB-SCHEDULE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "8d9fa76a374551a8468c6741c7c8f41132370445e2f059a6c429834aa6e3b849",
+      "path": "content/operational/stage_07/knowledge/KNW-PUB-SCHEDULE.json"
+    },
+    {
+      "id": "KNW-PUB-WEB",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "3db63afc7f6610df78a14095d983fb3b8103a32f05a2f058116be258ad62df1b",
+      "path": "content/operational/stage_07/knowledge/KNW-PUB-WEB.json"
+    },
+    {
+      "id": "KNW-PUB-ACCESSIBILITY",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "4c3bd82c05725adae17d19aa0feb87efc6daa01644fb0fb113d592c89fab0f80",
+      "path": "content/operational/stage_07/knowledge/KNW-PUB-ACCESSIBILITY.json"
+    },
+    {
+      "id": "KNW-PUB-CONSISTENCY",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "04c6af0bccdfb6c82efa5aac0d6c2a7798e1d7c98ffa6026738776e7a4dad3cb",
+      "path": "content/operational/stage_07/knowledge/KNW-PUB-CONSISTENCY.json"
+    },
+    {
+      "id": "KNW-PUB-DEPLOY",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "320da30f2e7211ac0febd98d832891551be69dd505b69ae079668b10de5d9af5",
+      "path": "content/operational/stage_07/knowledge/KNW-PUB-DEPLOY.json"
+    },
+    {
+      "id": "KNW-PUB-TRACE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "ed4f6aa264a017369fd41de1520c5877076b15e66cfefe364db797b6e4b93998",
+      "path": "content/operational/stage_07/knowledge/KNW-PUB-TRACE.json"
+    },
+    {
+      "id": "KNW-PUB-RISK",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "978fd351692a23404b2c681330ab47f4239505aed53657da3feb3acc10047a0f",
+      "path": "content/operational/stage_07/knowledge/KNW-PUB-RISK.json"
+    },
+    {
+      "id": "KNW-PUB-EVENT",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "a19580c3cef5177a7e231a463604336e52128a2bdf0c941c8b2a04c4f3642b79",
+      "path": "content/operational/stage_07/knowledge/KNW-PUB-EVENT.json"
+    },
+    {
+      "id": "KNW-ETH-PUB-ACCOUNTABILITY",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "0d254b4f0f82c116bbd06f3eefd4fc47d49a9f68b3c05c0b66f61a936ae86682",
+      "path": "content/operational/stage_07/knowledge/KNW-ETH-PUB-ACCOUNTABILITY.json"
+    },
+    {
+      "id": "KNW-ETH-PUB-ACCESS",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "9fe4583921707ff29894f714c9f96f691d145821d91bda6541ccc23b8ba87501",
+      "path": "content/operational/stage_07/knowledge/KNW-ETH-PUB-ACCESS.json"
+    },
+    {
+      "id": "KNW-ETH-PUB-PRIVACY",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "98105b90a80be34710e453298c73b54467c2eae6800795d3cdbe0944243916b9",
+      "path": "content/operational/stage_07/knowledge/KNW-ETH-PUB-PRIVACY.json"
+    },
+    {
+      "id": "KNW-ETH-PUB-DIALOGUE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "96e3b2f3a2e536bac17c2f6507fe27bebb0d8ba83c1843855ac9ae5f1ee0a640",
+      "path": "content/operational/stage_07/knowledge/KNW-ETH-PUB-DIALOGUE.json"
+    },
+    {
+      "id": "KNW-ETH-PUB-INDEPENDENCE",
+      "version": "0.1.0",
+      "kind": "knowledge_entry",
+      "sha256": "85014eb480e99c2c62e74c914f903f5a3d36f5af88dd48caf53e71d2c4ef9026",
+      "path": "content/operational/stage_07/knowledge/KNW-ETH-PUB-INDEPENDENCE.json"
+    },
+    {
+      "id": "TPL-CHK-037",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "e5fc8509e9d475a83b1e453f91554aadcdd1a946c3f31d11b501c1aa12a30847",
+      "path": "content/templates/TPL-CHK-037.json"
+    },
+    {
+      "id": "TPL-CHK-038",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "f3b779af8e37a2ea2382ca243afbfcb063679a12f7a19577c246751611d887de",
+      "path": "content/templates/TPL-CHK-038.json"
+    },
+    {
+      "id": "TPL-CHK-039",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "72ce812f054462d0c5adf5aaf41d7dfd9c0e7a76897dc04053c5adf29ac16613",
+      "path": "content/templates/TPL-CHK-039.json"
+    },
+    {
+      "id": "TPL-CHK-040",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "a5482d61110ec19bb4d3b0de8e86baa92a9ddf122915176af43c5dd0162dd715",
+      "path": "content/templates/TPL-CHK-040.json"
+    },
+    {
+      "id": "TPL-CHK-041",
+      "version": "0.2.0",
+      "kind": "checklist_definition",
+      "sha256": "07d302f020f5877e743fb33dbc2440447f97735243f526c3fe6068455df25a35",
+      "path": "content/templates/TPL-CHK-041.json"
+    },
+    {
+      "id": "PUB-PUB-HANDBOOK",
+      "kind": "publication_recipe",
+      "version": "0.1.0",
+      "sha256": "db0dc449a14539856becb6b9fd7bd538f4e6e405aeb21fc7781863170dd9c976",
+      "path": "content/operational/stage_07/recipes/PUB-PUB-HANDBOOK.json"
+    },
+    {
+      "id": "RENDER-TEX",
+      "kind": "renderer",
+      "version": "0.1.0",
+      "sha256": "617d6e9cc572b2059e37dc9ca9ec9ce8bab0453fe7b3741f42c40eb482a7414d",
+      "path": "script/compose_handbook.py"
+    }
+  ],
+  "print_style_sha256": "c5560109a7441048abd09e3581b874cb264eac39b65420456dc57431665e7b2a",
+  "tex_sha256": "47ad8290071159fbe061eca185096023ec44ef36d671bd0082f5d5890333d52c"
+}

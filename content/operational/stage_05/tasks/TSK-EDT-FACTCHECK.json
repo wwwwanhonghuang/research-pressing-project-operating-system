@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-EDT-FACTCHECK",
+  "version": "0.1.0",
+  "title": {
+    "ja": "主張・数字・科学的妥当性の校閲"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学校閲担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "05"
+  ],
+  "inputs": [
+    "原稿全文と主張台帳",
+    "原論文・一次資料",
+    "数表と推定条件"
+  ],
+  "outputs": [
+    "命題別校閲記録",
+    "科学的照会・保留リスト"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "命題別校閲記録が登録され、担当者・日時・対象版が追跡できる",
+    "科学的照会・保留リストが登録され、担当者・日時・対象版が追跡できる",
+    "重大な未解決問題の状態と差戻し条件が記録され、次工程の判断者へ明示された"
+  ],
+  "review_roles": [
+    "編集責任者",
+    "分野の担当確認者（必要時）"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-EDT-FACTCHECK",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-066",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-067",
+      "version": "0.2.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-031",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-002",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-003",
+      "version": "0.2.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-EDT-FACT",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-EDT-ISSUES",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-EDT-HARM",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-EDT-INDEPENDENCE",
+      "version": "0.1.0"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-REV-EVIDENCE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "確認根拠と対象版の完全性"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "専門確認・公開管理担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。法令、契約、内部権限規程等の適用と現行版は個別に検討する。実在の承認を意味しない。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-SCI-COMM-GUIDE",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果プレスリリースについての専門学会による指針。科学的主張・誇張・引用・再利用等を扱う。一般の全業務に法的拘束力を与えるものではない。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "06"
+    ],
+    "audiences": [
+      "研究者",
+      "編集者",
+      "専門確認担当者",
+      "公開承認責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-REV-EVIDENCE-H01",
+      "kind": "heading",
+      "text": "照合可能な版",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-EVIDENCE-P01",
+      "kind": "paragraph",
+      "text": "本文、画像、動画、字幕、ウェブ断片の識別子・版・ハッシュを固定して確認対象を明示する。"
+    },
+    {
+      "id": "KNW-REV-EVIDENCE-H02",
+      "kind": "heading",
+      "text": "記録粒度",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-EVIDENCE-P02",
+      "kind": "paragraph",
+      "text": "指摘にページ・節・時刻・命題IDと原資料への参照を結び付ける。"
+    },
+    {
+      "id": "KNW-REV-EVIDENCE-H03",
+      "kind": "heading",
+      "text": "更新・撤回",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-EVIDENCE-P03",
+      "kind": "paragraph",
+      "text": "先行結果の訂正、撤回、更新の疑義について確認日時と調査範囲を記録し、結論を断定し過ぎない。"
+    },
+    {
+      "id": "KNW-REV-EVIDENCE-H04",
+      "kind": "heading",
+      "text": "再確認",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-EVIDENCE-P04",
+      "kind": "paragraph",
+      "text": "重要な修正の後は影響した命題、図表、表題について必要な範囲で再確認を依頼する。"
+    }
+  ]
+}

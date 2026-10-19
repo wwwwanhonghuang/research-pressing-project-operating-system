@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-WRT-MODAL",
+  "version": "0.1.0",
+  "title": {
+    "ja": "媒体横断の情報同等性と設計"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "汎用的な編集制作の独立設計案。媒体の役割、権利、組織規程、適用される法令は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-W3C-WCAG22",
+      "locator": "https://www.w3.org/TR/wcag/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "WCAG 2.2。非テキスト情報の代替、字幕・メディア、言語、構造等のアクセシビリティ参照基準。"
+    },
+    {
+      "source_id": "SRC-JPA-SCI-COMM",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果発表に関する日本心理学会の専門指針。因果と相関、統計量、引用、制約、過度の一般化の取扱い。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "04"
+    ],
+    "audiences": [
+      "編集担当者",
+      "科学ライター",
+      "制作担当者",
+      "レビュー担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-WRT-MODAL-H01",
+      "kind": "heading",
+      "text": "共通の核",
+      "level": 2
+    },
+    {
+      "id": "KNW-WRT-MODAL-P01",
+      "kind": "paragraph",
+      "text": "主要な事実、証拠の確度、重要な制約と関連する引用IDを、文章、SNS、音声、動画、FAQの各媒体に共通する核として設計する。"
+    },
+    {
+      "id": "KNW-WRT-MODAL-H02",
+      "kind": "heading",
+      "text": "媒体固有の構成",
+      "level": 2
+    },
+    {
+      "id": "KNW-WRT-MODAL-P02",
+      "kind": "paragraph",
+      "text": "尺や画面の制約を考慮しつつ、研究段階の誤認につながる限定条件の脱落を避ける。動画用台本と文字起こしは対応IDを持つ別バージョンとして管理する。"
+    },
+    {
+      "id": "KNW-WRT-MODAL-H03",
+      "kind": "heading",
+      "text": "任意の利用",
+      "level": 2
+    },
+    {
+      "id": "KNW-WRT-MODAL-P03",
+      "kind": "paragraph",
+      "text": "動画や音声を見聞きすることを理解の必須条件にせず、重要情報を適切な代替媒体で参照できるようにする。代替テキスト、字幕、書き起こしの目的を別々に定める。"
+    },
+    {
+      "id": "KNW-WRT-MODAL-H04",
+      "kind": "heading",
+      "text": "整合確認",
+      "level": 2
+    },
+    {
+      "id": "KNW-WRT-MODAL-P04",
+      "kind": "paragraph",
+      "text": "各媒体の見出し、数値、引用、公開解禁条件を共通の原資料と照合し、派生版が変更された場合の改訂対象を記録する。"
+    }
+  ]
+}

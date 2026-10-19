@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-REV-INDEPENDENCE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "専門審査の独立性と利益相反"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "倫理・権利担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。法令、契約、内部権限規程等の適用と現行版は個別に検討する。実在の承認を意味しない。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-SCI-COMM-GUIDE",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果プレスリリースについての専門学会による指針。科学的主張・誇張・引用・再利用等を扱う。一般の全業務に法的拘束力を与えるものではない。"
+    },
+    {
+      "source_id": "SRC-NEWS-ETHICS",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "新聞報道の職業倫理綱領。正確さ、独立、権利尊重と訂正に関する参照枠組み。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "06"
+    ],
+    "audiences": [
+      "研究者",
+      "編集者",
+      "専門確認担当者",
+      "公開承認責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-REV-INDEPENDENCE-H01",
+      "kind": "heading",
+      "text": "判断の尊重",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-REV-INDEPENDENCE-P01",
+      "kind": "paragraph",
+      "text": "研究者・制作担当・編集責任者の評価範囲を明示し、説明内容が検証対象にあることを尊重する。"
+    },
+    {
+      "id": "KNW-ETH-REV-INDEPENDENCE-H02",
+      "kind": "heading",
+      "text": "利益相反の扱い",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-REV-INDEPENDENCE-P02",
+      "kind": "paragraph",
+      "text": "利害関係、役務受託、研究資金等の関係を必要に応じて開示し、審査体制の独立性を検討する。"
+    },
+    {
+      "id": "KNW-ETH-REV-INDEPENDENCE-H03",
+      "kind": "heading",
+      "text": "異論の保存",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-REV-INDEPENDENCE-P03",
+      "kind": "paragraph",
+      "text": "異論・少数意見を根拠付きで記録し、都合のよい部分だけを「専門家確認済み」と表示しない。"
+    }
+  ]
+}

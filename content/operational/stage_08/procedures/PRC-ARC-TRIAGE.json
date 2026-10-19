@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-ARC-TRIAGE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "指摘の緊急度と影響範囲の一次評価の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "訂正調整担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "訂正調整担当者"
+  ],
+  "inputs": [
+    "受付台帳",
+    "公開媒体対応図",
+    "権利・個人情報条件"
+  ],
+  "outputs": [
+    "優先順位・暫定措置案"
+  ],
+  "steps": [
+    {
+      "id": "PRC-ARC-TRIAGE-S1",
+      "instruction": "誤りの具体的な箇所と読み手への影響を暫定記述する",
+      "expected_output": "影響記述",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-TRIAGE-S2",
+      "instruction": "科学・倫理・法令・権利・安全の担当分野へ振り分ける",
+      "expected_output": "専門確認先",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-TRIAGE-S3",
+      "instruction": "再配信・引用・ダウンロードされた範囲を可能な限り推定する",
+      "expected_output": "派生物・露出一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-TRIAGE-S4",
+      "instruction": "必要に応じて公開停止・注意表示・説明追加を権限者へ提案する",
+      "expected_output": "暫定措置依頼",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-TRIAGE-S5",
+      "instruction": "重大度、根拠の不足、次回判定日時を記録する",
+      "expected_output": "優先順位記録",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "緊急措置の提案と実際の公開停止決裁を区別する",
+    "未確定の疑義を不正と断定しない"
+  ]
+}

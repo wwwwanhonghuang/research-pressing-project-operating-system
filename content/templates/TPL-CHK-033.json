@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-CHK-033",
+  "kind": "checklist",
+  "slug": "expert_review",
+  "title_ja": "専門確認チェックリスト",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "06"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-CHK-033-S1",
+      "heading_ja": "審査範囲・根拠",
+      "items": [
+        {
+          "id": "TPL-CHK-033-I001",
+          "criterion_ja": "確認対象の版、ハッシュ、媒体と審査範囲が特定されている",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "対象版台帳・審査依頼書の識別子・担当者・版・確認日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-033-I002",
+          "criterion_ja": "確認者の専門性、担当範囲と利益相反が記録されている",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "専門家情報・利益相反記録の識別子・担当者・版・確認日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-033-I003",
+          "criterion_ja": "主要な科学的主張が原資料及び研究方法に遡れる",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "主張根拠台帳・引用箇所の識別子・担当者・版・確認日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-033-I004",
+          "criterion_ja": "因果解釈、一般化、数値、限界の表現を点検した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "審査コメントと対象文の識別子・担当者・版・確認日時を記録する。",
+          "human_review": true
+        }
+      ]
+    },
+    {
+      "id": "TPL-CHK-033-S2",
+      "heading_ja": "対応判断・記録",
+      "items": [
+        {
+          "id": "TPL-CHK-033-I005",
+          "criterion_ja": "未公表・撤回・訂正情報の影響を確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "出版状態確認記録の識別子・担当者・版・確認日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-033-I006",
+          "criterion_ja": "対象外の専門領域と未確認の問題を示した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "審査範囲表・未確認事項の識別子・担当者・版・確認日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-033-I007",
+          "criterion_ja": "指摘と対応担当者、対応期限が紐付いている",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "指摘対応表の識別子・担当者・版・確認日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-033-I008",
+          "criterion_ja": "重大な修正は専門家による再確認対象にした",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "修正差分・再審査記録の識別子・担当者・版・確認日時を記録する。",
+          "human_review": true
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho"
+  },
+  "notes_ja": "設問は専門的・法的な判断の代替ではない。実行記録の承認状態は別途管理する。",
+  "workflow_id": "editorial-eight-stage"
+}

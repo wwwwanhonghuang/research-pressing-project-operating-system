@@ -1,0 +1,511 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PUB-PUB-HANDBOOK",
+  "version": "0.1.0",
+  "title": {
+    "ja": "公開・配信 業務ハンドブック（独立試案・統合版）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "公開・配信統括担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "output_kind": "handbook",
+  "audience": [
+    "編集責任者",
+    "配信担当者",
+    "公開責任者",
+    "問い合わせ担当者"
+  ],
+  "style_profile": "formal_guideline",
+  "visibility": "public",
+  "chapter_plan": [
+    {
+      "chapter_id": "CH-PUB-INTRO",
+      "heading_ja": "適用範囲と第6段階の公開承認との関係",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "本書は承認済み原稿・素材を、アクセス可能かつ追跡可能な形で公開・配信するための独立の業務試案である。配信操作の実行、ウェブへの反映、読者が実際に閲覧できることはそれぞれ区別して記録する。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "第6段階の公開決裁記録と版の同一性を引き継ぐ。構造検証の結果や配信前チェックリストの完了は、実在の権限ある者の公開許可と同一ではない。判断条件が不明な場合は送信を保留する。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PUB-PACKAGE",
+      "heading_ja": "引継ぎ資料と承認済み配信単位の受領",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-PACKAGE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-PACKAGE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PUB-CHANNEL",
+      "heading_ja": "媒体と公開目的に応じた配信設計",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-CHANNEL",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-CHANNEL",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PUB-SCHEDULE",
+      "heading_ja": "公開時刻・解禁・関係者連絡の管理",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-SCHEDULE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-SCHEDULE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PUB-WEB",
+      "heading_ja": "ウェブ掲載とページ品質の事前検証",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-WEB",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-WEB",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PUB-ACCESS",
+      "heading_ja": "アクセシビリティと利用選択の検証",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-ACCESS",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-ACCESS",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PUB-SOCIAL",
+      "heading_ja": "SNS投稿と対話導線の準備",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-SOCIAL",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-SOCIAL",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PUB-PRESS",
+      "heading_ja": "報道機関への提供と問い合わせ準備",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-PRESS",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-PRESS",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PUB-EVENT",
+      "heading_ja": "イベント・公開対話の進行管理",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-EVENT",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-EVENT",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PUB-DEPLOY",
+      "heading_ja": "公開操作・実行ログの取得",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-DEPLOY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-DEPLOY",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PUB-VERIFY",
+      "heading_ja": "公開結果の独立確認と初期監視",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-VERIFY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-VERIFY",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PUB-INCIDENT",
+      "heading_ja": "誤掲載・障害・公開停止と差戻し",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-INCIDENT",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-INCIDENT",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PUB-HANDOFF",
+      "heading_ja": "公開記録の確定と訂正・評価段階への引継ぎ",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-PUB-HANDOFF",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-PUB-HANDOFF",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PUB-STANDARDS",
+      "heading_ja": "公開・配信の品質標準",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-PACKAGE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-VERSION",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-CHANNEL",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-SCHEDULE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-WEB",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-ACCESSIBILITY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-CONSISTENCY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-DEPLOY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-TRACE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-RISK",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-PUB-EVENT",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PUB-ETHICS",
+      "heading_ja": "倫理・責任と利用条件",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-PUB-ACCOUNTABILITY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-PUB-ACCESS",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-PUB-PRIVACY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-PUB-DIALOGUE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "knowledge_entry",
+            "id": "KNW-ETH-PUB-INDEPENDENCE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PUB-CHECKLIST",
+      "heading_ja": "公開直前・媒体別の確認票",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-037",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-038",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-039",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-040",
+            "version": "0.2.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "checklist_definition",
+            "id": "TPL-CHK-041",
+            "version": "0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-PUB-HANDOFF",
+      "heading_ja": "配信履歴と訂正・評価への引継ぎ",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "第8段階へ、公開日時、時区、公開版・素材ハッシュ、掲載先URL、投稿ID、担当者、承認対象との比較結果、例外、問い合わせ・訂正候補、アクセシビリティ未解決事項を渡す。閲覧数と、理解・納得・信頼・科学的正確性の評価は別の対象として記録する。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "本ハンドブックにおける外部資料は限定された適用範囲の参考である。掲載媒体、契約、法令、利用者の必要条件の確認を踏まえて実施手順を更新する。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-034",
+  "kind": "document",
+  "slug": "audience_format_matrix",
+  "title_ja": "読者・媒体対応表",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P1",
+  "applicable_pipeline_stages": [
+    "01"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-034-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-034-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": true,
+          "description_ja": "個別案件に固有のIDと、後続資料の照合に使う文書IDを記録する。"
+        },
+        {
+          "id": "TPL-DOC-034-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "作成者、所属や役割、更新に関する照会先を記録する。"
+        },
+        {
+          "id": "TPL-DOC-034-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "作成日・改訂日と対象版を別々に管理する。日付欄にはISO形式の値を入力する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-034-S2",
+      "heading_ja": "読者と情報ニーズ",
+      "fields": [
+        {
+          "id": "TPL-DOC-034-F004",
+          "label_ja": "読者群",
+          "type": "table",
+          "required": true,
+          "description_ja": "利用場面、前提知識、情報到達の条件の異なる読者群を整理する。",
+          "columns": [
+            "読者群",
+            "情報需要",
+            "利用環境",
+            "確認方法"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-034-F005",
+          "label_ja": "理解上の障壁",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "専門用語、言語、環境、知覚・操作上の障壁などを推測と実測に分ける。"
+        },
+        {
+          "id": "TPL-DOC-034-F006",
+          "label_ja": "読者の関心と利用場面",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "記事を読む目的、利用場面、疑問の背景を整理する。"
+        },
+        {
+          "id": "TPL-DOC-034-F007",
+          "label_ja": "必要な説明の深さ",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "目的別に必要な前提説明、方法・限界の粒度を提案する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-034-S3",
+      "heading_ja": "媒体選択と整合",
+      "fields": [
+        {
+          "id": "TPL-DOC-034-F008",
+          "label_ja": "媒体と形式の対応表",
+          "type": "table",
+          "required": false,
+          "description_ja": "文章、図解、音声、動画、対話資料の選択理由と代替経路を記す。",
+          "columns": [
+            "読者・目的",
+            "媒体",
+            "必要な配慮",
+            "代替経路"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-034-F009",
+          "label_ja": "アクセシビリティ",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "字幕、文字起こし、読み上げ、代替テキスト、印刷可用性を検討する。"
+        },
+        {
+          "id": "TPL-DOC-034-F010",
+          "label_ja": "共通する事実と注意事項",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "複数媒体で一致させる主張ID、出典、限定条件を記す。"
+        },
+        {
+          "id": "TPL-DOC-034-F011",
+          "label_ja": "評価方法",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "閲覧・反応・理解・対話のうち何を測るか、測定上の限界を整理する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-034-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-034-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "資料IDと版、アクセス日、根拠の位置、担当の照合状況を記す。",
+          "columns": [
+            "資料ID",
+            "出典・該当箇所",
+            "版・日付",
+            "確認状態"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-034-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "未解決の問題、確定に必要な資料、照会先、保留条件を列挙する。"
+        },
+        {
+          "id": "TPL-DOC-034-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "レビューの対象版、日時、判断主体、コメント、修正の採否と理由を記録する。",
+          "columns": [
+            "日時・版",
+            "確認者",
+            "判断・理由",
+            "変更点"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": [],
+    "checklist_template_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "企画段階に必要な記載指針を追加した独立した試作。空欄の許容と審査の要否は運用ごとに定める。",
+  "workflow_id": "editorial-eight-stage"
+}

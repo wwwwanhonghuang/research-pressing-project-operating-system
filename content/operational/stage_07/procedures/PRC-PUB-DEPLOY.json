@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-PUB-DEPLOY",
+  "version": "0.1.0",
+  "title": {
+    "ja": "公開操作・実行ログの取得の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "公開実行担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "公開実行担当者"
+  ],
+  "inputs": [
+    "権限を確認した配信指示",
+    "固定版",
+    "掲載先と時刻"
+  ],
+  "outputs": [
+    "公開操作・結果ログ"
+  ],
+  "steps": [
+    {
+      "id": "PRC-PUB-DEPLOY-S1",
+      "instruction": "直前時点で審査状況と人的な公開指示を照合する",
+      "expected_output": "実行前確認記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-DEPLOY-S2",
+      "instruction": "公開対象のファイルハッシュとチャネル・アカウントを読み上げ確認する",
+      "expected_output": "対象同一性の記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-DEPLOY-S3",
+      "instruction": "必要な資格情報・最小権限・二人目確認者を確認する",
+      "expected_output": "操作権限確認",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-DEPLOY-S4",
+      "instruction": "予定した媒体へ公開を実行し操作日時と戻り値を記録する",
+      "expected_output": "実行ログ",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-DEPLOY-S5",
+      "instruction": "公開後のURL・投稿ID・版・状態を取得し保管する",
+      "expected_output": "配信識別子台帳",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "承認指示の不備、差戻し、媒体変更、ハッシュ不一致では実行しない",
+    "送信成功の応答は受信者が読めることを保証しない"
+  ]
+}

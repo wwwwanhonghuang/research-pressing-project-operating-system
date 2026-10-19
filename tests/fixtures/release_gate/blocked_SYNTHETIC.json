@@ -1,0 +1,57 @@
+{
+  "record_id": "EXAMPLE-NONOPERATIONAL-001",
+  "target": {
+    "artifact_id": "EXAMPLE-ARTICLE",
+    "version": "0.1.0",
+    "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "review_domains": [
+    {
+      "domain": "scientific",
+      "status": "complete",
+      "reviewer": "synthetic-role",
+      "record_ref": "DEMO-REVIEW-SCIENTIFIC"
+    },
+    {
+      "domain": "editorial",
+      "status": "complete",
+      "reviewer": "synthetic-role",
+      "record_ref": "DEMO-REVIEW-EDITORIAL"
+    },
+    {
+      "domain": "rights",
+      "status": "pending",
+      "reviewer": "synthetic-role",
+      "record_ref": "DEMO-REVIEW-RIGHTS"
+    },
+    {
+      "domain": "privacy",
+      "status": "complete",
+      "reviewer": "synthetic-role",
+      "record_ref": "DEMO-REVIEW-PRIVACY"
+    },
+    {
+      "domain": "ethics",
+      "status": "complete",
+      "reviewer": "synthetic-role",
+      "record_ref": "DEMO-REVIEW-ETHICS"
+    }
+  ],
+  "outstanding_issues": [
+    {
+      "id": "DEMO-ISSUE",
+      "severity": "major",
+      "status": "open"
+    }
+  ],
+  "decision": {
+    "status": "conditional",
+    "target_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "decision_maker": "synthetic-authority",
+    "authority_basis": "EXAMPLE-ONLY-UNVERIFIED",
+    "decision_record_ref": "DEMO-DECISION",
+    "conditions": [
+      "Unresolved permissions"
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-INT-HANDOFF",
+  "version": "0.1.0",
+  "title": {
+    "ja": "取材成果の確認・制作工程への引継ぎの実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集責任者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した作業設計案。適用対象の権限規程、報道・広報の役割、個別の法令・契約・権利条件は事案ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "編集責任者"
+  ],
+  "inputs": [
+    "取材記録、引用台帳、許諾条件、未確認事項、照会履歴"
+  ],
+  "outputs": [
+    "取材引継ぎ包",
+    "編集用素材一覧",
+    "再確認の担当と期限"
+  ],
+  "steps": [
+    {
+      "id": "PRC-INT-HANDOFF-S1",
+      "instruction": "取得した情報を科学的結果、方法、仮説、経験談、将来構想に分類し出典を付す",
+      "expected_output": "取材引継ぎ包",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-INT-HANDOFF-S2",
+      "instruction": "原記録と編集用素材、公開可能素材と非公開素材を区分する",
+      "expected_output": "編集用素材一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-HANDOFF-S3",
+      "instruction": "引用・図表・写真・録音・映像の利用条件を整理する",
+      "expected_output": "再確認の担当と期限",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-HANDOFF-S4",
+      "instruction": "未解決の主張、本人確認、第三者権利、画像の写り込みを一覧化する",
+      "expected_output": "取材引継ぎ包",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-HANDOFF-S5",
+      "instruction": "編集で使用する引用候補と研究上の留保を合わせて引き渡す",
+      "expected_output": "編集用素材一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-HANDOFF-S6",
+      "instruction": "引継ぎを受ける担当者が素材範囲、未決リスクと責任分担を確認する",
+      "expected_output": "再確認の担当と期限",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-INT-HANDOFF-S7",
+      "instruction": "編集責任者が再調査・再取材・原稿作成のいずれに進むか記録する",
+      "expected_output": "取材引継ぎ包",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "欠落した原記録や重大な利用許諾不明の素材は保留する",
+    "新情報が出た場合はStage 2の調査に差し戻す",
+    "取材完了によって記事公開が自動的に認められるわけではない"
+  ]
+}

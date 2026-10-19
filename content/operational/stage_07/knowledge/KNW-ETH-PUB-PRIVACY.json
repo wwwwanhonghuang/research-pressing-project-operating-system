@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-PUB-PRIVACY",
+  "version": "0.1.0",
+  "title": {
+    "ja": "配信と問い合わせにおける個人情報の保護"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "公開・配信業務の設計・審査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PPC",
+      "locator": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "個人情報保護委員会の通則ガイドライン。具体的な適用関係は確認を要する。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "07"
+    ],
+    "audiences": [
+      "編集担当者",
+      "配信担当者",
+      "レビュアー",
+      "公開責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-PUB-PRIVACY-H01",
+      "kind": "heading",
+      "text": "適用範囲と目的",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-PUB-PRIVACY-P01",
+      "kind": "paragraph",
+      "text": "アクセス解析、問い合わせ、視聴者の反応、登壇者情報に関する取得目的と必要性を整理する。"
+    },
+    {
+      "id": "KNW-ETH-PUB-PRIVACY-H02",
+      "kind": "heading",
+      "text": "実施上の確認事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-PUB-PRIVACY-P02",
+      "kind": "paragraph",
+      "text": "外部プラットフォームや分析サービスへ渡す情報、保持期間とアクセス権を確認する。"
+    },
+    {
+      "id": "KNW-ETH-PUB-PRIVACY-H03",
+      "kind": "heading",
+      "text": "境界と判断事項",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-PUB-PRIVACY-P03",
+      "kind": "paragraph",
+      "text": "個人に不利益をもたらしうる情報の誤掲載を発見した場合は適切な報告先へ連絡する。"
+    }
+  ]
+}

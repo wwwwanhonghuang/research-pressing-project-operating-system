@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-ARC-RETRO",
+  "version": "0.1.0",
+  "title": {
+    "ja": "振り返り・改善の制度化と再接続の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "業務改善調整担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "業務改善調整担当者"
+  ],
+  "inputs": [
+    "評価報告",
+    "訂正履歴",
+    "関係者の意見",
+    "保存点検結果"
+  ],
+  "outputs": [
+    "改善提案・担当・再評価計画"
+  ],
+  "steps": [
+    {
+      "id": "PRC-ARC-RETRO-S1",
+      "instruction": "当初の目標と成果を同じ評価単位で対応させる",
+      "expected_output": "目標・結果対応表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-RETRO-S2",
+      "instruction": "問題の事実と推測した原因、構造的な制約を区別する",
+      "expected_output": "原因仮説と不確実性",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-RETRO-S3",
+      "instruction": "基準・フォーム・媒体運用・情報アクセスの改善候補を整理する",
+      "expected_output": "改善対象リスト",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-RETRO-S4",
+      "instruction": "担当者、期限、費用負担、再評価のための指標を定める",
+      "expected_output": "改善実行計画",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-ARC-RETRO-S5",
+      "instruction": "次の企画段階に再利用できる知識とケース依存の判断を区別して残す",
+      "expected_output": "Stage 1への再接続票",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "改善を指示できる権限を確認し、実施条件を明示する",
+    "当事者の意見を集約時の少数意見の消去につなげない"
+  ]
+}

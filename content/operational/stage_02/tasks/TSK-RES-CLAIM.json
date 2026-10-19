@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-RES-CLAIM",
+  "version": "0.1.0",
+  "title": {
+    "ja": "科学的主張・根拠対応表の構成と評価"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "調査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "02"
+  ],
+  "inputs": [
+    "出典台帳、方法要約票、数字確認記録、対立資料"
+  ],
+  "outputs": [
+    "主張・根拠対応表、留保した主張と修正案"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "主張が原資料に結びついている",
+    "根拠の支持・限定の別を記録した",
+    "暫定解釈と直接確認済み事項を区別した"
+  ],
+  "review_roles": [
+    "調査責任者又は編集責任者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-RES-CLAIM",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-017",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-041",
+      "version": "0.1.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-002",
+      "version": "0.2.0"
+    },
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-007",
+      "version": "0.1.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-RES-TRACE",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-RES-EVIDENCE",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-RESBIAS",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-INTEGRITY",
+      "version": "0.1.0"
+    }
+  ]
+}

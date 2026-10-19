@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-REV-AUTH",
+  "version": "0.1.0",
+  "title": {
+    "ja": "責任ある公開可否の判断と版の承認の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "権限ある公開判断者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。法令、契約、内部権限規程等の適用と現行版は個別に検討する。実在の承認を意味しない。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "権限ある公開判断者"
+  ],
+  "inputs": [
+    "審査記録一式・未解決一覧・承認対象の版"
+  ],
+  "outputs": [
+    "承認・保留・差戻し・不承認の決裁記録"
+  ],
+  "steps": [
+    {
+      "id": "PRC-REV-AUTH-S1",
+      "instruction": "判断者の権限と対象媒体・案件における委任範囲を確認する",
+      "expected_output": "権限根拠記録",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-REV-AUTH-S2",
+      "instruction": "科学・編集・権利・個人情報・日時の個別審査状態を確認する",
+      "expected_output": "審査結果一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-REV-AUTH-S3",
+      "instruction": "重大な未解決問題と不適合を分類し対応可能性を判断する",
+      "expected_output": "未解決問題評価",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-REV-AUTH-S4",
+      "instruction": "対象の版・添付素材・媒体範囲と採否理由を明示して決裁する",
+      "expected_output": "決裁記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-REV-AUTH-S5",
+      "instruction": "条件・失効・重要変更時の再決裁・中止条件を定める",
+      "expected_output": "承認条件表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-REV-AUTH-S6",
+      "instruction": "判断の結果を編集・配信担当者へ記録付きで通知する",
+      "expected_output": "承認通知・引継ぎ",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "審査票の全項目「適合」は自動的な公開承認を意味しない",
+    "権限が未確認・重大な権利疑義が残る場合は公開に進めない",
+    "条件付きの決裁状態を配信許可へ自動変換しない"
+  ]
+}

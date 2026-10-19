@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-ACCESS",
+  "version": "0.1.0",
+  "title": {
+    "ja": "情報アクセスと理解の倫理"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "汎用的な編集制作の独立設計案。媒体の役割、権利、組織規程、適用される法令は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-W3C-WCAG22",
+      "locator": "https://www.w3.org/TR/wcag/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "WCAG 2.2。非テキスト情報の代替、字幕・メディア、言語、構造等のアクセシビリティ参照基準。"
+    },
+    {
+      "source_id": "SRC-W3C-IMAGE-ALT",
+      "locator": "https://www.w3.org/WAI/tutorials/images/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "W3Cの画像代替テキストの説明。情報を運ぶ図と装飾画像、複雑な図の違いを説明。"
+    },
+    {
+      "source_id": "SRC-BUNKA-PUBLIC-DOC",
+      "locator": "https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/93651301.html",
+      "accessed_on": "2026-10-19",
+      "verification_note": "文化庁による公用文作成の考え方（2022年）。法令本文には直接適用されない。読者や用途に応じた日本語の参考。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "04"
+    ],
+    "audiences": [
+      "編集担当者",
+      "科学ライター",
+      "制作担当者",
+      "レビュー担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-ACCESS-H01",
+      "kind": "heading",
+      "text": "多様な利用者",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-ACCESS-P01",
+      "kind": "paragraph",
+      "text": "専門知識、障害、言語、端末や帯域、時間的制約などによって理解に必要な経路が異なる。多様な媒体で重要情報への選択可能性を確保する。"
+    },
+    {
+      "id": "KNW-ETH-ACCESS-H02",
+      "kind": "heading",
+      "text": "アクセシビリティ",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-ACCESS-P02",
+      "kind": "paragraph",
+      "text": "代替テキスト、字幕、見出し構造、用語説明の質を検討し、図版の重要情報が色や音声だけに依存しないようにする。"
+    },
+    {
+      "id": "KNW-ETH-ACCESS-H03",
+      "kind": "heading",
+      "text": "合理的な運用",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-ACCESS-P03",
+      "kind": "paragraph",
+      "text": "媒体別の内容品質と負荷を検証し、全媒体が完全に同一となることを目的とせず、重要な意味と条件が保持されることを優先する。"
+    }
+  ]
+}

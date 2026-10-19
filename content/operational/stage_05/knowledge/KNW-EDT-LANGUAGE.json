@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-EDT-LANGUAGE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "日本語表記・表現・固有名詞の品質基準"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集品質担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PRESS-CODE",
+      "locator": "https://www.pressnet.or.jp/outline/ethics/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "日本新聞協会・新聞倫理綱領。正確、公正、独立、人権尊重、訂正に関する報道倫理。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "05"
+    ],
+    "audiences": [
+      "編集者",
+      "校正者",
+      "校閲者",
+      "制作担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-EDT-LANGUAGE-H01",
+      "kind": "heading",
+      "text": "読みやすさと意味",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-LANGUAGE-P01",
+      "kind": "paragraph",
+      "text": "一文の複数主張、係り受けの曖昧さ、省略された主語を見直す。専門語を置き換える場合は説明対象を変えていないか原資料と照合する。"
+    },
+    {
+      "id": "KNW-EDT-LANGUAGE-H02",
+      "kind": "heading",
+      "text": "用語と記号",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-LANGUAGE-P02",
+      "kind": "paragraph",
+      "text": "組織名、人物の肩書、単位、数字、年月日、学名、記号と引用符の表記規則を媒体の編集方針と照合する。正規の名称と慣用の省略形の両方を管理する。"
+    },
+    {
+      "id": "KNW-EDT-LANGUAGE-H03",
+      "kind": "heading",
+      "text": "校正の境界",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-LANGUAGE-P03",
+      "kind": "paragraph",
+      "text": "誤植・表記揺れの修正は校正に属する。一方、数値・肩書・引用内容・解釈の当否には別途校閲による原資料照合を行う。表面の修正で根拠未確認を隠さない。"
+    },
+    {
+      "id": "KNW-EDT-LANGUAGE-H04",
+      "kind": "heading",
+      "text": "日本語の文体",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-LANGUAGE-P04",
+      "kind": "paragraph",
+      "text": "読み手に適した文体を選び、一記事内で統一する。引用に含まれる方言・話者の表現は意味と権利を尊重し、変更する場合はその性質を記録する。"
+    }
+  ]
+}

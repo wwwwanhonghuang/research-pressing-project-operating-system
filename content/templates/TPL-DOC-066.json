@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-066",
+  "kind": "document",
+  "slug": "fact_check_report",
+  "title_ja": "校閲・事実確認記録票",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "05"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-066-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-066-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "当該項目について原稿版、原資料位置、担当、判断の根拠を必要に応じて記録する。 「該当なし」は理由を併記する。"
+        },
+        {
+          "id": "TPL-DOC-066-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "当該項目について原稿版、原資料位置、担当、判断の根拠を必要に応じて記録する。"
+        },
+        {
+          "id": "TPL-DOC-066-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "当該項目について原稿版、原資料位置、担当、判断の根拠を必要に応じて記録する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-066-S2",
+      "heading_ja": "照合対象",
+      "fields": [
+        {
+          "id": "TPL-DOC-066-F004",
+          "label_ja": "検証する記述と所在",
+          "type": "table",
+          "required": false,
+          "description_ja": "当該項目について原稿版、原資料位置、担当、判断の根拠を必要に応じて記録する。 「該当なし」は理由を併記する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-066-F005",
+          "label_ja": "参照した原資料",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "当該項目について原稿版、原資料位置、担当、判断の根拠を必要に応じて記録する。 「該当なし」は理由を併記する。"
+        },
+        {
+          "id": "TPL-DOC-066-F006",
+          "label_ja": "数値・因果・引用の確認",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "当該項目について原稿版、原資料位置、担当、判断の根拠を必要に応じて記録する。 「該当なし」は理由を併記する。"
+        },
+        {
+          "id": "TPL-DOC-066-F007",
+          "label_ja": "発言者と所属の確認",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "当該項目について原稿版、原資料位置、担当、判断の根拠を必要に応じて記録する。 「該当なし」は理由を併記する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-066-S3",
+      "heading_ja": "判断と差戻し",
+      "fields": [
+        {
+          "id": "TPL-DOC-066-F008",
+          "label_ja": "照合結果",
+          "type": "table",
+          "required": false,
+          "description_ja": "当該項目について原稿版、原資料位置、担当、判断の根拠を必要に応じて記録する。 「該当なし」は理由を併記する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-066-F009",
+          "label_ja": "未解決の不一致",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "当該項目について原稿版、原資料位置、担当、判断の根拠を必要に応じて記録する。 「該当なし」は理由を併記する。"
+        },
+        {
+          "id": "TPL-DOC-066-F010",
+          "label_ja": "修正した表現",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "当該項目について原稿版、原資料位置、担当、判断の根拠を必要に応じて記録する。 「該当なし」は理由を併記する。"
+        },
+        {
+          "id": "TPL-DOC-066-F011",
+          "label_ja": "最終確認者",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "当該項目について原稿版、原資料位置、担当、判断の根拠を必要に応じて記録する。 「該当なし」は理由を併記する。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-066-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-066-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "当該項目について原稿版、原資料位置、担当、判断の根拠を必要に応じて記録する。 「該当なし」は理由を併記する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-066-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "当該項目について原稿版、原資料位置、担当、判断の根拠を必要に応じて記録する。 「該当なし」は理由を併記する。"
+        },
+        {
+          "id": "TPL-DOC-066-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "当該項目について原稿版、原資料位置、担当、判断の根拠を必要に応じて記録する。 「該当なし」は理由を併記する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [],
+    "knowledge_ids": [],
+    "checklist_template_ids": []
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "記入欄の構造案。法的・組織的承認の代替として利用しない。",
+  "workflow_id": "editorial-eight-stage"
+}

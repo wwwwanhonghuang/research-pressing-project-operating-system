@@ -1,0 +1,16 @@
+{
+  "schema_version": "0.1.0",
+  "id": "generic-project-lifecycle",
+  "version": "0.1.0",
+  "status": "independent_prototype",
+  "description": "Example six-stage non-editorial project workflow, not a mandatory organizational process.",
+  "stages": [
+    {"id":"01","name_ja":"目的と範囲","name_en":"Purpose and scope","objective":"Define the purpose, limits and participants."},
+    {"id":"02","name_ja":"調査と準備","name_en":"Research and preparation","objective":"Gather requirements, resources and evidence."},
+    {"id":"03","name_ja":"実施と記録","name_en":"Execution and records","objective":"Perform tasks and retain traceable records."},
+    {"id":"04","name_ja":"点検と調整","name_en":"Review and adjustment","objective":"Verify outputs, address exceptions and revise."},
+    {"id":"05","name_ja":"提供と引継ぎ","name_en":"Delivery and handover","objective":"Deliver reviewed outputs and maintain handover records."},
+    {"id":"06","name_ja":"評価と改善","name_en":"Evaluation and improvement","objective":"Assess results and capture lessons."}
+  ],
+  "rules": {"sequential_completion_required":false,"rework_allowed":true,"publication_requires_explicit_human_authorization":true,"ai_cannot_authorize_publication":true}
+}

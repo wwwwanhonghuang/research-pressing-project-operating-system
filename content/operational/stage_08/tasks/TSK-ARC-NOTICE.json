@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-ARC-NOTICE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "訂正通知・版履歴と公開説明の作成"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "訂正通知編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。適用法令、契約、保存期間、編集権限及び組織の責任分担を案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "08"
+  ],
+  "inputs": [
+    "公開後対応決定",
+    "修正前後の原稿",
+    "媒体別記録"
+  ],
+  "outputs": [
+    "訂正通知・改訂履歴"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "訂正通知・改訂履歴に対象URL、版、判断主体、日時、根拠及び未解決事項を結び付けた",
+    "元の公開記録と変更後の記録を対応づけ、例外と人的な判断・保留を識別した",
+    "次の担当への通知又は引継ぎと、必要な再審査条件を残した"
+  ],
+  "review_roles": [
+    "訂正・評価責任者",
+    "必要な専門家と権限者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-ARC-NOTICE",
+    "version": "0.1.0"
+  },
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ARC-NOTICES",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ARC-VERSION",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-ARC-INTEGRITY",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-ARC-PRIVACY",
+      "version": "0.1.0"
+    }
+  ],
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-090",
+      "version": "0.2.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-042",
+      "version": "0.2.0"
+    }
+  ]
+}

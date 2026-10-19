@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1.0",
+  "id": "STD-SOURCE-TRACEABILITY",
+  "kind": "standard",
+  "version": "0.1.0",
+  "title_ja": "科学的主張の根拠確認（試案）",
+  "authority": "independent_proposal",
+  "status": "draft",
+  "scope": [
+    "stage:02",
+    "stage:05",
+    "stage:06"
+  ],
+  "sources": [],
+  "blocks": [
+    {
+      "id": "STD-SOURCE-TRACEABILITY-R1",
+      "type": "rule",
+      "label": "第1項（主張の追跡可能性）",
+      "text": "科学的事実に関する主要な記述について、原資料、資料の版、該当箇所及び確認日を記録することを推奨する。"
+    },
+    {
+      "id": "STD-SOURCE-TRACEABILITY-R2",
+      "type": "rule",
+      "label": "第2項（確実性の区分）",
+      "text": "観測された結果、分析による推論、研究上の仮説及び将来の目標を区別して記述する。"
+    },
+    {
+      "id": "STD-SOURCE-TRACEABILITY-N1",
+      "type": "commentary",
+      "text": "本項目は独立設計による業務上の推奨案であり、特定組織の正式な基準又は法的義務を示すものではない。"
+    }
+  ]
+}

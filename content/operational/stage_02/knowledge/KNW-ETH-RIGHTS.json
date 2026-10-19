@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-ETH-RIGHTS",
+  "version": "0.1.0",
+  "title": {
+    "ja": "資料の権利・機密・利用範囲"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "科学編集・調査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-BUNKA-COPY",
+      "locator": "https://www.bunka.go.jp/seisaku/bunka_gyosei/kibankyoka/faq/index.html",
+      "accessed_on": "2026-10-19",
+      "verification_note": "引用、出所明示および利用許諾の検討における公的解説。具体的な再利用可否は個別検討が必要。"
+    },
+    {
+      "source_id": "SRC-JPA-2026",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "プレスリリースにおける文献明示、誇張防止、方法・統計・利益相反等の専門的ガイダンス。記事全般の法的義務を設定するものではない。"
+    }
+  ],
+  "links": [],
+  "category": "ethics",
+  "scope": {
+    "stages": [
+      "02"
+    ],
+    "audiences": [
+      "科学コミュニケーション担当者",
+      "調査担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-ETH-RIGHTS-B01",
+      "kind": "heading",
+      "text": "権利とアクセス",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-RIGHTS-B02",
+      "kind": "paragraph",
+      "text": "閲覧可能な資料についても、取得、二次利用、長期保存、共有、公開、AI投入に必要な権限を別々に確認する。"
+    },
+    {
+      "id": "KNW-ETH-RIGHTS-B03",
+      "kind": "heading",
+      "text": "個人情報",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-RIGHTS-B04",
+      "kind": "paragraph",
+      "text": "連絡先、被験者情報、未公開のインタビュー発言等は必要性と権限を確認し、機微な内容を一般公開用の資料集や外部サービスへ移さない。"
+    },
+    {
+      "id": "KNW-ETH-RIGHTS-B05",
+      "kind": "heading",
+      "text": "未公開研究",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-RIGHTS-B06",
+      "kind": "paragraph",
+      "text": "査読中原稿、未発表の図表、研究室からの共有資料には公表可否・守秘条件・解禁条件が存在し得る。未確認の場合は公開や外部共有を保留する。"
+    },
+    {
+      "id": "KNW-ETH-RIGHTS-B07",
+      "kind": "heading",
+      "text": "AI補助",
+      "level": 2
+    },
+    {
+      "id": "KNW-ETH-RIGHTS-B08",
+      "kind": "paragraph",
+      "text": "AI に入力する際は公表範囲、利用規約、組織内規程、著作権、個人情報の条件を確認する。AI の要約は原典の代替にならない。"
+    },
+    {
+      "id": "KNW-ETH-RIGHTS-B09",
+      "kind": "paragraph",
+      "text": "参考：文化庁 著作権に関する FAQ（https://www.bunka.go.jp/seisaku/bunka_gyosei/kibankyoka/faq/index.html）、日本心理学会 科学コミュニケーション・ガイドライン（https://psych.or.jp/jpamember/press_release_guidelines/）。これらは対応する論点についての参考資料であり、本OSの手順の組織的承認や法的適合性を保証するものではない。"
+    }
+  ]
+}

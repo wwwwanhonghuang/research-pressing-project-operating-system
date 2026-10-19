@@ -1,0 +1,2744 @@
+{
+  "catalog_id": "operations-os-template-inventory",
+  "version": "0.3.0",
+  "created": "2026-10-19",
+  "status": "structural_draft_all_templates",
+  "caveat": "Independent general-purpose template designs. No legal, professional or organizational approval is implied. Individual substantive content and task SOPs remain to be authored.",
+  "source_of_truth": "content/templates/*.json contains structured definitions; templates/tex/operationsform.sty controls the monochrome Mincho print style; rendered TeX and PDF are outputs.",
+  "entries": [
+    {
+      "template_id": "TPL-DOC-001",
+      "title_ja": "プロジェクト基本計画書",
+      "slug": "project_charter",
+      "kind": "document",
+      "path": "templates/documents/shared/project_charter.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Project identity, purpose and overall scope",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-001.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-002",
+      "title_ja": "対象範囲・除外範囲整理票",
+      "slug": "project_scope",
+      "kind": "document",
+      "path": "templates/documents/shared/project_scope.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "06"
+      ],
+      "priority": "P0",
+      "intended_use": "Explicit inclusion and exclusion boundaries",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-002.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-003",
+      "title_ja": "研究プログラム基礎資料",
+      "slug": "program_research_dossier",
+      "kind": "document",
+      "path": "templates/documents/shared/program_research_dossier.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "02",
+        "04",
+        "06"
+      ],
+      "priority": "P0",
+      "intended_use": "Verified program goals, projects and context",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-003.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-004",
+      "title_ja": "関係者・連携先一覧",
+      "slug": "stakeholder_map",
+      "kind": "document",
+      "path": "templates/documents/shared/stakeholder_map.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "03",
+        "06",
+        "07"
+      ],
+      "priority": "P0",
+      "intended_use": "Stakeholders, roles and contact pathways",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-004.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-005",
+      "title_ja": "役割・責任分担表",
+      "slug": "roles_responsibilities_matrix",
+      "kind": "document",
+      "path": "templates/documents/shared/roles_responsibilities_matrix.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Working responsibilities and escalation boundaries",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-005.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-006",
+      "title_ja": "編集基本方針書",
+      "slug": "editorial_policy",
+      "kind": "document",
+      "path": "templates/documents/shared/editorial_policy.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "04",
+        "05",
+        "06"
+      ],
+      "priority": "P0",
+      "intended_use": "Editorial principles and accuracy commitments",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-006.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-007",
+      "title_ja": "対象読者・利用者分析票",
+      "slug": "audience_analysis",
+      "kind": "document",
+      "path": "templates/documents/shared/audience_analysis.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "04",
+        "07",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Audience needs, literacy and accessibility",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-007.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-008",
+      "title_ja": "科学コミュニケーション計画書",
+      "slug": "content_strategy",
+      "kind": "document",
+      "path": "templates/documents/shared/content_strategy.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P1",
+      "intended_use": "Channel, audience, purpose and success strategy",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-008.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-009",
+      "title_ja": "マルチモーダル展開計画書",
+      "slug": "multimodal_content_plan",
+      "kind": "document",
+      "path": "templates/documents/shared/multimodal_content_plan.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P1",
+      "intended_use": "Optional text, audio, video and interactive variants",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-009.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-010",
+      "title_ja": "全体工程・日程管理表",
+      "slug": "master_schedule",
+      "kind": "document",
+      "path": "templates/documents/shared/master_schedule.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Milestones and dependency schedule",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-010.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-011",
+      "title_ja": "リスク・対応方針整理表",
+      "slug": "risk_register",
+      "kind": "document",
+      "path": "templates/documents/shared/risk_register.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Risk identification and proposed mitigations",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-011.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-012",
+      "title_ja": "課題・判断記録簿",
+      "slug": "issues_decisions_log",
+      "kind": "document",
+      "path": "templates/documents/shared/issues_decisions_log.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Tracked decisions, exceptions and rationales",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-012.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-013",
+      "title_ja": "会議議事録",
+      "slug": "meeting_minutes",
+      "kind": "document",
+      "path": "templates/documents/shared/meeting_minutes.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "03",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Discussion and action records",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-013.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-014",
+      "title_ja": "変更申請・影響分析票",
+      "slug": "change_request",
+      "kind": "document",
+      "path": "templates/documents/shared/change_request.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P1",
+      "intended_use": "Changes and affected content, roles and timelines",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-014.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-015",
+      "title_ja": "業務引継ぎ記録",
+      "slug": "handover_record",
+      "kind": "document",
+      "path": "templates/documents/shared/handover_record.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P1",
+      "intended_use": "Knowledge transfer and unresolved commitments",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-015.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-016",
+      "title_ja": "資料・出典台帳",
+      "slug": "source_register",
+      "kind": "document",
+      "path": "templates/documents/shared/source_register.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Source provenance, version and access conditions",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-016.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-017",
+      "title_ja": "科学的主張・根拠対応表",
+      "slug": "claim_register",
+      "kind": "document",
+      "path": "templates/documents/shared/claim_register.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Claim–source–limitation–review traceability",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-017.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-018",
+      "title_ja": "用語・固有名詞統一表",
+      "slug": "terminology_register",
+      "kind": "document",
+      "path": "templates/documents/shared/terminology_register.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07"
+      ],
+      "priority": "P0",
+      "intended_use": "Names, acronyms and terminology consistency",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-018.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-019",
+      "title_ja": "著作権・肖像・利用許諾台帳",
+      "slug": "rights_permissions_register",
+      "kind": "document",
+      "path": "templates/documents/shared/rights_permissions_register.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "03",
+        "04",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Rights status and permission provenance",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": true,
+      "definition_path": "content/templates/TPL-DOC-019.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-020",
+      "title_ja": "個人情報・機微情報取扱計画書",
+      "slug": "personal_information_plan",
+      "kind": "document",
+      "path": "templates/documents/shared/personal_information_plan.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Data boundaries, access, retention and review",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": true,
+      "definition_path": "content/templates/TPL-DOC-020.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-021",
+      "title_ja": "生成AI利用・検証記録",
+      "slug": "ai_use_record",
+      "kind": "document",
+      "path": "templates/documents/shared/ai_use_record.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "08"
+      ],
+      "priority": "P1",
+      "intended_use": "AI contribution, inputs, verification and review",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-021.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-022",
+      "title_ja": "アクセシビリティ配慮計画",
+      "slug": "accessibility_plan",
+      "kind": "document",
+      "path": "templates/documents/shared/accessibility_plan.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P1",
+      "intended_use": "Target needs, alternatives and accessibility checks",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-022.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-023",
+      "title_ja": "広報・対話評価設計書",
+      "slug": "communication_metrics_plan",
+      "kind": "document",
+      "path": "templates/documents/shared/communication_metrics_plan.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "07",
+        "08"
+      ],
+      "priority": "P1",
+      "intended_use": "Metrics and qualitative feedback evaluation design",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-023.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-024",
+      "title_ja": "例外・事故・問題報告書",
+      "slug": "incident_exception_report",
+      "kind": "document",
+      "path": "templates/documents/shared/incident_exception_report.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P1",
+      "intended_use": "Escalation and incident documentation",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-024.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-025",
+      "title_ja": "標準作業手順書（SOP）",
+      "slug": "sop_specification",
+      "kind": "document",
+      "path": "templates/documents/shared/sop_specification.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Reusable SOP source structure, to be modeled later",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-025.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-026",
+      "title_ja": "業務標準・品質基準書",
+      "slug": "standard_specification",
+      "kind": "document",
+      "path": "templates/documents/shared/standard_specification.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Reusable standard source structure, to be modeled later",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-026.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-027",
+      "title_ja": "倫理・責任ガイダンス",
+      "slug": "ethics_guidance",
+      "kind": "document",
+      "path": "templates/documents/shared/ethics_guidance.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Ethical guidance, authority and application boundaries",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-027.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-028",
+      "title_ja": "工程別業務ハンドブック",
+      "slug": "stage_handbook",
+      "kind": "document",
+      "path": "templates/documents/shared/stage_handbook.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Composed pipeline handbook and cross-references",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-028.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-029",
+      "title_ja": "業務クイックリファレンス",
+      "slug": "task_quick_reference",
+      "kind": "document",
+      "path": "templates/documents/shared/task_quick_reference.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P1",
+      "intended_use": "Short task reference derived from canonical knowledge",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-029.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-030",
+      "title_ja": "企画書",
+      "slug": "editorial_proposal",
+      "kind": "document",
+      "path": "templates/documents/stage_01/editorial_proposal.md",
+      "group": "stage_01",
+      "applicable_pipeline_stages": [
+        "01"
+      ],
+      "priority": "P0",
+      "intended_use": "Project editorial proposal",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-030.json",
+      "print_profile_path": "templates/implemented/TPL-DOC-030/print_profile.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-031",
+      "title_ja": "編集企画概要書",
+      "slug": "editorial_brief",
+      "kind": "document",
+      "path": "templates/documents/stage_01/editorial_brief.md",
+      "group": "stage_01",
+      "applicable_pipeline_stages": [
+        "01"
+      ],
+      "priority": "P0",
+      "intended_use": "Angle, audience, key messages and output",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-031.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-032",
+      "title_ja": "企画候補・選定理由票",
+      "slug": "topic_candidate_sheet",
+      "kind": "document",
+      "path": "templates/documents/stage_01/topic_candidate_sheet.md",
+      "group": "stage_01",
+      "applicable_pipeline_stages": [
+        "01"
+      ],
+      "priority": "P0",
+      "intended_use": "Topics and evidence-based selection rationale",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-032.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-033",
+      "title_ja": "記事の切り口・主張範囲整理票",
+      "slug": "story_angle_sheet",
+      "kind": "document",
+      "path": "templates/documents/stage_01/story_angle_sheet.md",
+      "group": "stage_01",
+      "applicable_pipeline_stages": [
+        "01"
+      ],
+      "priority": "P0",
+      "intended_use": "Proposed editorial framing and claim limits",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-033.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-034",
+      "title_ja": "読者・媒体対応表",
+      "slug": "audience_format_matrix",
+      "kind": "document",
+      "path": "templates/documents/stage_01/audience_format_matrix.md",
+      "group": "stage_01",
+      "applicable_pipeline_stages": [
+        "01"
+      ],
+      "priority": "P1",
+      "intended_use": "Audiences mapped to suitable optional formats",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-034.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-035",
+      "title_ja": "編集制作カレンダー",
+      "slug": "editorial_calendar",
+      "kind": "document",
+      "path": "templates/documents/stage_01/editorial_calendar.md",
+      "group": "stage_01",
+      "applicable_pipeline_stages": [
+        "01"
+      ],
+      "priority": "P0",
+      "intended_use": "Production deadlines and planned releases",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-035.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-036",
+      "title_ja": "キックオフ確認事項票",
+      "slug": "kickoff_brief",
+      "kind": "document",
+      "path": "templates/documents/stage_01/kickoff_brief.md",
+      "group": "stage_01",
+      "applicable_pipeline_stages": [
+        "01"
+      ],
+      "priority": "P1",
+      "intended_use": "Launch assumptions, responsibilities and blockers",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-036.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-037",
+      "title_ja": "事前調査計画書",
+      "slug": "background_research_plan",
+      "kind": "document",
+      "path": "templates/documents/stage_02/background_research_plan.md",
+      "group": "stage_02",
+      "applicable_pipeline_stages": [
+        "02"
+      ],
+      "priority": "P0",
+      "intended_use": "Research questions and source strategy",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-037.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-038",
+      "title_ja": "先行研究・文献調査表",
+      "slug": "literature_review_matrix",
+      "kind": "document",
+      "path": "templates/documents/stage_02/literature_review_matrix.md",
+      "group": "stage_02",
+      "applicable_pipeline_stages": [
+        "02"
+      ],
+      "priority": "P0",
+      "intended_use": "Primary research and supporting literature",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-038.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-039",
+      "title_ja": "一次資料収集一覧",
+      "slug": "primary_source_inventory",
+      "kind": "document",
+      "path": "templates/documents/stage_02/primary_source_inventory.md",
+      "group": "stage_02",
+      "applicable_pipeline_stages": [
+        "02"
+      ],
+      "priority": "P0",
+      "intended_use": "Source inventory and provenance",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-039.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-040",
+      "title_ja": "研究成果要約票",
+      "slug": "research_result_summary",
+      "kind": "document",
+      "path": "templates/documents/stage_02/research_result_summary.md",
+      "group": "stage_02",
+      "applicable_pipeline_stages": [
+        "02"
+      ],
+      "priority": "P0",
+      "intended_use": "Methods, findings, bounds and uncertainty",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-040.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-041",
+      "title_ja": "根拠の妥当性検討表",
+      "slug": "evidence_assessment_sheet",
+      "kind": "document",
+      "path": "templates/documents/stage_02/evidence_assessment_sheet.md",
+      "group": "stage_02",
+      "applicable_pipeline_stages": [
+        "02"
+      ],
+      "priority": "P0",
+      "intended_use": "Strength, limitations and unresolved evidence",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-041.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-042",
+      "title_ja": "研究プロジェクト・ファクトシート",
+      "slug": "project_fact_sheet",
+      "kind": "document",
+      "path": "templates/documents/stage_02/project_fact_sheet.md",
+      "group": "stage_02",
+      "applicable_pipeline_stages": [
+        "02"
+      ],
+      "priority": "P0",
+      "intended_use": "Key project facts for consistent reporting",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-042.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-043",
+      "title_ja": "調査上の未解決事項一覧",
+      "slug": "open_questions_register",
+      "kind": "document",
+      "path": "templates/documents/stage_02/open_questions_register.md",
+      "group": "stage_02",
+      "applicable_pipeline_stages": [
+        "02"
+      ],
+      "priority": "P1",
+      "intended_use": "Questions to clarify via interviews and verification",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-043.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-044",
+      "title_ja": "取材依頼書",
+      "slug": "interview_request",
+      "kind": "document",
+      "path": "templates/documents/stage_03/interview_request.md",
+      "group": "stage_03",
+      "applicable_pipeline_stages": [
+        "03"
+      ],
+      "priority": "P0",
+      "intended_use": "Researcher and participant interview request",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-044.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-045",
+      "title_ja": "取材計画書",
+      "slug": "interview_plan",
+      "kind": "document",
+      "path": "templates/documents/stage_03/interview_plan.md",
+      "group": "stage_03",
+      "applicable_pipeline_stages": [
+        "03"
+      ],
+      "priority": "P0",
+      "intended_use": "Purpose, topics, logistics and recording plans",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-045.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-046",
+      "title_ja": "取材質問設計表",
+      "slug": "interview_question_design",
+      "kind": "document",
+      "path": "templates/documents/stage_03/interview_question_design.md",
+      "group": "stage_03",
+      "applicable_pipeline_stages": [
+        "03"
+      ],
+      "priority": "P0",
+      "intended_use": "Questions linked to claims, gaps and intended audience",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-046.json",
+      "print_profile_path": "templates/implemented/TPL-DOC-046/print_profile.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-047",
+      "title_ja": "取材当日進行表",
+      "slug": "interview_agenda",
+      "kind": "document",
+      "path": "templates/documents/stage_03/interview_agenda.md",
+      "group": "stage_03",
+      "applicable_pipeline_stages": [
+        "03"
+      ],
+      "priority": "P1",
+      "intended_use": "Interview timetable and transitions",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-047.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-048",
+      "title_ja": "取材同意・権利確認票",
+      "slug": "consent_rights_confirmation",
+      "kind": "document",
+      "path": "templates/documents/stage_03/consent_rights_confirmation.md",
+      "group": "stage_03",
+      "applicable_pipeline_stages": [
+        "03"
+      ],
+      "priority": "P0",
+      "intended_use": "Consent and rights matters requiring institutional review",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": true,
+      "definition_path": "content/templates/TPL-DOC-048.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-049",
+      "title_ja": "取材メモ・聴取記録",
+      "slug": "interview_notes",
+      "kind": "document",
+      "path": "templates/documents/stage_03/interview_notes.md",
+      "group": "stage_03",
+      "applicable_pipeline_stages": [
+        "03"
+      ],
+      "priority": "P0",
+      "intended_use": "Source-bound interview notes and context",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-049.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-050",
+      "title_ja": "発言・引用候補整理表",
+      "slug": "quotation_register",
+      "kind": "document",
+      "path": "templates/documents/stage_03/quotation_register.md",
+      "group": "stage_03",
+      "applicable_pipeline_stages": [
+        "03"
+      ],
+      "priority": "P0",
+      "intended_use": "Quote location, context and confirmation state",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-050.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-051",
+      "title_ja": "追加確認・照会依頼書",
+      "slug": "followup_request",
+      "kind": "document",
+      "path": "templates/documents/stage_03/followup_request.md",
+      "group": "stage_03",
+      "applicable_pipeline_stages": [
+        "03"
+      ],
+      "priority": "P0",
+      "intended_use": "Unresolved claim and quotation follow-up",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-051.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-052",
+      "title_ja": "写真・録音・映像収録計画書",
+      "slug": "photo_recording_plan",
+      "kind": "document",
+      "path": "templates/documents/stage_03/photo_recording_plan.md",
+      "group": "stage_03",
+      "applicable_pipeline_stages": [
+        "03"
+      ],
+      "priority": "P1",
+      "intended_use": "Recording requirements, permissions and constraints",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-052.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-053",
+      "title_ja": "記事構成案",
+      "slug": "article_outline",
+      "kind": "document",
+      "path": "templates/documents/stage_04/article_outline.md",
+      "group": "stage_04",
+      "applicable_pipeline_stages": [
+        "04"
+      ],
+      "priority": "P0",
+      "intended_use": "Sections, logic and narrative arrangement",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-053.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-054",
+      "title_ja": "研究者紹介・解説記事原稿",
+      "slug": "feature_article_draft",
+      "kind": "document",
+      "path": "templates/documents/stage_04/feature_article_draft.md",
+      "group": "stage_04",
+      "applicable_pipeline_stages": [
+        "04"
+      ],
+      "priority": "P0",
+      "intended_use": "Feature article source",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-054.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-055",
+      "title_ja": "研究成果ニュース原稿",
+      "slug": "news_article_draft",
+      "kind": "document",
+      "path": "templates/documents/stage_04/news_article_draft.md",
+      "group": "stage_04",
+      "applicable_pipeline_stages": [
+        "04"
+      ],
+      "priority": "P0",
+      "intended_use": "Short factual news article source",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-055.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-056",
+      "title_ja": "研究成果プレスリリース原稿",
+      "slug": "press_release_draft",
+      "kind": "document",
+      "path": "templates/documents/stage_04/press_release_draft.md",
+      "group": "stage_04",
+      "applicable_pipeline_stages": [
+        "04"
+      ],
+      "priority": "P1",
+      "intended_use": "Institutional release draft subject to authorization",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-056.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-057",
+      "title_ja": "研究説明FAQ原稿",
+      "slug": "explanatory_faq",
+      "kind": "document",
+      "path": "templates/documents/stage_04/explanatory_faq.md",
+      "group": "stage_04",
+      "applicable_pipeline_stages": [
+        "04"
+      ],
+      "priority": "P1",
+      "intended_use": "Reader-centered scientific questions and answers",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-057.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-058",
+      "title_ja": "図表・インフォグラフィック仕様書",
+      "slug": "figure_specification",
+      "kind": "document",
+      "path": "templates/documents/stage_04/figure_specification.md",
+      "group": "stage_04",
+      "applicable_pipeline_stages": [
+        "04"
+      ],
+      "priority": "P0",
+      "intended_use": "Data, captions, provenance and visualization requirements",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-058.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-059",
+      "title_ja": "動画・ビジュアル構成台本",
+      "slug": "visual_storyboard",
+      "kind": "document",
+      "path": "templates/documents/stage_04/visual_storyboard.md",
+      "group": "stage_04",
+      "applicable_pipeline_stages": [
+        "04"
+      ],
+      "priority": "P1",
+      "intended_use": "Scene sequence and claims in visuals",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-059.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-060",
+      "title_ja": "音声解説・ナレーション台本",
+      "slug": "audio_script",
+      "kind": "document",
+      "path": "templates/documents/stage_04/audio_script.md",
+      "group": "stage_04",
+      "applicable_pipeline_stages": [
+        "04"
+      ],
+      "priority": "P1",
+      "intended_use": "Optional audio narration script",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-060.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-061",
+      "title_ja": "SNS・短文コンテンツ原稿",
+      "slug": "social_short_copy",
+      "kind": "document",
+      "path": "templates/documents/stage_04/social_short_copy.md",
+      "group": "stage_04",
+      "applicable_pipeline_stages": [
+        "04"
+      ],
+      "priority": "P1",
+      "intended_use": "Short-form variants with preserved qualifications",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-061.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-062",
+      "title_ja": "代替テキスト・字幕原稿",
+      "slug": "alternative_text_script",
+      "kind": "document",
+      "path": "templates/documents/stage_04/alternative_text_script.md",
+      "group": "stage_04",
+      "applicable_pipeline_stages": [
+        "04"
+      ],
+      "priority": "P1",
+      "intended_use": "Accessibility text, captions and transcripts",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-062.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-063",
+      "title_ja": "構成編集レビュー票",
+      "slug": "structural_edit_report",
+      "kind": "document",
+      "path": "templates/documents/stage_05/structural_edit_report.md",
+      "group": "stage_05",
+      "applicable_pipeline_stages": [
+        "05"
+      ],
+      "priority": "P0",
+      "intended_use": "Review of ordering, framing, depth and logic",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-063.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-064",
+      "title_ja": "推敲・編集修正記録",
+      "slug": "copyedit_change_log",
+      "kind": "document",
+      "path": "templates/documents/stage_05/copyedit_change_log.md",
+      "group": "stage_05",
+      "applicable_pipeline_stages": [
+        "05"
+      ],
+      "priority": "P0",
+      "intended_use": "Edited passages and explanatory reasons",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-064.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-065",
+      "title_ja": "校正記録票",
+      "slug": "proofreading_report",
+      "kind": "document",
+      "path": "templates/documents/stage_05/proofreading_report.md",
+      "group": "stage_05",
+      "applicable_pipeline_stages": [
+        "05"
+      ],
+      "priority": "P0",
+      "intended_use": "Orthography, layout and typography corrections",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-065.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-066",
+      "title_ja": "校閲・事実確認記録票",
+      "slug": "fact_check_report",
+      "kind": "document",
+      "path": "templates/documents/stage_05/fact_check_report.md",
+      "group": "stage_05",
+      "applicable_pipeline_stages": [
+        "05"
+      ],
+      "priority": "P0",
+      "intended_use": "Names, numbers, claims, quotations and source checks",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-066.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-067",
+      "title_ja": "編集上の未解決事項一覧",
+      "slug": "editorial_issues_register",
+      "kind": "document",
+      "path": "templates/documents/stage_05/editorial_issues_register.md",
+      "group": "stage_05",
+      "applicable_pipeline_stages": [
+        "05"
+      ],
+      "priority": "P0",
+      "intended_use": "Outstanding editorial disagreements and gaps",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-067.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-068",
+      "title_ja": "媒体間整合性確認記録",
+      "slug": "crossmodal_consistency_report",
+      "kind": "document",
+      "path": "templates/documents/stage_05/crossmodal_consistency_report.md",
+      "group": "stage_05",
+      "applicable_pipeline_stages": [
+        "05"
+      ],
+      "priority": "P1",
+      "intended_use": "Differences and consistency across versions",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-068.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-069",
+      "title_ja": "専門家確認依頼書",
+      "slug": "scientific_review_request",
+      "kind": "document",
+      "path": "templates/documents/stage_06/scientific_review_request.md",
+      "group": "stage_06",
+      "applicable_pipeline_stages": [
+        "06"
+      ],
+      "priority": "P0",
+      "intended_use": "Expert review scope and specific questions",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-069.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-070",
+      "title_ja": "専門家・研究者確認票",
+      "slug": "scientific_review_report",
+      "kind": "document",
+      "path": "templates/documents/stage_06/scientific_review_report.md",
+      "group": "stage_06",
+      "applicable_pipeline_stages": [
+        "06"
+      ],
+      "priority": "P0",
+      "intended_use": "Expert feedback and evidentiary issues",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-070.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-071",
+      "title_ja": "レビュー対応・修正対応表",
+      "slug": "review_response_matrix",
+      "kind": "document",
+      "path": "templates/documents/stage_06/review_response_matrix.md",
+      "group": "stage_06",
+      "applicable_pipeline_stages": [
+        "06"
+      ],
+      "priority": "P0",
+      "intended_use": "Comment, response, disposition and re-review",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-071.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-072",
+      "title_ja": "公開承認申請書",
+      "slug": "release_approval_request",
+      "kind": "document",
+      "path": "templates/documents/stage_06/release_approval_request.md",
+      "group": "stage_06",
+      "applicable_pipeline_stages": [
+        "06"
+      ],
+      "priority": "P0",
+      "intended_use": "Request for authorized human release decision",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": true,
+      "definition_path": "content/templates/TPL-DOC-072.json",
+      "print_profile_path": "templates/implemented/TPL-DOC-072/print_profile.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-073",
+      "title_ja": "公開可否・承認記録",
+      "slug": "release_decision_record",
+      "kind": "document",
+      "path": "templates/documents/stage_06/release_decision_record.md",
+      "group": "stage_06",
+      "applicable_pipeline_stages": [
+        "06"
+      ],
+      "priority": "P0",
+      "intended_use": "Explicit decision, approver and effective scope",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": true,
+      "definition_path": "content/templates/TPL-DOC-073.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-074",
+      "title_ja": "権利・許諾確認記録",
+      "slug": "rights_clearance_record",
+      "kind": "document",
+      "path": "templates/documents/stage_06/rights_clearance_record.md",
+      "group": "stage_06",
+      "applicable_pipeline_stages": [
+        "06"
+      ],
+      "priority": "P0",
+      "intended_use": "Work-specific rights and permission verification",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": true,
+      "definition_path": "content/templates/TPL-DOC-074.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-075",
+      "title_ja": "解禁日時・報道調整確認書",
+      "slug": "embargo_coordination",
+      "kind": "document",
+      "path": "templates/documents/stage_06/embargo_coordination.md",
+      "group": "stage_06",
+      "applicable_pipeline_stages": [
+        "06"
+      ],
+      "priority": "P1",
+      "intended_use": "Publication timing and embargo coordination",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": true,
+      "definition_path": "content/templates/TPL-DOC-075.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-076",
+      "title_ja": "個人情報・法的論点確認票",
+      "slug": "privacy_legal_review_note",
+      "kind": "document",
+      "path": "templates/documents/stage_06/privacy_legal_review_note.md",
+      "group": "stage_06",
+      "applicable_pipeline_stages": [
+        "06"
+      ],
+      "priority": "P0",
+      "intended_use": "Escalation of privacy and legal questions to qualified owners",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": true,
+      "definition_path": "content/templates/TPL-DOC-076.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-077",
+      "title_ja": "公開・配信実施計画書",
+      "slug": "publication_plan",
+      "kind": "document",
+      "path": "templates/documents/stage_07/publication_plan.md",
+      "group": "stage_07",
+      "applicable_pipeline_stages": [
+        "07"
+      ],
+      "priority": "P0",
+      "intended_use": "Release channel, timing and responsible roles",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-077.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-078",
+      "title_ja": "ウェブ掲載依頼票",
+      "slug": "web_publication_request",
+      "kind": "document",
+      "path": "templates/documents/stage_07/web_publication_request.md",
+      "group": "stage_07",
+      "applicable_pipeline_stages": [
+        "07"
+      ],
+      "priority": "P0",
+      "intended_use": "Web assets, metadata and release request",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-078.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-079",
+      "title_ja": "配信チャネル別計画表",
+      "slug": "channel_distribution_plan",
+      "kind": "document",
+      "path": "templates/documents/stage_07/channel_distribution_plan.md",
+      "group": "stage_07",
+      "applicable_pipeline_stages": [
+        "07"
+      ],
+      "priority": "P1",
+      "intended_use": "Channels, formats and timing",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-079.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-080",
+      "title_ja": "SNS投稿・展開計画書",
+      "slug": "social_media_post_plan",
+      "kind": "document",
+      "path": "templates/documents/stage_07/social_media_post_plan.md",
+      "group": "stage_07",
+      "applicable_pipeline_stages": [
+        "07"
+      ],
+      "priority": "P1",
+      "intended_use": "Post sequence and moderation considerations",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-080.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-081",
+      "title_ja": "報道機関向けQ&A",
+      "slug": "media_qa",
+      "kind": "document",
+      "path": "templates/documents/stage_07/media_qa.md",
+      "group": "stage_07",
+      "applicable_pipeline_stages": [
+        "07"
+      ],
+      "priority": "P1",
+      "intended_use": "Accurate responses to expected press questions",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-081.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-082",
+      "title_ja": "報道問い合わせ対応記録",
+      "slug": "press_inquiry_log",
+      "kind": "document",
+      "path": "templates/documents/stage_07/press_inquiry_log.md",
+      "group": "stage_07",
+      "applicable_pipeline_stages": [
+        "07"
+      ],
+      "priority": "P1",
+      "intended_use": "Media requests, responses and follow-up",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-082.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-083",
+      "title_ja": "広報イベント企画・運営計画書",
+      "slug": "event_outreach_plan",
+      "kind": "document",
+      "path": "templates/documents/stage_07/event_outreach_plan.md",
+      "group": "stage_07",
+      "applicable_pipeline_stages": [
+        "07"
+      ],
+      "priority": "P1",
+      "intended_use": "Event purpose, promotion and staffing",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-083.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-084",
+      "title_ja": "イベント当日進行台本",
+      "slug": "event_run_sheet",
+      "kind": "document",
+      "path": "templates/documents/stage_07/event_run_sheet.md",
+      "group": "stage_07",
+      "applicable_pipeline_stages": [
+        "07"
+      ],
+      "priority": "P1",
+      "intended_use": "On-site timing, roles, accessibility and contingencies",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-084.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-085",
+      "title_ja": "公開・配信実施記録",
+      "slug": "publication_log",
+      "kind": "document",
+      "path": "templates/documents/stage_07/publication_log.md",
+      "group": "stage_07",
+      "applicable_pipeline_stages": [
+        "07"
+      ],
+      "priority": "P0",
+      "intended_use": "Release artifacts, links, times and operator",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-085.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-086",
+      "title_ja": "公開後評価報告書",
+      "slug": "postpublication_report",
+      "kind": "document",
+      "path": "templates/documents/stage_08/postpublication_report.md",
+      "group": "stage_08",
+      "applicable_pipeline_stages": [
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Evidence-based post-publication evaluation",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-086.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-087",
+      "title_ja": "読者・参加者アンケート票",
+      "slug": "audience_survey",
+      "kind": "document",
+      "path": "templates/documents/stage_08/audience_survey.md",
+      "group": "stage_08",
+      "applicable_pipeline_stages": [
+        "08"
+      ],
+      "priority": "P1",
+      "intended_use": "Audience understanding and feedback questionnaire",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-087.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-088",
+      "title_ja": "意見・反応分析票",
+      "slug": "feedback_analysis",
+      "kind": "document",
+      "path": "templates/documents/stage_08/feedback_analysis.md",
+      "group": "stage_08",
+      "applicable_pipeline_stages": [
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Qualitative feedback, disagreement and interpretations",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-088.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-089",
+      "title_ja": "訂正・更新依頼票",
+      "slug": "correction_request",
+      "kind": "document",
+      "path": "templates/documents/stage_08/correction_request.md",
+      "group": "stage_08",
+      "applicable_pipeline_stages": [
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Correction trigger, affected artifacts and claims",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-089.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-090",
+      "title_ja": "訂正・更新履歴簿",
+      "slug": "correction_history",
+      "kind": "document",
+      "path": "templates/documents/stage_08/correction_history.md",
+      "group": "stage_08",
+      "applicable_pipeline_stages": [
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "What, when, why and who approved correction",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-090.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-091",
+      "title_ja": "配信・閲覧データ分析表",
+      "slug": "communication_metrics_report",
+      "kind": "document",
+      "path": "templates/documents/stage_08/communication_metrics_report.md",
+      "group": "stage_08",
+      "applicable_pipeline_stages": [
+        "08"
+      ],
+      "priority": "P1",
+      "intended_use": "Reach, engagement and interpretation limits",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-091.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-092",
+      "title_ja": "アーカイブ・保存メタデータ票",
+      "slug": "archive_record",
+      "kind": "document",
+      "path": "templates/documents/stage_08/archive_record.md",
+      "group": "stage_08",
+      "applicable_pipeline_stages": [
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Preservation, rights, retention and provenance",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-092.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-093",
+      "title_ja": "振り返り・改善提案書",
+      "slug": "lessons_learned",
+      "kind": "document",
+      "path": "templates/documents/stage_08/lessons_learned.md",
+      "group": "stage_08",
+      "applicable_pipeline_stages": [
+        "08"
+      ],
+      "priority": "P1",
+      "intended_use": "Process improvements and unresolved limitations",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-093.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-DOC-094",
+      "title_ja": "関係者への報告・フォローアップ記録",
+      "slug": "stakeholder_followup",
+      "kind": "document",
+      "path": "templates/documents/stage_08/stakeholder_followup.md",
+      "group": "stage_08",
+      "applicable_pipeline_stages": [
+        "08"
+      ],
+      "priority": "P1",
+      "intended_use": "Follow-through and response accountability",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-DOC-094.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-001",
+      "title_ja": "業務完了確認チェックリスト",
+      "slug": "task_completion",
+      "kind": "checklist",
+      "path": "templates/checklists/shared/task_completion.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Task outputs and acceptance criteria",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-001.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-002",
+      "title_ja": "科学的事実・根拠確認チェックリスト",
+      "slug": "scientific_evidence",
+      "kind": "checklist",
+      "path": "templates/checklists/shared/scientific_evidence.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Source evidence, causal claims and limitations",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-002.json",
+      "print_profile_path": "templates/implemented/TPL-CHK-002/print_profile.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-003",
+      "title_ja": "出典・資料来歴確認チェックリスト",
+      "slug": "source_provenance",
+      "kind": "checklist",
+      "path": "templates/checklists/shared/source_provenance.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Provenance, versions and traceability",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-003.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-004",
+      "title_ja": "引用・発言確認チェックリスト",
+      "slug": "attribution_quotes",
+      "kind": "checklist",
+      "path": "templates/checklists/shared/attribution_quotes.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "03",
+        "04",
+        "05",
+        "06",
+        "07"
+      ],
+      "priority": "P0",
+      "intended_use": "Accurate quotations, paraphrases and attribution",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-004.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-005",
+      "title_ja": "著作権・利用許諾チェックリスト",
+      "slug": "copyright_permissions",
+      "kind": "checklist",
+      "path": "templates/checklists/shared/copyright_permissions.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "03",
+        "04",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Rights and permissions before use",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": true,
+      "definition_path": "content/templates/TPL-CHK-005.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-006",
+      "title_ja": "個人情報・同意確認チェックリスト",
+      "slug": "privacy_consent",
+      "kind": "checklist",
+      "path": "templates/checklists/shared/privacy_consent.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "03",
+        "04",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Data, identifiability, informed consent and access",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": true,
+      "definition_path": "content/templates/TPL-CHK-006.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-007",
+      "title_ja": "科学的不確実性・誇張防止チェックリスト",
+      "slug": "scientific_uncertainty",
+      "kind": "checklist",
+      "path": "templates/checklists/shared/scientific_uncertainty.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07"
+      ],
+      "priority": "P0",
+      "intended_use": "Evidence/interpretation/forecast boundaries",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-007.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-008",
+      "title_ja": "人間による確認・承認チェックリスト",
+      "slug": "human_approval",
+      "kind": "checklist",
+      "path": "templates/checklists/shared/human_approval.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Decision roles and explicit approvals",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": true,
+      "definition_path": "content/templates/TPL-CHK-008.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-009",
+      "title_ja": "生成AI利用・検証チェックリスト",
+      "slug": "ai_safety_review",
+      "kind": "checklist",
+      "path": "templates/checklists/shared/ai_safety_review.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "AI scope, sensitive data, verification and oversight",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": true,
+      "definition_path": "content/templates/TPL-CHK-009.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-010",
+      "title_ja": "アクセシビリティ品質チェックリスト",
+      "slug": "accessibility",
+      "kind": "checklist",
+      "path": "templates/checklists/shared/accessibility.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "04",
+        "05",
+        "06",
+        "07"
+      ],
+      "priority": "P1",
+      "intended_use": "Formats, captions, text alternatives and readability",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-010.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-011",
+      "title_ja": "複数媒体間の内容整合チェックリスト",
+      "slug": "crossformat_consistency",
+      "kind": "checklist",
+      "path": "templates/checklists/shared/crossformat_consistency.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P1",
+      "intended_use": "Consistent claims across formats",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-011.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-012",
+      "title_ja": "情報公開・解禁管理チェックリスト",
+      "slug": "security_embargo",
+      "kind": "checklist",
+      "path": "templates/checklists/shared/security_embargo.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07"
+      ],
+      "priority": "P0",
+      "intended_use": "Confidentiality, embargo and release windows",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": true,
+      "definition_path": "content/templates/TPL-CHK-012.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-013",
+      "title_ja": "文書版管理・変更管理チェックリスト",
+      "slug": "document_control",
+      "kind": "checklist",
+      "path": "templates/checklists/shared/document_control.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Versions, approval status and supersession",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-013.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-014",
+      "title_ja": "外部制作委託・引継ぎチェックリスト",
+      "slug": "external_vendor_handoff",
+      "kind": "checklist",
+      "path": "templates/checklists/shared/external_vendor_handoff.md",
+      "group": "shared",
+      "applicable_pipeline_stages": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "priority": "P1",
+      "intended_use": "External production briefing and review",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-014.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-015",
+      "title_ja": "企画書確認チェックリスト",
+      "slug": "proposal_review",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_01/proposal_review.md",
+      "group": "stage_01",
+      "applicable_pipeline_stages": [
+        "01"
+      ],
+      "priority": "P0",
+      "intended_use": "Scope, audience, purpose, feasibility",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-015.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-016",
+      "title_ja": "企画候補評価チェックリスト",
+      "slug": "topic_selection",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_01/topic_selection.md",
+      "group": "stage_01",
+      "applicable_pipeline_stages": [
+        "01"
+      ],
+      "priority": "P0",
+      "intended_use": "Scientific significance and newsroom relevance",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-016.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-017",
+      "title_ja": "関係者・責任体制確認チェックリスト",
+      "slug": "stakeholder_alignment",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_01/stakeholder_alignment.md",
+      "group": "stage_01",
+      "applicable_pipeline_stages": [
+        "01"
+      ],
+      "priority": "P0",
+      "intended_use": "Coordination and escalation",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-017.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-018",
+      "title_ja": "資料選定チェックリスト",
+      "slug": "source_selection",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_02/source_selection.md",
+      "group": "stage_02",
+      "applicable_pipeline_stages": [
+        "02"
+      ],
+      "priority": "P0",
+      "intended_use": "Primary sources, recency, credibility and scope",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-018.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-019",
+      "title_ja": "研究方法・結論対応確認チェックリスト",
+      "slug": "study_design_interpretation",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_02/study_design_interpretation.md",
+      "group": "stage_02",
+      "applicable_pipeline_stages": [
+        "02"
+      ],
+      "priority": "P0",
+      "intended_use": "Methods, inference and generalization limits",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-019.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-020",
+      "title_ja": "未確認事項整理チェックリスト",
+      "slug": "research_gaps",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_02/research_gaps.md",
+      "group": "stage_02",
+      "applicable_pipeline_stages": [
+        "02"
+      ],
+      "priority": "P0",
+      "intended_use": "Questions to resolve before drafting",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-020.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-021",
+      "title_ja": "取材前確認チェックリスト",
+      "slug": "interview_preparation",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_03/interview_preparation.md",
+      "group": "stage_03",
+      "applicable_pipeline_stages": [
+        "03"
+      ],
+      "priority": "P0",
+      "intended_use": "Interview readiness and context",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-021.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-022",
+      "title_ja": "質問設計チェックリスト",
+      "slug": "interview_question_quality",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_03/interview_question_quality.md",
+      "group": "stage_03",
+      "applicable_pipeline_stages": [
+        "03"
+      ],
+      "priority": "P0",
+      "intended_use": "Bias, clarity, fairness and evidentiary gaps",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-022.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-023",
+      "title_ja": "取材同意・録音撮影確認チェックリスト",
+      "slug": "interview_rights_privacy",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_03/interview_rights_privacy.md",
+      "group": "stage_03",
+      "applicable_pipeline_stages": [
+        "03"
+      ],
+      "priority": "P0",
+      "intended_use": "Participant and recording rights",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": true,
+      "definition_path": "content/templates/TPL-CHK-023.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-024",
+      "title_ja": "取材後確認チェックリスト",
+      "slug": "interview_followup",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_03/interview_followup.md",
+      "group": "stage_03",
+      "applicable_pipeline_stages": [
+        "03"
+      ],
+      "priority": "P0",
+      "intended_use": "Notes, permissions, unresolved statements",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-024.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-025",
+      "title_ja": "記事構成・論理確認チェックリスト",
+      "slug": "article_structure",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_04/article_structure.md",
+      "group": "stage_04",
+      "applicable_pipeline_stages": [
+        "04"
+      ],
+      "priority": "P0",
+      "intended_use": "Narrative organization and proportionality",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-025.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-026",
+      "title_ja": "わかりやすい日本語チェックリスト",
+      "slug": "accessible_japanese",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_04/accessible_japanese.md",
+      "group": "stage_04",
+      "applicable_pipeline_stages": [
+        "04"
+      ],
+      "priority": "P0",
+      "intended_use": "Terminology, comprehension and accessibility",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-026.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-027",
+      "title_ja": "図表・キャプション確認チェックリスト",
+      "slug": "graphics_captions",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_04/graphics_captions.md",
+      "group": "stage_04",
+      "applicable_pipeline_stages": [
+        "04"
+      ],
+      "priority": "P0",
+      "intended_use": "Meaning, data, claims and source credit",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-027.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-028",
+      "title_ja": "映像・音声台本確認チェックリスト",
+      "slug": "multimedia_script",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_04/multimedia_script.md",
+      "group": "stage_04",
+      "applicable_pipeline_stages": [
+        "04"
+      ],
+      "priority": "P1",
+      "intended_use": "Script accuracy, alternatives and pacing",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-028.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-029",
+      "title_ja": "編集・推敲確認チェックリスト",
+      "slug": "copyediting",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_05/copyediting.md",
+      "group": "stage_05",
+      "applicable_pipeline_stages": [
+        "05"
+      ],
+      "priority": "P0",
+      "intended_use": "Readability, consistency and tone",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-029.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-030",
+      "title_ja": "校正確認チェックリスト",
+      "slug": "proofreading",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_05/proofreading.md",
+      "group": "stage_05",
+      "applicable_pipeline_stages": [
+        "05"
+      ],
+      "priority": "P0",
+      "intended_use": "Spelling, punctuation, names, numbers, units",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-030.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-031",
+      "title_ja": "校閲・ファクトチェックリスト",
+      "slug": "fact_checking",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_05/fact_checking.md",
+      "group": "stage_05",
+      "applicable_pipeline_stages": [
+        "05"
+      ],
+      "priority": "P0",
+      "intended_use": "Factual claims and corroboration",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-031.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-032",
+      "title_ja": "発言の文脈確認チェックリスト",
+      "slug": "quotation_context",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_05/quotation_context.md",
+      "group": "stage_05",
+      "applicable_pipeline_stages": [
+        "05"
+      ],
+      "priority": "P0",
+      "intended_use": "Quote fidelity and contextual accuracy",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-032.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-033",
+      "title_ja": "専門確認チェックリスト",
+      "slug": "expert_review",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_06/expert_review.md",
+      "group": "stage_06",
+      "applicable_pipeline_stages": [
+        "06"
+      ],
+      "priority": "P0",
+      "intended_use": "Scientific experts and unresolved claims",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-033.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-034",
+      "title_ja": "レビュー指摘対応チェックリスト",
+      "slug": "response_resolution",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_06/response_resolution.md",
+      "group": "stage_06",
+      "applicable_pipeline_stages": [
+        "06"
+      ],
+      "priority": "P0",
+      "intended_use": "Reviewer concerns resolved or documented",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-034.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-035",
+      "title_ja": "公開承認ゲートチェックリスト",
+      "slug": "release_authorization",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_06/release_authorization.md",
+      "group": "stage_06",
+      "applicable_pipeline_stages": [
+        "06"
+      ],
+      "priority": "P0",
+      "intended_use": "Explicit authorized release decision",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": true,
+      "definition_path": "content/templates/TPL-CHK-035.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-036",
+      "title_ja": "公開前権利確認チェックリスト",
+      "slug": "publication_rights",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_06/publication_rights.md",
+      "group": "stage_06",
+      "applicable_pipeline_stages": [
+        "06"
+      ],
+      "priority": "P0",
+      "intended_use": "Permissions, attribution, privacy",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": true,
+      "definition_path": "content/templates/TPL-CHK-036.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-037",
+      "title_ja": "公開直前最終確認チェックリスト",
+      "slug": "publication_preflight",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_07/publication_preflight.md",
+      "group": "stage_07",
+      "applicable_pipeline_stages": [
+        "07"
+      ],
+      "priority": "P0",
+      "intended_use": "Authorized files, timing and channels",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-037.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-038",
+      "title_ja": "ウェブ掲載品質チェックリスト",
+      "slug": "web_page_qa",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_07/web_page_qa.md",
+      "group": "stage_07",
+      "applicable_pipeline_stages": [
+        "07"
+      ],
+      "priority": "P0",
+      "intended_use": "Links, assets, display, mobile and metadata",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-038.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-039",
+      "title_ja": "SNS掲載確認チェックリスト",
+      "slug": "social_media_qa",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_07/social_media_qa.md",
+      "group": "stage_07",
+      "applicable_pipeline_stages": [
+        "07"
+      ],
+      "priority": "P1",
+      "intended_use": "Platform text, links and scientific caveats",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-039.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-040",
+      "title_ja": "メディア対応確認チェックリスト",
+      "slug": "media_contact",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_07/media_contact.md",
+      "group": "stage_07",
+      "applicable_pipeline_stages": [
+        "07"
+      ],
+      "priority": "P1",
+      "intended_use": "Press messaging and coordination",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-040.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-041",
+      "title_ja": "イベント運営チェックリスト",
+      "slug": "event_day",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_07/event_day.md",
+      "group": "stage_07",
+      "applicable_pipeline_stages": [
+        "07"
+      ],
+      "priority": "P1",
+      "intended_use": "Venue, roles, safety, access and contingency",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-041.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-042",
+      "title_ja": "訂正・更新対応チェックリスト",
+      "slug": "correction_processing",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_08/correction_processing.md",
+      "group": "stage_08",
+      "applicable_pipeline_stages": [
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Evidence, review, action and visibility",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-042.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-043",
+      "title_ja": "効果測定・解釈確認チェックリスト",
+      "slug": "evaluation_quality",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_08/evaluation_quality.md",
+      "group": "stage_08",
+      "applicable_pipeline_stages": [
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Indicators and valid interpretation",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-043.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-044",
+      "title_ja": "保存・引継ぎチェックリスト",
+      "slug": "archive_handover",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_08/archive_handover.md",
+      "group": "stage_08",
+      "applicable_pipeline_stages": [
+        "08"
+      ],
+      "priority": "P0",
+      "intended_use": "Archiving, access, provenance, follow-ups",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-044.json",
+      "workflow_id": "editorial-eight-stage"
+    },
+    {
+      "template_id": "TPL-CHK-045",
+      "title_ja": "改善・振り返りチェックリスト",
+      "slug": "retrospective",
+      "kind": "checklist",
+      "path": "templates/checklists/stage_08/retrospective.md",
+      "group": "stage_08",
+      "applicable_pipeline_stages": [
+        "08"
+      ],
+      "priority": "P1",
+      "intended_use": "Learning and incorporation into future projects",
+      "status": "implemented_structural_draft",
+      "independent_proposal": true,
+      "requires_institutional_or_legal_review_before_real_use": false,
+      "definition_path": "content/templates/TPL-CHK-045.json",
+      "workflow_id": "editorial-eight-stage"
+    }
+  ]
+}

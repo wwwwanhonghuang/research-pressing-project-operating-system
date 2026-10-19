@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-REV-PRIVACY",
+  "version": "0.1.0",
+  "title": {
+    "ja": "個人情報・機微情報の公開前検査"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "専門確認・公開管理担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。法令、契約、内部権限規程等の適用と現行版は個別に検討する。実在の承認を意味しない。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-PPC-GENERAL-2026",
+      "locator": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "個人情報保護委員会ガイドライン通則編。2026年改正版の適用条項・対象主体・処理状況を案件ごとに確認する。"
+    },
+    {
+      "source_id": "SRC-PPC-LEGAL-INDEX",
+      "locator": "https://www.ppc.go.jp/personalinfo/legal/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "法令・政令・規則及びガイドラインの索引。適用法令の版を確認する出発点。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "06"
+    ],
+    "audiences": [
+      "研究者",
+      "編集者",
+      "専門確認担当者",
+      "公開承認責任者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-REV-PRIVACY-H01",
+      "kind": "heading",
+      "text": "情報の性格",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-PRIVACY-P01",
+      "kind": "paragraph",
+      "text": "氏名・肖像・音声・位置・健康関連の情報等について識別可能性と取得・利用状況を個別に把握する。"
+    },
+    {
+      "id": "KNW-REV-PRIVACY-H02",
+      "kind": "heading",
+      "text": "適用主体",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-PRIVACY-P02",
+      "kind": "paragraph",
+      "text": "対象業務の主体、利用目的、第三者提供その他の具体的事実に基づいて適用法令とガイドラインを調べる。"
+    },
+    {
+      "id": "KNW-REV-PRIVACY-H03",
+      "kind": "heading",
+      "text": "必要性と最小化",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-PRIVACY-P03",
+      "kind": "paragraph",
+      "text": "公開目的と必要性を照らし、伏字、匿名化、編集、非公開への切替え等の選択肢を比較する。"
+    },
+    {
+      "id": "KNW-REV-PRIVACY-H04",
+      "kind": "heading",
+      "text": "再識別と拡散",
+      "level": 2
+    },
+    {
+      "id": "KNW-REV-PRIVACY-P04",
+      "kind": "paragraph",
+      "text": "単一素材だけでなく字幕、メタデータ、他の公開資料との照合による識別可能性を確認する。"
+    }
+  ]
+}

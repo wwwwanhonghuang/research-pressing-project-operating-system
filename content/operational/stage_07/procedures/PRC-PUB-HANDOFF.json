@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-PUB-HANDOFF",
+  "version": "0.1.0",
+  "title": {
+    "ja": "公開記録の確定と訂正・評価段階への引継ぎの実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "記録・評価連携担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "記録・評価連携担当者"
+  ],
+  "inputs": [
+    "実公開版",
+    "URL・投稿ID",
+    "配信記録",
+    "問い合わせ",
+    "監視結果"
+  ],
+  "outputs": [
+    "第8段階への引継ぎパッケージ"
+  ],
+  "steps": [
+    {
+      "id": "PRC-PUB-HANDOFF-S1",
+      "instruction": "予定版、承認版、実公開版、変更履歴を対応づける",
+      "expected_output": "版関係表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-HANDOFF-S2",
+      "instruction": "発信日時、媒体、URL、投稿ID、素材の権利条件をまとめる",
+      "expected_output": "公開来歴台帳",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-HANDOFF-S3",
+      "instruction": "未解決事項、問い合わせ、訂正候補、測定制約を明示する",
+      "expected_output": "継続対応一覧",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-HANDOFF-S4",
+      "instruction": "到達指標と理解・社会的影響を異なる評価対象として区別する",
+      "expected_output": "評価用データ辞書",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-HANDOFF-S5",
+      "instruction": "第8段階の担当者と受領日時を記録する",
+      "expected_output": "引継ぎ確認",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "閲覧数や反応数を科学的正確性・理解度の証拠と見なさない"
+  ]
+}

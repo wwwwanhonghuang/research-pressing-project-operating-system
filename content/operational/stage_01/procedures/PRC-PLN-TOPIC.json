@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-PLN-TOPIC",
+  "version": "0.1.0",
+  "title": {
+    "ja": "企画候補の探索・比較と暫定選定の標準手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "企画編集担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立した業務設計試案。適用に際して、組織の規程、権限、契約、適用法令を別途確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "企画編集担当者"
+  ],
+  "inputs": [
+    "取材候補一覧、一次資料の所在、既存記事、公開可能な情報"
+  ],
+  "outputs": [
+    "企画候補比較票、選定理由、保留候補と再検討条件"
+  ],
+  "steps": [
+    {
+      "id": "PRC-PLN-TOPIC-S1",
+      "instruction": "候補ごとに対象とする現象、研究、ニュース価値の根拠、読者にとっての問いを定義する。",
+      "expected_output": "企画候補比較票、選定理由、保留候補と再検討条件",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-PLN-TOPIC-S2",
+      "instruction": "各候補について基礎資料の公開状況、調査の困難さ、日付と版を確認する。",
+      "expected_output": "企画候補比較票、選定理由、保留候補と再検討条件",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PLN-TOPIC-S3",
+      "instruction": "公共的関連性、新規性、説明可能性、編集資源、倫理的リスクを別々に記録する。",
+      "expected_output": "企画候補比較票、選定理由、保留候補と再検討条件",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PLN-TOPIC-S4",
+      "instruction": "評価軸を単純に合計して自動決定することを避け、比較できない観点を残す。",
+      "expected_output": "企画候補比較票、選定理由、保留候補と再検討条件",
+      "evidence_needed": false
+    },
+    {
+      "id": "PRC-PLN-TOPIC-S5",
+      "instruction": "知名度、言語、所属、関係性による選択の偏りがないか検討する。",
+      "expected_output": "企画候補比較票、選定理由、保留候補と再検討条件",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PLN-TOPIC-S6",
+      "instruction": "採択、保留、見送りの判断、理由、確認者、再審査条件を登録する。",
+      "expected_output": "企画候補比較票、選定理由、保留候補と再検討条件",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "一次資料が未公開、共有権限が未確認、利害関係または個人情報に問題がある場合は、状態を保留として必要な担当者へ照会する。",
+    "取材・公開条件が変化した場合は、版と変更理由を記録して影響する後続作業を再点検する。",
+    "AIの提案のみをもって完了または承認と判定しない。"
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-DOC-092",
+  "kind": "document",
+  "slug": "archive_record",
+  "title_ja": "アーカイブ・保存メタデータ票",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P0",
+  "applicable_pipeline_stages": [
+    "08"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-DOC-092-S1",
+      "heading_ja": "基本情報",
+      "fields": [
+        {
+          "id": "TPL-DOC-092-F001",
+          "label_ja": "案件・文書の識別子",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「案件・文書の識別子」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        },
+        {
+          "id": "TPL-DOC-092-F002",
+          "label_ja": "作成者と連絡先",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "「作成者と連絡先」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        },
+        {
+          "id": "TPL-DOC-092-F003",
+          "label_ja": "作成日と対象版",
+          "type": "date",
+          "required": false,
+          "description_ja": "「作成日と対象版」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-092-S2",
+      "heading_ja": "保存対象",
+      "fields": [
+        {
+          "id": "TPL-DOC-092-F004",
+          "label_ja": "成果物の識別子と版",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "原版、訂正版、通知、根拠、許諾、実行ログを個別IDで記録する。"
+        },
+        {
+          "id": "TPL-DOC-092-F005",
+          "label_ja": "媒体・形式とハッシュ",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "ファイル単位・集約単位の固定性情報、形式と依存ソフトウェアを示す。"
+        },
+        {
+          "id": "TPL-DOC-092-F006",
+          "label_ja": "作成・公開・保存日時",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「作成・公開・保存日時」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        },
+        {
+          "id": "TPL-DOC-092-F007",
+          "label_ja": "関連プロジェクトと参照先",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「関連プロジェクトと参照先」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-092-S3",
+      "heading_ja": "権利と保存",
+      "fields": [
+        {
+          "id": "TPL-DOC-092-F008",
+          "label_ja": "ライセンス・閲覧権限",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "保存権限・公開範囲・第三者権利・機密区分を記録する。"
+        },
+        {
+          "id": "TPL-DOC-092-F009",
+          "label_ja": "保存場所と保持期間",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "複数保存先、保持期限、定期確認、廃棄・移管条件を明記する。"
+        },
+        {
+          "id": "TPL-DOC-092-F010",
+          "label_ja": "訂正履歴との接続",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "版間関係、訂正状態及び関連URLを目録と対応づける。"
+        },
+        {
+          "id": "TPL-DOC-092-F011",
+          "label_ja": "移管と廃棄の条件",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「移管と廃棄の条件」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        }
+      ]
+    },
+    {
+      "id": "TPL-DOC-092-S4",
+      "heading_ja": "確認と履歴",
+      "fields": [
+        {
+          "id": "TPL-DOC-092-F012",
+          "label_ja": "参照資料と根拠ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "「参照資料と根拠ID」について対象版、根拠識別子、確認日時と未確認事項を示す。",
+          "columns": [
+            "対象と版",
+            "根拠・参照ID",
+            "判断・担当",
+            "例外と日時"
+          ],
+          "min_rows": 2
+        },
+        {
+          "id": "TPL-DOC-092-F013",
+          "label_ja": "未確認事項・例外",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "「未確認事項・例外」について対象版、根拠識別子、確認日時と未確認事項を示す。"
+        },
+        {
+          "id": "TPL-DOC-092-F014",
+          "label_ja": "点検・改訂の記録",
+          "type": "table",
+          "required": false,
+          "description_ja": "「点検・改訂の記録」について対象版、根拠識別子、確認日時と未確認事項を示す。",
+          "columns": [
+            "対象と版",
+            "根拠・参照ID",
+            "判断・担当",
+            "例外と日時"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [
+      "TSK-ARC-ARCHIVE",
+      "TSK-ARC-FIXITY"
+    ],
+    "knowledge_ids": [
+      "KNW-ARC-TRACE",
+      "KNW-ARC-VERSION"
+    ],
+    "checklist_template_ids": [
+      "TPL-CHK-042",
+      "TPL-CHK-043",
+      "TPL-CHK-044",
+      "TPL-CHK-045"
+    ]
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho",
+    "min_content_pages": 1
+  },
+  "notes_ja": "独立の運用試案。記録の存在は科学的妥当性、個人情報適合、修正又は撤回の決裁権限を保証しない。",
+  "workflow_id": "editorial-eight-stage"
+}

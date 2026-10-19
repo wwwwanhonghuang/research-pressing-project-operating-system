@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-PUB-ACCESS",
+  "version": "0.1.0",
+  "title": {
+    "ja": "アクセシビリティと利用選択の検証の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "アクセシビリティ確認担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "アクセシビリティ確認担当者"
+  ],
+  "inputs": [
+    "媒体別素材",
+    "字幕",
+    "書き起こし",
+    "代替テキスト",
+    "閲覧要件"
+  ],
+  "outputs": [
+    "媒体別アクセシビリティ確認記録"
+  ],
+  "steps": [
+    {
+      "id": "PRC-PUB-ACCESS-S1",
+      "instruction": "適用する目標基準と閲覧環境を明示する",
+      "expected_output": "適用範囲",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-ACCESS-S2",
+      "instruction": "動画字幕、音声書き起こし、必要な映像説明と画像代替情報を確認する",
+      "expected_output": "代替表現対応票",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-ACCESS-S3",
+      "instruction": "見出し構造、読み上げ順、キーボード操作、コントラストを点検する",
+      "expected_output": "アクセシビリティ試験結果",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-ACCESS-S4",
+      "instruction": "形式別に未対応事項と代替アクセス先を記録する",
+      "expected_output": "改善及び代替計画",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-ACCESS-S5",
+      "instruction": "公開担当者に未解決問題と確認者の判定を返す",
+      "expected_output": "対応記録",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "自動検査のスコアだけで適合を確定しない",
+    "必須情報を特定媒体の利用に限定する仕様は再検討する"
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.0.0",
+  "version": "0.1.0",
+  "lifecycle": "draft",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の運用試案。具体的な権限、適用法令、契約及び組織規程は案件ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "id": "PUB-REV-HANDBOOK",
+  "title": {
+    "ja": "専門確認・公開承認 業務ハンドブック（独立試案）"
+  },
+  "responsible_role": "審査調整担当者",
+  "output_kind": "handbook",
+  "audience": [
+    "審査担当者",
+    "編集責任者",
+    "公開決裁者"
+  ],
+  "style_profile": "formal_guideline",
+  "visibility": "public",
+  "chapter_plan": [
+    {
+      "chapter_id": "CH-REV-INTRO",
+      "heading_ja": "目的、適用範囲及び権限",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "本書は専門確認と公開判断を区別して記録する独立の運用試案である。審査対象の版、審査範囲、根拠、未解決事項、判断権限及び公開条件を明示する。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "科学的な妥当性、法的権利、個人情報、倫理、編集品質及び公開決裁は異なる責任を持つ。チェックリストの完了は公開許可を意味しない。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-REV-1",
+      "heading_ja": "審査対象と版の確定",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-REV-INTAKE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-REV-INTAKE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-REV-2",
+      "heading_ja": "審査権限と利益相反の確認",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-REV-ROLES",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-REV-ROLES",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-REV-3",
+      "heading_ja": "専門的妥当性と主張範囲の審査",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-REV-SCIENCE",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-REV-SCIENCE",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-REV-4",
+      "heading_ja": "著作物・肖像・素材利用条件の確認",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-REV-RIGHTS",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-REV-RIGHTS",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-REV-5",
+      "heading_ja": "個人情報・機密・公開範囲の確認",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-REV-PRIVACY",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-REV-PRIVACY",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-REV-6",
+      "heading_ja": "倫理・安全・社会的影響の確認",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-REV-ETHICS",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-REV-ETHICS",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-REV-7",
+      "heading_ja": "指摘対応と再審査",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-REV-REVISIONS",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-REV-REVISIONS",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-REV-8",
+      "heading_ja": "公開決裁と条件付き判断",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-REV-DECISION",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-REV-DECISION",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-REV-9",
+      "heading_ja": "公開用パッケージの引継ぎ",
+      "parts": [
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "task_definition",
+            "id": "TSK-REV-HANDOFF",
+            "version": "0.1.0"
+          }
+        },
+        {
+          "kind": "include",
+          "ref": {
+            "kind": "procedure_definition",
+            "id": "PRC-REV-HANDOFF",
+            "version": "0.1.0"
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH-REV-BOUNDARIES",
+      "heading_ja": "判断と記録の境界",
+      "parts": [
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "専門家による科学的確認、権利者の許諾、本人の意思確認、編集責任者の確認及び組織上の公開決裁を別々に記録する。いずれか一つの確認結果を他の判断の代替としない。"
+        },
+        {
+          "kind": "editorial_bridge",
+          "editorial_text": "公開後の訂正や撤回に備え、審査対象版、条件付き判断、差戻し履歴及び根拠資料の参照情報を保存する。"
+        }
+      ]
+    }
+  ]
+}

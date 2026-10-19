@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.1.0",
+  "task_id": "source_claim_register",
+  "steps": [
+    {
+      "id": "S1",
+      "title_ja": "原資料の特定",
+      "instruction": "一次資料の書誌情報、公開日、版及び参照箇所を登録する。",
+      "output": "source_registry"
+    },
+    {
+      "id": "S2",
+      "title_ja": "主張の抽出",
+      "instruction": "科学的事実を表す候補文を抽出し、観測・推論・仮説・将来目標に分類する。",
+      "output": "claim_register"
+    },
+    {
+      "id": "S3",
+      "title_ja": "根拠照合と追加確認",
+      "instruction": "主張ごとに引用箇所を照合し、欠落と不一致を編集担当者へ記録する。",
+      "output": "open_questions"
+    }
+  ]
+}

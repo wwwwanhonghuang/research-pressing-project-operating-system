@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PRC-PUB-SCHEDULE",
+  "version": "0.1.0",
+  "title": {
+    "ja": "公開時刻・解禁・関係者連絡の管理の実施手順（試案）"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "公開進行管理担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "独立の業務設計試案。実際の配信権限、契約、適用法令、プラットフォーム規約、障害対応手順は案件・媒体ごとに確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "required_roles": [
+    "公開進行管理担当者"
+  ],
+  "inputs": [
+    "解禁条件",
+    "承認日時",
+    "配信先",
+    "時区と関係者一覧"
+  ],
+  "outputs": [
+    "確定公開工程・時刻照合記録"
+  ],
+  "steps": [
+    {
+      "id": "PRC-PUB-SCHEDULE-S1",
+      "instruction": "基準時刻と時区を明記し関係者間の解禁日時を照合する",
+      "expected_output": "日時・時区記録",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-SCHEDULE-S2",
+      "instruction": "予約公開、サイト公開、SNS、外部配信の依存関係を図示する",
+      "expected_output": "公開順序・依存関係表",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-SCHEDULE-S3",
+      "instruction": "権利上の公開期間、事前告知制限、取消し期限を確認する",
+      "expected_output": "媒体ごとの公開条件",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-SCHEDULE-S4",
+      "instruction": "障害・保留時の連絡窓口と停止指示の伝達方法を演習する",
+      "expected_output": "中止連絡手順",
+      "evidence_needed": true
+    },
+    {
+      "id": "PRC-PUB-SCHEDULE-S5",
+      "instruction": "公開作業者と立会い者が最終予定版を確認する",
+      "expected_output": "時刻確認署名欄",
+      "evidence_needed": true
+    }
+  ],
+  "exception_handling": [
+    "解禁条件の不一致があれば日時を確定せず審査責任者に相談する",
+    "外部予約投稿の変更が反映されない場合は配信停止の実行可否を確認する"
+  ]
+}

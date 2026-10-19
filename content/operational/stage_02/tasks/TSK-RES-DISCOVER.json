@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TSK-RES-DISCOVER",
+  "version": "0.1.0",
+  "title": {
+    "ja": "候補資料の探索と収集範囲の評価"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "調査担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "特定組織の内部規程や承認済み手順を示さない。適用法令、現場の権限・規程、情報の公開条件を確認した上で個別案件へ適用する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [],
+  "links": [],
+  "stage_ids": [
+    "02"
+  ],
+  "inputs": [
+    "調査計画書、検索語一覧、関係する分野の資料群"
+  ],
+  "outputs": [
+    "検索履歴、候補資料一覧、除外理由、追加検索候補"
+  ],
+  "requires_human_decision": true,
+  "acceptance_criteria": [
+    "検索履歴を再確認できる",
+    "候補の包含除外理由を記録した",
+    "相違する資料の探索経路を検討した"
+  ],
+  "review_roles": [
+    "調査責任者又は編集責任者"
+  ],
+  "procedure_ref": {
+    "kind": "procedure_definition",
+    "id": "PRC-RES-DISCOVER",
+    "version": "0.1.0"
+  },
+  "document_template_refs": [
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-038",
+      "version": "0.1.0"
+    },
+    {
+      "kind": "document_template",
+      "id": "TPL-DOC-039",
+      "version": "0.1.0"
+    }
+  ],
+  "checklist_refs": [
+    {
+      "kind": "checklist_definition",
+      "id": "TPL-CHK-018",
+      "version": "0.2.0"
+    }
+  ],
+  "standard_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-RES-SEARCH",
+      "version": "0.1.0"
+    }
+  ],
+  "ethics_refs": [
+    {
+      "kind": "knowledge_entry",
+      "id": "KNW-ETH-RESBIAS",
+      "version": "0.1.0"
+    }
+  ]
+}

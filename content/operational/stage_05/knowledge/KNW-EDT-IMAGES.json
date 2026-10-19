@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0.0",
+  "id": "KNW-EDT-IMAGES",
+  "version": "0.1.0",
+  "title": {
+    "ja": "図表・キャプション・媒体間整合の確認"
+  },
+  "lifecycle": "draft",
+  "responsible_role": "編集品質担当者",
+  "authority": {
+    "origin": "independent_proposal",
+    "normative_class": "operational_proposal",
+    "institutional_approval": "none",
+    "applicability_note": "編集・校正・校閲に関する独立の運用提案。個別の法令・権利・内部規程・権限者の判断は実施時に確認する。"
+  },
+  "access": {
+    "classification": "public",
+    "may_share_with_external_ai": true
+  },
+  "sources": [
+    {
+      "source_id": "SRC-JPA-SCI-COMM",
+      "locator": "https://psych.or.jp/jpamember/press_release_guidelines/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "研究成果のプレスリリースを対象とする学会の科学コミュニケーション指針。正確性・限定条件・誇張回避。"
+    },
+    {
+      "source_id": "SRC-W3C-IMAGE-ALT",
+      "locator": "https://www.w3.org/WAI/tutorials/images/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "W3C WAIの画像代替テキスト設計。画像の目的と複雑さに応じた情報提供。"
+    },
+    {
+      "source_id": "SRC-W3C-WCAG22",
+      "locator": "https://www.w3.org/TR/wcag/",
+      "accessed_on": "2026-10-19",
+      "verification_note": "WCAG 2.2。ウェブ・マルチメディアのアクセシビリティ参照標準。"
+    }
+  ],
+  "links": [],
+  "category": "standard",
+  "scope": {
+    "stages": [
+      "05"
+    ],
+    "audiences": [
+      "編集者",
+      "校正者",
+      "校閲者",
+      "制作担当者"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "KNW-EDT-IMAGES-H01",
+      "kind": "heading",
+      "text": "図表情報",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-IMAGES-P01",
+      "kind": "paragraph",
+      "text": "図表の元データ、集計単位、軸の起点、凡例、欠測、縮尺、標本と誤差表示を確認する。視覚的強調によって差を過大表示する可能性を検討する。"
+    },
+    {
+      "id": "KNW-EDT-IMAGES-H02",
+      "kind": "heading",
+      "text": "キャプションの自立性",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-IMAGES-P02",
+      "kind": "paragraph",
+      "text": "本文を読まずに図の対象、方法の範囲と重要な制約を理解できるよう補足する。画像から推測できない対象特性を断定しない。写真の日時・撮影者・許諾を区別する。"
+    },
+    {
+      "id": "KNW-EDT-IMAGES-H03",
+      "kind": "heading",
+      "text": "媒体間照合",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-IMAGES-P03",
+      "kind": "paragraph",
+      "text": "紙面、Web、動画、音声、字幕、SNSの主張IDを対応付け、短縮版で結論だけが強くなっていないかを調べる。各媒体固有の追加主張は別途確認する。"
+    },
+    {
+      "id": "KNW-EDT-IMAGES-H04",
+      "kind": "heading",
+      "text": "代替情報",
+      "level": 2
+    },
+    {
+      "id": "KNW-EDT-IMAGES-P04",
+      "kind": "paragraph",
+      "text": "情報を運ぶ図には代替説明を用意し、複雑な図表では必要に応じ詳細説明又はデータ表を提供する。内容へのアクセスを特定媒体の視聴に限定しない。"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reusable structured knowledge block for future SOPs, standards, handbooks and web views",
+  "type": "object",
+  "required": [
+    "id",
+    "kind",
+    "authority",
+    "version"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "enum": [
+        "paragraph",
+        "heading",
+        "list",
+        "table",
+        "procedure_step",
+        "normative_clause",
+        "case",
+        "figure",
+        "quotation",
+        "reference",
+        "equation",
+        "media_link"
+      ]
+    },
+    "version": {
+      "type": "string"
+    },
+    "authority": {
+      "enum": [
+        "law",
+        "regulation",
+        "institutional_policy",
+        "professional_guidance",
+        "independent_proposal",
+        "informational"
+      ]
+    },
+    "text_ja": {
+      "type": "string"
+    },
+    "children": {
+      "type": "array",
+      "items": {
+        "$ref": "#"
+      }
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string"
+          },
+          "locator": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "source_id"
+        ]
+      }
+    },
+    "media_asset_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "depends_on": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "slot_id": {
+      "type": "string"
+    }
+  }
+}

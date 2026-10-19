@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0.0",
+  "id": "TPL-CHK-045",
+  "kind": "checklist",
+  "slug": "retrospective",
+  "title_ja": "改善・振り返りチェックリスト",
+  "version": "0.2.0",
+  "lifecycle": "draft",
+  "status": "substantive_draft",
+  "priority": "P1",
+  "applicable_pipeline_stages": [
+    "08"
+  ],
+  "origin": "independent_proposal",
+  "authority_status": "unapproved",
+  "source_catalog": "templates/catalog.json",
+  "sections": [
+    {
+      "id": "TPL-CHK-045-S1",
+      "heading_ja": "確認項目",
+      "items": [
+        {
+          "id": "TPL-CHK-045-I001",
+          "criterion_ja": "最初に定義した目標と実測結果を同じ単位で比較した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "企画記録、測定報告の識別子、版、確認者と判断日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-045-I002",
+          "criterion_ja": "良かった点と困難を根拠つきの事実として記録した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "観察・証言の識別子、版、確認者と判断日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-045-I003",
+          "criterion_ja": "原因仮説、認識上の偏り、相反する見解を明示した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "検討議事の識別子、版、確認者と判断日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-045-I004",
+          "criterion_ja": "改善項目を制度・技術・表現・運用に分類した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "改善候補の識別子、版、確認者と判断日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-045-I005",
+          "criterion_ja": "実施の権限、費用と担当・期限を確認した",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "実行計画の識別子、版、確認者と判断日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-045-I006",
+          "criterion_ja": "改善確認の指標と次回の検証時点を定めた",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "再評価計画の識別子、版、確認者と判断日時を記録する。",
+          "human_review": true
+        },
+        {
+          "id": "TPL-CHK-045-I007",
+          "criterion_ja": "次の企画で参照可能な教訓を保存記録につないだ",
+          "status_options": [
+            "未確認",
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_required_for": [
+            "適合",
+            "不適合",
+            "対象外"
+          ],
+          "evidence_hint_ja": "引継ぎIDの識別子、版、確認者と判断日時を記録する。",
+          "human_review": true
+        }
+      ]
+    },
+    {
+      "id": "TPL-CHK-045-S2",
+      "heading_ja": "点検結果の記録",
+      "fields": [
+        {
+          "id": "TPL-CHK-045-F001",
+          "label_ja": "対象案件・対象版",
+          "type": "short_text",
+          "required": false,
+          "description_ja": "対象案件・対象版の対象版、証拠、確認者と未解決事項を記録する。"
+        },
+        {
+          "id": "TPL-CHK-045-F002",
+          "label_ja": "担当者と点検日",
+          "type": "date",
+          "required": false,
+          "description_ja": "担当者と点検日の対象版、証拠、確認者と未解決事項を記録する。"
+        },
+        {
+          "id": "TPL-CHK-045-F003",
+          "label_ja": "未解決事項と対応",
+          "type": "long_text",
+          "required": false,
+          "description_ja": "未解決事項と対応の対象版、証拠、確認者と未解決事項を記録する。"
+        },
+        {
+          "id": "TPL-CHK-045-F004",
+          "label_ja": "確認に用いた資料ID",
+          "type": "table",
+          "required": false,
+          "description_ja": "確認に用いた資料IDの対象版、証拠、確認者と未解決事項を記録する。",
+          "columns": [
+            "対象・項目",
+            "内容・参照",
+            "担当・状態",
+            "備考"
+          ],
+          "min_rows": 2
+        }
+      ]
+    }
+  ],
+  "relationships": {
+    "related_task_ids": [
+      "TSK-ARC-RETRO"
+    ],
+    "knowledge_ids": [
+      "KNW-ARC-TRACE",
+      "KNW-ARC-DECISION"
+    ]
+  },
+  "rendering": {
+    "profile": "formal_japanese_mincho"
+  },
+  "notes_ja": "チェック項目の適合は実在の権限者の訂正・削除・公開判断を代行しない。",
+  "workflow_id": "editorial-eight-stage"
+}
