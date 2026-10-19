@@ -251,24 +251,4 @@ export function objectDoc(rec, ctx, stage) {
   };
 }
 
-/** The typesetting specimen: public-domain passages in each content language. */
-export function specimenDoc(spec, ctx) {
-  const chapters = spec.chapters.map((ch, i) => {
-    const blocks = [{ t: 'chapter', n: i + 1, id: ch.id, title: { text: ch.title, lang: ch.lang } },
-      { t: 'note', text: ui(ch.source) }];
-    for (const b of ch.blocks) {
-      if (b.kind === 'heading') blocks.push({ t: 'h', level: 3, text: { text: b.text, lang: ch.lang } });
-      else blocks.push({ t: 'p', voice: b.voice, text: { text: b.text, lang: ch.lang } });
-    }
-    return { id: ch.id, title: { text: ch.title, lang: ch.lang }, blocks };
-  });
-  return {
-    kind: 'specimen', key: `${spec.id}@${spec.version}`, id: spec.id, version: spec.version,
-    title: { text: spec.title, lang: 'en' }, subtitle: ui(spec.subtitle),
-    stage: { id: '00', name_en: 'Specimen' },
-    authority: { origin: 'informational', normative: 'informational', approval: null, note: null },
-    note: ui(spec.note), path: 'os-site/assets/specimen.json', sha: null, digest: null, chapters, appendix: [], front: true,
-  };
-}
-
 export { KIND };

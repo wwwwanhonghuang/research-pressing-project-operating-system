@@ -154,7 +154,7 @@ function pack(blocks, geo, measurer, startHead = null) {
 
 /**
  * Lay out a document as pages.
- * Books (handbooks, specimen) get front matter, contents, appendix, colophon and
+ * Books (handbooks) get front matter, contents, appendix, colophon and
  * covers; a single definition is just its pages. Spread-only pages (endpapers,
  * blank versos) are omitted in single-page mode.
  */

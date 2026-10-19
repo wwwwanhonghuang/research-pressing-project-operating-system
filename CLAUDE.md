@@ -33,7 +33,7 @@ The project is a **prototype under active, possibly aggressive, revision**. Chal
 | Workflow and stage map | `core/workflows/*.json`, `pipeline/<stage>/stage.json` | project scaffolds |
 | AI-assistance prompts | `pipeline/<stage>/AI_ASSIST/common_prompts/*.md` | — |
 | Template inventory | `templates/catalog.json` | `templates/CATALOG.md` (`make catalog`) |
-| Reading-room data | all of the above, via `script/build_site_data.py` | `os-site/data/*.json` (`make site`) |
+| Web interface data | all of the above, via `script/build_site_data.py` | `os-site/data/*.json` (`make site`); served live by `make os` |
 
 **Schemas.**
 - `content/schemas/` validates templates and instances.
@@ -80,7 +80,8 @@ make stage-0N-handbook    # N = 1..8: compose + two XeLaTeX passes
 make pdf IDS="TPL-…"      # generate + compile selected forms
 make tex | view | sample | all-pdf | catalog | clean
 make site                 # rebuild os-site/data/ after any content change (tests fail if stale)
-make site-serve           # preview the reading room at http://127.0.0.1:8765/
+make os                   # the workspace at http://127.0.0.1:8765/ (script/serve_os.py; records in projects/)
+make site-serve           # the reading room only, served statically
 python3 script/check_release_gate.py tests/fixtures/release_gate/blocked_SYNTHETIC.json
 ```
 
@@ -100,9 +101,13 @@ python3 script/check_release_gate.py tests/fixtures/release_gate/blocked_SYNTHET
 5. Regenerate the affected outputs (`make stage-0N-handbook`, `make pdf IDS=…`). Commit the sources and the regenerated `build/` files together.
 6. Record design decisions in `design/`.
 
-## 6. Reading Room (os-site/)
+## 6. Web Interface (os-site/)
 
-- The site renders only from `os-site/data/`, which `script/build_site_data.py` generates. Never parse TeX or PDF, and never add content to the site that does not come from the data (the specimen is the only exception, and it is labelled).
+- The main page is the project workspace; the reading room (handbooks, definitions, library) is a function reached from it. Keep it that way: work first, reading at hand.
+- Definitions render only from the data bundles that `script/build_site_data.py` composes (`os-site/data/`, or live from `script/serve_os.py`). Never parse TeX or PDF, and never add content that does not come from the data.
+- The server writes project records only, under `projects/<id>/`, in the `script/init_project.py` layout; `tests/test_serve_os.py` checks they pass `validate_repo.py`. It never writes definitions.
+- Never add a path that infers approval or completion from ticked steps, checked criteria or document status (invariant 2). A decision is recorded only with the name of the person who made it.
+- Keep the server local: bind 127.0.0.1, check `Host`, require `Content-Type: application/json` on writes, validate identifiers with fixed patterns, and write atomically. Use the standard library only.
 - The interface is English. Content keeps its own language, and every rendered text carries `lang`. Never machine-translate canonical content into the site.
 - Insert content as text nodes only (`h()`, `inline()` in `assets/js/core/dom.js`); never `innerHTML` with data.
 - Keep the cost discipline: no animation loop at rest; turns change transforms, not repaint-heavy properties.

@@ -299,7 +299,8 @@ def summary(rec: dict, stage_id: str | None) -> dict:
 
 # ---------------------------------------------------------------- build
 
-def build(out_dir: Path) -> dict:
+def compose() -> dict:
+    """Every bundle as bytes, keyed by file name (used by `build` and by the live server)."""
     workflow = read_json(ROOT / 'core/workflows/eight_stage.json')
     catalog = read_json(ROOT / 'templates/catalog.json')
     reg = load_registry()
@@ -497,21 +498,42 @@ def build(out_dir: Path) -> dict:
         'search': search,
     }
 
-    out_dir.mkdir(parents=True, exist_ok=True)
-    written = []
-
-    def write(name, payload):
-        path = out_dir / name
+    def encode(payload):
         # Bytes, not text mode: identical LF output on every platform.
-        path.write_bytes((json.dumps(payload, ensure_ascii=False, separators=(',', ':')) + '\n').encode('utf-8'))
-        written.append(path)
+        return (json.dumps(payload, ensure_ascii=False, separators=(',', ':')) + '\n').encode('utf-8')
 
-    write('site.json', site)
+    files = {'site.json': encode(site)}
     for sid, bundle in bundles.items():
         bundle['source_digest'] = digest
-        write(f'stage-{sid}.json', bundle)
-    write('templates.json', {'schema': 'operations-os-site-templates/1', 'source_digest': digest, 'objects': templates})
-    return {'written': written, 'digest': digest, 'site': site}
+        files[f'stage-{sid}.json'] = encode(bundle)
+    files['templates.json'] = encode({'schema': 'operations-os-site-templates/1', 'source_digest': digest, 'objects': templates})
+    return {'files': files, 'digest': digest, 'site': site}
+
+
+def build(out_dir: Path) -> dict:
+    result = compose()
+    out_dir.mkdir(parents=True, exist_ok=True)
+    written = []
+    for name, data in result['files'].items():
+        path = out_dir / name
+        path.write_bytes(data)
+        written.append(path)
+    return {'written': written, 'digest': result['digest'], 'site': result['site']}
+
+
+SOURCE_DIRS = ('content', 'pipeline', 'templates/catalog.json', 'core/workflows')
+
+
+def source_signature() -> tuple:
+    """Cheap change detector for the live server: names, sizes and mtimes of every source."""
+    sig = []
+    for rel_path in SOURCE_DIRS:
+        base = ROOT / rel_path
+        paths = [base] if base.is_file() else sorted(p for p in base.rglob('*') if p.is_file() and p.suffix in ('.json', '.md'))
+        for path in paths:
+            st = path.stat()
+            sig.append((str(path), st.st_size, st.st_mtime_ns))
+    return tuple(sig)
 
 
 def main() -> int:

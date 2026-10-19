@@ -100,7 +100,7 @@ export function mountReader(view, opts) {
 
   const langSelect = h('select', { class: 'rbar__select', id: 'content-lang', 'aria-label': 'Text language', on: { change: e => setLang(e.target.value) } });
   const paintLangs = () => {
-    // A document with no localizable text (the specimen sets its own languages) has nothing to switch.
+    // A document with no localizable text (every block already carries its own language) has nothing to switch.
     const base = makeContext({ ...opts.ctxBase, pref: lang });
     opts.makeDoc(base);
     langSelect.closest('label')?.toggleAttribute('hidden', base.texts === 0);

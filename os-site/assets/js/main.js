@@ -1,17 +1,21 @@
-// Operations OS Reading Room: entry point.
+// Operations OS: entry point.
 
 import { h } from './core/dom.js';
 import { prefs, debug } from './core/store.js';
 import { start, onRoute } from './core/router.js';
-import { loadSite, loadStage, loadTemplates, loadSpecimen, currentKey, kindLabel } from './core/data.js';
+import { loadSite, loadStage, loadTemplates, currentKey, kindLabel } from './core/data.js';
 import { springEasing } from './physics/spring.js';
 import { readLight } from './physics/light.js';
 import { applyTheme } from './ui/chrome.js';
 import { loadFontSheet } from './core/fonts.js';
 import { bindSearchKeys } from './ui/palette.js';
-import { handbookDoc, objectDoc, specimenDoc } from './render/model.js';
+import { handbookDoc, objectDoc } from './render/model.js';
 import { mountReader } from './reader/reader.js';
-import { atrium } from './views/atrium.js';
+import { projectsView } from './views/projects.js';
+import { projectView } from './views/project.js';
+import { projectStageView } from './views/projstage.js';
+import { taskView } from './views/task.js';
+import { documentView } from './views/document.js';
 import { stageView } from './views/stage.js';
 import { libraryView } from './views/library.js';
 import { provenanceRail } from './views/provenance.js';
@@ -29,28 +33,39 @@ function boot() {
   const spring = springEasing({ stiffness: 230, damping: 19 });
   if (spring) document.documentElement.style.setProperty('--ease-spring', spring.easing);
   bindSearchKeys();
+  addEventListener('beforeunload', () => { try { cleanup?.(); } catch { /* leaving anyway */ } });
   onRoute(show);
   start();
 }
 
+const READING = new Set(['handbook', 'stageDoc', 'libraryDoc']);
+
 async function show(route) {
   const id = ++renderId;
-  cleanup?.(); cleanup = null;
+  try { await cleanup?.(); } catch { /* a failed flush is reported by the view */ }
+  cleanup = null;
   const view = h('div', { class: 'view' });
   app.replaceChildren(view);
-  document.body.classList.toggle('is-reading', ['handbook', 'stageDoc', 'libraryDoc', 'specimen'].includes(route.name));
+  document.body.classList.toggle('is-reading', READING.has(route.name));
   window.scrollTo(0, 0);
+  const [a, b, c] = route.params;
+  const from = route.query.from && route.query.from.startsWith('/') ? route.query.from : null;
   try {
+    let result;
     switch (route.name) {
-      case 'atrium': document.title = 'Operations OS Reading Room'; await atrium(view); break;
-      case 'stage': await stageView(view, route.params[0]); break;
-      case 'library': await libraryView(view, route.params[0] || null); break;
-      case 'handbook': cleanup = await openHandbook(view, route.params[0]); break;
-      case 'stageDoc': cleanup = await openStageDoc(view, route.params[0], route.params[1]); break;
-      case 'libraryDoc': cleanup = await openTemplate(view, route.params[0]); break;
-      case 'specimen': cleanup = await openSpecimen(view); break;
+      case 'projects': result = await projectsView(view); break;
+      case 'project': result = await projectView(view, a); break;
+      case 'projectStage': result = await projectStageView(view, a, b); break;
+      case 'task': result = await taskView(view, a, b, c); break;
+      case 'document': result = await documentView(view, a, b); break;
+      case 'library': result = await libraryView(view, a || null); break;
+      case 'stage': result = await stageView(view, a, from); break;
+      case 'handbook': result = await openHandbook(view, a, from); break;
+      case 'stageDoc': result = await openStageDoc(view, a, b, from); break;
+      case 'libraryDoc': result = await openTemplate(view, a, from); break;
       default: failure(view, 'Nothing is filed here', `There is no page at “${route.path}”.`);
     }
+    if (id === renderId && typeof result === 'function') cleanup = result;
   } catch (err) {
     if (id !== renderId) return;
     console.error(err);
@@ -62,23 +77,25 @@ function failure(view, title, message) {
   view.replaceChildren(h('div', { class: 'state' },
     h('p', { class: 'state__title' }, title),
     h('p', null, message),
-    h('p', null, h('a', { href: '#/', class: 'button button--quiet' }, 'Back to the shelf'))));
+    h('p', null, h('a', { href: '#/', class: 'button button--quiet' }, 'Back to projects'))));
 }
 
-async function openHandbook(view, sid) {
+const backTo = (from, fallback) => (from ? { href: from, label: 'Back' } : fallback);
+
+async function openHandbook(view, sid, from) {
   const bundle = await loadStage(sid);
   document.title = `Stage ${sid} handbook · Operations OS`;
   return mountReader(view, {
     makeDoc: ctx => handbookDoc(bundle, ctx),
     ctxBase: { objects: bundle.objects, stage: sid },
-    back: { href: `/stage/${sid}`, label: `Stage ${sid}` },
+    back: backTo(from, { href: `/stage/${sid}`, label: `Stage ${sid}` }),
     kindLabel: 'Handbook',
     storeKey: 'mode.handbook',
     defaultMode: 'book',
   });
 }
 
-async function openStageDoc(view, sid, ref) {
+async function openStageDoc(view, sid, ref, from) {
   const [site, bundle] = await Promise.all([loadSite(), loadStage(sid)]);
   let objects = bundle.objects;
   let key = currentKey(objects, ref);
@@ -93,7 +110,7 @@ async function openStageDoc(view, sid, ref) {
   return mountReader(view, {
     makeDoc: ctx => objectDoc(rec, ctx, bundle.stage),
     ctxBase: { objects, stage: sid },
-    back: { href: `/stage/${sid}`, label: `Stage ${sid}` },
+    back: backTo(from, { href: `/stage/${sid}`, label: `Stage ${sid}` }),
     kindLabel: kindLabel(rec),
     storeKey: 'mode.object',
     defaultMode: 'sheet',
@@ -101,7 +118,7 @@ async function openStageDoc(view, sid, ref) {
   });
 }
 
-async function openTemplate(view, ref) {
+async function openTemplate(view, ref, from) {
   const [site, store] = await Promise.all([loadSite(), loadTemplates()]);
   const key = currentKey(store.objects, ref);
   const rec = store.objects[key];
@@ -111,24 +128,11 @@ async function openTemplate(view, ref) {
   return mountReader(view, {
     makeDoc: ctx => objectDoc(rec, ctx, { id: entry?.stages?.[0] ?? '00' }),
     ctxBase: { objects: store.objects, stage: null },
-    back: { href: entry ? `/library/${entry.group}` : '/library', label: 'Catalogue' },
+    back: backTo(from, { href: entry ? `/library/${entry.group}` : '/library', label: 'Library' }),
     kindLabel: kindLabel(rec),
     storeKey: 'mode.object',
     defaultMode: 'sheet',
     rail: () => provenanceRail(rec, { site, objects: store.objects }),
-  });
-}
-
-async function openSpecimen(view) {
-  const spec = await loadSpecimen();
-  document.title = 'Typesetting specimen · Operations OS';
-  return mountReader(view, {
-    makeDoc: ctx => specimenDoc(spec, ctx),
-    ctxBase: { objects: {}, stage: null },
-    back: { href: '/', label: 'Shelf' },
-    kindLabel: 'Specimen',
-    storeKey: 'mode.specimen',
-    defaultMode: 'book',
   });
 }
 

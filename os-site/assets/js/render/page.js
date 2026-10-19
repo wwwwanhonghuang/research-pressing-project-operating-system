@@ -52,7 +52,7 @@ export function renderPage(page, ctx) {
         h('div', { class: 'cover__frame' },
           h('div', { class: 'cover__top' },
             h('span', { class: 'cover__series' }, 'Operations OS'),
-            h('span', { class: 'cover__series' }, sid === '00' ? 'Specimen' : `Stage ${sid} of 8`)),
+            h('span', { class: 'cover__series' }, sid === '00' ? 'Library' : `Stage ${sid} of 8`)),
           h('div', { class: 'cover__n' }, sid === '00' ? 'Aa' : sid),
           txt('h1', doc.title, 'cover__title'),
           txt('div', doc.subtitle, 'cover__sub'),
@@ -77,7 +77,7 @@ export function renderPage(page, ctx) {
   if (k === 'title') {
     const el = frame(page, geo);
     el.append(h('div', { class: 'tp' },
-      h('div', { class: 'tp__eyebrow' }, sid === '00' ? 'Operations OS · Typesetting specimen' : `Operations OS · Stage ${sid}`),
+      h('div', { class: 'tp__eyebrow' }, `Operations OS · Stage ${sid}`),
       txt('h1', doc.title, 'tp__title'),
       txt('div', doc.subtitle, 'tp__sub'),
       h('div', { class: 'tp__rule', 'aria-hidden': 'true' }),

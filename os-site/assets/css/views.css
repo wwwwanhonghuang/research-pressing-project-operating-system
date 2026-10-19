@@ -9,43 +9,11 @@
 .section-head__n { font-family: var(--font-mono); font-size: var(--step--2); color: var(--desk-ink-3); letter-spacing: 0.04em; }
 .section-head p { margin: 0; color: var(--desk-ink-2); max-width: 40rem; }
 
-/* ---------------------------------------------------------------- atrium */
+/* ---------------------------------------------------------------- the shelf (library) */
 
-.atrium { display: flex; flex-direction: column; gap: clamp(3.5rem, 7vw, 6rem); padding-bottom: 2rem; }
-.hero {
-  padding-top: clamp(2.6rem, 6vw, 5rem);
-  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2rem clamp(2rem, 5vw, 4.5rem); align-items: end;
-}
-.hero__text { display: grid; gap: 1.4rem; min-width: 0; }
-@media (max-width: 1120px) { .hero { grid-template-columns: minmax(0, 1fr); } }
-.hero__title {
-  margin: 0; font-family: var(--font-display); font-weight: 300;
-  font-size: clamp(3rem, 8.2vw, 6.1rem); line-height: 0.98; letter-spacing: -0.015em; text-wrap: balance;
-}
-.hero__title em { font-style: italic; font-weight: 300; color: var(--desk-accent); }
-.hero__lead {
-  margin: 0; max-width: 39rem; font-family: var(--font-latin); font-size: clamp(1.12rem, 1.6vw, 1.3rem);
-  line-height: 1.55; color: var(--desk-ink-2); hyphens: auto;
-}
-.hero__stats {
-  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 0.8rem 0 0; max-width: 46rem;
-  border-top: 1px solid var(--desk-rule);
-}
-.stat { padding: 0.9rem 1rem 0 0; display: flex; flex-direction: column-reverse; gap: 0.1rem; }
-.stat + .stat { padding-left: 1rem; border-left: 1px solid var(--desk-rule); }
-.stat dd { margin: 0; font-family: var(--font-display); font-weight: 300; font-size: clamp(1.9rem, 3.4vw, 2.6rem); line-height: 1; font-variant-numeric: lining-nums tabular-nums; }
-.stat dt { font-family: var(--font-mono); font-size: var(--step--2); color: var(--desk-ink-3); letter-spacing: 0.05em; }
-@media (max-width: 560px) {
-  .hero__stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .stat:nth-child(3) { border-left: 0; padding-left: 0; }
-}
-
-/* The shelf. */
 .shelf { position: relative; margin: 0; min-width: 0; }
 .shelf__scroll { overflow-x: auto; overflow-y: hidden; scrollbar-width: none; padding-top: 2.6rem; }
 .shelf__books { display: flex; align-items: flex-end; gap: 6px; width: max-content; margin-inline: auto; padding-inline: 1.4rem; }
-.shelf__caption { display: grid; gap: 0.3rem; margin-top: 1rem; max-width: 30rem; font-size: var(--step--1); color: var(--desk-ink-2); }
-.shelf__label { font-family: var(--font-display); font-size: 1.3rem; color: var(--desk-ink); }
 .shelf__ledge {
   position: relative; height: 16px; margin-top: -1px; z-index: 0;
   background: linear-gradient(var(--desk-raised), var(--desk-sunk));
@@ -83,80 +51,6 @@
 }
 .spine__title.is-long { font-size: 12.5px; letter-spacing: 0.06em; margin-top: 22px; }
 .spine__count { position: absolute; bottom: 16px; font-family: var(--font-mono); font-size: 9.5px; opacity: 0.75; }
-
-/* Contents. */
-.contents__list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--desk-rule); }
-.crow {
-  display: grid; grid-template-columns: 3.3rem 0.65rem minmax(0, 1.15fr) minmax(0, 1fr) minmax(0, auto);
-  gap: 0.4rem 1.2rem; align-items: baseline;
-  padding: 1.15rem 0.6rem; border-bottom: 1px solid var(--desk-rule);
-  transition: background var(--t-quick);
-}
-.crow:hover, .crow.is-linked { background: color-mix(in srgb, var(--desk-raised) 75%, transparent); }
-.crow__n { font-family: var(--font-display); font-weight: 300; font-size: 2.1rem; line-height: 0.9; color: var(--desk-accent); font-variant-numeric: lining-nums; transition: transform 420ms var(--ease-spring); }
-.crow:hover .crow__n, .crow.is-linked .crow__n { transform: translateX(4px); }
-.crow__swatch { width: 0.65rem; height: 0.65rem; border-radius: 1.5px; align-self: center; box-shadow: inset 0 0 0 0.5px rgb(0 0 0 / 0.2); }
-.crow__names { display: flex; flex-direction: column; gap: 0.1rem; min-width: 0; }
-.crow__ja { font-size: 1.2rem; font-weight: 600; letter-spacing: 0.04em; }
-.crow__en { font-family: var(--font-latin); font-style: italic; color: var(--desk-ink-2); font-size: 1.02rem; }
-.crow__obj { color: var(--desk-ink-2); min-width: 0; }
-.crow__counts { display: flex; flex-direction: column; align-items: flex-end; gap: 0.05rem; font-family: var(--font-mono); font-size: var(--step--2); color: var(--desk-ink-3); white-space: nowrap; }
-.crow__counts b { font-weight: 500; color: var(--desk-ink-2); }
-@media (max-width: 860px) {
-  .crow { grid-template-columns: 2.6rem 0.65rem minmax(0, 1fr); }
-  .crow__obj, .crow__counts { grid-column: 3; }
-  .crow__counts { flex-direction: row; flex-wrap: wrap; gap: 0 0.9rem; align-items: baseline; }
-}
-
-/* Card catalogue drawers. */
-.drawers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
-@media (max-width: 860px) { .drawers { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-.drawer { --lift: 1; display: block; border-radius: 3px; }
-.drawer__face {
-  position: relative; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;
-  padding: 1.1rem 1rem 0.9rem;
-  border-radius: 3px;
-  background: linear-gradient(180deg, var(--desk-raised), color-mix(in srgb, var(--desk-raised) 70%, var(--desk-sunk)));
-  border: 1px solid var(--desk-rule);
-  box-shadow:
-    inset 0 1px 0 color-mix(in srgb, var(--desk-raised) 50%, white),
-    inset 0 -2px 0 rgb(var(--shadow-rgb) / 0.06),
-    0 calc(var(--lift) * 2px) calc(var(--lift) * 5px) -2px rgb(var(--shadow-rgb) / calc(var(--shadow-alpha) * 1.6));
-  transition: --lift 520ms var(--ease-spring), transform 520ms var(--ease-spring);
-}
-.drawer:hover .drawer__face, .drawer:focus-visible .drawer__face { --lift: 5; transform: translateY(2px) scale(1.012); }
-.drawer__holder {
-  padding: 3px; border-radius: 2px;
-  border: 1px solid color-mix(in srgb, var(--desk-ink-3) 70%, transparent);
-  box-shadow: inset 0 1px 1px rgb(var(--shadow-rgb) / 0.12);
-}
-.drawer__card { display: flex; flex-direction: column; align-items: center; padding: 0.3rem 1.1rem 0.35rem; background: var(--paper); color: var(--paper-ink); min-width: 9.5rem; }
-.drawer__name { font-family: var(--font-latin); font-size: 1.05rem; font-variant: small-caps; letter-spacing: 0.06em; line-height: 1.2; }
-.drawer__sub { font-size: 10.5px; color: var(--paper-ink-3); text-align: center; line-height: 1.3; }
-.drawer__pull {
-  width: 3.2rem; height: 0.7rem; border-radius: 0 0 1rem 1rem;
-  background: linear-gradient(var(--desk-sunk), var(--desk-raised));
-  border: 1px solid var(--desk-rule); border-top: 0;
-  box-shadow: inset 0 2px 3px rgb(var(--shadow-rgb) / 0.18);
-}
-.drawer__count { font-family: var(--font-mono); font-size: var(--step--2); color: var(--desk-ink-3); }
-
-/* House rules and the specimen. */
-.lower { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; }
-@media (max-width: 860px) { .lower { grid-template-columns: 1fr; } }
-.rules { margin: 0; display: grid; border-top: 1px solid var(--desk-rule); }
-.rule { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 0.2rem 1.4rem; padding: 0.75rem 0; border-bottom: 1px solid var(--desk-rule); }
-.rule dt { font-family: var(--font-mono); font-size: var(--step--2); color: var(--desk-ink-3); overflow-wrap: anywhere; padding-top: 0.2rem; }
-.rule dd { margin: 0; }
-@media (max-width: 560px) { .rule { grid-template-columns: 1fr; } }
-.specimen-card { --lift: 3; display: flex; flex-direction: column; gap: 0.7rem; padding: 1.6rem 1.6rem 1.4rem; border-radius: 2px; }
-.specimen-card:hover { --lift: 9; transform: translateY(-2px); }
-.specimen-card__glyphs { display: flex; gap: 1.1rem; align-items: baseline; font-size: 2.6rem; line-height: 1; color: var(--paper-ink); }
-.specimen-card__glyphs [lang="en"] { font-family: var(--font-display); font-style: italic; font-weight: 400; }
-.specimen-card__glyphs [lang="fr"] { font-family: var(--font-latin); font-size: 0.7em; }
-.specimen-card__title { font-family: var(--font-display); font-size: var(--step-2); font-weight: 500; }
-.specimen-card__text { color: var(--paper-ink-2); font-size: var(--step--1); }
-.specimen-card__go { font-family: var(--font-mono); font-size: var(--step--2); color: var(--paper-accent); letter-spacing: 0.04em; }
 
 /* ---------------------------------------------------------------- stage room */
 

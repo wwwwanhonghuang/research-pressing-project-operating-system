@@ -171,6 +171,12 @@ The same stage appears as `"01"`, `stage_01` and `1_Project_Design_and_Edtorial_
 **4.14 The execution layer is a stub.**
 `init_project.py` creates folders and `stage.json`. Nothing instantiates a TaskRun, ChecklistRun or ReviewDecision, although v1 schemas exist for them. For day-to-day use, the layer that matters most is the thinnest.
 
+*Update, 2026-10-20:* the web interface's main page is now a project workspace, served locally by `script/serve_os.py` (standard library only). It records stage status and notes, task runs, document instances and review decisions as JSON files in the `init_project.py` layout, and the records pass `validate_repo.py`. A decision requires the name of the person who made it; nothing is inferred from ticked steps or document status. Gaps remain:
+- The records are not yet validated against the v1 `task_run`, `review_decision` and `document_instance` schemas.
+- Checklist runs are kept inside document instances, not as `checklist_run` records.
+- Task dependencies and gate computation are not modelled.
+- Records live in the git-ignored `projects/` or in a directory given with `--projects-dir`, as R8 proposes.
+
 **4.15 Language is hard-wired.**
 Field names such as `title.ja`, `title_ja`, `label_ja` and `criterion_ja` mean that parallel English (or other) renditions would need schema changes.
 

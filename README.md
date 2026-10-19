@@ -202,11 +202,11 @@ Print output is monochrome, set in Mincho type on A4, with plain numbered headin
 
 | Principle | State in v18 |
 |---|---|
-| 3.1 Single source of truth | **Print and web: done.** 139 forms and 8 handbooks are generated as PDF, and the reading room (`os-site/`) sets every definition in the browser from the same JSON. Audio and video renderers are planned. |
-| 3.2 Separation of definitions, records, renditions | **Definitions and renditions: done.** Record schemas exist (task runs, checklist runs, review decisions), but the project execution layer is still a scaffold. |
+| 3.1 Single source of truth | **Print and web: done.** 139 forms and 8 handbooks are generated as PDF, and the web interface (`os-site/`) sets every definition in the browser from the same JSON. Audio and video renderers are planned. |
+| 3.2 Separation of definitions, records, renditions | **Definitions and renditions: done. Records: first working version.** The web workspace keeps stage status, task runs, document instances and review decisions as JSON files under `projects/`, and they pass the repository validator. Checklist runs are not yet separate records. |
 | 3.3 Immutable versioning | **Done:** pinned references, fail-closed builds, SHA-256 manifests, archived versions. Historical versions can be looked up only for checklists so far. |
 | 3.4 Explicit authority | **Done** on every object. Clause-level authority for legal-style documents is planned. |
-| 3.5 Human accountability | **Done.** The Stage 6–8 inspectors can never authorize anything, and tests enforce this. |
+| 3.5 Human accountability | **Done.** The Stage 6–8 inspectors can never authorize anything, and tests enforce this. The workspace records a decision only with the name of the person who made it, and derives no decision from ticked steps or document status. |
 | 3.6 Bounded AI assistance | **Partial.** There is one prompt per task (78 in all). Structured AI definitions and generated per-stage agent files are planned. |
 | 3.7 Epistemic differentiation | **Built in** to the standards and checklists of all eight stages (first drafts). |
 | 3.8 Composition by reference | **Done:** one recipe per stage. Sharing one standard across several stages is planned; entries are currently stage-local. |
@@ -279,25 +279,35 @@ core/        workflow presets, canonical object schemas, accountability policies
 content/     canonical definitions: templates, per-stage operational objects, version archives
 pipeline/    per-stage descriptors, AI-assistance prompts, compiled document copies
 templates/   template catalog and the two print styles
-script/      validators, renderers, compiler, project initializer, documentary inspectors
+script/      validators, renderers, compiler, project initializer, documentary inspectors, workspace server
 tests/       regression tests and synthetic fixtures
 build/       generated TeX, PDF, JSON views and provenance manifests (never edit)
 design/      design notes and decisions; start with DESIGN_REVIEW_v18.md
 projects/    project instances (git-ignored; may contain confidential material)
-os-site/     the reading room: web presentation rendered from the JSON (see os-site/README.md)
+os-site/     the web interface: project workspace and reading room, rendered from the JSON (see os-site/README.md)
 ```
 
-## 9. Reading Room: Web Presentation
+## 9. Web Interface: Project Workspace and Reading Room
 
-`os-site/` renders every stage, handbook, definition, form, checklist and AI prompt in the browser, directly from the JSON (via presentation-neutral bundles built by `script/build_site_data.py`). No PDF is involved.
+`os-site/` is the browser interface. Everything it shows is rendered directly from the JSON, via presentation-neutral bundles built by `script/build_site_data.py`; no PDF is involved. Its main page is a project workspace, because the purpose of the system is the work. Reading the handbooks is one function of it, always at hand.
 
-- **A reading room.** The interface recedes into a quiet desk; documents are lit paper objects on it. One light vector, a design token, drives every shadow, the shading of book spines and the curl of a turning page. The dark theme is lamplight: the room darkens and the paper warms.
+**The workspace** (`make os`, served locally by `script/serve_os.py`):
+
+- **Projects and stages.** A project is created from a short form and opens on its eight stages: each stage's status, task progress and documents at a glance. A stage holds its tasks, notes and review gate.
+- **A task assistant.** Each task shows its procedure as steps to tick, its acceptance criteria as a self-check, its inputs and outputs, and its AI-assistance prompt, ready to copy with the task's context. The forms and checklists the task produces are started from the task.
+- **Documents on paper.** A form or checklist is filled in on a paper sheet set in Mincho: fields, tables, choices, and checklist items with evidence references, saved as you type. Marking a document final is its author's statement; approval is a separate decision.
+- **Records, not judgements.** Every record is a JSON file under `projects/<id>/`, in the layout of `script/init_project.py`. A decision requires the name of the person who made it. Nothing infers completion or approval from ticked steps or document status.
+- **Local by design.** The server binds to 127.0.0.1, refuses other host names, accepts writes only as JSON, validates every identifier and writes atomically. It has no accounts or access control.
+
+**The reading room** (the Library, and the handbook and definition links on every stage and task):
+
+- **A quiet desk.** The interface recedes into a quiet desk; documents are lit paper objects on it. One light vector, a design token, drives every shadow, the shading of book spines and the curl of a turning page. The dark theme is lamplight: the room darkens and the paper warms.
 - **Books turned by hand.** A handbook opens as a book. The fold of a turning page is the perpendicular bisector between the grabbed point and the hand, kept inextensible at the binding; springs settle it, and a click turns it along an eased arc. Only transforms change per frame, and nothing runs at rest.
 - **Structure carries information.** On the shelf, a spine's thickness is its stage's number of definitions, and its indigo deepens stage by stage. Identifiers, pinned versions and SHA-256 hashes appear as marginalia, and each title page bears the authority its source declares.
 - **Two ways to read.** *Book* for reading through; *Sheet* for working, with an outline and a provenance rail. Both keep your place across modes, type sizes and languages.
-- **Four content languages.** The interface is English; text is set in Japanese, Chinese, English or French, each with its own typeface and line-breaking rules. A typesetting specimen demonstrates all four.
+- **Four content languages.** The interface is English; text is set in Japanese, Chinese, English or French, each with its own typeface and line-breaking rules.
 
-Design, rendering and physics are described in [os-site/README.md](os-site/README.md).
+Design, records, the API, rendering and physics are described in [os-site/README.md](os-site/README.md).
 
 ## 10. Installation and Usage
 
@@ -308,12 +318,13 @@ Design, rendering and physics are described in [os-site/README.md](os-site/READM
 
 ```bash
 pip install jsonschema
-make test                                  # validators + 77 regression tests
+make test                                  # validators + 92 regression tests
 make stage-01-handbook                     # … through stage-08-handbook: JSON → TeX → PDF
 make pdf IDS="TPL-DOC-030 TPL-CHK-002"     # generate and compile selected forms
 make sample                                # eight representative forms
 make view                                  # presentation-neutral JSON views
-make site-serve                            # the reading room at http://127.0.0.1:8765/
+make os                                    # the workspace at http://127.0.0.1:8765/ (records in projects/)
+make site-serve                            # the reading room only, as a static site
 ```
 
 **Windows:** run the toolchain inside WSL. If your WSL `python3` lacks `jsonschema`, pass one that has it: `make test PYTHON=/usr/bin/python3`.
@@ -330,9 +341,9 @@ python3 script/init_project.py example-editorial --title '編集企画例'
 ## 11. Current Limitations and Release History
 
 - **Content maturity:** all content is a first draft. It is structurally complete but substantively unreviewed, and needs domain, editorial, ethical and case-specific legal review before any real use.
-- **Execution layer:** project execution is a scaffold.
-- **Security:** there is no access control, identity, signature or secure storage. Do not put real personal, unpublished, interview or embargoed material in this repository.
-- **Web:** the reading room is read-only; project management, editing and audio or video renditions are deferred.
+- **Execution layer:** the web workspace records stages, task runs, documents and decisions. Checklist runs as separate records, task dependencies and documents pinned to archived template versions are not yet supported.
+- **Security:** there is no access control, identity, signature or secure storage. The workspace server is for one person's machine; never expose it on a network. Do not put real personal, unpublished, interview or embargoed material in this repository.
+- **Web:** the interface never edits definitions; audio and video renditions are deferred.
 
 | Version | Milestone |
 |---|---|
@@ -352,8 +363,8 @@ Contributors and AI agents should read [CLAUDE.md](CLAUDE.md) before making chan
 
 The repository is licensed in two parts, by content type:
 
-- **Code: [MIT](LICENSE).** Covers `script/`, `tests/` (including fixtures), `Makefile`, `templates/tex/*.sty`, every `*.schema.json`, and the reading room's code (`os-site/index.html`, `os-site/assets/css/`, `os-site/assets/js/`).
-- **Documents and content: [CC BY-NC 4.0](LICENSE-CC-BY-NC-4.0.txt).** Covers everything else, including `content/`, `pipeline/`, `core/workflows/`, `design/`, `docs/`, `templates/catalog.json`, the AI-assistance prompts, the generated TeX, PDF and JSON under `build/`, and the generated reading-room data in `os-site/data/`. The passages in `os-site/assets/specimen.json` are in the public domain.
+- **Code: [MIT](LICENSE).** Covers `script/`, `tests/` (including fixtures), `Makefile`, `templates/tex/*.sty`, every `*.schema.json`, and the web interface's code (`os-site/index.html`, `os-site/assets/css/`, `os-site/assets/js/`).
+- **Documents and content: [CC BY-NC 4.0](LICENSE-CC-BY-NC-4.0.txt).** Covers everything else, including `content/`, `pipeline/`, `core/workflows/`, `design/`, `docs/`, `templates/catalog.json`, the AI-assistance prompts, the generated TeX, PDF and JSON under `build/`, and the generated site data in `os-site/data/`.
 
 External works cited by URL are not redistributed here, and remain under their owners' terms.
 

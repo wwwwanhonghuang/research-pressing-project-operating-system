@@ -16,7 +16,6 @@ function getJSON(url) {
 export const loadSite = () => getJSON('data/site.json');
 export const loadStage = sid => getJSON(`data/stage-${sid}.json`);
 export const loadTemplates = () => getJSON('data/templates.json');
-export const loadSpecimen = () => getJSON('assets/specimen.json');
 
 /** The key of the current version of an object ID inside an objects map. */
 export function currentKey(objects, id) {
@@ -47,7 +46,6 @@ export const KIND = {
   checklist_definition: { label: 'Checklist', plural: 'Checklists', code: 'CHK' },
   ai_assist: { label: 'AI assistance', plural: 'AI assistance', code: 'AIA' },
   publication_recipe: { label: 'Handbook', plural: 'Handbooks', code: 'PUB' },
-  specimen: { label: 'Specimen', plural: 'Specimens', code: 'SPC' },
 };
 
 /** Human label for an object's kind (knowledge entries split into standards and ethics). */

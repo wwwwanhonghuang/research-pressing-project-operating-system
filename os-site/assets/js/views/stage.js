@@ -2,10 +2,10 @@
 
 import { h, icons, inline } from '../core/dom.js';
 import { loadSite, loadStage, dye, dyeInk, kindLabel } from '../core/data.js';
-import { topbar, footer } from '../ui/chrome.js';
+import { topbar } from '../ui/chrome.js';
 import { sheetCard } from './cards.js';
 
-export async function stageView(view, sid) {
+export async function stageView(view, sid, from = null) {
   const [site, bundle] = await Promise.all([loadSite(), loadStage(sid)]);
   const st = bundle.stage;
   const summary = site.stages.find(s => s.id === sid);
@@ -96,16 +96,16 @@ export async function stageView(view, sid) {
   const shared = keys => keys.filter(k => groupOf(k) !== `stage_${sid}`);
 
   const sections = [
-    ['tasks', 'Tasks', c.tasks.length, 'In the order the stage descriptor lists them. Each task links its procedure, forms, checklists, standards, ethics guidance and AI prompt.', tasks],
-    ['standards', 'Standards', c.standards.length, 'Reusable practice for this stage, with the public sources each one consulted.', grid(c.standards)],
-    ['ethics', 'Ethics guidance', c.ethics.length, 'The judgments that need care, and why.', grid(c.ethics)],
+    ['tasks', 'Tasks', c.tasks.length, null, tasks],
+    ['standards', 'Standards', c.standards.length, null, grid(c.standards)],
+    ['ethics', 'Ethics guidance', c.ethics.length, null, grid(c.ethics)],
     ['forms', 'Forms', c.forms.length, null, h('div', null,
       own(c.forms).length ? h('h3', { class: 'subhead' }, `Specific to stage ${sid}`) : null, own(c.forms).length ? grid(own(c.forms)) : null,
       h('h3', { class: 'subhead' }, 'Shared with other stages'), grid(shared(c.forms)))],
-    ['checklists', 'Checklists', c.checklists.length, 'Definitions only. A completed checklist records an observation and never stands in for an approval.', h('div', null,
+    ['checklists', 'Checklists', c.checklists.length, null, h('div', null,
       own(c.checklists).length ? h('h3', { class: 'subhead' }, `Specific to stage ${sid}`) : null, own(c.checklists).length ? grid(own(c.checklists)) : null,
       shared(c.checklists).length ? h('h3', { class: 'subhead' }, 'Shared with other stages') : null, shared(c.checklists).length ? grid(shared(c.checklists)) : null)],
-    ['ai', 'AI assistance', c.prompts.length, 'One prompt per task, for drafting support. A named person checks every output.', grid(c.prompts, { index: true })],
+    ['ai', 'AI assistance', c.prompts.length, null, grid(c.prompts, { index: true })],
   ];
 
   const tabs = h('nav', { class: 'stage-tabs', 'aria-label': 'On this page' }, sections.map(([id, label, n]) =>
@@ -117,7 +117,8 @@ export async function stageView(view, sid) {
       h('div', { class: 'section-head' }, h('h2', { id: `${id}-h` }, label, h('span', { class: 'section-head__n' }, String(n))), lead ? h('p', null, lead) : null),
       content)));
 
-  view.append(topbar('stage'), head, h('div', { class: 'stage-body wrap' }, side, main), footer(site));
+  const back = from ? h('div', { class: 'wrap' }, h('a', { class: 'backlink', href: `#${from}` }, icons.arrowLeft(), 'Back to the project')) : null;
+  view.append(topbar('library'), back, head, h('div', { class: 'stage-body wrap' }, side, main));
   document.title = `Stage ${sid} · ${st.name_en} · Operations OS`;
   return summary;
 }

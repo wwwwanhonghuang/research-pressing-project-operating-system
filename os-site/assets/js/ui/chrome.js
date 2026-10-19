@@ -48,22 +48,13 @@ export function topbar(active) {
   const link = (href, label, key) => h('a', { href, 'aria-current': active === key ? 'page' : null }, label);
   return h('header', { class: 'topbar' },
     h('div', { class: 'wrap topbar__inner' },
-      h('a', { class: 'brand', href: '#/', 'aria-label': 'Operations OS, Reading Room: home' },
+      h('a', { class: 'brand', href: '#/', 'aria-label': 'Operations OS: projects' },
         h('span', { class: 'brand__mark' }, icons.mark()),
-        h('span', { class: 'brand__name' }, 'Operations OS'),
-        h('span', { class: 'brand__room' }, 'Reading Room')),
+        h('span', { class: 'brand__name' }, 'Operations OS')),
       h('nav', { class: 'topnav', 'aria-label': 'Sections' },
-        link('#/', 'Shelf', 'atrium'),
-        link('#/library', 'Forms & checklists', 'library'),
-        link('#/specimen', 'Specimen', 'specimen')),
+        link('#/', 'Projects', 'projects'),
+        link('#/library', 'Library', 'library')),
       h('div', { class: 'topbar__spacer' }),
       searchButton(),
       themeButton()));
-}
-
-export function footer(site) {
-  return h('footer', { class: 'footer' },
-    h('div', { class: 'wrap footer__inner' },
-      h('span', null, 'Operations OS · an independent prototype. Every document here is a first draft; none is institutionally approved.'),
-      h('span', { class: 'mono' }, site ? `workflow ${site.workflow.id} v${site.workflow.version} · source digest ${site.source_digest.slice(0, 12)}` : '')));
 }

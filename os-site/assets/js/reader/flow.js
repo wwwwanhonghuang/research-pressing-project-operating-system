@@ -17,7 +17,7 @@ export function mountFlow(host, doc, { rail = null, startBid = null } = {}) {
 
   if (doc.front) {
     body.append(h('header', { class: 'sheet__head' },
-      h('div', { class: 'sheet__eyebrow' }, doc.kind === 'specimen' ? 'Typesetting specimen' : `Stage ${doc.stage.id} handbook`),
+      h('div', { class: 'sheet__eyebrow' }, `Stage ${doc.stage.id} handbook`),
       txt('h1', doc.title, 'sheet__title'),
       txt('p', doc.subtitle, 'sheet__sub'),
       h('div', { class: 'sheet__meta' },

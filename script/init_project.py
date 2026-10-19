@@ -17,7 +17,7 @@ def txt_write(path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(data.strip()+'\n', encoding='utf-8')
 
-def create(project_id, title, workflow_file='eight_stage.json'):
+def create(project_id, title, workflow_file='eight_stage.json', projects_dir=None):
     if not re.fullmatch(r'[a-z0-9][a-z0-9_-]{0,63}', project_id):
         raise ValueError('Project ID must be a 1–64 character lowercase slug')
     if not title.strip():
@@ -32,7 +32,7 @@ def create(project_id, title, workflow_file='eight_stage.json'):
     for s in stages:
         if s.get('directory') and not (ROOT/'pipeline'/s['directory']).is_dir():
             raise RuntimeError(f'Missing stage source: {s["directory"]}')
-    dest = ROOT/'projects'/project_id
+    dest = Path(projects_dir or ROOT/'projects')/project_id
     if dest.exists():
         raise FileExistsError(f'Project exists; refusing overwrite: {dest}')
     dest.mkdir(parents=True)

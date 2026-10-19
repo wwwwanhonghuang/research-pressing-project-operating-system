@@ -4,7 +4,7 @@ PYTHON ?= python3
 IDS ?=
 SAMPLE_IDS = TPL-DOC-001 TPL-DOC-025 TPL-DOC-030 TPL-DOC-046 TPL-DOC-072 TPL-CHK-002 TPL-CHK-035 TPL-CHK-043
 
-.PHONY: help validate tex pdf sample all-pdf view test clean catalog project stage-01-handbook stage-01-tex site site-serve
+.PHONY: help validate tex pdf sample all-pdf view test clean catalog project stage-01-handbook stage-01-tex site site-serve os
 help:
 	@echo 'make validate  - validate all reusable template definitions'
 	@echo 'make tex       - generate TeX for all 139 templates (IDS=... for a subset)'
@@ -16,8 +16,9 @@ help:
 	@echo 'make view      - export JSON client-neutral views for all templates'
 	@echo 'make test      - run validation and automated regression tests'
 	@echo 'make clean     - delete generated intermediate files'
-	@echo 'make site      - rebuild the reading-room data bundles in os-site/data/'
-	@echo 'make site-serve - rebuild and serve the reading room at http://127.0.0.1:8765/'
+	@echo 'make os        - run the workspace (projects, tasks, documents, library) at http://127.0.0.1:8765/'
+	@echo 'make site      - rebuild the static data bundles in os-site/data/'
+	@echo 'make site-serve - serve the library statically (no projects) at http://127.0.0.1:8765/'
 validate:
 	$(PYTHON) script/validate_repo.py
 	$(PYTHON) script/validate_template_catalog.py
@@ -116,9 +117,14 @@ stage-08-forms:
 stage-08-inspect-demo:
 	$(PYTHON) script/inspect_stage8_case.py tests/fixtures/stage8/blocked_SYNTHETIC.json
 
-# Reading room (os-site/): presentation-neutral data bundles and a local preview.
+# Workspace (os-site/ + script/serve_os.py). `make os` serves definitions live from the
+# canonical JSON and keeps project records as files in projects/ (git-ignored).
+os:
+	$(PYTHON) script/serve_os.py
+
+# Static bundles for hosting the library without the server.
 site:
 	$(PYTHON) script/build_site_data.py
 site-serve: site
-	@echo 'Reading room: http://127.0.0.1:8765/'
+	@echo 'Library (static, no projects): http://127.0.0.1:8765/'
 	$(PYTHON) -m http.server 8765 --bind 127.0.0.1 --directory os-site
