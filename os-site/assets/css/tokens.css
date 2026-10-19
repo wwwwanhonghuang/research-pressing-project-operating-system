@@ -1,0 +1,153 @@
+/* Operations OS Reading Room: design tokens.
+   Layout concept: a quiet reading room. The interface recedes into the desk;
+   documents are lit paper objects that carry the content. One light source
+   (the --light-* vector) drives every shadow, spine shading and page curl.
+
+   Two surfaces, two token families:
+   - desk-*  the interface ground (follows the theme)
+   - paper-* the document surface (stays paper in both themes; warmed by the lamp at night) */
+
+@property --lift { syntax: '<number>'; inherits: true; initial-value: 2; }
+
+:root {
+  color-scheme: light;
+
+  /* Desk: north-light daylight, a cool grey with a faint celadon bias. */
+  --desk: #e5e8e5;
+  --desk-raised: #edf0ed;
+  --desk-sunk: #dadfdb;
+  --desk-ink: #1e2329;
+  --desk-ink-2: #545c66;
+  --desk-ink-3: #868e97;
+  --desk-rule: #cbd1cd;
+  --desk-accent: #3d5d8a;
+  --desk-accent-soft: rgb(61 93 138 / 0.10);
+  --glow: rgb(255 255 255 / 0.62);
+  --glow-at: 16% -10%;
+  --vignette: rgb(40 52 60 / 0.10);
+
+  /* Paper. */
+  --paper: #fbfbf8;
+  --paper-back: #f2f3ef;
+  --paper-edge: #d8dbd6;
+  --paper-ink: #1c1f23;
+  --paper-ink-2: #545a61;
+  --paper-ink-3: #8a9097;
+  --paper-rule: #d6dad5;
+  --paper-accent: #3d5d8a;
+  --paper-mark: rgb(61 93 138 / 0.09);
+  --seal: #b0503e;
+  --board: #24344a;          /* book cover board */
+  --board-ink: #eef1ee;
+
+  /* Light: unit vector pointing toward the light (x right, y down, z to viewer). */
+  --light-x: -0.42;
+  --light-y: -0.60;
+  --light-z: 0.68;
+  --shadow-rgb: 30 38 48;
+  --shadow-alpha: 0.13;
+
+  /* Indigo dye (藍染) — eight dips, one per stage: depth encodes position in the process. */
+  --dye-1: #b7d0d3; --dye-1-ink: #1f2d33;
+  --dye-2: #98b7bc; --dye-2-ink: #1b2a30;
+  --dye-3: #6f9aa9; --dye-3-ink: #f2f5f3;
+  --dye-4: #4f7f97; --dye-4-ink: #f1f4f2;
+  --dye-5: #3e6a80; --dye-5-ink: #eef2f0;
+  --dye-6: #2f5570; --dye-6-ink: #ecf0ee;
+  --dye-7: #273d5c; --dye-7-ink: #e9edeb;
+  --dye-8: #1c2236; --dye-8-ink: #e6eae8;
+
+  /* Type. */
+  --font-ui: "IBM Plex Sans", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --font-display: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+  --font-latin: "EB Garamond", "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-ja: "Shippori Mincho", "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif CJK JP", serif;
+  --font-zh: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", "SimSun", "Noto Serif CJK SC", serif;
+
+  --step--2: 0.6875rem;  /* 11 */
+  --step--1: 0.78125rem; /* 12.5 */
+  --step-0: 0.875rem;    /* 14 */
+  --step-1: 1rem;        /* 16 */
+  --step-2: 1.25rem;     /* 20 */
+  --step-3: 1.625rem;    /* 26 */
+  --step-4: 2.25rem;     /* 36 */
+  --step-5: 3.25rem;     /* 52 */
+
+  --gutter: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  --measure: 72rem;
+  --radius: 3px;
+  --ease-out: cubic-bezier(.22, .8, .24, 1);
+  --ease-spring: cubic-bezier(.3, 1.35, .5, 1);
+  --t-quick: 160ms;
+  --t-calm: 420ms;
+}
+
+/* Lamplight: a dark room, paper warmed by a desk lamp overhead. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --desk: #15171a;
+    --desk-raised: #1c1f23;
+    --desk-sunk: #101215;
+    --desk-ink: #e6e1d7;
+    --desk-ink-2: #aaa59b;
+    --desk-ink-3: #78756e;
+    --desk-rule: #2d3035;
+    --desk-accent: #a7bbdc;
+    --desk-accent-soft: rgb(167 187 220 / 0.12);
+    --glow: rgb(255 214 160 / 0.13);
+    --glow-at: 50% -18%;
+    --vignette: rgb(0 0 0 / 0.45);
+    --paper: #eee7da;
+    --paper-back: #e3dbcc;
+    --paper-edge: #c3b9a6;
+    --paper-ink: #24201b;
+    --paper-ink-2: #5c554b;
+    --paper-ink-3: #8c8476;
+    --paper-rule: #d2c8b6;
+    --paper-accent: #3a557d;
+    --paper-mark: rgb(58 85 125 / 0.10);
+    --seal: #a44a39;
+    --board: #1f2c3f;
+    --board-ink: #e9e3d6;
+    --light-x: -0.12;
+    --light-y: -0.34;
+    --light-z: 0.93;
+    --shadow-rgb: 0 0 0;
+    --shadow-alpha: 0.42;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --desk: #15171a;
+  --desk-raised: #1c1f23;
+  --desk-sunk: #101215;
+  --desk-ink: #e6e1d7;
+  --desk-ink-2: #aaa59b;
+  --desk-ink-3: #78756e;
+  --desk-rule: #2d3035;
+  --desk-accent: #a7bbdc;
+  --desk-accent-soft: rgb(167 187 220 / 0.12);
+  --glow: rgb(255 214 160 / 0.13);
+  --glow-at: 50% -18%;
+  --vignette: rgb(0 0 0 / 0.45);
+  --paper: #eee7da;
+  --paper-back: #e3dbcc;
+  --paper-edge: #c3b9a6;
+  --paper-ink: #24201b;
+  --paper-ink-2: #5c554b;
+  --paper-ink-3: #8c8476;
+  --paper-rule: #d2c8b6;
+  --paper-accent: #3a557d;
+  --paper-mark: rgb(58 85 125 / 0.10);
+  --seal: #a44a39;
+  --board: #1f2c3f;
+  --board-ink: #e9e3d6;
+  --light-x: -0.12;
+  --light-y: -0.34;
+  --light-z: 0.93;
+  --shadow-rgb: 0 0 0;
+  --shadow-alpha: 0.42;
+}

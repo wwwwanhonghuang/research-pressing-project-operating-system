@@ -202,7 +202,7 @@ Print output is monochrome, set in Mincho type on A4, with plain numbered headin
 
 | Principle | State in v18 |
 |---|---|
-| 3.1 Single source of truth | **Print: done.** 139 forms and 8 handbooks are generated from JSON, and JSON views are exported. HTML, audio and video renderers are planned. |
+| 3.1 Single source of truth | **Print and web: done.** 139 forms and 8 handbooks are generated as PDF, and the reading room (`os-site/`) sets every definition in the browser from the same JSON. Audio and video renderers are planned. |
 | 3.2 Separation of definitions, records, renditions | **Definitions and renditions: done.** Record schemas exist (task runs, checklist runs, review decisions), but the project execution layer is still a scaffold. |
 | 3.3 Immutable versioning | **Done:** pinned references, fail-closed builds, SHA-256 manifests, archived versions. Historical versions can be looked up only for checklists so far. |
 | 3.4 Explicit authority | **Done** on every object. Clause-level authority for legal-style documents is planned. |
@@ -211,7 +211,7 @@ Print output is monochrome, set in Mincho type on A4, with plain numbered headin
 | 3.7 Epistemic differentiation | **Built in** to the standards and checklists of all eight stages (first drafts). |
 | 3.8 Composition by reference | **Done:** one recipe per stage. Sharing one standard across several stages is planned; entries are currently stage-local. |
 | 3.9 Non-linear workflow | **Done:** workflow presets with rework rules. An explicit task-dependency graph is planned. |
-| 3.10 Multimodality | **Partial:** print and neutral JSON today; other media are planned. |
+| 3.10 Multimodality | **Partial:** print, a web book with physical page turns, a continuous web sheet, and neutral JSON. The web renderer sets Japanese, Chinese, English and French. Audio and video are planned. |
 | 3.11 Typographic restraint | **Done** in two central TeX styles. |
 | 3.12 Transparent status | **Done:** every object and output carries its draft / unapproved status. |
 
@@ -284,10 +284,22 @@ tests/       regression tests and synthetic fixtures
 build/       generated TeX, PDF, JSON views and provenance manifests (never edit)
 design/      design notes and decisions; start with DESIGN_REVIEW_v18.md
 projects/    project instances (git-ignored; may contain confidential material)
-os-site/     scope note for the future website
+os-site/     the reading room: web presentation rendered from the JSON (see os-site/README.md)
 ```
 
-## 9. Installation and Usage
+## 9. Reading Room: Web Presentation
+
+`os-site/` renders every stage, handbook, definition, form, checklist and AI prompt in the browser, directly from the JSON (via presentation-neutral bundles built by `script/build_site_data.py`). No PDF is involved.
+
+- **A reading room.** The interface recedes into a quiet desk; documents are lit paper objects on it. One light vector, a design token, drives every shadow, the shading of book spines and the curl of a turning page. The dark theme is lamplight: the room darkens and the paper warms.
+- **Books turned by hand.** A handbook opens as a book. The fold of a turning page is the perpendicular bisector between the grabbed point and the hand, kept inextensible at the binding; springs settle it, and a click turns it along an eased arc. Only transforms change per frame, and nothing runs at rest.
+- **Structure carries information.** On the shelf, a spine's thickness is its stage's number of definitions, and its indigo deepens stage by stage. Identifiers, pinned versions and SHA-256 hashes appear as marginalia, and each title page bears the authority its source declares.
+- **Two ways to read.** *Book* for reading through; *Sheet* for working, with an outline and a provenance rail. Both keep your place across modes, type sizes and languages.
+- **Four content languages.** The interface is English; text is set in Japanese, Chinese, English or French, each with its own typeface and line-breaking rules. A typesetting specimen demonstrates all four.
+
+Design, rendering and physics are described in [os-site/README.md](os-site/README.md).
+
+## 10. Installation and Usage
 
 **Requirements:**
 - Python 3.10+ with `jsonschema`.
@@ -301,6 +313,7 @@ make stage-01-handbook                     # … through stage-08-handbook: JSON
 make pdf IDS="TPL-DOC-030 TPL-CHK-002"     # generate and compile selected forms
 make sample                                # eight representative forms
 make view                                  # presentation-neutral JSON views
+make site-serve                            # the reading room at http://127.0.0.1:8765/
 ```
 
 **Windows:** run the toolchain inside WSL. If your WSL `python3` lacks `jsonschema`, pass one that has it: `make test PYTHON=/usr/bin/python3`.
@@ -314,12 +327,12 @@ python3 script/compile_pdf.py --ids TPL-DOC-030 --tex-dir build/example
 python3 script/init_project.py example-editorial --title '編集企画例'
 ```
 
-## 10. Current Limitations and Release History
+## 11. Current Limitations and Release History
 
 - **Content maturity:** all content is a first draft. It is structurally complete but substantively unreviewed, and needs domain, editorial, ethical and case-specific legal review before any real use.
 - **Execution layer:** project execution is a scaffold.
 - **Security:** there is no access control, identity, signature or secure storage. Do not put real personal, unpublished, interview or embargoed material in this repository.
-- **Media:** the website and the HTML, audio and video renditions are deferred.
+- **Web:** the reading room is read-only; project management, editing and audio or video renditions are deferred.
 
 | Version | Milestone |
 |---|---|
@@ -331,19 +344,19 @@ python3 script/init_project.py example-editorial --title '編集企画例'
 | v17 | Stage 7: publication and distribution ([v17](RELEASE_NOTES_v17.md)) |
 | v18 | Stage 8: corrections, evaluation and archive; all eight stages at first draft ([v18](RELEASE_NOTES_v18.md)) |
 
-## 11. Contribution Guidelines
+## 12. Contribution Guidelines
 
 Contributors and AI agents should read [CLAUDE.md](CLAUDE.md) before making changes. It covers the location of canonical sources, the invariants enforced by the tests, and the change procedure.
 
-## 12. License
+## 13. License
 
 The repository is licensed in two parts, by content type:
 
-- **Code: [MIT](LICENSE).** Covers `script/`, `tests/` (including fixtures), `Makefile`, `templates/tex/*.sty`, and every `*.schema.json`.
-- **Documents and content: [CC BY-NC 4.0](LICENSE-CC-BY-NC-4.0.txt).** Covers everything else, including `content/`, `pipeline/`, `core/workflows/`, `design/`, `docs/`, `templates/catalog.json`, the AI-assistance prompts, and the generated TeX, PDF and JSON under `build/`.
+- **Code: [MIT](LICENSE).** Covers `script/`, `tests/` (including fixtures), `Makefile`, `templates/tex/*.sty`, every `*.schema.json`, and the reading room's code (`os-site/index.html`, `os-site/assets/css/`, `os-site/assets/js/`).
+- **Documents and content: [CC BY-NC 4.0](LICENSE-CC-BY-NC-4.0.txt).** Covers everything else, including `content/`, `pipeline/`, `core/workflows/`, `design/`, `docs/`, `templates/catalog.json`, the AI-assistance prompts, the generated TeX, PDF and JSON under `build/`, and the generated reading-room data in `os-site/data/`. The passages in `os-site/assets/specimen.json` are in the public domain.
 
 External works cited by URL are not redistributed here, and remain under their owners' terms.
 
-## 13. Disclaimer
+## 14. Disclaimer
 
 This is an independent design prototype. It implies no affiliation with, or endorsement by, any organization, and it is not legal advice. A valid schema, a compiled PDF or a fully checked checklist never establishes that content is accurate, lawful, rights-cleared or approved for publication.

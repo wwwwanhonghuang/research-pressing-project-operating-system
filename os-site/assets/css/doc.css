@@ -1,0 +1,192 @@
+/* Document typography: one set of block styles for book pages (.doc--page) and the
+   sheet (.doc--flow). Sizes are in em so both scale from a single base size.
+   Content typefaces follow each block's language; interface labels stay English. */
+
+.doc { color: var(--paper-ink); font-family: var(--font-ja); line-height: 1.86; font-kerning: normal; font-variant-numeric: proportional-nums; }
+.doc--page { font-size: var(--fs, 12.5px); }
+.doc--flow { font-size: calc(1.0625rem * var(--flow-scale, 1)); line-height: 1.95; }
+
+/* Content typefaces follow the language an element declares (not the page's own
+   language, which is the English of the interface). Children inherit. */
+.doc [lang="ja"] { font-family: var(--font-ja); }
+.doc [lang="zh-Hans"], .doc [lang="zh"] { font-family: var(--font-zh); }
+.doc [lang="en"], .doc [lang="fr"] { font-family: var(--font-latin); }
+
+/* Interface words inside documents. */
+.doc :is(.objhead__kind, .b--listhead, .step__tag, .step__ev, .check__human, .field__type, .source__meta, .ref__kind, .ref__id,
+  .prov__kind, .prov__id, .prov__sha, .chapter__id, .meta__row dt, .objhead__auth, .stamp, .source__n) { font-family: var(--font-mono); }
+.doc .b--note { font-family: var(--font-ui); }
+
+.doc .b { margin: 0 0 0.95em; }
+
+/* Running text, by language. */
+.doc .b--p { text-align: justify; hanging-punctuation: allow-end; overflow-wrap: break-word; }
+.doc .b--p:lang(ja), .doc .b--p:lang(zh-Hans), .doc .b--p:lang(zh) {
+  text-indent: 1em; line-break: strict; word-break: normal; text-justify: inter-character;
+}
+.doc .b--p:lang(en), .doc .b--p:lang(fr) {
+  font-size: 1.1em; line-height: 1.52; text-indent: 1.4em; margin-bottom: 0.35em;
+  hyphens: auto; -webkit-hyphens: auto; text-wrap: pretty; letter-spacing: 0.002em;
+}
+.doc .b--p.is-cont, .doc .b--p.is-prompt { text-indent: 0; }
+.doc :is(.b--chapter, .b--h, .b--note) + .b--p { text-indent: 0; }
+.doc .b--p.is-prompt {
+  background: var(--paper-mark); padding: 0.75em 0.95em; border-radius: 2px; font-size: 0.95em;
+}
+.doc--page .b--p { margin-bottom: 0.7em; }
+.doc--page .b--p:lang(en), .doc--page .b--p:lang(fr) { margin-bottom: 0.2em; }
+
+/* Chapter opening. */
+.doc .b--chapter { padding-top: 1.2em; margin-bottom: 1.8em; display: grid; gap: 0.15em; }
+.chapter__n { font-family: var(--font-display); font-weight: 300; font-size: 3.4em; line-height: 0.95; color: var(--paper-accent); font-variant-numeric: lining-nums; }
+.chapter__n--mark { font-size: 2.4em; }
+.doc .chapter__title { margin: 0.25em 0 0; font-size: 1.5em; font-weight: 600; line-height: 1.5; letter-spacing: 0.04em; text-wrap: balance; }
+.doc .chapter__title:lang(en), .doc .chapter__title:lang(fr) { font-family: var(--font-display); font-weight: 500; font-size: 1.8em; letter-spacing: 0; line-height: 1.15; }
+.chapter__id { font-size: 0.6em; letter-spacing: 0.08em; color: var(--paper-ink-3); }
+.doc .b--pagetitle { margin-bottom: 1.6em; padding-top: 0.6em; }
+.pagetitle__text { margin: 0; font-family: var(--font-display) !important; font-weight: 400; font-size: 2.2em; line-height: 1; }
+
+/* The head of a definition. */
+.doc .b--objhead { padding-top: 1.1em; margin-bottom: 0.9em; }
+.doc .b--objhead.is-compact { padding-top: 0.4em; margin-bottom: 0.6em; }
+.objhead__kind { display: flex; flex-wrap: wrap; gap: 0.2em 0.9em; align-items: baseline; font-size: 0.6em; letter-spacing: 0.1em; text-transform: uppercase; color: var(--paper-ink-3); }
+.objhead__label { color: var(--paper-accent); }
+.objhead__id { text-transform: none; letter-spacing: 0.02em; }
+.doc .objhead__title { margin: 0.35em 0 0; font-size: 1.18em; font-weight: 600; line-height: 1.55; letter-spacing: 0.02em; text-wrap: pretty; }
+.doc .b--objhead.is-top .objhead__title { font-size: 1.75em; line-height: 1.45; letter-spacing: 0.03em; margin-top: 0.4em; }
+.doc--flow .b--objhead.is-top { padding-top: 0; margin-bottom: 1.4em; }
+.objhead__auth { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5em 1em; margin-top: 0.9em; font-size: 0.66em; color: var(--paper-ink-3); letter-spacing: 0.02em; }
+
+/* The authority stamp: a small hanko-like seal, slightly askew. */
+.stamp {
+  display: inline-flex; align-items: center; gap: 0.55em;
+  padding: 0.22em 0.6em; border-radius: 3px;
+  border: 1.2px solid var(--seal); color: var(--seal);
+  box-shadow: inset 0 0 0 1.6px var(--paper), inset 0 0 0 2.2px color-mix(in srgb, var(--seal) 70%, transparent);
+  font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase;
+  transform: rotate(-2.5deg); opacity: 0.88;
+  font-family: var(--font-mono);
+}
+.doc .stamp { font-size: 0.86em; }
+.stamp__a { font-weight: 500; }
+.stamp__b { letter-spacing: 0.06em; text-transform: none; }
+
+/* Headings inside a definition. */
+.doc .b--h { font-weight: 600; line-height: 1.55; letter-spacing: 0.03em; padding-top: 0.5em; margin-bottom: 0.4em; }
+.doc .b--h3 { font-size: 1.1em; }
+.doc .b--h4, .doc .b--h5 { font-size: 1em; }
+.doc .b--h:lang(en), .doc .b--h:lang(fr) { font-family: var(--font-display); font-weight: 500; font-size: 1.35em; letter-spacing: 0; }
+
+.doc .b--note { font-size: 0.72em; line-height: 1.6; color: var(--paper-ink-3); }
+.doc .b--labelled { display: block; }
+.labelled__label { font-weight: 600; margin-right: 0.7em; }
+.labelled__label::after { content: ""; display: inline-block; width: 0.9em; height: 1px; background: var(--paper-ink-3); vertical-align: 0.3em; margin-left: 0.7em; }
+
+/* Lists. List items are separate blocks so a list can continue across pages. */
+.doc .b--listhead { font-size: 0.6em; letter-spacing: 0.12em; text-transform: uppercase; color: var(--paper-ink-3); padding-top: 0.7em; margin-bottom: 0.5em; display: flex; gap: 0.8em; align-items: baseline; }
+.listhead__count { opacity: 0.75; }
+.blist { list-style: none; margin: 0; padding: 0; }
+.doc .b--li { position: relative; padding-left: 1.35em; margin-bottom: 0.3em; line-height: 1.75; }
+.doc .b--li.is-last { margin-bottom: 1.05em; }
+.b--li.is-bullet::before { content: ""; position: absolute; left: 0.35em; top: 0.82em; width: 0.28em; height: 0.28em; border-radius: 50%; background: var(--paper-ink-3); }
+.b--li.is-dash::before { content: ""; position: absolute; left: 0.1em; top: 0.88em; width: 0.7em; height: 1px; background: var(--paper-ink-3); }
+.b--li.is-num::before { content: attr(value) "."; position: absolute; left: 0; font-family: var(--font-display); color: var(--paper-accent); }
+.li__box { position: absolute; left: 0.05em; top: 0.42em; width: 0.8em; height: 0.8em; border: 1px solid var(--paper-ink-2); border-radius: 1px; }
+
+/* Key facts. */
+.doc .b--meta { display: grid; gap: 0.2em; padding: 0.55em 0; border-block: 1px solid var(--paper-rule); margin-bottom: 1.1em; font-size: 0.92em; }
+.meta__row { display: grid; grid-template-columns: 9.5em minmax(0, 1fr); gap: 0 1em; align-items: baseline; }
+.meta__row dt { font-size: 0.66em; letter-spacing: 0.08em; text-transform: uppercase; color: var(--paper-ink-3); }
+.meta__row dd { margin: 0; }
+
+/* Procedure steps. */
+.doc .b--step { display: grid; grid-template-columns: 1.9em minmax(0, 1fr) auto; gap: 0 0.55em; margin-bottom: 0.75em; }
+.doc .b--step.is-last { margin-bottom: 1.15em; }
+.step__n { font-family: var(--font-display); font-size: 1.45em; line-height: 1.05; color: var(--paper-accent); font-variant-numeric: lining-nums; text-align: right; padding-right: 0.15em; }
+.step__body { min-width: 0; }
+.step__text { margin: 0; line-height: 1.78; text-align: justify; }
+.step__out { margin: 0.3em 0 0; font-size: 0.86em; color: var(--paper-ink-2); line-height: 1.65; }
+.step__tag { font-size: 0.66em; letter-spacing: 0.1em; text-transform: uppercase; color: var(--paper-ink-3); margin-right: 0.7em; }
+.step__ev {
+  align-self: start; margin-top: 0.35em; font-size: 0.56em; letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap;
+  color: var(--paper-accent); border: 1px solid color-mix(in srgb, var(--paper-accent) 45%, transparent); border-radius: 999px; padding: 0.05em 0.6em;
+}
+
+/* Checklist criteria with their four states. */
+.doc .b--check { display: grid; grid-template-columns: 1.7em minmax(0, 1fr); gap: 0 0.5em; margin-bottom: 0.95em; }
+.doc .b--check.is-compact { margin-bottom: 0.45em; }
+.doc .b--check.is-last { margin-bottom: 1.2em; }
+.check__n { font-family: var(--font-display); font-size: 1.25em; line-height: 1.15; color: var(--paper-accent); text-align: right; padding-right: 0.15em; }
+.check__body { min-width: 0; }
+.check__text { margin: 0; line-height: 1.72; }
+.check__hint { margin: 0.2em 0 0; font-size: 0.82em; color: var(--paper-ink-2); line-height: 1.6; }
+.check__states { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3em 1.1em; margin-top: 0.45em; font-size: 0.82em; color: var(--paper-ink-2); }
+.check__state { display: inline-flex; align-items: center; gap: 0.4em; }
+.check__state.needs-evidence { text-decoration: underline dotted var(--paper-ink-3); text-underline-offset: 0.3em; }
+.check__box { display: inline-block; width: 0.82em; height: 0.82em; border: 1px solid var(--paper-ink-2); border-radius: 1px; }
+.check__human { font-size: 0.72em; letter-spacing: 0.06em; color: var(--seal); }
+
+/* Forms: functional writing lines, borderless tables. */
+.doc .b--fsection { display: flex; gap: 0.45em; align-items: baseline; margin: 0 0 0.75em; padding-top: 0.9em; font-size: 1.07em; font-weight: 600; line-height: 1.5; letter-spacing: 0.03em; }
+.fsection__n { font-family: var(--font-display); color: var(--paper-accent); font-weight: 500; }
+.doc .b--field { margin-bottom: 1.15em; }
+.field__head { display: flex; justify-content: space-between; align-items: baseline; gap: 1em; }
+.field__label { font-weight: 600; line-height: 1.55; }
+.field__type { font-size: 0.6em; letter-spacing: 0.08em; text-transform: uppercase; color: var(--paper-ink-3); white-space: nowrap; }
+.field__req { color: var(--seal); }
+.field__desc { margin: 0.15em 0 0.45em; font-size: 0.82em; color: var(--paper-ink-2); line-height: 1.6; }
+.field__lines { height: 1.9em; border-bottom: 1px solid var(--paper-rule); }
+.field__lines.is-long_text, .field__lines.is-rich_text { height: 5.6em; background: repeating-linear-gradient(to bottom, transparent 0 calc(1.85em - 1px), var(--paper-rule) calc(1.85em - 1px) 1.85em); border: 0; }
+.field__lines.is-date { width: 11em; position: relative; }
+.field__lines.is-date::after { content: "YYYY-MM-DD"; position: absolute; left: 0.2em; bottom: 0.2em; font-family: var(--font-mono); font-size: 0.66em; color: var(--paper-ink-3); opacity: 0.6; letter-spacing: 0.08em; }
+.field__table { display: grid; grid-template-columns: repeat(var(--cols), minmax(0, 1fr)); column-gap: 0.9em; }
+.field__th { font-size: 0.78em; font-weight: 600; color: var(--paper-ink-2); padding-bottom: 0.25em; border-bottom: 1px solid color-mix(in srgb, var(--paper-ink-2) 55%, transparent); line-height: 1.45; }
+.field__td { height: 1.95em; border-bottom: 1px solid var(--paper-rule); }
+.field__choices { display: flex; flex-wrap: wrap; gap: 0.4em 1.2em; font-size: 0.9em; }
+.field__choice { display: inline-flex; gap: 0.4em; align-items: center; }
+
+/* Sources and links. */
+.doc .b--source { display: grid; grid-template-columns: 1.5em minmax(0, 1fr); gap: 0 0.5em; margin-bottom: 0.7em; }
+.doc .b--source.is-last { margin-bottom: 1.2em; }
+.source__n { font-size: 0.7em; color: var(--paper-ink-3); padding-top: 0.3em; }
+.source__loc { font-size: 0.8em; line-height: 1.5; overflow-wrap: anywhere; }
+.source__meta { font-size: 0.62em; color: var(--paper-ink-3); margin-top: 0.15em; letter-spacing: 0.02em; }
+.source__note { margin: 0.25em 0 0; font-size: 0.8em; color: var(--paper-ink-2); line-height: 1.6; }
+.doc a.url { color: var(--paper-accent); text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--paper-accent) 35%, transparent); text-underline-offset: 0.2em; font-family: var(--font-mono); font-size: 0.92em; }
+.doc code.ic { font-family: var(--font-mono); font-size: 0.86em; background: var(--paper-mark); border-radius: 2px; padding: 0.05em 0.3em; }
+
+.doc .b--ref {
+  display: grid; grid-template-columns: 6.6em minmax(0, 1fr); grid-template-areas: "kind title" "kind id";
+  gap: 0 0.9em; align-items: baseline;
+  padding: 0.38em 0.3em; margin: 0 -0.3em; border-bottom: 1px solid var(--paper-rule); border-radius: 2px;
+}
+.doc .b--ref.is-last { margin-bottom: 1.2em; }
+.doc a.b--ref:hover { background: var(--paper-mark); }
+.ref__kind { grid-area: kind; font-size: 0.6em; letter-spacing: 0.1em; text-transform: uppercase; color: var(--paper-ink-3); }
+.ref__title { grid-area: title; font-size: 0.9em; line-height: 1.55; }
+.ref__title.is-missing { color: var(--paper-ink-3); font-style: italic; }
+.ref__id { grid-area: id; font-size: 0.6em; color: var(--paper-ink-3); }
+
+/* Contents (book). */
+.doc .b--toc {
+  display: grid; grid-template-columns: 1.8em auto minmax(1em, 1fr) auto; gap: 0 0.5em; align-items: baseline;
+  width: 100%; text-align: left; padding: 0.42em 0; margin: 0; cursor: pointer; color: inherit; font: inherit;
+  border-bottom: 1px solid transparent;
+}
+.doc .b--toc:hover { color: var(--paper-accent); }
+.toc__n { font-family: var(--font-display); color: var(--paper-accent); font-size: 1.15em; }
+.toc__title { min-width: 0; line-height: 1.5; text-align: left; }
+.toc__leader { border-bottom: 1px dotted var(--paper-ink-3); transform: translateY(-0.3em); opacity: 0.6; }
+.toc__page { font-family: var(--font-latin); font-variant-numeric: tabular-nums lining-nums; font-size: 1.02em; }
+.doc .b--toc.is-l2 .toc__title { font-family: var(--font-display); font-style: italic; }
+
+/* Provenance appendix. */
+.doc .b--prov { display: grid; grid-template-columns: 6.5em minmax(0, 1fr); grid-template-areas: "kind id" "kind title" "kind sha"; gap: 0 0.9em; padding: 0.35em 0; border-bottom: 1px solid var(--paper-rule); margin-bottom: 0; }
+.doc .b--prov.is-last { margin-bottom: 1em; }
+.prov__kind { grid-area: kind; font-size: 0.58em; letter-spacing: 0.08em; text-transform: uppercase; color: var(--paper-ink-3); padding-top: 0.25em; }
+.prov__id { grid-area: id; font-size: 0.66em; color: var(--paper-ink-2); }
+.prov__title { grid-area: title; font-size: 0.82em; line-height: 1.5; }
+.prov__sha { grid-area: sha; font-size: 0.58em; color: var(--paper-ink-3); }
+
+/* A paragraph continued on the next page keeps its last line justified. */
+.doc .b--p.is-mid { text-align-last: justify; }

@@ -1,0 +1,101 @@
+{
+  "id": "SPECIMEN-FOUR-LANGUAGES",
+  "version": "1.0.0",
+  "title": "Four Languages, One Reader",
+  "subtitle": "A typesetting specimen",
+  "note": "Public-domain passages set by the same reader that sets Operations OS documents. They show typography only: hyphenation and French spacing in Latin text, strict line breaking and inter-character justification in Chinese and Japanese, and the correct Han glyph forms for each language. They are not operational content.",
+  "chapters": [
+    {
+      "id": "SPC-EN",
+      "lang": "en",
+      "title": "Endless forms most beautiful",
+      "source": "English. Charles Darwin, On the Origin of Species, first edition (1859), closing paragraph. Public domain.",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "It is interesting to contemplate an entangled bank, clothed with many plants of many kinds, with birds singing on the bushes, with various insects flitting about, and with worms crawling through the damp earth, and to reflect that these elaborately constructed forms, so different from each other, and dependent on each other in so complex a manner, have all been produced by laws acting around us."
+        },
+        {
+          "kind": "paragraph",
+          "text": "These laws, taken in the highest sense, being Growth with Reproduction; Inheritance which is almost implied by reproduction; Variability from the indirect and direct action of the external conditions of life, and from use and disuse; a Ratio of Increase so high as to lead to a Struggle for Life, and as a consequence to Natural Selection, entailing Divergence of Character and the Extinction of less-improved forms. Thus, from the war of nature, from famine and death, the most exalted object which we are capable of conceiving, namely, the production of the higher animals, directly follows."
+        },
+        {
+          "kind": "paragraph",
+          "text": "There is grandeur in this view of life, with its several powers, having been originally breathed into a few forms or into one; and that, whilst this planet has gone cycling on according to the fixed law of gravity, from so simple a beginning endless forms most beautiful and most wonderful have been, and are being, evolved."
+        }
+      ]
+    },
+    {
+      "id": "SPC-FR",
+      "lang": "fr",
+      "title": "Le bon sens et le roseau pensant",
+      "source": "French. René Descartes, Discours de la méthode (1637), first part; Blaise Pascal, Pensées (1670), fragment 347 in the Brunschvicg numbering. Public domain.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "Descartes"
+        },
+        {
+          "kind": "paragraph",
+          "text": "Le bon sens est la chose du monde la mieux partagée : car chacun pense en être si bien pourvu, que ceux même qui sont les plus difficiles à contenter en toute autre chose n’ont point coutume d’en désirer plus qu’ils en ont. En quoi il n’est pas vraisemblable que tous se trompent ; mais plutôt cela témoigne que la puissance de bien juger et distinguer le vrai d’avec le faux, qui est proprement ce qu’on nomme le bon sens ou la raison, est naturellement égale en tous les hommes ; et ainsi que la diversité de nos opinions ne vient pas de ce que les uns sont plus raisonnables que les autres, mais seulement de ce que nous conduisons nos pensées par diverses voies, et ne considérons pas les mêmes choses. Car ce n’est pas assez d’avoir l’esprit bon, mais le principal est de l’appliquer bien."
+        },
+        {
+          "kind": "heading",
+          "text": "Pascal"
+        },
+        {
+          "kind": "paragraph",
+          "text": "L’homme n’est qu’un roseau, le plus faible de la nature ; mais c’est un roseau pensant. Il ne faut pas que l’univers entier s’arme pour l’écraser : une vapeur, une goutte d’eau suffit pour le tuer. Mais, quand l’univers l’écraserait, l’homme serait encore plus noble que ce qui le tue, puisqu’il sait qu’il meurt, et l’avantage que l’univers a sur lui ; l’univers n’en sait rien."
+        },
+        {
+          "kind": "paragraph",
+          "text": "Toute notre dignité consiste donc en la pensée. C’est de là qu’il faut nous relever et non de l’espace et de la durée, que nous ne saurions remplir. Travaillons donc à bien penser : voilà le principe de la morale."
+        }
+      ]
+    },
+    {
+      "id": "SPC-ZH",
+      "lang": "zh",
+      "title": "青出于蓝",
+      "source": "Chinese (Simplified). Xunzi, “An Exhortation to Learning” (third century BCE), opening, with one passage omitted; the Analects, “Wei Zheng”. Public domain.",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "荀子·劝学"
+        },
+        {
+          "kind": "paragraph",
+          "text": "君子曰：学不可以已。青，取之于蓝，而青于蓝；冰，水为之，而寒于水。……故木受绳则直，金就砺则利，君子博学而日参省乎己，则知明而行无过矣。"
+        },
+        {
+          "kind": "heading",
+          "text": "论语·为政"
+        },
+        {
+          "kind": "paragraph",
+          "text": "子曰：“学而不思则罔，思而不学则殆。”"
+        },
+        {
+          "kind": "paragraph",
+          "text": "子曰：“由，诲女知之乎！知之为知之，不知为不知，是知也。”"
+        }
+      ]
+    },
+    {
+      "id": "SPC-JA",
+      "lang": "ja",
+      "title": "ゆく河の流れ",
+      "source": "Japanese. Kamo no Chōmei, Hōjōki (1212), opening. Public domain.",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "ゆく河の流れは絶えずして、しかももとの水にあらず。淀みに浮かぶうたかたは、かつ消えかつ結びて、久しくとどまりたる例なし。世の中にある人とすみかと、またかくのごとし。"
+        },
+        {
+          "kind": "paragraph",
+          "text": "たましきの都のうちに、棟を並べ、甍を争へる、高き、卑しき人の住まひは、世々を経て尽きせぬものなれど、これをまことかと尋ぬれば、昔ありし家はまれなり。或は去年焼けて今年作れり。或は大家ほろびて小家となる。住む人もこれに同じ。所も変らず、人も多かれど、いにしへ見し人は、二三十人が中に、わづかにひとりふたりなり。朝に死に、夕に生まるるならひ、ただ水の泡にぞ似たりける。"
+        }
+      ]
+    }
+  ]
+}

@@ -141,6 +141,8 @@ The deferred P0 rewrite into 法令 article form (`PENDING_WORKS_AFTER_V18.md`) 
 **4.8 HTML is not yet a target.**
 `*.view.json` is the resolved object dump, not a designed presentation model. Even a minimal static HTML renderer would be the cheapest test of the "multimodal from one source" claim (P1, P9).
 
+*Update, 2026-10-20:* the read-only reading room (`os-site/`) now renders every handbook and definition in the browser from the same JSON, through presentation-neutral bundles (`script/build_site_data.py`) and a shared block model. It supports Japanese, Chinese, English and French typesetting. Project records and editing remain unimplemented.
+
 **4.9 Tests freeze content rather than invariants.**
 Many assertions are counts (17 chapters, 12 tasks, 19 knowledge entries, 7 items per checklist) or specific Japanese strings. Any substantive revision will break them even when nothing is wrong. The invariants are what should be tested: references resolve, no approval states, every task has a procedure and a human decision, and so on.
 

@@ -4,7 +4,7 @@ PYTHON ?= python3
 IDS ?=
 SAMPLE_IDS = TPL-DOC-001 TPL-DOC-025 TPL-DOC-030 TPL-DOC-046 TPL-DOC-072 TPL-CHK-002 TPL-CHK-035 TPL-CHK-043
 
-.PHONY: help validate tex pdf sample all-pdf view test clean catalog project stage-01-handbook stage-01-tex
+.PHONY: help validate tex pdf sample all-pdf view test clean catalog project stage-01-handbook stage-01-tex site site-serve
 help:
 	@echo 'make validate  - validate all reusable template definitions'
 	@echo 'make tex       - generate TeX for all 139 templates (IDS=... for a subset)'
@@ -16,6 +16,8 @@ help:
 	@echo 'make view      - export JSON client-neutral views for all templates'
 	@echo 'make test      - run validation and automated regression tests'
 	@echo 'make clean     - delete generated intermediate files'
+	@echo 'make site      - rebuild the reading-room data bundles in os-site/data/'
+	@echo 'make site-serve - rebuild and serve the reading room at http://127.0.0.1:8765/'
 validate:
 	$(PYTHON) script/validate_repo.py
 	$(PYTHON) script/validate_template_catalog.py
@@ -113,3 +115,10 @@ stage-08-forms:
 	$(MAKE) pdf IDS=' TPL-DOC-086 TPL-DOC-087 TPL-DOC-088 TPL-DOC-089 TPL-DOC-090 TPL-DOC-091 TPL-DOC-092 TPL-DOC-093 TPL-DOC-094 TPL-CHK-042 TPL-CHK-043 TPL-CHK-044 TPL-CHK-045'
 stage-08-inspect-demo:
 	$(PYTHON) script/inspect_stage8_case.py tests/fixtures/stage8/blocked_SYNTHETIC.json
+
+# Reading room (os-site/): presentation-neutral data bundles and a local preview.
+site:
+	$(PYTHON) script/build_site_data.py
+site-serve: site
+	@echo 'Reading room: http://127.0.0.1:8765/'
+	$(PYTHON) -m http.server 8765 --bind 127.0.0.1 --directory os-site
