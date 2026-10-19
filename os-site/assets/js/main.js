@@ -22,7 +22,9 @@ let renderId = 0;
 
 function boot() {
   loadFontSheet();
-  applyTheme(debug.theme || prefs.get('theme', null));
+  // A stored or requested theme wins; otherwise keep whatever the host page set (or the system's).
+  const theme = debug.theme || prefs.get('theme', null);
+  if (theme) applyTheme(theme); else readLight();
   matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', () => readLight());
   const spring = springEasing({ stiffness: 230, damping: 19 });
   if (spring) document.documentElement.style.setProperty('--ease-spring', spring.easing);
