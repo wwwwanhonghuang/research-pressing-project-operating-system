@@ -1,4 +1,4 @@
-# Design review of the v18 snapshot: understanding and revision ideas
+# Design Review of the v18 Snapshot: Interpretation and Revision Proposals
 
 **Date:** 2026-10-19
 **Status:** Reviewer's memo. **Nothing proposed here has been implemented.** The v18 code and content are unchanged (baseline commit `79b791f`).
@@ -13,7 +13,7 @@ Each proposal needs a decision before anyone acts on it. Section 6 lists the ope
 
 ---
 
-## 1. The idea in one paragraph
+## 1. Concept Summary
 
 Operations OS is a file-based, version-controlled operating manual for research-communication and press work (研究広報). It holds three kinds of thing:
 
@@ -23,7 +23,7 @@ Operations OS is a file-based, version-controlled operating manual for research-
 
 Definitions are structured JSON. TeX and PDF are generated outputs, never the source. The default workflow is an eight-stage editorial pipeline running from planning to correction and archiving. AI may assist every task, but it never verifies, consents, approves or publishes.
 
-## 2. Design philosophy (as inferred)
+## 2. Inferred Design Philosophy
 
 | # | Principle | How it shows up | Where |
 |---|---|---|---|
@@ -42,7 +42,7 @@ Definitions are structured JSON. TeX and PDF are generated outputs, never the so
 
 P3, P4 and P5 are the distinctive, high-value core. Any revision should keep them intact.
 
-## 3. What is actually implemented (v18)
+## 3. Implementation State (v18)
 
 ### 3.1 Inventory
 
@@ -61,7 +61,7 @@ P3, P4 and P5 are the distinctive, high-value core. Any revision should keep the
 | Outputs | `build/` | 139 form TeX/PDF, 139 views, 8 handbooks (TeX, PDF, view, manifest) |
 | Tests | `tests/`, `script/validate_*.py` | 77 unittest cases and 5 validators, all passing on Linux |
 
-### 3.2 Data flow
+### 3.2 Data Flow
 
 ```text
 core/workflows/eight_stage.json ──► pipeline/<stage>/stage.json   (task IDs, gate notes)
@@ -83,7 +83,7 @@ content/templates/TPL-*.json  (+ optional instance JSON)
   └─ script/export_view.py  ──► build/view/*.json
 ```
 
-### 3.3 Legacy and placeholder layers
+### 3.3 Legacy and Placeholder Layers
 
 - **v4 pilot.** `core/schemas/`, `standards/STD-SOURCE-TRACEABILITY/`, `ethics/ETH-REPRESENTATION/`, `publications/stage-02-handbook.json` and `pipeline/2_*/tasks/source_claim_register/`, still checked by `script/validate_content.py`. Its builder, `script/build_documents.py`, is referenced by `publications/README.md` but no longer exists.
 - **v1 fixtures.** `core/model/v1/examples/` are synthetic fixtures for `validate_canonical_model.py`. The v1 schemas for `task_run`, `checklist_run`, `review_decision`, `document_instance`, `media_asset` and `rendered_artifact` are used by nothing else.
@@ -92,7 +92,7 @@ content/templates/TPL-*.json  (+ optional instance JSON)
 - **Hand-copied handbooks.** `docs/` and `pipeline/<stage>/docs/handbooks/` hold PDFs for stages 1, 2, 5 and 6 only, under inconsistent names.
 - **Website.** `os-site/` contains a scope memo only.
 
-## 4. Where the implementation drifts from its own principles
+## 4. Divergences Between Principles and Implementation
 
 **4.1 Three schema families describe overlapping things.**
 `content/schemas/` covers templates and instances. `core/model/v1/schemas/` covers the operational objects the composer validates. `core/schemas/` belongs to the v4 pilot.
@@ -172,7 +172,7 @@ The same stage appears as `"01"`, `stage_01` and `1_Project_Design_and_Edtorial_
 **4.15 Language is hard-wired.**
 Field names such as `title.ja`, `title_ja`, `label_ja` and `criterion_ja` mean that parallel English (or other) renditions would need schema changes.
 
-## 5. Revision proposals (for discussion; not implemented)
+## 5. Revision Proposals (for Discussion; Not Implemented)
 
 They are ordered so that early items are cheap and unblock later ones.
 
@@ -221,7 +221,7 @@ Once CI publishes PDFs and HTML for each tagged release, either stop tracking `b
 **R10. Defer the P0 handbook rewrite until R2 and R6 exist.**
 The AST has to exist before eight handbooks are recast in article form. Otherwise the rewrite happens twice.
 
-## 6. Questions that decide the revision
+## 6. Open Decisions Governing the Revision
 
 1. **Authoring:** Who writes and edits content day to day, and in which tool? This decides R6.
 2. **Records:** Will real project data ever live in this repository, and is the GitHub repository public or private? This decides R8.
